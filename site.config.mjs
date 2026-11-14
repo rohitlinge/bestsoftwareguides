@@ -28,7 +28,7 @@ export default {
   // on launchDate + its "day" offset. The daily GitHub Action rebuilds the site,
   // so new pages go live automatically on their day.
   // Override at build time with the LAUNCH_DATE env var (YYYY-MM-DD).
-  launchDate: '2026-11-16',
+  launchDate: '2026-11-14',
 
   // Pages whose data is older than this are marked noindex until re-checked.
   maxDataAgeDays: 120,
