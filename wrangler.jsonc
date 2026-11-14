@@ -6,6 +6,9 @@
 {
   "name": "bestsoftwareguides",
   "compatibility_date": "2026-11-01",
+  // wrangler runs this before every deploy, so dist/ is always fresh on Workers Builds too
+  // (its build step alone did not leave dist/ in place for the deploy step).
+  "build": { "command": "npm run build" },
   "assets": {
     "directory": "./dist",
     "not_found_handling": "404-page",
