@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import FeatureTable from '../../components/FeatureTable.astro';
 import Faq from '../../components/Faq.astro';
 import Sources from '../../components/Sources.astro';
-import { lc1, compares, compareVerdict, featureWins, money, fmtDate, iso, buildDate, type Compare } from '../../lib/data';
+import { lc1, compares, compareVerdict, featureWins, compareChecks, money, fmtDate, iso, buildDate, type Compare } from '../../lib/data';
 import { crumbsLd, faqLd, articleLd } from '../../lib/ld';
 
 export function getStaticPaths() {
@@ -16,9 +16,16 @@ const path = `/compare/${x.slug}/`;
 const title = `${a.name} vs ${b.name} (${year}): Price, Features and Verdict`;
 const verdict = compareVerdict(x);
 const wins = featureWins(x);
+const checks = compareChecks(x);
+const ck = (n: number) => `${n} check${n === 1 ? '' : 's'}`;
+const [hi, lo, nHi, nLo] = checks.a >= checks.b ? [a, b, checks.a, checks.b] : [b, a, checks.b, checks.a];
+const checkLine = (nHi === nLo
+  ? `${a.name} and ${b.name} lead on ${ck(nHi)} each`
+  : `${hi.name} leads on ${ck(nHi)} and ${lo.name} on ${nLo}`) + `; ${checks.even} ${checks.even === 1 ? 'is' : 'are'} even, out of ${ck(checks.rows.length)} (yes/no, price and seats) where we have data for both.`;
 const modified = [a.checked, b.checked].sort().pop()!;
 const description = `${a.name} vs ${b.name}: ${verdict.slice(0, 2).join(' ')}`;
 const faqs = [
+  { q: `How do ${a.name} and ${b.name} compare on features and price?`, a: checkLine },
   { q: `Is ${a.name} better than ${b.name}?`, a: verdict[0] + ` ${a.name} is best for ${lc1(a.bestFor)}; ${b.name} is best for ${lc1(b.bestFor)}.` },
   { q: `Which is cheaper, ${a.name} or ${b.name}?`, a: a.entryPrice != null && b.entryPrice != null ? (a.entryPrice === b.entryPrice ? `Both start at ${money(a.entryPrice)} per user/month on annual billing.` : `${a.entryPrice < b.entryPrice ? a.name : b.name} is cheaper, starting at ${money(Math.min(a.entryPrice, b.entryPrice))} vs ${money(Math.max(a.entryPrice, b.entryPrice))} per user/month on annual billing.`) : `Check each vendor's pricing page; one of them does not publish an entry price.` },
   { q: `Do ${a.name} and ${b.name} have free plans?`, a: `${a.name}: ${a.freePlan ? 'yes' : 'no'}. ${b.name}: ${b.freePlan ? 'yes' : 'no'}.` },
@@ -37,8 +44,18 @@ const jsonld = [
   <div class="answer">
     <p><strong>Verdict:</strong> {verdict[0]}</p>
     {verdict.slice(1).map((l) => <p>{l}</p>)}
+    <p>{checkLine}</p>
     <p>Choose <strong>{a.name}</strong> for {lc1(a.bestFor)}. Choose <strong>{b.name}</strong> for {lc1(b.bestFor)}.</p>
   </div>
+
+  <h2>Scoreboard: {checks.rows.length} checks</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Check</th><th>{a.name}</th><th>{b.name}</th></tr></thead>
+    <tbody>
+      {checks.rows.map((r) => <tr><th>{r.label}</th><td class={r.winner === 'a' ? 'yes' : ''}>{r.winner === 'a' ? 'Leads' : r.winner === 'even' ? 'Even' : ''}</td><td class={r.winner === 'b' ? 'yes' : ''}>{r.winner === 'b' ? 'Leads' : r.winner === 'even' ? 'Even' : ''}</td></tr>)}
+      <tr><th>Total</th><td><strong>{checks.a}</strong></td><td><strong>{checks.b}</strong></td></tr>
+    </tbody>
+  </table></div>
 
   <h2>At a glance</h2>
   <div class="table-wrap"><table>

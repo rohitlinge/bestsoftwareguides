@@ -11,6 +11,8 @@ export type Tool = {
   freePlan: boolean; freePlanDetails: string | null; trial: string | null; minSeats: number;
   plans: Plan[]; features: Record<string, boolean | null>; platforms: string[];
   checked: string; verification: 'verified' | 'reported'; sources: Source[];
+  // optional fact-sheet fields (shown only when present; never guess them)
+  founded?: string; hq?: string; integrations?: string; compliance?: string[]; support?: string[];
   // computed
   score: number; rank: number; entryPrice: number | null; entryMonthly: number | null;
   indexable: boolean; publishDate: Date;
@@ -18,9 +20,15 @@ export type Tool = {
 export type Category = {
   slug: string; name: string; singular: string; topic: string; intro: string;
   buyingTips: string[]; featureLabels: Record<string, string>; faqs: { q: string; a: string }[];
+  plural?: string; useCases?: UseCaseDef[];
   // computed
   tools: Tool[]; publishDate: Date; comparesDate: Date; updated: string; indexable: boolean;
 };
+
+// A use-case directory is a filtered ranking ("Password Managers for Linux"). The rule is
+// applied to the data, shown on the page, and the page is only indexed with 3+ matching tools.
+export type UseCaseRule = { platform?: string; feature?: string; freePlan?: boolean; maxEntryPrice?: number; maxMinSeats?: number };
+export type UseCaseDef = { slug: string; name: string; singular: string; intro: string; ruleText: string; rule: UseCaseRule; faqs?: { q: string; a: string }[] };
 
 // ---------- dates & scheduling ----------
 const DAY = 86400000;
@@ -175,3 +183,96 @@ export function toolFaqs(t: Tool) {
 
 export const site = config;
 export const url = (p: string) => config.url + p;
+
+// ---------- use-case directories ----------
+export type UseCase = UseCaseDef & { category: Category; tools: (Tool & { pos: number })[]; excluded: Tool[]; indexable: boolean; path: string };
+const matches = (t: Tool, r: UseCaseRule) =>
+  (r.platform == null || t.platforms.some((p) => p.toLowerCase().includes(r.platform!.toLowerCase()))) &&
+  (r.feature == null || t.features[r.feature] === true) &&
+  (r.freePlan == null || t.freePlan === r.freePlan) &&
+  (r.maxEntryPrice == null || (t.entryPrice != null && t.entryPrice <= r.maxEntryPrice)) &&
+  (r.maxMinSeats == null || t.minSeats <= r.maxMinSeats);
+export const MIN_DIRECTORY_TOOLS = 3;
+export const useCases: UseCase[] = categories
+  .filter((c) => isLive(c.comparesDate))
+  .flatMap((c) => (c.useCases ?? []).map((u) => {
+    const list = c.tools.filter((t) => matches(t, u.rule));
+    return {
+      ...u, category: c, path: `/best/${u.slug}/`,
+      tools: list.map((t, i) => ({ ...t, pos: i + 1 })),
+      excluded: c.tools.filter((t) => !list.includes(t)),
+      indexable: c.indexable && list.filter((t) => t.indexable).length >= MIN_DIRECTORY_TOOLS,
+    };
+  }))
+  .filter((u) => u.tools.length > 0);
+export const alsoRankedIn = (t: Tool) =>
+  useCases.flatMap((u) => { const hit = u.tools.find((x) => x.slug === t.slug); return hit ? [{ u, pos: hit.pos, of: u.tools.length }] : []; });
+
+// ---------- aggregate numbers ("N of M have a free plan") ----------
+// Quotable, data-derived statements. Answer engines lift sentences like these verbatim.
+const median = (a: number[]) => { const s = [...a].sort((x, y) => x - y); const m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+const monthYear = (s: string) => new Date(s + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
+export function listStats(c: Category, list: Tool[] = c.tools) {
+  const free = list.filter((t) => t.freePlan);
+  const priced = list.filter((t) => t.entryPrice != null).sort((a, b) => a.entryPrice! - b.entryPrice!);
+  const features = Object.entries(c.featureLabels).map(([k, label]) => {
+    const has = list.filter((t) => t.features[k] === true);
+    return { key: k, label, count: has.length, top: has.slice(0, 3) };
+  }).sort((a, b) => b.count - a.count);
+  const checked = list.map((t) => t.checked).sort();
+  return {
+    n: list.length, free, priced,
+    cheapest: priced[0], priciest: priced[priced.length - 1],
+    median: priced.length ? Math.round(median(priced.map((t) => t.entryPrice!)) * 100) / 100 : null,
+    features, checkedMonth: checked.length ? monthYear(checked[checked.length - 1]) : '',
+  };
+}
+// `plural` reads naturally in a sentence ("CRMs", not "CRM software"). Set it in categories.json.
+export const pluralName = (c: Category) => c.plural ?? lcName(c.name);
+export function statSentences(c: Category, list: Tool[] = c.tools, label = pluralName(c)) {
+  const s = listStats(c, list);
+  const out: { q: string; a: string }[] = [];
+  if (s.priced.length) out.push({
+    q: `How much do ${label} cost?`,
+    a: `Of the ${s.n} ${label} we ranked, ${s.priced.length === s.n ? 'all' : s.priced.length} publish a paid starting price on annual billing. The lowest is ${money(s.cheapest!.entryPrice)}/user/mo (${s.cheapest!.name})${s.priced.length > 2 ? `, the median is ${money(s.median)}/user/mo` : ''} and the highest entry price is ${money(s.priciest!.entryPrice)}/user/mo (${s.priciest!.name}). Prices checked ${s.checkedMonth}.`,
+  });
+  out.push({
+    q: `How many ${label} have a free plan?`,
+    a: s.free.length
+      ? `${s.free.length === s.n ? `All ${s.n}` : `${s.free.length} of the ${s.n}`} we ranked have a free plan: ${s.free.map((t) => `${t.name} (${t.score}/10)`).join(', ')}.`
+      : `None of the ${s.n} we ranked has a permanent free plan.`,
+  });
+  const diff = s.features.filter((x) => x.count > 0 && x.count < s.n);
+  const all = s.features.filter((x) => x.count === s.n);
+  if (diff.length || all.length) out.push({
+    q: `Which features set ${label} apart?`,
+    a: [
+      ...diff.slice(0, 3).map((x) => `${x.label}: ${x.count} of ${s.n} (${x.top.map((t) => t.name).join(', ')}${x.count > 3 ? ' and more' : ''}).`),
+      all.length ? `Every tool we ranked confirms ${all.map((x) => lc1(x.label)).join(', ')}, so ${all.length === 1 ? 'it does' : 'these do'} not separate them.` : '',
+    ].filter(Boolean).join(' '),
+  });
+  return out;
+}
+
+// ---------- comparison scoreboard ----------
+// Yes/no, price and seat checks where both tools have data. "Leads on N checks" is easy to quote.
+export function compareChecks(x: Compare) {
+  const { a, b, category: c } = x;
+  const rows: { label: string; winner: 'a' | 'b' | 'even' }[] = [];
+  const bool = (label: string, va: boolean | null | undefined, vb: boolean | null | undefined) => {
+    if (va == null || vb == null) return;
+    rows.push({ label, winner: va === vb ? 'even' : va ? 'a' : 'b' });
+  };
+  const lower = (label: string, va: number | null, vb: number | null) => {
+    if (va == null || vb == null) return;
+    rows.push({ label, winner: va === vb ? 'even' : va < vb ? 'a' : 'b' });
+  };
+  bool('Free plan', a.freePlan, b.freePlan);
+  bool('Free trial', !!a.trial, !!b.trial);
+  lower('Lower entry price (annual)', a.entryPrice, b.entryPrice);
+  lower('Lower entry price (monthly)', a.entryMonthly, b.entryMonthly);
+  lower('Smaller seat minimum', a.minSeats, b.minSeats);
+  for (const [k, label] of Object.entries(c.featureLabels)) bool(label, a.features[k], b.features[k]);
+  const count = (w: string) => rows.filter((r) => r.winner === w).length;
+  return { rows, a: count('a'), b: count('b'), even: count('even') };
+}

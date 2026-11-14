@@ -1,7 +1,8 @@
 // Checks every internal link in dist/ points to a built page. Usage: node scripts/check-links.mjs
 import fs from 'node:fs';
 import path from 'node:path';
-const dist = new URL('../dist/', import.meta.url).pathname;
+import { fileURLToPath } from 'node:url';
+const dist = fileURLToPath(new URL('../dist/', import.meta.url));
 const files = [];
 const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).forEach((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : e.name.endsWith('.html') && files.push(path.join(d, e.name))));
 walk(dist);

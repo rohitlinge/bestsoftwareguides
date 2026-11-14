@@ -1,6 +1,8 @@
 ---
 title: "Free Project Management Plans Compared (2026): What You Actually Get"
 description: "The free plans of ClickUp, Trello, Asana, monday.com and Notion, compared on team size, limits and what you pay when you outgrow them."
+type: "buying-guide"
+category: "project-management-software"
 updated: "2026-11-14"
 ---
 

@@ -1,4 +1,4 @@
-import { categories, tools, compares, freePagesLive, iso, toolCategory } from './data';
+import { categories, tools, compares, freePagesLive, iso, useCases } from './data';
 import { posts } from './posts';
 
 export type UrlEntry = { path: string; lastmod: string; published: string; indexable: boolean };
@@ -17,6 +17,8 @@ export function allUrls(): UrlEntry[] {
     out.push({ path: `/best/${c.slug}/`, lastmod: c.updated, published: iso(c.publishDate), indexable: c.indexable });
     if (freePagesLive(c)) out.push({ path: `/best/free-${c.slug}/`, lastmod: c.updated, published: iso(c.comparesDate), indexable: c.indexable });
   }
+  for (const u of useCases)
+    out.push({ path: u.path, lastmod: u.category.updated, published: iso(u.category.comparesDate), indexable: u.indexable });
   for (const t of tools) {
     for (const suffix of ['', 'pricing/', 'alternatives/'])
       out.push({ path: `/tools/${t.slug}/${suffix}`, lastmod: t.checked, published: iso(t.publishDate), indexable: t.indexable });

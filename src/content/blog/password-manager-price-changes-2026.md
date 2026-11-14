@@ -1,6 +1,8 @@
 ---
 title: "Password Manager Price Changes in 2026: Who Went Up, Who Went Down"
 description: "1Password and Bitwarden raised prices, Proton Pass cut Pass Plus in half and Dashlane dropped its free plan. What it means for you."
+type: "pricing-report"
+category: "password-managers"
 updated: "2026-11-14"
 ---
 

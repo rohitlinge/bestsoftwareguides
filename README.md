@@ -8,6 +8,7 @@ Built with Astro. Content goes live on a schedule (drip publishing). Prices are 
 | Page type | URL pattern | Count at full launch |
 |---|---|---|
 | Category ranking | `/best/{category}/` | 4 |
+| Use-case ranking | `/best/{use-case}/` (e.g. `password-managers-for-linux`) | 6 |
 | Free-plan ranking | `/best/free-{category}/` | 4 |
 | Tool review | `/tools/{tool}/` | 20 |
 | Tool pricing | `/tools/{tool}/pricing/` | 20 |
@@ -18,7 +19,12 @@ Built with Astro. Content goes live on a schedule (drip publishing). Prices are 
 | Machine files | `/sitemap.xml`, `/robots.txt`, `/llms.txt`, `/rss.xml`, `/data/tools.json`, `/urls.json` | 6 |
 
 ### Features aimed at AI citations
+See **[CONTENT_PLAN.md](CONTENT_PLAN.md)** for the techniques taken from itechguides.com and the 10-week publishing calendar.
+
 - **Answer box first** on every page: one or two quotable sentences with the verdict and price.
+- **Use-case rankings** (`useCases` in `categories.json`): filtered lists with a printed rule, the tools left out and why. Indexed only with 3+ matching tools.
+- **Numbers from the data** on every ranking ("4 of 5 have a free plan; median entry $14/user/mo") and a **scoreboard** on every comparison ("A leads on 3 checks").
+- **Guide types** (`type:` how-to, fix-it, explained, buying-guide, pricing-report) and `category:` frontmatter, which links each guide to its ranking.
 - **Tables** for pricing, features and comparisons, plus FAQs generated from the same data, so they never contradict the tables.
 - **JSON-LD** on every page: `ItemList`, `SoftwareApplication` + `AggregateOffer`, `FAQPage`, `BreadcrumbList`, `Article`/`BlogPosting`, `Organization`.
 - **Dated, sourced prices.** Each price shows its checked date and status (*verified* on the vendor page, or *reported* from published breakdowns), with source links.

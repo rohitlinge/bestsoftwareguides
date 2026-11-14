@@ -29,7 +29,9 @@ def main():
 Return JSON with: tagline (one sentence), bestFor (short phrase, no 'best for'), description (2 sentences),
 pros (3 short strings), cons (3 short strings), freePlan (bool), freePlanDetails (str|null), trial (str|null),
 minSeats (int), plans [{{name, monthly, annual, custom, notes}}], features {{{keys}: true|false|null}},
-platforms [str].
+platforms [str], founded (str|null, year only), hq (str|null, "City, Country"), integrations (str|null, e.g. "1,000+ integrations"),
+compliance [str] (e.g. SOC 2, GDPR, HIPAA, SSO/SAML; [] if not stated), support [str] (e.g. Email, Live chat, Phone; [] if not stated).
+Only fill founded/hq/integrations/compliance/support from the text below; otherwise null or [].
 
 HOMEPAGE TEXT:\n{home}\n\nPRICING PAGE TEXT:\n{pricing}"""
     d = llm_json(SYSTEM, user)

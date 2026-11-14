@@ -23,6 +23,29 @@
         "q": "Do AI note takers work without a bot joining the call?",
         "a": "Some do. Fathom offers bot-free capture (in beta on Mac) as well as a meeting bot. Most other tools on this list join as a visible bot participant."
       }
+    ],
+    "plural": "AI meeting note takers",
+    "useCases": [
+      {
+        "slug": "hipaa-compliant-ai-note-takers",
+        "name": "HIPAA-Compliant AI Note Takers",
+        "singular": "HIPAA-compliant AI note taker",
+        "intro": "These AI meeting note takers offer a HIPAA option, which matters for healthcare, therapy and any team that records calls with patient data. HIPAA support usually sits on Business or Enterprise plans and needs a signed Business Associate Agreement (BAA).",
+        "ruleText": "The vendor advertises a HIPAA option (usually on a Business or Enterprise plan).",
+        "rule": {
+          "feature": "hipaaOption"
+        }
+      },
+      {
+        "slug": "ai-note-takers-with-mobile-apps",
+        "name": "AI Note Takers with Mobile Apps",
+        "singular": "AI note taker with a mobile app",
+        "intro": "These AI note takers have native iOS and Android apps, so you can record in-person meetings, review transcripts and share summaries from your phone.",
+        "ruleText": "Has a native iOS app.",
+        "rule": {
+          "platform": "iOS"
+        }
+      }
     ]
   },
   {
@@ -48,6 +71,20 @@
       {
         "q": "Which project management tool is best for a team of two?",
         "a": "Trello, ClickUp and Asana all have free plans that work for two people. monday.com's free plan also covers two seats, but its paid plans start at three seats."
+      }
+    ],
+    "plural": "project management tools",
+    "useCases": [
+      {
+        "slug": "project-management-software-for-small-teams",
+        "name": "Project Management Software for Small Teams",
+        "singular": "project management tool for a small team",
+        "intro": "For teams of one to five people, the main costs to avoid are seat minimums and features you will not use. Every tool here can be bought for a single seat, and all have a free plan to start on.",
+        "ruleText": "No seat minimum on paid plans (you can buy 1 seat) and a free plan.",
+        "rule": {
+          "maxMinSeats": 1,
+          "freePlan": true
+        }
       }
     ]
   },
@@ -75,6 +112,20 @@
         "q": "Which CRM is best for a small business?",
         "a": "HubSpot is the easiest free starting point, Zoho CRM gives the most features per dollar, and Freshsales has the lowest entry paid price with phone and email built in."
       }
+    ],
+    "plural": "CRMs",
+    "useCases": [
+      {
+        "slug": "crm-for-small-business",
+        "name": "CRM Software for Small Business",
+        "singular": "CRM for a small business",
+        "intro": "A small business usually needs contacts, a deal pipeline and email in one place, at a low per-seat price. Every CRM here has a free plan and a paid entry tier of $15 per user per month or less on annual billing.",
+        "ruleText": "Has a free plan, and the paid entry tier costs $15/user/month or less on annual billing.",
+        "rule": {
+          "freePlan": true,
+          "maxEntryPrice": 15
+        }
+      }
     ]
   },
   {
@@ -100,6 +151,29 @@
       {
         "q": "Is a free password manager safe?",
         "a": "A free plan from a reputable, audited provider such as Bitwarden or Proton Pass uses the same encryption as its paid plans. The paid tiers add features such as file attachments, emergency access and advanced monitoring."
+      }
+    ],
+    "plural": "password managers",
+    "useCases": [
+      {
+        "slug": "password-managers-for-linux",
+        "name": "Password Managers for Linux",
+        "singular": "password manager for Linux",
+        "intro": "Many password managers only offer a browser extension on Linux. Every tool here ships a native Linux app as well as browser extensions.",
+        "ruleText": "Has a native Linux desktop app.",
+        "rule": {
+          "platform": "Linux"
+        }
+      },
+      {
+        "slug": "password-managers-with-email-aliases",
+        "name": "Password Managers with Email Aliases",
+        "singular": "password manager with email aliases",
+        "intro": "Email aliases (masked emails) let you sign up for sites without giving out your real address. These password managers create and store aliases alongside your logins.",
+        "ruleText": "Includes email aliases or email masking.",
+        "rule": {
+          "feature": "emailAliases"
+        }
       }
     ]
   }

@@ -16,10 +16,15 @@ const canonical = url(path);
 const fullTitle = path === '/' ? title : `${title} | ${site.name}`;
 const preview = process.env.PREVIEW === '1';
 const org = {
-  '@context': 'https://schema.org', '@type': 'Organization', name: site.name, url: site.url,
-  logo: url('/favicon.svg'), email: site.contactEmail,
+  '@context': 'https://schema.org', '@type': 'Organization', '@id': url('/#organization'), name: site.name, url: site.url,
+  logo: url('/favicon.svg'), email: site.contactEmail, description: site.description,
+  ...(site.sameAs?.length ? { sameAs: site.sameAs } : {}),
 };
-const graph = [org, ...jsonld];
+const website = {
+  '@context': 'https://schema.org', '@type': 'WebSite', '@id': url('/#website'), name: site.name, url: site.url,
+  description: site.tagline, publisher: { '@id': url('/#organization') }, inLanguage: 'en-US',
+};
+const graph = [org, website, ...jsonld];
 ---
 <!doctype html>
 <html lang="en">
@@ -38,9 +43,11 @@ const graph = [org, ...jsonld];
   <meta name="twitter:card" content="summary" />
   {published && <meta property="article:published_time" content={published} />}
   {modified && <meta property="article:modified_time" content={modified} />}
+  {site.verification?.bing && <meta name="msvalidate.01" content={site.verification.bing} />}
+  {site.verification?.google && <meta name="google-site-verification" content={site.verification.google} />}
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="alternate" type="application/rss+xml" title={site.name} href="/rss.xml" />
-  <script type="application/ld+json" set:html={JSON.stringify(graph.length === 1 ? graph[0] : { '@context': 'https://schema.org', '@graph': graph.map(({ ['@context']: _, ...g }) => g) })} />
+  <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph.map(({ ['@context']: _, ...g }) => g) })} />
 </head>
 <body>
   <header class="site-header">

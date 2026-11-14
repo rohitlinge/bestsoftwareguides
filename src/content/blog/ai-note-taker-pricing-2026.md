@@ -1,6 +1,8 @@
 ---
 title: "AI Note Taker Pricing in 2026: Otter vs Fireflies vs Fathom vs tl;dv vs Read AI"
 description: "What five AI meeting note takers really cost per user and for a 5-person team, on annual and monthly billing."
+type: "pricing-report"
+category: "ai-meeting-note-takers"
 updated: "2026-11-14"
 ---
 

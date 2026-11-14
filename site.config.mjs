@@ -8,7 +8,20 @@ export default {
     'Independent software directory: ranked lists, pricing breakdowns and head-to-head comparisons, with every price linked to the vendor page and the date it was checked.',
   contactEmail: 'hello@bestsoftwareguides.online',
   // Put a real, named person here as soon as you can. Named authors are a strong trust signal.
-  editor: { name: 'BestSoftwareGuides Editorial Team', url: '/about/' },
+  // When you do: set type to 'Person', fill jobTitle and bio, and add profile URLs
+  // (LinkedIn, X, GitHub) to sameAs. They go into the Person schema on every article.
+  editor: {
+    type: 'Organization', // 'Person' once a real editor is named
+    name: 'BestSoftwareGuides Editorial Team',
+    url: '/about/',
+    jobTitle: '',
+    bio: '',
+    sameAs: [],
+  },
+  // Organization profiles (X, LinkedIn page, GitHub). Used in Organization schema.
+  sameAs: [],
+  // Search-console verification codes (the content="" value only). Leave empty if you verify by DNS.
+  verification: { bing: '', google: '' },
 
   // ---- Drip-publishing ----
   // Day 0 of the content plan. Every item in src/data/schedule.json is published

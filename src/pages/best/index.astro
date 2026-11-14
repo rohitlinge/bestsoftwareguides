@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { categories, fmtDate, tools } from '../../lib/data';
+import { categories, fmtDate, tools, useCases } from '../../lib/data';
 import { crumbsLd } from '../../lib/ld';
 const topics = [...new Set(categories.map((c) => c.topic))];
 ---
@@ -17,6 +17,13 @@ const topics = [...new Set(categories.map((c) => c.topic))];
             <h3>Best {c.name}</h3>
             <div class="small muted">{c.tools.length} tools · checked {fmtDate(c.updated)}</div>
             <div class="small">Top pick: {c.tools[0].name} ({c.tools[0].score}/10)</div>
+          </a>
+        ))}
+        {useCases.filter((u) => u.indexable && u.category.topic === tp).map((u) => (
+          <a class="card" href={u.path}>
+            <h3>Best {u.name}</h3>
+            <div class="small muted">{u.tools.length} tools · {u.ruleText}</div>
+            <div class="small">Top pick: {u.tools[0].name} ({u.tools[0].score}/10)</div>
           </a>
         ))}
       </div>

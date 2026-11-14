@@ -1,6 +1,8 @@
 ---
 title: "How Much Does a CRM Cost in 2026? Real Prices for 10 Users"
 description: "Entry and mid-tier prices for HubSpot, Salesforce, Zoho CRM, Pipedrive and Freshsales, and what a 10-person team pays per year."
+type: "pricing-report"
+category: "crm-software"
 updated: "2026-11-14"
 ---
 

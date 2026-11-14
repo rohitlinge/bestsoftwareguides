@@ -3,9 +3,8 @@ import Base from '../layouts/Base.astro';
 import { categories, tools, compares, site, fmtDate, money } from '../lib/data';
 import { posts } from '../lib/posts';
 const updated = categories.map((c) => c.updated).sort().pop();
-const ld = { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: site.url, description: site.description };
 ---
-<Base title={`${site.name}: Software Rankings, Pricing and Comparisons`} description={site.description} path="/" jsonld={[ld]}>
+<Base title={`${site.name}: Software Rankings, Pricing and Comparisons`} description={site.description} path="/">
   <section class="hero">
     <h1>Software pricing you can check.</h1>
     <p class="lead">Ranked lists, plan-by-plan pricing and head-to-head comparisons. Every price links to the vendor's page and shows the date we checked it. No vendor can pay for a rank.</p>

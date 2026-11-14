@@ -1,18 +1,29 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { posts } from '../../lib/posts';
+import { posts, POST_TYPES, type PostType } from '../../lib/posts';
 import { fmtDate } from '../../lib/data';
+import { crumbsLd, collectionLd } from '../../lib/ld';
+const types = (Object.keys(POST_TYPES) as PostType[]).filter((t) => posts.some((p) => p.type === t));
+const latest = posts[0]?.updated ?? '';
+const description = `${posts.length} plain-English guides on software pricing, free plans, how-tos and explainers, built on dated, sourced data.`;
 ---
-<Base title="Software Buying Guides" description="Data-driven guides on software pricing, free plans and price changes." path="/blog/">
+<Base title="Software Guides and Research" description={description} path="/blog/" jsonld={[crumbsLd([{ name: 'Home', path: '/' }, { name: 'Guides', path: '/blog/' }]), collectionLd({ name: 'Guides', description, path: '/blog/', modified: latest })]}>
   <div class="crumbs"><a href="/">Home</a> › Guides</div>
-  <h1>Guides</h1>
-  <div class="grid">
-    {posts.map((p) => (
-      <a class="card" href={`/blog/${p.slug}/`}>
-        <h3>{p.title}</h3>
-        <p class="small muted">{p.description}</p>
-        <div class="small muted">{fmtDate(p.published)}</div>
-      </a>
-    ))}
-  </div>
+  <h1>Guides and research</h1>
+  <p class="muted">{description}</p>
+  {types.length > 1 && <p class="small">{types.map((t, i) => <>{i > 0 && ' · '}<a href={`#${t}`}>{POST_TYPES[t]} ({posts.filter((p) => p.type === t).length})</a></>)}</p>}
+  {types.map((t) => (
+    <section id={t}>
+      <h2>{POST_TYPES[t]}</h2>
+      <div class="grid">
+        {posts.filter((p) => p.type === t).map((p) => (
+          <a class="card" href={`/blog/${p.slug}/`}>
+            <h3>{p.title}</h3>
+            <p class="small muted">{p.description}</p>
+            <div class="small muted">{fmtDate(p.updated)} · {p.minutes} min read</div>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
 </Base>

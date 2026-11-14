@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import PriceTable from '../../../components/PriceTable.astro';
 import Faq from '../../../components/Faq.astro';
 import Sources from '../../../components/Sources.astro';
-import { lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, type Tool } from '../../../lib/data';
+import { lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, alsoRankedIn, type Tool } from '../../../lib/data';
 import { crumbsLd, faqLd, softwareLd, articleLd } from '../../../lib/ld';
 
 export function getStaticPaths() {
@@ -24,6 +24,7 @@ const jsonld = [
   articleLd({ headline: title, description, path, published: iso(t.publishDate), modified: t.checked }),
 ];
 const keys = Object.keys(c.featureLabels);
+const also = alsoRankedIn(t).filter((x) => x.u.indexable);
 ---
 <Base title={title} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article" published={iso(t.publishDate)} modified={t.checked}>
   <div class="crumbs"><a href="/">Home</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {t.name}</div>
@@ -68,8 +69,21 @@ const keys = Object.keys(c.featureLabels);
     <tr><th>Paid from</th><td>{t.entryPrice != null ? `${money(t.entryPrice)}/user/mo billed annually` : 'See vendor'}{t.entryMonthly != null ? ` · ${money(t.entryMonthly)} monthly` : ''}</td></tr>
     <tr><th>Minimum seats</th><td>{t.minSeats}</td></tr>
     <tr><th>Platforms</th><td>{t.platforms.join(', ')}</td></tr>
+    {t.founded && <tr><th>Founded</th><td>{t.founded}{t.hq ? ` · ${t.hq}` : ''}</td></tr>}
+    {t.integrations && <tr><th>Integrations</th><td>{t.integrations}</td></tr>}
+    {!!t.compliance?.length && <tr><th>Compliance and security</th><td>{t.compliance.join(', ')}</td></tr>}
+    {!!t.support?.length && <tr><th>Support</th><td>{t.support.join(', ')}</td></tr>}
     {keys.map((k) => <tr><th>{c.featureLabels[k]}</th><td>{t.features[k] === true ? 'Yes' : t.features[k] === false ? 'No' : 'Not confirmed'}</td></tr>)}
+    <tr><th>Facts checked</th><td>{fmtDate(t.checked)} · {t.verification === 'verified' ? 'verified on the vendor pricing page' : 'reported from published breakdowns'} (<a href={t.pricingUrl} rel="nofollow noopener" target="_blank">source</a>)</td></tr>
   </tbody></table></div>
+
+  {also.length > 0 && (
+    <>
+      <h2>Also ranked in</h2>
+      <p class="narrow">{t.name} is ranked in {also.length + 1} of our lists: #{t.rank} of {c.tools.length} in <a href={`/best/${c.slug}/`}>{c.name}</a>, and:</p>
+      <div class="grid">{also.map((x) => <a class="card" href={x.u.path}><strong>#{x.pos} of {x.of}</strong> in {x.u.name}</a>)}</div>
+    </>
+  )}
 
   <h2>{t.name} alternatives</h2>
   <div class="grid">

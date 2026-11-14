@@ -1,6 +1,7 @@
 ---
 title: "Annual vs Monthly Billing: How Much You Save on 20 Software Plans"
 description: "We compared monthly and annual prices on 20 popular software plans. Savings range from 17% to 51%."
+type: "explained"
 updated: "2026-11-14"
 ---
 
