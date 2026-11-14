@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { site, url, categories } from '../lib/data';
+import { site, url, categories, PREVIEW, buildDate } from '../lib/data';
 interface Props {
   title: string;
   description: string;
@@ -14,7 +14,7 @@ interface Props {
 const { title, description, path, noindex = false, jsonld = [], ogType = 'website', published, modified } = Astro.props;
 const canonical = url(path);
 const fullTitle = path === '/' ? title : `${title} | ${site.name}`;
-const preview = process.env.PREVIEW === '1';
+const preview = PREVIEW;
 const org = {
   '@context': 'https://schema.org', '@type': 'Organization', '@id': url('/#organization'), name: site.name, url: site.url,
   logo: url('/favicon.svg'), email: site.contactEmail, description: site.description,
@@ -93,7 +93,7 @@ const graph = [org, website, ...jsonld];
           </ul>
         </div>
       </div>
-      <p class="small">© {new Date().getUTCFullYear()} {site.name}. Prices change; always confirm on the vendor's own pricing page before you buy.</p>
+      <p class="small">© {buildDate.getUTCFullYear()} {site.name}. Prices change; always confirm on the vendor's own pricing page before you buy.</p>
     </div>
   </footer>
 </body>

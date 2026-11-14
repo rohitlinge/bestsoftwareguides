@@ -1,9 +1,7 @@
 import schedule from '../data/schedule.json';
-import config from '../../site.config.mjs';
-import { addDays, isLive, iso } from './data';
+import { addDays, isLive, iso, launch } from './data';
 
 const files = import.meta.glob('../content/blog/*.md', { eager: true }) as Record<string, any>;
-const launch = new Date((process.env.LAUNCH_DATE || config.launchDate) + 'T00:00:00Z');
 const day = new Map(schedule.posts.map((p: any) => [p.slug, p.day]));
 
 // Guide types, as frontmatter `type:`. Mirrors the sections answer engines pull from most:

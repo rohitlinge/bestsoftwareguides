@@ -32,9 +32,12 @@ export type UseCaseDef = { slug: string; name: string; singular: string; intro: 
 
 // ---------- dates & scheduling ----------
 const DAY = 86400000;
-export const PREVIEW = process.env.PREVIEW === '1';
-const launch = new Date((process.env.LAUNCH_DATE || config.launchDate) + 'T00:00:00Z');
-const today = process.env.BUILD_DATE ? new Date(process.env.BUILD_DATE + 'T00:00:00Z') : new Date();
+// Set in astro.config.mjs (resolved in Node at build time). Never read the clock or
+// process.env here: on Cloudflare Workers Builds this module runs where both are unreliable.
+declare const __BUILD_DATE__: string, __LAUNCH_DATE__: string, __PREVIEW__: boolean;
+export const PREVIEW = __PREVIEW__;
+export const launch = new Date(__LAUNCH_DATE__ + 'T00:00:00Z');
+const today = new Date(__BUILD_DATE__ + 'T00:00:00Z');
 export const buildDate = today;
 export const addDays = (d: Date, n: number) => new Date(d.getTime() + n * DAY);
 export const isLive = (d: Date) => PREVIEW || d.getTime() <= today.getTime();
