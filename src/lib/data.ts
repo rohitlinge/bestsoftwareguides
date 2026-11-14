@@ -3,24 +3,35 @@ import toolsRaw from '../data/tools.json';
 import categoriesRaw from '../data/categories.json';
 import schedule from '../data/schedule.json';
 
-export type Plan = { name: string; monthly: number | null; annual: number | null; custom?: boolean; notes?: string };
+export type Plan = { name: string; monthly: number | null; annual: number | null; custom?: boolean; oneTime?: number; notes?: string };
 export type Source = { label: string; url: string; date?: string };
 export type Tool = {
-  slug: string; name: string; category: string; website: string; pricingUrl: string;
+  slug: string; name: string; category: string; alsoIn?: string[]; website: string; pricingUrl: string;
   tagline: string; bestFor: string; description: string; pros: string[]; cons: string[];
   freePlan: boolean; freePlanDetails: string | null; trial: string | null; minSeats: number;
   plans: Plan[]; features: Record<string, boolean | null>; platforms: string[];
   checked: string; verification: 'verified' | 'reported'; sources: Source[];
   // optional fact-sheet fields (shown only when present; never guess them)
+  priceUnit?: PriceUnit; // overrides the category's unit (e.g. per-user prices in a per-month category)
   founded?: string; hq?: string; integrations?: string; compliance?: string[]; support?: string[];
   // computed
   score: number; rank: number; entryPrice: number | null; entryMonthly: number | null;
   indexable: boolean; publishDate: Date;
+  cat: string;          // the category this copy of the tool was ranked in (a tool can be in several)
+  scoreRank: number;    // position by score alone, ignoring a featured placement
+  featured: boolean;    // pinned to #1 as a labelled featured partner (see Category.featured)
+  unit: PriceUnit;
 };
+export type PriceUnit = { short: string; long: string };
+const DEFAULT_UNIT: PriceUnit = { short: 'user/mo', long: 'user/month' };
 export type Category = {
   slug: string; name: string; singular: string; topic: string; intro: string;
   buyingTips: string[]; featureLabels: Record<string, string>; faqs: { q: string; a: string }[];
   plural?: string; useCases?: UseCaseDef[];
+  // A featured partner is pinned to #1 with a visible label; every other tool keeps its score order.
+  featured?: string;
+  priceUnit?: PriceUnit;
+  compareTop?: number; // only build head-to-head pages among the top N (default: every pair)
   // computed
   tools: Tool[]; publishDate: Date; comparesDate: Date; updated: string; indexable: boolean;
 };
@@ -50,6 +61,8 @@ const daysOld = (s: string) => (today.getTime() - new Date(s + 'T00:00:00Z').get
 // Case helpers that keep acronyms and brand names intact ("CRM", "AI", "NordVPN").
 const keepCase = (w: string) => w === w.toUpperCase() || /[A-Z].*[A-Z]|[.\d]/.test(w.slice(1)) || /[A-Z]/.test(w.slice(1));
 export const lc1 = (s: string) => { const w = s.split(' ')[0]; return keepCase(w) ? s : s.charAt(0).toLowerCase() + s.slice(1); };
+// "AI meeting assistant…" -> "an AI meeting assistant…" (taglines are written without an article)
+export const withArticle = (s: string) => /^(a|an|the)\s/i.test(s) ? lc1(s) : (/^[aeiou]/i.test(s) && !/^(one|uni|use)/i.test(s) ? 'an ' : 'a ') + lc1(s);
 export const lcName = (s: string) => s.split(' ').map((w) => (keepCase(w) ? w : w.toLowerCase())).join(' ');
 
 // ---------- pricing helpers ----------
@@ -58,11 +71,17 @@ export const money = (n: number | null | undefined) =>
 const paidPrices = (t: { plans: Plan[] }, key: 'annual' | 'monthly') =>
   t.plans.map((p) => p[key]).filter((v): v is number => typeof v === 'number' && v > 0);
 const minOrNull = (a: number[]) => (a.length ? Math.min(...a) : null);
+export const per = (t: { unit?: PriceUnit }) => '/' + (t.unit ?? DEFAULT_UNIT).short;
+export const perLong = (t: { unit?: PriceUnit }) => 'per ' + (t.unit ?? DEFAULT_UNIT).long;
+export const oneTimeFrom = (t: Tool) => minOrNull(t.plans.map((p) => p.oneTime).filter((v): v is number => typeof v === 'number' && v > 0));
+export const quoteOnly = (t: Tool) => t.entryPrice == null && t.entryMonthly == null && t.plans.some((p) => p.custom);
 export const priceLine = (t: Tool) => {
   const parts: string[] = [];
   if (t.freePlan) parts.push('Free plan');
-  if (t.entryPrice != null) parts.push(`paid from ${money(t.entryPrice)}/user/mo (annual)`);
-  else if (t.entryMonthly != null) parts.push(`paid from ${money(t.entryMonthly)}/user/mo`);
+  if (t.entryPrice != null) parts.push(`paid from ${money(t.entryPrice)}${per(t)} (annual)`);
+  else if (t.entryMonthly != null) parts.push(`paid from ${money(t.entryMonthly)}${per(t)}`);
+  else if (oneTimeFrom(t) != null) parts.push(`one-time licence from ${money(oneTimeFrom(t))}`);
+  else if (quoteOnly(t)) parts.push(t.freePlan ? 'paid plans quote-only' : 'Quote-only pricing');
   if (t.trial) parts.push(t.trial);
   return parts.join(' · ') || 'See vendor pricing';
 };
@@ -75,8 +94,7 @@ const schedCat = new Map(schedule.categories.map((c: any) => [c.slug, c]));
 // Score weights (sum to 1). Published on /methodology/. Score = 5 + 4.8 × weighted sum, so the range is 5.0–9.8.
 export const W = { coverage: 0.45, value: 0.2, free: 0.2, transparency: 0.15 };
 
-function scoreTool(t: any, peers: any[]) {
-  const keys = Object.keys(t.features);
+function scoreTool(t: any, peers: any[], keys: string[]) {
   const coverage = keys.length ? keys.filter((k) => t.features[k] === true).length / keys.length : 0;
   const entries = peers.map((p) => minOrNull(paidPrices(p, 'annual')) ?? minOrNull(paidPrices(p, 'monthly'))).filter((v): v is number => v != null).sort((a, b) => a - b);
   const mine = minOrNull(paidPrices(t, 'annual')) ?? minOrNull(paidPrices(t, 'monthly'));
@@ -98,22 +116,26 @@ export const allCategories: Category[] = catBase
   .map((c) => {
     const s: any = schedCat.get(c.slug);
     const publishDate = addDays(launch, s.day);
-    const raw = (toolsRaw as any[]).filter((t) => t.category === c.slug);
-    const tools: Tool[] = raw
+    const raw = (toolsRaw as any[]).filter((t) => t.category === c.slug || t.alsoIn?.includes(c.slug));
+    const keys = Object.keys(c.featureLabels);
+    const byScore: Tool[] = raw
       .map((t) => {
         const entryPrice = minOrNull(paidPrices(t, 'annual'));
         const entryMonthly = minOrNull(paidPrices(t, 'monthly'));
-        const hasData = t.freePlan === true || entryPrice != null || entryMonthly != null;
+        // Known pricing = a free plan, a published price, or a stated quote-only plan.
+        const hasData = t.freePlan === true || entryPrice != null || entryMonthly != null || t.plans.some((p: Plan) => p.custom || p.oneTime);
         return {
           ...t,
-          score: scoreTool(t, raw),
+          score: scoreTool(t, raw, keys),
           entryPrice, entryMonthly,
           indexable: hasData && daysOld(t.checked) <= config.maxDataAgeDays,
-          publishDate,
+          publishDate, cat: c.slug, featured: false, unit: t.priceUnit ?? c.priceUnit ?? DEFAULT_UNIT,
         } as Tool;
       })
       .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
-      .map((t, i) => ({ ...t, rank: i + 1 }));
+      .map((t, i) => ({ ...t, scoreRank: i + 1 }));
+    const pin = byScore.find((t) => t.slug === c.featured);
+    const tools = (pin ? [{ ...pin, featured: true }, ...byScore.filter((t) => t !== pin)] : byScore).map((t, i) => ({ ...t, rank: i + 1 }));
     const updated = tools.map((t) => t.checked).sort().pop() || iso(publishDate);
     return {
       ...c, tools, publishDate, comparesDate: addDays(launch, s.comparesDay ?? s.day), updated,
@@ -122,10 +144,24 @@ export const allCategories: Category[] = catBase
   });
 
 export const categories = allCategories.filter((c) => isLive(c.publishDate));
-export const tools = categories.flatMap((c) => c.tools);
 export const getCategory = (slug: string) => allCategories.find((c) => c.slug === slug)!;
+// One entry per tool: its copy from its primary category, or the first live category it is in.
+export const tools: Tool[] = (() => {
+  const seen = new Map<string, Tool>();
+  for (const c of categories) for (const t of c.tools) {
+    const prev = seen.get(t.slug);
+    if (!prev || (t.cat === t.category && prev.cat !== prev.category)) seen.set(t.slug, t);
+  }
+  return [...seen.values()];
+})();
 export const getTool = (slug: string) => tools.find((t) => t.slug === slug)!;
-export const toolCategory = (t: Tool) => getCategory(t.category);
+export const toolCategory = (t: Tool) => getCategory(t.cat);
+// Every live category a tool is ranked in, with its position there.
+export const rankingsFor = (slug: string) =>
+  categories.flatMap((c) => { const t = c.tools.find((x) => x.slug === slug); return t ? [{ c, t }] : []; });
+// The highest-scoring tool in a list, ignoring any featured placement.
+export const scoreLeader = <T extends Tool>(list: T[]) => [...list].sort((a, b) => a.scoreRank - b.scoreRank)[0];
+export const featuredLabel = 'Featured partner';
 
 // ---------- comparisons ----------
 export type Compare = { slug: string; a: Tool; b: Tool; category: Category };
@@ -133,9 +169,12 @@ export const compares: Compare[] = categories
   .filter((c) => isLive(c.comparesDate))
   .flatMap((c) => {
     const out: Compare[] = [];
-    c.tools.forEach((a, i) => c.tools.slice(i + 1).forEach((b) => out.push({ slug: `${a.slug}-vs-${b.slug}`, a, b, category: c })));
+    const top = c.tools.slice(0, c.compareTop ?? c.tools.length);
+    top.forEach((a, i) => top.slice(i + 1).forEach((b) => out.push({ slug: `${a.slug}-vs-${b.slug}`, a, b, category: c })));
     return out;
-  });
+  })
+  // Two tools that share several categories get one comparison page (the first category wins).
+  .filter((x, i, all) => all.findIndex((y) => [y.a.slug, y.b.slug].sort().join() === [x.a.slug, x.b.slug].sort().join()) === i);
 export const comparesFor = (t: Tool) => compares.filter((c) => c.a.slug === t.slug || c.b.slug === t.slug);
 export const freePagesLive = (c: Category) => isLive(c.comparesDate) && c.tools.some((t) => t.freePlan);
 
@@ -146,7 +185,7 @@ export function compareVerdict(x: Compare) {
   lines.push(`${winner.name} scores ${winner.score}/10 against ${other.score}/10 for ${other.name} on our data score for ${lcName(category.name)}.`);
   if (a.entryPrice != null && b.entryPrice != null && a.entryPrice !== b.entryPrice) {
     const ch = a.entryPrice < b.entryPrice ? a : b, ex = ch === a ? b : a;
-    lines.push(`${ch.name} is cheaper to start: paid plans from ${money(ch.entryPrice)} vs ${money(ex.entryPrice)} per user/month on annual billing.`);
+    lines.push(`${ch.name} is cheaper to start: paid plans from ${money(ch.entryPrice)} vs ${money(ex.entryPrice)} ${perLong(a)} on annual billing.`);
   }
   if (a.freePlan !== b.freePlan) lines.push(`${(a.freePlan ? a : b).name} has a free plan; ${(a.freePlan ? b : a).name} does not.`);
   else if (a.freePlan && b.freePlan) lines.push('Both have a free plan.');
@@ -165,11 +204,13 @@ export const featureWins = (x: Compare) => {
 export function categoryFaqs(c: Category) {
   const priced = c.tools.filter((t) => t.entryPrice != null).sort((a, b) => a.entryPrice! - b.entryPrice!);
   const free = c.tools.filter((t) => t.freePlan);
-  const top = c.tools[0];
+  const top = scoreLeader(c.tools);
+  const second = c.tools.filter((t) => t !== top).sort((a, b) => a.scoreRank - b.scoreRank)[0];
+  const feat = c.tools.find((t) => t.featured);
   const faqs = [
-    { q: `What is the best ${c.singular} in ${today.getUTCFullYear()}?`, a: `${top.name} ranks first on our data score (${top.score}/10). It is best for ${lc1(top.bestFor)}. ${c.tools[1] ? `${c.tools[1].name} is second (${c.tools[1].score}/10).` : ''}` },
+    { q: `What is the best ${c.singular} in ${today.getUTCFullYear()}?`, a: `${top.name} ranks first on our data score (${top.score}/10). It is best for ${lc1(top.bestFor)}. ${second ? `${second.name} is second (${second.score}/10).` : ''}${feat && feat !== top ? ` ${feat.name} is our featured partner and is listed first (${featuredLabel}); its own score is ${feat.score}/10.` : ''}`.trim() },
   ];
-  if (priced.length) faqs.push({ q: `What is the cheapest ${c.singular}?`, a: `${priced[0].name} has the lowest paid entry price in this list at ${money(priced[0].entryPrice)} per user/month billed annually${free.length ? `. Free plans are available from ${free.map((t) => t.name).join(', ')}` : ''}.` });
+  if (priced.length) faqs.push({ q: `What is the cheapest ${c.singular}?`, a: `${priced[0].name} has the lowest paid entry price in this list at ${money(priced[0].entryPrice)} ${perLong(priced[0])} billed annually${free.length ? `. Free plans are available from ${free.map((t) => t.name).join(', ')}` : ''}.` });
   if (free.length) faqs.push({ q: `Which ${lcName(c.name)} have a free plan?`, a: `${free.map((t) => t.name).join(', ')} offer a free plan. ${(() => { const n = c.tools.filter((t) => !t.freePlan); return n.length ? `${n.map((t) => t.name).join(', ')} ${n.length === 1 ? 'does' : 'do'} not.` : 'Every tool in this list has one.'; })()}`.trim() });
   return [...faqs, ...c.faqs];
 }
@@ -177,9 +218,9 @@ export function categoryFaqs(c: Category) {
 export function toolFaqs(t: Tool) {
   const c = toolCategory(t);
   const f = [
-    { q: `How much does ${t.name} cost?`, a: `${t.name} ${t.freePlan ? 'has a free plan' : 'has no free plan'}${t.entryPrice != null ? ` and paid plans start at ${money(t.entryPrice)} per user/month billed annually` : ''}${t.entryMonthly != null ? ` (${money(t.entryMonthly)} billed monthly)` : ''}. Prices last checked ${fmtDate(t.checked)}.` },
+    { q: `How much does ${t.name} cost?`, a: `${t.name} ${t.freePlan ? 'has a free plan' : 'has no free plan'}${t.entryPrice != null ? ` and paid plans start at ${money(t.entryPrice)} ${perLong(t)} billed annually` : quoteOnly(t) ? `; paid plans are quote-only (contact ${t.name} sales)` : ''}${t.entryMonthly != null ? ` (${money(t.entryMonthly)} billed monthly)` : ''}. Prices last checked ${fmtDate(t.checked)}.` },
     { q: `Is ${t.name} free?`, a: t.freePlan ? `Yes. ${t.freePlanDetails ?? ''}`.trim() : `No. ${t.name} has no permanent free plan${t.trial ? `, but offers a ${lc1(t.trial)}` : ''}.` },
-    { q: `What are the best ${t.name} alternatives?`, a: `${c.tools.filter((o) => o.slug !== t.slug).slice(0, 3).map((o) => `${o.name} (${o.score}/10)`).join(', ')} are the closest alternatives in our ${lcName(c.name)} ranking.` },
+    { q: `What are the best ${t.name} alternatives?`, a: `${c.tools.filter((o) => o.slug !== t.slug).sort((a, b) => a.scoreRank - b.scoreRank).slice(0, 3).map((o) => `${o.name} (${o.score}/10)`).join(', ')} are the highest-scoring alternatives in our ${lcName(c.name)} ranking.` },
   ];
   return f;
 }
@@ -237,7 +278,12 @@ export function statSentences(c: Category, list: Tool[] = c.tools, label = plura
   const out: { q: string; a: string }[] = [];
   if (s.priced.length) out.push({
     q: `How much do ${label} cost?`,
-    a: `Of the ${s.n} ${label} we ranked, ${s.priced.length === s.n ? 'all' : s.priced.length} publish a paid starting price on annual billing. The lowest is ${money(s.cheapest!.entryPrice)}/user/mo (${s.cheapest!.name})${s.priced.length > 2 ? `, the median is ${money(s.median)}/user/mo` : ''} and the highest entry price is ${money(s.priciest!.entryPrice)}/user/mo (${s.priciest!.name}). Prices checked ${s.checkedMonth}.`,
+    a: `Of the ${s.n} ${label} we ranked, ${s.priced.length === s.n ? 'all' : s.priced.length} publish a paid starting price on annual billing. The lowest is ${money(s.cheapest!.entryPrice)}${per(s.cheapest!)} (${s.cheapest!.name})${s.priced.length > 2 ? `, the median is ${money(s.median)}${per(s.cheapest!)}` : ''} and the highest entry price is ${money(s.priciest!.entryPrice)}${per(s.priciest!)} (${s.priciest!.name}). Prices checked ${s.checkedMonth}.`,
+  });
+  const quotes = list.filter((t) => quoteOnly(t));
+  if (quotes.length) out.push({
+    q: `How many ${label} publish their prices?`,
+    a: `${s.n - quotes.length} of the ${s.n} we ranked publish a price or a free plan; ${quotes.length} ${quotes.length === 1 ? 'is' : 'are'} quote-only: ${quotes.map((t) => t.name).join(', ')}.`,
   });
   out.push({
     q: `How many ${label} have a free plan?`,

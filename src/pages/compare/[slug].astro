@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import FeatureTable from '../../components/FeatureTable.astro';
 import Faq from '../../components/Faq.astro';
 import Sources from '../../components/Sources.astro';
-import { lc1, compares, compareVerdict, featureWins, compareChecks, money, fmtDate, iso, buildDate, type Compare } from '../../lib/data';
+import { perLong, per, lc1, compares, compareVerdict, featureWins, compareChecks, money, fmtDate, iso, buildDate, type Compare } from '../../lib/data';
 import { crumbsLd, faqLd, articleLd } from '../../lib/ld';
 
 export function getStaticPaths() {
@@ -27,7 +27,7 @@ const description = `${a.name} vs ${b.name}: ${verdict.slice(0, 2).join(' ')}`;
 const faqs = [
   { q: `How do ${a.name} and ${b.name} compare on features and price?`, a: checkLine },
   { q: `Is ${a.name} better than ${b.name}?`, a: verdict[0] + ` ${a.name} is best for ${lc1(a.bestFor)}; ${b.name} is best for ${lc1(b.bestFor)}.` },
-  { q: `Which is cheaper, ${a.name} or ${b.name}?`, a: a.entryPrice != null && b.entryPrice != null ? (a.entryPrice === b.entryPrice ? `Both start at ${money(a.entryPrice)} per user/month on annual billing.` : `${a.entryPrice < b.entryPrice ? a.name : b.name} is cheaper, starting at ${money(Math.min(a.entryPrice, b.entryPrice))} vs ${money(Math.max(a.entryPrice, b.entryPrice))} per user/month on annual billing.`) : `Check each vendor's pricing page; one of them does not publish an entry price.` },
+  { q: `Which is cheaper, ${a.name} or ${b.name}?`, a: a.entryPrice != null && b.entryPrice != null ? (a.entryPrice === b.entryPrice ? `Both start at ${money(a.entryPrice)} ${perLong(a)} on annual billing.` : `${a.entryPrice < b.entryPrice ? a.name : b.name} is cheaper, starting at ${money(Math.min(a.entryPrice, b.entryPrice))} vs ${money(Math.max(a.entryPrice, b.entryPrice))} ${perLong(a)} on annual billing.`) : `Check each vendor's pricing page; one of them does not publish an entry price.` },
   { q: `Do ${a.name} and ${b.name} have free plans?`, a: `${a.name}: ${a.freePlan ? 'yes' : 'no'}. ${b.name}: ${b.freePlan ? 'yes' : 'no'}.` },
 ];
 const jsonld = [
@@ -64,8 +64,8 @@ const jsonld = [
       <tr><th>Score</th><td>{a.score}/10 (#{a.rank})</td><td>{b.score}/10 (#{b.rank})</td></tr>
       <tr><th>Best for</th><td>{a.bestFor}</td><td>{b.bestFor}</td></tr>
       <tr><th>Free plan</th><td>{a.freePlan ? 'Yes' : 'No'}</td><td>{b.freePlan ? 'Yes' : 'No'}</td></tr>
-      <tr><th>Paid from (annual)</th><td>{a.entryPrice != null ? `${money(a.entryPrice)}/user/mo` : 'See vendor'}</td><td>{b.entryPrice != null ? `${money(b.entryPrice)}/user/mo` : 'See vendor'}</td></tr>
-      <tr><th>Paid from (monthly)</th><td>{a.entryMonthly != null ? `${money(a.entryMonthly)}/user/mo` : '—'}</td><td>{b.entryMonthly != null ? `${money(b.entryMonthly)}/user/mo` : '—'}</td></tr>
+      <tr><th>Paid from (annual)</th><td>{a.entryPrice != null ? `${money(a.entryPrice)}${per(a)}` : 'See vendor'}</td><td>{b.entryPrice != null ? `${money(b.entryPrice)}${per(b)}` : 'See vendor'}</td></tr>
+      <tr><th>Paid from (monthly)</th><td>{a.entryMonthly != null ? `${money(a.entryMonthly)}${per(a)}` : '—'}</td><td>{b.entryMonthly != null ? `${money(b.entryMonthly)}${per(b)}` : '—'}</td></tr>
       <tr><th>Free trial</th><td>{a.trial ?? '—'}</td><td>{b.trial ?? '—'}</td></tr>
       <tr><th>Minimum seats</th><td>{a.minSeats}</td><td>{b.minSeats}</td></tr>
       <tr><th>Platforms</th><td>{a.platforms.join(', ')}</td><td>{b.platforms.join(', ')}</td></tr>

@@ -1532,5 +1532,4108 @@
         "date": "2026"
       }
     ]
+  },
+  {
+    "slug": "querysurge",
+    "name": "QuerySurge",
+    "category": "etl-testing-tools",
+    "alsoIn": [
+      "data-reconciliation-tools",
+      "bi-report-testing-tools",
+      "power-bi-report-testing-tools",
+      "file-testing-tools"
+    ],
+    "website": "https://www.querysurge.com",
+    "pricingUrl": "https://www.querysurge.com/product-tour/licensing-pricing-options",
+    "tagline": "Data validation and ETL testing software that compares source and target data across warehouses, lakes, files and BI reports.",
+    "bestFor": "Enterprise QA and data teams testing data warehouses, migrations and BI reports",
+    "description": "QuerySurge, from RTTS, automates source-to-target data validation with query wizards, two no-code AI modules and connectors to 200+ data stores. Add-on modules cover BI report testing (BI Tester) and DevOps pipelines through a REST API.",
+    "pros": [
+      "List prices are published on the vendor's site, including per-user and 5/10/25-user package prices",
+      "Connects to 200+ data stores, including Snowflake, Databricks, BigQuery, Excel, Parquet, JSON and XML files",
+      "BI Tester validates Power BI, Tableau, IBM Cognos, Strategy, Oracle BI and SAP BusinessObjects reports against source data",
+      "Several trial options: 1-day hosted cloud trial, 15-day download trial and 45-day proof of concept"
+    ],
+    "cons": [
+      "Subscription per-user pricing starts at $6,006 per full user per year with a 2-user minimum",
+      "BI Tester, Full API and Query Import/Export are paid add-ons on the smaller packages",
+      "Customer-installed software (on-premises, private cloud, or pay-as-you-go Azure/AWS marketplace image) rather than a vendor-run SaaS"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "1-day hosted cloud trial (1 user), 15-day download trial (2 users), 45-day proof of concept",
+    "minSeats": 2,
+    "plans": [
+      {
+        "name": "Full User (subscription)",
+        "monthly": null,
+        "annual": 500.5,
+        "custom": false,
+        "notes": "$6,006 per named full user per 12-month term, minimum 2 users; perpetual license $12,642 per user plus annual maintenance; participant (view-only) users $514/year"
+      },
+      {
+        "name": "Group Package (subscription)",
+        "monthly": null,
+        "annual": 1950.08,
+        "custom": false,
+        "notes": "$23,401 per 12-month term for 5 named full users + 10 participant users; floating-user version $35,102"
+      },
+      {
+        "name": "Team Package (subscription)",
+        "monthly": null,
+        "annual": 3536.58,
+        "custom": false,
+        "notes": "$42,439 per 12-month term for 10 named full users + 20 participant users; floating-user version $63,659"
+      },
+      {
+        "name": "Division Package (subscription)",
+        "monthly": null,
+        "annual": 6995.58,
+        "custom": false,
+        "notes": "$83,947 per 12-month term for 25 named full users + 50 participant users, all modules included; floating-user version $125,920"
+      }
+    ],
+    "features": {
+      "noCodeTests": true,
+      "sourceTargetCompare": true,
+      "cicdIntegration": true,
+      "scheduling": true,
+      "cloudWarehouses": true,
+      "rowLevelRecon": true,
+      "crossPlatform": true,
+      "fileToDb": true,
+      "alerts": true,
+      "powerBi": true,
+      "tableau": true,
+      "otherBi": true,
+      "regressionTesting": true,
+      "reportDataValidation": true,
+      "performanceTesting": null,
+      "flatFiles": true,
+      "excelFiles": true,
+      "columnarFiles": true,
+      "schemaValidation": null
+    },
+    "platforms": [
+      "On-premises",
+      "Private cloud (Azure, AWS, GCP and others)",
+      "Azure and AWS marketplace (pay-as-you-go)",
+      "Private cloud",
+      "Azure (pay-as-you-go)",
+      "AWS (pay-as-you-go)",
+      "Public cloud",
+      "AWS and Azure pay-as-you-go"
+    ],
+    "priceUnit": {
+      "short": "user/mo",
+      "long": "user/month"
+    },
+    "founded": "1996",
+    "hq": "New York, NY, USA",
+    "integrations": "200+ data stores and connectors",
+    "compliance": [
+      "SSO (Okta, Azure AD, Google Cloud, Ping Identity)",
+      "LDAP/LDAPS",
+      "Kerberos"
+    ],
+    "support": [
+      "Ticket support",
+      "Knowledge base",
+      "Video tutorials"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "QuerySurge licensing & pricing",
+        "url": "https://www.querysurge.com/product-tour/licensing-pricing-options",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "QuerySurge feature list",
+        "url": "https://www.querysurge.com/product-tour/features",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "QuerySurge integrations",
+        "url": "https://www.querysurge.com/solutions/integrations",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "QuerySurge BI Tester",
+        "url": "https://www.querysurge.com/solutions/querysurge-bi-tester",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "QuerySurge trial options",
+        "url": "https://www.querysurge.com/compare-trial-options",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "About RTTS",
+        "url": "https://www.querysurge.com/company/about-rtts",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "QuerySurge Power BI integration page",
+        "url": "https://www.querysurge.com/solutions/integrations/microsoft-power-bi",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "QuerySurge DevOps for Data page",
+        "url": "https://www.querysurge.com/solutions/devops-for-data-dataops",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "QuerySurge FAQ",
+        "url": "https://www.querysurge.com/product-tour/faq",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "datagaps-etl-validator",
+    "name": "Datagaps ETL Validator",
+    "category": "etl-testing-tools",
+    "alsoIn": [
+      "data-reconciliation-tools",
+      "file-testing-tools"
+    ],
+    "website": "https://www.datagaps.com/data-validation-etl-testing-tools/",
+    "pricingUrl": "https://www.datagaps.com/pricing/",
+    "tagline": "ETL testing and data validation tool, part of the Datagaps DataOps Suite, that compares source and target data at full volume.",
+    "bestFor": "Teams validating data warehouse loads and large data migrations",
+    "description": "ETL Validator compares every record between source and target across 200+ connectors, with a drag-and-drop test builder, AI-generated tests from mapping documents, and scheduling or CI/CD triggers. It is sold on annual subscription alone or within the DataOps Suite, which adds BI Validator (Power BI, Tableau, Oracle Analytics) and data quality monitoring.",
+    "pros": [
+      "Validates 100% of rows rather than samples, with row-level detail on mismatches",
+      "Drag-and-drop visual test builder and AI test generation from source-to-target mapping documents",
+      "Flat file testing with a file watcher that triggers tests when new files arrive",
+      "14-day free trial, extendable by another 14 days on request; SOC 2 Type II and ISO 27001 certified"
+    ],
+    "cons": [
+      "No public prices; annual subscription with a minimum of 4 users",
+      "Minimum contract term is one year",
+      "BigQuery is not named on the product page (Snowflake and Databricks are)"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial, extendable by 14 days on request; no credit card required",
+    "minSeats": 4,
+    "plans": [
+      {
+        "name": "ETL Validator (annual subscription)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; minimum 4 users, minimum 1-year term; named-user and concurrent licenses available"
+      },
+      {
+        "name": "DataOps Suite (annual subscription)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; bundles ETL Validator, Data Quality Monitor and BI Validator"
+      }
+    ],
+    "features": {
+      "noCodeTests": true,
+      "sourceTargetCompare": true,
+      "cicdIntegration": true,
+      "scheduling": true,
+      "cloudWarehouses": null,
+      "rowLevelRecon": true,
+      "crossPlatform": true,
+      "fileToDb": true,
+      "alerts": null,
+      "flatFiles": true,
+      "excelFiles": true,
+      "columnarFiles": true,
+      "schemaValidation": true
+    },
+    "platforms": [],
+    "founded": "2010",
+    "hq": "Herndon, VA, USA",
+    "integrations": "200+ connectors",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001"
+    ],
+    "support": [
+      "Ticketed 9x5 support",
+      "Knowledge resources",
+      "Paid expert service hours"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Datagaps ETL Validator page",
+        "url": "https://www.datagaps.com/data-validation-etl-testing-tools/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datagaps pricing page",
+        "url": "https://www.datagaps.com/pricing/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datagaps data reconciliation page",
+        "url": "https://www.datagaps.com/data-reconciliation/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datagaps about us",
+        "url": "https://www.datagaps.com/about-us/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datagaps contact page",
+        "url": "https://www.datagaps.com/contact-us/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "rightdata-datatrust",
+    "name": "RightData DataTrust",
+    "category": "data-reconciliation-tools",
+    "alsoIn": [
+      "etl-testing-tools",
+      "data-quality-tools"
+    ],
+    "website": "https://www.getrightdata.com/products/datatrust",
+    "pricingUrl": "https://www.getrightdata.com/pricing",
+    "tagline": "Data quality, ETL testing and source-to-target reconciliation product in the RightData platform.",
+    "bestFor": "Enterprises reconciling data across migrations, ETL pipelines and financial controls",
+    "description": "DataTrust runs row-by-row and aggregate source-to-target comparisons, ETL regression tests with CI/CD integration, data profiling and pre-built, AI-suggested and custom quality rules. It sits alongside RightData's RightSight (observability) and DataMarket (data products) products.",
+    "pros": [
+      "Row-level, aggregate and schema reconciliation plus balance and control-total checks for financial data",
+      "Alerts through Slack, email, PagerDuty and webhooks",
+      "Data certification workflow with approvals, validity periods and audit trail"
+    ],
+    "cons": [
+      "No public pricing; every deal is a scoped proposal",
+      "Vendor pages ask buyers to confirm connector coverage, scheduling and notification behaviour for each implementation",
+      "No free trial listed; evaluation is a scoped proof of concept"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "DataTrust",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; proposal based on products, scope, deployment and services"
+      },
+      {
+        "name": "Platform Bundle (DataMarket + DataTrust + RightSight)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only"
+      }
+    ],
+    "features": {
+      "rowLevelRecon": true,
+      "crossPlatform": true,
+      "fileToDb": null,
+      "scheduling": null,
+      "alerts": true,
+      "noCodeTests": null,
+      "sourceTargetCompare": true,
+      "cicdIntegration": true,
+      "cloudWarehouses": true,
+      "profiling": true,
+      "ruleBasedChecks": true,
+      "anomalyDetection": true,
+      "cleansing": null,
+      "openSource": false
+    },
+    "platforms": [],
+    "hq": "Atlanta, GA, USA",
+    "integrations": "Databricks, Snowflake, AWS, Microsoft Azure, SAP (integrations page)",
+    "support": [
+      "24/7 global support"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "RightData DataTrust product page",
+        "url": "https://www.getrightdata.com/products/datatrust",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "RightData pricing page",
+        "url": "https://www.getrightdata.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "RightData integrations page",
+        "url": "https://www.getrightdata.com/integrations",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "RightData company page",
+        "url": "https://www.getrightdata.com/company",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "tricentis-data-integrity",
+    "name": "Tricentis Data Integrity",
+    "category": "etl-testing-tools",
+    "alsoIn": [
+      "data-reconciliation-tools",
+      "bi-report-testing-tools",
+      "power-bi-report-testing-tools",
+      "file-testing-tools"
+    ],
+    "website": "https://www.tricentis.com/products/data-integrity",
+    "pricingUrl": "https://www.tricentis.com/software-testing-tool-trial-demo",
+    "tagline": "Cloud-native, model-based data testing product from Tricentis for validating and reconciling data across systems, pipelines and reports.",
+    "bestFor": "Enterprises already using Tricentis Tosca, especially for SAP and ERP migrations",
+    "description": "Tricentis Data Integrity tests data end to end, from source systems through the warehouse to BI reports, using model-based, low-code test authoring and pre-built connectors to SAP, Salesforce, Oracle, SQL Server, Snowflake and Databricks. It is part of the Tricentis quality engineering platform alongside Tosca, NeoLoad and qTest.",
+    "pros": [
+      "Pre-built connectors to SAP, Salesforce, Oracle, SQL Server, Snowflake and Databricks",
+      "Report testing for Power BI, Tableau and QlikView using Tosca model-based automation (per Tricentis' 2024 datasheet)",
+      "Low-code test authoring and risk-based prioritization of tests",
+      "Cloud-native delivery, so no test infrastructure to maintain"
+    ],
+    "cons": [
+      "No public pricing; pricing and demos by request only",
+      "No self-serve trial listed for Data Integrity (demo request)",
+      "CI/CD integration and alert channels are not described on the product page"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Trial available on request (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Tricentis Data Integrity",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only ('Request pricing')"
+      }
+    ],
+    "features": {
+      "noCodeTests": null,
+      "sourceTargetCompare": true,
+      "cicdIntegration": null,
+      "scheduling": true,
+      "cloudWarehouses": null,
+      "rowLevelRecon": true,
+      "crossPlatform": true,
+      "fileToDb": null,
+      "alerts": null,
+      "powerBi": true,
+      "tableau": true,
+      "otherBi": true,
+      "regressionTesting": true,
+      "reportDataValidation": true,
+      "flatFiles": true,
+      "columnarFiles": true,
+      "performanceTesting": null,
+      "excelFiles": null,
+      "schemaValidation": null
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Windows (Tosca Commander)"
+    ],
+    "hq": "Austin, TX, USA",
+    "integrations": "Pre-built connectors incl. SAP, Salesforce, Oracle, SQL Server, Snowflake, Databricks",
+    "support": [
+      "Documentation"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Tricentis Data Integrity product page",
+        "url": "https://www.tricentis.com/products/data-integrity",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Tricentis Data Integrity data sheet (2024, PDF)",
+        "url": "https://be.tricentis.com/media-assets/pdf/Tricentis-data-sheet_Tricentis-Data-Integrity-drive-better-business-outcomes.pdf",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Tricentis demos & trials page",
+        "url": "https://www.tricentis.com/software-testing-tool-trial-demo",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Tricentis company page",
+        "url": "https://www.tricentis.com/company",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Tricentis data testing rules cheat sheet (PDF)",
+        "url": "https://be.tricentis.com/media-assets/pdf/Tricentis-data-sheet_Data-testing-rules-cheat-sheet.pdf",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Tricentis Data Integrity documentation (Tosca 2026.1)",
+        "url": "https://docs.tricentis.com/tosca-2026.1/en-us/content/data_integrity/di_intro.htm",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Tricentis docs: Data Integrity reconciliation testing",
+        "url": "https://docs.tricentis.com/tosca-2023.2/en-us/content/data_integrity/di_reconciliation.htm",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Tricentis docs: Text Files modules",
+        "url": "https://docs.tricentis.com/tosca-2024.1/en-us/content/data_integrity/di_modules_textfiles.htm",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "bigeval",
+    "name": "BiG EVAL NX³",
+    "category": "etl-testing-tools",
+    "alsoIn": [
+      "data-quality-tools",
+      "file-testing-tools"
+    ],
+    "website": "https://bigeval.com",
+    "pricingUrl": "https://bigeval.com/pricing/",
+    "tagline": "Swiss data quality and data testing platform that runs metadata-driven, rule-based and AI-assisted checks across data sources.",
+    "bestFor": "Regulated enterprises (banking, insurance, retail) automating data tests at scale",
+    "description": "BiG EVAL NX³ runs comparison, schema-drift and rule-based tests across databases, warehouses, files and APIs, generating thousands of test instances from metadata, with scheduling, API triggers and quality gates in CI/CD. Add-on modules provide AI-assisted test authoring, alert routing, a data quality radar with AI anomaly detection, and expert-input workflows.",
+    "pros": [
+      "Modular pricing: Core engine plus optional AI Assistance, Operations, Insights and Human Expertise modules, each in Basic or Premium",
+      "Core includes unlimited tests, scheduling, API-triggered and parallel execution, and e-mail alerts",
+      "On-premises, private cloud or hybrid deployment; the Premium AI module can use self-hosted models",
+      "MCP connector lets LLM agents create, run and analyse tests (AI Assistance Premium)"
+    ],
+    "cons": [
+      "No public prices; annual subscription quoted per module selection",
+      "Core Basic is limited to 1 workspace and about 10 data sources; CI/CD quality gates and SSO need Core Premium",
+      "No free trial; evaluation is a proof-of-concept period"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Proof-of-concept period (no self-serve free trial)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Test Automation Bundle",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; annual subscription"
+      },
+      {
+        "name": "Operations Bundle",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; annual subscription; adds alerting and process integration"
+      },
+      {
+        "name": "Suite",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; annual subscription; all modules"
+      }
+    ],
+    "features": {
+      "noCodeTests": null,
+      "sourceTargetCompare": true,
+      "cicdIntegration": true,
+      "scheduling": true,
+      "cloudWarehouses": null,
+      "profiling": true,
+      "ruleBasedChecks": true,
+      "anomalyDetection": true,
+      "cleansing": null,
+      "openSource": false,
+      "excelFiles": true,
+      "flatFiles": null,
+      "columnarFiles": null,
+      "fileToDb": null,
+      "schemaValidation": null
+    },
+    "platforms": [
+      "On-premises",
+      "Private cloud",
+      "Hybrid"
+    ],
+    "founded": "2010",
+    "hq": "Kloten, Switzerland",
+    "integrations": "Native connectors for databases, warehouses, cloud platforms, files and APIs; Power Automate, webhooks, Jira (Operations module)",
+    "compliance": [
+      "SSO & directory sync (Entra ID, Active Directory) on Core Premium",
+      "Audit reports (Core Premium)"
+    ],
+    "support": [
+      "Documentation",
+      "Support center",
+      "Academy",
+      "Docs"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "BiG EVAL pricing page",
+        "url": "https://bigeval.com/pricing/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "BiG EVAL home page",
+        "url": "https://bigeval.com/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "BiG EVAL automation engine page",
+        "url": "https://bigeval.com/platform/automation-engine/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "BiG EVAL imprint",
+        "url": "https://bigeval.com/imprint/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "BiG EVAL platform features",
+        "url": "https://bigeval.com/platform/features/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "BiG EVAL docs: Connecting to Excel (XLSX)",
+        "url": "https://bigeval.com/docs/user/datasources/flatfiles/connecting-to-excel-xlsx/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "BiG EVAL docs portal",
+        "url": "https://bigeval.com/docs/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "datafold",
+    "name": "Datafold",
+    "category": "data-reconciliation-tools",
+    "alsoIn": [
+      "etl-testing-tools",
+      "file-testing-tools"
+    ],
+    "website": "https://www.datafold.com",
+    "pricingUrl": "https://www.datafold.com/contact-us/",
+    "tagline": "Data diffing platform that compares datasets value by value within or across databases, used for migrations and CI testing of data code.",
+    "bestFor": "Analytics engineering teams using dbt and teams validating warehouse migrations",
+    "description": "Datafold's Data Diff compares tables, views, queries and files at the value level within or across 20+ databases and shows the exact rows and columns that differ, from the UI, API or MCP. It runs diffs on every pull request in CI and on schedules as monitors, and the company also sells platform migrations as a fixed-price service.",
+    "pros": [
+      "Value-level, row-and-column diffs across databases, including Snowflake, Databricks, BigQuery, Redshift, Oracle, SQL Server and Teradata",
+      "File diffing for CSV/TSV, Excel and Parquet files in S3, ADLS or GCS, including file-to-table comparisons",
+      "CI integration runs diffs on each pull request with dbt, Airflow or any git repository",
+      "SOC 2, HIPAA and GDPR compliance; SSO via SAML, Okta and Google"
+    ],
+    "cons": [
+      "No public pricing; the pricing URL redirects to a contact form and multi-tenant sign-up is by invitation",
+      "In the current version, data diff monitors do not send notifications yet (Slack, Teams and PagerDuty alerts are documented for Datafold Classic)",
+      "File diffing does not list JSON or XML files"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Datafold",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; demo request ('Discuss pricing and features')"
+      }
+    ],
+    "features": {
+      "rowLevelRecon": true,
+      "crossPlatform": true,
+      "fileToDb": true,
+      "scheduling": true,
+      "alerts": null,
+      "noCodeTests": true,
+      "sourceTargetCompare": true,
+      "cicdIntegration": true,
+      "cloudWarehouses": true,
+      "flatFiles": null,
+      "excelFiles": true,
+      "columnarFiles": true,
+      "schemaValidation": null
+    },
+    "platforms": [
+      "Cloud (SaaS, multi-tenant)",
+      "Dedicated single-tenant cloud",
+      "Customer-hosted in AWS, GCP or Azure (operated by Datafold)"
+    ],
+    "integrations": "20+ databases plus S3, ADLS and GCS; dbt, Airflow, GitHub/GitLab",
+    "compliance": [
+      "SOC 2",
+      "HIPAA",
+      "GDPR",
+      "SSO (SAML, Okta, Google OAuth)"
+    ],
+    "support": [
+      "Email",
+      "Slack",
+      "In-app chat",
+      "Docs"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Datafold Data Diff page",
+        "url": "https://www.datafold.com/data-diff/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datafold CI/CD testing page",
+        "url": "https://www.datafold.com/data-deployment-testing/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datafold docs: data connections",
+        "url": "https://docs.datafold.com/integrations/databases",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datafold docs: file diffing",
+        "url": "https://docs.datafold.com/data-diff/file-diffing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datafold docs: data diff monitors",
+        "url": "https://docs.datafold.com/data-monitoring/monitors/data-diff-monitors",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datafold docs: deployment options",
+        "url": "https://docs.datafold.com/datafold-deployment/datafold-deployment-options",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "dbt",
+    "name": "dbt",
+    "category": "etl-testing-tools",
+    "website": "https://www.getdbt.com",
+    "pricingUrl": "https://www.getdbt.com/pricing",
+    "tagline": "SQL-based data transformation framework and platform from dbt Labs with built-in data tests and unit tests.",
+    "bestFor": "Analytics engineers testing transformations inside the warehouse",
+    "description": "dbt builds warehouse models from SQL and runs data tests (unique, not_null, accepted_values, relationships, plus custom SQL tests) and unit tests against them. The open-source runtime is free; the dbt platform adds a browser IDE, job scheduling and CI checks on GitHub and GitLab.",
+    "pros": [
+      "Free Developer plan (1 seat) and an Apache 2.0 open-source runtime",
+      "Four generic data tests built in; any SQL query that returns failing rows can become a test",
+      "Job scheduling and CI checks on GitHub and GitLab included from the free plan",
+      "Adapters for Snowflake, Databricks and BigQuery among others"
+    ],
+    "cons": [
+      "Tests run inside one warehouse; comparing a separate source system with a target is not built in",
+      "Tests are written in SQL and YAML rather than built in a no-code interface",
+      "Starter costs $100 per user per month and is limited to 1 project; SSO needs Enterprise"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Developer plan: 1 developer seat, 3,000 successful models built per month, 1 project; open-source dbt runtime (Apache 2.0) can be self-hosted",
+    "trial": "Starter plan free trial (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Developer",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free; 1 developer seat, 3,000 successful models built/month, 1 project"
+      },
+      {
+        "name": "Starter",
+        "monthly": 100,
+        "annual": null,
+        "custom": false,
+        "notes": "$100 per user/month; five developer seats, 15,000 successful models built/month, 1 project"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing; 100,000 models built/month, 30 projects, SSO/RBAC/SCIM"
+      },
+      {
+        "name": "Enterprise+",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing; unlimited projects, PrivateLink, hybrid projects"
+      }
+    ],
+    "features": {
+      "noCodeTests": null,
+      "sourceTargetCompare": null,
+      "cicdIntegration": true,
+      "scheduling": true,
+      "cloudWarehouses": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted (open-source runtime)"
+    ],
+    "priceUnit": {
+      "short": "user/mo",
+      "long": "user/month"
+    },
+    "integrations": "Trusted adapters incl. Snowflake, Databricks, BigQuery",
+    "compliance": [
+      "SSO, RBAC and SCIM (Enterprise)",
+      "MFA"
+    ],
+    "support": [
+      "Priority support with SLAs (Enterprise)",
+      "Docs",
+      "Community"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "dbt pricing page",
+        "url": "https://www.getdbt.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "dbt docs: data tests",
+        "url": "https://docs.getdbt.com/docs/build/data-tests",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "dbt docs: unit tests",
+        "url": "https://docs.getdbt.com/docs/build/unit-tests",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "dbt docs: trusted adapters",
+        "url": "https://docs.getdbt.com/docs/trusted-adapters",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "dbt docs: installation overview",
+        "url": "https://docs.getdbt.com/docs/core/installation-overview",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "informatica-cloud-data-validation",
+    "name": "Informatica Cloud Data Validation",
+    "category": "etl-testing-tools",
+    "alsoIn": [
+      "data-reconciliation-tools",
+      "file-testing-tools"
+    ],
+    "website": "https://onlinehelp.informatica.com/IICS/prod/datavalidation/en/aa-introducing-data-validation/Introducing_Data_Validation.html",
+    "pricingUrl": "https://www.informatica.com/products/cloud-integration/pricing.html",
+    "tagline": "Data Validation service in Informatica's Intelligent Data Management Cloud (IDMC) that compares two data sets to check integration results.",
+    "bestFor": "Informatica IDMC customers validating integration jobs and PowerCenter-to-cloud migrations",
+    "description": "Data Validation test cases compare tables, views, saved SQL queries or files between two connections, map columns automatically, and report unmatched, missing and extra records. Test cases can be scheduled, send success or failure emails, and be run through a REST API.",
+    "pros": [
+      "Connects to Snowflake, Databricks Delta, Google BigQuery, Redshift, Oracle, SQL Server, Teradata, SAP HANA, Salesforce and more",
+      "Compares Avro, CSV, JSON, ORC and Parquet files in ADLS Gen2, and flat or Parquet files in S3",
+      "Reports list unmatched, missing and extra records; scheduling and email notifications are built in",
+      "Wizard-based test creation with automatic column mapping"
+    ],
+    "cons": [
+      "Only available inside Informatica IDMC; needs a Cloud Data Validation license plus several transformation licenses",
+      "The Secure Agent that runs tests needs at least 32 GB memory; sub-organizations are not supported",
+      "Pricing is consumption-based (IPUs) and not published"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "IDMC consumption (IPU) pricing",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; volume-based Informatica Processing Units; requires Cloud Data Validation license"
+      }
+    ],
+    "features": {
+      "noCodeTests": true,
+      "sourceTargetCompare": true,
+      "cicdIntegration": null,
+      "scheduling": true,
+      "cloudWarehouses": true,
+      "rowLevelRecon": true,
+      "crossPlatform": true,
+      "fileToDb": true,
+      "alerts": true,
+      "flatFiles": null,
+      "excelFiles": null,
+      "columnarFiles": true,
+      "schemaValidation": null
+    },
+    "platforms": [
+      "Cloud (IDMC) with Secure Agent"
+    ],
+    "integrations": "20 connection types listed for Data Validation test cases",
+    "support": [
+      "Docs"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Informatica Data Validation: introduction",
+        "url": "https://onlinehelp.informatica.com/IICS/prod/datavalidation/en/aa-introducing-data-validation/Introducing_Data_Validation.html",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Informatica Data Validation: test case connections",
+        "url": "https://onlinehelp.informatica.com/IICS/prod/datavalidation/en/aa-introducing-data-validation/Test_case_connections.html",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Informatica Data Validation: creating a test case",
+        "url": "https://onlinehelp.informatica.com/IICS/prod/datavalidation/en/ca-test-cases/Creating_a_test_case.html",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Informatica Data Validation: test cases",
+        "url": "https://onlinehelp.informatica.com/IICS/prod/datavalidation/en/ca-test-cases/Test_cases.html",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Informatica IDMC pricing page",
+        "url": "https://www.informatica.com/products/cloud-integration/pricing.html",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "duco",
+    "name": "Duco",
+    "category": "data-reconciliation-tools",
+    "website": "https://du.co",
+    "pricingUrl": "https://du.co/",
+    "tagline": "Cloud reconciliation and data automation platform for financial services, with rule-based matching and AI agents.",
+    "bestFor": "Banks, asset managers and brokers running cash, position and trade reconciliations",
+    "description": "Duco is a SaaS platform for data preparation, reconciliation and exception management, using a rule-based matching engine with tolerances, roll-ups, fuzzy matching and multi-pass processing. Its agentic workspace can build reconciliations from a plain-language description and propose rule changes that a person approves.",
+    "pros": [
+      "SaaS with no installation; vendor says a reconciliation can be built from scratch in hours",
+      "Ingests PDFs, SWIFT formats, Excel and CSV files as-is and normalises them",
+      "Reconciliations and data prep can be scheduled by time of day or by data arrival",
+      "ISO 27001 and SOC 2 Type 2 certified; SSO available"
+    ],
+    "cons": [
+      "Built for financial services operations, not for testing ETL pipelines or data warehouses",
+      "No public pricing; demo request only",
+      "Direct database-to-database comparison is not described on the site"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Duco platform",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only (request a demo)"
+      }
+    ],
+    "features": {
+      "rowLevelRecon": true,
+      "crossPlatform": null,
+      "fileToDb": null,
+      "scheduling": true,
+      "alerts": null
+    },
+    "platforms": [
+      "Cloud (SaaS on AWS)"
+    ],
+    "compliance": [
+      "ISO 27001",
+      "SOC 2 Type 2",
+      "SSO"
+    ],
+    "support": [
+      "Professional services"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Duco home page",
+        "url": "https://du.co/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Duco reconciliation page",
+        "url": "https://du.co/platform/reconciliation/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Duco trust and security",
+        "url": "https://du.co/about/trust-and-security/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Duco our story",
+        "url": "https://du.co/about/our-story/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "reconart",
+    "name": "ReconArt",
+    "category": "data-reconciliation-tools",
+    "website": "https://www.reconart.com",
+    "pricingUrl": "https://www.reconart.com/plans/",
+    "tagline": "Financial reconciliation and close automation platform for transaction matching, balance sheet certification and intercompany reconciliation.",
+    "bestFor": "Finance and operations teams at banks, credit unions, payment firms and corporates",
+    "description": "ReconArt matches high volumes of transactions (bank, card, AP/AR, GL to sub-ledger, Nostro/Vostro, intercompany) with visually configured rules and tolerances, and adds balance sheet certification, journal approval and close task modules. Its Recon Data Factory pulls and validates files from SFTP and cloud storage on a schedule.",
+    "pros": [
+      "Edition-based annual licensing with a fixed 60- or 80-hour implementation package and no upgrade fees",
+      "No-code setup for matching rules, approvals and notifications; an AI assistant can create matching rules from natural language",
+      "Deploys on-premises, in a private cloud or as SaaS",
+      "ISO/IEC 27001:2022 certified"
+    ],
+    "cons": [
+      "No published prices; editions are quoted",
+      "Transaction caps per edition (Essentials 25 million, Plus 50 million transactions per year)",
+      "Aimed at financial reconciliation, not at testing data pipelines or warehouses"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Essentials",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; annual subscription; 25 million transactions per year, transaction matching and exceptions"
+      },
+      {
+        "name": "Plus",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; annual subscription; Essentials + Certify, 50 million transactions per year"
+      },
+      {
+        "name": "Certify",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; annual subscription; balance sheet reconciliation and certification"
+      },
+      {
+        "name": "Close",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; annual subscription; 2+ financial close modules"
+      }
+    ],
+    "features": {
+      "rowLevelRecon": true,
+      "crossPlatform": null,
+      "fileToDb": null,
+      "scheduling": true,
+      "alerts": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Private cloud",
+      "On-premises",
+      "Hybrid"
+    ],
+    "hq": "Arlington, VA, USA",
+    "integrations": "Public REST API; ERP, core banking, SFTP, Dropbox, OneDrive, Google Drive, Amazon S3, Kafka",
+    "compliance": [
+      "ISO/IEC 27001:2022",
+      "SSO / Active Directory"
+    ],
+    "support": [
+      "Ongoing support and maintenance included"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "ReconArt plans page",
+        "url": "https://www.reconart.com/plans/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "ReconArt home page",
+        "url": "https://www.reconart.com/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "ReconArt API & integrations",
+        "url": "https://www.reconart.com/software-overview/integrations/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "ReconArt enterprise edition",
+        "url": "https://www.reconart.com/enterprise-edition/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "gresham-control-cloud",
+    "name": "Gresham Control Cloud",
+    "category": "data-reconciliation-tools",
+    "website": "https://www.greshamtech.com/products/control-cloud",
+    "pricingUrl": "https://www.greshamtech.com/products/control-cloud",
+    "tagline": "Reconciliation and break management platform from Gresham for financial institutions.",
+    "bestFor": "Banks, asset managers and fund administrators with complex or multi-party reconciliations",
+    "description": "Control Cloud matches cash, positions, NAV, trades and securities data with multi-algorithm matching, including n-way reconciliations across three or more sources in one run. Business users configure controls in Control Studio without coding, and break management rules can resolve exceptions automatically.",
+    "pros": [
+      "N-way matching across three or more data sources in a single run",
+      "Control Studio lets business users build and change reconciliations without code",
+      "Vendor states in-memory throughput of 500K transactions per second",
+      "Threshold-based alerts plus file and account status in one monitoring view"
+    ],
+    "cons": [
+      "No public pricing; demo request only",
+      "Focused on financial operations data rather than ETL or warehouse testing",
+      "Alert delivery channels and scheduling options are not described on the product page"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Control Cloud",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only (book a demo)"
+      }
+    ],
+    "features": {
+      "rowLevelRecon": true,
+      "crossPlatform": null,
+      "fileToDb": null,
+      "scheduling": null,
+      "alerts": null
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "integrations": "REST APIs (Control Cloud docs)",
+    "support": [
+      "Docs",
+      "Managed reconciliation services"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Gresham Control Cloud page",
+        "url": "https://www.greshamtech.com/products/control-cloud",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Gresham home page",
+        "url": "https://www.greshamtech.com/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "smartstream-smart-reconciliations",
+    "name": "Smartstream Smart Reconciliations",
+    "category": "data-reconciliation-tools",
+    "website": "https://smart.stream/solutions/smart-reconciliations/",
+    "pricingUrl": "https://smart.stream/solutions/smart-reconciliations/",
+    "tagline": "Reconciliation and exception management software from Smartstream, offered as Smart Reconciliations Premium and the cloud-native Air platform.",
+    "bestFor": "Banks, payment firms and capital markets firms reconciling high transaction volumes",
+    "description": "Smart Reconciliations Premium is Smartstream's enterprise platform for high-volume reconciliations, now with AI agents that investigate and progress exceptions; Air is its cloud-native SaaS platform for self-service reconciliation. Use cases include cash, cards and ATM, custody and securities, trade lifecycle, GL substantiation and digital assets.",
+    "pros": [
+      "Covers a wide set of financial reconciliation use cases, from cash and cards to crypto and regulatory reporting",
+      "Air loads XML, CSV, JSON and unstructured data and connects to Oracle, SFTP and Amazon S3 through no-code connectors",
+      "Supports SWIFT MT940/MT950, CAMT and ISO 20022 formats",
+      "Managed services and cloud environments available"
+    ],
+    "cons": [
+      "No public pricing; contact sales",
+      "Aimed at financial operations rather than data pipeline testing",
+      "Scheduling and alert channels are not described on the solution pages"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Smart Reconciliations Premium",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only"
+      },
+      {
+        "name": "Air",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; cloud-native SaaS"
+      }
+    ],
+    "features": {
+      "rowLevelRecon": true,
+      "crossPlatform": null,
+      "fileToDb": null,
+      "scheduling": null,
+      "alerts": null
+    },
+    "platforms": [
+      "Cloud (SaaS, Air)",
+      "Managed services"
+    ],
+    "integrations": "No-code connectors incl. Oracle, SFTP, Amazon S3; MCP connectivity (Premium)",
+    "support": [
+      "Customer portal",
+      "Professional services",
+      "Managed services"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Smartstream Smart Reconciliations page",
+        "url": "https://smart.stream/solutions/smart-reconciliations/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Smartstream Air page",
+        "url": "https://smart.stream/air/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Smartstream about page",
+        "url": "https://smart.stream/about/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "monte-carlo",
+    "name": "Monte Carlo",
+    "category": "data-monitoring-testing-tools",
+    "alsoIn": [
+      "data-quality-tools"
+    ],
+    "website": "https://montecarlo.ai",
+    "pricingUrl": "https://montecarlo.ai/pricing",
+    "tagline": "Data and AI observability platform that monitors warehouse tables, pipelines and AI agents for anomalies.",
+    "bestFor": "Mid-size and large data teams that want automated monitoring across a warehouse, ETL and BI stack",
+    "description": "Monte Carlo monitors tables for freshness, volume and schema changes with learned thresholds, and adds metric, validation and custom SQL monitors. Alerts go to Slack, Microsoft Teams, email, PagerDuty and other tools, and field-level lineage is used for root-cause and impact analysis.",
+    "pros": [
+      "Table monitors learn normal update, size and growth patterns, so freshness and volume coverage needs little manual threshold setting",
+      "Notification audiences can route alerts to Slack, Microsoft Teams, email, PagerDuty, Opsgenie, Webex, Jira, ServiceNow and webhooks",
+      "Monitors can be defined as code (YAML) as well as in the UI",
+      "Also monitors AI agents (agent evaluation, metric, trajectory and validation monitors)"
+    ],
+    "cons": [
+      "No published prices; every tier says 'Request pricing'",
+      "Credit-based, pay-per-monitor billing makes cost harder to predict",
+      "SSO, SCIM and audit logging start at the Scale tier, not Start",
+      "Oracle, SAP HANA, Teradata and Microsoft Fabric connectors are Enterprise-tier only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Start",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Request pricing. Credits billed per monitor; up to 10 users, up to 1,000 monitors, 10,000 API calls/day"
+      },
+      {
+        "name": "Scale",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Request pricing. Unlimited users; adds SSO, SCIM, PII filtering, audit logging, Databricks/Glue/MySQL/Postgres/SQL Server"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Request pricing. Adds multi-workspace, chargebacks, Oracle/SAP HANA/Teradata/Microsoft Fabric connectors"
+      },
+      {
+        "name": "Business Critical",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Request pricing. Adds dedicated instance and disaster recovery with region rollover"
+      }
+    ],
+    "features": {
+      "anomalyDetection": true,
+      "freshnessChecks": true,
+      "alerts": true,
+      "lineage": true,
+      "ruleBasedChecks": true,
+      "profiling": null,
+      "cleansing": null,
+      "openSource": false
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "compliance": [
+      "SSO (Scale tier and above)",
+      "SCIM (Scale tier and above)"
+    ],
+    "support": [
+      "24-hour support SLA (Start)",
+      "8+ hour SLA (Scale)",
+      "4+ hour SLA (Enterprise)",
+      "Docs"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Monte Carlo pricing page",
+        "url": "https://montecarlo.ai/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Monte Carlo docs: monitors overview",
+        "url": "https://docs.getmontecarlo.com/docs/monitors-overview",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Monte Carlo docs: notifications",
+        "url": "https://docs.getmontecarlo.com/docs/notifications-v2",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Monte Carlo docs index (freshness, volume, field lineage pages)",
+        "url": "https://docs.getmontecarlo.com/llms.txt",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "bigeye",
+    "name": "Bigeye",
+    "category": "data-monitoring-testing-tools",
+    "alsoIn": [
+      "data-quality-tools"
+    ],
+    "website": "https://www.bigeye.com",
+    "pricingUrl": "https://www.bigeye.com/pricing",
+    "tagline": "Data observability platform with anomaly-detection metrics, custom rules and column-level lineage across modern and legacy sources.",
+    "bestFor": "Enterprises with a mix of cloud warehouses and legacy systems (Oracle, DB2, Netezza, SSIS, DataStage)",
+    "description": "Bigeye runs metrics that learn thresholds to catch anomalies, plus freshness and volume checks, data profiling and custom SQL rules. Its Lineage Plus feature builds column-level lineage across databases, ETL tools and BI platforms, and alerts go to Slack, email, Microsoft Teams, PagerDuty and webhooks.",
+    "pros": [
+      "Lineage connectors cover legacy sources such as IBM DB2 z/OS, Netezza, Informatica PowerCenter, IBM DataStage and SSIS",
+      "Self-hosted agents can be deployed with Docker or Kubernetes to keep data access inside your network",
+      "Supports both learned (anomaly) thresholds and manual thresholds, plus custom SQL rules",
+      "Alerts to Slack, email, Microsoft Teams and PagerDuty, with customizable alert messages"
+    ],
+    "cons": [
+      "No published pricing or plan tiers; pricing page only offers a demo",
+      "No free plan or self-serve trial stated",
+      "Data cleansing is not part of the product"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; pricing page offers a demo and a self-guided product tour"
+      }
+    ],
+    "features": {
+      "anomalyDetection": true,
+      "freshnessChecks": true,
+      "alerts": true,
+      "lineage": true,
+      "ruleBasedChecks": true,
+      "profiling": true,
+      "cleansing": null,
+      "openSource": false
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted agents (Docker, Kubernetes)"
+    ],
+    "founded": "2019",
+    "support": [
+      "Email (hello@bigeye.com)",
+      "Docs",
+      "Status page"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Bigeye pricing page",
+        "url": "https://www.bigeye.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Bigeye docs index",
+        "url": "https://docs.bigeye.com/llms.txt",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Bigeye about page",
+        "url": "https://www.bigeye.com/about",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "anomalo",
+    "name": "Anomalo",
+    "category": "data-monitoring-testing-tools",
+    "alsoIn": [
+      "data-quality-tools"
+    ],
+    "website": "https://www.anomalo.com",
+    "pricingUrl": null,
+    "tagline": "AI-based data quality monitoring for structured tables and unstructured documents.",
+    "bestFor": "Enterprises that want unsupervised anomaly detection without writing many rules, including in their own VPC",
+    "description": "Anomalo uses machine learning to detect anomalous data in tables and monitors freshness, volume, schema and distribution through its Table Observability Agent. It also offers natural-language data quality rules, lineage, and quality monitoring for unstructured documents.",
+    "pros": [
+      "Can run fully in the customer's VPC or as SaaS",
+      "Data quality rules can be written in natural language ('No SQL required')",
+      "Covers unstructured document quality as well as tables",
+      "States SOC 2 Type II, GDPR and HIPAA compliance plus SAML SSO"
+    ],
+    "cons": [
+      "No public pricing page; demo request only",
+      "Alert channels named on the site are Slack and email only; Teams and PagerDuty not stated",
+      "Several agents (First Responder, Business KPI Monitoring) are marked 'coming soon'"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; site offers 'Request a Demo'"
+      }
+    ],
+    "features": {
+      "anomalyDetection": true,
+      "freshnessChecks": true,
+      "alerts": true,
+      "lineage": true,
+      "ruleBasedChecks": true,
+      "profiling": true,
+      "cleansing": null,
+      "openSource": false
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Customer VPC"
+    ],
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "HIPAA",
+      "SSO/SAML"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Anomalo home page",
+        "url": "https://www.anomalo.com/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Anomalo platform page",
+        "url": "https://www.anomalo.com/platform",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Anomalo about page",
+        "url": "https://www.anomalo.com/about",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "acceldata",
+    "name": "Acceldata Data Observability Cloud (ADOC)",
+    "category": "data-monitoring-testing-tools",
+    "alsoIn": [
+      "data-quality-tools"
+    ],
+    "website": "https://www.acceldata.io",
+    "pricingUrl": "https://www.acceldata.io/pricing",
+    "tagline": "Data observability platform covering data reliability (quality, freshness, anomalies) and data platform cost optimization.",
+    "bestFor": "Enterprises that want data quality monitoring and warehouse/lakehouse cost monitoring in one product",
+    "description": "ADOC's Data Reliability module profiles data, runs out-of-the-box and custom data quality rules, and flags anomalies, freshness and row-count changes, schema drift and lineage issues. A separate Cost Optimization module tracks spend for data platforms, and both are sold through sales with a 30-day free trial.",
+    "pros": [
+      "Freshness policies also check row count (change in row count and absolute row count) with adjustable model sensitivity",
+      "Notification groups support email, Slack, Microsoft Teams, Google Chat, webhooks, ServiceNow and Jira",
+      "Enterprise tier adds data reconciliation policies",
+      "30-day free trial offered"
+    ],
+    "cons": [
+      "No published prices; Data Reliability plans are 'Contact Sales'",
+      "Reconciliation, pipeline monitoring and SDK are Enterprise-only",
+      "PagerDuty is not listed among notification channels"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Data Reliability PRO",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. Anomaly detection, profiling, freshness, schema drift, monitors and alerts, out-of-the-box DQ rules"
+      },
+      {
+        "name": "Data Reliability ENTERPRISE",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. Adds reconciliation, domain-specific rules, RBAC, pipeline monitoring, SDK, API access"
+      },
+      {
+        "name": "Cost Optimization PRO / ENTERPRISE",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Separate module; PRO has a 'Start Free Trial' button, no price shown"
+      }
+    ],
+    "features": {
+      "anomalyDetection": true,
+      "freshnessChecks": true,
+      "alerts": true,
+      "lineage": true,
+      "ruleBasedChecks": true,
+      "profiling": true,
+      "cleansing": null,
+      "openSource": false
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": "2018",
+    "support": [
+      "Customer support portal",
+      "Advanced support (Cost Optimization Enterprise)",
+      "Docs"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Acceldata pricing page",
+        "url": "https://www.acceldata.io/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "ADOC docs: Data Freshness Policy",
+        "url": "https://docs.acceldata.io/docs/acceldata/adoc/documentation/data-freshness-policy",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "ADOC docs: Notifications and notification groups",
+        "url": "https://docs.acceldata.io/docs/acceldata/adoc/documentation/notifications-and-notification-groups",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Acceldata about page",
+        "url": "https://www.acceldata.io/about-us",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "sifflet",
+    "name": "Sifflet",
+    "category": "data-monitoring-testing-tools",
+    "alsoIn": [
+      "data-quality-tools"
+    ],
+    "website": "https://www.siffletdata.com",
+    "pricingUrl": "https://www.siffletdata.com/pricing",
+    "tagline": "Data observability platform with a built-in data catalog, field-level lineage and AI monitoring agents.",
+    "bestFor": "Data teams that want observability and a data catalog in one tool, including regulated firms needing self-hosting",
+    "description": "Sifflet monitors freshness, volume, schema and custom metrics with dynamic or static thresholds, and links issues to field-level lineage and a data catalog. Plans are sized by number of monitored assets, with SaaS, hybrid and self-hosted deployment on the Enterprise tier.",
+    "pros": [
+      "Notifications to Slack, email, Microsoft Teams and PagerDuty",
+      "Field-level lineage plus a data catalog in the same product",
+      "Enterprise tier offers hybrid and self-hosted deployment",
+      "Can be bought through cloud marketplaces; the pricing page says Snowflake credits can be used"
+    ],
+    "cons": [
+      "No prices published for any tier",
+      "Entry tier capped at 500 monitored assets, Growth at 1,000",
+      "Some AI agents (Sage, Forge) are early access only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Entry",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "No price shown. Up to 500 assets; self-serve or marketplaces; SaaS; standard support"
+      },
+      {
+        "name": "Growth",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "No price shown. Up to 1,000 assets; sales-assisted; SaaS; priority support"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. 1,000+ assets; SaaS, hybrid or self-hosted; 24/7 support"
+      }
+    ],
+    "features": {
+      "anomalyDetection": true,
+      "freshnessChecks": true,
+      "alerts": true,
+      "lineage": true,
+      "ruleBasedChecks": true,
+      "profiling": null,
+      "cleansing": null,
+      "openSource": false
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Hybrid",
+      "Self-hosted"
+    ],
+    "compliance": [
+      "ISO/IEC 27001",
+      "SSO"
+    ],
+    "support": [
+      "Standard (Entry)",
+      "Priority (Growth)",
+      "24/7 enterprise support (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Sifflet pricing page",
+        "url": "https://www.siffletdata.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Sifflet docs index (monitors, thresholds, notifications, lineage, self-hosted)",
+        "url": "https://docs.siffletdata.com/llms.txt",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Sifflet home page",
+        "url": "https://www.siffletdata.com/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "soda",
+    "name": "Soda",
+    "category": "data-quality-tools",
+    "alsoIn": [
+      "data-monitoring-testing-tools",
+      "file-testing-tools"
+    ],
+    "website": "https://www.soda.io",
+    "pricingUrl": "https://www.soda.io/pricing",
+    "tagline": "Data quality platform built around data contracts, with metric monitoring and a Python engine (Soda Core).",
+    "bestFor": "Data engineering teams that want data contracts and pipeline tests with a free tier and published team price",
+    "description": "Soda checks data against YAML data contracts (schema, row count, missing and invalid values, freshness) and adds metric monitoring that flags anomalies automatically. It has a free plan, a Team plan at $750 per month, and runs either Soda-hosted or as a self-hosted runner in your Kubernetes cluster.",
+    "pros": [
+      "Published pricing: Free at $0 and Team at $750 per month",
+      "Free plan includes unlimited users and alerting and ticketing integrations, no credit card needed",
+      "Alerts to Slack and Microsoft Teams; custom SQL metric monitors supported",
+      "Deployment options: Python libraries in pipelines, Soda-hosted runner, or self-hosted runner"
+    ],
+    "cons": [
+      "Soda Core v4 is under the Elastic License 2.0, not an OSI open-source license",
+      "SSO, RBAC, audit logs and the no-code interface require the Team plan",
+      "Usage beyond the free Soda Processing Units (SPUs) is billed pay-as-you-go"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free plan with free Soda Processing Units (SPUs), unlimited users, pipeline testing, metrics observability and alerting; no credit card. Soda Core library is also free to use (Elastic License 2.0).",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Includes free SPUs; pay as you go for additional SPUs; unlimited users"
+      },
+      {
+        "name": "Team",
+        "monthly": 750,
+        "annual": null,
+        "custom": false,
+        "notes": "$750 per month (flat, per the pricing page); 'Annual billing and volume discounts available' but no annual price shown"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing"
+      }
+    ],
+    "features": {
+      "profiling": true,
+      "ruleBasedChecks": true,
+      "anomalyDetection": true,
+      "cleansing": null,
+      "openSource": false,
+      "freshnessChecks": true,
+      "alerts": true,
+      "lineage": true,
+      "flatFiles": true,
+      "columnarFiles": true,
+      "schemaValidation": true,
+      "excelFiles": null,
+      "fileToDb": null
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted runner (Kubernetes)",
+      "Python library",
+      "Private deployment (Team plan)",
+      "Python library (Soda Core)"
+    ],
+    "compliance": [
+      "SSO (Team plan)",
+      "RBAC (Team plan)",
+      "Audit logs (Team plan)",
+      "SSO (Team)",
+      "Audit logs (Team)"
+    ],
+    "support": [
+      "Premium support (Team)",
+      "Community Slack",
+      "Docs"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Soda pricing page",
+        "url": "https://www.soda.io/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Soda docs index (profiling, metric monitoring, freshness, Slack/Teams)",
+        "url": "https://docs.soda.io/llms.txt",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Soda docs: deployment options",
+        "url": "https://docs.soda.io/soda-documentation/connect/deployment-options",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Soda Core GitHub repository and LICENSE",
+        "url": "https://github.com/sodadata/soda-core",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Soda home page",
+        "url": "https://www.soda.io/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Soda Core v3 release notes",
+        "url": "https://docs.soda.io/soda-v3/release-notes/soda-core",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Soda docs: DuckDB data source (v4)",
+        "url": "https://docs.soda.io/soda-v4/reference/data-source-reference-for-soda-core/duckdb",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "soda-core LICENSE (GitHub)",
+        "url": "https://github.com/sodadata/soda-core/blob/main/LICENSE",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "metaplane",
+    "name": "Metaplane",
+    "category": "data-monitoring-testing-tools",
+    "website": "https://www.metaplane.dev",
+    "pricingUrl": "https://www.metaplane.dev/pricing",
+    "tagline": "Data observability tool for warehouses with automated anomaly detection and column-level lineage, now owned by Datadog.",
+    "bestFor": "Small and mid-size analytics teams on Snowflake, BigQuery, Redshift or Databricks that want a free starting tier",
+    "description": "Metaplane monitors warehouse tables for volume, freshness, schema, nulls, uniqueness and distribution changes using automated anomaly detection, and supports custom SQL monitors. It has a free tier for 10 tables and usage-based Pro pricing per monitored table; Datadog acquired the company in April 2025.",
+    "pros": [
+      "Free forever plan covering 10 monitored tables, no credit card",
+      "Alerts to Slack, email and Microsoft Teams on every plan; PagerDuty from Pro",
+      "Column-level lineage across warehouses and BI tools (Looker, Tableau, Power BI, Sigma and others)",
+      "States SOC 2 Type II, GDPR, CCPA and HIPAA compliance"
+    ],
+    "cons": [
+      "Pro is 'usage-based' per monitored table but no unit price is published",
+      "Custom SQL monitors are capped (3 on Free, 5 on Pro, 10 on Enterprise)",
+      "Pricing page cards and comparison table disagree on user limits",
+      "Data CI/CD and warehouse spend monitoring are paid add-ons"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free forever: 10 monitored tables, basic monitoring, Slack/email/Teams alerts",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "10 monitored tables; 1 user per comparison table (4 per plan card)"
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Usage-based, pay per monitored table; unit price not published. 100 monitored tables in comparison table"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom; unlimited tables; SSO (Okta, AD, SAML), AWS/Azure PrivateLink"
+      }
+    ],
+    "features": {
+      "anomalyDetection": true,
+      "freshnessChecks": true,
+      "alerts": true,
+      "lineage": true,
+      "ruleBasedChecks": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "integrations": "Snowflake, BigQuery, Redshift, ClickHouse, Postgres, MySQL, SQL Server, Databricks; BI: Looker, Tableau, Metabase, Mode, Sigma, Power BI",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "CCPA",
+      "HIPAA",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Email",
+      "Shared Slack channel and CSM (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Metaplane pricing page",
+        "url": "https://www.metaplane.dev/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Metaplane home page",
+        "url": "https://www.metaplane.dev/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datadog press release on Metaplane acquisition",
+        "url": "https://www.datadoghq.com/about/latest-news/press-releases/datadog-metaplane-aquistion/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "elementary",
+    "name": "Elementary",
+    "category": "data-monitoring-testing-tools",
+    "alsoIn": [
+      "data-quality-tools"
+    ],
+    "website": "https://www.elementary-data.com",
+    "pricingUrl": "https://www.elementary-data.com/pricing",
+    "tagline": "dbt-native data observability with an open-source package and CLI plus a paid cloud platform.",
+    "bestFor": "Analytics engineering teams that build with dbt",
+    "description": "Elementary adds anomaly detection tests (volume, freshness and others) and metadata tables to a dbt project, and its open-source CLI sends alerts and builds a self-hosted observability report. Elementary Cloud adds column-level lineage, incident management, a catalog and AI agents, priced by seats and environments.",
+    "pros": [
+      "Open-source dbt package and CLI (Apache-2.0) can be self-hosted at no cost",
+      "Tests are configured in the dbt project as code, alongside existing dbt tests",
+      "30-day cloud trial with no limits on seats, environments or monitored tables",
+      "Elementary states it is SOC 2 Type II certified and the cloud reads metadata only"
+    ],
+    "cons": [
+      "Mainly useful for teams already using dbt",
+      "Cloud prices are not published ('Talk to sales')",
+      "Pricing page has inconsistencies (trial references an 'Essentials' plan that is not listed)",
+      "AI agents are billed separately with credits"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Elementary OSS: open-source dbt package and CLI, self-hosted",
+    "trial": "30-day free trial of Elementary Cloud",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "OSS",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Open source (Apache-2.0), self-hosted"
+      },
+      {
+        "name": "Scale",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Talk to sales. Up to 10 editor seats, up to 1K tables; priced by seats and environments"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Up to 20 editor / 40 viewer seats, up to 3K tables; SSO, RBAC, SCIM"
+      },
+      {
+        "name": "Unlimited",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Unlimited seats; dedicated CS engineer; overage per extra 1K tables"
+      }
+    ],
+    "features": {
+      "anomalyDetection": true,
+      "freshnessChecks": true,
+      "alerts": true,
+      "lineage": true,
+      "ruleBasedChecks": true,
+      "profiling": null,
+      "cleansing": null,
+      "openSource": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted (OSS)"
+    ],
+    "compliance": [
+      "SOC 2 Type II",
+      "SSO (Okta/OneLogin/AD, Enterprise and Unlimited)",
+      "RBAC/SCIM (Enterprise and Unlimited)"
+    ],
+    "support": [
+      "Community Slack (OSS)",
+      "Shared Slack channel (paid plans)",
+      "Dedicated CS engineer (Unlimited)",
+      "Docs"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Elementary pricing page",
+        "url": "https://www.elementary-data.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Elementary docs: OSS introduction",
+        "url": "https://docs.elementary-data.com/oss/oss-introduction",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Elementary docs: volume_anomalies and freshness_anomalies tests",
+        "url": "https://docs.elementary-data.com/data-tests/anomaly-detection-tests/volume-anomalies",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Elementary GitHub repository",
+        "url": "https://github.com/elementary-data/elementary",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "great-expectations",
+    "name": "Great Expectations (GX Core)",
+    "category": "data-quality-tools",
+    "alsoIn": [
+      "file-testing-tools"
+    ],
+    "website": "https://greatexpectations.io",
+    "pricingUrl": null,
+    "tagline": "Open-source Python library for testing data with declarative 'Expectations'.",
+    "bestFor": "Python data engineers who want code-defined data tests in pipelines at no license cost",
+    "description": "GX Core lets you define Expectations (unit tests for data), run them through Checkpoints and generate human-readable validation documentation. It is Apache-2.0 open source; Fivetran became steward of the project in 2026, and the hosted GX Cloud product was sold to FICO and stopped being publicly available on 1 June 2026.",
+    "pros": [
+      "Free and open source (Apache-2.0), about 11.9k GitHub stars",
+      "Large library of built-in Expectations, extensible with custom ones",
+      "Checkpoint actions can notify Slack, Microsoft Teams, email, PagerDuty, Opsgenie or an API endpoint",
+      "Actively released: version 1.25.0 published on PyPI on 2026-11-12"
+    ],
+    "cons": [
+      "GX Cloud (the hosted UI) is no longer publicly available, so there is no vendor-hosted option",
+      "Code-first; requires Python skills to set up and maintain",
+      "No built-in ML anomaly detection or data cleansing stated",
+      "Long-term roadmap under Fivetran stewardship not yet detailed"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "GX Core open-source library (Apache-2.0), self-hosted",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "GX Core (open source)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Apache-2.0; pip install great_expectations"
+      }
+    ],
+    "features": {
+      "profiling": null,
+      "ruleBasedChecks": true,
+      "anomalyDetection": null,
+      "cleansing": null,
+      "openSource": true,
+      "flatFiles": true,
+      "excelFiles": true,
+      "columnarFiles": true,
+      "schemaValidation": true,
+      "fileToDb": null
+    },
+    "platforms": [
+      "Self-hosted (Python library)",
+      "Python library (self-hosted)",
+      "Cloud (SaaS)"
+    ],
+    "compliance": [
+      "SSO (GX Cloud, plan not stated in text)"
+    ],
+    "support": [
+      "Community Slack",
+      "Docs",
+      "Standard support",
+      "Dedicated Slack channel (higher tiers)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "GX Core GitHub repository (fivetran/great_expectations)",
+        "url": "https://github.com/fivetran/great_expectations",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Great Expectations blog: An update from Great Expectations",
+        "url": "https://greatexpectations.io/blog/an-update-from-great-expectations/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Fivetran press release on GX Core stewardship",
+        "url": "https://www.fivetran.com/press/fivetran-to-become-steward-of-the-great-expectations-open-source-community-and-gx-core-project",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "GX Core checkpoint actions source",
+        "url": "https://github.com/fivetran/great_expectations/blob/develop/great_expectations/checkpoint/actions.py",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "PyPI great-expectations",
+        "url": "https://pypi.org/project/great-expectations/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "GX Cloud pricing page",
+        "url": "https://greatexpectations.io/pricing/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "GX docs: Connect to filesystem data",
+        "url": "https://docs.greatexpectations.io/docs/core/connect_to_data/filesystem_data/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "GX API reference: PandasFilesystemDatasource",
+        "url": "https://docs.greatexpectations.io/docs/reference/api/datasource/fluent/PandasFilesystemDatasource_class/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "GX docs: Schema data quality use case",
+        "url": "https://docs.greatexpectations.io/docs/reference/learn/data_quality_use_cases/schema/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "great_expectations GitHub repository",
+        "url": "https://github.com/great-expectations/great_expectations",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "deequ",
+    "name": "Deequ",
+    "category": "data-quality-tools",
+    "website": "https://github.com/awslabs/deequ",
+    "pricingUrl": null,
+    "tagline": "Open-source library from AWS Labs for defining unit tests for data on Apache Spark.",
+    "bestFor": "Spark and Scala/Python engineers validating large datasets in batch pipelines",
+    "description": "Deequ runs data quality constraints (completeness, uniqueness, allowed values, quantiles and others) as Spark jobs and reports which constraints failed. It also profiles columns, suggests constraints automatically, stores metrics in a repository and detects anomalies in those metrics over time; PyDeequ provides a Python interface.",
+    "pros": [
+      "Free and open source (Apache-2.0)",
+      "Scales with Apache Spark for very large datasets",
+      "Automatic constraint suggestion and column profiling",
+      "Supports AWS Data Quality Definition Language (DQDL) rules"
+    ],
+    "cons": [
+      "Library only: no UI, scheduling or alerting built in",
+      "Requires Spark; releases are tied to specific Spark versions",
+      "Recent versions (2.1.0+) require Java 11"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open-source library (Apache-2.0)",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Open source",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Apache-2.0; distributed via Maven Central (PyDeequ via PyPI)"
+      }
+    ],
+    "features": {
+      "profiling": true,
+      "ruleBasedChecks": true,
+      "anomalyDetection": null,
+      "cleansing": null,
+      "openSource": true
+    },
+    "platforms": [
+      "Self-hosted (Apache Spark library)"
+    ],
+    "support": [
+      "GitHub issues"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Deequ GitHub repository",
+        "url": "https://github.com/awslabs/deequ",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Deequ on Maven Central",
+        "url": "https://repo1.maven.org/maven2/com/amazon/deequ/deequ/maven-metadata.xml",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "informatica-data-quality",
+    "name": "Informatica Data Quality & Observability",
+    "category": "data-quality-tools",
+    "alsoIn": [
+      "data-monitoring-testing-tools"
+    ],
+    "website": "https://www.informatica.com/products/data-quality.html",
+    "pricingUrl": "https://www.informatica.com/products/cloud-integration/pricing.html",
+    "tagline": "Data quality and observability services in Informatica's Intelligent Data Management Cloud (IDMC), now part of Salesforce.",
+    "bestFor": "Large enterprises already using Informatica IDMC or PowerCenter",
+    "description": "Informatica's Data Quality & Observability profiles data, generates and applies data quality rules, and cleanses and standardizes records, with AI agents (CLAIRE) to automate rule creation and remediation. Its observability features track freshness, volume, distribution, schema changes and lineage, and it is priced by consumption of Informatica Processing Units (IPUs).",
+    "pros": [
+      "Covers profiling, rules, cleansing and standardization in one service",
+      "Observability tracks freshness, volume, distribution, schema change and lineage",
+      "Consumption (IPU) pricing shares one pool of units across eligible IDMC services",
+      "30-day free trial of Cloud Data Quality"
+    ],
+    "cons": [
+      "No published IPU prices; a quote is needed even for a price range",
+      "IPU consumption is metered per scaler, which makes costs harder to estimate up front",
+      "Alert channels are not described on the product page"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free 30-day trial (Cloud Data Quality)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "IDMC consumption (IPU)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Consumption-based pricing in Informatica Processing Units; quote required"
+      }
+    ],
+    "features": {
+      "profiling": true,
+      "ruleBasedChecks": true,
+      "anomalyDetection": true,
+      "cleansing": true,
+      "openSource": false,
+      "freshnessChecks": true,
+      "alerts": null,
+      "lineage": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Informatica Data Quality & Observability product page",
+        "url": "https://www.informatica.com/products/data-quality.html",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Informatica IDMC pricing page",
+        "url": "https://www.informatica.com/products/cloud-integration/pricing.html",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Informatica Cloud Data Quality free trial page",
+        "url": "https://www.informatica.com/trials/cloud-data-quality.html",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "ataccama-one",
+    "name": "Ataccama ONE",
+    "category": "data-quality-tools",
+    "alsoIn": [
+      "data-monitoring-testing-tools"
+    ],
+    "website": "https://www.ataccama.com",
+    "pricingUrl": "https://www.ataccama.com/pricing",
+    "tagline": "Unified data quality, observability, lineage, catalog and master data management platform.",
+    "bestFor": "Large and regulated organizations that want data quality, MDM and governance in one platform",
+    "description": "Ataccama ONE profiles data, manages a central library of governed data quality rules and runs no-code transformation plans to standardize values. Its data observability module adds AI-driven anomaly detection, schema drift and freshness monitoring with alerts to Slack, Microsoft Teams and email, and lineage for root-cause analysis.",
+    "pros": [
+      "Central rule library detects similar rules, prevents duplicates and handles versioning and approvals",
+      "No-code transformation plans standardize values such as country codes, phone numbers and SKUs",
+      "Unlimited read-only consumer users on every tier",
+      "Soft limits: exceeding a tier limit does not interrupt operations or trigger charges"
+    ],
+    "cons": [
+      "No published prices; tiers depend on named users, data objects and active DQ configurations",
+      "No free trial offered on the pricing page (demo or guided evaluation instead)",
+      "AI queries are allocated per named user, with extra allocations sold as an add-on"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Custom tiers",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Request pricing. Based on named users, data objects and active data quality configurations"
+      }
+    ],
+    "features": {
+      "profiling": true,
+      "ruleBasedChecks": true,
+      "anomalyDetection": true,
+      "cleansing": true,
+      "openSource": false,
+      "freshnessChecks": null,
+      "alerts": true,
+      "lineage": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Hybrid"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Ataccama pricing page",
+        "url": "https://www.ataccama.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Ataccama data quality page",
+        "url": "https://www.ataccama.com/platform/data-quality",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Ataccama data observability page",
+        "url": "https://www.ataccama.com/platform/data-observability",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "qlik-talend-data-quality",
+    "name": "Qlik Talend Data Quality",
+    "category": "data-quality-tools",
+    "website": "https://www.qlik.com/us/products/data-quality-governance",
+    "pricingUrl": "https://www.qlik.com/us/pricing/data-integration-products-pricing",
+    "tagline": "Data profiling, rules, cleansing and trust scoring within Qlik Talend Cloud and Talend Studio.",
+    "bestFor": "Organizations using Qlik or Talend for data integration that want quality built into pipelines",
+    "description": "Qlik Talend data quality covers automated profiling, data quality rules, the Qlik Trust Score and data stewardship, and Talend Studio's data quality components embed cleansing in integration jobs. It is included in the Premium and Enterprise editions of Qlik Talend Cloud, which are priced on capacity under an annual commitment.",
+    "pros": [
+      "Data quality runs inside the same integration jobs and pipelines (push-down or pull-up execution)",
+      "Qlik Trust Score summarizes dataset quality across several dimensions",
+      "Agentic data stewardship suggests fixes for stewards to approve",
+      "Runs on-premises or in the cloud"
+    ],
+    "cons": [
+      "Data quality is only in the Premium and Enterprise editions; no prices are published",
+      "Capacity-based annual commitment rather than monthly billing",
+      "In Talend Studio the data quality feature is not installed by default and must be added via the Feature Manager"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Qlik Talend Cloud free trial (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Qlik Talend Cloud Premium",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Includes data quality; capacity-based (data moved, job runs, run time), annual commitment; no price shown"
+      },
+      {
+        "name": "Qlik Talend Cloud Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Everything in Premium plus data products and enterprise features; no price shown"
+      }
+    ],
+    "features": {
+      "profiling": true,
+      "ruleBasedChecks": true,
+      "anomalyDetection": null,
+      "cleansing": true,
+      "openSource": false
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "On-premises"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Qlik data quality and governance page",
+        "url": "https://www.qlik.com/us/products/data-quality-governance",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Qlik Talend Cloud pricing page",
+        "url": "https://www.qlik.com/us/pricing/data-integration-products-pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Qlik Talend data integration and quality page",
+        "url": "https://www.qlik.com/us/products/qlik-talend-data-integration-and-quality",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Talend Studio user guide: What is Talend Data Quality",
+        "url": "https://help.qlik.com/talend/en-US/studio-user-guide/8.0-R2024-05/what-is-talend-data-quality",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "collibra-data-quality-observability",
+    "name": "Collibra Data Quality & Observability",
+    "category": "data-quality-tools",
+    "alsoIn": [
+      "data-monitoring-testing-tools"
+    ],
+    "website": "https://www.collibra.com/products/data-quality-and-observability",
+    "pricingUrl": "https://www.collibra.com/products/data-quality-and-observability",
+    "tagline": "Data quality monitoring with ML-generated adaptive rules, tied into the Collibra governance and catalog platform.",
+    "bestFor": "Enterprises already using Collibra for data governance and cataloging",
+    "description": "Collibra Data Quality & Observability profiles datasets and uses machine learning to create adaptive rules that flag shifts in nulls, row counts, schema, min/max/mean values and uniqueness, alongside user-defined SQL rules. Quality scores feed Collibra's catalog, policies and lineage, and notifications go to the Collibra Notification Center, Slack and Microsoft Teams.",
+    "pros": [
+      "Adaptive rules learn a baseline from column profiling, so no manual thresholds are needed for common checks",
+      "Jobs can run on the warehouse's own compute (no data egress) or on a dedicated Spark engine",
+      "Lineage shows upstream causes and downstream products and owners affected by an issue",
+      "Issue workflows can be handled in Collibra or in Jira and ServiceNow"
+    ],
+    "cons": [
+      "No published pricing; demo request only",
+      "No dedicated freshness monitor among the out-of-the-box monitor types",
+      "Most value comes when used with the wider Collibra platform",
+      "Data cleansing is not described as a product feature"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; page offers platform tour and demo request"
+      }
+    ],
+    "features": {
+      "profiling": true,
+      "ruleBasedChecks": true,
+      "anomalyDetection": true,
+      "cleansing": null,
+      "openSource": false,
+      "freshnessChecks": null,
+      "alerts": true,
+      "lineage": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Collibra Data Quality & Observability product page",
+        "url": "https://www.collibra.com/products/data-quality-and-observability",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Collibra docs: About data quality monitors",
+        "url": "https://productresources.collibra.com/docs/collibra/latest/Content/UnifiedDataQuality/co_monitors.htm",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Collibra docs: Behaviors (self-hosted)",
+        "url": "https://productresources.collibra.com/docs/collibra/dqc/latest/Content/DataQuality/DQCoreComponents/co_behavior.htm",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Collibra docs: Data quality core concepts (notifications)",
+        "url": "https://productresources.collibra.com/docs/collibra/latest/Content/UnifiedDataQuality/ref_data-quality-concepts.htm",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "experian-aperture-data-studio",
+    "name": "Experian Aperture Data Studio",
+    "category": "data-quality-tools",
+    "website": "https://www.experian.co.uk/business/data-management/data-processing/aperture/",
+    "pricingUrl": "https://www.experian.co.uk/business/data-management/data-processing/aperture/",
+    "tagline": "Data quality and enrichment platform from Experian, with contact data validation and identity resolution.",
+    "bestFor": "Organizations cleaning customer and contact data (addresses, emails, phone numbers) at scale",
+    "description": "Aperture Data Studio profiles, cleanses and standardizes data, applies reusable rules in automated workflows, and monitors data health over time. Add-on modules validate addresses, emails and phone numbers and match and link records across systems using Experian reference data.",
+    "pros": [
+      "Contact Validation module checks and standardizes addresses, emails and phone numbers",
+      "Identity Resolution matches and links duplicate records across systems",
+      "Rule suggestions and AI-assisted function creation in a low-code interface",
+      "Can be paired with licensed Experian reference and enrichment data"
+    ],
+    "cons": [
+      "No published pricing; contact sales",
+      "Lineage is offered only through a partner integration",
+      "Anomaly detection is not described on the product page"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; 'Speak to an expert'"
+      }
+    ],
+    "features": {
+      "profiling": true,
+      "ruleBasedChecks": true,
+      "anomalyDetection": null,
+      "cleansing": true,
+      "openSource": false
+    },
+    "platforms": [],
+    "integrations": "Cloud platforms, data platforms, files and storage, applications, legacy systems, open APIs and connectors",
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Experian UK Aperture Data Studio page",
+        "url": "https://www.experian.co.uk/business/data-management/data-processing/aperture/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Experian UK Aperture Data Studio product sheet (PDF)",
+        "url": "https://www.experian.co.uk/blogs/latest-thinking/wp-content/uploads/sites/13/2026/07/Product-Sheet-Aperture-Data-Studio.pdf",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "datagaps-bi-validator",
+    "name": "Datagaps BI Validator",
+    "category": "power-bi-report-testing-tools",
+    "alsoIn": [
+      "bi-report-testing-tools"
+    ],
+    "website": "https://www.datagaps.com/bi-validator/",
+    "pricingUrl": "https://www.datagaps.com/pricing/",
+    "tagline": "Automated testing tool for BI reports and dashboards that compares visuals to source data and checks regressions, performance and security.",
+    "bestFor": "Enterprise BI teams testing Power BI, Tableau or Oracle Analytics releases and migrations",
+    "description": "BI Validator queries the BI platform and the underlying database under the same filters and compares the values, captures baselines before upgrades and re-runs them afterwards, and simulates concurrent users to measure dashboard load times. It is sold as part of the Datagaps DataOps Suite or on its own, on annual subscriptions.",
+    "pros": [
+      "Compares report visuals against source databases such as Snowflake, SQL Server, Oracle and Databricks using auto-generated SQL",
+      "Covers Tableau, Power BI, Oracle Analytics, Cognos, AWS QuickSight and Microsoft Fabric in one test plan, including Tableau-to-Power BI migration checks",
+      "Built-in Benchmark module for load testing with 5-20+ simulated concurrent users",
+      "Test plans can be triggered from Azure DevOps or GitLab via CLI or REST API, and scheduled with email alerts on failure",
+      "14-day free trial, no credit card required"
+    ],
+    "cons": [
+      "No published prices; every plan is 'Request a Demo'",
+      "Minimum of 4 users and a one-year contract term",
+      "Validating additional BI platforms may cost extra, per the pricing FAQ"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial, extendable by 14 days on request; no credit card required",
+    "minSeats": 4,
+    "plans": [
+      {
+        "name": "BI Validator (annual subscription)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. Annual subscription, minimum 4 users, minimum 1-year term; named-user and concurrent licenses available"
+      },
+      {
+        "name": "DataOps Suite (annual subscription)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. Bundle of BI Validator, ETL Validator and data quality modules"
+      }
+    ],
+    "features": {
+      "powerBi": true,
+      "reportDataValidation": true,
+      "regressionTesting": true,
+      "performanceTesting": true,
+      "cicdIntegration": true,
+      "tableau": true,
+      "otherBi": true
+    },
+    "platforms": [
+      "Cloud",
+      "On-premises"
+    ],
+    "founded": "2010",
+    "hq": "Herndon, Virginia, USA",
+    "integrations": "Tableau, Power BI, Oracle Analytics, Cognos, AWS QuickSight, Microsoft Fabric; Azure DevOps and GitLab via CLI/REST API",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001"
+    ],
+    "support": [
+      "Ticketed 9x5 support",
+      "Knowledge resources",
+      "Paid expert service hours"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Datagaps BI Validator product page",
+        "url": "https://www.datagaps.com/bi-validator/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datagaps pricing page",
+        "url": "https://www.datagaps.com/pricing/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Datagaps contact page (HQ address)",
+        "url": "https://www.datagaps.com/contact-us/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "wiiisdom",
+    "name": "Wiiisdom",
+    "category": "bi-report-testing-tools",
+    "alsoIn": [
+      "power-bi-report-testing-tools"
+    ],
+    "website": "https://wiiisdom.com",
+    "pricingUrl": "https://wiiisdom.com/",
+    "tagline": "Analytics governance platform that tests, certifies and monitors Power BI and Tableau content, with 360Suite for SAP BusinessObjects.",
+    "bestFor": "Large organizations governing Power BI or Tableau estates, especially in regulated industries",
+    "description": "Wiiisdom for Power BI and Wiiisdom for Tableau run no-code or AI-generated test pipelines covering accuracy against the source, performance, regression (A/B before/after), freshness, functional, security and design, and certify or decertify content based on results. The 360Suite product line, including 360Bind for regression testing, covers SAP BusinessObjects.",
+    "pros": [
+      "Tests seven dimensions on Power BI and Tableau: accuracy, performance, regression, data freshness, functional, security (including row-level security) and design",
+      "Tests can run DAX queries directly against Power BI semantic models",
+      "Automatically certifies or decertifies content based on test results",
+      "SaaS connected via API; nothing to install on-premises, per the vendor",
+      "Also covers SAP BusinessObjects regression testing through 360Bind"
+    ],
+    "cons": [
+      "No public pricing or self-serve trial; demo and product tour only",
+      "No named CI/CD tool integrations (such as Azure DevOps or GitHub) are listed on the testing pages",
+      "Power BI/Tableau platform and SAP BO tooling (360Suite) are separate product lines"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; demo request"
+      }
+    ],
+    "features": {
+      "powerBi": true,
+      "reportDataValidation": true,
+      "regressionTesting": true,
+      "performanceTesting": true,
+      "cicdIntegration": null,
+      "tableau": true,
+      "otherBi": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": "2007",
+    "hq": "France",
+    "integrations": "Power BI, Microsoft Fabric, Tableau Server and Cloud, SAP BusinessObjects; Microsoft Fabric data agents; MCP server",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "CCPA"
+    ],
+    "support": [
+      "Helpdesk",
+      "Documentation",
+      "Dedicated onboarding specialist"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Wiiisdom homepage",
+        "url": "https://wiiisdom.com/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Wiiisdom for Power BI testing page",
+        "url": "https://wiiisdom.com/products/wiiisdom-for-power-bi/testing-and-validation/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Wiiisdom for Tableau testing page",
+        "url": "https://wiiisdom.com/products/wiiisdom-for-tableau/tableau-testing/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "360Bind regression testing for SAP BusinessObjects",
+        "url": "https://wiiisdom.com/sap-business-objects/regression-testing-analysis/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Wiiisdom about page",
+        "url": "https://wiiisdom.com/about-us/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "motioci",
+    "name": "MotioCI",
+    "category": "bi-report-testing-tools",
+    "website": "https://www.motio.com/product/motioci",
+    "pricingUrl": "https://www.motio.com/product/motioci",
+    "tagline": "Version control, automated testing and governed deployment for IBM Cognos Analytics.",
+    "bestFor": "IBM Cognos teams managing upgrades and release testing",
+    "description": "MotioCI adds version tracking with rollback, automated testing and deployment pipelines to IBM Cognos, aimed at catching errors before content is promoted or after Cognos upgrades. Motio sells separate products (Soterre, Gitoqlok, QSDA Pro) for Power BI, Tableau and Qlik, but its coverage matrix lists automated testing only for Cognos via MotioCI.",
+    "pros": [
+      "Automated testing and validation for Cognos upgrades and releases",
+      "Version control with check-in/check-out, comparison and rollback for Cognos content",
+      "Audit trails aimed at compliance reviews; Motio states it is a SOC 2 Type II company"
+    ],
+    "cons": [
+      "Cognos only; does not test Power BI or Tableau reports",
+      "No public pricing; enterprise licensed with demo-led evaluation",
+      "No external CI/CD tool integrations are listed on the product page"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Enterprise license",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; 'Enterprise licensed - Demo-led evaluation'"
+      }
+    ],
+    "features": {
+      "powerBi": false,
+      "tableau": false,
+      "otherBi": true,
+      "regressionTesting": true,
+      "cicdIntegration": null
+    },
+    "platforms": [],
+    "hq": "Plano, Texas, USA",
+    "integrations": "IBM Cognos Analytics",
+    "compliance": [
+      "SOC 2 Type II"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "MotioCI product page",
+        "url": "https://www.motio.com/product/motioci",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Motio product portfolio and coverage matrix",
+        "url": "https://www.motio.com/product-portfolio",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Motio BI Ops Test page",
+        "url": "https://www.motio.com/bi-ops/test",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Motio contact page",
+        "url": "https://www.motio.com/contact-us",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "spectacles",
+    "name": "Spectacles",
+    "category": "bi-report-testing-tools",
+    "website": "https://spectacles.dev",
+    "pricingUrl": "https://spectacles.dev/utility/terms-of-service.html",
+    "tagline": "Continuous integration and testing tool for Looker that checks LookML changes for SQL errors, broken content and failing data tests.",
+    "bestFor": "Looker teams that want pull-request checks on LookML",
+    "description": "Spectacles runs SQL, content, assert and LookML style validators against Looker when pull requests are opened, on a schedule, or manually. It is offered as a hosted app operated by Google and as an MIT-licensed open-source CLI.",
+    "pros": [
+      "Finds SQL errors in Explores by running queries in the database, which Looker's built-in validator does not",
+      "Content validator checks that LookML changes do not break saved dashboards and Looks",
+      "Integrates with GitHub, GitLab and Azure DevOps pull requests, plus an API and a dbt Cloud integration",
+      "Open-source CLI (MIT license) on GitHub, last released July 2026"
+    ],
+    "cons": [
+      "Looker only; no Power BI or Tableau support",
+      "Hosted app pricing is not published",
+      "Checks report definitions and queries, not report values against a separate source system"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open-source CLI (MIT license), self-run; hosted app is a paid subscription",
+    "trial": "14-day free trial of the hosted service (per terms of service)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Open-source CLI",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "MIT-licensed Python package (spectacles on PyPI)"
+      },
+      {
+        "name": "Hosted subscription",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Price not published; terms say price = base subscription plus additional worker users and projects"
+      }
+    ],
+    "features": {
+      "powerBi": false,
+      "tableau": false,
+      "otherBi": true,
+      "regressionTesting": true,
+      "cicdIntegration": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "CLI (Python)"
+    ],
+    "integrations": "Looker; GitHub, GitLab, Azure DevOps; dbt Cloud; API",
+    "support": [
+      "Email",
+      "Docs",
+      "Slack community"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Spectacles homepage",
+        "url": "https://spectacles.dev/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Spectacles Continuous Integration page",
+        "url": "https://spectacles.dev/products/continuous-integration.html",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Spectacles terms of service",
+        "url": "https://spectacles.dev/utility/terms-of-service.html",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Spectacles docs getting started",
+        "url": "https://docs.spectacles.dev/app/tutorials/getting-started/index.html",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "spectacles-ci/spectacles GitHub repository",
+        "url": "https://github.com/spectacles-ci/spectacles",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "fab-inspector",
+    "name": "Fab Inspector (formerly PBI Inspector)",
+    "category": "power-bi-report-testing-tools",
+    "alsoIn": [
+      "bi-report-testing-tools"
+    ],
+    "website": "https://github.com/NatVanG/fab-inspector",
+    "pricingUrl": "https://github.com/NatVanG/fab-inspector",
+    "tagline": "Open-source, rules-based tester for Power BI reports and other Microsoft Fabric items, run locally or in CI/CD pipelines.",
+    "bestFor": "Power BI developers enforcing report standards in Azure DevOps or GitHub pipelines",
+    "description": "Fab Inspector checks Power BI report definitions (PBIR format) and other Fabric items against declarative JSON rules, and can also run DAX and T-SQL queries as rule conditions. It ships as a CLI, a cross-platform desktop app and a Docker image, and writes results in Azure DevOps or GitHub Actions formats.",
+    "pros": [
+      "Free and open source (MIT license)",
+      "Outputs Azure DevOps task commands or GitHub Actions annotations for pipeline gating",
+      "Rules can include DAX query and T-SQL query conditions, not only layout checks",
+      "Runs against local item folders or published Fabric workspaces"
+    ],
+    "cons": [
+      "Community project, not supported by Microsoft",
+      "Does not read PBIX files; reports must be saved as PBIP / PBIR folders",
+      "Rules are written as JSON, which takes time to learn; base rules focus on report visual quality"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open source (MIT), self-hosted CLI, desktop app and Docker image",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Open source",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "MIT license; free"
+      }
+    ],
+    "features": {
+      "powerBi": true,
+      "reportDataValidation": null,
+      "regressionTesting": null,
+      "performanceTesting": null,
+      "cicdIntegration": true,
+      "tableau": false,
+      "otherBi": false
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Docker"
+    ],
+    "integrations": "Power BI (PBIR), Microsoft Fabric workspaces; Azure DevOps and GitHub Actions output formats",
+    "support": [
+      "GitHub issues",
+      "Docs",
+      "Wiki"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Fab Inspector GitHub README",
+        "url": "https://github.com/NatVanG/fab-inspector",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "PBI Inspector (original) GitHub repository",
+        "url": "https://github.com/NatVanG/PBI-Inspector",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "semanticops",
+    "name": "SemanticOps",
+    "category": "power-bi-report-testing-tools",
+    "alsoIn": [
+      "bi-report-testing-tools"
+    ],
+    "website": "https://www.semanticops.dev",
+    "pricingUrl": "https://www.semanticops.dev/pricing",
+    "tagline": "Local MCP server and desktop Test Runner for testing and governing changes to Power BI semantic models.",
+    "bestFor": "Power BI developers who edit semantic models with AI assistants and want regression tests",
+    "description": "SemanticOps (formerly MCP Engine) gives AI assistants governed access to Power BI semantic models, with snapshots, rollback, policies and impact analysis. Its Test Runner desktop app, included in Pro, builds test suites with eight test types including measure and DAX assertions, regression snapshots, performance budgets and RLS/OLS checks.",
+    "pros": [
+      "Low published price: Pro is $39/month or $349/year, with a free tier",
+      "Test Runner includes regression snapshots, query duration budgets and row-level and object-level security tests",
+      "Exports JUnit XML, Markdown, HTML and JSON so CI pipelines can fail builds on regressions",
+      "Runs locally with no telemetry, per the vendor"
+    ],
+    "cons": [
+      "Tests semantic models against expected values, not against the source database",
+      "Does not run CI itself; execution must be wired into an existing pipeline",
+      "Built by an independent developer; Teams pricing is quote-only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free tier: core model operations and DAX queries; Test Runner requires Pro",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Core model operations, DAX queries and validation; no Test Runner"
+      },
+      {
+        "name": "Pro",
+        "monthly": 39,
+        "annual": 29.08,
+        "custom": false,
+        "notes": "$39/month, or $349/year billed annually; includes Test Runner, rollback, policy engine, RLS/OLS testing"
+      },
+      {
+        "name": "Teams",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only; per seat per year"
+      }
+    ],
+    "features": {
+      "powerBi": true,
+      "reportDataValidation": null,
+      "regressionTesting": true,
+      "performanceTesting": true,
+      "cicdIntegration": true,
+      "tableau": false,
+      "otherBi": false
+    },
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "integrations": "Power BI Desktop (External Tool), Power BI Service, Microsoft Fabric; Claude Code, Claude Desktop, VS Code and other MCP clients",
+    "support": [
+      "Priority email support (Pro, best effort)",
+      "Docs/Wiki"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "SemanticOps pricing page",
+        "url": "https://www.semanticops.dev/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "SemanticOps Test Runner page",
+        "url": "https://www.semanticops.dev/test-runner",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "SemanticOps homepage",
+        "url": "https://www.semanticops.dev/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "postman",
+    "name": "Postman",
+    "category": "api-testing-tools",
+    "website": "https://www.postman.com",
+    "pricingUrl": "https://www.postman.com/pricing/",
+    "tagline": "API platform for building, testing, mocking and monitoring APIs.",
+    "bestFor": "Teams of any size that want one shared tool for API requests, tests and mocks",
+    "description": "Postman is an API client and collaboration platform where requests are grouped into collections that can carry test scripts. It also provides mock servers, a collection runner, performance testing runs, monitors and the Postman CLI for running collections in CI/CD pipelines.",
+    "pros": [
+      "Free plan includes the API client, mock servers, Collection Runner and local performance testing runs",
+      "Postman CLI runs collections from a terminal or CI/CD pipeline and is available on all plans",
+      "Supports GraphQL requests in addition to REST"
+    ],
+    "cons": [
+      "Free plan is limited to 1 user; team collaboration starts at the Team plan ($19 per user/month billed annually)",
+      "Cloud performance testing is billed separately at $0.04 per virtual-user hour and is not on the Free plan",
+      "SSO/SAML is an add-on on Team and only included on Enterprise"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "1 user, API client, specs and mock servers, Collection Runner and local performance testing, 1,000 API monitoring requests/month, 100 AI credits",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "1 user"
+      },
+      {
+        "name": "Solo",
+        "monthly": 12,
+        "annual": 9,
+        "custom": false,
+        "notes": "Flat, single user; $12/month billed monthly, $9/month billed annually"
+      },
+      {
+        "name": "Team",
+        "monthly": 23,
+        "annual": 19,
+        "custom": false,
+        "notes": "Per user; $23 billed monthly, $19 billed annually"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales for pricing"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": true,
+      "loadTesting": true,
+      "mocking": true,
+      "cicdIntegration": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Desktop app"
+    ],
+    "hq": "San Francisco, California, USA",
+    "compliance": [
+      "SSO/SAML (Team add-on, Enterprise)",
+      "SCIM"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Postman pricing page",
+        "url": "https://www.postman.com/pricing/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Postman docs: GraphQL overview",
+        "url": "https://learning.postman.com/docs/sending-requests/graphql/graphql-overview/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Postman docs: Postman CLI overview",
+        "url": "https://learning.postman.com/docs/postman-cli/postman-cli-overview/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "About Postman",
+        "url": "https://www.postman.com/company/about-postman/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "readyapi",
+    "name": "ReadyAPI",
+    "category": "api-testing-tools",
+    "website": "https://smartbear.com/product/ready-api/",
+    "pricingUrl": "https://smartbear.com/product/ready-api/pricing/",
+    "tagline": "SmartBear's commercial API testing suite covering functional, security, performance testing and service virtualization.",
+    "bestFor": "Enterprise QA teams testing many API protocols, including SOAP and messaging",
+    "description": "ReadyAPI is SmartBear's API testing product, built on the SoapUI lineage, with scriptless and scripted functional tests, data-driven testing and OWASP-aligned security tests. The Advanced package adds load testing and service virtualization, and TestEngine runs tests in CI/CD pipelines.",
+    "pros": [
+      "Supports REST, SOAP, GraphQL, gRPC, Kafka and JMS in one tool",
+      "Advanced package bundles functional, performance/load testing and service virtualization",
+      "Public starting price for Test Essentials and a 14-day free trial"
+    ],
+    "cons": [
+      "Test Essentials starts at $6,599 per license per year, far above per-user API clients",
+      "Load testing and virtualization are only in the Advanced package, which is quote-only",
+      "Running tests at scale in CI uses TestEngine, a separate add-on from $5,109"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "ReadyAPI Test Essentials",
+        "monthly": null,
+        "annual": 549.92,
+        "custom": false,
+        "notes": "Per license; 'Starting at $6,599 / license (billed annually)'"
+      },
+      {
+        "name": "ReadyAPI Test Advanced",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Functional test + performance + virtualization; custom pricing per license"
+      },
+      {
+        "name": "VirtServer add-on",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "'From $3,709'; billing period not stated on page"
+      },
+      {
+        "name": "TestEngine add-on",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "'From $5,109'; billing period not stated on page"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": true,
+      "loadTesting": true,
+      "mocking": true,
+      "cicdIntegration": true
+    },
+    "platforms": [
+      "Desktop app"
+    ],
+    "founded": "2003",
+    "hq": "Somerville, Massachusetts, USA",
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "ReadyAPI pricing page",
+        "url": "https://smartbear.com/product/ready-api/pricing/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "SmartBear About Us",
+        "url": "https://smartbear.com/company/about-us/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "insomnia",
+    "name": "Insomnia",
+    "category": "api-testing-tools",
+    "website": "https://insomnia.rest",
+    "pricingUrl": "https://insomnia.rest/pricing",
+    "tagline": "Open-source API client from Kong for debugging, testing and mocking APIs.",
+    "bestFor": "Developers who want a local-first or Git-synced API client with CLI test runs",
+    "description": "Insomnia is an API client from Kong with GraphQL and gRPC clients, collection runs, environments and mock servers. The Inso CLI runs tests and linting in CI/CD pipelines, and projects can be stored locally, in Git or in Insomnia's cloud.",
+    "pros": [
+      "Free Essentials plan includes unlimited collection runs and Inso CLI access for CI/CD",
+      "Projects can be kept local, synced through Git, or stored in the cloud",
+      "Enterprise has a self-serve 14-day trial with no credit card"
+    ],
+    "cons": [
+      "Mock server requests are capped at 1,000/month on Essentials and 10,000/month on Pro; extra is $10 per 25,000",
+      "Git Sync on the free plan is limited to small teams (up to 3 users)",
+      "SSO and SCIM require Enterprise at $45 per user/month"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Essentials: Git Sync projects for up to 3 users, unlimited cloud/local projects, unlimited collection runs, Inso CLI, 1,000 mock requests/month; also a local-only Scratch Pad",
+    "trial": "14-day Enterprise trial, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Essentials",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free"
+      },
+      {
+        "name": "Pro",
+        "monthly": 12,
+        "annual": 10,
+        "custom": false,
+        "notes": "Per user; $12 billed monthly, $10 billed annually"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 45,
+        "annual": 45,
+        "custom": false,
+        "notes": "Per user; self-serve up to 50 users, larger teams contact sales; $45 shown under both monthly and annual toggles"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": true,
+      "loadTesting": null,
+      "mocking": true,
+      "cicdIntegration": true
+    },
+    "platforms": [
+      "Desktop app",
+      "Cloud sync"
+    ],
+    "compliance": [
+      "SSO (SAML/OIDC)",
+      "SCIM",
+      "SOC 2 materials available (Enterprise)"
+    ],
+    "support": [
+      "Enterprise support"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Insomnia pricing page",
+        "url": "https://insomnia.rest/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Insomnia LICENSE (GitHub)",
+        "url": "https://github.com/Kong/insomnia/blob/develop/LICENSE",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "katalon",
+    "name": "Katalon Studio",
+    "category": "api-testing-tools",
+    "website": "https://katalon.com",
+    "pricingUrl": "https://katalon.com/pricing",
+    "tagline": "Test automation tool for web, API, mobile and desktop testing.",
+    "bestFor": "QA teams that want API tests alongside web and mobile UI tests in one tool",
+    "description": "Katalon Studio is a test automation IDE that covers web, mobile and API testing, including REST, SOAP and GraphQL requests. Paid plans add headless and CI/CD execution (via Katalon Runtime Engine) with Jenkins, GitHub Actions, Azure DevOps, GitLab and Docker.",
+    "pros": [
+      "API, web and mobile tests live in the same project",
+      "Supports REST, SOAP 1.1/1.2 and GraphQL requests",
+      "Free plan covers local authoring and execution"
+    ],
+    "cons": [
+      "Free plan has no headless, CI/CD or parallel execution and is limited to 40 static test suites",
+      "Professional is sold annually only at $1,800 per seat per year; no monthly price shown",
+      "No API mocking or load testing mentioned on the API testing page"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Local authoring, record and playback, local execution; up to 40 static test suites; no CI/CD or parallel execution",
+    "trial": "30-day free trial (per pricing page)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Katalon Studio Free"
+      },
+      {
+        "name": "Professional",
+        "monthly": null,
+        "annual": 150,
+        "custom": false,
+        "notes": "Per seat; '$1,800 / seat / year' (≈ $150/seat/month), annual billing only"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom annual contract"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": true,
+      "loadTesting": null,
+      "mocking": null,
+      "cicdIntegration": true
+    },
+    "platforms": [
+      "Desktop app",
+      "Cloud execution (TestCloud add-on)"
+    ],
+    "hq": "Atlanta, Georgia, USA",
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Katalon pricing page",
+        "url": "https://katalon.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Katalon API testing page",
+        "url": "https://katalon.com/api-testing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Katalon About Us",
+        "url": "https://katalon.com/about-us",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "apidog",
+    "name": "Apidog",
+    "category": "api-testing-tools",
+    "website": "https://apidog.com",
+    "pricingUrl": "https://apidog.com/pricing/",
+    "tagline": "All-in-one API platform for design, debugging, mocking, testing and documentation.",
+    "bestFor": "Teams that want API design, mocks, tests and docs in one tool at a low per-user price",
+    "description": "Apidog combines an API client (HTTP, GraphQL, gRPC, SOAP, WebSocket and more), an OpenAPI designer, mock servers, test scenarios and published documentation. Tests run from the Apidog CLI in Jenkins, GitLab and GitHub Actions, and an on-premises edition is available.",
+    "pros": [
+      "Free plan for up to 4 users includes mocking, unlimited test runs and local performance tests",
+      "Paid plans are listed per user with both monthly and annual prices",
+      "On-premises and air-gapped deployment available for Enterprise"
+    ],
+    "cons": [
+      "Free plan caps team projects at 5 and API change history at 7 days",
+      "Enterprise is annual-only; SAML SSO and SCIM are only on Enterprise",
+      "Cloud mock server limited to 10K calls/month on the Free plan"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 4 users; API client, mocking, unlimited test/collection runs, local performance tests, Apidog CLI, 5 team projects",
+    "trial": "14-day free trial of paid plans",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 4 users"
+      },
+      {
+        "name": "Basic",
+        "monthly": 12,
+        "annual": 9,
+        "custom": false,
+        "notes": "Per user"
+      },
+      {
+        "name": "Professional",
+        "monthly": 24,
+        "annual": 18,
+        "custom": false,
+        "notes": "Per user"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 27,
+        "custom": false,
+        "notes": "Per user; annual plan only"
+      },
+      {
+        "name": "Enterprise On-premises",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales; self-hosted Docker/K8s"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": true,
+      "loadTesting": true,
+      "mocking": true,
+      "cicdIntegration": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Desktop (Windows, macOS, Linux)",
+      "Web app",
+      "On-premises"
+    ],
+    "compliance": [
+      "SAML SSO (Enterprise)",
+      "SCIM (Enterprise)",
+      "Audit logs (Enterprise)"
+    ],
+    "support": [
+      "Community",
+      "Email",
+      "Priority email (Professional+)",
+      "24x7 priority support (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Apidog pricing page",
+        "url": "https://apidog.com/pricing/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Apidog docs: Installing and running Apidog CLI",
+        "url": "https://docs.apidog.com/installing-and-running-apidog-cli-605135m0",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "karate",
+    "name": "Karate",
+    "category": "api-testing-tools",
+    "website": "https://www.karatelabs.io",
+    "pricingUrl": "https://www.karatelabs.io/pricing",
+    "tagline": "Open-source framework for API, UI and performance testing, with paid IDE plugins and an enterprise edition.",
+    "bestFor": "Engineering teams that want code-based API tests in CI without a per-user client fee",
+    "description": "Karate is an MIT-licensed test framework that covers REST, GraphQL and SOAP API testing, built-in mocks and performance testing through Gatling. Karate Labs sells IDE plugins, Xplorer Premium and an Enterprise edition with async protocol support (Kafka, gRPC, WebSocket) and API coverage reporting.",
+    "pros": [
+      "Core framework is free and MIT-licensed, including mocks, Gatling performance tests and CI/CD use",
+      "One framework covers API, UI and performance tests",
+      "Paid tiers are listed per user with public prices"
+    ],
+    "cons": [
+      "Async protocols (Kafka, gRPC, WebSocket) in CI/CD need an Enterprise runtime license",
+      "Tests are written in Karate's own DSL, so non-coders need the IDE or Xplorer tooling",
+      "Enterprise trials require a vetted, scoped request rather than self-serve sign-up"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open-source Karate framework (MIT) plus free tier of Xplorer desktop client",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free (Open source + Xplorer)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "MIT-licensed framework"
+      },
+      {
+        "name": "IDE Plus",
+        "monthly": null,
+        "annual": 8.33,
+        "custom": false,
+        "notes": "Per user; $100/user/year"
+      },
+      {
+        "name": "IDE Pro",
+        "monthly": 64,
+        "annual": 53.33,
+        "custom": false,
+        "notes": "Per user; $64/month billed monthly or $640/year"
+      },
+      {
+        "name": "Xplorer Premium add-on",
+        "monthly": null,
+        "annual": 16.67,
+        "custom": false,
+        "notes": "Per user; $200/user/year"
+      },
+      {
+        "name": "Karate Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Commercial license, annual"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": true,
+      "loadTesting": true,
+      "mocking": true,
+      "cicdIntegration": true
+    },
+    "platforms": [
+      "Open-source framework (JVM)",
+      "IntelliJ and VS Code plugins",
+      "Xplorer desktop app"
+    ],
+    "compliance": [
+      "SSO (Enterprise IDE licenses)"
+    ],
+    "support": [
+      "Community (free)",
+      "Email (IDE Pro)",
+      "Dedicated Slack (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Karate Labs pricing page",
+        "url": "https://www.karatelabs.io/pricing",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "bruno",
+    "name": "Bruno",
+    "category": "api-testing-tools",
+    "website": "https://www.usebruno.com",
+    "pricingUrl": "https://www.usebruno.com/pricing",
+    "tagline": "Open-source, Git-native API client that stores collections as plain files.",
+    "bestFor": "Developers who want API collections versioned in Git with no cloud account",
+    "description": "Bruno is an MIT-licensed desktop API client for HTTP/REST, GraphQL and gRPC that saves collections as files in your repository. The Bruno CLI runs collections in GitHub Actions, Docker and other pipelines, and a local mock server is available in beta.",
+    "pros": [
+      "Open-source edition is free and works without an account",
+      "Collections are plain files that live in Git alongside code",
+      "Paid tiers are low per-user prices and include a 14-day Ultimate trial with no credit card"
+    ],
+    "cons": [
+      "Paid plans are listed only with annual billing",
+      "Mock server is a beta feature run locally on your machine",
+      "SSO and SCIM are Enterprise-only; open-source edition is limited to 2 workspaces and public Git providers"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open Source edition: 2 workspaces, public Git providers, 5 OpenAPI syncs/month, unlimited collection runner, community support",
+    "trial": "14-day free trial of Ultimate, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Open Source",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "MIT license"
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": 6,
+        "custom": false,
+        "notes": "Per user/month, billed annually"
+      },
+      {
+        "name": "Ultimate",
+        "monthly": null,
+        "annual": 11,
+        "custom": false,
+        "notes": "Per user/month, billed annually"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 18,
+        "custom": false,
+        "notes": "Per user/month, billed annually; purchased via Contact Sales"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": true,
+      "loadTesting": null,
+      "mocking": true,
+      "cicdIntegration": true
+    },
+    "platforms": [
+      "Desktop (Windows, macOS, Linux)",
+      "CLI",
+      "IDE extension"
+    ],
+    "compliance": [
+      "SSO (Enterprise)",
+      "SCIM (Enterprise)",
+      "Audit logs (Ultimate+)"
+    ],
+    "support": [
+      "Community",
+      "Email and chat (Pro, Ultimate)",
+      "Dedicated account manager (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Bruno pricing page",
+        "url": "https://www.usebruno.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Bruno Mock Servers page",
+        "url": "https://www.usebruno.com/product/mock-servers",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Bruno CLI docs",
+        "url": "https://docs.usebruno.com/bru-cli/overview",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Bruno license (GitHub)",
+        "url": "https://github.com/usebruno/bruno/blob/main/license.md",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "hoppscotch",
+    "name": "Hoppscotch",
+    "category": "api-testing-tools",
+    "website": "https://hoppscotch.com",
+    "pricingUrl": "https://hoppscotch.com/pricing",
+    "tagline": "Open-source API development platform for REST, GraphQL and realtime APIs, in the browser or self-hosted.",
+    "bestFor": "Teams that want a free, self-hostable API client with low per-user cloud pricing",
+    "description": "Hoppscotch is an open-source API client for REST, GraphQL and realtime APIs with collections, environments, pre-request scripts, tests and a collection runner. Paid cloud plans add team workspaces, API mocking and documentation publishing, and the platform can be self-hosted from GitHub.",
+    "pros": [
+      "Free plan covers REST, GraphQL and realtime testing with scripts and a collection runner",
+      "Can be self-hosted from the GitHub repository",
+      "Cloud plans are low per-user prices with monthly or annual billing"
+    ],
+    "cons": [
+      "API mocking is only on the paid Business plan",
+      "SAML SSO, SCIM and audit logs require Enterprise",
+      "No load testing mentioned"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free forever: REST, GraphQL and realtime API testing, personal workspace, collections, environments, scripts and tests, collection runner",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free forever"
+      },
+      {
+        "name": "Business",
+        "monthly": 8,
+        "annual": 6,
+        "custom": false,
+        "notes": "Per user; $8 billed monthly, $6 billed annually"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 14,
+        "annual": 11,
+        "custom": false,
+        "notes": "Per user; $14 billed monthly, $11 billed annually"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": true,
+      "loadTesting": null,
+      "mocking": true,
+      "cicdIntegration": null
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted"
+    ],
+    "compliance": [
+      "SAML SSO and OpenID Connect (Enterprise)",
+      "SCIM (Enterprise)",
+      "Audit logs (Enterprise)"
+    ],
+    "support": [
+      "Community (Free)",
+      "Email (Business)",
+      "Slack Connect priority support (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Hoppscotch pricing page",
+        "url": "https://hoppscotch.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Hoppscotch CLI docs",
+        "url": "https://docs.hoppscotch.io/documentation/clients/cli/overview",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Hoppscotch LICENSE (GitHub)",
+        "url": "https://github.com/hoppscotch/hoppscotch/blob/main/LICENSE",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "apache-jmeter",
+    "name": "Apache JMeter",
+    "category": "api-testing-tools",
+    "website": "https://jmeter.apache.org",
+    "pricingUrl": "https://jmeter.apache.org/download_jmeter.cgi",
+    "tagline": "Open-source Java application for load and functional testing of web apps, APIs and other protocols.",
+    "bestFor": "Teams that need free load testing of HTTP, REST, SOAP and GraphQL endpoints",
+    "description": "Apache JMeter is an Apache Software Foundation project for load testing and measuring the performance of servers, including HTTP/HTTPS, SOAP/REST web services, JDBC, JMS and FTP. It includes a GraphQL HTTP Request sampler and runs in CI through third-party Maven, Gradle and Jenkins plugins.",
+    "pros": [
+      "Free and open source under the Apache license",
+      "Covers load testing across many protocols, not just HTTP",
+      "Includes a dedicated GraphQL HTTP Request sampler"
+    ],
+    "cons": [
+      "CI integration relies on third-party Maven, Gradle and Jenkins plugins",
+      "Requires a Java runtime (Java 8+)",
+      "No built-in API mocking or hosted cloud service from the project"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open source (Apache License 2.0), free download",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Open source",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free download; latest listed version 5.6.3"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": true,
+      "loadTesting": true,
+      "mocking": null,
+      "cicdIntegration": true
+    },
+    "platforms": [
+      "Desktop/CLI (Java 8+, any OS)"
+    ],
+    "support": [
+      "Community",
+      "Docs"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Apache JMeter home page",
+        "url": "https://jmeter.apache.org/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Apache JMeter download page",
+        "url": "https://jmeter.apache.org/download_jmeter.cgi",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "JMeter component reference (GraphQL HTTP Request)",
+        "url": "https://jmeter.apache.org/usermanual/component_reference.html",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "rest-assured",
+    "name": "REST Assured",
+    "category": "api-testing-tools",
+    "website": "https://rest-assured.io",
+    "pricingUrl": "https://rest-assured.io/",
+    "tagline": "Open-source Java library for testing REST services.",
+    "bestFor": "Java teams writing API tests as code alongside JUnit or TestNG",
+    "description": "REST Assured is an Apache 2.0-licensed Java library with a fluent syntax for sending HTTP requests and asserting on REST responses. It also supports Spring MockMvc and WebTestClient for testing Spring controllers without a running server.",
+    "pros": [
+      "Free and open source under Apache 2.0",
+      "Tests are plain Java code, so they run anywhere the build runs",
+      "Actively maintained: 7.0.0-RC1 released 2026-11-12"
+    ],
+    "cons": [
+      "Java only; no GUI for non-programmers",
+      "No load testing or GraphQL support mentioned by the project",
+      "No hosted collaboration, reporting or mock server features"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open source library (Apache 2.0)",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Open source",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free library"
+      }
+    ],
+    "features": {
+      "rest": true,
+      "graphql": null,
+      "loadTesting": null,
+      "mocking": null,
+      "cicdIntegration": null
+    },
+    "platforms": [
+      "Java library (JVM)"
+    ],
+    "support": [
+      "Community",
+      "Docs"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "REST Assured home page",
+        "url": "https://rest-assured.io/",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "beyond-compare",
+    "name": "Beyond Compare",
+    "category": "file-testing-tools",
+    "website": "https://www.scootersoftware.com",
+    "pricingUrl": "https://www.scootersoftware.com/shop",
+    "tagline": "Desktop file and folder comparison tool with table, text and binary compare.",
+    "bestFor": "Testers and developers diffing CSV extracts, Excel sheets and text files by hand or by script",
+    "description": "Beyond Compare from Scooter Software compares and merges folders, text files, tables, binary files and images on Windows, macOS and Linux. Its Table Compare view compares CSV, tab-delimited, HTML tables and Excel worksheets with key-column alignment and numeric/date tolerances, and a script processor and command line allow automated runs.",
+    "pros": [
+      "Table Compare aligns CSV and Excel data on key columns and ignores differences within numeric or date tolerances",
+      "One-time license with no annual renewal fee",
+      "Runs on Windows, macOS and Linux, with scripting from the command line"
+    ],
+    "cons": [
+      "It diffs two files; it does not validate files against a schema or rule set",
+      "No database connectivity for file-to-database comparison",
+      "Major version upgrades are paid (generally half price)"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free evaluation (length not stated on the shop page)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Standard (per user)",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "One-time perpetual license: $35 per user (1-4 users), $28 (5-9), down to $15.75 (100+); site license $5,250; enterprise license $21,000",
+        "oneTime": 35
+      },
+      {
+        "name": "Pro (per user)",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "One-time perpetual license: $70 per user (1-4 users), $56 (5-9), down to $31.50 (100+); site $10,500; enterprise $42,000",
+        "oneTime": 70
+      }
+    ],
+    "features": {
+      "flatFiles": null,
+      "excelFiles": true,
+      "columnarFiles": null,
+      "fileToDb": null,
+      "schemaValidation": null
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "hq": "Madison, Wisconsin, USA",
+    "support": [
+      "Email",
+      "Phone",
+      "Forums"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Scooter Software shop",
+        "url": "https://www.scootersoftware.com/shop",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Beyond Compare home page",
+        "url": "https://www.scootersoftware.com/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Beyond Compare feature list by version",
+        "url": "https://www.scootersoftware.com/kb/feature_compare",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "Scooter Software About",
+        "url": "https://www.scootersoftware.com/about",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "icedq",
+    "name": "iceDQ",
+    "category": "etl-testing-tools",
+    "alsoIn": [
+      "data-reconciliation-tools",
+      "bi-report-testing-tools",
+      "power-bi-report-testing-tools",
+      "file-testing-tools",
+      "data-monitoring-testing-tools",
+      "data-quality-tools",
+      "api-testing-tools"
+    ],
+    "website": "https://icedq.com",
+    "pricingUrl": "https://icedq.com/overview",
+    "tagline": "Data testing, reconciliation and monitoring platform from Torana Inc. that checks data across databases, files, APIs and BI reports.",
+    "bestFor": "Enterprise QA and data teams testing ETL pipelines, migrations and BI reports",
+    "description": "iceDQ runs validation and reconciliation rules that compare source and target data at row and column level across databases, files, APIs and BI reports, using its own in-memory engine. It is sold as SaaS on AWS or self-managed on-premises, with schedulers, CI/CD hooks and email, Slack or Teams alerts.",
+    "pros": [
+      "Connectors page lists 150+ native and SQL-based connectors, including Snowflake, Databricks, Google BigQuery, SAP HANA, Salesforce, Kafka and mainframe AS400",
+      "Tests BI reports against their source data; the BI testing page names Power BI, Tableau, Qlik Sense, MicroStrategy, SAP BusinessObjects and IBM Cognos, and Power BI testing supports XMLA and native DAX queries",
+      "File testing covers CSV, JSON, XML, Excel, fixed-width, Parquet, Avro and mainframe EBCDIC/COBOL files, read from S3, ADLS Gen2, Google Cloud Storage, FTP/SFTP and SharePoint",
+      "Integrations page lists 20+ pre-built integrations: Jenkins, Bamboo, Azure DevOps, GitHub Actions, Airflow, Autosys, Control-M, Jira, ServiceNow, HP ALM, Xray and Zephyr",
+      "Offered as SaaS on AWS or self-managed on-premises; the vendor says the customer controls data access in both"
+    ],
+    "cons": [
+      "No published prices; the license is described only as consumption-based per user per server or enterprise, and every page leads to 'Book a Demo'",
+      "No free plan; the 'Free Trial' card on the homepage links to the demo request form and gives no trial length or terms",
+      "Many connectors cost extra: the licensing policy lists JSON, XML, Parquet, Avro, REST API, GraphQL, Salesforce and Kafka as premium data connectors, Power BI, Tableau Cloud and Qlik Cloud as premium BI connectors, and Azure DevOps, GitHub Actions and Jira as premium integrations",
+      "For Tableau and Qlik, the connectors page and licensing policy list only Tableau Cloud and Qlik Cloud; Cognos is named on the BI testing page but not in the connector list",
+      "Aimed at data teams rather than API developers: there is no load testing or API mocking, and the vendor itself says it checks the data in API responses rather than replacing functional tools like Postman"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial offered via demo request (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Enterprise license",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. Site: 'consumption-based license per user per server or enterprise'. Engines (Standard, High Throughput, Big Data) are sized Mini/Small/Medium/Large; premium connectors and integrations are add-on licenses."
+      }
+    ],
+    "features": {
+      "noCodeTests": true,
+      "sourceTargetCompare": true,
+      "cicdIntegration": true,
+      "scheduling": true,
+      "cloudWarehouses": true,
+      "rowLevelRecon": true,
+      "crossPlatform": true,
+      "fileToDb": true,
+      "alerts": true,
+      "anomalyDetection": true,
+      "freshnessChecks": true,
+      "lineage": true,
+      "ruleBasedChecks": true,
+      "profiling": true,
+      "cleansing": false,
+      "openSource": false,
+      "powerBi": true,
+      "reportDataValidation": true,
+      "regressionTesting": true,
+      "performanceTesting": null,
+      "tableau": true,
+      "otherBi": true,
+      "flatFiles": true,
+      "excelFiles": true,
+      "columnarFiles": true,
+      "schemaValidation": true,
+      "rest": true,
+      "graphql": true,
+      "loadTesting": null,
+      "mocking": null
+    },
+    "platforms": [
+      "Cloud (SaaS on AWS)",
+      "On-premises (self-managed)"
+    ],
+    "hq": "Stamford, Connecticut, USA",
+    "integrations": "150+ connectors; 20+ pre-built integrations",
+    "compliance": [
+      "ISO/IEC 27001 (badge)",
+      "SOC (AICPA badge, report type not stated)",
+      "SSO",
+      "LDAP/Active Directory"
+    ],
+    "support": [
+      "Support portal",
+      "Email",
+      "Phone",
+      "Training (iceDQ University)",
+      "Premium support credits"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "iceDQ homepage",
+        "url": "https://icedq.com",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ platform overview (deployment and license FAQ)",
+        "url": "https://icedq.com/overview",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ features",
+        "url": "https://icedq.com/features",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ connectors",
+        "url": "https://icedq.com/connectors",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ integrations",
+        "url": "https://icedq.com/integrations",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ licensing policy",
+        "url": "https://icedq.com/licensing-policy",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ ETL testing",
+        "url": "https://icedq.com/etl-testing-tools",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ data testing tool",
+        "url": "https://icedq.com/product/data-testing-tool",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ data reconciliation",
+        "url": "https://icedq.com/data-reconciliation-tool",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ BI report testing",
+        "url": "https://icedq.com/bi-report-testing-tool",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ Power BI testing",
+        "url": "https://icedq.com/power-bi-report-testing-tool",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ file testing",
+        "url": "https://icedq.com/file-testing-tool",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ data monitoring",
+        "url": "https://icedq.com/product/data-monitoring-tool",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ data observability",
+        "url": "https://icedq.com/products/data-observability-tool",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ API data testing",
+        "url": "https://icedq.com/api-data-testing-tool",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "iceDQ about us",
+        "url": "https://icedq.com/about-us",
+        "date": "2026-11-15"
+      }
+    ]
   }
 ]

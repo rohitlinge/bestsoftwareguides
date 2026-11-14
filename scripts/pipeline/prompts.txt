@@ -23,3 +23,14 @@ best CRM for small business under $15 per user
 best password manager for Linux
 password manager with email aliases
 how many CRMs have a free plan
+best ETL testing tools 2026
+best data reconciliation tools
+data monitoring tools for data pipelines
+best data quality tools 2026
+open source data quality tools
+how to test Power BI reports automatically
+best BI report testing tools
+tools to validate CSV and Parquet files against a database
+best API testing tools 2026
+iceDQ alternatives
+iceDQ vs QuerySurge

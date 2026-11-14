@@ -176,5 +176,332 @@
         }
       }
     ]
+  },
+  {
+    "slug": "etl-testing-tools",
+    "name": "ETL Testing Tools",
+    "singular": "ETL testing tool",
+    "plural": "ETL testing tools",
+    "topic": "Data Testing & Quality",
+    "featured": "icedq",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "ETL testing tools check that data was extracted, transformed and loaded correctly: row counts match, values survived each transformation, and nothing was dropped or duplicated between source and target. The main differences are how tests are written (no-code rules or SQL), which databases and warehouses they connect to, and whether they run inside a CI/CD pipeline.",
+    "buyingTips": [
+      "List your sources and targets first (for example Oracle to Snowflake) and confirm each tool connects to both.",
+      "Check how tests are written: no-code rules suit QA teams, SQL or code-based tests suit data engineers.",
+      "If you deploy pipelines with CI/CD, confirm the tool can run tests from your pipeline and fail a build.",
+      "Most tools in this category are quote-only, so ask for pricing for your expected data volume and number of users."
+    ],
+    "featureLabels": {
+      "noCodeTests": "No-code test creation",
+      "sourceTargetCompare": "Source-to-target comparison",
+      "cicdIntegration": "CI/CD integration",
+      "scheduling": "Scheduled test runs",
+      "cloudWarehouses": "Snowflake, Databricks and BigQuery support"
+    },
+    "faqs": [
+      {
+        "q": "What is ETL testing?",
+        "a": "ETL testing checks that data moved from source systems into a target (usually a data warehouse) is complete and correct: counts match, transformations produce the expected values, and no rows are lost, duplicated or truncated."
+      },
+      {
+        "q": "Can ETL testing be automated?",
+        "a": "Yes. ETL testing tools store test rules, run them on a schedule or from a CI/CD pipeline, and report every mismatch, so the same checks run after every load instead of being done by hand with SQL queries."
+      }
+    ],
+    "useCases": [
+      {
+        "slug": "no-code-etl-testing-tools",
+        "name": "No-Code ETL Testing Tools",
+        "singular": "no-code ETL testing tool",
+        "intro": "No-code ETL testing tools let QA analysts and business testers build source-to-target checks in a visual interface instead of writing SQL or code for every test.",
+        "ruleText": "Tests can be created without writing code (visual or rule-based builder).",
+        "rule": {
+          "feature": "noCodeTests"
+        }
+      }
+    ],
+    "compareTop": 6
+  },
+  {
+    "slug": "data-reconciliation-tools",
+    "name": "Data Reconciliation Tools",
+    "singular": "data reconciliation tool",
+    "plural": "data reconciliation tools",
+    "topic": "Data Testing & Quality",
+    "featured": "icedq",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "Data reconciliation tools compare two sets of data that should agree, such as a source database and a warehouse, two systems after a migration, or a file and the table it was loaded into, and report every row or value that does not match. They differ in how far down they compare (counts, aggregates or every row), which platforms they can compare across, and how they alert you to breaks.",
+    "buyingTips": [
+      "Decide the level you need: count and total checks are fast, row-level comparison finds the exact records that differ.",
+      "For migrations, confirm the tool compares across different database types, not only within one platform.",
+      "Check how it handles large tables (sampling, partitioning or full comparison) and how long a full run takes.",
+      "Financial-transaction reconciliation (bank and ledger matching) is a different product type from data-pipeline reconciliation; make sure you are comparing like with like."
+    ],
+    "featureLabels": {
+      "rowLevelRecon": "Row-level reconciliation",
+      "crossPlatform": "Cross-database comparison",
+      "fileToDb": "File-to-database comparison",
+      "scheduling": "Scheduled test runs",
+      "alerts": "Alerts (email, Slack or Teams)"
+    },
+    "faqs": [
+      {
+        "q": "What is data reconciliation?",
+        "a": "Data reconciliation is the process of comparing two data sets that should match, such as a source system and a data warehouse, and identifying every record or value that differs, so that missing, extra or changed data can be fixed."
+      },
+      {
+        "q": "What is the difference between data reconciliation and data validation?",
+        "a": "Validation checks that data meets rules (for example, no null customer IDs). Reconciliation checks that two copies of the data agree with each other. Most data-testing tools do both."
+      }
+    ],
+    "useCases": [],
+    "compareTop": 6
+  },
+  {
+    "slug": "data-monitoring-testing-tools",
+    "name": "Data Monitoring Testing Tools",
+    "singular": "data monitoring tool",
+    "plural": "data monitoring tools",
+    "topic": "Data Testing & Quality",
+    "featured": "icedq",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "Data monitoring tools (often called data observability tools) watch production data continuously and alert you when something changes unexpectedly: a table stops updating, row volumes drop, values drift, or a schema changes. Some learn normal behaviour with machine learning; others run rules you define. The main differences are how checks are created, how alerts reach your team, and whether lineage shows what a broken table affects downstream.",
+    "buyingTips": [
+      "Decide between learned (ML anomaly) checks and explicit rules; many teams need both.",
+      "Check where alerts go (Slack, Teams, email, PagerDuty) and whether you can route them by table owner.",
+      "Lineage helps you see which dashboards a broken table affects; confirm it covers your BI tool.",
+      "Pricing is often based on the number of tables or data assets monitored, so count yours before asking for a quote."
+    ],
+    "featureLabels": {
+      "anomalyDetection": "ML anomaly detection",
+      "freshnessChecks": "Freshness and volume checks",
+      "alerts": "Alerts (email, Slack or Teams)",
+      "lineage": "Data lineage",
+      "ruleBasedChecks": "Custom rule checks"
+    },
+    "faqs": [
+      {
+        "q": "What is the difference between data monitoring and data testing?",
+        "a": "Data testing runs defined checks at a point in time, often before data is released. Data monitoring runs continuously on production data and alerts you when freshness, volume, distribution or schema changes unexpectedly."
+      },
+      {
+        "q": "Is data monitoring the same as data observability?",
+        "a": "Mostly. Data observability is the broader term vendors use for monitoring data health (freshness, volume, schema, distribution) together with lineage to trace the impact of a problem."
+      }
+    ],
+    "useCases": [],
+    "compareTop": 6
+  },
+  {
+    "slug": "data-quality-tools",
+    "name": "Data Quality Tools",
+    "singular": "data quality tool",
+    "plural": "data quality tools",
+    "topic": "Data Testing & Quality",
+    "featured": "icedq",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "Data quality tools measure and improve how accurate, complete and consistent your data is. They profile data to show what it looks like, run rules that flag bad records, and in some cases correct or standardise values. Options range from open-source libraries that data engineers run in code to enterprise platforms with business-user interfaces and data cleansing.",
+    "buyingTips": [
+      "Decide who writes the rules: open-source libraries suit engineers; platforms with a UI suit data stewards and analysts.",
+      "Profiling first: a tool that profiles your data shows which rules you actually need.",
+      "If you need data corrected, not only flagged, check for cleansing and standardisation features.",
+      "Open-source tools are free to run but you host and maintain them; paid cloud versions add a UI, scheduling and alerts."
+    ],
+    "featureLabels": {
+      "profiling": "Data profiling",
+      "ruleBasedChecks": "Custom rule checks",
+      "anomalyDetection": "ML anomaly detection",
+      "cleansing": "Data cleansing / correction",
+      "openSource": "Open source"
+    },
+    "faqs": [
+      {
+        "q": "What are the dimensions of data quality?",
+        "a": "The commonly used dimensions are accuracy, completeness, consistency, timeliness, validity and uniqueness. Data quality tools turn these into measurable rules, such as 'no duplicate customer IDs' or 'order date is not in the future'."
+      },
+      {
+        "q": "Are there free data quality tools?",
+        "a": "Yes. Several open-source data quality tools can be used free of charge if you host them yourself; their vendors usually sell a paid cloud version with a user interface, scheduling and alerting."
+      }
+    ],
+    "useCases": [
+      {
+        "slug": "open-source-data-quality-tools",
+        "name": "Open-Source Data Quality Tools",
+        "singular": "open-source data quality tool",
+        "intro": "Open-source data quality tools are free to use and can be run inside your own pipelines, with the checks stored as code next to your transformations. You host and maintain them yourself; some vendors also sell a paid cloud version with a user interface and alerting.",
+        "ruleText": "The core product is released under an open-source licence.",
+        "rule": {
+          "feature": "openSource"
+        }
+      }
+    ],
+    "compareTop": 6
+  },
+  {
+    "slug": "power-bi-report-testing-tools",
+    "name": "Power BI Report Testing Tools",
+    "singular": "Power BI report testing tool",
+    "plural": "Power BI report testing tools",
+    "topic": "Data Testing & Quality",
+    "featured": "icedq",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "Power BI report testing tools check that the numbers in Power BI reports and dashboards are right and stay right. They compare report values against the source data, catch changes between report versions (regression testing), and measure how fast reports load. This matters most when reports drive financial or regulatory decisions, or when many reports share one dataset.",
+    "buyingTips": [
+      "Confirm the tool reads Power BI Service (cloud) reports, Power BI Report Server, or both, depending on where yours run.",
+      "Check whether it validates report values against the source database, or only compares one report version with another.",
+      "If you deploy reports through a pipeline, look for CI/CD support so tests run before a release.",
+      "Ask how it authenticates to Power BI (service principal or user account) and what permissions it needs."
+    ],
+    "featureLabels": {
+      "powerBi": "Power BI",
+      "reportDataValidation": "Report data validated against source",
+      "regressionTesting": "Report regression testing",
+      "performanceTesting": "Report performance testing",
+      "cicdIntegration": "CI/CD integration"
+    },
+    "faqs": [
+      {
+        "q": "How do you test a Power BI report?",
+        "a": "Typically in three ways: compare the values shown in the report with a query on the source data, compare the report before and after a change (regression testing), and measure load and refresh times. Testing tools automate all three and keep a history of results."
+      }
+    ],
+    "useCases": [],
+    "compareTop": 6
+  },
+  {
+    "slug": "bi-report-testing-tools",
+    "name": "BI Report Testing Tools",
+    "singular": "BI report testing tool",
+    "plural": "BI report testing tools",
+    "topic": "Data Testing & Quality",
+    "featured": "icedq",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "BI report testing tools check reports and dashboards in tools such as Power BI, Tableau, Qlik, Looker and Cognos: that the numbers match the source data, that a change did not break an existing report, and that reports load fast enough. The biggest difference between them is which BI platforms they support, so start from the BI tools you run.",
+    "buyingTips": [
+      "Start from your BI platforms: support varies widely beyond Power BI and Tableau.",
+      "Check whether tests compare report values with the source database or only one report version with another.",
+      "Look for CI/CD support if reports are deployed through a pipeline.",
+      "If you are migrating between BI tools, check for side-by-side comparison of the old and new reports."
+    ],
+    "featureLabels": {
+      "powerBi": "Power BI",
+      "tableau": "Tableau",
+      "otherBi": "Other BI tools (Qlik, Looker, Cognos, MicroStrategy...)",
+      "regressionTesting": "Report regression testing",
+      "cicdIntegration": "CI/CD integration"
+    },
+    "faqs": [
+      {
+        "q": "What is BI report testing?",
+        "a": "BI report testing checks that business intelligence reports and dashboards show correct numbers, keep working after changes, and perform acceptably. It covers data accuracy against the source, regression between versions, and report performance."
+      }
+    ],
+    "useCases": [
+      {
+        "slug": "tableau-report-testing-tools",
+        "name": "Tableau Report Testing Tools",
+        "singular": "Tableau report testing tool",
+        "intro": "These BI report testing tools support Tableau: they check that Tableau dashboards show the right numbers and keep working after changes to workbooks, data sources or the Tableau version.",
+        "ruleText": "The vendor states support for testing Tableau reports or dashboards.",
+        "rule": {
+          "feature": "tableau"
+        }
+      }
+    ],
+    "compareTop": 6
+  },
+  {
+    "slug": "file-testing-tools",
+    "name": "File Testing Tools",
+    "singular": "file testing tool",
+    "plural": "file testing tools",
+    "topic": "Data Testing & Quality",
+    "featured": "icedq",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "File testing tools validate data files such as CSV, JSON, XML, Excel and Parquet: that each file has the expected structure, that its values pass your rules, and that its contents match the database it was loaded into or extracted from. They are used for vendor data feeds, data lake ingestion and file-based migrations.",
+    "buyingTips": [
+      "List the formats you receive (CSV, fixed-width, JSON, XML, Excel, Parquet) and confirm each one is supported.",
+      "Check where files can be read from: local folders, SFTP, Amazon S3, Azure Blob or Google Cloud Storage.",
+      "If files are loaded into a database, file-to-database comparison catches load errors that schema checks miss.",
+      "For very large files, ask how the tool handles size limits and how long a full comparison takes."
+    ],
+    "featureLabels": {
+      "flatFiles": "CSV, JSON and XML files",
+      "excelFiles": "Excel files",
+      "columnarFiles": "Parquet or Avro files",
+      "fileToDb": "File-to-database comparison",
+      "schemaValidation": "Schema / format validation"
+    },
+    "faqs": [
+      {
+        "q": "How do you validate a CSV file automatically?",
+        "a": "A file testing tool checks the file's structure (columns, data types, delimiters) against an expected schema, runs value rules (for example no empty IDs, valid dates), and can compare the file's rows with the table it was loaded into."
+      }
+    ],
+    "useCases": [],
+    "compareTop": 6
+  },
+  {
+    "slug": "api-testing-tools",
+    "name": "API Testing Tools",
+    "singular": "API testing tool",
+    "plural": "API testing tools",
+    "topic": "Software Testing",
+    "intro": "API testing tools send requests to an API and check the responses: status codes, response bodies, headers, timing and contract compliance. They range from desktop and web clients used for exploring and debugging APIs, to code-based frameworks that run in CI/CD, to platforms that add mocking, load testing and team collaboration.",
+    "buyingTips": [
+      "Decide between a GUI client (fast to start, good for manual exploration) and a code-based framework (versioned with your code, runs in CI/CD).",
+      "Check protocol support beyond REST if you need it: GraphQL, gRPC, SOAP or WebSockets.",
+      "If several people share collections, compare team-plan prices per user; free plans often limit collaboration.",
+      "Load testing and mocking are sometimes separate products or paid add-ons; check before you compare prices."
+    ],
+    "featureLabels": {
+      "rest": "REST API testing",
+      "graphql": "GraphQL testing",
+      "loadTesting": "Load testing",
+      "mocking": "API mocking",
+      "cicdIntegration": "CI/CD integration"
+    },
+    "faqs": [
+      {
+        "q": "What is API testing?",
+        "a": "API testing checks an application programming interface directly, without a user interface, by sending requests and verifying the responses (status code, data, headers, response time) against expected results."
+      }
+    ],
+    "useCases": [
+      {
+        "slug": "api-testing-tools-with-load-testing",
+        "name": "API Testing Tools with Load Testing",
+        "singular": "API testing tool with load testing",
+        "intro": "These API testing tools can also send high volumes of requests to measure response times and error rates under load, so you can run functional and performance tests from one tool.",
+        "ruleText": "The vendor documents load or performance testing of APIs.",
+        "rule": {
+          "feature": "loadTesting"
+        }
+      }
+    ],
+    "compareTop": 6
   }
 ]

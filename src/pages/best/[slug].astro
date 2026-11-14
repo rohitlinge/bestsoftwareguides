@@ -4,7 +4,7 @@ import RankCard from '../../components/RankCard.astro';
 import FeatureTable from '../../components/FeatureTable.astro';
 import Faq from '../../components/Faq.astro';
 import Sources from '../../components/Sources.astro';
-import { lcName, lc1, categories, compares, categoryFaqs, freePagesLive, pluralName, money, fmtDate, iso, buildDate, site, useCases, statSentences, MIN_DIRECTORY_TOOLS, type Category, type Tool, type UseCase } from '../../lib/data';
+import { per, lcName, lc1, categories, compares, categoryFaqs, freePagesLive, pluralName, scoreLeader, featuredLabel, money, fmtDate, iso, buildDate, site, useCases, statSentences, MIN_DIRECTORY_TOOLS, type Category, type Tool, type UseCase } from '../../lib/data';
 import { crumbsLd, faqLd, itemListLd, articleLd, collectionLd } from '../../lib/ld';
 
 type Variant = 'main' | 'free' | 'usecase';
@@ -27,7 +27,10 @@ const title = variant === 'free'
   ? `Best Free ${c.name} in ${year}: What Each Free Plan Includes`
   : variant === 'usecase' ? `Best ${u!.name} in ${year}: Ranked with Real Prices`
   : `Best ${c.name} in ${year}: Ranked with Real Prices`;
-const top = list[0], second = list[1];
+// `top`/`second` are by score. A featured partner (if any) is listed first but named separately.
+const feat = list.find((t) => t.featured);
+const byScore = [...list].sort((a, b) => a.scoreRank - b.scoreRank);
+const top = byScore[0], second = byScore[1];
 const topFree = top && !top.freePlan ? list.find((t) => t.freePlan) : undefined;
 const cheapest = [...list].filter((t) => t.entryPrice != null).sort((a, b) => a.entryPrice! - b.entryPrice!)[0];
 const description = variant === 'free'
@@ -35,9 +38,9 @@ const description = variant === 'free'
   : `The best ${singular} is ${top.name} (${top.score}/10)${second ? `, followed by ${second.name}` : ''}. ${list.length} tools compared on price, free plans and features. Prices checked ${fmtDate(c.updated)}.`;
 const stats = statSentences(c, list, variant === 'usecase' ? lcName(u!.name) : pluralName(c));
 const faqs = variant === 'free'
-  ? list.map((t) => ({ q: `Is ${t.name} free?`, a: `Yes. ${t.freePlanDetails ?? 'It has a free plan.'} Paid plans start at ${t.entryPrice != null ? money(t.entryPrice) + '/user/mo billed annually' : 'see vendor'}.` }))
+  ? list.map((t) => ({ q: `Is ${t.name} free?`, a: `Yes. ${t.freePlanDetails ?? 'It has a free plan.'} Paid plans start at ${t.entryPrice != null ? money(t.entryPrice) + per(t) + ' billed annually' : 'see vendor'}.` }))
   : variant === 'usecase'
-    ? [{ q: `What is the best ${singular}?`, a: `${top.name} ranks first (${top.score}/10) among the ${list.length} ${lcName(c.name)} that meet this rule: ${lc1(u!.ruleText)}${second ? ` ${second.name} is second (${second.score}/10).` : ''}` }, ...(u!.faqs ?? [])]
+    ? [{ q: `What is the best ${singular}?`, a: `${feat && feat !== top ? `${feat.name} is listed first as a featured partner. By score, ` : ''}${top.name} ranks first (${top.score}/10) among the ${list.length} ${lcName(c.name)} that meet this rule: ${lc1(u!.ruleText)}${second ? ` ${second.name} is second (${second.score}/10).` : ''}` }, ...(u!.faqs ?? [])]
     : categoryFaqs(c);
 const catCompares = compares.filter((x) => x.category.slug === c.slug && list.some((t) => t.slug === x.a.slug) && list.some((t) => t.slug === x.b.slug));
 const siblings = useCases.filter((x) => x.category.slug === c.slug && x.slug !== u?.slug && x.indexable);
@@ -45,7 +48,7 @@ const indexable = variant === 'usecase' ? u!.indexable : c.indexable;
 const jsonld = [
   crumbsLd([{ name: 'Home', path: '/' }, { name: 'Rankings', path: '/best/' }, ...(variant !== 'main' ? [{ name: c.name, path: `/best/${c.slug}/` }] : []), { name: listName, path }]),
   collectionLd({ name: title, description, path, modified: c.updated }),
-  itemListLd({ name: listName, tools: list }, path),
+  { ...itemListLd({ name: listName, tools: list }, path), ...(feat ? { description: `Position 1 (${feat.name}) is a featured partner placement. Positions 2 onward are in order of our published score.` } : {}) },
   faqLd([...faqs, ...(variant === 'free' ? [] : stats)]),
   articleLd({ headline: title, description, path, published: iso(variant === 'main' ? c.publishDate : c.comparesDate), modified: c.updated }),
 ];
@@ -65,8 +68,9 @@ const jsonld = [
       <p><strong>{list.map((t) => t.name).join(', ')}</strong> have free plans. The highest-ranked is <strong>{top.name}</strong> ({top.score}/10): {top.freePlanDetails}</p>
     ) : (
       <>
-        <p><strong>{top.name} is the top-ranked {singular}</strong> of the {list.length} we ranked ({top.score}/10{top.freePlan ? ', free plan' : ''}), best for {lc1(top.bestFor)}. {second && <><strong>{second.name}</strong> is the runner-up ({second.score}/10).</>} {topFree && <>The highest-ranked option with a free plan is <strong>{topFree.name}</strong> ({topFree.score}/10).</>}</p>
-        {cheapest && <p>Cheapest paid entry: <strong>{cheapest.name}</strong> at {money(cheapest.entryPrice)}/user/month billed annually.</p>}
+        {feat && <p><span class="badge featured">{featuredLabel}</span> <strong>{feat.name}</strong> is listed first: {lc1(feat.tagline)} Score {feat.score}/10. <a href="/disclosure/">What featured means</a>.</p>}
+        <p><strong>{top.name} is the {feat && feat !== top ? 'highest-scoring' : 'top-ranked'} {singular}</strong> of the {list.length} we ranked ({top.score}/10{top.freePlan ? ', free plan' : ''}), best for {lc1(top.bestFor)}. {second && <><strong>{second.name}</strong> is the runner-up ({second.score}/10).</>} {topFree && <>The highest-ranked option with a free plan is <strong>{topFree.name}</strong> ({topFree.score}/10).</>}</p>
+        {cheapest && <p>Cheapest paid entry: <strong>{cheapest.name}</strong> at {money(cheapest.entryPrice)}{per(cheapest)}nth billed annually.</p>}
       </>
     )}
   </div>
@@ -85,7 +89,7 @@ const jsonld = [
   {variant === 'free' && (
     <div class="table-wrap"><table>
       <thead><tr><th>Tool</th><th>What the free plan includes</th><th>First paid plan</th></tr></thead>
-      <tbody>{list.map((t) => <tr><td><a href={`/tools/${t.slug}/`}>{t.name}</a></td><td>{t.freePlanDetails}</td><td>{t.entryPrice != null ? `${money(t.entryPrice)}/user/mo (annual)` : 'See vendor'}</td></tr>)}</tbody>
+      <tbody>{list.map((t) => <tr><td><a href={`/tools/${t.slug}/`}>{t.name}</a></td><td>{t.freePlanDetails}</td><td>{t.entryPrice != null ? `${money(t.entryPrice)}${per(t)} (annual)` : 'See vendor'}</td></tr>)}</tbody>
     </table></div>
   )}
 
@@ -133,5 +137,5 @@ const jsonld = [
 
   <Faq faqs={faqs} />
   <Sources tools={list} />
-  <p class="small muted">Scores come from published, repeatable data (features, free plan, entry price, pricing transparency). No vendor can pay to change a score or a rank. <a href="/methodology/">Read the methodology</a>.</p>
+  <p class="small muted">Scores come from published, repeatable data (features, free plan, entry price, pricing transparency). No vendor can pay to change a score.{list.some((t) => t.featured) && <> {list.find((t) => t.featured)!.name} is listed first as a featured partner; all other tools are in score order.</>} <a href="/methodology/">Read the methodology</a> · <a href="/disclosure/">Disclosure</a>.</p>
 </Base>

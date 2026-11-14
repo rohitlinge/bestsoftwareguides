@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import RankCard from '../../../components/RankCard.astro';
 import FeatureTable from '../../../components/FeatureTable.astro';
 import Faq from '../../../components/Faq.astro';
-import { lc1, tools, toolCategory, money, fmtDate, iso, buildDate, type Tool } from '../../../lib/data';
+import { per, lc1, tools, toolCategory, money, fmtDate, iso, buildDate, type Tool } from '../../../lib/data';
 import { crumbsLd, faqLd, itemListLd, articleLd } from '../../../lib/ld';
 
 export function getStaticPaths() {
@@ -20,7 +20,7 @@ const title = `Best ${t.name} Alternatives in ${year}`;
 const description = `The best ${t.name} alternatives are ${alts.slice(0, 3).map((o) => o.name).join(', ')}. Compare price, free plans and features. Checked ${fmtDate(c.updated)}.`;
 const faqs = [
   { q: `What is the best alternative to ${t.name}?`, a: `${alts[0].name} is the highest-scoring alternative (${alts[0].score}/10), best for ${lc1(alts[0].bestFor)}.` },
-  ...(cheaper.length ? [{ q: `What is cheaper than ${t.name}?`, a: `${cheaper.map((o) => `${o.name} (from ${money(o.entryPrice)}/user/mo)`).join(', ')} start cheaper than ${t.name} (${money(t.entryPrice)}/user/mo) on annual billing.` }] : []),
+  ...(cheaper.length ? [{ q: `What is cheaper than ${t.name}?`, a: `${cheaper.map((o) => `${o.name} (from ${money(o.entryPrice)}${per(o)})`).join(', ')} start cheaper than ${t.name} (${money(t.entryPrice)}${per(t)}) on annual billing.` }] : []),
   ...(freeAlts.length ? [{ q: `Is there a free alternative to ${t.name}?`, a: `Yes: ${freeAlts.map((o) => o.name).join(', ')} have free plans.` }] : []),
 ];
 const jsonld = [

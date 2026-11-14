@@ -11,8 +11,8 @@ const { tool: t } = Astro.props;
       {t.plans.map((p) => (
         <tr>
           <td><strong>{p.name}</strong></td>
-          <td>{p.custom ? 'Custom quote' : p.annual === 0 ? 'Free' : p.annual != null ? `${money(p.annual)}/mo` : '—'}</td>
-          <td>{p.custom ? 'Custom quote' : p.monthly === 0 ? 'Free' : p.monthly != null ? `${money(p.monthly)}/mo` : '—'}</td>
+          <td>{p.custom ? 'Custom quote' : p.oneTime ? `${money(p.oneTime)} one-time` : p.annual === 0 ? 'Free' : p.annual != null ? `${money(p.annual)}/mo` : '—'}</td>
+          <td>{p.custom ? 'Custom quote' : p.oneTime ? `${money(p.oneTime)} one-time` : p.monthly === 0 ? 'Free' : p.monthly != null ? `${money(p.monthly)}/mo` : '—'}</td>
           <td>{annualSaving(p) != null ? `${annualSaving(p)}%` : '—'}</td>
           <td class="small">{p.notes}</td>
         </tr>

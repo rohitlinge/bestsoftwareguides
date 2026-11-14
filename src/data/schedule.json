@@ -1,16 +1,87 @@
 {
   "_comment": "Drip-publishing plan. 'day' is days after launchDate in site.config.mjs. A category publishes its ranking page, tool pages, pricing pages and alternatives pages together. Its comparison pages and free-tools page follow on 'comparesDay'. Add new categories and posts here; the daily build publishes them on their day.",
   "categories": [
-    { "slug": "ai-meeting-note-takers", "day": 0, "comparesDay": 2 },
-    { "slug": "project-management-software", "day": 0, "comparesDay": 4 },
-    { "slug": "crm-software", "day": 7, "comparesDay": 9 },
-    { "slug": "password-managers", "day": 14, "comparesDay": 16 }
+    {
+      "slug": "ai-meeting-note-takers",
+      "day": 0,
+      "comparesDay": 2
+    },
+    {
+      "slug": "project-management-software",
+      "day": 0,
+      "comparesDay": 4
+    },
+    {
+      "slug": "crm-software",
+      "day": 7,
+      "comparesDay": 9
+    },
+    {
+      "slug": "password-managers",
+      "day": 14,
+      "comparesDay": 16
+    },
+    {
+      "slug": "etl-testing-tools",
+      "day": 1,
+      "comparesDay": 1
+    },
+    {
+      "slug": "data-reconciliation-tools",
+      "day": 1,
+      "comparesDay": 1
+    },
+    {
+      "slug": "data-monitoring-testing-tools",
+      "day": 1,
+      "comparesDay": 1
+    },
+    {
+      "slug": "data-quality-tools",
+      "day": 1,
+      "comparesDay": 1
+    },
+    {
+      "slug": "power-bi-report-testing-tools",
+      "day": 1,
+      "comparesDay": 1
+    },
+    {
+      "slug": "bi-report-testing-tools",
+      "day": 1,
+      "comparesDay": 1
+    },
+    {
+      "slug": "file-testing-tools",
+      "day": 1,
+      "comparesDay": 1
+    },
+    {
+      "slug": "api-testing-tools",
+      "day": 1,
+      "comparesDay": 1
+    }
   ],
   "posts": [
-    { "slug": "ai-note-taker-pricing-2026", "day": 0 },
-    { "slug": "free-project-management-plans-compared", "day": 3 },
-    { "slug": "annual-vs-monthly-billing-savings", "day": 5 },
-    { "slug": "how-much-does-a-crm-cost-2026", "day": 8 },
-    { "slug": "password-manager-price-changes-2026", "day": 15 }
+    {
+      "slug": "ai-note-taker-pricing-2026",
+      "day": 0
+    },
+    {
+      "slug": "free-project-management-plans-compared",
+      "day": 3
+    },
+    {
+      "slug": "annual-vs-monthly-billing-savings",
+      "day": 5
+    },
+    {
+      "slug": "how-much-does-a-crm-cost-2026",
+      "day": 8
+    },
+    {
+      "slug": "password-manager-price-changes-2026",
+      "day": 15
+    }
   ]
 }

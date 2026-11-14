@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import PriceTable from '../../../components/PriceTable.astro';
 import Faq from '../../../components/Faq.astro';
 import Sources from '../../../components/Sources.astro';
-import { lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, alsoRankedIn, type Tool } from '../../../lib/data';
+import { per, lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, alsoRankedIn, rankingsFor, featuredLabel, withArticle, quoteOnly, type Tool } from '../../../lib/data';
 import { crumbsLd, faqLd, softwareLd, articleLd } from '../../../lib/ld';
 
 export function getStaticPaths() {
@@ -25,6 +25,10 @@ const jsonld = [
 ];
 const keys = Object.keys(c.featureLabels);
 const also = alsoRankedIn(t).filter((x) => x.u.indexable);
+// Other categories this tool is ranked in (a tool can sit in several).
+const otherCats = rankingsFor(t.slug).filter((x) => x.c.slug !== c.slug);
+const featuredIn = rankingsFor(t.slug).filter((x) => x.t.featured);
+const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${x.scoreRank} by score` : `#${x.rank}`);
 ---
 <Base title={title} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article" published={iso(t.publishDate)} modified={t.checked}>
   <div class="crumbs"><a href="/">Home</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {t.name}</div>
@@ -40,10 +44,14 @@ const also = alsoRankedIn(t).filter((x) => x.u.indexable);
   </div>
 
   <div class="answer">
-    <p><strong>{t.name}</strong> is {lc1(t.tagline)} It ranks <strong>#{t.rank} of {c.tools.length}</strong> in our {lcName(c.name)} list ({t.score}/10) and is best for {lc1(t.bestFor)}.</p>
+    <p><strong>{t.name}</strong> is {withArticle(t.tagline)} {t.featured
+      ? <>It is our <span class="badge featured">{featuredLabel}</span> in {lcName(c.name)} and is listed first there; by score it is <strong>#{t.scoreRank} of {c.tools.length}</strong> ({t.score}/10).</>
+      : <>It ranks <strong>#{t.rank} of {c.tools.length}</strong> in our {lcName(c.name)} list ({t.score}/10).</>} Best for {lc1(t.bestFor)}.</p>
+    {otherCats.length > 0 && <p>Also ranked in {otherCats.map((x, i) => <>{i > 0 && ', '}<a href={`/best/${x.c.slug}/`}>{x.c.name}</a> ({rankText(x.t)}, {x.t.score}/10)</>)}.</p>}
     <p><strong>Price:</strong> {priceLine(t)}.</p>
   </div>
 
+  {featuredIn.length > 0 && <p class="small muted">Disclosure: {t.name} is a featured partner of {site.name} and is listed first in {featuredIn.map((x) => x.c.name).join(', ')}. That does not change its score, pros, cons or prices on this page. <a href="/disclosure/">Read our disclosure</a>.</p>}
   <div class="btn-row">
     <a class="btn" href={t.website} rel="nofollow noopener" target="_blank">Visit {t.name}</a>
     <a class="btn ghost" href={`/tools/${t.slug}/pricing/`}>Full pricing</a>
@@ -66,7 +74,7 @@ const also = alsoRankedIn(t).filter((x) => x.u.indexable);
   <div class="table-wrap"><table><tbody>
     <tr><th>Free plan</th><td>{t.freePlan ? `Yes. ${t.freePlanDetails ?? ''}` : 'No'}</td></tr>
     <tr><th>Free trial</th><td>{t.trial ?? 'Not advertised'}</td></tr>
-    <tr><th>Paid from</th><td>{t.entryPrice != null ? `${money(t.entryPrice)}/user/mo billed annually` : 'See vendor'}{t.entryMonthly != null ? ` · ${money(t.entryMonthly)} monthly` : ''}</td></tr>
+    <tr><th>Paid from</th><td>{t.entryPrice != null ? `${money(t.entryPrice)}${per(t)} billed annually` : quoteOnly(t) ? 'Quote-only (contact sales)' : 'See vendor'}{t.entryMonthly != null ? ` · ${money(t.entryMonthly)} monthly` : ''}</td></tr>
     <tr><th>Minimum seats</th><td>{t.minSeats}</td></tr>
     <tr><th>Platforms</th><td>{t.platforms.join(', ')}</td></tr>
     {t.founded && <tr><th>Founded</th><td>{t.founded}{t.hq ? ` · ${t.hq}` : ''}</td></tr>}
@@ -74,14 +82,17 @@ const also = alsoRankedIn(t).filter((x) => x.u.indexable);
     {!!t.compliance?.length && <tr><th>Compliance and security</th><td>{t.compliance.join(', ')}</td></tr>}
     {!!t.support?.length && <tr><th>Support</th><td>{t.support.join(', ')}</td></tr>}
     {keys.map((k) => <tr><th>{c.featureLabels[k]}</th><td>{t.features[k] === true ? 'Yes' : t.features[k] === false ? 'No' : 'Not confirmed'}</td></tr>)}
-    <tr><th>Facts checked</th><td>{fmtDate(t.checked)} · {t.verification === 'verified' ? 'verified on the vendor pricing page' : 'reported from published breakdowns'} (<a href={t.pricingUrl} rel="nofollow noopener" target="_blank">source</a>)</td></tr>
+    <tr><th>Facts checked</th><td>{fmtDate(t.checked)} · {t.verification === 'verified' ? "verified on the vendor's own site" : 'reported from published breakdowns'} (<a href={t.pricingUrl} rel="nofollow noopener" target="_blank">source</a>)</td></tr>
   </tbody></table></div>
 
-  {also.length > 0 && (
+  {(also.length > 0 || otherCats.length > 0) && (
     <>
       <h2>Also ranked in</h2>
-      <p class="narrow">{t.name} is ranked in {also.length + 1} of our lists: #{t.rank} of {c.tools.length} in <a href={`/best/${c.slug}/`}>{c.name}</a>, and:</p>
-      <div class="grid">{also.map((x) => <a class="card" href={x.u.path}><strong>#{x.pos} of {x.of}</strong> in {x.u.name}</a>)}</div>
+      <p class="narrow">{t.name} is ranked in {also.length + otherCats.length + 1} of our lists: {rankText(t)} of {c.tools.length} in <a href={`/best/${c.slug}/`}>{c.name}</a>, and:</p>
+      <div class="grid">
+        {otherCats.map((x) => <a class="card" href={`/best/${x.c.slug}/`}><strong>{rankText(x.t)} of {x.c.tools.length}</strong> in {x.c.name}<div class="small muted">Score {x.t.score}/10</div></a>)}
+        {also.map((x) => <a class="card" href={x.u.path}><strong>#{x.pos} of {x.of}</strong> in {x.u.name}</a>)}
+      </div>
     </>
   )}
 

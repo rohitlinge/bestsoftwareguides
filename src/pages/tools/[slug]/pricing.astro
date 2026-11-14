@@ -3,7 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import PriceTable from '../../../components/PriceTable.astro';
 import Faq from '../../../components/Faq.astro';
 import Sources from '../../../components/Sources.astro';
-import { lc1, tools, toolCategory, money, annualSaving, fmtDate, iso, buildDate, type Tool } from '../../../lib/data';
+import { perLong, per, lc1, tools, toolCategory, money, annualSaving, fmtDate, iso, buildDate, type Tool } from '../../../lib/data';
 import { crumbsLd, faqLd, softwareLd, articleLd } from '../../../lib/ld';
 
 export function getStaticPaths() {
@@ -15,7 +15,7 @@ const year = buildDate.getUTCFullYear();
 const path = `/tools/${t.slug}/pricing/`;
 const title = `${t.name} Pricing ${year}: Every Plan, Monthly vs Annual`;
 const savings = t.plans.map((p) => ({ p, s: annualSaving(p) })).filter((x) => x.s != null);
-const description = `${t.name} pricing: ${t.freePlan ? 'free plan, ' : 'no free plan, '}${t.entryPrice != null ? `paid from ${money(t.entryPrice)}/user/mo billed annually` : 'see vendor'}. All ${t.plans.length} plans with monthly vs annual prices. Checked ${fmtDate(t.checked)}.`;
+const description = `${t.name} pricing: ${t.freePlan ? 'free plan, ' : 'no free plan, '}${t.entryPrice != null ? `paid from ${money(t.entryPrice)}${per(t)} billed annually` : 'see vendor'}. All ${t.plans.length} plans with monthly vs annual prices. Checked ${fmtDate(t.checked)}.`;
 const peers = c.tools.filter((o) => o.slug !== t.slug && o.entryPrice != null).sort((a, b) => a.entryPrice! - b.entryPrice!);
 const faqs = [
   { q: `How much is ${t.name} per month?`, a: `${t.plans.filter((p) => p.monthly || p.annual).map((p) => `${p.name}: ${p.annual ? money(p.annual) + ' billed annually' : ''}${p.annual && p.monthly ? ', ' : ''}${p.monthly ? money(p.monthly) + ' billed monthly' : ''}`).join('; ')}. Prices are per user per month.` },
@@ -35,7 +35,7 @@ const jsonld = [
   <div class="meta"><span>Checked {fmtDate(t.checked)}</span><a href={t.pricingUrl} rel="nofollow noopener" target="_blank">Official pricing page</a></div>
 
   <div class="answer">
-    <p><strong>{t.name} {t.freePlan ? 'has a free plan' : 'has no free plan'}</strong>{t.entryPrice != null && <> and paid plans start at <strong>{money(t.entryPrice)} per user/month</strong> billed annually</>}{t.entryMonthly != null && <> ({money(t.entryMonthly)} billed monthly)</>}.</p>
+    <p><strong>{t.name} {t.freePlan ? 'has a free plan' : 'has no free plan'}</strong>{t.entryPrice != null && <> and paid plans start at <strong>{money(t.entryPrice)} {perLong(t)}</strong> billed annually</>}{t.entryMonthly != null && <> ({money(t.entryMonthly)} billed monthly)</>}.</p>
     {savings.length > 0 && <p>Annual billing saves up to <strong>{Math.max(...savings.map((x) => x.s!))}%</strong>.</p>}
   </div>
 
@@ -48,8 +48,8 @@ const jsonld = [
       <div class="table-wrap"><table>
         <thead><tr><th>Tool</th><th>Free plan</th><th>Paid from (annual)</th></tr></thead>
         <tbody>
-          <tr><td><strong>{t.name}</strong></td><td>{t.freePlan ? 'Yes' : 'No'}</td><td>{t.entryPrice != null ? `${money(t.entryPrice)}/user/mo` : 'See vendor'}</td></tr>
-          {peers.map((o) => <tr><td><a href={`/tools/${o.slug}/pricing/`}>{o.name}</a></td><td>{o.freePlan ? 'Yes' : 'No'}</td><td>{money(o.entryPrice)}/user/mo</td></tr>)}
+          <tr><td><strong>{t.name}</strong></td><td>{t.freePlan ? 'Yes' : 'No'}</td><td>{t.entryPrice != null ? `${money(t.entryPrice)}${per(t)}` : 'See vendor'}</td></tr>
+          {peers.map((o) => <tr><td><a href={`/tools/${o.slug}/pricing/`}>{o.name}</a></td><td>{o.freePlan ? 'Yes' : 'No'}</td><td>{money(o.entryPrice)}{per(o)}</td></tr>)}
         </tbody>
       </table></div>
     </>

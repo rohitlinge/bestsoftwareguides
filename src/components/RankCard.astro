@@ -1,15 +1,16 @@
 ---
-import { priceLine, type Tool } from '../lib/data';
+import { priceLine, featuredLabel, type Tool } from '../lib/data';
 interface Props { tool: Tool; pos?: number; }
 const { tool: t, pos } = Astro.props;
 ---
-<article class="rank-card" id={t.slug}>
+<article class={t.featured ? 'rank-card featured' : 'rank-card'} id={t.slug}>
   <div class="rank-num">#{pos ?? t.rank}</div>
   <div>
+    {t.featured && <div class="small"><span class="badge featured">{featuredLabel}</span> Listed first by arrangement with {t.name}; its score is from the same formula as every other tool (#{t.scoreRank} by score). <a href="/disclosure/">Disclosure</a></div>}
     <h3 style="margin:0 0 4px"><a href={`/tools/${t.slug}/`}>{t.name}</a></h3>
     <div class="small"><span class="badge green">Best for</span>{t.bestFor}</div>
     <p style="margin:8px 0">{t.tagline}</p>
-    <div class="small muted">{priceLine(t)}{pos != null && pos !== t.rank && <> · #{t.rank} overall</>}</div>
+    <div class="small muted">{priceLine(t)}{pos != null && pos !== t.rank && !t.featured && <> · #{t.rank} overall</>}</div>
     <div class="btn-row">
       <a class="btn ghost" href={`/tools/${t.slug}/`}>Full breakdown</a>
       <a class="btn ghost" href={`/tools/${t.slug}/pricing/`}>{t.name} pricing</a>
