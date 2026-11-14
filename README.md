@@ -63,19 +63,20 @@ npm run build:preview        # builds everything, ignoring the schedule (noindex
 LAUNCH_DATE=2026-11-16 BUILD_DATE=2026-11-30 npm run build   # see the site as it will look on a given day
 ```
 
-## Deploy (Cloudflare Pages, free)
+## Deploy (Cloudflare Workers, free)
 
-1. **Create a GitHub repo** and push this folder to the `main` branch.
-2. **Cloudflare:** add your domain `bestsoftwareguides.online` to Cloudflare (free plan) and change the nameservers at your registrar to the two Cloudflare gives you.
-3. **Workers & Pages → Create → Pages → Direct upload**: create a project named `bestsoftwareguides` (you can upload `dist/` once by hand, or let the Action do the first deploy).
-4. In the Pages project, **Custom domains → add** `bestsoftwareguides.online` and `www.bestsoftwareguides.online`. Redirect `www` to the apex.
-5. **Cloudflare API token:** My Profile → API Tokens → Create → template "Edit Cloudflare Workers" (or a custom token with *Cloudflare Pages: Edit*). Copy your Account ID.
-6. **GitHub → Settings → Secrets and variables → Actions**, add:
-   - `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
-   - `OPENAI_API_KEY` (or `ANTHROPIC_API_KEY` plus a variable `LLM_PROVIDER=anthropic`) for the weekly price check
-7. Push. The **Daily publish** workflow builds, deploys and pings IndexNow. Run it once by hand from the Actions tab.
+The site is a static Cloudflare Worker named `bestsoftwareguides`, configured in `wrangler.jsonc`. Two things deploy it, and both use that file:
 
-Netlify or Vercel also work: build command `npm run build`, output `dist`. Replace the deploy step in `.github/workflows/daily-publish.yml` with a deploy-hook `curl`.
+- **Every push to `main`**: Cloudflare Workers Builds (the Worker is connected to this GitHub repo) builds and deploys.
+- **Every day at 07:00 IST**: the GitHub Action **Daily publish** rebuilds and deploys, so scheduled pages go live on their date even with no push. Then it pings IndexNow.
+
+One-time setup for the daily job (GitHub → Settings → Secrets and variables → Actions):
+1. **Secret** `CLOUDFLARE_API_TOKEN`: Cloudflare → My Profile → API Tokens → Create Token → template **Edit Cloudflare Workers**.
+2. **Variable** `CLOUDFLARE_ACCOUNT_ID`: your Cloudflare account ID (Workers & Pages overview, right-hand side).
+3. Actions tab → **Daily publish** → **Run workflow** once to check it.
+4. For the weekly price check, also add `OPENAI_API_KEY` (or `ANTHROPIC_API_KEY` plus a variable `LLM_PROVIDER=anthropic`).
+
+Dates are resolved in `astro.config.mjs` (in Node) and baked into the build. Don't read `new Date()` or `process.env` at module level in `src/`: Workers Builds prerenders inside the Workers runtime, where module-level time is 1970-01-01 and would hide every scheduled page.
 
 ## After the first deploy (do these once)
 

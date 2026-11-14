@@ -1,0 +1,16 @@
+// Cloudflare Worker that serves the static site from dist/.
+// Used by both deploy paths, so they always produce the same result:
+//  - Cloudflare Workers Builds (rebuilds on every push to main)
+//  - GitHub Actions "Daily publish" (rebuilds every morning so scheduled pages go live on their date)
+// The custom domain is managed in the Cloudflare dashboard; no routes here, so deploys leave it alone.
+{
+  "name": "bestsoftwareguides",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  // The site is served on its own domain; don't publish a duplicate copy on workers.dev.
+  "workers_dev": false
+}
