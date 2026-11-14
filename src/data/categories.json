@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "ai-meeting-note-takers",
+    "name": "AI Meeting Note Takers",
+    "singular": "AI meeting note taker",
+    "topic": "AI & Productivity",
+    "intro": "AI meeting note takers join or record your Zoom, Google Meet and Microsoft Teams calls, write the transcript and send a summary with action items. The real differences are free-plan limits, CRM sync and how much monthly billing costs compared with annual.",
+    "buyingTips": [
+      "Check what the free plan caps: minutes (Otter.ai), AI summaries (Fathom) or AI notes (tl;dv).",
+      "Compare annual and monthly prices. Several tools charge 40-80% more on monthly billing.",
+      "If you sell, confirm the CRM sync works on the plan you are buying, not only on the top tier.",
+      "For health or legal data, look for HIPAA and SSO, which usually sit on Enterprise plans."
+    ],
+    "featureLabels": {
+      "zoomMeetTeams": "Zoom, Meet and Teams",
+      "unlimitedFreeRecordings": "Unlimited free recordings",
+      "crmSync": "CRM sync",
+      "hipaaOption": "HIPAA option",
+      "sso": "SSO"
+    },
+    "faqs": [
+      {
+        "q": "Do AI note takers work without a bot joining the call?",
+        "a": "Some do. Fathom offers bot-free capture (in beta on Mac) as well as a meeting bot. Most other tools on this list join as a visible bot participant."
+      }
+    ]
+  },
+  {
+    "slug": "project-management-software",
+    "name": "Project Management Software",
+    "singular": "project management tool",
+    "topic": "Productivity",
+    "intro": "Project management software tracks tasks, owners and deadlines across a team. The main choice is between simple boards (Trello), structured work management (Asana, monday.com), all-in-one workspaces (ClickUp) and docs-first tools (Notion).",
+    "buyingTips": [
+      "Count seats first: monday.com paid plans start at 3 seats, which matters for very small teams.",
+      "Check which plan unlocks timeline/Gantt views if you plan by dates.",
+      "If your team writes a lot of documentation, a tool with built-in docs saves a second subscription.",
+      "Check what AI is included on your plan; AI packaging changed at several vendors in 2026."
+    ],
+    "featureLabels": {
+      "timelineGantt": "Timeline / Gantt",
+      "docsWiki": "Built-in docs / wiki",
+      "automations": "Automations",
+      "timeTracking": "Time tracking",
+      "aiIncluded": "AI on paid plans"
+    },
+    "faqs": [
+      {
+        "q": "Which project management tool is best for a team of two?",
+        "a": "Trello, ClickUp and Asana all have free plans that work for two people. monday.com's free plan also covers two seats, but its paid plans start at three seats."
+      }
+    ]
+  },
+  {
+    "slug": "crm-software",
+    "name": "CRM Software",
+    "singular": "CRM",
+    "topic": "Sales",
+    "intro": "CRM software stores your contacts, deals and conversations and shows where every sale stands. Entry prices are close together; the real cost difference shows up at mid tiers, in add-ons and in onboarding fees.",
+    "buyingTips": [
+      "Price the tier you will actually need in a year, not the entry tier.",
+      "Look for one-time onboarding fees (for example on HubSpot Professional).",
+      "Check whether AI features are bundled (Zoho, Freshsales) or sold as add-ons.",
+      "Several CRMs have free plans for 2-3 users that are enough to start."
+    ],
+    "featureLabels": {
+      "visualPipeline": "Visual pipeline",
+      "emailTracking": "Email tracking",
+      "builtInCalling": "Built-in calling",
+      "aiAssistant": "AI assistant",
+      "workflowAutomation": "Workflow automation"
+    },
+    "faqs": [
+      {
+        "q": "Which CRM is best for a small business?",
+        "a": "HubSpot is the easiest free starting point, Zoho CRM gives the most features per dollar, and Freshsales has the lowest entry paid price with phone and email built in."
+      }
+    ]
+  },
+  {
+    "slug": "password-managers",
+    "name": "Password Managers",
+    "singular": "password manager",
+    "topic": "Security & Privacy",
+    "intro": "Password managers store and autofill your passwords and passkeys, encrypted so the provider cannot read them. Prices moved a lot in early 2026: 1Password and Bitwarden raised prices, Proton Pass cut its price and Dashlane dropped its free plan.",
+    "buyingTips": [
+      "Check the renewal price, not only the first-year promotional price.",
+      "If you want to inspect the code or self-host, choose an open-source option (Bitwarden, Proton Pass).",
+      "Confirm passkey support on all your devices.",
+      "Family plans are usually cheaper than several individual plans."
+    ],
+    "featureLabels": {
+      "openSource": "Open source",
+      "passkeys": "Passkeys",
+      "selfHost": "Self-hosting",
+      "emailAliases": "Email aliases / masking",
+      "breachMonitoring": "Breach monitoring"
+    },
+    "faqs": [
+      {
+        "q": "Is a free password manager safe?",
+        "a": "A free plan from a reputable, audited provider such as Bitwarden or Proton Pass uses the same encryption as its paid plans. The paid tiers add features such as file attachments, emergency access and advanced monitoring."
+      }
+    ]
+  }
+]

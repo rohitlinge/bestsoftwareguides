@@ -1,0 +1,20 @@
+{
+  "name": "bestsoftwareguides",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "PREVIEW=1 astro build && astro preview",
+    "build:preview": "PREVIEW=1 astro build",
+    "indexnow": "node scripts/indexnow.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "astro": "^7.4.12"
+  },
+  "type": "module",
+  "private": true
+}

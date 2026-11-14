@@ -1,0 +1,29 @@
+---
+import { money, annualSaving, fmtDate, type Tool } from '../lib/data';
+interface Props { tool: Tool; }
+const { tool: t } = Astro.props;
+---
+<div class="table-wrap">
+  <table>
+    <caption class="sr-only" style="position:absolute;left:-9999px">{t.name} pricing plans</caption>
+    <thead><tr><th>Plan</th><th>Billed annually</th><th>Billed monthly</th><th>Annual saving</th><th>Notes</th></tr></thead>
+    <tbody>
+      {t.plans.map((p) => (
+        <tr>
+          <td><strong>{p.name}</strong></td>
+          <td>{p.custom ? 'Custom quote' : p.annual === 0 ? 'Free' : p.annual != null ? `${money(p.annual)}/mo` : '—'}</td>
+          <td>{p.custom ? 'Custom quote' : p.monthly === 0 ? 'Free' : p.monthly != null ? `${money(p.monthly)}/mo` : '—'}</td>
+          <td>{annualSaving(p) != null ? `${annualSaving(p)}%` : '—'}</td>
+          <td class="small">{p.notes}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+<p class="small muted">
+  USD, per user per month unless noted. "—" means the price is not published or we could not confirm it.
+  Last checked {fmtDate(t.checked)}.{' '}
+  {t.verification === 'reported'
+    ? <>Status: <strong>reported</strong> (taken from recent published breakdowns of the vendor's pricing page, listed under Sources). Confirm on <a href={t.pricingUrl} rel="nofollow noopener" target="_blank">{t.name}'s pricing page</a>.</>
+    : <>Status: <strong>verified</strong> on <a href={t.pricingUrl} rel="nofollow noopener" target="_blank">{t.name}'s pricing page</a>.</>}
+</p>

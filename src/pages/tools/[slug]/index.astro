@@ -1,0 +1,88 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PriceTable from '../../../components/PriceTable.astro';
+import Faq from '../../../components/Faq.astro';
+import Sources from '../../../components/Sources.astro';
+import { lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, type Tool } from '../../../lib/data';
+import { crumbsLd, faqLd, softwareLd, articleLd } from '../../../lib/ld';
+
+export function getStaticPaths() {
+  return tools.map((t) => ({ params: { slug: t.slug }, props: { t } }));
+}
+const { t } = Astro.props as { t: Tool };
+const c = toolCategory(t);
+const path = `/tools/${t.slug}/`;
+const title = `${t.name} Review: Pricing, Pros, Cons and Alternatives`;
+const description = `${t.name}: ${t.tagline} ${priceLine(t)}. Ranked #${t.rank} of ${c.tools.length} ${lcName(c.name)} (${t.score}/10). Checked ${fmtDate(t.checked)}.`;
+const faqs = toolFaqs(t);
+const alts = c.tools.filter((o) => o.slug !== t.slug);
+const vs = comparesFor(t);
+const jsonld = [
+  crumbsLd([{ name: 'Home', path: '/' }, { name: c.name, path: `/best/${c.slug}/` }, { name: t.name, path }]),
+  softwareLd(t, c),
+  faqLd(faqs),
+  articleLd({ headline: title, description, path, published: iso(t.publishDate), modified: t.checked }),
+];
+const keys = Object.keys(c.featureLabels);
+---
+<Base title={title} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article" published={iso(t.publishDate)} modified={t.checked}>
+  <div class="crumbs"><a href="/">Home</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {t.name}</div>
+  <div style="display:flex;gap:14px;align-items:center;margin-top:12px">
+    <span class="avatar" aria-hidden="true">{t.name[0]}</span>
+    <h1 style="margin:0">{t.name} review</h1>
+  </div>
+  <div class="meta" style="margin-top:10px">
+    <span>#{t.rank} in <a href={`/best/${c.slug}/`}>{c.name}</a></span>
+    <span>Score {t.score}/10</span>
+    <span>Checked {fmtDate(t.checked)}</span>
+    <span>By <a href={site.editor.url}>{site.editor.name}</a></span>
+  </div>
+
+  <div class="answer">
+    <p><strong>{t.name}</strong> is {lc1(t.tagline)} It ranks <strong>#{t.rank} of {c.tools.length}</strong> in our {lcName(c.name)} list ({t.score}/10) and is best for {lc1(t.bestFor)}.</p>
+    <p><strong>Price:</strong> {priceLine(t)}.</p>
+  </div>
+
+  <div class="btn-row">
+    <a class="btn" href={t.website} rel="nofollow noopener" target="_blank">Visit {t.name}</a>
+    <a class="btn ghost" href={`/tools/${t.slug}/pricing/`}>Full pricing</a>
+    <a class="btn ghost" href={`/tools/${t.slug}/alternatives/`}>Alternatives</a>
+  </div>
+
+  <h2>What {t.name} is</h2>
+  <p class="narrow">{t.description}</p>
+
+  <h2>Pros and cons</h2>
+  <div class="pros-cons">
+    <div class="card"><strong>Where it wins</strong><ul>{t.pros.map((p) => <li>{p}</li>)}</ul></div>
+    <div class="card"><strong>Where it falls short</strong><ul>{t.cons.map((p) => <li>{p}</li>)}</ul></div>
+  </div>
+
+  <h2>{t.name} pricing</h2>
+  <PriceTable tool={t} />
+
+  <h2>Key facts</h2>
+  <div class="table-wrap"><table><tbody>
+    <tr><th>Free plan</th><td>{t.freePlan ? `Yes. ${t.freePlanDetails ?? ''}` : 'No'}</td></tr>
+    <tr><th>Free trial</th><td>{t.trial ?? 'Not advertised'}</td></tr>
+    <tr><th>Paid from</th><td>{t.entryPrice != null ? `${money(t.entryPrice)}/user/mo billed annually` : 'See vendor'}{t.entryMonthly != null ? ` · ${money(t.entryMonthly)} monthly` : ''}</td></tr>
+    <tr><th>Minimum seats</th><td>{t.minSeats}</td></tr>
+    <tr><th>Platforms</th><td>{t.platforms.join(', ')}</td></tr>
+    {keys.map((k) => <tr><th>{c.featureLabels[k]}</th><td>{t.features[k] === true ? 'Yes' : t.features[k] === false ? 'No' : 'Not confirmed'}</td></tr>)}
+  </tbody></table></div>
+
+  <h2>{t.name} alternatives</h2>
+  <div class="grid">
+    {alts.map((o) => <a class="card" href={`/tools/${o.slug}/`}><strong>{o.name}</strong> <span class="small muted">{o.score}/10</span><div class="small">{o.bestFor}</div></a>)}
+  </div>
+
+  {vs.length > 0 && (
+    <>
+      <h2>{t.name} compared</h2>
+      <ul>{vs.map((x) => <li><a href={`/compare/${x.slug}/`}>{x.a.name} vs {x.b.name}</a></li>)}</ul>
+    </>
+  )}
+
+  <Faq faqs={faqs} />
+  <Sources tools={[t]} />
+</Base>

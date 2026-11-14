@@ -1,0 +1,1536 @@
+[
+  {
+    "slug": "otter-ai",
+    "name": "Otter.ai",
+    "category": "ai-meeting-note-takers",
+    "website": "https://otter.ai",
+    "pricingUrl": "https://otter.ai/pricing",
+    "tagline": "AI meeting assistant with live transcription and a searchable meeting archive.",
+    "bestFor": "Individuals and teams who want live transcripts during calls",
+    "description": "Otter.ai joins Zoom, Google Meet and Microsoft Teams calls, writes a live transcript, and produces summaries and action items. Its free Basic plan is capped by minutes rather than by number of meetings, which makes it easy to test but tight for daily use.",
+    "pros": [
+      "Free plan with live transcription",
+      "Low annual price on Pro",
+      "Business plan adds admin controls and longer meetings"
+    ],
+    "cons": [
+      "Free plan capped at 300 minutes a month and 30 minutes per conversation",
+      "Big gap between monthly and annual pricing",
+      "Enterprise pricing is quote-only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Basic: 300 transcription minutes a month, 30 minutes per conversation, 3 lifetime file imports.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "300 min/month, 30 min per conversation"
+      },
+      {
+        "name": "Pro",
+        "monthly": 16.99,
+        "annual": 8.33,
+        "notes": "Per user. For individuals and small teams"
+      },
+      {
+        "name": "Business",
+        "monthly": 30,
+        "annual": 19.99,
+        "notes": "Per user. Longer meetings, admin controls"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "SSO, SCIM, advanced security"
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Chrome extension"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Spokenly: Otter.ai pricing (vendor page screenshot, May 2026)",
+        "url": "https://spokenly.app/blog/otter-ai-pricing",
+        "date": "2026-05"
+      },
+      {
+        "label": "CostBench: Otter.ai plans",
+        "url": "https://costbench.com/software/ai-meeting-assistants/otter-ai/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "fireflies-ai",
+    "name": "Fireflies.ai",
+    "category": "ai-meeting-note-takers",
+    "website": "https://fireflies.ai",
+    "pricingUrl": "https://fireflies.ai/pricing",
+    "tagline": "Meeting recorder and transcriber with a large integration library.",
+    "bestFor": "Teams that want meeting notes pushed into CRM and project tools",
+    "description": "Fireflies.ai records and transcribes meetings across the main video platforms and sends notes into CRMs, project tools and chat apps. Summaries are included on every plan; the AskFred assistant and AI apps use a separate pool of AI credits.",
+    "pros": [
+      "Low entry price on annual billing",
+      "Wide integration coverage",
+      "HIPAA option on Enterprise"
+    ],
+    "cons": [
+      "AI credits are a separate cost to watch",
+      "Monthly billing is much more expensive than annual",
+      "Enterprise is annual-only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free plan with transcription and AI summaries, limited storage and AI credits.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Limited storage"
+      },
+      {
+        "name": "Pro",
+        "monthly": 18,
+        "annual": 10,
+        "notes": "Per seat"
+      },
+      {
+        "name": "Business",
+        "monthly": 29,
+        "annual": 19,
+        "notes": "Per seat. Video recording, conversation intelligence"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 39,
+        "notes": "Per seat, annual only. SSO, HIPAA, private storage"
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Chrome extension"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Claap: Fireflies pricing (citing fireflies.ai/pricing, Oct 2026)",
+        "url": "https://www.claap.io/blog/fireflies-pricing",
+        "date": "2026-10-09"
+      },
+      {
+        "label": "Sonix: Fireflies.ai pricing 2026",
+        "url": "https://sonix.ai/resources/fireflies-ai-pricing/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "fathom",
+    "name": "Fathom",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.fathom.ai",
+    "pricingUrl": "https://www.fathom.ai/pricing",
+    "tagline": "AI notetaker with unlimited free recordings and transcripts.",
+    "bestFor": "Individuals who record many calls and want a strong free plan",
+    "description": "Fathom records, transcribes and summarizes Zoom, Google Meet and Microsoft Teams calls. The free plan has no cap on recordings or transcripts; the advanced AI summaries are capped each month, which is usually what pushes users to Premium.",
+    "pros": [
+      "Unlimited recordings and transcripts on the free plan",
+      "Choice of bot or bot-free capture (bot-free in beta on Mac)",
+      "Basic CRM sync on lower plans"
+    ],
+    "cons": [
+      "Advanced AI summaries capped on the free plan",
+      "Team and Business need at least 2 seats",
+      "Enterprise pricing via sales only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Unlimited recordings and transcripts; advanced AI summaries capped monthly.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Unlimited recordings"
+      },
+      {
+        "name": "Premium",
+        "monthly": 20,
+        "annual": 16,
+        "notes": "Per user. Removes AI summary cap"
+      },
+      {
+        "name": "Team",
+        "monthly": 19,
+        "annual": 15,
+        "notes": "Per user, 2-seat minimum"
+      },
+      {
+        "name": "Business",
+        "monthly": 34,
+        "annual": 25,
+        "notes": "Per user, 2-seat minimum. Full CRM field sync"
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": true,
+      "crmSync": true,
+      "hipaaOption": null,
+      "sso": null
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Windows"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Eightx: Fathom cost (citing fathom.ai/pricing, accessed 2026-06-18)",
+        "url": "https://eightx.co/blog/compare/how-much-does-fathom-cost",
+        "date": "2026-06-18"
+      },
+      {
+        "label": "Lindy: Fathom pricing (updated Nov 2026)",
+        "url": "https://www.lindy.ai/blog/fathom-pricing",
+        "date": "2026-11-05"
+      }
+    ]
+  },
+  {
+    "slug": "tldv",
+    "name": "tl;dv",
+    "category": "ai-meeting-note-takers",
+    "website": "https://tldv.io",
+    "pricingUrl": "https://tldv.io/pricing",
+    "tagline": "Meeting recorder with multi-meeting AI reports for sales and customer teams.",
+    "bestFor": "Sales and customer-facing teams who need notes across many meetings",
+    "description": "tl;dv records Zoom, Google Meet and Microsoft Teams calls, transcribes them and can roll several meetings into one AI report. The free plan allows unlimited recordings, with lifetime limits on AI notes.",
+    "pros": [
+      "Unlimited recordings on the free plan",
+      "Multi-meeting AI reports",
+      "Large annual-billing discount"
+    ],
+    "cons": [
+      "Free AI notes are capped",
+      "Monthly billing costs much more than annual",
+      "Prices shown can vary by region"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Unlimited recordings; AI notes limited on the free plan.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Unlimited recordings"
+      },
+      {
+        "name": "Pro",
+        "monthly": 29,
+        "annual": 18,
+        "notes": "Per seat"
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": null,
+        "notes": "Check vendor page: reported prices differ by source and region"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quoted by sales"
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": true,
+      "crmSync": true,
+      "hipaaOption": null,
+      "sso": null
+    },
+    "platforms": [
+      "Web",
+      "Chrome extension"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Voibe: tl;dv pricing (checked Nov 2, 2026)",
+        "url": "https://www.getvoibe.com/resources/tldv-pricing/",
+        "date": "2026-11-02"
+      },
+      {
+        "label": "Softwares.com: tl;dv pricing (Oct 2026)",
+        "url": "https://www.softwares.com/software/tldv/pricing",
+        "date": "2026-10"
+      }
+    ]
+  },
+  {
+    "slug": "read-ai",
+    "name": "Read AI",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.read.ai",
+    "pricingUrl": "https://www.read.ai/plans-pricing",
+    "tagline": "AI copilot for meetings, email and messages with engagement metrics.",
+    "bestFor": "Teams that want meeting reports plus email and chat summaries in one tool",
+    "description": "Read AI produces meeting reports with transcripts, highlights and engagement metrics, and extends the same summaries to email and messaging. Higher tiers add security controls; Enterprise+ requires at least five licenses.",
+    "pros": [
+      "Covers meetings, email and messages",
+      "Clear annual discount (about 25%)",
+      "HIPAA, SAML SSO and SCIM on Enterprise+"
+    ],
+    "cons": [
+      "Enterprise+ needs 5+ licenses",
+      "Prices rose in 2026",
+      "Recordings tied to an active paid plan"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free tier with a limited number of meeting reports.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Limited reports"
+      },
+      {
+        "name": "Pro",
+        "monthly": 19.75,
+        "annual": 15,
+        "notes": "Per user"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 29.75,
+        "annual": 22.5,
+        "notes": "Per user"
+      },
+      {
+        "name": "Enterprise+",
+        "monthly": 39.75,
+        "annual": 29.75,
+        "notes": "Per user, 5-license minimum. HIPAA, SSO, SCIM"
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Chrome extension"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Layer3 Labs: Read AI pricing (Oct 2026)",
+        "url": "https://www.layer3labs.io/guides/read-ai-pricing",
+        "date": "2026-10"
+      },
+      {
+        "label": "Dupple: Read AI pricing (verified on read.ai, Oct 28 2026)",
+        "url": "https://dupple.com/learn/read-ai-pricing.md",
+        "date": "2026-10-28"
+      }
+    ]
+  },
+  {
+    "slug": "asana",
+    "name": "Asana",
+    "category": "project-management-software",
+    "website": "https://asana.com",
+    "pricingUrl": "https://asana.com/pricing",
+    "tagline": "Work management for cross-functional projects and portfolios.",
+    "bestFor": "Cross-functional teams managing many projects and portfolios",
+    "description": "Asana organizes work into projects with list, board, timeline and calendar views, and adds goals, portfolios and workload planning on higher tiers. The free Personal plan covers small teams; the jump to Advanced is steep.",
+    "pros": [
+      "Free plan for up to 10 users",
+      "Strong portfolio and goal tracking on Advanced",
+      "AI features from Starter"
+    ],
+    "cons": [
+      "Large price gap between Starter and Advanced",
+      "No built-in docs or wiki",
+      "Monthly billing about 20% higher"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Personal: free for individuals and small teams (up to 10 users).",
+    "trial": "30-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Personal",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Up to 10 users"
+      },
+      {
+        "name": "Starter",
+        "monthly": 13.49,
+        "annual": 10.99,
+        "notes": "Per user. Timeline, AI Studio basics"
+      },
+      {
+        "name": "Advanced",
+        "monthly": 30.49,
+        "annual": 24.99,
+        "notes": "Per user. Portfolios, goals, workload"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales"
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": false,
+      "automations": true,
+      "timeTracking": null,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "SaaSProbe: PM tools 2026 (source asana.com/pricing)",
+        "url": "https://saasprobe.pages.dev/best/project-management-tools-2026/",
+        "date": "2026"
+      },
+      {
+        "label": "Stork: AI PM tools priced (checked Oct 30, 2026)",
+        "url": "https://www.stork.ai/blog/best-ai-project-management-tools-2026",
+        "date": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "slug": "trello",
+    "name": "Trello",
+    "category": "project-management-software",
+    "website": "https://trello.com",
+    "pricingUrl": "https://trello.com/pricing",
+    "tagline": "Simple Kanban boards from Atlassian.",
+    "bestFor": "Small teams that want simple boards with almost no setup",
+    "description": "Trello is the simplest of the major tools: boards, lists and cards, with automation and extra views on paid plans. It is the cheapest paid option in this list.",
+    "pros": [
+      "Cheapest paid plan in this category",
+      "Very fast to learn",
+      "Generous free plan for small teams"
+    ],
+    "cons": [
+      "Timeline and other views need Premium",
+      "Not built for complex portfolios",
+      "No built-in docs"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free for up to 10 collaborators per workspace, 10 boards per workspace.",
+    "trial": "14-day Premium trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Up to 10 collaborators per workspace"
+      },
+      {
+        "name": "Standard",
+        "monthly": 6,
+        "annual": 5,
+        "notes": "Per user"
+      },
+      {
+        "name": "Premium",
+        "monthly": 12.5,
+        "annual": 10,
+        "notes": "Per user. Timeline, calendar, dashboard views"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 17.5,
+        "notes": "Per user, annual. Price falls with volume"
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": false,
+      "automations": true,
+      "timeTracking": false,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "AI Productivity: Asana competitors (Trello pricing)",
+        "url": "https://aiproductivity.ai/blog/asana-competitors/",
+        "date": "2026"
+      },
+      {
+        "label": "Dupple: Best PM software for small business 2026",
+        "url": "https://dupple.com/learn/best-project-management-software-for-small-business",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "category": "project-management-software",
+    "website": "https://clickup.com",
+    "pricingUrl": "https://clickup.com/pricing",
+    "tagline": "All-in-one workspace: tasks, docs, chat, whiteboards and goals.",
+    "bestFor": "Teams that want tasks, docs and chat in one low-cost tool",
+    "description": "ClickUp combines tasks, docs, whiteboards, chat, goals and time tracking in one workspace, and its free plan allows unlimited members. The breadth makes it strong value but slower to set up than simpler tools.",
+    "pros": [
+      "Free plan with unlimited members",
+      "Docs, whiteboards and time tracking included",
+      "Low per-user price"
+    ],
+    "cons": [
+      "Lots of features means a learning curve",
+      "AI pricing has changed over time; check what your plan includes",
+      "Can feel slow on very large workspaces"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free Forever: unlimited members, limited storage.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free Forever",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Unlimited members"
+      },
+      {
+        "name": "Unlimited",
+        "monthly": 10,
+        "annual": 7,
+        "notes": "Per user"
+      },
+      {
+        "name": "Business",
+        "monthly": 19,
+        "annual": 12,
+        "notes": "Per user"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales"
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": null
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Find Better: best PM software",
+        "url": "https://findbetter.pages.dev/saas/best-project-management-software",
+        "date": "2026"
+      },
+      {
+        "label": "AI Productivity: ClickUp pricing",
+        "url": "https://aiproductivity.ai/blog/clickup-pricing/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "monday-com",
+    "name": "monday.com",
+    "category": "project-management-software",
+    "website": "https://monday.com",
+    "pricingUrl": "https://monday.com/pricing",
+    "tagline": "Visual work OS with boards, dashboards and automations.",
+    "bestFor": "Business teams that want visual boards and dashboards",
+    "description": "monday.com uses color-coded boards with flexible columns, dashboards and automations. Paid plans start from three seats, which makes it expensive for solo users but straightforward for teams.",
+    "pros": [
+      "Very visual and easy for non-technical teams",
+      "Strong dashboards on higher tiers",
+      "AI credits included from Basic"
+    ],
+    "cons": [
+      "3-seat minimum on paid plans",
+      "Free plan limited to 2 seats",
+      "Automations capped on lower tiers"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free for up to 2 seats.",
+    "trial": "14-day trial",
+    "minSeats": 3,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Up to 2 seats"
+      },
+      {
+        "name": "Basic",
+        "monthly": null,
+        "annual": 9,
+        "notes": "Per seat, 3-seat minimum"
+      },
+      {
+        "name": "Standard",
+        "monthly": null,
+        "annual": 12,
+        "notes": "Per seat. Timeline, Gantt, guest access"
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": 19,
+        "notes": "Per seat. Time tracking, more automations"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales"
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": null,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Best PM Tool: pricing comparison (annual prices)",
+        "url": "https://bestprojectmanagementtool.pages.dev/pricing",
+        "date": "2026-04"
+      },
+      {
+        "label": "Stork: AI PM tools priced (checked Oct 30, 2026)",
+        "url": "https://www.stork.ai/blog/best-ai-project-management-tools-2026",
+        "date": "2026-10-30"
+      }
+    ]
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "category": "project-management-software",
+    "website": "https://www.notion.com",
+    "pricingUrl": "https://www.notion.com/pricing",
+    "tagline": "Docs-first workspace with databases you can turn into project boards.",
+    "bestFor": "Documentation-heavy teams that also track projects",
+    "description": "Notion is a docs and wiki tool first, with databases that can act as task boards, timelines and calendars. It is the best fit when your projects live next to a lot of written documentation.",
+    "pros": [
+      "Best-in-class docs and wiki",
+      "Flexible databases and timeline views",
+      "Full AI features on Business"
+    ],
+    "cons": [
+      "Project features less structured than Asana or monday.com",
+      "Full AI needs the Business plan",
+      "Setup takes thought"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free plan for individuals, with limits on file uploads and collaboration.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "For individuals"
+      },
+      {
+        "name": "Plus",
+        "monthly": 12,
+        "annual": 10,
+        "notes": "Per member"
+      },
+      {
+        "name": "Business",
+        "monthly": 24,
+        "annual": 20,
+        "notes": "Per member. Full Notion AI"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales"
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": false,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Stork: AI PM tools priced (checked Oct 30, 2026)",
+        "url": "https://www.stork.ai/blog/best-ai-project-management-tools-2026",
+        "date": "2026-10-30"
+      },
+      {
+        "label": "StackScored: PM pricing comparison",
+        "url": "https://www.stackscored.com/pricing/pm-tools/",
+        "date": "2026-04-21"
+      }
+    ]
+  },
+  {
+    "slug": "hubspot-crm",
+    "name": "HubSpot CRM",
+    "category": "crm-software",
+    "website": "https://www.hubspot.com",
+    "pricingUrl": "https://www.hubspot.com/pricing/crm",
+    "tagline": "Free CRM that grows into a full sales and marketing suite.",
+    "bestFor": "Small businesses that want a free CRM with room to grow",
+    "description": "HubSpot's free CRM covers contacts, deals and email tracking. Sales Hub Starter adds automation and calling; Professional is a big step up in price and adds a one-time onboarding fee.",
+    "pros": [
+      "Genuinely useful free plan",
+      "Easy to use",
+      "Sales and marketing in one platform"
+    ],
+    "cons": [
+      "Professional is a large price jump",
+      "Onboarding fee on Professional",
+      "Marketing contacts are billed separately"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free CRM for small teams: contacts, deals, email tracking.",
+    "trial": "14-day trial on paid hubs",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Core CRM"
+      },
+      {
+        "name": "Sales Hub Starter",
+        "monthly": 20,
+        "annual": 15,
+        "notes": "Per seat"
+      },
+      {
+        "name": "Sales Hub Professional",
+        "monthly": null,
+        "annual": 100,
+        "notes": "Per seat, plus one-time onboarding fee (about $1,500)"
+      },
+      {
+        "name": "Sales Hub Enterprise",
+        "monthly": null,
+        "annual": 150,
+        "notes": "Per seat"
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Dupple: Best CRM software 2026",
+        "url": "https://dupple.com/learn/best-crm-software",
+        "date": "2026"
+      },
+      {
+        "label": "StackData: CRM pricing comparison (Mar 2026)",
+        "url": "https://greg-rg-git.github.io/stackdata-store/blog/crm-pricing-comparison-2026/",
+        "date": "2026-03-07"
+      }
+    ]
+  },
+  {
+    "slug": "pipedrive",
+    "name": "Pipedrive",
+    "category": "crm-software",
+    "website": "https://www.pipedrive.com",
+    "pricingUrl": "https://www.pipedrive.com/en/pricing",
+    "tagline": "Pipeline-first CRM built around deals and activities.",
+    "bestFor": "Sales teams who live in a visual deal pipeline",
+    "description": "Pipedrive centers everything on a visual deal pipeline and activity reminders. It has no permanent free plan, but a free trial and a low entry tier.",
+    "pros": [
+      "Excellent visual pipeline",
+      "Low entry price",
+      "Quick to set up for small sales teams"
+    ],
+    "cons": [
+      "No permanent free plan",
+      "AI and extras cost more",
+      "Plan names and tiers have changed; check the vendor page"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Entry tier",
+        "monthly": null,
+        "annual": 14,
+        "notes": "Per user. Reported entry price"
+      },
+      {
+        "name": "Growth",
+        "monthly": null,
+        "annual": 39,
+        "notes": "Per user. Reported"
+      },
+      {
+        "name": "Higher tiers",
+        "monthly": null,
+        "annual": null,
+        "notes": "Check vendor page"
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": null,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "CostBench: CRM pricing 2026",
+        "url": "https://costbench.com/software/crm/",
+        "date": "2026"
+      },
+      {
+        "label": "Dupple: Best CRM software 2026",
+        "url": "https://dupple.com/learn/best-crm-software",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "zoho-crm",
+    "name": "Zoho CRM",
+    "category": "crm-software",
+    "website": "https://www.zoho.com/crm/",
+    "pricingUrl": "https://www.zoho.com/crm/zohocrm-pricing.html",
+    "tagline": "Feature-rich CRM at a low price, with the Zia AI assistant bundled.",
+    "bestFor": "Value-focused small and mid-size businesses",
+    "description": "Zoho CRM offers deep customization, automation and analytics at prices well below the big suites, and bundles its Zia AI assistant into plans rather than charging for it separately.",
+    "pros": [
+      "Free plan for up to 3 users",
+      "Low per-user price",
+      "AI assistant bundled"
+    ],
+    "cons": [
+      "Interface is busier than HubSpot or Pipedrive",
+      "Storage limits on lower tiers",
+      "Best value inside the wider Zoho suite"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free for up to 3 users.",
+    "trial": "15-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Up to 3 users"
+      },
+      {
+        "name": "Standard",
+        "monthly": null,
+        "annual": 14,
+        "notes": "Per user"
+      },
+      {
+        "name": "Professional",
+        "monthly": null,
+        "annual": 23,
+        "notes": "Per user"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 40,
+        "notes": "Per user"
+      },
+      {
+        "name": "Ultimate",
+        "monthly": null,
+        "annual": 52,
+        "notes": "Per user"
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": null,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "CostBench: CRM pricing 2026",
+        "url": "https://costbench.com/software/crm/",
+        "date": "2026"
+      },
+      {
+        "label": "Dupple: Best CRM software 2026",
+        "url": "https://dupple.com/learn/best-crm-software",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "freshsales",
+    "name": "Freshsales",
+    "category": "crm-software",
+    "website": "https://www.freshworks.com/crm/sales/",
+    "pricingUrl": "https://www.freshworks.com/crm/pricing/",
+    "tagline": "Sales CRM with built-in phone, email and Freddy AI.",
+    "bestFor": "Small sales teams that want phone and email built in",
+    "description": "Freshsales from Freshworks includes built-in calling and email, lead scoring with its Freddy AI, and a free plan for small teams. Its entry paid tier is one of the cheapest in this list.",
+    "pros": [
+      "Lowest entry paid price here",
+      "Built-in phone and email",
+      "Free plan for small teams"
+    ],
+    "cons": [
+      "Some AI features are usage-billed",
+      "Add-ons raise the real cost",
+      "Smaller app ecosystem than HubSpot or Salesforce"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free for up to 3 users.",
+    "trial": "21-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Up to 3 users"
+      },
+      {
+        "name": "Growth",
+        "monthly": null,
+        "annual": 9,
+        "notes": "Per user"
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": 39,
+        "notes": "Per user"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 59,
+        "notes": "Per user"
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Hackceleration: CRM pricing index 2026",
+        "url": "https://hackceleration.com/labs/pricing-index/crm-pricing",
+        "date": "2026"
+      },
+      {
+        "label": "EngageBay: CRM pricing 2026",
+        "url": "https://www.engagebay.com/blog/crm-pricing/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "salesforce-sales-cloud",
+    "name": "Salesforce Sales Cloud",
+    "category": "crm-software",
+    "website": "https://www.salesforce.com/sales/",
+    "pricingUrl": "https://www.salesforce.com/sales/pricing/",
+    "tagline": "The enterprise CRM standard, with suites for small teams too.",
+    "bestFor": "Companies with complex sales processes that need deep customization",
+    "description": "Salesforce is the most customizable CRM here and the default for large sales organizations. Starter Suite brings the price down for small teams, but most serious deployments land on Enterprise.",
+    "pros": [
+      "Deepest customization and ecosystem",
+      "Scales to very large teams",
+      "Starter Suite is affordable"
+    ],
+    "cons": [
+      "Real deployments usually need Enterprise",
+      "AI and add-ons cost extra",
+      "Implementation can be expensive"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free Suite for up to 2 users.",
+    "trial": "30-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free Suite",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Up to 2 users"
+      },
+      {
+        "name": "Starter Suite",
+        "monthly": null,
+        "annual": 25,
+        "notes": "Per user"
+      },
+      {
+        "name": "Pro Suite",
+        "monthly": null,
+        "annual": 100,
+        "notes": "Per user"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 175,
+        "notes": "Per user"
+      },
+      {
+        "name": "Unlimited",
+        "monthly": null,
+        "annual": 350,
+        "notes": "Per user"
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": null,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Dupple: Best CRM software 2026",
+        "url": "https://dupple.com/learn/best-crm-software",
+        "date": "2026"
+      },
+      {
+        "label": "Hackceleration: CRM pricing index 2026",
+        "url": "https://hackceleration.com/labs/pricing-index/crm-pricing",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "1password",
+    "name": "1Password",
+    "category": "password-managers",
+    "website": "https://1password.com",
+    "pricingUrl": "https://1password.com/pricing",
+    "tagline": "Polished password manager for individuals, families and businesses.",
+    "bestFor": "Families and businesses that want the most polished experience",
+    "description": "1Password is known for its polished apps, strong family sharing and business admin tools. It has no free plan, only a trial, and raised its individual pricing in March 2026.",
+    "pros": [
+      "Very polished apps on every platform",
+      "Strong passkey support",
+      "Good family and business management"
+    ],
+    "cons": [
+      "No free plan",
+      "Price increased in 2026",
+      "Most expensive individual plan here"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Individual",
+        "monthly": null,
+        "annual": 3.99,
+        "notes": "About $47.88/year after the March 2026 increase"
+      },
+      {
+        "name": "Families",
+        "monthly": null,
+        "annual": null,
+        "notes": "Check vendor page (prices changed in 2026)"
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": null,
+        "notes": "Check vendor page"
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": true,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "iFeelTech: password managers 2026 (Q1 2026 pricing)",
+        "url": "https://ifeeltech.com/blog/password-managers-ai-threat-protection-comparison",
+        "date": "2026"
+      },
+      {
+        "label": "Toolradar: best password managers 2026",
+        "url": "https://toolradar.com/guides/best-password-managers",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "bitwarden",
+    "name": "Bitwarden",
+    "category": "password-managers",
+    "website": "https://bitwarden.com",
+    "pricingUrl": "https://bitwarden.com/pricing/",
+    "tagline": "Open-source password manager with a strong free plan.",
+    "bestFor": "Anyone who wants the best free plan or open-source code",
+    "description": "Bitwarden is open source, independently audited and offers unlimited passwords on unlimited devices for free. Premium raised its price in 2026 for the first time in years but is still among the cheapest.",
+    "pros": [
+      "Unlimited passwords and devices for free",
+      "Open source and self-hostable",
+      "Very low Premium price"
+    ],
+    "cons": [
+      "Apps are less polished than 1Password",
+      "Premium price rose in 2026",
+      "Some features need Premium"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Unlimited passwords on unlimited devices.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Unlimited passwords and devices"
+      },
+      {
+        "name": "Premium",
+        "monthly": null,
+        "annual": 1.65,
+        "notes": "About $19.80/year after the 2026 increase"
+      },
+      {
+        "name": "Families and business",
+        "monthly": null,
+        "annual": null,
+        "notes": "Check vendor page"
+      }
+    ],
+    "features": {
+      "openSource": true,
+      "passkeys": true,
+      "selfHost": true,
+      "emailAliases": true,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "iFeelTech: password managers 2026 (Q1 2026 pricing)",
+        "url": "https://ifeeltech.com/blog/password-managers-ai-threat-protection-comparison",
+        "date": "2026"
+      },
+      {
+        "label": "Toolradar: best password managers 2026",
+        "url": "https://toolradar.com/guides/best-password-managers",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "proton-pass",
+    "name": "Proton Pass",
+    "category": "password-managers",
+    "website": "https://proton.me/pass",
+    "pricingUrl": "https://proton.me/pass/pricing",
+    "tagline": "Privacy-first, open-source password manager with email aliases.",
+    "bestFor": "Privacy-focused users and people already using Proton",
+    "description": "Proton Pass is open source, based in Switzerland and includes hide-my-email aliases. Proton cut the Pass Plus price in half in March 2026, making it one of the cheapest paid plans.",
+    "pros": [
+      "Generous free plan",
+      "Built-in email aliases",
+      "Pass Plus price cut in 2026"
+    ],
+    "cons": [
+      "Younger product than 1Password or Bitwarden",
+      "No account recovery by design",
+      "Desktop autofill still maturing"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free plan with unlimited logins and a limited number of aliases.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Unlimited logins"
+      },
+      {
+        "name": "Pass Plus",
+        "monthly": null,
+        "annual": 1.99,
+        "notes": "About $23.88/year since March 2026"
+      },
+      {
+        "name": "Family and business",
+        "monthly": null,
+        "annual": null,
+        "notes": "Check vendor page"
+      }
+    ],
+    "features": {
+      "openSource": true,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": true,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "iFeelTech: password managers 2026",
+        "url": "https://ifeeltech.com/blog/password-managers-ai-threat-protection-comparison",
+        "date": "2026"
+      },
+      {
+        "label": "Toolradar: best password managers 2026",
+        "url": "https://toolradar.com/guides/best-password-managers",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "nordpass",
+    "name": "NordPass",
+    "category": "password-managers",
+    "website": "https://nordpass.com",
+    "pricingUrl": "https://nordpass.com/pricing/",
+    "tagline": "Budget password manager from the makers of NordVPN.",
+    "bestFor": "Budget-conscious users and NordVPN customers",
+    "description": "NordPass uses XChaCha20 encryption, has a clean interface and competes hard on price, usually through promotional multi-year deals. Expect the renewal price to differ from the first-term price.",
+    "pros": [
+      "Low promotional pricing",
+      "Clean, simple interface",
+      "Free plan available"
+    ],
+    "cons": [
+      "Headline prices are often promotional",
+      "Not open source",
+      "Free plan limited to one active device session"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free plan with unlimited passwords.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Unlimited passwords"
+      },
+      {
+        "name": "Premium",
+        "monthly": null,
+        "annual": 1.89,
+        "notes": "Reported promotional annual rate; renewal can be higher"
+      },
+      {
+        "name": "Family and business",
+        "monthly": null,
+        "annual": null,
+        "notes": "Check vendor page"
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": true,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "iFeelTech: password managers 2026",
+        "url": "https://ifeeltech.com/blog/password-managers-ai-threat-protection-comparison",
+        "date": "2026"
+      },
+      {
+        "label": "Gupta Deepak: 1Password alternatives (May 2026)",
+        "url": "https://guptadeepak.com/tools/alternatives-to-1password/",
+        "date": "2026-05-08"
+      }
+    ]
+  },
+  {
+    "slug": "dashlane",
+    "name": "Dashlane",
+    "category": "password-managers",
+    "website": "https://www.dashlane.com",
+    "pricingUrl": "https://www.dashlane.com/pricing",
+    "tagline": "Password manager with strong dark-web monitoring and business tools.",
+    "bestFor": "Users who want dark-web monitoring and admin guardrails",
+    "description": "Dashlane focuses on breach and dark-web monitoring and business admin controls. It removed its free plan in early 2026 and restructured its personal plans.",
+    "pros": [
+      "Strong monitoring and alerts",
+      "Good admin tools for businesses",
+      "Polished apps"
+    ],
+    "cons": [
+      "No free plan since early 2026",
+      "Among the priciest personal plans",
+      "Personal plans restructured in 2026"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Premium",
+        "monthly": null,
+        "annual": 4.99,
+        "notes": "About $59.88/year (reported)"
+      },
+      {
+        "name": "Friends & Family",
+        "monthly": null,
+        "annual": null,
+        "notes": "Check vendor page"
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": null,
+        "notes": "Check vendor page"
+      }
+    ],
+    "features": {
+      "openSource": null,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": null,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "checked": "2026-11-14",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Toolradar: best password managers 2026",
+        "url": "https://toolradar.com/guides/best-password-managers",
+        "date": "2026"
+      },
+      {
+        "label": "Mac Myths: best password managers (Dashlane plan change Feb 2026)",
+        "url": "https://macmyths.com/best-password-managers-5-picks-by-use-case-for-u-s-users/",
+        "date": "2026"
+      }
+    ]
+  }
+]

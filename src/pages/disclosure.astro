@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../lib/data';
+---
+<Base title="Affiliate and Sponsorship Disclosure" description={`How ${site.name} makes money and how we keep it separate from scores and rankings.`} path="/disclosure/">
+  <article class="prose">
+    <h1>Affiliate and sponsorship disclosure</h1>
+    <ul>
+      <li><strong>Affiliate links.</strong> Some "Visit" links may earn us a commission if you buy. You pay the same price.</li>
+      <li><strong>Sponsored placements.</strong> If we sell a sponsored slot, it is shown in a separate box labeled "Sponsored", outside the ranked list.</li>
+      <li><strong>What money cannot buy.</strong> No vendor can pay to change a score, a rank, a price we publish or a verdict. Scores come from the <a href="/methodology/">published formula</a> only.</li>
+    </ul>
+    <p>Questions: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a></p>
+  </article>
+</Base>

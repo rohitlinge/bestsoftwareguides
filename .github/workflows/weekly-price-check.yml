@@ -1,0 +1,36 @@
+# Once a week: fetch every vendor pricing page, extract plans with an LLM,
+# and open a pull request with any changes for you to review and merge.
+name: Weekly price check
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'   # Mondays 03:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r scripts/pipeline/requirements.txt && python -m playwright install --with-deps chromium
+      - run: python scripts/pipeline/check_prices.py --apply
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'openai' }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          branch: price-check/${{ github.run_id }}
+          title: 'Weekly price check'
+          body-path: data-review/latest.md
+          commit-message: 'Update prices from weekly check'
+          add-paths: |
+            src/data/tools.json
+            src/data/price-history.json
+            data-review/**

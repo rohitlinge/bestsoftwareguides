@@ -1,0 +1,5 @@
+requests>=2.32
+beautifulsoup4>=4.12
+playwright>=1.47
+openai>=1.50
+anthropic>=0.40

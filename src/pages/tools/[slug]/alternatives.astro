@@ -1,0 +1,45 @@
+---
+import Base from '../../../layouts/Base.astro';
+import RankCard from '../../../components/RankCard.astro';
+import FeatureTable from '../../../components/FeatureTable.astro';
+import Faq from '../../../components/Faq.astro';
+import { lc1, tools, toolCategory, money, fmtDate, iso, buildDate, type Tool } from '../../../lib/data';
+import { crumbsLd, faqLd, itemListLd, articleLd } from '../../../lib/ld';
+
+export function getStaticPaths() {
+  return tools.map((t) => ({ params: { slug: t.slug }, props: { t } }));
+}
+const { t } = Astro.props as { t: Tool };
+const c = toolCategory(t);
+const year = buildDate.getUTCFullYear();
+const alts = c.tools.filter((o) => o.slug !== t.slug);
+const cheaper = alts.filter((o) => o.entryPrice != null && t.entryPrice != null && o.entryPrice < t.entryPrice);
+const freeAlts = alts.filter((o) => o.freePlan);
+const path = `/tools/${t.slug}/alternatives/`;
+const title = `Best ${t.name} Alternatives in ${year}`;
+const description = `The best ${t.name} alternatives are ${alts.slice(0, 3).map((o) => o.name).join(', ')}. Compare price, free plans and features. Checked ${fmtDate(c.updated)}.`;
+const faqs = [
+  { q: `What is the best alternative to ${t.name}?`, a: `${alts[0].name} is the highest-scoring alternative (${alts[0].score}/10), best for ${lc1(alts[0].bestFor)}.` },
+  ...(cheaper.length ? [{ q: `What is cheaper than ${t.name}?`, a: `${cheaper.map((o) => `${o.name} (from ${money(o.entryPrice)}/user/mo)`).join(', ')} start cheaper than ${t.name} (${money(t.entryPrice)}/user/mo) on annual billing.` }] : []),
+  ...(freeAlts.length ? [{ q: `Is there a free alternative to ${t.name}?`, a: `Yes: ${freeAlts.map((o) => o.name).join(', ')} have free plans.` }] : []),
+];
+const jsonld = [
+  crumbsLd([{ name: 'Home', path: '/' }, { name: c.name, path: `/best/${c.slug}/` }, { name: t.name, path: `/tools/${t.slug}/` }, { name: 'Alternatives', path }]),
+  itemListLd({ ...c, tools: alts }, path),
+  faqLd(faqs),
+  articleLd({ headline: title, description, path, published: iso(t.publishDate), modified: c.updated }),
+];
+---
+<Base title={title} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article">
+  <div class="crumbs"><a href="/">Home</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › <a href={`/tools/${t.slug}/`}>{t.name}</a> › Alternatives</div>
+  <h1>{title}</h1>
+  <div class="meta"><span>Checked {fmtDate(c.updated)}</span><a href="/methodology/">How we rank</a></div>
+  <div class="answer">
+    <p><strong>The best {t.name} alternative is {alts[0].name}</strong> ({alts[0].score}/10), best for {lc1(alts[0].bestFor)}.{cheaper.length > 0 && <> Cheaper to start: <strong>{cheaper.map((o) => o.name).join(', ')}</strong>.</>}{freeAlts.length > 0 && <> With a free plan: {freeAlts.map((o) => o.name).join(', ')}.</>}</p>
+  </div>
+  <h2>{t.name} vs the alternatives</h2>
+  <FeatureTable tools={[t, ...alts]} category={c} />
+  <h2>The alternatives, ranked</h2>
+  {alts.map((o) => <RankCard tool={o} />)}
+  <Faq faqs={faqs} />
+</Base>

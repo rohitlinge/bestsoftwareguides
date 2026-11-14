@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import { categories, fmtDate, tools } from '../../lib/data';
+import { crumbsLd } from '../../lib/ld';
+const topics = [...new Set(categories.map((c) => c.topic))];
+---
+<Base title="Software Rankings by Category" description={`Ranked lists of ${tools.length} software tools across ${categories.length} categories, with dated prices and sources.`} path="/best/" jsonld={[crumbsLd([{ name: 'Home', path: '/' }, { name: 'Rankings', path: '/best/' }])]}>
+  <div class="crumbs"><a href="/">Home</a> › Rankings</div>
+  <h1>Software rankings</h1>
+  <p class="muted">{categories.length} categories, {tools.length} tools. Every ranking shows when its prices were checked.</p>
+  {topics.map((tp) => (
+    <section>
+      <h2>{tp}</h2>
+      <div class="grid">
+        {categories.filter((c) => c.topic === tp).map((c) => (
+          <a class="card" href={`/best/${c.slug}/`}>
+            <h3>Best {c.name}</h3>
+            <div class="small muted">{c.tools.length} tools · checked {fmtDate(c.updated)}</div>
+            <div class="small">Top pick: {c.tools[0].name} ({c.tools[0].score}/10)</div>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>

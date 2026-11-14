@@ -1,0 +1,31 @@
+---
+import { money, type Tool, type Category } from '../lib/data';
+interface Props { tools: Tool[]; category: Category; showPrice?: boolean; }
+const { tools, category, showPrice = true } = Astro.props;
+const keys = Object.keys(category.featureLabels);
+const cell = (v: boolean | null | undefined) => (v === true ? ['yes', 'Yes'] : v === false ? ['no', 'No'] : ['unk', 'Not confirmed']);
+---
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Tool</th>
+        <th>Score</th>
+        {showPrice && <th>Free plan</th>}
+        {showPrice && <th>Paid from (annual)</th>}
+        {keys.map((k) => <th>{category.featureLabels[k]}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {tools.map((t) => (
+        <tr>
+          <td><a href={`/tools/${t.slug}/`}><strong>{t.name}</strong></a></td>
+          <td>{t.score}/10</td>
+          {showPrice && <td class={t.freePlan ? 'yes' : 'no'}>{t.freePlan ? 'Yes' : 'No'}</td>}
+          {showPrice && <td>{t.entryPrice != null ? `${money(t.entryPrice)}/user/mo` : 'See vendor'}</td>}
+          {keys.map((k) => { const [c, l] = cell(t.features[k]); return <td class={c}>{l}</td>; })}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

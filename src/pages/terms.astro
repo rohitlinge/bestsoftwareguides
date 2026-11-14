@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../lib/data';
+---
+<Base title="Terms of Use" description={`Terms of use for ${site.name}.`} path="/terms/">
+  <article class="prose">
+    <h1>Terms of use</h1>
+    <p class="note">Template. Review and adapt before launch.</p>
+    <p>Content on {site.name} is for general information. Prices and features change; always confirm on the vendor's own website before you buy. We are not responsible for decisions made from this information.</p>
+    <p>Our open data (<a href="/data/tools.json">/data/tools.json</a>) may be reused with attribution to {site.name} and a link to the page you used.</p>
+  </article>
+</Base>

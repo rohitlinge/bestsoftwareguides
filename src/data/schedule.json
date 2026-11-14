@@ -1,0 +1,16 @@
+{
+  "_comment": "Drip-publishing plan. 'day' is days after launchDate in site.config.mjs. A category publishes its ranking page, tool pages, pricing pages and alternatives pages together. Its comparison pages and free-tools page follow on 'comparesDay'. Add new categories and posts here; the daily build publishes them on their day.",
+  "categories": [
+    { "slug": "ai-meeting-note-takers", "day": 0, "comparesDay": 2 },
+    { "slug": "project-management-software", "day": 0, "comparesDay": 4 },
+    { "slug": "crm-software", "day": 7, "comparesDay": 9 },
+    { "slug": "password-managers", "day": 14, "comparesDay": 16 }
+  ],
+  "posts": [
+    { "slug": "ai-note-taker-pricing-2026", "day": 0 },
+    { "slug": "free-project-management-plans-compared", "day": 3 },
+    { "slug": "annual-vs-monthly-billing-savings", "day": 5 },
+    { "slug": "how-much-does-a-crm-cost-2026", "day": 8 },
+    { "slug": "password-manager-price-changes-2026", "day": 15 }
+  ]
+}

@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import { categories, tools, compares, site, fmtDate, money } from '../lib/data';
+import { posts } from '../lib/posts';
+const updated = categories.map((c) => c.updated).sort().pop();
+const ld = { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: site.url, description: site.description };
+---
+<Base title={`${site.name}: Software Rankings, Pricing and Comparisons`} description={site.description} path="/" jsonld={[ld]}>
+  <section class="hero">
+    <h1>Software pricing you can check.</h1>
+    <p class="lead">Ranked lists, plan-by-plan pricing and head-to-head comparisons. Every price links to the vendor's page and shows the date we checked it. No vendor can pay for a rank.</p>
+    <div class="stats">
+      <div><strong>{tools.length}</strong>tools tracked</div>
+      <div><strong>{categories.length}</strong>categories</div>
+      <div><strong>{compares.length}</strong>comparisons</div>
+      <div><strong>{updated ? fmtDate(updated) : '—'}</strong>last data check</div>
+    </div>
+  </section>
+
+  <h2>Rankings</h2>
+  <div class="grid">
+    {categories.map((c) => (
+      <a class="card" href={`/best/${c.slug}/`}>
+        <h3>Best {c.name}</h3>
+        <ol class="small" style="padding-left:18px;margin:6px 0">
+          {c.tools.slice(0, 3).map((t) => <li>{t.name} <span class="muted">· {t.score}/10 · {t.freePlan ? 'free plan' : t.entryPrice != null ? `from ${money(t.entryPrice)}` : ''}</span></li>)}
+        </ol>
+        <span class="small">See all {c.tools.length} →</span>
+      </a>
+    ))}
+  </div>
+
+  {posts.length > 0 && (
+    <>
+      <h2>Latest guides</h2>
+      <div class="grid">
+        {posts.slice(0, 6).map((p) => <a class="card" href={`/blog/${p.slug}/`}><h3>{p.title}</h3><div class="small muted">{fmtDate(p.published)}</div></a>)}
+      </div>
+    </>
+  )}
+
+  <h2>How this site is different</h2>
+  <div class="grid">
+    <div class="card"><h3>Dated prices</h3><p class="small">Each price shows when it was checked and whether it is verified on the vendor page or reported from a published breakdown.</p></div>
+    <div class="card"><h3>Repeatable scores</h3><p class="small">Scores come from a published formula, not from who paid. <a href="/methodology/">See the formula</a>.</p></div>
+    <div class="card"><h3>Open data</h3><p class="small">All our data is downloadable as <a href="/data/tools.json">JSON</a>, so anyone can check or cite it.</p></div>
+  </div>
+</Base>

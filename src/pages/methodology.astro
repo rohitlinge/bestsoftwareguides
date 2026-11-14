@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro';
+import { site, W } from '../lib/data';
+---
+<Base title="How We Research, Score and Rank Software" description="The exact formula behind every score on BestSoftwareGuides, how prices are collected and dated, and what 'verified' and 'reported' mean." path="/methodology/">
+  <article class="prose">
+    <h1>How we research, score and rank software</h1>
+    <div class="answer"><p>Every score on {site.name} comes from a published formula applied to dated data. A vendor cannot pay to change a score or a position. Prices are linked to the vendor's own pricing page and show the date they were last checked.</p></div>
+
+    <h2>Where the data comes from</h2>
+    <p>For each tool we record every plan, its monthly and annual price, free-plan limits, trial, minimum seats, platforms and a short list of category features. Each record stores the vendor's official pricing URL, the date it was checked, and any secondary sources used.</p>
+    <ul>
+      <li><strong>Verified</strong>: read directly from the vendor's pricing page on the date shown.</li>
+      <li><strong>Reported</strong>: taken from recent published breakdowns of the vendor's pricing page (listed under Sources on every page), awaiting direct verification.</li>
+      <li><strong>Not confirmed</strong>: we could not confirm a feature either way, so we do not claim it.</li>
+    </ul>
+    <p>Our pipeline re-checks vendor pages on a schedule. Any page whose data is older than 120 days is marked noindex until it is re-checked.</p>
+
+    <h2>The score (out of 10)</h2>
+    <p>The score is a <strong>value-and-coverage score</strong>: it rewards tools that confirm more of the features buyers ask about, cost less to start, offer free access and publish their prices. Score = 5 + 4.8 × the weighted sum below, so scores run from 5.0 to 9.8.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Part</th><th>Weight</th><th>How it is calculated (0 to 1)</th></tr></thead>
+      <tbody>
+        <tr><td>Feature coverage</td><td>{W.coverage * 100}%</td><td>Share of the category's key features the tool confirms.</td></tr>
+        <tr><td>Value</td><td>{W.value * 100}%</td><td>Entry paid price on annual billing: 1 for the cheapest tool in the category, 0.25 for the most expensive, 0.4 if no price is published.</td></tr>
+        <tr><td>Free access</td><td>{W.free * 100}%</td><td>1 for a permanent free plan, 0.4 for a free trial only, 0 for neither.</td></tr>
+        <tr><td>Pricing transparency</td><td>{W.transparency * 100}%</td><td>Share of plans with a published price or an explicit custom-quote tier.</td></tr>
+      </tbody>
+    </table></div>
+    <p>Ties are broken alphabetically. Because the formula is fixed, rankings move only when the underlying data changes, and every change is visible in our <a href="/data/tools.json">open data file</a>.</p>
+
+    <h2>What the score does not measure</h2>
+    <p>The score does not measure how a tool feels to use or how good its AI output is. Where that matters we say so in the review text, and we keep it separate from the score.</p>
+
+    <h2>Corrections</h2>
+    <p>Vendors and readers can send corrections to <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>. We update the record and its checked date once we confirm the change on the vendor's page.</p>
+  </article>
+</Base>

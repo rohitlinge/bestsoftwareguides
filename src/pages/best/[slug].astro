@@ -1,0 +1,92 @@
+---
+import Base from '../../layouts/Base.astro';
+import RankCard from '../../components/RankCard.astro';
+import FeatureTable from '../../components/FeatureTable.astro';
+import Faq from '../../components/Faq.astro';
+import Sources from '../../components/Sources.astro';
+import { lcName, lc1, categories, compares, categoryFaqs, freePagesLive, money, fmtDate, iso, buildDate, site, type Category } from '../../lib/data';
+import { crumbsLd, faqLd, itemListLd, articleLd } from '../../lib/ld';
+
+export function getStaticPaths() {
+  return categories.flatMap((c) => {
+    const out: any[] = [{ params: { slug: c.slug }, props: { c, free: false } }];
+    if (freePagesLive(c)) out.push({ params: { slug: `free-${c.slug}` }, props: { c, free: true } });
+    return out;
+  });
+}
+const { c, free } = Astro.props as { c: Category; free: boolean };
+const year = buildDate.getUTCFullYear();
+const list = free ? c.tools.filter((t) => t.freePlan) : c.tools;
+const path = `/best/${free ? 'free-' : ''}${c.slug}/`;
+const title = free ? `Best Free ${c.name} in ${year}: What Each Free Plan Includes` : `Best ${c.name} in ${year}: Ranked with Real Prices`;
+const top = list[0], second = list[1];
+const cheapest = [...c.tools].filter((t) => t.entryPrice != null).sort((a, b) => a.entryPrice! - b.entryPrice!)[0];
+const description = free
+  ? `${list.length} ${lcName(c.name)} with a free plan, and exactly what each free plan includes. Checked ${fmtDate(c.updated)}.`
+  : `The best ${c.singular} is ${top.name} (${top.score}/10), followed by ${second?.name}. Compare ${c.tools.length} tools on price, free plans and features. Prices checked ${fmtDate(c.updated)}.`;
+const faqs = free
+  ? list.map((t) => ({ q: `Is ${t.name} free?`, a: `Yes. ${t.freePlanDetails ?? 'It has a free plan.'} Paid plans start at ${t.entryPrice != null ? money(t.entryPrice) + '/user/mo billed annually' : 'see vendor'}.` }))
+  : categoryFaqs(c);
+const catCompares = compares.filter((x) => x.category.slug === c.slug);
+const jsonld = [
+  crumbsLd([{ name: 'Home', path: '/' }, { name: 'Rankings', path: '/best/' }, { name: free ? `Free ${c.name}` : c.name, path }]),
+  itemListLd({ ...c, tools: list }, path),
+  faqLd(faqs),
+  articleLd({ headline: title, description, path, published: iso(c.publishDate), modified: c.updated }),
+];
+---
+<Base title={title} description={description} path={path} jsonld={jsonld} noindex={!c.indexable} ogType="article" published={iso(c.publishDate)} modified={c.updated}>
+  <div class="crumbs"><a href="/">Home</a> › <a href="/best/">Rankings</a> › {free ? `Free ${c.name}` : c.name}</div>
+  <h1>{title}</h1>
+  <div class="meta">
+    <span>Prices checked {fmtDate(c.updated)}</span>
+    <span>{list.length} tools</span>
+    <span>By <a href={site.editor.url}>{site.editor.name}</a></span>
+    <a href="/methodology/">How we rank</a>
+  </div>
+
+  <div class="answer">
+    {free ? (
+      <p><strong>{list.map((t) => t.name).join(', ')}</strong> have free plans. The most generous is <strong>{top.name}</strong>: {top.freePlanDetails}</p>
+    ) : (
+      <>
+        <p><strong>The best {c.singular} in {year} is {top.name}</strong> ({top.score}/10), best for {lc1(top.bestFor)}. {second && <>Runner-up: <strong>{second.name}</strong> ({second.score}/10), best for {lc1(second.bestFor)}.</>}</p>
+        {cheapest && <p>Cheapest paid entry: <strong>{cheapest.name}</strong> at {money(cheapest.entryPrice)}/user/month billed annually.</p>}
+      </>
+    )}
+  </div>
+
+  <p class="narrow">{c.intro}</p>
+
+  <h2>{free ? 'Free plans compared' : `Compare ${lcName(c.name)} at a glance`}</h2>
+  <FeatureTable tools={list} category={c} />
+
+  {free && (
+    <div class="table-wrap"><table>
+      <thead><tr><th>Tool</th><th>What the free plan includes</th><th>First paid plan</th></tr></thead>
+      <tbody>{list.map((t) => <tr><td><a href={`/tools/${t.slug}/`}>{t.name}</a></td><td>{t.freePlanDetails}</td><td>{t.entryPrice != null ? `${money(t.entryPrice)}/user/mo (annual)` : 'See vendor'}</td></tr>)}</tbody>
+    </table></div>
+  )}
+
+  <h2>{free ? 'The free options' : `The ${list.length} best ${lcName(c.name)}`}</h2>
+  {list.map((t) => <RankCard tool={t} />)}
+
+  {!free && (
+    <>
+      <h2>How to choose a {c.singular}</h2>
+      <ul class="narrow">{c.buyingTips.map((tip) => <li>{tip}</li>)}</ul>
+    </>
+  )}
+
+  {catCompares.length > 0 && (
+    <>
+      <h2>Head-to-head comparisons</h2>
+      <div class="grid">{catCompares.map((x) => <a class="card" href={`/compare/${x.slug}/`}><strong>{x.a.name} vs {x.b.name}</strong><div class="small muted">{x.a.score} vs {x.b.score} out of 10</div></a>)}</div>
+    </>
+  )}
+  {!free && freePagesLive(c) && <p><a href={`/best/free-${c.slug}/`}>See only the free {lcName(c.name)} →</a></p>}
+
+  <Faq faqs={faqs} />
+  <Sources tools={list} />
+  <p class="small muted">Scores come from published, repeatable data (features, free plan, entry price, pricing transparency). No vendor can pay to change a score or a rank. <a href="/methodology/">Read the methodology</a>.</p>
+</Base>

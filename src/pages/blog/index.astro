@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import { posts } from '../../lib/posts';
+import { fmtDate } from '../../lib/data';
+---
+<Base title="Software Buying Guides" description="Data-driven guides on software pricing, free plans and price changes." path="/blog/">
+  <div class="crumbs"><a href="/">Home</a> › Guides</div>
+  <h1>Guides</h1>
+  <div class="grid">
+    {posts.map((p) => (
+      <a class="card" href={`/blog/${p.slug}/`}>
+        <h3>{p.title}</h3>
+        <p class="small muted">{p.description}</p>
+        <div class="small muted">{fmtDate(p.published)}</div>
+      </a>
+    ))}
+  </div>
+</Base>

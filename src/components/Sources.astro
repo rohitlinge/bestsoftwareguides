@@ -1,0 +1,16 @@
+---
+import type { Tool } from '../lib/data';
+interface Props { tools: Tool[]; }
+const { tools } = Astro.props;
+---
+<section>
+  <h2>Sources</h2>
+  <ul class="sources">
+    {tools.map((t) => (
+      <li>
+        <strong>{t.name}:</strong> <a href={t.pricingUrl} rel="nofollow noopener" target="_blank">official pricing page</a>
+        {t.sources.map((s) => <> · <a href={s.url} rel="nofollow noopener" target="_blank">{s.label}</a></>)}
+      </li>
+    ))}
+  </ul>
+</section>

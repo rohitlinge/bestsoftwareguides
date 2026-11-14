@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../lib/data';
+---
+<Base title="Privacy Policy" description={`Privacy policy for ${site.name}.`} path="/privacy/">
+  <article class="prose">
+    <h1>Privacy policy</h1>
+    <p class="note">Template. Review it (ideally with a lawyer) and edit it to match the analytics, ads and affiliate tools you actually use before launch.</p>
+    <p>{site.name} does not require accounts and does not sell personal data. Our hosting provider may log standard request data (IP address, browser, pages visited) for security and performance. If we add analytics or advertising, we will list the providers here and, where required, ask for consent.</p>
+    <p>If you email us, we use your email only to reply. Contact: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>.</p>
+  </article>
+</Base>

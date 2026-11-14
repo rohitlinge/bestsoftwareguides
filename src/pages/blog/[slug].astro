@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import { posts, type Post } from '../../lib/posts';
+import { fmtDate, site } from '../../lib/data';
+import { crumbsLd, articleLd } from '../../lib/ld';
+export function getStaticPaths() {
+  return posts.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+}
+const { p } = Astro.props as { p: Post };
+const path = `/blog/${p.slug}/`;
+const ld = { ...articleLd({ headline: p.title, description: p.description, path, published: p.published, modified: p.updated }), '@type': 'BlogPosting' };
+const { Content } = p;
+const toc = p.headings.filter((h: any) => h.depth === 2);
+---
+<Base title={p.title} description={p.description} path={path} ogType="article" published={p.published} modified={p.updated} jsonld={[crumbsLd([{ name: 'Home', path: '/' }, { name: 'Guides', path: '/blog/' }, { name: p.title, path }]), ld]}>
+  <div class="crumbs"><a href="/">Home</a> › <a href="/blog/">Guides</a></div>
+  <article class="prose">
+    <h1>{p.title}</h1>
+    <div class="meta"><span>By <a href={site.editor.url}>{site.editor.name}</a></span><span>Published {fmtDate(p.published)}</span>{p.updated !== p.published && <span>Updated {fmtDate(p.updated)}</span>}</div>
+    {toc.length > 2 && <nav class="toc"><strong>On this page</strong><ul>{toc.map((h: any) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ul></nav>}
+    <Content />
+  </article>
+</Base>

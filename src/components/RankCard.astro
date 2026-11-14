@@ -1,0 +1,19 @@
+---
+import { priceLine, type Tool } from '../lib/data';
+interface Props { tool: Tool; }
+const { tool: t } = Astro.props;
+---
+<article class="rank-card" id={t.slug}>
+  <div class="rank-num">#{t.rank}</div>
+  <div>
+    <h3 style="margin:0 0 4px"><a href={`/tools/${t.slug}/`}>{t.name}</a></h3>
+    <div class="small"><span class="badge green">Best for</span>{t.bestFor}</div>
+    <p style="margin:8px 0">{t.tagline}</p>
+    <div class="small muted">{priceLine(t)}</div>
+    <div class="btn-row">
+      <a class="btn ghost" href={`/tools/${t.slug}/`}>Full breakdown</a>
+      <a class="btn ghost" href={`/tools/${t.slug}/pricing/`}>{t.name} pricing</a>
+    </div>
+  </div>
+  <div class="score">{t.score}<small>/10</small></div>
+</article>

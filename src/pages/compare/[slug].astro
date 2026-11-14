@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+import FeatureTable from '../../components/FeatureTable.astro';
+import Faq from '../../components/Faq.astro';
+import Sources from '../../components/Sources.astro';
+import { lc1, compares, compareVerdict, featureWins, money, fmtDate, iso, buildDate, type Compare } from '../../lib/data';
+import { crumbsLd, faqLd, articleLd } from '../../lib/ld';
+
+export function getStaticPaths() {
+  return compares.map((x) => ({ params: { slug: x.slug }, props: { x } }));
+}
+const { x } = Astro.props as { x: Compare };
+const { a, b, category: c } = x;
+const year = buildDate.getUTCFullYear();
+const path = `/compare/${x.slug}/`;
+const title = `${a.name} vs ${b.name} (${year}): Price, Features and Verdict`;
+const verdict = compareVerdict(x);
+const wins = featureWins(x);
+const modified = [a.checked, b.checked].sort().pop()!;
+const description = `${a.name} vs ${b.name}: ${verdict.slice(0, 2).join(' ')}`;
+const faqs = [
+  { q: `Is ${a.name} better than ${b.name}?`, a: verdict[0] + ` ${a.name} is best for ${lc1(a.bestFor)}; ${b.name} is best for ${lc1(b.bestFor)}.` },
+  { q: `Which is cheaper, ${a.name} or ${b.name}?`, a: a.entryPrice != null && b.entryPrice != null ? (a.entryPrice === b.entryPrice ? `Both start at ${money(a.entryPrice)} per user/month on annual billing.` : `${a.entryPrice < b.entryPrice ? a.name : b.name} is cheaper, starting at ${money(Math.min(a.entryPrice, b.entryPrice))} vs ${money(Math.max(a.entryPrice, b.entryPrice))} per user/month on annual billing.`) : `Check each vendor's pricing page; one of them does not publish an entry price.` },
+  { q: `Do ${a.name} and ${b.name} have free plans?`, a: `${a.name}: ${a.freePlan ? 'yes' : 'no'}. ${b.name}: ${b.freePlan ? 'yes' : 'no'}.` },
+];
+const jsonld = [
+  crumbsLd([{ name: 'Home', path: '/' }, { name: 'Compare', path: '/compare/' }, { name: `${a.name} vs ${b.name}`, path }]),
+  faqLd(faqs),
+  articleLd({ headline: title, description, path, published: iso(c.comparesDate), modified }),
+];
+---
+<Base title={title} description={description} path={path} jsonld={jsonld} noindex={!(a.indexable && b.indexable)} ogType="article" published={iso(c.comparesDate)} modified={modified}>
+  <div class="crumbs"><a href="/">Home</a> › <a href="/compare/">Compare</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {a.name} vs {b.name}</div>
+  <h1>{a.name} vs {b.name}</h1>
+  <div class="meta"><span>Checked {fmtDate(modified)}</span><a href="/methodology/">How we score</a></div>
+
+  <div class="answer">
+    <p><strong>Verdict:</strong> {verdict[0]}</p>
+    {verdict.slice(1).map((l) => <p>{l}</p>)}
+    <p>Choose <strong>{a.name}</strong> for {lc1(a.bestFor)}. Choose <strong>{b.name}</strong> for {lc1(b.bestFor)}.</p>
+  </div>
+
+  <h2>At a glance</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th></th><th>{a.name}</th><th>{b.name}</th></tr></thead>
+    <tbody>
+      <tr><th>Score</th><td>{a.score}/10 (#{a.rank})</td><td>{b.score}/10 (#{b.rank})</td></tr>
+      <tr><th>Best for</th><td>{a.bestFor}</td><td>{b.bestFor}</td></tr>
+      <tr><th>Free plan</th><td>{a.freePlan ? 'Yes' : 'No'}</td><td>{b.freePlan ? 'Yes' : 'No'}</td></tr>
+      <tr><th>Paid from (annual)</th><td>{a.entryPrice != null ? `${money(a.entryPrice)}/user/mo` : 'See vendor'}</td><td>{b.entryPrice != null ? `${money(b.entryPrice)}/user/mo` : 'See vendor'}</td></tr>
+      <tr><th>Paid from (monthly)</th><td>{a.entryMonthly != null ? `${money(a.entryMonthly)}/user/mo` : '—'}</td><td>{b.entryMonthly != null ? `${money(b.entryMonthly)}/user/mo` : '—'}</td></tr>
+      <tr><th>Free trial</th><td>{a.trial ?? '—'}</td><td>{b.trial ?? '—'}</td></tr>
+      <tr><th>Minimum seats</th><td>{a.minSeats}</td><td>{b.minSeats}</td></tr>
+      <tr><th>Platforms</th><td>{a.platforms.join(', ')}</td><td>{b.platforms.join(', ')}</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Features</h2>
+  <FeatureTable tools={[a, b]} category={c} showPrice={false} />
+  {(wins.a.length > 0 || wins.b.length > 0) && (
+    <ul>
+      {wins.a.length > 0 && <li>Only <strong>{a.name}</strong> confirms: {wins.a.join(', ')}.</li>}
+      {wins.b.length > 0 && <li>Only <strong>{b.name}</strong> confirms: {wins.b.join(', ')}.</li>}
+    </ul>
+  )}
+
+  <h2>Pros and cons</h2>
+  <div class="pros-cons">
+    {[a, b].map((t) => (
+      <div class="card">
+        <h3 style="margin-top:0"><a href={`/tools/${t.slug}/`}>{t.name}</a></h3>
+        <strong>Pros</strong><ul>{t.pros.map((p) => <li>{p}</li>)}</ul>
+        <strong>Cons</strong><ul>{t.cons.map((p) => <li>{p}</li>)}</ul>
+        <a href={`/tools/${t.slug}/pricing/`}>{t.name} pricing →</a>
+      </div>
+    ))}
+  </div>
+
+  <Faq faqs={faqs} />
+  <p>See the full <a href={`/best/${c.slug}/`}>{c.name} ranking</a> for other options.</p>
+  <Sources tools={[a, b]} />
+</Base>

@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../lib/data';
+---
+<Base title="Contact and Corrections" description={`Contact ${site.name} or report a pricing error.`} path="/contact/">
+  <article class="prose">
+    <h1>Contact and corrections</h1>
+    <p>Found a wrong price or feature? Email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> with the page URL and a link to the vendor page that shows the correct information. We confirm the change on the vendor's page, update the record and its checked date.</p>
+    <p>Vendors: you can request a listing or a correction the same way. Listings and corrections are free and do not affect scores beyond what the published data changes.</p>
+  </article>
+</Base>
