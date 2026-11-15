@@ -21,7 +21,7 @@ export default {
   // Organization profiles (X, LinkedIn page, GitHub). Used in Organization schema.
   sameAs: [],
   // Search-console verification codes (the content="" value only). Leave empty if you verify by DNS.
-  verification: { bing: 'B44B109BD1960C9727A4D8506739AE85', google: '' },
+  verification: { bing: 'B44B109BD1960C9727A4D8506739AE85', google: 'a5cNXQkPUuuJLY8hpXAeXhwlj8QIOn-qPo73MJgsF5E' },
 
   // ---- Drip-publishing ----
   // Day 0 of the content plan. Every item in src/data/schedule.json is published
