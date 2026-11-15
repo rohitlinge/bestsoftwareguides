@@ -110,6 +110,15 @@ For a new category: copy an entry in `src/data/categories.json` (name, intro, bu
 
 Then fetch the new tools' official icons: `node scripts/find-logos.mjs` reads each vendor homepage's declared icon and stores its URL as `logo` in `tools.json` (only tools without one; `--all` re-checks every tool). Pages load the icon straight from the vendor's server, with no referrer, and fall back to a lettered tile if it fails. Set `logo` by hand to override a bad pick, or to `""` to keep the tile. Tools hosted on GitHub are skipped.
 
+## MCP server for AI assistants
+
+`https://bestsoftwareguides.online/mcp` is a read-only [MCP](https://modelcontextprotocol.io) server (Streamable HTTP, no key). AI assistants call tools such as `get_pricing` or `get_ranking` and get a few hundred tokens of JSON instead of reading whole pages (~6,000 tokens each). People opening `/mcp` in a browser are sent to the docs page, `/ai/`.
+
+- `worker/index.js`: the server. `wrangler.jsonc` runs it only for `/mcp`; every other URL is served from `dist/` as before.
+- `src/pages/mcp-data.json.ts`: the snapshot it answers from, built with the site, so it follows the publishing schedule and featured-partner labels automatically. No extra deploy step.
+- Tools: `search`, `list_categories`, `get_ranking` (filters: free plan, max price, features), `get_tool`, `get_pricing`, `compare_tools`.
+- Try it: `curl -s https://bestsoftwareguides.online/mcp -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'`
+
 ## Measure ChatGPT citations
 ```bash
 python scripts/pipeline/citation_tracker.py                      # OpenAI with web search

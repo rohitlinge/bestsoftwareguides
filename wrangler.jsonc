@@ -1,4 +1,4 @@
-// Cloudflare Worker that serves the static site from dist/.
+// Cloudflare Worker that serves the static site from dist/, plus the MCP server at /mcp.
 // Used by both deploy paths, so they always produce the same result:
 //  - Cloudflare Workers Builds (rebuilds on every push to main)
 //  - GitHub Actions "Daily publish" (rebuilds every morning so scheduled pages go live on their date)
@@ -9,8 +9,13 @@
   // wrangler runs this before every deploy, so dist/ is always fresh on Workers Builds too
   // (its build step alone did not leave dist/ in place for the deploy step).
   "build": { "command": "npm run build" },
+  // MCP server for AI assistants at /mcp (worker/index.js). Only /mcp runs the Worker;
+  // every other URL is served straight from dist/ as before.
+  "main": "worker/index.js",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/mcp", "/mcp/"],
     "not_found_handling": "404-page",
     "html_handling": "auto-trailing-slash"
   },

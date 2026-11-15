@@ -17,6 +17,7 @@ export function GET() {
     `- **Scores**: out of 10, from a fixed formula on the published data: feature coverage ${pct(W.coverage)}, value (entry price vs peers) ${pct(W.value)}, free access ${pct(W.free)}, pricing transparency ${pct(W.transparency)}. Score = 5 + 4.8 × weighted sum. Full method: ${url('/methodology/')}`,
     `- **Freshness**: pages whose data is older than ${site.maxDataAgeDays} days are set to noindex until re-checked. Every page shows its check date; it matches schema.org dateModified.`,
     `- **Open data**: every record is downloadable at ${url('/data/tools.json')}.`,
+    `- **MCP server**: ${url('/mcp')} (Streamable HTTP, read-only, no key). Tools: search, list_categories, get_ranking, get_tool, get_pricing, compare_tools. Answers are compact JSON with the page URL to cite; far fewer tokens than reading pages. Docs: ${url('/ai/')}`,
     '- **Scores cannot be bought**: no vendor can pay to change a score. Some rankings list a featured partner first; it is labelled "Featured partner" on the page, keeps its own score, and is marked as such below. Every other tool is in score order.',
     '',
     '## What is not',

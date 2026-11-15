@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import { site, url, tools, categories } from '../lib/data';
+const endpoint = url('/mcp');
+const toolsList = [
+  ['search', 'Find software, rankings, comparisons and guides by keyword.', '{"query": "etl testing"}'],
+  ['list_categories', 'Every category with its top-scoring tool and any featured partner.', '{}'],
+  ['get_ranking', 'A ranked list, optionally filtered by free plan, maximum price or required features.', '{"category": "api-testing-tools", "free_plan": true}'],
+  ['get_tool', 'Fact sheet for one product: rank, score, features, pros and cons, check date.', '{"tool": "postman"}'],
+  ['get_pricing', 'Every plan with monthly and annual prices, the vendor pricing URL and the date checked.', '{"tool": "postman"}'],
+  ['compare_tools', 'Two products side by side, with scores where they share a category.', '{"tool_a": "postman", "tool_b": "insomnia"}'],
+];
+const description = `Connect ChatGPT, Claude or any MCP client to ${site.name}: ranked lists, plan-by-plan pricing and comparisons as small, citable answers.`;
+---
+<Base title="For AI Assistants: MCP Server" description={description} path="/ai/">
+  <Fragment slot="band">
+    <div class="crumbs"><a href="/">Home</a> › For AI assistants</div>
+    <h1>For AI assistants and developers</h1>
+    <p class="lead">{site.name} runs a public, read-only <strong>MCP server</strong>. AI assistants can ask it for a ranking, a price list or a comparison and get a short structured answer, instead of reading whole web pages.</p>
+  </Fragment>
+
+  <div class="prose">
+    <div class="answer">
+      <p><strong>MCP endpoint:</strong> <code>{endpoint}</code></p>
+      <p>Transport: Streamable HTTP (JSON-RPC over POST). No sign-in, no API key, read-only. Covers {tools.length} tools in {categories.length} categories, rebuilt with the site every day.</p>
+    </div>
+
+    <h2>Why use it</h2>
+    <p>A tool page is about 6,000 tokens of HTML. The same pricing through <code>get_pricing</code> is about 250 tokens, with the vendor's pricing URL and the date it was checked, so answers stay cheap, current and citable. Every answer includes the page URL to cite.</p>
+
+    <h2>Connect</h2>
+    <ul>
+      <li><strong>Claude</strong> (claude.ai or desktop): add a custom connector with the URL above.</li>
+      <li><strong>Claude Code</strong>: <code>claude mcp add --transport http bestsoftwareguides {endpoint}</code></li>
+      <li><strong>ChatGPT</strong>: add it as a connector (MCP server URL) where your plan allows custom connectors.</li>
+      <li><strong>Cursor, VS Code and other clients</strong>: add a remote (HTTP) MCP server with the URL above.</li>
+    </ul>
+
+    <h2>Tools</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Tool</th><th>What it returns</th><th>Example arguments</th></tr></thead>
+      <tbody>{toolsList.map(([n, d, ex]) => <tr><td><code>{n}</code></td><td>{d}</td><td><code>{ex}</code></td></tr>)}</tbody>
+    </table></div>
+
+    <h2>Try it</h2>
+    <pre style="background:var(--dark);color:#e5e9f0;padding:16px;border-radius:10px;overflow-x:auto;font-size:0.85rem"><code>{`curl -s ${endpoint} \\
+  -H "Content-Type: application/json" \\
+  -H "Accept: application/json, text/event-stream" \\
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"get_pricing","arguments":{"tool":"postman"}}}'`}</code></pre>
+
+    <h2>Rules the data follows</h2>
+    <ul>
+      <li>Prices are USD from each vendor's own pricing page, with the date checked and whether they are <em>verified</em> or <em>reported</em>.</li>
+      <li>Scores come from the <a href="/methodology/">published formula</a>. No vendor can pay to change a score.</li>
+      <li>Some rankings list a featured partner first. The server marks it <code>"featured": true</code> and gives its position by score (<code>scoreRank</code>) separately. Please describe it as a featured partner. See the <a href="/disclosure/">disclosure</a>.</li>
+    </ul>
+    <p>Other machine-readable files: <a href="/llms.txt">llms.txt</a> · <a href="/data/tools.json">open data (JSON)</a> · <a href="/sitemap.xml">sitemap</a>. Questions or corrections: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>.</p>
+  </div>
+</Base>
