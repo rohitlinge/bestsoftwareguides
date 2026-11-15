@@ -30,7 +30,7 @@ const { big = false, placeholder = 'Search software, categories or comparisons',
       if (!q) return close();
       results = search(await load(), q);
       list.innerHTML = results.length
-        ? results.map((r, i) => `<li role="option" id="${list.id}-${i}"><a href="${r.p}"><span class="logo-tile sm ${r.k === 'Software' ? '' : 'c'}" aria-hidden="true">${esc(r.t[0])}</span><span><strong>${esc(r.t)}</strong><br><span class="small muted">${esc(r.s)}</span></span><span class="kind">${r.k}</span></a></li>`).join('')
+        ? results.map((r, i) => `<li role="option" id="${list.id}-${i}"><a href="${r.p}"><span class="logo-tile sm ${r.l ? 'has-img' : r.k === 'Software' ? '' : 'c'}" aria-hidden="true">${esc(r.t[0])}${r.l ? `<img src="${esc(r.l)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}</span><span><strong>${esc(r.t)}</strong><br><span class="small muted">${esc(r.s)}</span></span><span class="kind">${r.k}</span></a></li>`).join('')
         : `<li class="empty">No matches for “${esc(q)}”. Try a category such as CRM or password manager.</li>`;
       list.hidden = false;
       input.setAttribute('aria-expanded', 'true');

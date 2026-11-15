@@ -1,5 +1,5 @@
 // Browser-side search over /search.json. Shared by the search box and the /search/ page.
-export type Item = { t: string; s: string; p: string; k: string };
+export type Item = { t: string; s: string; p: string; k: string; l?: string };
 
 let index: Promise<Item[]> | null = null;
 export const load = () => (index ??= fetch('/search.json').then((r) => r.json()).catch(() => []));

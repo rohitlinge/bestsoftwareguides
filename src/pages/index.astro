@@ -49,6 +49,7 @@ const icon = (d: string) => `<svg width="20" height="20" viewBox="0 0 24 24" fil
             {c.tools.slice(0, 3).map((t, n) => (
               <li>
                 <span class="pos">{n + 1}</span>
+                <LogoTile name={t.name} src={t.logo} size="xs" />
                 <span class="nm">{t.name}</span>
                 {t.featured
                   ? <span class="badge featured" style="margin:0">{featuredLabel}</span>

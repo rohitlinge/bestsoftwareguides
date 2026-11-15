@@ -99,7 +99,7 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
 
   <h2>{t.name} alternatives</h2>
   <div class="grid">
-    {alts.map((o) => <a class="card" href={`/tools/${o.slug}/`}><div class="cat-top" style="margin:0 0 8px;display:flex;gap:10px;align-items:center"><LogoTile name={o.name} size="sm" /><strong style="flex:1">{o.name}</strong><span class="score-pill">{o.score}</span></div><div class="small muted">{o.bestFor}</div></a>)}
+    {alts.map((o) => <a class="card" href={`/tools/${o.slug}/`}><div class="cat-top" style="margin:0 0 8px;display:flex;gap:10px;align-items:center"><LogoTile name={o.name} src={o.logo} size="sm" /><strong style="flex:1">{o.name}</strong><span class="score-pill">{o.score}</span></div><div class="small muted">{o.bestFor}</div></a>)}
   </div>
 
   {vs.length > 0 && (
@@ -131,7 +131,7 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
     {vs.length > 0 && (
       <div class="side-card">
         <h4>Compare {t.name}</h4>
-        <ul>{vs.slice(0, 6).map((x) => { const o = x.a.slug === t.slug ? x.b : x.a; return <li><a href={`/compare/${x.slug}/`}><LogoTile name={o.name} size="sm" /><span class="nm">vs {o.name}</span></a></li>; })}</ul>
+        <ul>{vs.slice(0, 6).map((x) => { const o = x.a.slug === t.slug ? x.b : x.a; return <li><a href={`/compare/${x.slug}/`}><LogoTile name={o.name} src={o.logo} size="sm" /><span class="nm">vs {o.name}</span></a></li>; })}</ul>
       </div>
     )}
   </aside>

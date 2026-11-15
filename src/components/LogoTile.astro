@@ -1,8 +1,9 @@
 ---
-// A lettered tile standing in for a vendor logo. The shade is picked from the name so it stays stable.
-interface Props { name: string; size?: 'sm' | 'lg'; }
-const { name, size } = Astro.props;
+// A tool's official icon, hotlinked from the vendor's own site (see scripts/find-logos.mjs), drawn over a
+// lettered tile. If the image fails to load it removes itself and the letter shows instead.
+interface Props { name: string; src?: string | null; size?: 'xs' | 'sm' | 'lg'; }
+const { name, src, size } = Astro.props;
 const shades = ['', 'b', 'c'];
 const shade = shades[[...name].reduce((n, ch) => n + ch.charCodeAt(0), 0) % shades.length];
 ---
-<span class={['logo-tile', shade, size].filter(Boolean).join(' ')} aria-hidden="true">{name[0]}</span>
+<span class={['logo-tile', src ? 'has-img' : shade, size].filter(Boolean).join(' ')} aria-hidden="true">{name[0]}{src && <img src={src} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()" />}</span>

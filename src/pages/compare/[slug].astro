@@ -47,7 +47,7 @@ const jsonld = [
         <>
           {i === 1 && <span class="vs-badge" aria-hidden="true">VS</span>}
           <a class="vs-side" href={`/tools/${t.slug}/`}>
-            <LogoTile name={t.name} />
+            <LogoTile name={t.name} src={t.logo} />
             <div style="flex:1">
               <div class="nm">{t.name}</div>
               <div class="sub">#{t.rank} in {c.name} · {t.freePlan ? 'free plan' : t.entryPrice != null ? `from ${money(t.entryPrice)}${per(t)}` : 'see vendor'}</div>

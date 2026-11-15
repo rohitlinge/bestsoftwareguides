@@ -147,7 +147,7 @@ const jsonld = [
   <aside aria-label="In this ranking">
     <div class="side-card">
       <h4>In this ranking</h4>
-      <ol>{list.map((t, i) => <li><a href={`#${t.slug}`}><LogoTile name={t.name} size="sm" /><span class="nm">{variant === 'main' ? t.rank : i + 1}. {t.name}{t.featured && <span class="sr-only"> ({featuredLabel})</span>}{t.featured && <span aria-hidden="true" style="color:var(--brand)"> ★</span>}</span><span class="score-pill">{t.score}</span></a></li>)}</ol>
+      <ol>{list.map((t, i) => <li><a href={`#${t.slug}`}><LogoTile name={t.name} src={t.logo} size="sm" /><span class="nm">{variant === 'main' ? t.rank : i + 1}. {t.name}{t.featured && <span class="sr-only"> ({featuredLabel})</span>}{t.featured && <span aria-hidden="true" style="color:var(--brand)"> ★</span>}</span><span class="score-pill">{t.score}</span></a></li>)}</ol>
       {feat && <p class="small muted" style="margin:10px 0 0">★ {featuredLabel}, listed first. The rest are in score order.</p>}
     </div>
     <div class="side-card dark">

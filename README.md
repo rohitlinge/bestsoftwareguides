@@ -108,6 +108,8 @@ python scripts/pipeline/draft_tool.py --name "Granola" --category ai-meeting-not
 ```
 For a new category: copy an entry in `src/data/categories.json` (name, intro, buying tips, 5 feature labels), draft at least 5 tools, then add `{ "slug": "...", "day": N, "comparesDay": N+2 }` to `schedule.json`.
 
+Then fetch the new tools' official icons: `node scripts/find-logos.mjs` reads each vendor homepage's declared icon and stores its URL as `logo` in `tools.json` (only tools without one; `--all` re-checks every tool). Pages load the icon straight from the vendor's server, with no referrer, and fall back to a lettered tile if it fails. Set `logo` by hand to override a bad pick, or to `""` to keep the tile. Tools hosted on GitHub are skipped.
+
 ## Measure ChatGPT citations
 ```bash
 python scripts/pipeline/citation_tracker.py                      # OpenAI with web search

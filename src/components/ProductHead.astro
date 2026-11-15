@@ -14,7 +14,7 @@ const tabs = [
   <a href="/">Home</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {current === 'overview' ? t.name : <><a href={base}>{t.name}</a> › {current === 'pricing' ? 'Pricing' : 'Alternatives'}</>}
 </div>
 <div class="product-head">
-  <LogoTile name={t.name} size="lg" />
+  <LogoTile name={t.name} src={t.logo} size="lg" />
   <div>
     <h1>{heading}</h1>
     <p class="tagline">{t.tagline}</p>

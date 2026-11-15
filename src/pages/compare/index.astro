@@ -14,7 +14,7 @@ const groups = categories.map((c) => ({ c, list: compares.filter((x) => x.catego
   {groups.map((g) => (
     <section>
       <div class="section-head"><h2>{g.c.name}</h2><a href={`/best/${g.c.slug}/`}>Full ranking →</a></div>
-      <div class="grid">{g.list.map((x) => <a class="card" href={`/compare/${x.slug}/`}><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><LogoTile name={x.a.name} size="sm" /><span class="badge dark" style="margin:0">vs</span><LogoTile name={x.b.name} size="sm" /></div><strong>{x.a.name} vs {x.b.name}</strong><div class="small muted">{x.a.score} vs {x.b.score} out of 10</div></a>)}</div>
+      <div class="grid">{g.list.map((x) => <a class="card" href={`/compare/${x.slug}/`}><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><LogoTile name={x.a.name} src={x.a.logo} size="sm" /><span class="badge dark" style="margin:0">vs</span><LogoTile name={x.b.name} src={x.b.logo} size="sm" /></div><strong>{x.a.name} vs {x.b.name}</strong><div class="small muted">{x.a.score} vs {x.b.score} out of 10</div></a>)}</div>
     </section>
   ))}
   {groups.length === 0 && <p>Comparisons are published a few days after each category goes live. Check back soon.</p>}

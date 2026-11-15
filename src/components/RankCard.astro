@@ -8,7 +8,7 @@ const pct = Math.max(0, Math.min(100, t.score * 10));
 ---
 <article class={t.featured ? 'rank-card featured' : 'rank-card'} id={t.slug}>
   <div class="rc-logo">
-    <LogoTile name={t.name} />
+    <LogoTile name={t.name} src={t.logo} />
     <span class="rank-num">#{pos ?? t.rank}</span>
   </div>
   <div class="rc-body">

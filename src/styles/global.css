@@ -346,3 +346,10 @@ a.card:hover h3, a.card:hover > strong { color: var(--brand); }
 main.wrap > h1:first-child, .prose > h1:first-child { margin-top: 36px; }
 a.vs-side:hover { border-color: var(--brand); text-decoration: none; }
 .cat-card .small .score-pill { margin-left: 4px; }
+
+/* official vendor icons over the lettered tile */
+.logo-tile { position: relative; overflow: hidden; }
+.logo-tile.has-img { background: #fff; color: var(--brand); border: 1px solid var(--line); }
+.logo-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 14%; background: #fff; }
+.logo-tile.xs { width: 22px; height: 22px; border-radius: 6px; font-size: 0.7rem; }
+.logo-tile.xs img { padding: 8%; }
