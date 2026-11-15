@@ -13,7 +13,11 @@ import { RELATIONSHIPS, COMPANY_SIZES, USAGE, LIMITS, DAILY_LIMIT } from './revi
 // Vendor and competitor reviews are shown, labelled, but left out of the average.
 const COUNTS_IN_AVERAGE = new Set(['user', 'other']);
 
+// name_mode: full (name + LinkedIn photo) | short (first name + last initial) | anon (no name or photo;
+// still verified, and moderators still see who wrote it).
+const NAME_MODES = ['full', 'short', 'anon'];
 const displayName = (r) => {
+  if (r.name_mode === 'anon') return 'Anonymous reviewer';
   if (r.name_mode === 'full') return r.name;
   const first = r.given_name || r.name.split(' ')[0];
   const last = r.family_name || r.name.split(' ').slice(1).join(' ');
@@ -24,7 +28,7 @@ export const publicReview = (r) => ({
   id: r.id, rating: r.rating, title: r.title, pros: r.pros, cons: r.cons,
   role: r.role || null, companySize: r.company_size || null, usage: r.usage || null,
   relationship: r.relationship, relationshipLabel: RELATIONSHIPS[r.relationship],
-  author: displayName(r), picture: r.name_mode === 'full' ? r.picture : null,
+  author: displayName(r), anonymous: r.name_mode === 'anon', picture: r.name_mode === 'full' ? r.picture : null,
   verified: 'LinkedIn', date: (r.moderated_at || r.created_at).slice(0, 10),
 });
 
@@ -45,7 +49,7 @@ function validate(body) {
     company_size: COMPANY_SIZES.includes(body.companySize) ? body.companySize : null,
     usage: USAGE.includes(body.usage) ? body.usage : null,
     relationship: body.relationship in RELATIONSHIPS ? body.relationship : null,
-    name_mode: body.nameMode === 'full' ? 'full' : 'short',
+    name_mode: NAME_MODES.includes(body.nameMode) ? body.nameMode : 'short',
   };
   if (!Number.isInteger(v.rating) || v.rating < 1 || v.rating > 5) errors.push('Choose a rating from 1 to 5 stars.');
   for (const [k, [min, max]] of Object.entries(LIMITS)) {

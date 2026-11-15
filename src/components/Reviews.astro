@@ -44,15 +44,16 @@ const { slug, name } = Astro.props;
     </div>
     <fieldset>
       <legend>How are you connected to {name}? <span aria-hidden="true">*</span></legend>
-      {Object.entries(RELATIONSHIPS).map(([k, v]) => <label class="rv-inline"><input type="radio" name="relationship" value={k} required /> {v}</label>)}
+      {Object.entries(RELATIONSHIPS).map(([k, v]) => <label class="rv-inline"><input type="radio" name="relationship" value={k} required /> <span>{v}</span></label>)}
       <p class="small muted">Reviews from the vendor's or a competitor's staff are published with a label and left out of the average.</p>
     </fieldset>
     <fieldset>
       <legend>Show my name as</legend>
       <label class="rv-inline"><input type="radio" name="nameMode" value="short" checked /> <span data-short-name>First name and last initial</span></label>
-      <label class="rv-inline"><input type="radio" name="nameMode" value="full" /> <span data-full-name>Full name</span> with LinkedIn photo</label>
+      <label class="rv-inline"><input type="radio" name="nameMode" value="full" /> <span><span data-full-name>Full name</span> with LinkedIn photo</span></label>
+      <label class="rv-inline"><input type="radio" name="nameMode" value="anon" /> <span>Don't show my name ("Anonymous reviewer"). Still marked as a verified LinkedIn member; only our moderators see who wrote it.</span></label>
     </fieldset>
-    <label class="rv-inline"><input type="checkbox" name="consent" required /> This is my own honest experience, I'm not being paid or rewarded for it, and I agree to the <a href="/review-guidelines/">review guidelines</a>.</label>
+    <label class="rv-inline"><input type="checkbox" name="consent" required /> <span>This is my own honest experience, I'm not being paid or rewarded for it, and I agree to the <a href="/review-guidelines/">review guidelines</a>.</span></label>
     <p class="rv-error" data-error role="alert" hidden></p>
     <div class="btn-row"><button class="btn" type="submit">Submit for moderation</button><button class="btn ghost" type="button" data-cancel>Cancel</button></div>
   </form>
@@ -65,7 +66,7 @@ const { slug, name } = Astro.props;
   const root = document.getElementById('reviews') as HTMLElement | null;
   if (root) init(root);
 
-  type Review = { id: number; rating: number; title: string; pros: string; cons: string; role: string | null; companySize: string | null; usage: string | null; relationship: string; relationshipLabel: string; author: string; picture: string | null; date: string };
+  type Review = { anonymous?: boolean; id: number; rating: number; title: string; pros: string; cons: string; role: string | null; companySize: string | null; usage: string | null; relationship: string; relationshipLabel: string; author: string; picture: string | null; date: string };
 
   function esc(s: unknown) { return String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!); }
   const stars = (n: number) => '★'.repeat(Math.round(n)) + '☆'.repeat(5 - Math.round(n));
@@ -102,7 +103,7 @@ const { slug, name } = Astro.props;
       list.innerHTML = data.reviews.slice(0, shown).map((r: Review) => `
         <article class="card rv-item">
           <header>
-            ${r.picture ? `<img class="rv-avatar" src="${esc(r.picture)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'rv-avatar',textContent:'${esc(r.author[0])}'}))">` : `<span class="rv-avatar">${esc(r.author[0])}</span>`}
+            ${r.anonymous ? `<span class="rv-avatar anon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></span>` : r.picture ? `<img class="rv-avatar" src="${esc(r.picture)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'rv-avatar',textContent:'${esc(r.author[0])}'}))">` : `<span class="rv-avatar">${esc(r.author[0])}</span>`}
             <div>
               <strong>${esc(r.author)}</strong> <span class="badge blue">✓ Verified LinkedIn member</span>${r.relationship === 'vendor' || r.relationship === 'competitor' ? ` <span class="badge dark">${esc(r.relationshipLabel)}</span>` : ''}
               <div class="small muted">${[r.role, r.companySize && `${r.companySize} employees`, r.usage && `Used ${r.usage.toLowerCase()}`].filter(Boolean).map(esc).join(' · ')}</div>

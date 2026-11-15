@@ -57,7 +57,7 @@ export async function handleAdmin(request, env, pathname) {
   <div class="r" id="r${r.id}">
     <div><span class="stars" aria-label="${r.rating} of 5">${'★'.repeat(r.rating)}${'☆'.repeat(5 - r.rating)}</span>
       <strong>${esc(r.title)}</strong>${r.relationship !== 'user' ? `<span class="flag">${esc(RELATIONSHIPS[r.relationship])}</span>` : ''}</div>
-    <div class="meta">${esc(data.tools[r.tool]?.name ?? r.tool)} · by ${esc(r.name)} (${esc(r.email ?? 'no email')}${r.email_verified ? ', verified' : ''})${r.role ? ` · ${esc(r.role)}` : ''}${r.company_size ? ` · ${esc(r.company_size)} employees` : ''}${r.usage ? ` · used ${esc(r.usage)}` : ''} · updated ${esc(r.updated_at.slice(0, 16).replace('T', ' '))}${r.reject_reason ? ` · rejected: ${esc(REJECT_REASONS[r.reject_reason] ?? r.reject_reason)}` : ''}</div>
+    <div class="meta">${esc(data.tools[r.tool]?.name ?? r.tool)} · by ${esc(r.name)} (${esc(r.email ?? 'no email')}${r.email_verified ? ', verified' : ''})${r.name_mode === 'anon' ? ' · <strong>shown publicly as "Anonymous reviewer"</strong>' : ''}${r.role ? ` · ${esc(r.role)}` : ''}${r.company_size ? ` · ${esc(r.company_size)} employees` : ''}${r.usage ? ` · used ${esc(r.usage)}` : ''} · updated ${esc(r.updated_at.slice(0, 16).replace('T', ' '))}${r.reject_reason ? ` · rejected: ${esc(REJECT_REASONS[r.reject_reason] ?? r.reject_reason)}` : ''}</div>
     <p><strong>Likes</strong></p><pre>${esc(r.pros)}</pre><p><strong>Dislikes</strong></p><pre>${esc(r.cons)}</pre>
     <div class="row">
       ${r.status !== 'approved' ? `<button class="ok" data-id="${r.id}" data-action="approve">Approve</button>` : ''}

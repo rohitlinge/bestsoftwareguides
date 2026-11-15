@@ -395,3 +395,4 @@ a.vs-side:hover { border-color: var(--brand); text-decoration: none; }
 [hidden] { display: none !important; }
 .rv-form label:not(.rv-inline) { display: flex; flex-wrap: wrap; column-gap: 4px; align-items: baseline; }
 .rv-form label:not(.rv-inline) > input, .rv-form label:not(.rv-inline) > textarea, .rv-form label:not(.rv-inline) > select { flex-basis: 100%; margin-top: 4px; }
+.rv-avatar.anon { background: var(--bg-2); color: var(--ink-3); border: 1px solid var(--line); }
