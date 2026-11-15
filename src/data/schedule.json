@@ -13,13 +13,13 @@
     },
     {
       "slug": "crm-software",
-      "day": 7,
-      "comparesDay": 9
+      "day": 1,
+      "comparesDay": 1
     },
     {
       "slug": "password-managers",
-      "day": 14,
-      "comparesDay": 16
+      "day": 1,
+      "comparesDay": 1
     },
     {
       "slug": "etl-testing-tools",
@@ -69,19 +69,19 @@
     },
     {
       "slug": "free-project-management-plans-compared",
-      "day": 3
+      "day": 1
     },
     {
       "slug": "annual-vs-monthly-billing-savings",
-      "day": 5
+      "day": 1
     },
     {
       "slug": "how-much-does-a-crm-cost-2026",
-      "day": 8
+      "day": 1
     },
     {
       "slug": "password-manager-price-changes-2026",
-      "day": 15
+      "day": 1
     }
   ]
 }
