@@ -503,5 +503,66 @@
       }
     ],
     "compareTop": 6
+  },
+  {
+    "slug": "ai-writing-tools",
+    "name": "AI Writing Tools",
+    "singular": "AI writing tool",
+    "topic": "AI & Productivity",
+    "plural": "AI writing tools",
+    "intro": "AI writing tools draft, rewrite and check text. They split into three groups: grammar and rewriting assistants priced per user (Grammarly, QuillBot, Wordtune), marketing copy platforms priced per seat or per workspace (Jasper, Copy.ai, Anyword, Writesonic), and specialist tools for fiction or ecommerce (Sudowrite, Hypotenuse AI). Compare the billing unit before the headline price: some plans are per user, others are a flat price for the whole account.",
+    "buyingTips": [
+      "Check whether the price is per user or per account: Copy.ai, Writesonic, Anyword and Sudowrite charge a flat price that includes a set number of seats.",
+      "Look at usage caps, not just the price: AI prompt limits (Grammarly), credits (Sudowrite) and daily rewrite limits (Wordtune) decide what you can actually do.",
+      "Annual billing roughly halves the cost on several tools, for example Grammarly Pro (2 vs 0 a month) and QuillBot Premium (.33 vs 9.95).",
+      "If you publish for clients or students, check that the plan you pick includes the plagiarism checker; free tiers usually do not.",
+      "Marketing teams should confirm brand voice limits per plan, since entry tiers often allow only one or two voices."
+    ],
+    "featureLabels": {
+      "brandVoice": "Brand voice or style guide",
+      "plagiarismChecker": "Built-in plagiarism checker",
+      "seoOptimization": "SEO optimization tools",
+      "browserExtension": "Browser extension",
+      "apiAccess": "Public API"
+    },
+    "faqs": [
+      {
+        "q": "Is there a free AI writing tool?",
+        "a": "Yes. Grammarly, QuillBot, Wordtune and Rytr have permanent free plans with usage limits, such as 100 AI prompts a month on Grammarly and 10 rewrites a day on Wordtune."
+      }
+    ],
+    "compareTop": 6,
+    "useCases": [
+      {
+        "slug": "ai-writing-tools-with-plagiarism-checker",
+        "name": "AI Writing Tools with a Plagiarism Checker",
+        "singular": "AI writing tool with a plagiarism checker",
+        "intro": "If you write for clients, school or publication, a built-in plagiarism check saves a second subscription. Every tool here includes one on at least one paid plan.",
+        "ruleText": "Has a built-in plagiarism checker on at least one plan.",
+        "rule": {
+          "feature": "plagiarismChecker"
+        }
+      },
+      {
+        "slug": "ai-writing-tools-with-browser-extension",
+        "name": "AI Writing Tools with a Browser Extension",
+        "singular": "AI writing tool with a browser extension",
+        "intro": "A browser extension lets the tool work inside Gmail, Google Docs, LinkedIn and other sites instead of in a separate app. Every tool here has an official extension.",
+        "ruleText": "Has an official browser extension.",
+        "rule": {
+          "feature": "browserExtension"
+        }
+      },
+      {
+        "slug": "cheap-ai-writing-tools",
+        "name": "Cheap AI Writing Tools (Under $10 a Month)",
+        "singular": "cheap AI writing tool",
+        "intro": "These tools have a paid plan that costs $10 a month or less on annual billing, so you can remove free-plan limits without a large bill.",
+        "ruleText": "The paid entry tier costs $10/month or less on annual billing.",
+        "rule": {
+          "maxEntryPrice": 10
+        }
+      }
+    ]
   }
 ]

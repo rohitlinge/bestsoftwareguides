@@ -210,7 +210,7 @@
       "zoomMeetTeams": true,
       "unlimitedFreeRecordings": true,
       "crmSync": true,
-      "hipaaOption": null,
+      "hipaaOption": true,
       "sso": null
     },
     "platforms": [
@@ -230,6 +230,11 @@
         "label": "Lindy: Fathom pricing (updated Nov 2026)",
         "url": "https://www.lindy.ai/blog/fathom-pricing",
         "date": "2026-11-05"
+      },
+      {
+        "label": "fathom.ai: Pricing (HIPAA with standard BAA on Team and above)",
+        "url": "https://fathom.ai/pricing",
+        "date": "2026-11-15"
       }
     ]
   },
@@ -5696,6 +5701,895 @@
         "label": "iceDQ about us",
         "url": "https://icedq.com/about-us",
         "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "jasper",
+    "name": "Jasper",
+    "category": "ai-writing-tools",
+    "website": "https://www.jasper.ai",
+    "logo": "https://cdn.prod.website-files.com/6807ee8d73c233fb82842313/681e121f9445a06741087852_Webclip.png",
+    "pricingUrl": "https://www.jasper.ai/pricing",
+    "tagline": "An AI content platform for marketing teams that keeps output in line with a company's brand.",
+    "bestFor": "Marketing teams that need on-brand copy at volume",
+    "description": "Jasper is an AI platform for marketing teams that combines agents, brand context (Jasper IQ) and a Canvas workspace for creating campaign content. It sells a self-serve Pro plan per seat and a custom-priced Business plan that adds API access, SSO and unlimited users.",
+    "pros": [
+      "7-day free trial of the Pro plan",
+      "Brand Voices, Knowledge assets and Audiences on every plan",
+      "Chrome and Edge extension included"
+    ],
+    "cons": [
+      "No free plan",
+      "API access only on the custom-priced Business plan",
+      "Plagiarism checking is a Copyscape add-on, not native"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "7-day free trial (Pro plan)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Pro",
+        "monthly": 69,
+        "annual": 59,
+        "notes": "Per seat; includes 1 seat. Annual is billed up front with a 12-month commitment. 2 Brand Voices, 5 Knowledge assets, 3 Audiences. Contact sales to add more users."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing, 12-month minimum. Unlimited Brand Voices and users, API access, SSO (SAML 2.0), SCIM, priority support."
+      }
+    ],
+    "features": {
+      "brandVoice": true,
+      "plagiarismChecker": false,
+      "seoOptimization": null,
+      "browserExtension": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Web",
+      "Chrome extension",
+      "Edge extension"
+    ],
+    "founded": "2021",
+    "hq": "Austin, United States",
+    "integrations": "Webflow, Google Docs, Slack and an integrations marketplace",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "CCPA"
+    ],
+    "support": [
+      "Email",
+      "Help center",
+      "Priority support (Business)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "jasper.ai: Pricing",
+        "url": "https://www.jasper.ai/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "jasper.ai: Home",
+        "url": "https://www.jasper.ai/",
+        "date": "2026"
+      },
+      {
+        "label": "CB Insights: Jasper company profile",
+        "url": "https://www.cbinsights.com/company/jasper",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "copy-ai",
+    "name": "Copy.ai",
+    "category": "ai-writing-tools",
+    "website": "https://www.copy.ai",
+    "logo": "https://cdn.prod.website-files.com/628288c5cd3e8411b90a36a4/6793eea6a090d6d2f4fa5570_favicon_256x256%20(2).png",
+    "pricingUrl": "https://www.copy.ai/prices",
+    "tagline": "An AI platform for go-to-market teams that runs chat and automated workflows for sales and marketing.",
+    "bestFor": "Go-to-market teams automating sales and marketing workflows",
+    "description": "Copy.ai is an AI platform for sales, marketing and operations teams that offers multi-model chat plus workflow automation for tasks such as prospecting and content creation. Pricing starts with a flat 5-seat Chat plan and rises to workflow-credit tiers priced per month for the whole team.",
+    "pros": [
+      "Chat plan includes 5 seats and unlimited chat words",
+      "Access to OpenAI, Anthropic and Gemini models",
+      "Brand Voice and Infobase for company context"
+    ],
+    "cons": [
+      "No free plan listed on the pricing page",
+      "Workflow tiers start at $1,000 per month",
+      "API access only on the custom Enterprise plan"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Chat",
+        "monthly": 29,
+        "annual": 24,
+        "notes": "Flat price for the workspace, includes 5 seats. Annual billed $288/yr. Unlimited words in chat and unlimited chat projects."
+      },
+      {
+        "name": "Growth",
+        "monthly": 1000,
+        "annual": 1000,
+        "notes": "Flat price, includes 75 seats. Annual billed $12,000/yr. 20K workflow credits per month."
+      },
+      {
+        "name": "Expansion",
+        "monthly": 2000,
+        "annual": 2000,
+        "notes": "Flat price, includes 150 seats. Annual billed $24,000/yr. 45K workflow credits per month."
+      },
+      {
+        "name": "Scale",
+        "monthly": 3000,
+        "annual": 3000,
+        "notes": "Flat price, includes 200 seats. Annual billed $36,000/yr. 75K workflow credits per month."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing. Unlimited customizable workflows, API access and bulk workflow runs, 20+ tech integrations, a dedicated account and support team."
+      }
+    ],
+    "features": {
+      "brandVoice": true,
+      "plagiarismChecker": null,
+      "seoOptimization": null,
+      "browserExtension": null,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2020",
+    "integrations": "Salesforce, HubSpot, Gong, Zapier, Outreach, Salesloft",
+    "compliance": [
+      "SOC 2",
+      "GDPR"
+    ],
+    "support": [
+      "Help center",
+      "Email",
+      "Live training",
+      "Community",
+      "Dedicated support team (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "copy.ai: Pricing",
+        "url": "https://www.copy.ai/prices",
+        "date": "2026"
+      },
+      {
+        "label": "copy.ai: Home",
+        "url": "https://www.copy.ai/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "writesonic",
+    "name": "Writesonic",
+    "category": "ai-writing-tools",
+    "website": "https://writesonic.com",
+    "logo": "https://writesonic.com/apple-icon.png?apple-icon.0.210mtbpi.lj.png",
+    "pricingUrl": "https://writesonic.com/pricing",
+    "tagline": "An AI search visibility platform that tracks brand mentions in AI engines and writes content to improve them.",
+    "bestFor": "Marketing teams tracking and improving visibility in AI search",
+    "description": "Writesonic now positions itself as a platform that tracks how brands appear in ChatGPT, Gemini, Google AI Overviews and other AI engines, then suggests fixes. Every plan also includes monthly AI articles, site audits and brand writing styles.",
+    "pros": [
+      "7-day free trial, no credit card needed",
+      "AI articles, site audits and AI-visibility tracking in one plan",
+      "SOC 2 Type II and GDPR compliance"
+    ],
+    "cons": [
+      "No free plan",
+      "Entry plan starts at $79/month billed annually",
+      "Extra users cost $50/user/month and plans cap at 5 users"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "7-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 99,
+        "annual": 79,
+        "notes": "Flat price, 1 user. 1 project, 50 prompts tracked daily, 15 AI articles/month, 10 site audits/month, 1 writing style. Monthly price derived from the vendor's stated yearly saving."
+      },
+      {
+        "name": "Basic",
+        "monthly": 249,
+        "annual": 199,
+        "notes": "Flat price, 2 users included; up to 3 more at $50/user/month. 100 prompts tracked daily, 25 AI articles/month, 20 site audits/month, 5 writing styles. Monthly price derived from the stated yearly saving."
+      },
+      {
+        "name": "Growth",
+        "monthly": 499,
+        "annual": 399,
+        "notes": "Flat price, 3 users included; up to 2 more at $50/user/month. 2 projects, 200 prompts tracked daily, 50 AI articles/month, 50 site audits/month, 10 writing styles. Monthly price derived from the stated yearly saving."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing. All 8 AI platforms tracked, SSO/SAML, user access control, dedicated support."
+      }
+    ],
+    "features": {
+      "brandVoice": true,
+      "plagiarismChecker": null,
+      "seoOptimization": true,
+      "browserExtension": null,
+      "apiAccess": null
+    },
+    "platforms": [
+      "Web"
+    ],
+    "integrations": "WordPress, Google Search Console, Google Analytics 4, Looker Studio",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR"
+    ],
+    "support": [
+      "Email",
+      "Priority email (Growth)",
+      "Dedicated Slack/Teams and account manager (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "writesonic.com: Plans & Pricing",
+        "url": "https://writesonic.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "HyperWrite: Writesonic Pricing 2026",
+        "url": "https://www.hyperwriteai.com/blog/writesonic-pricing",
+        "date": "2026"
+      },
+      {
+        "label": "CostBench: All Writesonic Plans & Pricing",
+        "url": "https://costbench.com/software/ai-writing-tools/writesonic/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "rytr",
+    "name": "Rytr",
+    "category": "ai-writing-tools",
+    "website": "https://rytr.me",
+    "logo": "https://rytr.me/favicon.ico?favicon.1rqy3u3pdrfn3.ico",
+    "pricingUrl": "https://rytr.me/pricing",
+    "tagline": "A low-cost AI writing assistant that also drafts follow-up messages from your email, Slack and calendar.",
+    "bestFor": "Individuals who want a cheap AI writer with a free tier",
+    "description": "Rytr is an AI writing assistant that now also connects to email, Slack, calendar and meeting notes to track commitments and draft messages for review. It has a free-forever tier and paid plans from $9 per month.",
+    "pros": [
+      "Free-forever plan with 10,000 characters per month",
+      "Unlimited characters from $9/month (Lite)",
+      "Writes in your own voice or one of 22 tones"
+    ],
+    "cons": [
+      "Yearly prices are not shown on the pricing page",
+      "No published compliance certifications",
+      "Higher tiers are built around relationship tracking, not long-form writing"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "10,000 characters/month, 1 connected source, 40+ use cases, 30+ languages.",
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "10,000 characters/month."
+      },
+      {
+        "name": "Lite",
+        "monthly": 9,
+        "annual": null,
+        "notes": "Unlimited characters/month. Yearly billing saves 20%, but the yearly price is not shown."
+      },
+      {
+        "name": "Personal",
+        "monthly": 19,
+        "annual": null,
+        "notes": "Unlimited characters, 2 connected sources. Yearly saves 20% (price not shown)."
+      },
+      {
+        "name": "Pro",
+        "monthly": 49,
+        "annual": null,
+        "notes": "All connected sources, custom use cases, morning and evening briefings. Yearly saves 20% (price not shown)."
+      }
+    ],
+    "features": {
+      "brandVoice": true,
+      "plagiarismChecker": null,
+      "seoOptimization": null,
+      "browserExtension": true,
+      "apiAccess": null
+    },
+    "platforms": [
+      "Web",
+      "Browser extension",
+      "Mobile app"
+    ],
+    "integrations": "Gmail, Outlook, Slack, Google Calendar, Google Meet",
+    "support": [
+      "Help center"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "rytr.me: Pricing",
+        "url": "https://rytr.me/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "rytr.me: Home",
+        "url": "https://rytr.me/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "grammarly",
+    "name": "Grammarly",
+    "category": "ai-writing-tools",
+    "website": "https://www.grammarly.com",
+    "logo": "https://static-web.grammarly.com/cms/master/public/favicon-32x32.png",
+    "pricingUrl": "https://www.grammarly.com/plans",
+    "tagline": "AI writing assistant that checks grammar, clarity and tone and drafts text with AI prompts.",
+    "bestFor": "Grammar, tone and AI drafting across apps",
+    "description": "Grammarly checks spelling, grammar, clarity and tone wherever you write, through browser extensions, desktop apps and mobile keyboards. It is now part of the Superhuman suite, and paid plans add more AI prompts, plagiarism and AI-text detection, brand tones and style guides.",
+    "pros": [
+      "Free plan includes 100 AI prompts a month",
+      "Works in browsers, desktop apps, Microsoft Office and Google Docs",
+      "Pro includes plagiarism and AI-text detection plus a style guide and brand tone"
+    ],
+    "cons": [
+      "Pro costs $30 a month on monthly billing versus $12 a month on annual billing",
+      "Pro caps AI prompts at 2,000 per member per month",
+      "SAML SSO is available only on Enterprise"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Spelling, grammar and punctuation checks plus 100 AI prompts per month. No plagiarism checker, brand tones or style guide.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Per account. 100 AI prompts per month."
+      },
+      {
+        "name": "Pro",
+        "monthly": 30,
+        "annual": 12,
+        "notes": "Per member. Annual billing is $144 per member per year. Up to 149 seats. 2,000 AI prompts per member per month, 1 brand tone, 1 style guide, plagiarism and AI-text detection."
+      },
+      {
+        "name": "Superhuman Business",
+        "monthly": 40,
+        "annual": 33,
+        "notes": "Per member. Superhuman suite plan that includes Grammarly with Superhuman Mail, Docs and Go."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. Unlimited AI prompts, brand tones and style guides; SAML SSO, SCIM, data loss prevention and dedicated support."
+      }
+    ],
+    "features": {
+      "brandVoice": true,
+      "plagiarismChecker": true,
+      "seoOptimization": null,
+      "browserExtension": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android",
+      "Chrome extension",
+      "Safari extension",
+      "Firefox extension",
+      "Edge extension"
+    ],
+    "integrations": "Microsoft Office, Google Docs",
+    "compliance": [
+      "SOC 2 Type 2",
+      "ISO/IEC 27001",
+      "ISO/IEC 27017",
+      "ISO/IEC 27018",
+      "ISO/IEC 27701",
+      "ISO/IEC 42001"
+    ],
+    "support": [
+      "Help center",
+      "Dedicated support (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Grammarly Support: How much does Grammarly Pro cost?",
+        "url": "https://support.grammarly.com/hc/en-us/articles/115000090011",
+        "date": "2026"
+      },
+      {
+        "label": "Grammarly Support: Introducing the Superhuman suite",
+        "url": "https://support.grammarly.com/hc/en-us/articles/40542856669837",
+        "date": "2026"
+      },
+      {
+        "label": "Grammarly: Business plans",
+        "url": "https://www.grammarly.com/business/plans",
+        "date": "2026"
+      },
+      {
+        "label": "Grammarly: Security",
+        "url": "https://www.grammarly.com/security",
+        "date": "2026"
+      },
+      {
+        "label": "Grammarly Developers: API documentation",
+        "url": "https://developer.grammarly.com/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "quillbot",
+    "name": "QuillBot",
+    "category": "ai-writing-tools",
+    "website": "https://quillbot.com",
+    "pricingUrl": "https://quillbot.com/premium",
+    "tagline": "Paraphrasing tool with a summarizer, grammar checker, translator, AI detector and plagiarism checker.",
+    "bestFor": "Paraphrasing and summarizing text",
+    "description": "QuillBot is a suite of writing tools built around an AI paraphraser that rewrites text in several modes. Premium removes the paraphrase word limit, unlocks more modes, raises the summarizer limit and adds a plagiarism checker.",
+    "pros": [
+      "Free plan paraphrases up to 125 words at a time",
+      "Annual Premium works out to $8.33 a month",
+      "Extensions for Chrome, Edge and Safari plus a Word add-in and desktop and mobile apps"
+    ],
+    "cons": [
+      "Free plan has only 2 paraphrasing modes and no plagiarism checker",
+      "The plagiarism checker has a monthly cap",
+      "3-day money-back guarantee instead of a free trial"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Paraphraser up to 125 words per use in 2 modes, summarizer up to 1,200 words, translator. No plagiarism checker.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Per account. 125-word paraphrase limit, 2 modes."
+      },
+      {
+        "name": "Premium",
+        "monthly": 19.95,
+        "annual": 8.33,
+        "notes": "Per user. Annual billing is $99.95 a year. Unlimited paraphrasing in 9+ modes, summarizer up to 6,000 words, plagiarism checker with a monthly cap."
+      },
+      {
+        "name": "Team",
+        "monthly": null,
+        "annual": null,
+        "notes": "Per seat with volume tiers. Published figures conflict, so no price is shown."
+      }
+    ],
+    "features": {
+      "brandVoice": null,
+      "plagiarismChecker": true,
+      "seoOptimization": null,
+      "browserExtension": true,
+      "apiAccess": null
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android",
+      "Chrome extension",
+      "Edge extension",
+      "Safari extension",
+      "Microsoft Word add-in"
+    ],
+    "integrations": "Microsoft Word, Google Docs",
+    "support": [
+      "Help center"
+    ],
+    "checked": "2026-11-15",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "eesel.ai: A complete guide to QuillBot pricing 2026",
+        "url": "https://www.eesel.ai/blog/quillbot-pricing",
+        "date": "2026"
+      },
+      {
+        "label": "Dupple: QuillBot review",
+        "url": "https://dupple.com/reviews/quillbot",
+        "date": "2026"
+      },
+      {
+        "label": "QuillBot Help Center: Extensions & Apps",
+        "url": "https://help.quillbot.com/hc/en-us/categories/16802670890007-Extensions-Apps",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "wordtune",
+    "name": "Wordtune",
+    "category": "ai-writing-tools",
+    "website": "https://www.wordtune.com",
+    "logo": "https://cdn.prod.website-files.com/5f7e0f9d75fee6f6f546df46/6672cdfc1b7a70cf85686651_256x256.png",
+    "pricingUrl": "https://www.wordtune.com/plans",
+    "tagline": "AI rewriting assistant from AI21 Labs that suggests alternative phrasings and summarizes text.",
+    "bestFor": "Rewriting sentences for clarity and tone",
+    "description": "Wordtune, made by AI21 Labs, suggests rewrites of your sentences and also checks spelling and grammar. Plans are set by daily rewrite limits and monthly AI summary limits.",
+    "pros": [
+      "Free plan includes unlimited spelling and grammar checks",
+      "3-day free trial on paid plans",
+      "Unlimited plan removes the rewrite and summary caps"
+    ],
+    "cons": [
+      "Free plan allows only 10 rewrites a day and 3 AI summaries a month",
+      "No refunds, though you can cancel before the next billing cycle",
+      "No business plan pricing is published"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "10 rewrites and AI suggestions per day, 3 AI summaries per month, unlimited spelling and grammar checks.",
+    "trial": "3-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Per account. 10 rewrites and AI suggestions per day, 3 AI summaries per month."
+      },
+      {
+        "name": "Advanced",
+        "monthly": null,
+        "annual": 4.89,
+        "notes": "Per user, billed annually. 30 rewrites and AI suggestions per day, 15 AI summaries per month. Monthly-billing price not confirmed."
+      },
+      {
+        "name": "Unlimited",
+        "monthly": null,
+        "annual": 6.99,
+        "notes": "Per user, billed annually. Unlimited rewrites, AI suggestions and summaries, plus premium support. Monthly-billing price not confirmed."
+      }
+    ],
+    "features": {
+      "brandVoice": null,
+      "plagiarismChecker": null,
+      "seoOptimization": null,
+      "browserExtension": true,
+      "apiAccess": null
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Chrome extension",
+      "Edge extension"
+    ],
+    "support": [
+      "Premium support (Unlimited plan)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Wordtune: Plans",
+        "url": "https://www.wordtune.com/plans",
+        "date": "2026"
+      },
+      {
+        "label": "Wordtune: Home",
+        "url": "https://www.wordtune.com/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "anyword",
+    "name": "Anyword",
+    "category": "ai-writing-tools",
+    "website": "https://anyword.com",
+    "logo": "https://cdn.prod.website-files.com/65a5365ee6f4219bc2d2f822/65d85069221f999621761943_Group%201261159146.png",
+    "pricingUrl": "https://anyword.com/pricing",
+    "tagline": "AI copywriting platform that scores how marketing copy is likely to perform.",
+    "bestFor": "Performance-focused marketing and ad copy",
+    "description": "Anyword generates marketing copy and gives each variation a predicted performance score based on its trained models and your own performance data. It is made by Keywee Inc. (d.b.a. Anyword), based in New York.",
+    "pros": [
+      "Unlimited words on every paid plan",
+      "Predictive performance scores for copy variations",
+      "Chrome extension and plagiarism checker included from Starter"
+    ],
+    "cons": [
+      "No free plan; the 7-day trial is capped at 2,500 words",
+      "API access only on the custom-priced Enterprise plan",
+      "Starter includes 1 seat and a limited number of performance predictions"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "7-day free trial (2,500-word limit)",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 49,
+        "annual": 39,
+        "notes": "Per account, 1 seat, 1 workspace. Unlimited words. 1 brand voice."
+      },
+      {
+        "name": "Data-Driven",
+        "monthly": 99,
+        "annual": 79,
+        "notes": "Per account, includes 3 seats and 5 workspaces. Extra seats up to 10 at $59/mo ($49/mo yearly). Unlimited words."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing, billed yearly. Custom AI models, A/B testing, roles and permissions, priority support."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing. SSO, private LLM, custom integrations, full API access, dedicated customer success manager."
+      }
+    ],
+    "features": {
+      "brandVoice": true,
+      "plagiarismChecker": true,
+      "seoOptimization": null,
+      "browserExtension": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Web",
+      "Chrome extension"
+    ],
+    "founded": "2013",
+    "hq": "New York, United States",
+    "integrations": "Ad platforms (Meta, LinkedIn, Google), CMS and CRM tools; custom integrations on Enterprise",
+    "compliance": [
+      "SOC 2",
+      "ISO 27001",
+      "GDPR"
+    ],
+    "support": [
+      "Priority support (Business)",
+      "Dedicated customer success manager (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "anyword.com: Pricing",
+        "url": "https://anyword.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "anyword.com: Content Performance API",
+        "url": "https://anyword.com/api",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "sudowrite",
+    "name": "Sudowrite",
+    "category": "ai-writing-tools",
+    "website": "https://sudowrite.com",
+    "logo": "https://framerusercontent.com/images/QCeJzXxRJC6SF9Wc7FSkc1qkA.png",
+    "pricingUrl": "https://sudowrite.com/pricing",
+    "tagline": "AI writing assistant built for fiction writers and novelists.",
+    "bestFor": "Novelists and fiction writers",
+    "description": "Sudowrite offers AI tools to write, rewrite, describe and expand fiction, with story-aware context, style matching and continuity across a series. Plans are credit-based, and higher tiers add developmental edits, line edits and beta reads.",
+    "pros": [
+      "Tools designed for fiction (story context, series continuity)",
+      "Can match your writing style",
+      "Max plan rolls over unused credits for 12 months"
+    ],
+    "cons": [
+      "No free plan, only a free trial",
+      "Usage is capped by monthly credits",
+      "Developmental edits, line edits and beta reads require Professional or higher"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial, no credit card",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Hobby & Student",
+        "monthly": 19,
+        "annual": 10,
+        "notes": "Per account. 225,000 credits per month."
+      },
+      {
+        "name": "Professional",
+        "monthly": 29,
+        "annual": 22,
+        "notes": "Per account. 1,000,000 credits per month. Adds developmental edits, line edits and beta reads."
+      },
+      {
+        "name": "Max",
+        "monthly": 59,
+        "annual": 44,
+        "notes": "Per account. 2,000,000 credits per month; unused credits roll over for 12 months."
+      }
+    ],
+    "features": {
+      "brandVoice": true,
+      "plagiarismChecker": false,
+      "seoOptimization": false,
+      "browserExtension": null,
+      "apiAccess": null
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2020",
+    "support": [
+      "Email",
+      "Discord community",
+      "Help center"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "sudowrite.com: Pricing",
+        "url": "https://sudowrite.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "sudowrite.com blog: Cost of writing a novel with AI (updated Oct 19, 2026)",
+        "url": "https://sudowrite.com/blog/cost-of-writing-novel-with-ai/",
+        "date": "2026"
+      },
+      {
+        "label": "Activepieces: Sudowrite Pricing 2026",
+        "url": "https://www.activepieces.com/blog/sudowrite-pricing-2026-which-plan-should-you-get",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "hypotenuse-ai",
+    "name": "Hypotenuse AI",
+    "category": "ai-writing-tools",
+    "website": "https://www.hypotenuse.ai",
+    "logo": "https://cdn.prod.website-files.com/5f23b456c81e6bebb921e9cb/6a545d3458eb526536bcf631_Hypotenuse%20AI%20favicon%20tile%20256%20(white%20on%20black).png",
+    "pricingUrl": "https://www.hypotenuse.ai/pricing",
+    "tagline": "AI content and product-data platform for ecommerce catalogs.",
+    "bestFor": "Ecommerce teams writing product content at scale",
+    "description": "Hypotenuse AI generates product descriptions, meta tags, category pages and other ecommerce copy, and enriches, tags and categorizes product data. It has grown into a product experience management platform with a built-in PIM, image tools and SEO features.",
+    "pros": [
+      "Built for bulk ecommerce content and product data",
+      "Brand voice and SEO optimization on the Enterprise plan",
+      "Integrates with Shopify, Akeneo, Salesforce Commerce Cloud, NetSuite and others"
+    ],
+    "cons": [
+      "No public prices; both plans are quote-only",
+      "Brand voice and SEO are not listed on the Basic plan",
+      "Mainly aimed at ecommerce, not general writing"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial offered (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing. 1 seat. Product descriptions plus 20+ ecommerce content types, 40+ languages."
+      },
+      {
+        "name": "Ecommerce Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing. Product data enrichment, bulk image editor, brand voice, SEO, custom PIM/ERP integrations, dedicated account manager."
+      }
+    ],
+    "features": {
+      "brandVoice": true,
+      "plagiarismChecker": null,
+      "seoOptimization": true,
+      "browserExtension": null,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2020",
+    "hq": "Singapore",
+    "integrations": "Shopify, Akeneo, Salesforce Commerce Cloud, NetSuite, WooCommerce, BigCommerce, Amazon",
+    "compliance": [
+      "SOC 2"
+    ],
+    "support": [
+      "Email",
+      "Live chat",
+      "Dedicated account manager (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "hypotenuse.ai: Pricing",
+        "url": "https://www.hypotenuse.ai/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "hypotenuse.ai: API integration",
+        "url": "https://www.hypotenuse.ai/integration/api",
+        "date": "2026"
       }
     ]
   }

@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "jasper", "name": "Jasper", "category": "ai-writing-tools",
+    "website": "https://www.jasper.ai", "pricingUrl": "https://www.jasper.ai/pricing",
+    "tagline": "An AI content platform for marketing teams that keeps output in line with a company's brand.",
+    "bestFor": "Marketing teams that need on-brand copy at volume",
+    "description": "Jasper is an AI platform for marketing teams that combines agents, brand context (Jasper IQ) and a Canvas workspace for creating campaign content. It sells a self-serve Pro plan per seat and a custom-priced Business plan that adds API access, SSO and unlimited users.",
+    "pros": ["7-day free trial of the Pro plan", "Brand Voices, Knowledge assets and Audiences on every plan", "Chrome and Edge extension included"],
+    "cons": ["No free plan", "API access only on the custom-priced Business plan", "Plagiarism checking is a Copyscape add-on, not native"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "7-day free trial (Pro plan)", "minSeats": 1,
+    "plans": [
+      {"name": "Pro", "monthly": 69, "annual": 59, "notes": "Per seat; includes 1 seat. Annual is billed up front with a 12-month commitment. 2 Brand Voices, 5 Knowledge assets, 3 Audiences. Contact sales to add more users."},
+      {"name": "Business", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing, 12-month minimum. Unlimited Brand Voices and users, API access, SSO (SAML 2.0), SCIM, priority support."}
+    ],
+    "features": {"brandVoice": true, "plagiarismChecker": false, "seoOptimization": null, "browserExtension": true, "apiAccess": true},
+    "platforms": ["Web", "Chrome extension", "Edge extension"],
+    "founded": "2021", "hq": "Austin, United States",
+    "integrations": "Webflow, Google Docs, Slack and an integrations marketplace",
+    "compliance": ["SOC 2 Type II", "GDPR", "CCPA"],
+    "support": ["Email", "Help center", "Priority support (Business)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "jasper.ai: Pricing", "url": "https://www.jasper.ai/pricing", "date": "2026"},
+      {"label": "jasper.ai: Home", "url": "https://www.jasper.ai/", "date": "2026"},
+      {"label": "CB Insights: Jasper company profile", "url": "https://www.cbinsights.com/company/jasper", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "copy-ai", "name": "Copy.ai", "category": "ai-writing-tools",
+    "website": "https://www.copy.ai", "pricingUrl": "https://www.copy.ai/prices",
+    "tagline": "An AI platform for go-to-market teams that runs chat and automated workflows for sales and marketing.",
+    "bestFor": "Go-to-market teams automating sales and marketing workflows",
+    "description": "Copy.ai is an AI platform for sales, marketing and operations teams that offers multi-model chat plus workflow automation for tasks such as prospecting and content creation. Pricing starts with a flat 5-seat Chat plan and rises to workflow-credit tiers priced per month for the whole team.",
+    "pros": ["Chat plan includes 5 seats and unlimited chat words", "Access to OpenAI, Anthropic and Gemini models", "Brand Voice and Infobase for company context"],
+    "cons": ["No free plan listed on the pricing page", "Workflow tiers start at $1,000 per month", "API access only on the custom Enterprise plan"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "priceUnit": {"short": "mo", "long": "month"},
+    "plans": [
+      {"name": "Chat", "monthly": 29, "annual": 24, "notes": "Flat price for the workspace, includes 5 seats. Annual billed $288/yr. Unlimited words in chat and unlimited chat projects."},
+      {"name": "Growth", "monthly": 1000, "annual": 1000, "notes": "Flat price, includes 75 seats. Annual billed $12,000/yr. 20K workflow credits per month."},
+      {"name": "Expansion", "monthly": 2000, "annual": 2000, "notes": "Flat price, includes 150 seats. Annual billed $24,000/yr. 45K workflow credits per month."},
+      {"name": "Scale", "monthly": 3000, "annual": 3000, "notes": "Flat price, includes 200 seats. Annual billed $36,000/yr. 75K workflow credits per month."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing. Unlimited customizable workflows, API access and bulk workflow runs, 20+ tech integrations, a dedicated account and support team."}
+    ],
+    "features": {"brandVoice": true, "plagiarismChecker": null, "seoOptimization": null, "browserExtension": null, "apiAccess": true},
+    "platforms": ["Web"],
+    "founded": "2020",
+    "integrations": "Salesforce, HubSpot, Gong, Zapier, Outreach, Salesloft",
+    "compliance": ["SOC 2", "GDPR"],
+    "support": ["Help center", "Email", "Live training", "Community", "Dedicated support team (Enterprise)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "copy.ai: Pricing", "url": "https://www.copy.ai/prices", "date": "2026"},
+      {"label": "copy.ai: Home", "url": "https://www.copy.ai/", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "writesonic", "name": "Writesonic", "category": "ai-writing-tools",
+    "website": "https://writesonic.com", "pricingUrl": "https://writesonic.com/pricing",
+    "tagline": "An AI search visibility platform that tracks brand mentions in AI engines and writes content to improve them.",
+    "bestFor": "Marketing teams tracking and improving visibility in AI search",
+    "description": "Writesonic now positions itself as a platform that tracks how brands appear in ChatGPT, Gemini, Google AI Overviews and other AI engines, then suggests fixes. Every plan also includes monthly AI articles, site audits and brand writing styles.",
+    "pros": ["7-day free trial, no credit card needed", "AI articles, site audits and AI-visibility tracking in one plan", "SOC 2 Type II and GDPR compliance"],
+    "cons": ["No free plan", "Entry plan starts at $79/month billed annually", "Extra users cost $50/user/month and plans cap at 5 users"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "7-day free trial", "minSeats": 1,
+    "priceUnit": {"short": "mo", "long": "month"},
+    "plans": [
+      {"name": "Starter", "monthly": 99, "annual": 79, "notes": "Flat price, 1 user. 1 project, 50 prompts tracked daily, 15 AI articles/month, 10 site audits/month, 1 writing style. Monthly price derived from the vendor's stated yearly saving."},
+      {"name": "Basic", "monthly": 249, "annual": 199, "notes": "Flat price, 2 users included; up to 3 more at $50/user/month. 100 prompts tracked daily, 25 AI articles/month, 20 site audits/month, 5 writing styles. Monthly price derived from the stated yearly saving."},
+      {"name": "Growth", "monthly": 499, "annual": 399, "notes": "Flat price, 3 users included; up to 2 more at $50/user/month. 2 projects, 200 prompts tracked daily, 50 AI articles/month, 50 site audits/month, 10 writing styles. Monthly price derived from the stated yearly saving."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing. All 8 AI platforms tracked, SSO/SAML, user access control, dedicated support."}
+    ],
+    "features": {"brandVoice": true, "plagiarismChecker": null, "seoOptimization": true, "browserExtension": null, "apiAccess": null},
+    "platforms": ["Web"],
+    "integrations": "WordPress, Google Search Console, Google Analytics 4, Looker Studio",
+    "compliance": ["SOC 2 Type II", "GDPR"],
+    "support": ["Email", "Priority email (Growth)", "Dedicated Slack/Teams and account manager (Enterprise)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "writesonic.com: Plans & Pricing", "url": "https://writesonic.com/pricing", "date": "2026"},
+      {"label": "HyperWrite: Writesonic Pricing 2026", "url": "https://www.hyperwriteai.com/blog/writesonic-pricing", "date": "2026"},
+      {"label": "CostBench: All Writesonic Plans & Pricing", "url": "https://costbench.com/software/ai-writing-tools/writesonic/", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "rytr", "name": "Rytr", "category": "ai-writing-tools",
+    "website": "https://rytr.me", "pricingUrl": "https://rytr.me/pricing",
+    "tagline": "A low-cost AI writing assistant that also drafts follow-up messages from your email, Slack and calendar.",
+    "bestFor": "Individuals who want a cheap AI writer with a free tier",
+    "description": "Rytr is an AI writing assistant that now also connects to email, Slack, calendar and meeting notes to track commitments and draft messages for review. It has a free-forever tier and paid plans from $9 per month.",
+    "pros": ["Free-forever plan with 10,000 characters per month", "Unlimited characters from $9/month (Lite)", "Writes in your own voice or one of 22 tones"],
+    "cons": ["Yearly prices are not shown on the pricing page", "No published compliance certifications", "Higher tiers are built around relationship tracking, not long-form writing"],
+    "freePlan": true, "freePlanDetails": "10,000 characters/month, 1 connected source, 40+ use cases, 30+ languages.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Free", "monthly": 0, "annual": 0, "notes": "10,000 characters/month."},
+      {"name": "Lite", "monthly": 9, "annual": null, "notes": "Unlimited characters/month. Yearly billing saves 20%, but the yearly price is not shown."},
+      {"name": "Personal", "monthly": 19, "annual": null, "notes": "Unlimited characters, 2 connected sources. Yearly saves 20% (price not shown)."},
+      {"name": "Pro", "monthly": 49, "annual": null, "notes": "All connected sources, custom use cases, morning and evening briefings. Yearly saves 20% (price not shown)."}
+    ],
+    "features": {"brandVoice": true, "plagiarismChecker": null, "seoOptimization": null, "browserExtension": true, "apiAccess": null},
+    "platforms": ["Web", "Browser extension", "Mobile app"],
+    "integrations": "Gmail, Outlook, Slack, Google Calendar, Google Meet",
+    "support": ["Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "rytr.me: Pricing", "url": "https://rytr.me/pricing", "date": "2026"},
+      {"label": "rytr.me: Home", "url": "https://rytr.me/", "date": "2026"}
+    ]
+  }
+]

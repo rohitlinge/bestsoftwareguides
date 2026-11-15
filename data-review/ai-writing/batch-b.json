@@ -1,0 +1,85 @@
+[
+  {
+    "slug": "grammarly", "name": "Grammarly", "category": "ai-writing-tools",
+    "website": "https://www.grammarly.com", "pricingUrl": "https://www.grammarly.com/plans",
+    "tagline": "AI writing assistant that checks grammar, clarity and tone and drafts text with AI prompts.",
+    "bestFor": "Grammar, tone and AI drafting across apps",
+    "description": "Grammarly checks spelling, grammar, clarity and tone wherever you write, through browser extensions, desktop apps and mobile keyboards. It is now part of the Superhuman suite, and paid plans add more AI prompts, plagiarism and AI-text detection, brand tones and style guides.",
+    "pros": ["Free plan includes 100 AI prompts a month", "Works in browsers, desktop apps, Microsoft Office and Google Docs", "Pro includes plagiarism and AI-text detection plus a style guide and brand tone"],
+    "cons": ["Pro costs $30 a month on monthly billing versus $12 a month on annual billing", "Pro caps AI prompts at 2,000 per member per month", "SAML SSO is available only on Enterprise"],
+    "freePlan": true,
+    "freePlanDetails": "Spelling, grammar and punctuation checks plus 100 AI prompts per month. No plagiarism checker, brand tones or style guide.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Free", "monthly": 0, "annual": 0, "notes": "Per account. 100 AI prompts per month."},
+      {"name": "Pro", "monthly": 30, "annual": 12, "notes": "Per member. Annual billing is $144 per member per year. Up to 149 seats. 2,000 AI prompts per member per month, 1 brand tone, 1 style guide, plagiarism and AI-text detection."},
+      {"name": "Superhuman Business", "monthly": 40, "annual": 33, "notes": "Per member. Superhuman suite plan that includes Grammarly with Superhuman Mail, Docs and Go."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Quote only. Unlimited AI prompts, brand tones and style guides; SAML SSO, SCIM, data loss prevention and dedicated support."}
+    ],
+    "features": {"brandVoice": true, "plagiarismChecker": true, "seoOptimization": null, "browserExtension": true, "apiAccess": true},
+    "platforms": ["Web", "Windows", "macOS", "iOS", "Android", "Chrome extension", "Safari extension", "Firefox extension", "Edge extension"],
+    "integrations": "Microsoft Office, Google Docs",
+    "compliance": ["SOC 2 Type 2", "ISO/IEC 27001", "ISO/IEC 27017", "ISO/IEC 27018", "ISO/IEC 27701", "ISO/IEC 42001"],
+    "support": ["Help center", "Dedicated support (Enterprise)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "Grammarly Support: How much does Grammarly Pro cost?", "url": "https://support.grammarly.com/hc/en-us/articles/115000090011", "date": "2026"},
+      {"label": "Grammarly Support: Introducing the Superhuman suite", "url": "https://support.grammarly.com/hc/en-us/articles/40542856669837", "date": "2026"},
+      {"label": "Grammarly: Business plans", "url": "https://www.grammarly.com/business/plans", "date": "2026"},
+      {"label": "Grammarly: Security", "url": "https://www.grammarly.com/security", "date": "2026"},
+      {"label": "Grammarly Developers: API documentation", "url": "https://developer.grammarly.com/", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "quillbot", "name": "QuillBot", "category": "ai-writing-tools",
+    "website": "https://quillbot.com", "pricingUrl": "https://quillbot.com/premium",
+    "tagline": "Paraphrasing tool with a summarizer, grammar checker, translator, AI detector and plagiarism checker.",
+    "bestFor": "Paraphrasing and summarizing text",
+    "description": "QuillBot is a suite of writing tools built around an AI paraphraser that rewrites text in several modes. Premium removes the paraphrase word limit, unlocks more modes, raises the summarizer limit and adds a plagiarism checker.",
+    "pros": ["Free plan paraphrases up to 125 words at a time", "Annual Premium works out to $8.33 a month", "Extensions for Chrome, Edge and Safari plus a Word add-in and desktop and mobile apps"],
+    "cons": ["Free plan has only 2 paraphrasing modes and no plagiarism checker", "The plagiarism checker has a monthly cap", "3-day money-back guarantee instead of a free trial"],
+    "freePlan": true,
+    "freePlanDetails": "Paraphraser up to 125 words per use in 2 modes, summarizer up to 1,200 words, translator. No plagiarism checker.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Free", "monthly": 0, "annual": 0, "notes": "Per account. 125-word paraphrase limit, 2 modes."},
+      {"name": "Premium", "monthly": 19.95, "annual": 8.33, "notes": "Per user. Annual billing is $99.95 a year. Unlimited paraphrasing in 9+ modes, summarizer up to 6,000 words, plagiarism checker with a monthly cap."},
+      {"name": "Team", "monthly": null, "annual": null, "notes": "Per seat with volume tiers. Published figures conflict, so no price is shown."}
+    ],
+    "features": {"brandVoice": null, "plagiarismChecker": true, "seoOptimization": null, "browserExtension": true, "apiAccess": null},
+    "platforms": ["Web", "Windows", "macOS", "iOS", "Android", "Chrome extension", "Edge extension", "Safari extension", "Microsoft Word add-in"],
+    "integrations": "Microsoft Word, Google Docs",
+    "support": ["Help center"],
+    "checked": "2026-11-15", "verification": "reported",
+    "sources": [
+      {"label": "eesel.ai: A complete guide to QuillBot pricing 2026", "url": "https://www.eesel.ai/blog/quillbot-pricing", "date": "2026"},
+      {"label": "Dupple: QuillBot review", "url": "https://dupple.com/reviews/quillbot", "date": "2026"},
+      {"label": "QuillBot Help Center: Extensions & Apps", "url": "https://help.quillbot.com/hc/en-us/categories/16802670890007-Extensions-Apps", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "wordtune", "name": "Wordtune", "category": "ai-writing-tools",
+    "website": "https://www.wordtune.com", "pricingUrl": "https://www.wordtune.com/plans",
+    "tagline": "AI rewriting assistant from AI21 Labs that suggests alternative phrasings and summarizes text.",
+    "bestFor": "Rewriting sentences for clarity and tone",
+    "description": "Wordtune, made by AI21 Labs, suggests rewrites of your sentences and also checks spelling and grammar. Plans are set by daily rewrite limits and monthly AI summary limits.",
+    "pros": ["Free plan includes unlimited spelling and grammar checks", "3-day free trial on paid plans", "Unlimited plan removes the rewrite and summary caps"],
+    "cons": ["Free plan allows only 10 rewrites a day and 3 AI summaries a month", "No refunds, though you can cancel before the next billing cycle", "No business plan pricing is published"],
+    "freePlan": true,
+    "freePlanDetails": "10 rewrites and AI suggestions per day, 3 AI summaries per month, unlimited spelling and grammar checks.",
+    "trial": "3-day free trial", "minSeats": 1,
+    "plans": [
+      {"name": "Basic", "monthly": 0, "annual": 0, "notes": "Per account. 10 rewrites and AI suggestions per day, 3 AI summaries per month."},
+      {"name": "Advanced", "monthly": null, "annual": 4.89, "notes": "Per user, billed annually. 30 rewrites and AI suggestions per day, 15 AI summaries per month. Monthly-billing price not confirmed."},
+      {"name": "Unlimited", "monthly": null, "annual": 6.99, "notes": "Per user, billed annually. Unlimited rewrites, AI suggestions and summaries, plus premium support. Monthly-billing price not confirmed."}
+    ],
+    "features": {"brandVoice": null, "plagiarismChecker": null, "seoOptimization": null, "browserExtension": true, "apiAccess": null},
+    "platforms": ["Web", "iOS", "Chrome extension", "Edge extension"],
+    "support": ["Premium support (Unlimited plan)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "Wordtune: Plans", "url": "https://www.wordtune.com/plans", "date": "2026"},
+      {"label": "Wordtune: Home", "url": "https://www.wordtune.com/", "date": "2026"}
+    ]
+  }
+]
