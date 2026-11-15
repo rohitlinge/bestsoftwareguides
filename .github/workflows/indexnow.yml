@@ -1,0 +1,38 @@
+# Tells Bing (IndexNow) about pages published, updated or removed by each push to main.
+# Cloudflare Workers Builds deploys the push; this waits until the live site has the new build,
+# then submits today's new/updated URLs plus any URL that disappeared. Needs no secrets:
+# the IndexNow key is public by design (served at /<key>.txt).
+name: IndexNow on push
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Save the live URL list before the new build goes out
+        run: curl -sf -H "Cache-Control: no-cache" https://bestsoftwareguides.online/urls.json -o /tmp/urls-before.json || echo "[]" > /tmp/urls-before.json
+      - name: Wait for Cloudflare to deploy this commit (up to 5 minutes)
+        run: |
+          before=$(sha1sum /tmp/urls-before.json | cut -d' ' -f1)
+          for i in $(seq 1 20); do
+            sleep 15
+            now=$(curl -sf -H "Cache-Control: no-cache" https://bestsoftwareguides.online/urls.json | sha1sum | cut -d' ' -f1)
+            if [ "$now" != "$before" ]; then echo "URL list changed after $((i*15))s"; exit 0; fi
+          done
+          echo "URL list unchanged after 5 minutes (code-only change, or deploy still running); submitting today's URLs anyway."
+      - name: Ping IndexNow
+        run: node scripts/indexnow.mjs --live --before /tmp/urls-before.json

@@ -228,13 +228,13 @@ a.card:hover h3, a.card:hover > strong { color: var(--brand); }
 .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 40px; align-items: start; }
 .layout > aside { position: sticky; top: 88px; margin-top: 24px; }
 .side-card { border: 1px solid var(--line); border-radius: var(--radius); background: #fff; box-shadow: var(--shadow); padding: 16px 18px; margin-bottom: 16px; }
-.side-card h4 { margin: 0 0 10px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); }
+.side-card h2 { margin: 0 0 10px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); }
 .side-card ol, .side-card ul { list-style: none; padding: 0; margin: 0; }
 .side-card li a { display: flex; align-items: center; gap: 10px; padding: 7px 8px; margin: 0 -8px; border-radius: 8px; color: var(--ink); font-size: 0.9rem; font-weight: 600; }
 .side-card li a:hover { background: var(--brand-2); text-decoration: none; }
 .side-card li a .nm { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .side-card.dark { background: var(--dark); color: #c3cad6; border-color: var(--dark); }
-.side-card.dark h4 { color: var(--accent-soft); }
+.side-card.dark h2 { color: var(--accent-soft); }
 .side-card.dark p { margin: 0 0 12px; font-size: 0.9rem; }
 .facts { margin: 0; }
 .facts div { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 0.9rem; }
@@ -302,7 +302,7 @@ a.card:hover h3, a.card:hover > strong { color: var(--brand); }
 .site-footer a { color: #c3cad6; }
 .site-footer a:hover { color: #fff; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 32px; }
-.footer-grid h4 { margin: 0 0 12px; color: #fff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: .06em; }
+.footer-grid h2 { margin: 0 0 12px; color: #fff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: .06em; }
 .footer-grid ul { list-style: none; padding: 0; margin: 0; }
 .footer-grid li { margin: 6px 0; }
 .footer-grid .logo { margin-bottom: 12px; }

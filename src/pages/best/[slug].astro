@@ -146,12 +146,12 @@ const jsonld = [
   </div>
   <aside aria-label="In this ranking">
     <div class="side-card">
-      <h4>In this ranking</h4>
+      <h2>In this ranking</h2>
       <ol>{list.map((t, i) => <li><a href={`#${t.slug}`}><LogoTile name={t.name} src={t.logo} size="sm" /><span class="nm">{variant === 'main' ? t.rank : i + 1}. {t.name}{t.featured && <span class="sr-only"> ({featuredLabel})</span>}{t.featured && <span aria-hidden="true" style="color:var(--brand)"> ★</span>}</span><span class="score-pill">{t.score}</span></a></li>)}</ol>
       {feat && <p class="small muted" style="margin:10px 0 0">★ {featuredLabel}, listed first. The rest are in score order.</p>}
     </div>
     <div class="side-card dark">
-      <h4>How we rank</h4>
+      <h2>How we rank</h2>
       <p>Scores come from a published formula: features, free plan, entry price and pricing transparency. No vendor can pay to change one.</p>
       <a class="btn white" href="/methodology/">See the formula</a>
     </div>

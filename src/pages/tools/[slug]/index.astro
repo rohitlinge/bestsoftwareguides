@@ -117,7 +117,7 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
   </div>
   <aside aria-label={`${t.name} at a glance`}>
     <div class="side-card">
-      <h4>At a glance</h4>
+      <h2>At a glance</h2>
       <dl class="facts">
         <div><dt>Our score</dt><dd>{t.score}/10</dd></div>
         <div><dt>Rank</dt><dd>{t.featured ? `#${t.scoreRank} by score` : `#${t.rank} of ${c.tools.length}`}</dd></div>
@@ -133,7 +133,7 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
     </div>
     {vs.length > 0 && (
       <div class="side-card">
-        <h4>Compare {t.name}</h4>
+        <h2>Compare {t.name}</h2>
         <ul>{vs.slice(0, 6).map((x) => { const o = x.a.slug === t.slug ? x.b : x.a; return <li><a href={`/compare/${x.slug}/`}><LogoTile name={o.name} src={o.logo} size="sm" /><span class="nm">vs {o.name}</span></a></li>; })}</ul>
       </div>
     )}
