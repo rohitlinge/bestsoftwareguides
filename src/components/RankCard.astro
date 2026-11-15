@@ -1,20 +1,33 @@
 ---
+import LogoTile from './LogoTile.astro';
 import { priceLine, featuredLabel, type Tool } from '../lib/data';
 interface Props { tool: Tool; pos?: number; }
 const { tool: t, pos } = Astro.props;
+// Scores run 5.0 to 9.8 (see methodology); the bar shows the score out of 10.
+const pct = Math.max(0, Math.min(100, t.score * 10));
 ---
 <article class={t.featured ? 'rank-card featured' : 'rank-card'} id={t.slug}>
-  <div class="rank-num">#{pos ?? t.rank}</div>
-  <div>
-    {t.featured && <div class="small"><span class="badge featured">{featuredLabel}</span> Listed first by arrangement with {t.name}; its score is from the same formula as every other tool (#{t.scoreRank} by score). <a href="/disclosure/">Disclosure</a></div>}
-    <h3 style="margin:0 0 4px"><a href={`/tools/${t.slug}/`}>{t.name}</a></h3>
-    <div class="small"><span class="badge green">Best for</span>{t.bestFor}</div>
-    <p style="margin:8px 0">{t.tagline}</p>
-    <div class="small muted">{priceLine(t)}{pos != null && pos !== t.rank && !t.featured && <> · #{t.rank} overall</>}</div>
+  <div class="rc-logo">
+    <LogoTile name={t.name} />
+    <span class="rank-num">#{pos ?? t.rank}</span>
+  </div>
+  <div class="rc-body">
+    {t.featured && <div class="featured-note"><span class="badge featured">{featuredLabel}</span> Listed first by arrangement with {t.name}; its score is from the same formula as every other tool (#{t.scoreRank} by score). <a href="/disclosure/">Disclosure</a></div>}
+    <h3><a href={`/tools/${t.slug}/`}>{t.name}</a></h3>
+    <div class="small"><span class="badge blue">Best for</span>{t.bestFor}</div>
+    <p class="tagline">{t.tagline}</p>
+    <div class="price">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
+      <span>{priceLine(t)}{pos != null && pos !== t.rank && !t.featured && <> · #{t.rank} overall</>}</span>
+    </div>
     <div class="btn-row">
-      <a class="btn ghost" href={`/tools/${t.slug}/`}>Full breakdown</a>
+      <a class="btn" href={`/tools/${t.slug}/`}>Full breakdown</a>
       <a class="btn ghost" href={`/tools/${t.slug}/pricing/`}>{t.name} pricing</a>
     </div>
   </div>
-  <div class="score">{t.score}<small>/10</small></div>
+  <div class="score-box">
+    <div class="num">{t.score}<small>/10</small></div>
+    <div class="meter" aria-hidden="true"><span style={`width:${pct}%`}></span></div>
+    <div class="lbl">Our score</div>
+  </div>
 </article>

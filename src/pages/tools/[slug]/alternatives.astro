@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import RankCard from '../../../components/RankCard.astro';
 import FeatureTable from '../../../components/FeatureTable.astro';
 import Faq from '../../../components/Faq.astro';
+import ProductHead from '../../../components/ProductHead.astro';
 import { per, lc1, tools, toolCategory, money, fmtDate, iso, buildDate, type Tool } from '../../../lib/data';
 import { crumbsLd, faqLd, itemListLd, articleLd } from '../../../lib/ld';
 
@@ -31,9 +32,8 @@ const jsonld = [
 ];
 ---
 <Base title={title} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article">
-  <div class="crumbs"><a href="/">Home</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › <a href={`/tools/${t.slug}/`}>{t.name}</a> › Alternatives</div>
-  <h1>{title}</h1>
-  <div class="meta"><span>Checked {fmtDate(c.updated)}</span><a href="/methodology/">How we rank</a></div>
+  <Fragment slot="band"><ProductHead t={t} c={c} heading={title} current="alternatives" /></Fragment>
+  <div class="meta" style="margin-top:24px"><span>Checked {fmtDate(c.updated)}</span><a href="/methodology/">How we rank</a></div>
   <div class="answer">
     <p><strong>The best {t.name} alternative is {alts[0].name}</strong> ({alts[0].score}/10), best for {lc1(alts[0].bestFor)}.{cheaper.length > 0 && <> Cheaper to start: <strong>{cheaper.map((o) => o.name).join(', ')}</strong>.</>}{freeAlts.length > 0 && <> With a free plan: {freeAlts.map((o) => o.name).join(', ')}.</>}</p>
   </div>

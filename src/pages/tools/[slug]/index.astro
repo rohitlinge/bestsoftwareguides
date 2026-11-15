@@ -3,6 +3,8 @@ import Base from '../../../layouts/Base.astro';
 import PriceTable from '../../../components/PriceTable.astro';
 import Faq from '../../../components/Faq.astro';
 import Sources from '../../../components/Sources.astro';
+import LogoTile from '../../../components/LogoTile.astro';
+import ProductHead from '../../../components/ProductHead.astro';
 import { per, lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, alsoRankedIn, rankingsFor, featuredLabel, withArticle, quoteOnly, type Tool } from '../../../lib/data';
 import { crumbsLd, faqLd, softwareLd, articleLd } from '../../../lib/ld';
 
@@ -31,12 +33,11 @@ const featuredIn = rankingsFor(t.slug).filter((x) => x.t.featured);
 const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${x.scoreRank} by score` : `#${x.rank}`);
 ---
 <Base title={title} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article" published={iso(t.publishDate)} modified={t.checked}>
-  <div class="crumbs"><a href="/">Home</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {t.name}</div>
-  <div style="display:flex;gap:14px;align-items:center;margin-top:12px">
-    <span class="avatar" aria-hidden="true">{t.name[0]}</span>
-    <h1 style="margin:0">{t.name} review</h1>
-  </div>
-  <div class="meta" style="margin-top:10px">
+  <Fragment slot="band"><ProductHead t={t} c={c} heading={`${t.name} review`} current="overview" /></Fragment>
+
+  <div class="layout">
+  <div>
+  <div class="meta" style="margin-top:24px">
     <span>#{t.rank} in <a href={`/best/${c.slug}/`}>{c.name}</a></span>
     <span>Score {t.score}/10</span>
     <span>Checked {fmtDate(t.checked)}</span>
@@ -63,8 +64,8 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
 
   <h2>Pros and cons</h2>
   <div class="pros-cons">
-    <div class="card"><strong>Where it wins</strong><ul>{t.pros.map((p) => <li>{p}</li>)}</ul></div>
-    <div class="card"><strong>Where it falls short</strong><ul>{t.cons.map((p) => <li>{p}</li>)}</ul></div>
+    <div class="card pros"><strong>Where it wins</strong><ul>{t.pros.map((p) => <li>{p}</li>)}</ul></div>
+    <div class="card cons"><strong>Where it falls short</strong><ul>{t.cons.map((p) => <li>{p}</li>)}</ul></div>
   </div>
 
   <h2>{t.name} pricing</h2>
@@ -98,7 +99,7 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
 
   <h2>{t.name} alternatives</h2>
   <div class="grid">
-    {alts.map((o) => <a class="card" href={`/tools/${o.slug}/`}><strong>{o.name}</strong> <span class="small muted">{o.score}/10</span><div class="small">{o.bestFor}</div></a>)}
+    {alts.map((o) => <a class="card" href={`/tools/${o.slug}/`}><div class="cat-top" style="margin:0 0 8px;display:flex;gap:10px;align-items:center"><LogoTile name={o.name} size="sm" /><strong style="flex:1">{o.name}</strong><span class="score-pill">{o.score}</span></div><div class="small muted">{o.bestFor}</div></a>)}
   </div>
 
   {vs.length > 0 && (
@@ -110,4 +111,29 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
 
   <Faq faqs={faqs} />
   <Sources tools={[t]} />
+  </div>
+  <aside aria-label={`${t.name} at a glance`}>
+    <div class="side-card">
+      <h4>At a glance</h4>
+      <dl class="facts">
+        <div><dt>Our score</dt><dd>{t.score}/10</dd></div>
+        <div><dt>Rank</dt><dd>{t.featured ? `#${t.scoreRank} by score` : `#${t.rank} of ${c.tools.length}`}</dd></div>
+        <div><dt>Free plan</dt><dd>{t.freePlan ? 'Yes' : 'No'}</dd></div>
+        <div><dt>Paid from</dt><dd>{t.entryPrice != null ? `${money(t.entryPrice)}${per(t)}` : quoteOnly(t) ? 'Quote' : 'See vendor'}</dd></div>
+        <div><dt>Free trial</dt><dd>{t.trial ? 'Yes' : '—'}</dd></div>
+        <div><dt>Checked</dt><dd>{fmtDate(t.checked)}</dd></div>
+      </dl>
+      <div class="btn-row" style="flex-direction:column">
+        <a class="btn" href={t.website} rel="nofollow noopener" target="_blank">Visit {t.name}</a>
+        <a class="btn ghost" href={`/tools/${t.slug}/pricing/`}>See every plan</a>
+      </div>
+    </div>
+    {vs.length > 0 && (
+      <div class="side-card">
+        <h4>Compare {t.name}</h4>
+        <ul>{vs.slice(0, 6).map((x) => { const o = x.a.slug === t.slug ? x.b : x.a; return <li><a href={`/compare/${x.slug}/`}><LogoTile name={o.name} size="sm" /><span class="nm">vs {o.name}</span></a></li>; })}</ul>
+      </div>
+    )}
+  </aside>
+  </div>
 </Base>

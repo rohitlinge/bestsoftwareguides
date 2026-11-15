@@ -1,17 +1,20 @@
 ---
 import Base from '../../layouts/Base.astro';
+import LogoTile from '../../components/LogoTile.astro';
 import { categories, compares } from '../../lib/data';
 import { crumbsLd } from '../../lib/ld';
 const groups = categories.map((c) => ({ c, list: compares.filter((x) => x.category.slug === c.slug) })).filter((g) => g.list.length);
 ---
 <Base title="Software Comparisons: Head-to-Head, Side by Side" description={`${compares.length} head-to-head software comparisons on price, free plans and features.`} path="/compare/" jsonld={[crumbsLd([{ name: 'Home', path: '/' }, { name: 'Compare', path: '/compare/' }])]}>
-  <div class="crumbs"><a href="/">Home</a> › Compare</div>
-  <h1>Software comparisons</h1>
-  <p class="muted">{compares.length} head-to-head comparisons built from the same dated data as our rankings.</p>
+  <Fragment slot="band">
+    <div class="crumbs"><a href="/">Home</a> › Compare</div>
+    <h1>Software comparisons</h1>
+    <p class="lead">{compares.length} head-to-head comparisons built from the same dated data as our rankings.</p>
+  </Fragment>
   {groups.map((g) => (
     <section>
-      <h2>{g.c.name}</h2>
-      <div class="grid">{g.list.map((x) => <a class="card" href={`/compare/${x.slug}/`}><strong>{x.a.name} vs {x.b.name}</strong><div class="small muted">{x.a.score} vs {x.b.score} out of 10</div></a>)}</div>
+      <div class="section-head"><h2>{g.c.name}</h2><a href={`/best/${g.c.slug}/`}>Full ranking →</a></div>
+      <div class="grid">{g.list.map((x) => <a class="card" href={`/compare/${x.slug}/`}><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><LogoTile name={x.a.name} size="sm" /><span class="badge dark" style="margin:0">vs</span><LogoTile name={x.b.name} size="sm" /></div><strong>{x.a.name} vs {x.b.name}</strong><div class="small muted">{x.a.score} vs {x.b.score} out of 10</div></a>)}</div>
     </section>
   ))}
   {groups.length === 0 && <p>Comparisons are published a few days after each category goes live. Check back soon.</p>}

@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import RankCard from '../../components/RankCard.astro';
+import LogoTile from '../../components/LogoTile.astro';
 import FeatureTable from '../../components/FeatureTable.astro';
 import Faq from '../../components/Faq.astro';
 import Sources from '../../components/Sources.astro';
@@ -54,15 +55,19 @@ const jsonld = [
 ];
 ---
 <Base title={title} description={description} path={path} jsonld={jsonld} noindex={!indexable} ogType="article" published={iso(c.publishDate)} modified={c.updated}>
-  <div class="crumbs"><a href="/">Home</a> › <a href="/best/">Rankings</a> › {variant !== 'main' && <><a href={`/best/${c.slug}/`}>{c.name}</a> › </>}{listName}</div>
-  <h1>{title}</h1>
-  <div class="meta">
-    <span>Prices checked {fmtDate(c.updated)}</span>
-    <span>{list.length} tools ranked</span>
-    <span>By <a href={site.editor.url}>{site.editor.name}</a></span>
-    <a href="/methodology/">How we rank</a>
-  </div>
+  <Fragment slot="band">
+    <div class="crumbs"><a href="/">Home</a> › <a href="/best/">Rankings</a> › {variant !== 'main' && <><a href={`/best/${c.slug}/`}>{c.name}</a> › </>}{listName}</div>
+    <h1>{title}</h1>
+    <div class="meta">
+      <span>Prices checked {fmtDate(c.updated)}</span>
+      <span>{list.length} tools ranked</span>
+      <span>By <a href={site.editor.url}>{site.editor.name}</a></span>
+      <a href="/methodology/">How we rank</a>
+    </div>
+  </Fragment>
 
+  <div class="layout">
+  <div>
   <div class="answer">
     {variant === 'free' ? (
       <p><strong>{list.map((t) => t.name).join(', ')}</strong> have free plans. The highest-ranked is <strong>{top.name}</strong> ({top.score}/10): {top.freePlanDetails}</p>
@@ -138,4 +143,18 @@ const jsonld = [
   <Faq faqs={faqs} />
   <Sources tools={list} />
   <p class="small muted">Scores come from published, repeatable data (features, free plan, entry price, pricing transparency). No vendor can pay to change a score.{list.some((t) => t.featured) && <> {list.find((t) => t.featured)!.name} is listed first as a featured partner; all other tools are in score order.</>} <a href="/methodology/">Read the methodology</a> · <a href="/disclosure/">Disclosure</a>.</p>
+  </div>
+  <aside aria-label="In this ranking">
+    <div class="side-card">
+      <h4>In this ranking</h4>
+      <ol>{list.map((t, i) => <li><a href={`#${t.slug}`}><LogoTile name={t.name} size="sm" /><span class="nm">{variant === 'main' ? t.rank : i + 1}. {t.name}{t.featured && <span class="sr-only"> ({featuredLabel})</span>}{t.featured && <span aria-hidden="true" style="color:var(--brand)"> ★</span>}</span><span class="score-pill">{t.score}</span></a></li>)}</ol>
+      {feat && <p class="small muted" style="margin:10px 0 0">★ {featuredLabel}, listed first. The rest are in score order.</p>}
+    </div>
+    <div class="side-card dark">
+      <h4>How we rank</h4>
+      <p>Scores come from a published formula: features, free plan, entry price and pricing transparency. No vendor can pay to change one.</p>
+      <a class="btn white" href="/methodology/">See the formula</a>
+    </div>
+  </aside>
+  </div>
 </Base>

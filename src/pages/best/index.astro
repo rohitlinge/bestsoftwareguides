@@ -1,29 +1,37 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { categories, fmtDate, tools, useCases } from '../../lib/data';
+import LogoTile from '../../components/LogoTile.astro';
+import { categories, fmtDate, tools, useCases, scoreLeader } from '../../lib/data';
 import { crumbsLd } from '../../lib/ld';
 const topics = [...new Set(categories.map((c) => c.topic))];
 ---
 <Base title="Software Rankings by Category" description={`Ranked lists of ${tools.length} software tools across ${categories.length} categories, with dated prices and sources.`} path="/best/" jsonld={[crumbsLd([{ name: 'Home', path: '/' }, { name: 'Rankings', path: '/best/' }])]}>
-  <div class="crumbs"><a href="/">Home</a> › Rankings</div>
-  <h1>Software rankings</h1>
-  <p class="muted">{categories.length} categories, {tools.length} tools. Every ranking shows when its prices were checked.</p>
+  <Fragment slot="band">
+    <div class="crumbs"><a href="/">Home</a> › Rankings</div>
+    <h1>Software rankings</h1>
+    <p class="lead">{categories.length} categories, {tools.length} tools. Every ranking shows when its prices were checked.</p>
+  </Fragment>
   {topics.map((tp) => (
     <section>
-      <h2>{tp}</h2>
+      <div class="section-head"><h2>{tp}</h2></div>
       <div class="grid">
         {categories.filter((c) => c.topic === tp).map((c) => (
-          <a class="card" href={`/best/${c.slug}/`}>
-            <h3>Best {c.name}</h3>
-            <div class="small muted">{c.tools.length} tools · checked {fmtDate(c.updated)}</div>
-            <div class="small">Top pick: {c.tools[0].name} ({c.tools[0].score}/10)</div>
+          <a class="card cat-card" href={`/best/${c.slug}/`}>
+            <div class="cat-top">
+              <LogoTile name={c.name} />
+              <div><h3>Best {c.name}</h3><div class="count">{c.tools.length} tools · checked {fmtDate(c.updated)}</div></div>
+            </div>
+            <div class="small">Top score: <strong>{scoreLeader(c.tools).name}</strong> <span class="score-pill">{scoreLeader(c.tools).score}<small>/10</small></span></div>
           </a>
         ))}
         {useCases.filter((u) => u.indexable && u.category.topic === tp).map((u) => (
-          <a class="card" href={u.path}>
-            <h3>Best {u.name}</h3>
-            <div class="small muted">{u.tools.length} tools · {u.ruleText}</div>
-            <div class="small">Top pick: {u.tools[0].name} ({u.tools[0].score}/10)</div>
+          <a class="card cat-card" href={u.path}>
+            <div class="cat-top">
+              <LogoTile name={u.name} />
+              <div><h3>Best {u.name}</h3><div class="count">{u.tools.length} tools</div></div>
+            </div>
+            <div class="small muted" style="margin-bottom:6px">{u.ruleText}</div>
+            <div class="small">Top score: <strong>{scoreLeader(u.tools).name}</strong> <span class="score-pill">{scoreLeader(u.tools).score}<small>/10</small></span></div>
           </a>
         ))}
       </div>

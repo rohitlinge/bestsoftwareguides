@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import FeatureTable from '../../components/FeatureTable.astro';
 import Faq from '../../components/Faq.astro';
 import Sources from '../../components/Sources.astro';
+import LogoTile from '../../components/LogoTile.astro';
 import { perLong, per, lc1, compares, compareVerdict, featureWins, compareChecks, money, fmtDate, iso, buildDate, type Compare } from '../../lib/data';
 import { crumbsLd, faqLd, articleLd } from '../../lib/ld';
 
@@ -37,9 +38,26 @@ const jsonld = [
 ];
 ---
 <Base title={title} description={description} path={path} jsonld={jsonld} noindex={!(a.indexable && b.indexable)} ogType="article" published={iso(c.comparesDate)} modified={modified}>
-  <div class="crumbs"><a href="/">Home</a> › <a href="/compare/">Compare</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {a.name} vs {b.name}</div>
-  <h1>{a.name} vs {b.name}</h1>
-  <div class="meta"><span>Checked {fmtDate(modified)}</span><a href="/methodology/">How we score</a></div>
+  <Fragment slot="band">
+    <div class="crumbs"><a href="/">Home</a> › <a href="/compare/">Compare</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {a.name} vs {b.name}</div>
+    <h1>{a.name} vs {b.name}</h1>
+    <div class="meta"><span>Checked {fmtDate(modified)}</span><a href="/methodology/">How we score</a></div>
+    <div class="vs-head">
+      {[a, b].map((t, i) => (
+        <>
+          {i === 1 && <span class="vs-badge" aria-hidden="true">VS</span>}
+          <a class="vs-side" href={`/tools/${t.slug}/`}>
+            <LogoTile name={t.name} />
+            <div style="flex:1">
+              <div class="nm">{t.name}</div>
+              <div class="sub">#{t.rank} in {c.name} · {t.freePlan ? 'free plan' : t.entryPrice != null ? `from ${money(t.entryPrice)}${per(t)}` : 'see vendor'}</div>
+            </div>
+            <span class="score-pill" style="font-size:1rem;padding:4px 10px">{t.score}<small>/10</small></span>
+          </a>
+        </>
+      ))}
+    </div>
+  </Fragment>
 
   <div class="answer">
     <p><strong>Verdict:</strong> {verdict[0]}</p>
@@ -52,7 +70,7 @@ const jsonld = [
   <div class="table-wrap"><table>
     <thead><tr><th>Check</th><th>{a.name}</th><th>{b.name}</th></tr></thead>
     <tbody>
-      {checks.rows.map((r) => <tr><th>{r.label}</th><td class={r.winner === 'a' ? 'yes' : ''}>{r.winner === 'a' ? 'Leads' : r.winner === 'even' ? 'Even' : ''}</td><td class={r.winner === 'b' ? 'yes' : ''}>{r.winner === 'b' ? 'Leads' : r.winner === 'even' ? 'Even' : ''}</td></tr>)}
+      {checks.rows.map((r) => <tr><th>{r.label}</th><td class={r.winner === 'a' ? 'lead' : ''}>{r.winner === 'a' ? 'Leads' : r.winner === 'even' ? 'Even' : ''}</td><td class={r.winner === 'b' ? 'lead' : ''}>{r.winner === 'b' ? 'Leads' : r.winner === 'even' ? 'Even' : ''}</td></tr>)}
       <tr><th>Total</th><td><strong>{checks.a}</strong></td><td><strong>{checks.b}</strong></td></tr>
     </tbody>
   </table></div>
@@ -86,8 +104,8 @@ const jsonld = [
     {[a, b].map((t) => (
       <div class="card">
         <h3 style="margin-top:0"><a href={`/tools/${t.slug}/`}>{t.name}</a></h3>
-        <strong>Pros</strong><ul>{t.pros.map((p) => <li>{p}</li>)}</ul>
-        <strong>Cons</strong><ul>{t.cons.map((p) => <li>{p}</li>)}</ul>
+        <strong>Pros</strong><ul class="pros">{t.pros.map((p) => <li>{p}</li>)}</ul>
+        <strong>Cons</strong><ul class="cons">{t.cons.map((p) => <li>{p}</li>)}</ul>
         <a href={`/tools/${t.slug}/pricing/`}>{t.name} pricing →</a>
       </div>
     ))}

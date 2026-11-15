@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import Search from '../components/Search.astro';
+import { categories } from '../lib/data';
+---
+<Base title="Search" description="Search software, rankings, comparisons and guides." path="/search/" noindex>
+  <Fragment slot="band">
+    <div class="crumbs"><a href="/">Home</a><span class="sep">/</span>Search</div>
+    <h1 id="search-title">Search</h1>
+    <Search id="page-search" />
+  </Fragment>
+  <div id="search-page-results" class="grid" style="margin-top:28px"></div>
+  <noscript><p>Search needs JavaScript. Browse the <a href="/best/">rankings</a> instead.</p></noscript>
+  <div class="section-head"><h2>Browse categories</h2></div>
+  <div class="chips">{categories.map((c) => <a class="chip" href={`/best/${c.slug}/`}>{c.name}</a>)}</div>
+</Base>
+
+<script>
+  import { load, search, esc } from '../lib/search-client';
+  const q = new URLSearchParams(location.search).get('q')?.trim() ?? '';
+  const out = document.getElementById('search-page-results')!;
+  const input = document.getElementById('page-search') as HTMLInputElement;
+  if (q) {
+    input.value = q;
+    document.getElementById('search-title')!.textContent = `Results for “${q}”`;
+    load().then((items) => {
+      const r = search(items, q, 40);
+      out.innerHTML = r.length
+        ? r.map((x) => `<a class="card" href="${x.p}"><span class="badge blue">${x.k}</span><h3 style="margin:8px 0 4px">${esc(x.t)}</h3><div class="small muted">${esc(x.s)}</div></a>`).join('')
+        : `<p class="muted">No matches. Try a shorter word, or browse the categories below.</p>`;
+    });
+  }
+</script>

@@ -1,0 +1,35 @@
+---
+import LogoTile from './LogoTile.astro';
+import { featuredLabel, type Tool, type Category } from '../lib/data';
+interface Props { t: Tool; c: Category; heading: string; current: 'overview' | 'pricing' | 'alternatives'; }
+const { t, c, heading, current } = Astro.props;
+const base = `/tools/${t.slug}/`;
+const tabs = [
+  { key: 'overview', href: base, label: 'Overview' },
+  { key: 'pricing', href: `${base}pricing/`, label: 'Pricing' },
+  { key: 'alternatives', href: `${base}alternatives/`, label: 'Alternatives' },
+];
+---
+<div class="crumbs">
+  <a href="/">Home</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {current === 'overview' ? t.name : <><a href={base}>{t.name}</a> › {current === 'pricing' ? 'Pricing' : 'Alternatives'}</>}
+</div>
+<div class="product-head">
+  <LogoTile name={t.name} size="lg" />
+  <div>
+    <h1>{heading}</h1>
+    <p class="tagline">{t.tagline}</p>
+    <div class="meta" style="margin-top:8px">
+      {t.featured ? <span class="badge featured">{featuredLabel}</span> : <span class="badge blue">#{t.rank} in {c.name}</span>}
+      {t.freePlan && <span class="badge">Free plan</span>}
+      <a href={`/best/${c.slug}/`}>See the {c.name} ranking</a>
+    </div>
+  </div>
+  <div class="score-box">
+    <div class="num">{t.score}<small>/10</small></div>
+    <div class="meter" aria-hidden="true"><span style={`width:${t.score * 10}%`}></span></div>
+    <div class="lbl">Our score</div>
+  </div>
+</div>
+<nav class="tabs" aria-label={`${t.name} pages`}>
+  {tabs.map((x) => <a href={x.href} aria-current={x.key === current ? 'page' : undefined}>{x.label}</a>)}
+</nav>

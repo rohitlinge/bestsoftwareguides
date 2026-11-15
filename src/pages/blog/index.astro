@@ -8,17 +8,20 @@ const latest = posts[0]?.updated ?? '';
 const description = `${posts.length} plain-English guides on software pricing, free plans, how-tos and explainers, built on dated, sourced data.`;
 ---
 <Base title="Software Guides and Research" description={description} path="/blog/" jsonld={[crumbsLd([{ name: 'Home', path: '/' }, { name: 'Guides', path: '/blog/' }]), collectionLd({ name: 'Guides', description, path: '/blog/', modified: latest })]}>
-  <div class="crumbs"><a href="/">Home</a> › Guides</div>
-  <h1>Guides and research</h1>
-  <p class="muted">{description}</p>
-  {types.length > 1 && <p class="small">{types.map((t, i) => <>{i > 0 && ' · '}<a href={`#${t}`}>{POST_TYPES[t]} ({posts.filter((p) => p.type === t).length})</a></>)}</p>}
+  <Fragment slot="band">
+    <div class="crumbs"><a href="/">Home</a> › Guides</div>
+    <h1>Guides and research</h1>
+    <p class="lead">{description}</p>
+  </Fragment>
+  {types.length > 1 && <div class="chips" style="margin-top:24px">{types.map((t) => <a class="chip" href={`#${t}`}>{POST_TYPES[t]} ({posts.filter((p) => p.type === t).length})</a>)}</div>}
   {types.map((t) => (
     <section id={t}>
       <h2>{POST_TYPES[t]}</h2>
       <div class="grid">
         {posts.filter((p) => p.type === t).map((p) => (
           <a class="card" href={`/blog/${p.slug}/`}>
-            <h3>{p.title}</h3>
+            <span class="badge blue">{POST_TYPES[t]}</span>
+            <h3 style="margin:10px 0 6px">{p.title}</h3>
             <p class="small muted">{p.description}</p>
             <div class="small muted">{fmtDate(p.updated)} · {p.minutes} min read</div>
           </a>

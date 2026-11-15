@@ -1,0 +1,8 @@
+---
+// A lettered tile standing in for a vendor logo. The shade is picked from the name so it stays stable.
+interface Props { name: string; size?: 'sm' | 'lg'; }
+const { name, size } = Astro.props;
+const shades = ['', 'b', 'c'];
+const shade = shades[[...name].reduce((n, ch) => n + ch.charCodeAt(0), 0) % shades.length];
+---
+<span class={['logo-tile', shade, size].filter(Boolean).join(' ')} aria-hidden="true">{name[0]}</span>
