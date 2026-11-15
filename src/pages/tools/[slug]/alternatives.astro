@@ -31,7 +31,7 @@ const jsonld = [
   articleLd({ headline: title, description, path, published: iso(t.publishDate), modified: c.updated }),
 ];
 ---
-<Base title={title} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article">
+<Base title={title} short={[`${t.name} Alternatives (${year})`, `${t.name} Alternatives`]} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article">
   <Fragment slot="band"><ProductHead t={t} c={c} heading={title} current="alternatives" /></Fragment>
   <div class="meta" style="margin-top:24px"><span>Checked {fmtDate(c.updated)}</span><a href="/methodology/">How we rank</a></div>
   <div class="answer">

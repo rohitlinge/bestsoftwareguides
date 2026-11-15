@@ -54,7 +54,7 @@ const jsonld = [
   articleLd({ headline: title, description, path, published: iso(variant === 'main' ? c.publishDate : c.comparesDate), modified: c.updated }),
 ];
 ---
-<Base title={title} description={description} path={path} jsonld={jsonld} noindex={!indexable} ogType="article" published={iso(c.publishDate)} modified={c.updated}>
+<Base title={title} short={[variant === 'free' ? `Best Free ${c.name} (${year})` : `Best ${listName} (${year})`, `Best ${listName}`]} description={description} path={path} jsonld={jsonld} noindex={!indexable} ogType="article" published={iso(c.publishDate)} modified={c.updated}>
   <Fragment slot="band">
     <div class="crumbs"><a href="/">Home</a> › <a href="/best/">Rankings</a> › {variant !== 'main' && <><a href={`/best/${c.slug}/`}>{c.name}</a> › </>}{listName}</div>
     <h1>{title}</h1>

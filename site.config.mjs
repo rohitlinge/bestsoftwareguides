@@ -5,7 +5,7 @@ export default {
   url: 'https://bestsoftwareguides.online',
   tagline: 'Software pricing and comparisons, sourced from vendor pages and dated.',
   description:
-    'Independent software directory: ranked lists, pricing breakdowns and head-to-head comparisons, with every price linked to the vendor page and the date it was checked.',
+    'Independent software directory: ranked lists, pricing breakdowns and comparisons. Every price links to the vendor page and shows when it was checked.',
   contactEmail: 'hello@bestsoftwareguides.online',
   // Put a real, named person here as soon as you can. Named authors are a strong trust signal.
   // When you do: set type to 'Person', fill jobTitle and bio, and add profile URLs

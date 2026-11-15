@@ -11,10 +11,27 @@ interface Props {
   ogType?: string;
   published?: string;
   modified?: string;
+  /** Shorter title variants, used when the title would be too long for search results. */
+  short?: string[];
 }
-const { title, description, path, noindex = false, jsonld = [], ogType = 'website', published, modified } = Astro.props;
+const { title, description: rawDescription, path, noindex = false, jsonld = [], ogType = 'website', published, modified, short = [] } = Astro.props;
 const canonical = url(path);
-const fullTitle = path === '/' ? title : `${title} | ${site.name}`;
+// Search engines (Bing flags titles over ~70 characters) cut long titles. Use the first candidate
+// that fits in 60: the title with the site name, the bare title, then any shorter variants.
+const TITLE_MAX = 60;
+const candidates = [...(path === '/' ? [] : [`${title} | ${site.name}`]), title, ...short];
+const fullTitle = candidates.find((t) => t.length <= TITLE_MAX) ?? candidates.reduce((a, b) => (b.length < a.length ? b : a));
+// Meta descriptions over 160 characters get cut: keep whole sentences that fit, else cut at a word.
+const DESC_MAX = 160;
+const clampDesc = (d: string) => {
+  if (d.length <= DESC_MAX) return d;
+  const sentences = d.match(/.*?[.!?](?:\s+|$)/gs) ?? []; // a period inside "8.4/10" is not a sentence end
+  let out = '';
+  for (const s of sentences) { if ((out + s).trim().length > DESC_MAX) break; out += s; }
+  if (out.trim().length >= 70) return out.trim();
+  return d.slice(0, DESC_MAX - 1).replace(/\s+\S*$/, '').replace(/[,;:·-]\s*$/, '') + '…';
+};
+const description = clampDesc(rawDescription);
 const preview = PREVIEW;
 const org = {
   '@context': 'https://schema.org', '@type': 'Organization', '@id': url('/#organization'), name: site.name, url: site.url,

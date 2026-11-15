@@ -30,7 +30,7 @@ const jsonld = [
   articleLd({ headline: title, description, path, published: iso(t.publishDate), modified: t.checked }),
 ];
 ---
-<Base title={title} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article" published={iso(t.publishDate)} modified={t.checked}>
+<Base title={title} short={[`${t.name} Pricing ${year}: Every Plan Compared`, `${t.name} Pricing ${year}`]} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article" published={iso(t.publishDate)} modified={t.checked}>
   <Fragment slot="band"><ProductHead t={t} c={c} heading={`${t.name} pricing (${year})`} current="pricing" /></Fragment>
   <div class="meta" style="margin-top:24px"><span>Checked {fmtDate(t.checked)}</span><a href={t.pricingUrl} rel="nofollow noopener" target="_blank">Official pricing page</a></div>
 

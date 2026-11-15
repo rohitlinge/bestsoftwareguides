@@ -9,7 +9,7 @@ const topics = [...new Set(categories.map((c) => c.topic))];
 const popular = topics.map((tp) => categories.find((c) => c.topic === tp)!);
 const icon = (d: string) => `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
 ---
-<Base title={`${site.name}: Software Rankings, Pricing and Comparisons`} description={site.description} path="/">
+<Base title={`${site.name}: Software Rankings, Pricing and Comparisons`} short={[`${site.name}: Software Rankings and Pricing`]} description={site.description} path="/">
   <Fragment slot="hero">
     <span class="eyebrow">Independent · Dated · Sourced</span>
     <h1>Find the right software, with <em>prices you can check.</em></h1>

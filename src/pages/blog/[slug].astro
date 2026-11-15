@@ -15,7 +15,7 @@ const cat = p.category ? categories.find((c) => c.slug === p.category) : undefin
 const catUseCases = cat ? useCases.filter((u) => u.category.slug === cat.slug && u.indexable) : [];
 const related = posts.filter((o) => o.slug !== p.slug && (o.category === p.category || o.type === p.type)).slice(0, 3);
 ---
-<Base title={p.title} description={p.description} path={path} ogType="article" published={p.published} modified={p.updated} jsonld={[crumbsLd([{ name: 'Home', path: '/' }, { name: 'Guides', path: '/blog/' }, { name: p.title, path }]), ld]}>
+<Base title={p.title} short={[p.title.split(':')[0]]} description={p.description} path={path} ogType="article" published={p.published} modified={p.updated} jsonld={[crumbsLd([{ name: 'Home', path: '/' }, { name: 'Guides', path: '/blog/' }, { name: p.title, path }]), ld]}>
   <div class="crumbs"><a href="/">Home</a> › <a href="/blog/">Guides</a> › <a href={`/blog/#${p.type}`}>{POST_TYPES[p.type]}</a></div>
   <article class="prose">
     <h1>{p.title}</h1>

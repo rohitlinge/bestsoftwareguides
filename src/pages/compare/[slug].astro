@@ -16,6 +16,7 @@ const year = buildDate.getUTCFullYear();
 const path = `/compare/${x.slug}/`;
 const title = `${a.name} vs ${b.name} (${year}): Price, Features and Verdict`;
 const verdict = compareVerdict(x);
+const plain = (n: string) => n.replace(/\s*\([^)]*\)/g, '').replace(/ & Observability$/, ''); // shorter names for the <title> only
 const wins = featureWins(x);
 const checks = compareChecks(x);
 const ck = (n: number) => `${n} check${n === 1 ? '' : 's'}`;
@@ -37,7 +38,7 @@ const jsonld = [
   articleLd({ headline: title, description, path, published: iso(c.comparesDate), modified }),
 ];
 ---
-<Base title={title} description={description} path={path} jsonld={jsonld} noindex={!(a.indexable && b.indexable)} ogType="article" published={iso(c.comparesDate)} modified={modified}>
+<Base title={title} short={[`${a.name} vs ${b.name} (${year}): Price and Verdict`, `${a.name} vs ${b.name} (${year})`, `${a.name} vs ${b.name}`, `${plain(a.name)} vs ${plain(b.name)}`]} description={description} path={path} jsonld={jsonld} noindex={!(a.indexable && b.indexable)} ogType="article" published={iso(c.comparesDate)} modified={modified}>
   <Fragment slot="band">
     <div class="crumbs"><a href="/">Home</a> › <a href="/compare/">Compare</a> › <a href={`/best/${c.slug}/`}>{c.name}</a> › {a.name} vs {b.name}</div>
     <h1>{a.name} vs {b.name}</h1>
