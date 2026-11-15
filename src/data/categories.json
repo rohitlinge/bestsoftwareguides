@@ -223,8 +223,7 @@
         }
       }
     ],
-    "compareTop": 6,
-    "featured": "icedq"
+    "compareTop": 6
   },
   {
     "slug": "data-reconciliation-tools",
@@ -261,8 +260,7 @@
       }
     ],
     "useCases": [],
-    "compareTop": 6,
-    "featured": "icedq"
+    "compareTop": 6
   },
   {
     "slug": "data-monitoring-testing-tools",
