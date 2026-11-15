@@ -94,9 +94,12 @@ export async function handleAuth(request, env, pathname) {
 
   if (pathname === '/auth/me') {
     const user = await currentUser(request, env);
+    const enabled = reviewsEnabled(env);
     return json({
-      enabled: reviewsEnabled(env),
+      enabled,
       user: user ? { name: user.name, picture: user.picture, admin: isAdmin(user, env) } : null,
+      // While switched off, say which setup pieces are present (yes/no only, never values).
+      ...(enabled ? {} : { setup: { linkedinClientId: !!env.LINKEDIN_CLIENT_ID, linkedinClientSecret: !!env.LINKEDIN_CLIENT_SECRET, sessionSecret: !!env.SESSION_SECRET, adminEmails: !!env.ADMIN_EMAILS, database: !!env.DB } }),
     });
   }
 

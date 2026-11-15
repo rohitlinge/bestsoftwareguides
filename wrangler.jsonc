@@ -25,7 +25,7 @@
   // Reviews: secrets LINKEDIN_CLIENT_ID, LINKEDIN_CLIENT_SECRET, SESSION_SECRET and ADMIN_EMAILS are
   // set in the Cloudflare dashboard (Worker -> Settings -> Variables and Secrets), never in this file.
   // Keep dashboard variables when deploying.
-  "keep_vars": true
-  // Reviews database: create a D1 database named "bsg-reviews", then add (with its real id):
-  // "d1_databases": [{ "binding": "DB", "database_name": "bsg-reviews", "database_id": "<id>" }]
+  "keep_vars": true,
+  // Reviews database (Cloudflare D1). Tables are created by worker/db.js on first use.
+  "d1_databases": [{ "binding": "DB", "database_name": "bsg-reviews", "database_id": "abf7bd65-8be0-4b8a-b5f8-0031b3d381fd" }]
 }
