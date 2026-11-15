@@ -5,10 +5,10 @@ const endpoint = url('/mcp');
 const toolsList = [
   ['search', 'Find software, rankings, comparisons and guides by keyword.', '{"query": "etl testing"}'],
   ['list_categories', 'Every category with its top-scoring tool and any featured partner.', '{}'],
-  ['get_ranking', 'A ranked list, optionally filtered by free plan, maximum price or required features.', '{"category": "api-testing-tools", "free_plan": true}'],
-  ['get_tool', 'Fact sheet for one product: rank, score, features, pros and cons, check date.', '{"tool": "postman"}'],
-  ['get_pricing', 'Every plan with monthly and annual prices, the vendor pricing URL and the date checked.', '{"tool": "postman"}'],
-  ['compare_tools', 'Two products side by side, with scores where they share a category.', '{"tool_a": "postman", "tool_b": "insomnia"}'],
+  ['get_ranking', 'A ranked list, optionally filtered by free plan, maximum price or required features.', '{"category": "ai-writing-tools", "free_plan": true}'],
+  ['get_tool', 'Fact sheet for one product: rank, score, features, pros and cons, check date.', '{"tool": "grammarly"}'],
+  ['get_pricing', 'Every plan with monthly and annual prices, the vendor pricing URL and the date checked.', '{"tool": "grammarly"}'],
+  ['compare_tools', 'Two products side by side, with scores where they share a category.', '{"tool_a": "grammarly", "tool_b": "quillbot"}'],
 ];
 const description = `Connect ChatGPT, Claude or any MCP client to ${site.name}: ranked lists, plan-by-plan pricing and comparisons as small, citable answers.`;
 ---
@@ -46,7 +46,7 @@ const description = `Connect ChatGPT, Claude or any MCP client to ${site.name}: 
     <pre style="background:var(--dark);color:#e5e9f0;padding:16px;border-radius:10px;overflow-x:auto;font-size:0.85rem"><code>{`curl -s ${endpoint} \\
   -H "Content-Type: application/json" \\
   -H "Accept: application/json, text/event-stream" \\
-  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"get_pricing","arguments":{"tool":"postman"}}}'`}</code></pre>
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"get_pricing","arguments":{"tool":"grammarly"}}}'`}</code></pre>
 
     <h2>Rules the data follows</h2>
     <ul>

@@ -62,7 +62,7 @@ const TOOLS = [
   {
     name: 'search',
     title: 'Search the site',
-    description: 'Find software, category rankings, comparisons and guides by keyword (e.g. "ETL testing", "postman", "password manager"). Returns slugs to use with the other tools.',
+    description: 'Find software, category rankings, comparisons and guides by keyword (e.g. "ETL testing", "grammarly", "password manager"). Returns slugs to use with the other tools.',
     inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Keywords' }, limit: { type: 'integer', minimum: 1, maximum: 25, default: 10 } }, required: ['query'] },
     run(d, { query, limit = 10 }) {
       const words = norm(query).split(' ').filter(Boolean);
@@ -162,7 +162,7 @@ const TOOLS = [
     name: 'get_tool',
     title: 'Get a tool profile',
     description: 'Fact sheet for one product: what it is, who it suits, rank and score in each category, free plan, trial, entry price, platforms, features, pros and cons, check date and sources.',
-    inputSchema: { type: 'object', properties: { tool: { type: 'string', description: 'Tool slug or name, e.g. "postman"' } }, required: ['tool'] },
+    inputSchema: { type: 'object', properties: { tool: { type: 'string', description: 'Tool slug or name, e.g. "grammarly"' } }, required: ['tool'] },
     run(d, { tool }) {
       const hit = findTool(d, tool);
       if (!hit) return notFound('tool', tool, d);
