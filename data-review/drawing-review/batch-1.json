@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "bluebeam", "name": "Bluebeam", "category": "construction-drawing-review-software",
+    "website": "https://www.bluebeam.com", "pricingUrl": "https://www.bluebeam.com/pricing/",
+    "tagline": "PDF markup, measurement and collaboration software for design and construction drawings, built around the Revu Windows desktop app.",
+    "bestFor": "Teams doing detailed PDF markup and takeoff on Windows",
+    "description": "Bluebeam sells Revu for Windows desktop together with Bluebeam on web and mobile, in four annual per-user plans (Basics, Core, Complete, Max). Plans differ in measurement depth, drawing overlay and compare, Studio session hosting, automation and AI features.",
+    "pros": ["Length and area measurement on every plan; count, perimeter, angle and volume from Core up", "Overlay and compare of drawings included from Core", "Every plan includes Revu for Windows, web and mobile access, and unlimited cloud storage"],
+    "cons": ["Sold only on annual billing, with no monthly option listed", "The full Revu desktop app runs on Windows only; the web app covers simpler markup", "Basics cannot host Studio sessions, overlay drawings or measure counts and perimeters"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "14-day free trial of the Max plan, no credit card required", "minSeats": 1,
+    "plans": [
+      {"name": "Basics", "monthly": null, "annual": 21.67, "notes": "Per user, billed yearly at $260. PDF create, edit and markup, length and area measurement, can join (not host) Studio sessions."},
+      {"name": "Core", "monthly": null, "annual": 27.50, "notes": "Per user, billed yearly at $330. Adds count, perimeter, angle and volume measurement, overlay and compare, Studio hosting, CAD plug-ins."},
+      {"name": "Complete", "monthly": null, "annual": 36.67, "notes": "Per user, billed yearly at $440. Adds Dynamic Fill, Quantity Link to Excel, batch link and slip sheet, batch signatures and seals."},
+      {"name": "Max", "monthly": null, "annual": 49.17, "notes": "Per user, billed yearly at $590 (labelled an introductory price). Adds AI drawing reviews and comparisons."}
+    ],
+    "features": {"pdfMarkup": true, "quantityTakeoff": true, "revisionCompare": true, "punchListsRfis": true, "browserBased": false},
+    "platforms": ["Windows", "Web", "iPad", "iOS", "Android"],
+    "founded": "2002", "hq": "Pasadena, United States",
+    "integrations": "CAD plug-ins (incl. Revit), Microsoft Excel (Quantity Link, Complete and up), document management connections",
+    "support": ["Phone", "Email", "Bluebeam University training", "Community forum"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "Bluebeam: Pricing", "url": "https://www.bluebeam.com/pricing/", "date": "2026"},
+      {"label": "Bluebeam: Free Trial", "url": "https://www.bluebeam.com/free-trial/", "date": "2026"},
+      {"label": "Bluebeam: Company Profile", "url": "https://www.bluebeam.com/company-profile/", "date": "2026"},
+      {"label": "Bluebeam: Construction Punch List Software", "url": "https://www.bluebeam.com/workflows/punch/", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "fieldwire", "name": "Fieldwire", "category": "construction-drawing-review-software",
+    "website": "https://www.fieldwire.com", "pricingUrl": "https://www.fieldwire.com/pricing/",
+    "tagline": "Field management app for construction teams that combines plan viewing and markup with task and punch list tracking.",
+    "bestFor": "Field crews managing plans, tasks and punch lists",
+    "description": "Fieldwire, part of Hilti, is a web and mobile app for viewing and marking up construction plans and pinning tasks to locations on sheets. It has a free Basic plan and three paid per-user plans, with sheet compare from Pro and RFIs and submittal management only on Business Plus.",
+    "pros": ["Free Basic plan for up to 5 users, 3 projects and 100 sheets", "Sheet compare included from the Pro plan", "Length and area measurement on calibrated plans, on web and mobile"],
+    "cons": ["RFIs and submittal management only on the top Business Plus plan", "No markup counts in plan view; counting needs a CSV export", "Monthly-billing prices are not shown on the pricing page"],
+    "freePlan": true, "freePlanDetails": "Basic: up to 5 users, 3 projects and 100 sheets, with task management and checklists.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Basic", "monthly": 0, "annual": 0, "notes": "Free. Up to 5 users, 3 projects, 100 sheets. No sheet compare."},
+      {"name": "Pro", "monthly": null, "annual": 39, "notes": "Per user, billed annually. Adds sheet compare, custom task statuses, submittal extractor."},
+      {"name": "Business", "monthly": null, "annual": 64, "notes": "Per user, billed annually. Adds custom task fields."},
+      {"name": "Business Plus", "monthly": null, "annual": 89, "notes": "Per user, billed annually. Adds RFIs and submittal management."},
+      {"name": "Custom contracts", "monthly": null, "annual": null, "custom": true, "notes": "Quote only. Unlimited-user options, SSO and API access."}
+    ],
+    "features": {"pdfMarkup": true, "quantityTakeoff": true, "revisionCompare": true, "punchListsRfis": true, "browserBased": true},
+    "platforms": ["Web", "iPad", "iOS", "Android"],
+    "hq": "San Francisco, United States",
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "Fieldwire: Pricing", "url": "https://www.fieldwire.com/pricing/", "date": "2026"},
+      {"label": "Fieldwire: About Us", "url": "https://www.fieldwire.com/about-us/", "date": "2026"},
+      {"label": "Fieldwire Help: Plan view and markup tools (web)", "url": "https://help.fieldwire.com/hc/en-us/articles/202909260-How-to-use-the-Single-Plan-View-and-Markup-Tools-Web", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "autodesk-build", "name": "Autodesk Forma Build", "category": "construction-drawing-review-software",
+    "website": "https://www.autodesk.com/products/forma-build/overview", "pricingUrl": "https://construction.autodesk.com/pricing/",
+    "tagline": "Autodesk's construction management app for sheets, RFIs, issues and punch work (formerly Autodesk Build).",
+    "bestFor": "General contractors already on Autodesk's cloud platform",
+    "description": "Autodesk Build was renamed Forma Build on March 24, 2026, and a lighter Forma Build Essentials tier was added. It covers sheet markup and version compare, issues, RFIs and punch lists on web and mobile; quantity takeoff is sold separately as Forma Takeoff.",
+    "pros": ["Issues, RFIs and punch lists pinned to drawings", "Sheet version compare with overlay or side-by-side views", "30-day money-back guarantee stated on Autodesk's construction pricing page"],
+    "cons": ["Autodesk's pricing page shows only 'Get a Quote', so prices here come from published trackers", "Costs far more per user than markup-only tools", "Quantity takeoff is a separate product (Forma Takeoff)"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Forma Build Essentials", "monthly": 100, "annual": 67, "notes": "Per user. Reported. Lighter tier launched March 2026: document management and limited submittals; no cost, schedule or meetings tools."},
+      {"name": "Forma Build", "monthly": 175, "annual": 117, "notes": "Per user. Reported as billed yearly at about $1,400."},
+      {"name": "Unlimited users / enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Quote only through Autodesk sales."}
+    ],
+    "features": {"pdfMarkup": true, "quantityTakeoff": false, "revisionCompare": true, "punchListsRfis": true, "browserBased": true},
+    "platforms": ["Web", "iOS", "Android"],
+    "checked": "2026-11-15", "verification": "reported",
+    "sources": [
+      {"label": "Autodesk Construction Cloud: Pricing (quote only)", "url": "https://construction.autodesk.com/pricing/", "date": "2026"},
+      {"label": "Helonic: Autodesk Construction Cloud Pricing in 2026 (now Autodesk Forma)", "url": "https://helonic.com/blog/autodesk-construction-cloud-pricing", "date": "2026"},
+      {"label": "Constructable: Autodesk Forma Build Review (September 2026)", "url": "https://constructable.ai/blog/autodesk-build-review", "date": "2026"},
+      {"label": "Autodesk Help: Sheets markups", "url": "https://help.autodesk.com/cloudhelp/ENG/Build-Sheets/files/Sheets_Markups.html", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "drawboard-projects", "name": "Drawboard Projects", "category": "construction-drawing-review-software",
+    "website": "https://www.drawboard.com", "pricingUrl": "https://www.drawboard.com/pricing",
+    "tagline": "Collaborative drawing markup and design review app for architecture, engineering and construction teams.",
+    "bestFor": "Architects and engineers running design reviews",
+    "description": "Drawboard Projects (formerly Bullclip) lets teams mark up, measure, overlay and discuss drawings with issues pinned to sheets, on Windows, iOS and the web. It is sold per user in Team, Growth and Enterprise plans, separately from Drawboard PDF.",
+    "pros": ["Full markup, measurement and overlay tools on every plan", "Auto versioning, revision switching and title block scan included", "Guest access included at no extra cost"],
+    "cons": ["No free plan for Projects (the free tier belongs to the separate Drawboard PDF)", "Procore, Aconex and Autodesk Forma integrations need the Growth plan or higher", "No Android or macOS app listed"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "30-day free trial", "minSeats": 1,
+    "plans": [
+      {"name": "Team", "monthly": 29, "annual": 22.50, "notes": "Per user. Billed yearly at $270 per user. Up to 25 users, 5 workspaces, 15,000 stored files."},
+      {"name": "Growth", "monthly": 39, "annual": 30.83, "notes": "Per user. Billed yearly at $370 per user. Up to 150 users, unlimited workspaces and files, Procore, Aconex and Autodesk Forma integrations."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Quote only, from 20 users. SSO, public API, premium support and a dedicated account manager."}
+    ],
+    "features": {"pdfMarkup": true, "quantityTakeoff": true, "revisionCompare": true, "punchListsRfis": true, "browserBased": true},
+    "platforms": ["Windows", "Web", "iOS"],
+    "founded": "2011", "hq": "Melbourne, Australia",
+    "integrations": "Microsoft Teams, OneDrive, Google Drive, Dropbox, Revit, Archicad; Procore, Aconex and Autodesk Forma on Growth and up",
+    "support": ["Standard support", "Premium support and dedicated account manager (Enterprise)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "Drawboard: Pricing", "url": "https://www.drawboard.com/pricing", "date": "2026"},
+      {"label": "Drawboard: Projects pricing", "url": "https://drawboard.com/projects/drawboard-projects-pricing", "date": "2026"},
+      {"label": "Drawboard: Company", "url": "https://www.drawboard.com/company", "date": "2026"}
+    ]
+  }
+]

@@ -564,5 +564,122 @@
         }
       }
     ]
+  },
+  {
+    "slug": "construction-drawing-review-software",
+    "name": "Construction Drawing Review Software",
+    "singular": "construction drawing review tool",
+    "plural": "construction drawing review tools",
+    "topic": "Construction & AEC",
+    "featured": "planspector",
+    "intro": "Construction drawing review software opens PDF drawing sets so teams can mark them up, measure quantities, compare revisions and pin punch lists or RFIs to the sheets. It is not CAD: these tools work on finished drawings exported from CAD or BIM software. Prices range from free plans to quote-only platforms priced on your construction volume, and the biggest differences are whether the tool runs in a browser and whether takeoff and revision compare are included.",
+    "buyingTips": [
+      "Check whether the full product runs in a browser or needs a Windows install: Bluebeam Revu and PlanSwift are Windows desktop apps.",
+      "Count who needs to edit versus only view: several tools (Planspector, STACK) let viewers in free, which cuts the bill for owners and consultants.",
+      "If you need quantity takeoff, confirm it is in the plan you buy; Autodesk and Procore sell takeoff as a separate product.",
+      "Revision compare (overlay) saves the most time on busy projects; Bluebeam includes it from Core and Fieldwire from Pro.",
+      "Dedicated takeoff tools (PlanSwift, Togal.AI, STACK Takeoff) cost 66-49 a user per month, several times more than markup-focused tools."
+    ],
+    "featureLabels": {
+      "pdfMarkup": "PDF markup",
+      "quantityTakeoff": "Quantity takeoff",
+      "revisionCompare": "Revision compare / overlay",
+      "punchListsRfis": "Punch lists or RFIs on drawings",
+      "browserBased": "Runs in a browser (no install)"
+    },
+    "faqs": [
+      {
+        "q": "Is construction drawing review software the same as CAD?",
+        "a": "No. CAD and BIM tools such as Revit or Archicad create the drawings. Drawing review tools open the exported PDF sets to mark up, measure, compare revisions and track issues."
+      }
+    ],
+    "compareTop": 6,
+    "useCases": [
+      {
+        "slug": "browser-based-drawing-review-software",
+        "name": "Browser-Based Drawing Review Software",
+        "singular": "browser-based drawing review tool",
+        "intro": "These tools run fully in a web browser, so anyone on the project can open the drawings on Windows, Mac or a tablet without installing anything.",
+        "ruleText": "The full app runs in a web browser with nothing to install.",
+        "rule": {
+          "feature": "browserBased"
+        }
+      },
+      {
+        "slug": "construction-takeoff-software",
+        "name": "Construction Takeoff Software",
+        "singular": "construction takeoff tool",
+        "intro": "Takeoff tools measure lengths, areas and counts on drawings to build quantities for estimates. Every tool here includes takeoff in its own product, not as a separate purchase.",
+        "ruleText": "Includes quantity takeoff (lengths, areas or counts) in the product.",
+        "rule": {
+          "feature": "quantityTakeoff"
+        }
+      },
+      {
+        "slug": "affordable-drawing-review-software",
+        "name": "Affordable Drawing Review Software (Under $40 a User)",
+        "singular": "affordable drawing review tool",
+        "intro": "Every tool here has a paid entry plan of $40 a user per month or less on annual billing.",
+        "ruleText": "The paid entry tier costs $40/user/month or less on annual billing.",
+        "rule": {
+          "maxEntryPrice": 40
+        }
+      }
+    ]
+  },
+  {
+    "slug": "architectural-cad-software",
+    "name": "Architectural CAD Software",
+    "singular": "architectural CAD tool",
+    "plural": "architectural CAD tools",
+    "topic": "Construction & AEC",
+    "intro": "Architectural CAD software is where buildings are drawn and modelled. It ranges from 2D drafting in DWG (AutoCAD) to full BIM tools that build an intelligent 3D model and produce sheets and schedules from it (Revit, Archicad, Vectorworks, Allplan, BricsCAD BIM, FreeCAD), plus 3D modellers used for concept design (SketchUp, Rhino). Once drawings are issued as PDFs, teams usually review, mark them up and measure them in separate construction drawing review software.",
+    "buyingTips": [
+      "Decide between 2D drafting and BIM first: BIM tools (Revit, Archicad, Vectorworks, Allplan) cost more but produce schedules and coordinated sheets from one model.",
+      "Check the operating system: Revit, Allplan and the AutoCAD Architecture toolset are Windows only, while Archicad, Vectorworks, Chief Architect and Rhino run on Mac.",
+      "Price the full year: the main BIM tools cost about ,530 to ,005 per user a year on annual billing, and month-to-month billing costs roughly a third to over two-thirds more (Vectorworks +33%, Revit +52%, Archicad Studio +72%).",
+      "If you want to own the software outright, Rhino and BricsCAD still sell one-time licences; most others are subscription only.",
+      "Confirm IFC support if you exchange models with consultants who use a different BIM tool."
+    ],
+    "featureLabels": {
+      "bimModeling": "BIM modelling",
+      "nativeDwg": "Native DWG format",
+      "ifcSupport": "IFC import/export",
+      "builtInRendering": "Built-in rendering",
+      "perpetualLicense": "One-time licence available"
+    },
+    "faqs": [
+      {
+        "q": "What is the difference between CAD and BIM?",
+        "a": "CAD draws lines and shapes, in 2D or 3D. BIM builds a model from building objects such as walls, doors and windows, so plans, sections and schedules all come from the same model and update together."
+      },
+      {
+        "q": "What comes after CAD on a construction project?",
+        "a": "Drawings are usually issued as PDF sets, which contractors and consultants mark up, measure and compare in construction drawing review software rather than in the CAD tool itself."
+      }
+    ],
+    "compareTop": 6,
+    "useCases": [
+      {
+        "slug": "architectural-cad-software-for-mac",
+        "name": "Architectural CAD Software for Mac",
+        "singular": "architectural CAD tool for Mac",
+        "intro": "Every tool here runs natively on macOS, so you do not need a Windows virtual machine.",
+        "ruleText": "Runs natively on macOS.",
+        "rule": {
+          "platform": "macOS"
+        }
+      },
+      {
+        "slug": "bim-software-for-architects",
+        "name": "BIM Software for Architects",
+        "singular": "BIM tool for architects",
+        "intro": "BIM tools build an intelligent model of the building, so plans, sections, elevations and schedules all come from one source and stay coordinated.",
+        "ruleText": "Builds an intelligent BIM model (walls, doors, schedules), not only lines or geometry.",
+        "rule": {
+          "feature": "bimModeling"
+        }
+      }
+    ]
   }
 ]

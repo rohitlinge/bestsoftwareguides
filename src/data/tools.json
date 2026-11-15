@@ -6592,5 +6592,1554 @@
         "date": "2026"
       }
     ]
+  },
+  {
+    "slug": "planspector",
+    "name": "Planspector",
+    "category": "construction-drawing-review-software",
+    "website": "https://planspector.com",
+    "logo": "https://planspector.com/favicon.svg",
+    "pricingUrl": "https://planspector.com/pricing",
+    "tagline": "Browser-based workspace for reviewing, measuring and comparing construction drawings.",
+    "bestFor": "Teams that review, mark up and measure PDF drawing sets in the browser",
+    "description": "Planspector is a browser-based workspace for construction drawings: PDF markup and review, quantity takeoff, revision compare and overlays, drawing checks, and punch lists, RFIs and submittals pinned to the drawings. It is built for contractors, subcontractors, designers and the clients and consultants who review with them.",
+    "pros": [
+      "Free plan with no time limit (3 editors, 10 viewers, 3 projects)",
+      "Runs in any modern browser with nothing to install, and works offline",
+      "Markup, takeoff, revision compare and punch lists in one tool; viewers are free on paid plans"
+    ],
+    "cons": [
+      "In early access: sign-up is by request",
+      "Works with PDF drawings only; no DWG, RVT or IFC support is listed",
+      "No named third-party integrations yet (webhooks only)"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "3 editors, 10 viewers, 3 projects, 2 GB storage, every drawing and field tool, no time limit.",
+    "trial": "14 days of the Business plan for new organisations",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "3 editors, 10 viewers, 3 projects, 2 GB storage."
+      },
+      {
+        "name": "Team",
+        "monthly": null,
+        "annual": 39,
+        "notes": "Per editor, billed yearly. Unlimited projects and free viewers, 100 GB storage, restricted projects, webhooks. Monthly billing is offered but its price is not shown."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 69,
+        "notes": "Per editor, billed yearly. Adds single sign-on (OpenID Connect), audit log and 1 TB storage."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing for about 25 users and up; custom limits, invoice billing and self-hosting."
+      }
+    ],
+    "features": {
+      "pdfMarkup": true,
+      "quantityTakeoff": true,
+      "revisionCompare": true,
+      "punchListsRfis": true,
+      "browserBased": true
+    },
+    "platforms": [
+      "Web (Chrome, Edge, Safari, Firefox)",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Tablets (installable web app)"
+    ],
+    "integrations": "Webhooks; exports to PDF, CSV and Excel",
+    "support": [
+      "Email"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "planspector.com: Pricing",
+        "url": "https://planspector.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "planspector.com: Features",
+        "url": "https://planspector.com/features/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "planspector.com: Home",
+        "url": "https://planspector.com",
+        "date": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "slug": "bluebeam",
+    "name": "Bluebeam",
+    "category": "construction-drawing-review-software",
+    "website": "https://www.bluebeam.com",
+    "logo": "https://www.bluebeam.com/wp-content/uploads/2022/07/cropped-favicon-32x32-1-300x300.png",
+    "pricingUrl": "https://www.bluebeam.com/pricing/",
+    "tagline": "PDF markup, measurement and collaboration software for design and construction drawings, built around the Revu Windows desktop app.",
+    "bestFor": "Teams doing detailed PDF markup and takeoff on Windows",
+    "description": "Bluebeam sells Revu for Windows desktop together with Bluebeam on web and mobile, in four annual per-user plans (Basics, Core, Complete, Max). Plans differ in measurement depth, drawing overlay and compare, Studio session hosting, automation and AI features.",
+    "pros": [
+      "Length and area measurement on every plan; count, perimeter, angle and volume from Core up",
+      "Overlay and compare of drawings included from Core",
+      "Every plan includes Revu for Windows, web and mobile access, and unlimited cloud storage"
+    ],
+    "cons": [
+      "Sold only on annual billing, with no monthly option listed",
+      "The full Revu desktop app runs on Windows only; the web app covers simpler markup",
+      "Basics cannot host Studio sessions, overlay drawings or measure counts and perimeters"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial of the Max plan, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basics",
+        "monthly": null,
+        "annual": 21.67,
+        "notes": "Per user, billed yearly at $260. PDF create, edit and markup, length and area measurement, can join (not host) Studio sessions."
+      },
+      {
+        "name": "Core",
+        "monthly": null,
+        "annual": 27.5,
+        "notes": "Per user, billed yearly at $330. Adds count, perimeter, angle and volume measurement, overlay and compare, Studio hosting, CAD plug-ins."
+      },
+      {
+        "name": "Complete",
+        "monthly": null,
+        "annual": 36.67,
+        "notes": "Per user, billed yearly at $440. Adds Dynamic Fill, Quantity Link to Excel, batch link and slip sheet, batch signatures and seals."
+      },
+      {
+        "name": "Max",
+        "monthly": null,
+        "annual": 49.17,
+        "notes": "Per user, billed yearly at $590 (labelled an introductory price). Adds AI drawing reviews and comparisons."
+      }
+    ],
+    "features": {
+      "pdfMarkup": true,
+      "quantityTakeoff": true,
+      "revisionCompare": true,
+      "punchListsRfis": true,
+      "browserBased": false
+    },
+    "platforms": [
+      "Windows",
+      "Web",
+      "iPad",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2002",
+    "hq": "Pasadena, United States",
+    "integrations": "CAD plug-ins (incl. Revit), Microsoft Excel (Quantity Link, Complete and up), document management connections",
+    "support": [
+      "Phone",
+      "Email",
+      "Bluebeam University training",
+      "Community forum"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Bluebeam: Pricing",
+        "url": "https://www.bluebeam.com/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "Bluebeam: Free Trial",
+        "url": "https://www.bluebeam.com/free-trial/",
+        "date": "2026"
+      },
+      {
+        "label": "Bluebeam: Company Profile",
+        "url": "https://www.bluebeam.com/company-profile/",
+        "date": "2026"
+      },
+      {
+        "label": "Bluebeam: Construction Punch List Software",
+        "url": "https://www.bluebeam.com/workflows/punch/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "fieldwire",
+    "name": "Fieldwire",
+    "category": "construction-drawing-review-software",
+    "website": "https://www.fieldwire.com",
+    "logo": "https://www.fieldwire.com/favicon.ico",
+    "pricingUrl": "https://www.fieldwire.com/pricing/",
+    "tagline": "Field management app for construction teams that combines plan viewing and markup with task and punch list tracking.",
+    "bestFor": "Field crews managing plans, tasks and punch lists",
+    "description": "Fieldwire, part of Hilti, is a web and mobile app for viewing and marking up construction plans and pinning tasks to locations on sheets. It has a free Basic plan and three paid per-user plans, with sheet compare from Pro and RFIs and submittal management only on Business Plus.",
+    "pros": [
+      "Free Basic plan for up to 5 users, 3 projects and 100 sheets",
+      "Sheet compare included from the Pro plan",
+      "Length and area measurement on calibrated plans, on web and mobile"
+    ],
+    "cons": [
+      "RFIs and submittal management only on the top Business Plus plan",
+      "No markup counts in plan view; counting needs a CSV export",
+      "Monthly-billing prices are not shown on the pricing page"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Basic: up to 5 users, 3 projects and 100 sheets, with task management and checklists.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Free. Up to 5 users, 3 projects, 100 sheets. No sheet compare."
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": 39,
+        "notes": "Per user, billed annually. Adds sheet compare, custom task statuses, submittal extractor."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 64,
+        "notes": "Per user, billed annually. Adds custom task fields."
+      },
+      {
+        "name": "Business Plus",
+        "monthly": null,
+        "annual": 89,
+        "notes": "Per user, billed annually. Adds RFIs and submittal management."
+      },
+      {
+        "name": "Custom contracts",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. Unlimited-user options, SSO and API access."
+      }
+    ],
+    "features": {
+      "pdfMarkup": true,
+      "quantityTakeoff": true,
+      "revisionCompare": true,
+      "punchListsRfis": true,
+      "browserBased": true
+    },
+    "platforms": [
+      "Web",
+      "iPad",
+      "iOS",
+      "Android"
+    ],
+    "hq": "San Francisco, United States",
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Fieldwire: Pricing",
+        "url": "https://www.fieldwire.com/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "Fieldwire: About Us",
+        "url": "https://www.fieldwire.com/about-us/",
+        "date": "2026"
+      },
+      {
+        "label": "Fieldwire Help: Plan view and markup tools (web)",
+        "url": "https://help.fieldwire.com/hc/en-us/articles/202909260-How-to-use-the-Single-Plan-View-and-Markup-Tools-Web",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "autodesk-build",
+    "name": "Autodesk Forma Build",
+    "category": "construction-drawing-review-software",
+    "website": "https://www.autodesk.com/products/forma-build/overview",
+    "logo": "https://www.autodesk.com/favicon.ico",
+    "pricingUrl": "https://construction.autodesk.com/pricing/",
+    "tagline": "Autodesk's construction management app for sheets, RFIs, issues and punch work (formerly Autodesk Build).",
+    "bestFor": "General contractors already on Autodesk's cloud platform",
+    "description": "Autodesk Build was renamed Forma Build on March 24, 2026, and a lighter Forma Build Essentials tier was added. It covers sheet markup and version compare, issues, RFIs and punch lists on web and mobile; quantity takeoff is sold separately as Forma Takeoff.",
+    "pros": [
+      "Issues, RFIs and punch lists pinned to drawings",
+      "Sheet version compare with overlay or side-by-side views",
+      "30-day money-back guarantee stated on Autodesk's construction pricing page"
+    ],
+    "cons": [
+      "Autodesk's pricing page shows only 'Get a Quote', so prices here come from published trackers",
+      "Costs far more per user than markup-only tools",
+      "Quantity takeoff is a separate product (Forma Takeoff)"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Forma Build Essentials",
+        "monthly": 100,
+        "annual": 67,
+        "notes": "Per user. Reported. Lighter tier launched March 2026: document management and limited submittals; no cost, schedule or meetings tools."
+      },
+      {
+        "name": "Forma Build",
+        "monthly": 175,
+        "annual": 117,
+        "notes": "Per user. Reported as billed yearly at about $1,400."
+      },
+      {
+        "name": "Unlimited users / enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only through Autodesk sales."
+      }
+    ],
+    "features": {
+      "pdfMarkup": true,
+      "quantityTakeoff": false,
+      "revisionCompare": true,
+      "punchListsRfis": true,
+      "browserBased": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "checked": "2026-11-15",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Autodesk Construction Cloud: Pricing (quote only)",
+        "url": "https://construction.autodesk.com/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "Helonic: Autodesk Construction Cloud Pricing in 2026 (now Autodesk Forma)",
+        "url": "https://helonic.com/blog/autodesk-construction-cloud-pricing",
+        "date": "2026"
+      },
+      {
+        "label": "Constructable: Autodesk Forma Build Review (September 2026)",
+        "url": "https://constructable.ai/blog/autodesk-build-review",
+        "date": "2026"
+      },
+      {
+        "label": "Autodesk Help: Sheets markups",
+        "url": "https://help.autodesk.com/cloudhelp/ENG/Build-Sheets/files/Sheets_Markups.html",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "drawboard-projects",
+    "name": "Drawboard Projects",
+    "category": "construction-drawing-review-software",
+    "website": "https://www.drawboard.com",
+    "logo": "https://cdn.prod.website-files.com/5fc973fe72246928752172c7/6090de69c7df9bda49174f58_webclip.png",
+    "pricingUrl": "https://www.drawboard.com/pricing",
+    "tagline": "Collaborative drawing markup and design review app for architecture, engineering and construction teams.",
+    "bestFor": "Architects and engineers running design reviews",
+    "description": "Drawboard Projects (formerly Bullclip) lets teams mark up, measure, overlay and discuss drawings with issues pinned to sheets, on Windows, iOS and the web. It is sold per user in Team, Growth and Enterprise plans, separately from Drawboard PDF.",
+    "pros": [
+      "Full markup, measurement and overlay tools on every plan",
+      "Auto versioning, revision switching and title block scan included",
+      "Guest access included at no extra cost"
+    ],
+    "cons": [
+      "No free plan for Projects (the free tier belongs to the separate Drawboard PDF)",
+      "Procore, Aconex and Autodesk Forma integrations need the Growth plan or higher",
+      "No Android or macOS app listed"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Team",
+        "monthly": 29,
+        "annual": 22.5,
+        "notes": "Per user. Billed yearly at $270 per user. Up to 25 users, 5 workspaces, 15,000 stored files."
+      },
+      {
+        "name": "Growth",
+        "monthly": 39,
+        "annual": 30.83,
+        "notes": "Per user. Billed yearly at $370 per user. Up to 150 users, unlimited workspaces and files, Procore, Aconex and Autodesk Forma integrations."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only, from 20 users. SSO, public API, premium support and a dedicated account manager."
+      }
+    ],
+    "features": {
+      "pdfMarkup": true,
+      "quantityTakeoff": true,
+      "revisionCompare": true,
+      "punchListsRfis": true,
+      "browserBased": true
+    },
+    "platforms": [
+      "Windows",
+      "Web",
+      "iOS"
+    ],
+    "founded": "2011",
+    "hq": "Melbourne, Australia",
+    "integrations": "Microsoft Teams, OneDrive, Google Drive, Dropbox, Revit, Archicad; Procore, Aconex and Autodesk Forma on Growth and up",
+    "support": [
+      "Standard support",
+      "Premium support and dedicated account manager (Enterprise)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Drawboard: Pricing",
+        "url": "https://www.drawboard.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "Drawboard: Projects pricing",
+        "url": "https://drawboard.com/projects/drawboard-projects-pricing",
+        "date": "2026"
+      },
+      {
+        "label": "Drawboard: Company",
+        "url": "https://www.drawboard.com/company",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "procore",
+    "name": "Procore",
+    "category": "construction-drawing-review-software",
+    "website": "https://www.procore.com",
+    "logo": "https://www.procore.com/images/apple-touch-icon.png",
+    "pricingUrl": "https://www.procore.com/pricing",
+    "tagline": "Construction management platform whose Drawings tool handles markup, revision tracking and links to RFIs and punch lists.",
+    "bestFor": "General contractors and owners running many projects",
+    "description": "Procore is a construction management platform. Its Drawings tool lets teams mark up sheets, compare revisions and link drawings to RFIs, punch lists and submittals; quantity takeoff is part of the separately sold Procore Estimating.",
+    "pros": [
+      "Unlimited users and collaborators at no extra cost",
+      "Drawings link to RFIs, punch lists and submittals",
+      "Mobile drawing access works offline and syncs later"
+    ],
+    "cons": [
+      "No public prices; you need a sales quote",
+      "Annual fee is based on your annual construction volume",
+      "Quantity takeoff is part of the separate Estimating product"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Procore products (custom quote)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. Upfront annual fee per product, based on Annual Construction Volume. Unlimited users, data and storage; 24/7 support and training included."
+      }
+    ],
+    "features": {
+      "pdfMarkup": true,
+      "quantityTakeoff": false,
+      "revisionCompare": true,
+      "punchListsRfis": true,
+      "browserBased": null
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "hq": "Carpinteria, United States",
+    "compliance": [
+      "SOC 1 Type 2",
+      "SOC 2 Type 2",
+      "ISO 27001",
+      "FedRAMP (Procore for Government)"
+    ],
+    "support": [
+      "24/7 support",
+      "Free training",
+      "Paid implementation packages"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "procore.com: Pricing",
+        "url": "https://www.procore.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "procore.com: Drawings",
+        "url": "https://www.procore.com/project-management/drawings",
+        "date": "2026"
+      },
+      {
+        "label": "procore.com: Estimating",
+        "url": "https://www.procore.com/estimating",
+        "date": "2026"
+      },
+      {
+        "label": "procore.com: Security",
+        "url": "https://www.procore.com/security",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "planswift",
+    "name": "PlanSwift",
+    "category": "construction-drawing-review-software",
+    "website": "https://www.planswift.com",
+    "logo": "https://www.planswift.com/wp-content/uploads/2026/05/cropped-planswift-favicon-100-180x180.png",
+    "pricingUrl": "https://www.planswift.com/pricing/",
+    "tagline": "Windows takeoff and estimating software for measuring plans and pricing bids.",
+    "bestFor": "Estimators doing takeoff on Windows PCs",
+    "description": "PlanSwift is installed takeoff and estimating software for measuring and counting on plans and pricing jobs. Its Takeoff BOOST AI tools automate counting, scaling and bookmarking, and on the Core plan full takeoff.",
+    "pros": [
+      "Published annual prices per seat",
+      "14-day free trial with every feature and no card required",
+      "AI auto-count, auto-scale and auto-bookmark on every paid plan"
+    ],
+    "cons": [
+      "Runs only on 64-bit Windows; a Mac needs Boot Camp or a virtual machine",
+      "Annual billing only, with no monthly option listed",
+      "Auto Takeoff needs the more expensive Core plan"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial, all features, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Essential",
+        "monthly": null,
+        "annual": 166.67,
+        "notes": "Per seat, billed yearly at $2,000. Takeoff and estimating, Auto Count, Auto Scale and Auto Bookmark, 2 hours of live training."
+      },
+      {
+        "name": "Core",
+        "monthly": null,
+        "annual": 250,
+        "notes": "Per seat, billed yearly at $3,000. Adds the full Takeoff BOOST suite with Auto Takeoff."
+      }
+    ],
+    "features": {
+      "pdfMarkup": null,
+      "quantityTakeoff": true,
+      "revisionCompare": null,
+      "punchListsRfis": null,
+      "browserBased": false
+    },
+    "platforms": [
+      "Windows"
+    ],
+    "integrations": "Excel import and export; send bids to other estimating systems",
+    "support": [
+      "Priority support",
+      "Live 1-on-1 training"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "planswift.com: Pricing",
+        "url": "https://www.planswift.com/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "planswift.com: Home",
+        "url": "https://www.planswift.com/",
+        "date": "2026"
+      },
+      {
+        "label": "ConstructConnect Help: PlanSwift system requirements",
+        "url": "https://help.constructconnect.com/getting-started-with-planswift-117/planswift-system-requirements-1649",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "stack",
+    "name": "STACK",
+    "category": "construction-drawing-review-software",
+    "website": "https://www.stackct.com",
+    "logo": "https://www.stackct.com/wp-content/uploads/2018/10/cropped-glyph-Estimating-Lrg-180x180.png",
+    "pricingUrl": "https://www.stackct.com/pricing/",
+    "tagline": "Cloud platform for construction takeoff, estimating, plan markup and field management.",
+    "bestFor": "Subcontractors who want cloud takeoff with a free starting tier",
+    "description": "STACK is cloud software for quantity takeoff and estimating, with plan overlay to find changes between drawing versions. Its Build & Operate product adds plan markup, punch lists, issues and daily reports, with field apps for iOS, Android and Windows.",
+    "pros": [
+      "Free takeoff tier with no limit on users",
+      "Plan Overlay shows changes between drawing versions",
+      "Measures area, linear, arc, pitched, count and volume"
+    ],
+    "cons": [
+      "Monthly prices are not shown on the pricing pages",
+      "Free tier allows 1 active project a month and 50 measurements per project",
+      "Takeoff & Estimate plans cost $299 a user per month and up"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "1 active project per month, up to 300 plan pages, 50 measurements per project, plan viewing and markup, core takeoff tools, unlimited users.",
+    "trial": "7-day Pro trial for Takeoff & Estimate",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Per account, unlimited users. 1 active project per month, 300 plan pages, 50 measurements per project."
+      },
+      {
+        "name": "Build & Operate Essential",
+        "monthly": null,
+        "annual": 49,
+        "notes": "Per user, billed annually. Unlimited projects and documents, document control, plan review and markup."
+      },
+      {
+        "name": "Build & Operate Pro",
+        "monthly": null,
+        "annual": 79,
+        "notes": "Per user, billed annually. Adds daily reports, custom forms, configurable workflows and schedule tracking."
+      },
+      {
+        "name": "Takeoff & Estimate Premium",
+        "monthly": null,
+        "annual": 299,
+        "notes": "Per user, billed annually. Unlimited projects, plan pages, measurements and viewer seats."
+      },
+      {
+        "name": "Takeoff & Estimate Pro",
+        "monthly": null,
+        "annual": 349,
+        "notes": "Per user, billed annually. Adds worksheet-style estimating and STACK for Excel."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. Unlimited users, API, SSO and volume pricing."
+      }
+    ],
+    "features": {
+      "pdfMarkup": true,
+      "quantityTakeoff": true,
+      "revisionCompare": true,
+      "punchListsRfis": true,
+      "browserBased": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Windows"
+    ],
+    "integrations": "STACK for Excel, ERP connectors (paid add-on)",
+    "support": [
+      "In-app chat",
+      "Help center"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "stackct.com: Pricing",
+        "url": "https://www.stackct.com/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "stackct.com: Takeoff & Estimate pricing",
+        "url": "https://www.stackct.com/takeoff-and-estimate-pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "stackct.com: Build & Operate pricing",
+        "url": "https://www.stackct.com/build-and-operate-pricing/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "togal-ai",
+    "name": "Togal.AI",
+    "category": "construction-drawing-review-software",
+    "website": "https://www.togal.ai",
+    "logo": "https://cdn.prod.website-files.com/64c804c83c2a878381a29d9d/64c804c83c2a878381a29dc3_webclip.png",
+    "pricingUrl": "https://www.togal.ai/pricing",
+    "tagline": "Cloud takeoff software that uses AI to detect, measure and count spaces and features on drawings.",
+    "bestFor": "Estimators who want automated AI takeoff",
+    "description": "Togal.AI is cloud takeoff software that automatically detects and measures spaces, counts items and compares drawing revisions to quantify what changed. Takeoffs export to Excel and other estimating tools, and several users can work on the same takeoff at once.",
+    "pros": [
+      "Unlimited automated takeoffs on the Growth plan",
+      "Compares drawing revisions and quantifies added or removed items",
+      "Free external collaborators outside your account"
+    ],
+    "cons": [
+      "Sign-up requires booking a demo",
+      "Billed yearly, with no monthly option listed",
+      "SSO and onboarding only on the custom-priced Business plan"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Growth",
+        "monthly": null,
+        "annual": 299,
+        "notes": "Per user, billed yearly. Unlimited automated takeoffs, chat prompts and symbol searches; unlimited external collaborators."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom price for 4 or more users. Adds onboarding, a dedicated support rep, quantity discounts and SSO."
+      }
+    ],
+    "features": {
+      "pdfMarkup": null,
+      "quantityTakeoff": true,
+      "revisionCompare": true,
+      "punchListsRfis": null,
+      "browserBased": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "hq": "Miami, United States",
+    "integrations": "Ediphi, ServiceTitan, Zebel; Excel export",
+    "support": [
+      "Email",
+      "In-app help",
+      "Dedicated rep (Business)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "togal.ai: Pricing",
+        "url": "https://www.togal.ai/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "togal.ai: Features",
+        "url": "https://www.togal.ai/features",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "revit",
+    "name": "Autodesk Revit",
+    "category": "architectural-cad-software",
+    "website": "https://www.autodesk.com/products/revit/overview",
+    "logo": "https://www.autodesk.com/favicon.ico",
+    "pricingUrl": "https://www.autodesk.com/products/revit/buy",
+    "tagline": "BIM software for designing and documenting buildings and infrastructure in 3D.",
+    "bestFor": "BIM teams at architecture and engineering firms",
+    "description": "Revit is Autodesk's BIM application for modelling buildings with parametric walls, doors and windows, then producing sheets and schedules from that model. It is sold by subscription per user or through Autodesk's token-based Flex plan, and it runs on Windows only.",
+    "pros": [
+      "Parametric BIM model with schedules and sheet documentation",
+      "Imports and exports IFC, 3DM, SKP, OBJ and STEP",
+      "Worksharing on a central model, plus Dynamo and an API for automation"
+    ],
+    "cons": [
+      "Windows only; Mac users need a virtual machine or dual boot",
+      "Subscription only, at $3,005 a year per user",
+      "Free licences are for verified students and educators only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Revit subscription",
+        "monthly": 380,
+        "annual": 250.42,
+        "notes": "Per user, billed yearly at $3,005. 3-year term $9,020. Pay-as-you-go Flex from $99 for 33 tokens (Revit uses 10 tokens a day)."
+      }
+    ],
+    "features": {
+      "bimModeling": true,
+      "nativeDwg": false,
+      "ifcSupport": true,
+      "builtInRendering": null,
+      "perpetualLicense": false
+    },
+    "platforms": [
+      "Windows"
+    ],
+    "founded": "2000",
+    "hq": "San Francisco, United States",
+    "integrations": "Twinmotion for Revit, Dynamo, Autodesk Forma, Autodesk App Store; IFC, 3DM, SKP, OBJ, STEP",
+    "support": [
+      "24x7 online support and resources"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "autodesk.com: Buy Revit",
+        "url": "https://www.autodesk.com/products/revit/buy",
+        "date": "2026"
+      },
+      {
+        "label": "autodesk.com: Revit overview",
+        "url": "https://www.autodesk.com/products/revit/overview",
+        "date": "2026"
+      },
+      {
+        "label": "autodesk.com: Revit subscription FAQ",
+        "url": "https://www.autodesk.com/solutions/revit-subscription-faq",
+        "date": "2026"
+      },
+      {
+        "label": "autodesk.com: Revit free trial",
+        "url": "https://www.autodesk.com/products/revit/free-trial",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Autodesk Revit",
+        "url": "https://en.wikipedia.org/wiki/Autodesk_Revit",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "archicad",
+    "name": "Graphisoft Archicad",
+    "category": "architectural-cad-software",
+    "website": "https://graphisoft.com/solutions/archicad",
+    "logo": "https://www.graphisoft.com/content/public/images/apple-touch-icon.png?v=2025",
+    "pricingUrl": "https://www.graphisoft.com/us/pricing/",
+    "tagline": "BIM software for architects that runs on both Windows and macOS.",
+    "bestFor": "Architects who want BIM on Mac or Windows",
+    "description": "Archicad is Graphisoft's BIM application for modelling, documenting and visualising buildings, and it runs natively on Windows and macOS. It is sold per seat in three subscription tiers, Studio, Collaborate and Max, which differ in teamwork hosting, MEP tools, add-ons and AI credits.",
+    "pros": [
+      "Runs natively on both Windows and macOS",
+      "Imports and exports IFC and DWG",
+      "Higher tiers include cloud teamwork (BIMcloud SaaS) and MEP Designer"
+    ],
+    "cons": [
+      "New commercial licences are subscription only",
+      "Studio's teamwork uses self-hosted BIMcloud Basic, not the cloud service",
+      "Free EDU licences are watermarked and cannot be used commercially"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Archicad Studio",
+        "monthly": 345,
+        "annual": 201.17,
+        "notes": "Per seat, plus tax, billed yearly at $2,414. Includes BIMcloud Basic (self-hosted) and BIMx Pro Baseline; no MEP Designer."
+      },
+      {
+        "name": "Archicad Collaborate",
+        "monthly": 406,
+        "annual": 236.67,
+        "notes": "Per seat, plus tax, billed yearly at $2,840. Adds BIMcloud SaaS, MEP Designer and the ProKit Suite."
+      },
+      {
+        "name": "Archicad Max",
+        "monthly": 800,
+        "annual": 475,
+        "notes": "Per seat, plus tax, billed yearly at $5,700. Adds all language versions and more AI credits."
+      }
+    ],
+    "features": {
+      "bimModeling": true,
+      "nativeDwg": false,
+      "ifcSupport": true,
+      "builtInRendering": true,
+      "perpetualLicense": false
+    },
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "founded": "1987",
+    "hq": "Budapest, Hungary",
+    "integrations": "BIMcloud, BIMx, MEP Designer, Autodesk Forma connection (Collaborate and up)",
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "graphisoft.com: Pricing (United States)",
+        "url": "https://www.graphisoft.com/us/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "graphisoft.com: Archicad Studio plan",
+        "url": "https://graphisoft.com/us/plans-and-products/archicad-studio/",
+        "date": "2026"
+      },
+      {
+        "label": "graphisoft.com: Archicad product page",
+        "url": "https://graphisoft.com/solutions/archicad",
+        "date": "2026"
+      },
+      {
+        "label": "Graphisoft Help: Archicad 29 PhotoRendering",
+        "url": "https://help.graphisoft.com/AC/29/INT/_AC29_Help/100_Visualization/100_Visualization-3.htm",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Archicad",
+        "url": "https://en.wikipedia.org/wiki/Archicad",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "vectorworks-architect",
+    "name": "Vectorworks Architect",
+    "category": "architectural-cad-software",
+    "website": "https://www.vectorworks.net/en-US/architect",
+    "logo": "https://www.vectorworks.net/favicon.ico",
+    "pricingUrl": "https://customers.vectorworks.net/products",
+    "tagline": "2D drafting, 3D modelling and BIM software for architects in one application.",
+    "bestFor": "Design-led practices mixing 2D drafting and BIM",
+    "description": "Vectorworks Architect combines 2D drafting, 3D modelling on the Parasolid engine, and BIM with openBIM and IFC support. It is sold as a monthly or annual subscription from the Vectorworks online store.",
+    "pros": [
+      "Lower annual price than Revit or Archicad",
+      "Supports openBIM and IFC, with links to Revit, SketchUp and Rhino",
+      "Integrated rendering, including Maxon Redshift"
+    ],
+    "cons": [
+      "The US store sells subscriptions only",
+      "Trial length is not stated on the vendor page",
+      "Monthly billing costs $510 a year more than annual"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Architect",
+        "monthly": 170,
+        "annual": 127.5,
+        "notes": "Per licence (one user), billed yearly at $1,530 (US store)."
+      },
+      {
+        "name": "Design Suite",
+        "monthly": null,
+        "annual": 165,
+        "notes": "Per licence, billed yearly at $1,980. Includes Architect, Landmark and Spotlight."
+      }
+    ],
+    "features": {
+      "bimModeling": true,
+      "nativeDwg": false,
+      "ifcSupport": true,
+      "builtInRendering": true,
+      "perpetualLicense": false
+    },
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "founded": "1985",
+    "hq": "Columbia, Maryland, United States",
+    "integrations": "Revit, SketchUp, Rhino, Photoshop, Cinema 4D, Maxon Redshift",
+    "support": [
+      "Phone and email (US business hours)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Vectorworks: Subscription plans (US store)",
+        "url": "https://customers.vectorworks.net/products",
+        "date": "2026"
+      },
+      {
+        "label": "vectorworks.net: Vectorworks Architect",
+        "url": "https://www.vectorworks.net/en-US/architect",
+        "date": "2026"
+      },
+      {
+        "label": "vectorworks.net: Company",
+        "url": "https://www.vectorworks.net/en-US/company",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "autocad-architecture",
+    "name": "AutoCAD (Architecture toolset)",
+    "category": "architectural-cad-software",
+    "website": "https://www.autodesk.com/products/autocad/overview",
+    "logo": "https://www.autodesk.com/favicon.ico",
+    "pricingUrl": "https://www.autodesk.com/products/autocad/buy",
+    "tagline": "Autodesk's 2D and 3D CAD software, with an Architecture toolset included in the subscription.",
+    "bestFor": "DWG-based architectural drafting",
+    "description": "An AutoCAD subscription includes AutoCAD for Windows and Mac, AutoCAD Web, and seven industry toolsets, one of which is the Architecture toolset. The toolsets run on Windows only.",
+    "pros": [
+      "DWG is the native file format",
+      "All seven toolsets, including Architecture, come with every subscription",
+      "One subscription covers Windows, Mac and web"
+    ],
+    "cons": [
+      "The Architecture toolset is Windows only",
+      "Not a full BIM tool like Revit",
+      "Free trial is only 15 days"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "15-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "AutoCAD subscription",
+        "monthly": 260,
+        "annual": 174.58,
+        "notes": "Per user, billed yearly at $2,095. 3-year term $6,285. Includes the Architecture toolset and six others (Windows only). Flex tokens also available."
+      }
+    ],
+    "features": {
+      "bimModeling": null,
+      "nativeDwg": true,
+      "ifcSupport": null,
+      "builtInRendering": null,
+      "perpetualLicense": false
+    },
+    "platforms": [
+      "Windows",
+      "Mac (base AutoCAD only, no Architecture toolset)",
+      "Web"
+    ],
+    "founded": "1982",
+    "hq": "San Francisco, United States",
+    "integrations": "AutoCAD Web and mobile, Autodesk App Store",
+    "support": [
+      "24x7 online support and resources"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "autodesk.com: Buy AutoCAD",
+        "url": "https://www.autodesk.com/products/autocad/buy",
+        "date": "2026"
+      },
+      {
+        "label": "autodesk.com: AutoCAD overview",
+        "url": "https://www.autodesk.com/products/autocad/overview",
+        "date": "2026"
+      },
+      {
+        "label": "autodesk.com: AutoCAD subscription FAQ",
+        "url": "https://www.autodesk.com/solutions/autocad-subscription-faq",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: AutoCAD",
+        "url": "https://en.wikipedia.org/wiki/AutoCAD",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "chief-architect",
+    "name": "Chief Architect Premier",
+    "category": "architectural-cad-software",
+    "website": "https://www.chiefarchitect.com/products/premier/",
+    "logo": "https://www.chiefarchitect.com/apple-touch-icon.png",
+    "pricingUrl": "https://www.chiefarchitect.com/products/premier/",
+    "tagline": "Residential design software that builds walls, roofs and framing automatically from floor plans.",
+    "bestFor": "Residential designers and home builders",
+    "description": "Chief Architect Premier is home design software whose automatic building tools generate walls, floors, roofs and framing as a model evolves, with GPU ray-traced rendering built in. It is sold by monthly or annual subscription, and one licence runs on either Windows or macOS.",
+    "pros": [
+      "Automatic framing, roofs and building tools aimed at residential work",
+      "Built-in rendering with GPU ray tracing",
+      "One licence runs natively on Windows or Mac"
+    ],
+    "cons": [
+      "IFC is not listed among its import and export formats",
+      "New licences are subscription only",
+      "Needs an internet connection every 14 days for licence checks"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial (printing, saving and exporting disabled)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Premier",
+        "monthly": 229,
+        "annual": 166.25,
+        "notes": "Per licence, billed yearly at $1,995. Includes upgrades, premium catalogs and priority support."
+      }
+    ],
+    "features": {
+      "bimModeling": null,
+      "nativeDwg": false,
+      "ifcSupport": null,
+      "builtInRendering": true,
+      "perpetualLicense": false
+    },
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "founded": "1992",
+    "hq": "Coeur d'Alene, Idaho, United States",
+    "integrations": "Chief As-Built app, 3D Viewer app; DWG/DXF, SKP, OBJ import",
+    "support": [
+      "Priority technical support (included)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "chiefarchitect.com: Chief Architect Premier",
+        "url": "https://www.chiefarchitect.com/products/premier/",
+        "date": "2026"
+      },
+      {
+        "label": "chiefarchitect.com: Detailed feature list",
+        "url": "https://www.chiefarchitect.com/products/features/",
+        "date": "2026"
+      },
+      {
+        "label": "chiefarchitect.com: Company",
+        "url": "https://www.chiefarchitect.com/company/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "sketchup",
+    "name": "SketchUp",
+    "category": "architectural-cad-software",
+    "website": "https://sketchup.trimble.com/en",
+    "logo": "https://sketchup.trimble.com/favicons/android-chrome-512x512.png",
+    "pricingUrl": "https://sketchup.trimble.com/en/plans-and-pricing",
+    "tagline": "Trimble's 3D modeler for quick architectural and design models, with LayOut for 2D drawings.",
+    "bestFor": "Fast conceptual 3D modeling",
+    "description": "SketchUp is a 3D modeling tool from Trimble that runs on desktop, web and iPad, depending on the plan. Pro adds the desktop app and LayOut for 2D documents, and Studio adds V-Ray rendering, Scan Essentials and a Revit importer on Windows.",
+    "pros": [
+      "Free non-commercial web version",
+      "Pro includes LayOut for 2D documentation",
+      "Studio bundles V-Ray rendering"
+    ],
+    "cons": [
+      "Not a parametric BIM modeler",
+      "Studio is Windows only",
+      "Month-to-month Pro costs $99.99, about 3x the annual rate"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "SketchUp Free: browser-only modeler with 10 GB Trimble Connect storage and 3D Warehouse access. Not for commercial use.",
+    "trial": "Free SketchUp Pro trial, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Web only, non-commercial use."
+      },
+      {
+        "name": "Go",
+        "monthly": null,
+        "annual": 10.75,
+        "notes": "Per user, billed yearly at $129. Web and iPad only, no LayOut."
+      },
+      {
+        "name": "Pro",
+        "monthly": 99.99,
+        "annual": 33.25,
+        "notes": "Per user, billed yearly at $399. Desktop app and LayOut included."
+      },
+      {
+        "name": "Studio",
+        "monthly": null,
+        "annual": 71.58,
+        "notes": "Per user, billed yearly at $859. Windows only. Adds V-Ray, Scan Essentials and a Revit importer."
+      }
+    ],
+    "features": {
+      "bimModeling": false,
+      "nativeDwg": false,
+      "ifcSupport": true,
+      "builtInRendering": true,
+      "perpetualLicense": false
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Web",
+      "iPad"
+    ],
+    "integrations": "Trimble Connect, 3D Warehouse, V-Ray (Studio), Revit importer (Studio)",
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "SketchUp: Plans and pricing",
+        "url": "https://sketchup.trimble.com/en/plans-and-pricing",
+        "date": "2026"
+      },
+      {
+        "label": "SketchUp: Buy SketchUp Pro Monthly",
+        "url": "https://sketchup.trimble.com/en/products/sketchup-pro-monthly/buy",
+        "date": "2026"
+      },
+      {
+        "label": "SketchUp: Buy SketchUp Studio",
+        "url": "https://sketchup.trimble.com/en/products/sketchup-studio/buy",
+        "date": "2026"
+      },
+      {
+        "label": "SketchUp Help: SketchUp Free",
+        "url": "https://help.sketchup.com/en/admin/sketchup-free",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "bricscad-bim",
+    "name": "BricsCAD BIM",
+    "category": "architectural-cad-software",
+    "website": "https://bricscad.octave.com/en-us/bricscad/bim",
+    "logo": "https://bricscad.octave.com/apple-touch-icon-180x180.png",
+    "pricingUrl": "https://bricscad.octave.com/en-us/store/bricscad",
+    "tagline": "DWG-based CAD platform with a BIM toolset for building modeling and documentation.",
+    "bestFor": "DWG-native firms moving to BIM",
+    "description": "BricsCAD BIM is the BIM toolset on top of BricsCAD Pro, from Bricsys, which now trades as Octave. It works natively in DWG, exchanges IFC and BCF, and is sold as a subscription or a one-time lifetime licence.",
+    "pros": [
+      "Native DWG file format",
+      "Perpetual (lifetime) licence still sold",
+      "Runs on Windows, macOS and Linux"
+    ],
+    "cons": [
+      "The vendor store lists prices in euros only",
+      "Perpetual licence needs paid maintenance after year one for updates",
+      "Network licences need your own licence server"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "BIM (1-year subscription)",
+        "monthly": null,
+        "annual": null,
+        "notes": "Per user. EUR 1,060 a year on the vendor store; no USD price shown. 3-year option EUR 2,860."
+      },
+      {
+        "name": "BIM (lifetime licence)",
+        "monthly": null,
+        "annual": null,
+        "notes": "Per user. EUR 2,376 one-time with the first year of maintenance; maintenance renewal EUR 396 a year."
+      },
+      {
+        "name": "Ultimate (1-year subscription)",
+        "monthly": null,
+        "annual": null,
+        "notes": "Per user. EUR 1,176 a year; bundles the BIM and Mechanical toolsets."
+      }
+    ],
+    "features": {
+      "bimModeling": true,
+      "nativeDwg": true,
+      "ifcSupport": true,
+      "builtInRendering": null,
+      "perpetualLicense": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "integrations": "IFC and BCF exchange, Revit files, Unreal Engine, 3D PDF",
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Octave BricsCAD: Store",
+        "url": "https://bricscad.octave.com/en-us/store/bricscad",
+        "date": "2026"
+      },
+      {
+        "label": "Octave BricsCAD: BIM toolset",
+        "url": "https://bricscad.octave.com/en-us/bricscad/bim",
+        "date": "2026"
+      },
+      {
+        "label": "Octave BricsCAD: Bricsys becomes Octave",
+        "url": "https://bricscad.octave.com/en-us/news/bricsys-becomes-octave",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "allplan",
+    "name": "Allplan",
+    "category": "architectural-cad-software",
+    "website": "https://www.allplan.com/",
+    "pricingUrl": "https://www.allplan.com/en-US/shop/products/allplan/allplan-concept",
+    "tagline": "Nemetschek's BIM software for architecture, engineering and construction, sold by subscription.",
+    "bestFor": "Architecture and engineering firms that model and detail in one tool",
+    "description": "Allplan is BIM software from the Nemetschek Group, first released in 1984, covering 2D and 3D design through to detailing. Allplan Architecture is now sold as Allplan Concept, with Professional and Ultimate editions adding engineering and construction tools.",
+    "pros": [
+      "Real-time rendering included in every edition",
+      "Wide file support including IFC, BCF, RVT, DWG, SKP and 3DM",
+      "Month-to-month subscription available"
+    ],
+    "cons": [
+      "Windows only",
+      "New perpetual licences ended on September 30, 2026",
+      "High price per seat compared with general CAD tools"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial (non-commercial use only), no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": null,
+        "annual": null,
+        "notes": "Shown 'from $140' per month on the edition comparison; billing term not stated. No building components (walls, doors, roofs)."
+      },
+      {
+        "name": "Concept (formerly Architecture)",
+        "monthly": 362,
+        "annual": 241,
+        "notes": "Per user, billed yearly at $2,892 (excl. tax)."
+      },
+      {
+        "name": "Professional",
+        "monthly": 449,
+        "annual": 299,
+        "notes": "Per user, billed yearly at $3,588 (excl. tax). Adds engineering, detailing and the Redshift renderer."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": 606,
+        "annual": 404,
+        "notes": "Per user, billed yearly at $4,848 (excl. tax). Adds prefabrication and construction workflows."
+      }
+    ],
+    "features": {
+      "bimModeling": true,
+      "nativeDwg": false,
+      "ifcSupport": true,
+      "builtInRendering": true,
+      "perpetualLicense": false
+    },
+    "platforms": [
+      "Windows"
+    ],
+    "founded": "1984",
+    "integrations": "IFC, BCF, RVT, DWG, DGN, SKP, 3DM; Python API; live links to Lumion and Twinmotion",
+    "support": [
+      "Technical support included with subscription"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Allplan Shop: Buy ALLPLAN Concept",
+        "url": "https://www.allplan.com/en-US/shop/products/allplan/allplan-concept",
+        "date": "2026"
+      },
+      {
+        "label": "Allplan Shop: Buy ALLPLAN Professional",
+        "url": "https://www.allplan.com/en-US/shop/products/allplan/allplan-professional",
+        "date": "2026"
+      },
+      {
+        "label": "Allplan Shop: Buy ALLPLAN Ultimate",
+        "url": "https://www.allplan.com/en-US/shop/products/allplan/allplan-ultimate",
+        "date": "2026"
+      },
+      {
+        "label": "Allplan: Serviceplus/SSA and Subscription",
+        "url": "https://www.allplan.com/ssa-to-subs-2026/",
+        "date": "2026"
+      },
+      {
+        "label": "Allplan: About us",
+        "url": "https://www.allplan.com/about-us/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "rhino",
+    "name": "Rhino",
+    "category": "architectural-cad-software",
+    "website": "https://www.rhino3d.com/",
+    "logo": "https://www.rhino3d.com/images/favicon.ico",
+    "pricingUrl": "https://www.rhino3d.com/sales/",
+    "tagline": "NURBS-based 3D modeler for freeform design, sold as a permanent licence.",
+    "bestFor": "Freeform and parametric design",
+    "description": "Rhino (Rhinoceros 3D) is a 3D modeling application from Robert McNeel & Associates; Rhino 9 is the current version. It includes Grasshopper for visual scripting and Rhino Render, and is sold as a permanent licence with no maintenance fees.",
+    "pros": [
+      "Permanent licence with no maintenance fees",
+      "Grasshopper visual scripting included",
+      "Opens and saves DWG, DXF and SKP"
+    ],
+    "cons": [
+      "No BIM objects without plug-ins",
+      "No built-in IFC import or export",
+      "No Linux version"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "90-day evaluation with all features",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Commercial",
+        "monthly": null,
+        "annual": null,
+        "oneTime": 995,
+        "notes": "Per user, permanent licence with no maintenance fees. Upgrade from an earlier version $595. Students and faculty: $195 education licence."
+      }
+    ],
+    "features": {
+      "bimModeling": false,
+      "nativeDwg": false,
+      "ifcSupport": false,
+      "builtInRendering": true,
+      "perpetualLicense": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
+    "integrations": "Grasshopper, DWG/DXF, SKP, plug-ins such as VisualARQ for BIM and IFC",
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Rhino: Sales",
+        "url": "https://www.rhino3d.com/sales/",
+        "date": "2026"
+      },
+      {
+        "label": "Rhino: New in Rhino 9",
+        "url": "https://www.rhino3d.com/9/new/",
+        "date": "2026"
+      },
+      {
+        "label": "Rhino: File formats",
+        "url": "https://www.rhino3d.com/features/file-formats/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "freecad",
+    "name": "FreeCAD",
+    "category": "architectural-cad-software",
+    "website": "https://www.freecad.org/",
+    "logo": "https://www.freecad.org/images/favicon.ico",
+    "pricingUrl": "https://www.freecad.org/",
+    "tagline": "Free, open-source parametric 3D modeler with a built-in BIM workbench.",
+    "bestFor": "Free open-source BIM and CAD",
+    "description": "FreeCAD is an open-source parametric 3D modeler released under the LGPL-2.1 licence, with no licensing fees. Since version 1.0 it has a built-in BIM workbench and reads and writes IFC.",
+    "pros": [
+      "Free with no licensing fees, including commercial use",
+      "Reads and writes IFC",
+      "Runs on Windows, macOS and Linux"
+    ],
+    "cons": [
+      "DWG needs a separate converter such as ODA File Converter",
+      "No vendor support, community help only",
+      "No built-in photoreal renderer"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Fully free and open source (LGPL-2.1), including the BIM workbench, with no commercial-use limits.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "FreeCAD",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "Free for any number of users. Open source, LGPL-2.1."
+      }
+    ],
+    "features": {
+      "bimModeling": true,
+      "nativeDwg": false,
+      "ifcSupport": true,
+      "builtInRendering": false,
+      "perpetualLicense": false
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "integrations": "IFC, DXF, DWG via converter, Python scripting, add-on workbenches",
+    "support": [
+      "Community forum"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "FreeCAD: Home",
+        "url": "https://www.freecad.org/",
+        "date": "2026"
+      },
+      {
+        "label": "FreeCAD: Features",
+        "url": "https://www.freecad.org/features.php",
+        "date": "2026"
+      },
+      {
+        "label": "GitHub: FreeCAD repository",
+        "url": "https://github.com/FreeCAD/FreeCAD",
+        "date": "2026"
+      }
+    ]
   }
 ]

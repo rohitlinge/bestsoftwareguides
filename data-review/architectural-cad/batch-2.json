@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "sketchup", "name": "SketchUp", "category": "architectural-cad-software",
+    "website": "https://sketchup.trimble.com/en", "pricingUrl": "https://sketchup.trimble.com/en/plans-and-pricing",
+    "tagline": "Trimble's 3D modeler for quick architectural and design models, with LayOut for 2D drawings.",
+    "bestFor": "Fast conceptual 3D modeling",
+    "description": "SketchUp is a 3D modeling tool from Trimble that runs on desktop, web and iPad, depending on the plan. Pro adds the desktop app and LayOut for 2D documents, and Studio adds V-Ray rendering, Scan Essentials and a Revit importer on Windows.",
+    "pros": ["Free non-commercial web version", "Pro includes LayOut for 2D documentation", "Studio bundles V-Ray rendering"],
+    "cons": ["Not a parametric BIM modeler", "Studio is Windows only", "Month-to-month Pro costs $99.99, about 3x the annual rate"],
+    "freePlan": true,
+    "freePlanDetails": "SketchUp Free: browser-only modeler with 10 GB Trimble Connect storage and 3D Warehouse access. Not for commercial use.",
+    "trial": "Free SketchUp Pro trial, no credit card required", "minSeats": 1,
+    "plans": [
+      {"name": "Free", "monthly": 0, "annual": 0, "notes": "Web only, non-commercial use."},
+      {"name": "Go", "monthly": null, "annual": 10.75, "notes": "Per user, billed yearly at $129. Web and iPad only, no LayOut."},
+      {"name": "Pro", "monthly": 99.99, "annual": 33.25, "notes": "Per user, billed yearly at $399. Desktop app and LayOut included."},
+      {"name": "Studio", "monthly": null, "annual": 71.58, "notes": "Per user, billed yearly at $859. Windows only. Adds V-Ray, Scan Essentials and a Revit importer."}
+    ],
+    "features": {"bimModeling": false, "nativeDwg": false, "ifcSupport": true, "builtInRendering": true, "perpetualLicense": false},
+    "platforms": ["Windows", "macOS", "Web", "iPad"],
+    "integrations": "Trimble Connect, 3D Warehouse, V-Ray (Studio), Revit importer (Studio)",
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "SketchUp: Plans and pricing", "url": "https://sketchup.trimble.com/en/plans-and-pricing", "date": "2026"},
+      {"label": "SketchUp: Buy SketchUp Pro Monthly", "url": "https://sketchup.trimble.com/en/products/sketchup-pro-monthly/buy", "date": "2026"},
+      {"label": "SketchUp: Buy SketchUp Studio", "url": "https://sketchup.trimble.com/en/products/sketchup-studio/buy", "date": "2026"},
+      {"label": "SketchUp Help: SketchUp Free", "url": "https://help.sketchup.com/en/admin/sketchup-free", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "bricscad-bim", "name": "BricsCAD BIM", "category": "architectural-cad-software",
+    "website": "https://bricscad.octave.com/en-us/bricscad/bim", "pricingUrl": "https://bricscad.octave.com/en-us/store/bricscad",
+    "tagline": "DWG-based CAD platform with a BIM toolset for building modeling and documentation.",
+    "bestFor": "DWG-native firms moving to BIM",
+    "description": "BricsCAD BIM is the BIM toolset on top of BricsCAD Pro, from Bricsys, which now trades as Octave. It works natively in DWG, exchanges IFC and BCF, and is sold as a subscription or a one-time lifetime licence.",
+    "pros": ["Native DWG file format", "Perpetual (lifetime) licence still sold", "Runs on Windows, macOS and Linux"],
+    "cons": ["The vendor store lists prices in euros only", "Perpetual licence needs paid maintenance after year one for updates", "Network licences need your own licence server"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "30-day free trial, no credit card required", "minSeats": 1,
+    "plans": [
+      {"name": "BIM (1-year subscription)", "monthly": null, "annual": null, "notes": "Per user. EUR 1,060 a year on the vendor store; no USD price shown. 3-year option EUR 2,860."},
+      {"name": "BIM (lifetime licence)", "monthly": null, "annual": null, "notes": "Per user. EUR 2,376 one-time with the first year of maintenance; maintenance renewal EUR 396 a year."},
+      {"name": "Ultimate (1-year subscription)", "monthly": null, "annual": null, "notes": "Per user. EUR 1,176 a year; bundles the BIM and Mechanical toolsets."}
+    ],
+    "features": {"bimModeling": true, "nativeDwg": true, "ifcSupport": true, "builtInRendering": null, "perpetualLicense": true},
+    "platforms": ["Windows", "macOS", "Linux"],
+    "integrations": "IFC and BCF exchange, Revit files, Unreal Engine, 3D PDF",
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "Octave BricsCAD: Store", "url": "https://bricscad.octave.com/en-us/store/bricscad", "date": "2026"},
+      {"label": "Octave BricsCAD: BIM toolset", "url": "https://bricscad.octave.com/en-us/bricscad/bim", "date": "2026"},
+      {"label": "Octave BricsCAD: Bricsys becomes Octave", "url": "https://bricscad.octave.com/en-us/news/bricsys-becomes-octave", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "allplan", "name": "Allplan", "category": "architectural-cad-software",
+    "website": "https://www.allplan.com/", "pricingUrl": "https://www.allplan.com/en-US/shop/products/allplan/allplan-concept",
+    "tagline": "Nemetschek's BIM software for architecture, engineering and construction, sold by subscription.",
+    "bestFor": "Architecture and engineering firms that model and detail in one tool",
+    "description": "Allplan is BIM software from the Nemetschek Group, first released in 1984, covering 2D and 3D design through to detailing. Allplan Architecture is now sold as Allplan Concept, with Professional and Ultimate editions adding engineering and construction tools.",
+    "pros": ["Real-time rendering included in every edition", "Wide file support including IFC, BCF, RVT, DWG, SKP and 3DM", "Month-to-month subscription available"],
+    "cons": ["Windows only", "New perpetual licences ended on September 30, 2026", "High price per seat compared with general CAD tools"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "14-day free trial (non-commercial use only), no credit card required", "minSeats": 1,
+    "plans": [
+      {"name": "Basic", "monthly": null, "annual": null, "notes": "Shown 'from $140' per month on the edition comparison; billing term not stated. No building components (walls, doors, roofs)."},
+      {"name": "Concept (formerly Architecture)", "monthly": 362, "annual": 241, "notes": "Per user, billed yearly at $2,892 (excl. tax)."},
+      {"name": "Professional", "monthly": 449, "annual": 299, "notes": "Per user, billed yearly at $3,588 (excl. tax). Adds engineering, detailing and the Redshift renderer."},
+      {"name": "Ultimate", "monthly": 606, "annual": 404, "notes": "Per user, billed yearly at $4,848 (excl. tax). Adds prefabrication and construction workflows."}
+    ],
+    "features": {"bimModeling": true, "nativeDwg": false, "ifcSupport": true, "builtInRendering": true, "perpetualLicense": false},
+    "platforms": ["Windows"],
+    "founded": "1984",
+    "integrations": "IFC, BCF, RVT, DWG, DGN, SKP, 3DM; Python API; live links to Lumion and Twinmotion",
+    "support": ["Technical support included with subscription"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "Allplan Shop: Buy ALLPLAN Concept", "url": "https://www.allplan.com/en-US/shop/products/allplan/allplan-concept", "date": "2026"},
+      {"label": "Allplan Shop: Buy ALLPLAN Professional", "url": "https://www.allplan.com/en-US/shop/products/allplan/allplan-professional", "date": "2026"},
+      {"label": "Allplan Shop: Buy ALLPLAN Ultimate", "url": "https://www.allplan.com/en-US/shop/products/allplan/allplan-ultimate", "date": "2026"},
+      {"label": "Allplan: Serviceplus/SSA and Subscription", "url": "https://www.allplan.com/ssa-to-subs-2026/", "date": "2026"},
+      {"label": "Allplan: About us", "url": "https://www.allplan.com/about-us/", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "rhino", "name": "Rhino", "category": "architectural-cad-software",
+    "website": "https://www.rhino3d.com/", "pricingUrl": "https://www.rhino3d.com/sales/",
+    "tagline": "NURBS-based 3D modeler for freeform design, sold as a permanent licence.",
+    "bestFor": "Freeform and parametric design",
+    "description": "Rhino (Rhinoceros 3D) is a 3D modeling application from Robert McNeel & Associates; Rhino 9 is the current version. It includes Grasshopper for visual scripting and Rhino Render, and is sold as a permanent licence with no maintenance fees.",
+    "pros": ["Permanent licence with no maintenance fees", "Grasshopper visual scripting included", "Opens and saves DWG, DXF and SKP"],
+    "cons": ["No BIM objects without plug-ins", "No built-in IFC import or export", "No Linux version"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "90-day evaluation with all features", "minSeats": 1,
+    "plans": [
+      {"name": "Commercial", "monthly": null, "annual": null, "oneTime": 995, "notes": "Per user, permanent licence. 10-user pack $9,950."},
+      {"name": "Upgrade", "monthly": null, "annual": null, "oneTime": 595, "notes": "Per user, from an earlier Rhino version."},
+      {"name": "Education", "monthly": null, "annual": null, "oneTime": 195, "notes": "Students and faculty only, proof of status required."}
+    ],
+    "features": {"bimModeling": false, "nativeDwg": false, "ifcSupport": false, "builtInRendering": true, "perpetualLicense": true},
+    "platforms": ["Windows", "macOS"],
+    "integrations": "Grasshopper, DWG/DXF, SKP, plug-ins such as VisualARQ for BIM and IFC",
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "Rhino: Sales", "url": "https://www.rhino3d.com/sales/", "date": "2026"},
+      {"label": "Rhino: New in Rhino 9", "url": "https://www.rhino3d.com/9/new/", "date": "2026"},
+      {"label": "Rhino: File formats", "url": "https://www.rhino3d.com/features/file-formats/", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "freecad", "name": "FreeCAD", "category": "architectural-cad-software",
+    "website": "https://www.freecad.org/", "pricingUrl": "https://www.freecad.org/",
+    "tagline": "Free, open-source parametric 3D modeler with a built-in BIM workbench.",
+    "bestFor": "Free open-source BIM and CAD",
+    "description": "FreeCAD is an open-source parametric 3D modeler released under the LGPL-2.1 licence, with no licensing fees. Since version 1.0 it has a built-in BIM workbench and reads and writes IFC.",
+    "pros": ["Free with no licensing fees, including commercial use", "Reads and writes IFC", "Runs on Windows, macOS and Linux"],
+    "cons": ["DWG needs a separate converter such as ODA File Converter", "No vendor support, community help only", "No built-in photoreal renderer"],
+    "freePlan": true,
+    "freePlanDetails": "Fully free and open source (LGPL-2.1), including the BIM workbench, with no commercial-use limits.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "FreeCAD", "monthly": 0, "annual": 0, "notes": "Free for any number of users. Open source, LGPL-2.1."}
+    ],
+    "features": {"bimModeling": true, "nativeDwg": false, "ifcSupport": true, "builtInRendering": false, "perpetualLicense": false},
+    "platforms": ["Windows", "macOS", "Linux"],
+    "integrations": "IFC, DXF, DWG via converter, Python scripting, add-on workbenches",
+    "support": ["Community forum"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "FreeCAD: Home", "url": "https://www.freecad.org/", "date": "2026"},
+      {"label": "FreeCAD: Features", "url": "https://www.freecad.org/features.php", "date": "2026"},
+      {"label": "GitHub: FreeCAD repository", "url": "https://github.com/FreeCAD/FreeCAD", "date": "2026"}
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "slug": "planspector",
+    "name": "Planspector",
+    "category": "construction-drawing-review-software",
+    "website": "https://planspector.com",
+    "logo": "https://planspector.com/favicon.svg",
+    "pricingUrl": "https://planspector.com/pricing",
+    "tagline": "Browser-based workspace for reviewing, measuring and comparing construction drawings.",
+    "bestFor": "Teams that review, mark up and measure PDF drawing sets in the browser",
+    "description": "Planspector is a browser-based workspace for construction drawings: PDF markup and review, quantity takeoff, revision compare and overlays, drawing checks, and punch lists, RFIs and submittals pinned to the drawings. It is built for contractors, subcontractors, designers and the clients and consultants who review with them.",
+    "pros": [
+      "Free plan with no time limit (3 editors, 10 viewers, 3 projects)",
+      "Runs in any modern browser with nothing to install, and works offline",
+      "Markup, takeoff, revision compare and punch lists in one tool; viewers are free on paid plans"
+    ],
+    "cons": [
+      "In early access: sign-up is by request",
+      "Works with PDF drawings only; no DWG, RVT or IFC support is listed",
+      "No named third-party integrations yet (webhooks only)"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "3 editors, 10 viewers, 3 projects, 2 GB storage, every drawing and field tool, no time limit.",
+    "trial": "14 days of the Business plan for new organisations",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "notes": "3 editors, 10 viewers, 3 projects, 2 GB storage."
+      },
+      {
+        "name": "Team",
+        "monthly": null,
+        "annual": 39,
+        "notes": "Per editor, billed yearly. Unlimited projects and free viewers, 100 GB storage, restricted projects, webhooks. Monthly billing is offered but its price is not shown."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 69,
+        "notes": "Per editor, billed yearly. Adds single sign-on (OpenID Connect), audit log and 1 TB storage."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing for about 25 users and up; custom limits, invoice billing and self-hosting."
+      }
+    ],
+    "features": {
+      "pdfMarkup": true,
+      "quantityTakeoff": true,
+      "revisionCompare": true,
+      "punchListsRfis": true,
+      "browserBased": true
+    },
+    "platforms": [
+      "Web (Chrome, Edge, Safari, Firefox)",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Tablets (installable web app)"
+    ],
+    "integrations": "Webhooks; exports to PDF, CSV and Excel",
+    "support": [
+      "Email"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "planspector.com: Pricing",
+        "url": "https://planspector.com/pricing",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "planspector.com: Features",
+        "url": "https://planspector.com/features/",
+        "date": "2026-11-15"
+      },
+      {
+        "label": "planspector.com: Home",
+        "url": "https://planspector.com",
+        "date": "2026-11-15"
+      }
+    ]
+  }
+]

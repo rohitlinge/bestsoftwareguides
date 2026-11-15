@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "procore", "name": "Procore", "category": "construction-drawing-review-software",
+    "website": "https://www.procore.com", "pricingUrl": "https://www.procore.com/pricing",
+    "tagline": "Construction management platform whose Drawings tool handles markup, revision tracking and links to RFIs and punch lists.",
+    "bestFor": "General contractors and owners running many projects",
+    "description": "Procore is a construction management platform. Its Drawings tool lets teams mark up sheets, compare revisions and link drawings to RFIs, punch lists and submittals; quantity takeoff is part of the separately sold Procore Estimating.",
+    "pros": ["Unlimited users and collaborators at no extra cost", "Drawings link to RFIs, punch lists and submittals", "Mobile drawing access works offline and syncs later"],
+    "cons": ["No public prices; you need a sales quote", "Annual fee is based on your annual construction volume", "Quantity takeoff is part of the separate Estimating product"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Procore products (custom quote)", "monthly": null, "annual": null, "custom": true, "notes": "Quote only. Upfront annual fee per product, based on Annual Construction Volume. Unlimited users, data and storage; 24/7 support and training included."}
+    ],
+    "features": {"pdfMarkup": true, "quantityTakeoff": false, "revisionCompare": true, "punchListsRfis": true, "browserBased": null},
+    "platforms": ["Web", "iOS", "Android"],
+    "hq": "Carpinteria, United States",
+    "compliance": ["SOC 1 Type 2", "SOC 2 Type 2", "ISO 27001", "FedRAMP (Procore for Government)"],
+    "support": ["24/7 support", "Free training", "Paid implementation packages"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "procore.com: Pricing", "url": "https://www.procore.com/pricing", "date": "2026"},
+      {"label": "procore.com: Drawings", "url": "https://www.procore.com/project-management/drawings", "date": "2026"},
+      {"label": "procore.com: Estimating", "url": "https://www.procore.com/estimating", "date": "2026"},
+      {"label": "procore.com: Security", "url": "https://www.procore.com/security", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "planswift", "name": "PlanSwift", "category": "construction-drawing-review-software",
+    "website": "https://www.planswift.com", "pricingUrl": "https://www.planswift.com/pricing/",
+    "tagline": "Windows takeoff and estimating software for measuring plans and pricing bids.",
+    "bestFor": "Estimators doing takeoff on Windows PCs",
+    "description": "PlanSwift is installed takeoff and estimating software for measuring and counting on plans and pricing jobs. Its Takeoff BOOST AI tools automate counting, scaling and bookmarking, and on the Core plan full takeoff.",
+    "pros": ["Published annual prices per seat", "14-day free trial with every feature and no card required", "AI auto-count, auto-scale and auto-bookmark on every paid plan"],
+    "cons": ["Runs only on 64-bit Windows; a Mac needs Boot Camp or a virtual machine", "Annual billing only, with no monthly option listed", "Auto Takeoff needs the more expensive Core plan"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "14-day free trial, all features, no credit card required", "minSeats": 1,
+    "plans": [
+      {"name": "Essential", "monthly": null, "annual": 166.67, "notes": "Per seat, billed yearly at $2,000. Takeoff and estimating, Auto Count, Auto Scale and Auto Bookmark, 2 hours of live training."},
+      {"name": "Core", "monthly": null, "annual": 250, "notes": "Per seat, billed yearly at $3,000. Adds the full Takeoff BOOST suite with Auto Takeoff."}
+    ],
+    "features": {"pdfMarkup": null, "quantityTakeoff": true, "revisionCompare": null, "punchListsRfis": null, "browserBased": false},
+    "platforms": ["Windows"],
+    "integrations": "Excel import and export; send bids to other estimating systems",
+    "support": ["Priority support", "Live 1-on-1 training"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "planswift.com: Pricing", "url": "https://www.planswift.com/pricing/", "date": "2026"},
+      {"label": "planswift.com: Home", "url": "https://www.planswift.com/", "date": "2026"},
+      {"label": "ConstructConnect Help: PlanSwift system requirements", "url": "https://help.constructconnect.com/getting-started-with-planswift-117/planswift-system-requirements-1649", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "stack", "name": "STACK", "category": "construction-drawing-review-software",
+    "website": "https://www.stackct.com", "pricingUrl": "https://www.stackct.com/pricing/",
+    "tagline": "Cloud platform for construction takeoff, estimating, plan markup and field management.",
+    "bestFor": "Subcontractors who want cloud takeoff with a free starting tier",
+    "description": "STACK is cloud software for quantity takeoff and estimating, with plan overlay to find changes between drawing versions. Its Build & Operate product adds plan markup, punch lists, issues and daily reports, with field apps for iOS, Android and Windows.",
+    "pros": ["Free takeoff tier with no limit on users", "Plan Overlay shows changes between drawing versions", "Measures area, linear, arc, pitched, count and volume"],
+    "cons": ["Monthly prices are not shown on the pricing pages", "Free tier allows 1 active project a month and 50 measurements per project", "Takeoff & Estimate plans cost $299 a user per month and up"],
+    "freePlan": true, "freePlanDetails": "1 active project per month, up to 300 plan pages, 50 measurements per project, plan viewing and markup, core takeoff tools, unlimited users.",
+    "trial": "7-day Pro trial for Takeoff & Estimate", "minSeats": 1,
+    "plans": [
+      {"name": "Free", "monthly": 0, "annual": 0, "notes": "Per account, unlimited users. 1 active project per month, 300 plan pages, 50 measurements per project."},
+      {"name": "Build & Operate Essential", "monthly": null, "annual": 49, "notes": "Per user, billed annually. Unlimited projects and documents, document control, plan review and markup."},
+      {"name": "Build & Operate Pro", "monthly": null, "annual": 79, "notes": "Per user, billed annually. Adds daily reports, custom forms, configurable workflows and schedule tracking."},
+      {"name": "Takeoff & Estimate Premium", "monthly": null, "annual": 299, "notes": "Per user, billed annually. Unlimited projects, plan pages, measurements and viewer seats."},
+      {"name": "Takeoff & Estimate Pro", "monthly": null, "annual": 349, "notes": "Per user, billed annually. Adds worksheet-style estimating and STACK for Excel."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Quote only. Unlimited users, API, SSO and volume pricing."}
+    ],
+    "features": {"pdfMarkup": true, "quantityTakeoff": true, "revisionCompare": true, "punchListsRfis": true, "browserBased": true},
+    "platforms": ["Web", "iOS", "Android", "Windows"],
+    "integrations": "STACK for Excel, ERP connectors (paid add-on)",
+    "support": ["In-app chat", "Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "stackct.com: Pricing", "url": "https://www.stackct.com/pricing/", "date": "2026"},
+      {"label": "stackct.com: Takeoff & Estimate pricing", "url": "https://www.stackct.com/takeoff-and-estimate-pricing/", "date": "2026"},
+      {"label": "stackct.com: Build & Operate pricing", "url": "https://www.stackct.com/build-and-operate-pricing/", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "togal-ai", "name": "Togal.AI", "category": "construction-drawing-review-software",
+    "website": "https://www.togal.ai", "pricingUrl": "https://www.togal.ai/pricing",
+    "tagline": "Cloud takeoff software that uses AI to detect, measure and count spaces and features on drawings.",
+    "bestFor": "Estimators who want automated AI takeoff",
+    "description": "Togal.AI is cloud takeoff software that automatically detects and measures spaces, counts items and compares drawing revisions to quantify what changed. Takeoffs export to Excel and other estimating tools, and several users can work on the same takeoff at once.",
+    "pros": ["Unlimited automated takeoffs on the Growth plan", "Compares drawing revisions and quantifies added or removed items", "Free external collaborators outside your account"],
+    "cons": ["Sign-up requires booking a demo", "Billed yearly, with no monthly option listed", "SSO and onboarding only on the custom-priced Business plan"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Growth", "monthly": null, "annual": 299, "notes": "Per user, billed yearly. Unlimited automated takeoffs, chat prompts and symbol searches; unlimited external collaborators."},
+      {"name": "Business", "monthly": null, "annual": null, "custom": true, "notes": "Custom price for 4 or more users. Adds onboarding, a dedicated support rep, quantity discounts and SSO."}
+    ],
+    "features": {"pdfMarkup": null, "quantityTakeoff": true, "revisionCompare": true, "punchListsRfis": null, "browserBased": true},
+    "platforms": ["Web"],
+    "hq": "Miami, United States",
+    "integrations": "Ediphi, ServiceTitan, Zebel; Excel export",
+    "support": ["Email", "In-app help", "Dedicated rep (Business)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "togal.ai: Pricing", "url": "https://www.togal.ai/pricing", "date": "2026"},
+      {"label": "togal.ai: Features", "url": "https://www.togal.ai/features", "date": "2026"}
+    ]
+  }
+]

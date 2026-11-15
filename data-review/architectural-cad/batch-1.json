@@ -1,0 +1,135 @@
+[
+  {
+    "slug": "revit", "name": "Autodesk Revit", "category": "architectural-cad-software",
+    "website": "https://www.autodesk.com/products/revit/overview", "pricingUrl": "https://www.autodesk.com/products/revit/buy",
+    "tagline": "BIM software for designing and documenting buildings and infrastructure in 3D.",
+    "bestFor": "BIM teams at architecture and engineering firms",
+    "description": "Revit is Autodesk's BIM application for modelling buildings with parametric walls, doors and windows, then producing sheets and schedules from that model. It is sold by subscription per user or through Autodesk's token-based Flex plan, and it runs on Windows only.",
+    "pros": ["Parametric BIM model with schedules and sheet documentation", "Imports and exports IFC, 3DM, SKP, OBJ and STEP", "Worksharing on a central model, plus Dynamo and an API for automation"],
+    "cons": ["Windows only; Mac users need a virtual machine or dual boot", "Subscription only, at $3,005 a year per user", "Free licences are for verified students and educators only"],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial", "minSeats": 1,
+    "plans": [
+      {"name": "Revit subscription", "monthly": 380, "annual": 250.42, "notes": "Per user, billed yearly at $3,005. 3-year term $9,020. Pay-as-you-go Flex from $99 for 33 tokens (Revit uses 10 tokens a day)."}
+    ],
+    "features": {"bimModeling": true, "nativeDwg": false, "ifcSupport": true, "builtInRendering": null, "perpetualLicense": false},
+    "platforms": ["Windows"],
+    "founded": "2000", "hq": "San Francisco, United States",
+    "integrations": "Twinmotion for Revit, Dynamo, Autodesk Forma, Autodesk App Store; IFC, 3DM, SKP, OBJ, STEP",
+    "support": ["24x7 online support and resources"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "autodesk.com: Buy Revit", "url": "https://www.autodesk.com/products/revit/buy", "date": "2026"},
+      {"label": "autodesk.com: Revit overview", "url": "https://www.autodesk.com/products/revit/overview", "date": "2026"},
+      {"label": "autodesk.com: Revit subscription FAQ", "url": "https://www.autodesk.com/solutions/revit-subscription-faq", "date": "2026"},
+      {"label": "autodesk.com: Revit free trial", "url": "https://www.autodesk.com/products/revit/free-trial", "date": "2026"},
+      {"label": "Wikipedia: Autodesk Revit", "url": "https://en.wikipedia.org/wiki/Autodesk_Revit", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "archicad", "name": "Graphisoft Archicad", "category": "architectural-cad-software",
+    "website": "https://graphisoft.com/solutions/archicad", "pricingUrl": "https://www.graphisoft.com/us/pricing/",
+    "tagline": "BIM software for architects that runs on both Windows and macOS.",
+    "bestFor": "Architects who want BIM on Mac or Windows",
+    "description": "Archicad is Graphisoft's BIM application for modelling, documenting and visualising buildings, and it runs natively on Windows and macOS. It is sold per seat in three subscription tiers, Studio, Collaborate and Max, which differ in teamwork hosting, MEP tools, add-ons and AI credits.",
+    "pros": ["Runs natively on both Windows and macOS", "Imports and exports IFC and DWG", "Higher tiers include cloud teamwork (BIMcloud SaaS) and MEP Designer"],
+    "cons": ["New commercial licences are subscription only", "Studio's teamwork uses self-hosted BIMcloud Basic, not the cloud service", "Free EDU licences are watermarked and cannot be used commercially"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "30-day free trial", "minSeats": 1,
+    "plans": [
+      {"name": "Archicad Studio", "monthly": 345, "annual": 201.17, "notes": "Per seat, plus tax, billed yearly at $2,414. Includes BIMcloud Basic (self-hosted) and BIMx Pro Baseline; no MEP Designer."},
+      {"name": "Archicad Collaborate", "monthly": 406, "annual": 236.67, "notes": "Per seat, plus tax, billed yearly at $2,840. Adds BIMcloud SaaS, MEP Designer and the ProKit Suite."},
+      {"name": "Archicad Max", "monthly": 800, "annual": 475, "notes": "Per seat, plus tax, billed yearly at $5,700. Adds all language versions and more AI credits."}
+    ],
+    "features": {"bimModeling": true, "nativeDwg": false, "ifcSupport": true, "builtInRendering": true, "perpetualLicense": false},
+    "platforms": ["Windows", "macOS"],
+    "founded": "1987", "hq": "Budapest, Hungary",
+    "integrations": "BIMcloud, BIMx, MEP Designer, Autodesk Forma connection (Collaborate and up)",
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "graphisoft.com: Pricing (United States)", "url": "https://www.graphisoft.com/us/pricing/", "date": "2026"},
+      {"label": "graphisoft.com: Archicad Studio plan", "url": "https://graphisoft.com/us/plans-and-products/archicad-studio/", "date": "2026"},
+      {"label": "graphisoft.com: Archicad product page", "url": "https://graphisoft.com/solutions/archicad", "date": "2026"},
+      {"label": "Graphisoft Help: Archicad 29 PhotoRendering", "url": "https://help.graphisoft.com/AC/29/INT/_AC29_Help/100_Visualization/100_Visualization-3.htm", "date": "2026"},
+      {"label": "Wikipedia: Archicad", "url": "https://en.wikipedia.org/wiki/Archicad", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "vectorworks-architect", "name": "Vectorworks Architect", "category": "architectural-cad-software",
+    "website": "https://www.vectorworks.net/en-US/architect", "pricingUrl": "https://customers.vectorworks.net/products",
+    "tagline": "2D drafting, 3D modelling and BIM software for architects in one application.",
+    "bestFor": "Design-led practices mixing 2D drafting and BIM",
+    "description": "Vectorworks Architect combines 2D drafting, 3D modelling on the Parasolid engine, and BIM with openBIM and IFC support. It is sold as a monthly or annual subscription from the Vectorworks online store.",
+    "pros": ["Lower annual price than Revit or Archicad", "Supports openBIM and IFC, with links to Revit, SketchUp and Rhino", "Integrated rendering, including Maxon Redshift"],
+    "cons": ["The US store sells subscriptions only", "Trial length is not stated on the vendor page", "Monthly billing costs $510 a year more than annual"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "Free trial (length not stated)", "minSeats": 1,
+    "plans": [
+      {"name": "Architect", "monthly": 170, "annual": 127.5, "notes": "Per licence (one user), billed yearly at $1,530 (US store)."},
+      {"name": "Design Suite", "monthly": null, "annual": 165, "notes": "Per licence, billed yearly at $1,980. Includes Architect, Landmark and Spotlight."}
+    ],
+    "features": {"bimModeling": true, "nativeDwg": false, "ifcSupport": true, "builtInRendering": true, "perpetualLicense": false},
+    "platforms": ["Windows", "macOS"],
+    "founded": "1985", "hq": "Columbia, Maryland, United States",
+    "integrations": "Revit, SketchUp, Rhino, Photoshop, Cinema 4D, Maxon Redshift",
+    "support": ["Phone and email (US business hours)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "Vectorworks: Subscription plans (US store)", "url": "https://customers.vectorworks.net/products", "date": "2026"},
+      {"label": "vectorworks.net: Vectorworks Architect", "url": "https://www.vectorworks.net/en-US/architect", "date": "2026"},
+      {"label": "vectorworks.net: Company", "url": "https://www.vectorworks.net/en-US/company", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "autocad-architecture", "name": "AutoCAD (Architecture toolset)", "category": "architectural-cad-software",
+    "website": "https://www.autodesk.com/products/autocad/overview", "pricingUrl": "https://www.autodesk.com/products/autocad/buy",
+    "tagline": "Autodesk's 2D and 3D CAD software, with an Architecture toolset included in the subscription.",
+    "bestFor": "DWG-based architectural drafting",
+    "description": "An AutoCAD subscription includes AutoCAD for Windows and Mac, AutoCAD Web, and seven industry toolsets, one of which is the Architecture toolset. The toolsets run on Windows only.",
+    "pros": ["DWG is the native file format", "All seven toolsets, including Architecture, come with every subscription", "One subscription covers Windows, Mac and web"],
+    "cons": ["The Architecture toolset is Windows only", "Not a full BIM tool like Revit", "Free trial is only 15 days"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "15-day free trial", "minSeats": 1,
+    "plans": [
+      {"name": "AutoCAD subscription", "monthly": 260, "annual": 174.58, "notes": "Per user, billed yearly at $2,095. 3-year term $6,285. Includes the Architecture toolset and six others (Windows only). Flex tokens also available."}
+    ],
+    "features": {"bimModeling": null, "nativeDwg": true, "ifcSupport": null, "builtInRendering": null, "perpetualLicense": false},
+    "platforms": ["Windows", "Mac (base AutoCAD only, no Architecture toolset)", "Web"],
+    "founded": "1982", "hq": "San Francisco, United States",
+    "integrations": "AutoCAD Web and mobile, Autodesk App Store",
+    "support": ["24x7 online support and resources"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "autodesk.com: Buy AutoCAD", "url": "https://www.autodesk.com/products/autocad/buy", "date": "2026"},
+      {"label": "autodesk.com: AutoCAD overview", "url": "https://www.autodesk.com/products/autocad/overview", "date": "2026"},
+      {"label": "autodesk.com: AutoCAD subscription FAQ", "url": "https://www.autodesk.com/solutions/autocad-subscription-faq", "date": "2026"},
+      {"label": "Wikipedia: AutoCAD", "url": "https://en.wikipedia.org/wiki/AutoCAD", "date": "2026"}
+    ]
+  },
+  {
+    "slug": "chief-architect", "name": "Chief Architect Premier", "category": "architectural-cad-software",
+    "website": "https://www.chiefarchitect.com/products/premier/", "pricingUrl": "https://www.chiefarchitect.com/products/premier/",
+    "tagline": "Residential design software that builds walls, roofs and framing automatically from floor plans.",
+    "bestFor": "Residential designers and home builders",
+    "description": "Chief Architect Premier is home design software whose automatic building tools generate walls, floors, roofs and framing as a model evolves, with GPU ray-traced rendering built in. It is sold by monthly or annual subscription, and one licence runs on either Windows or macOS.",
+    "pros": ["Automatic framing, roofs and building tools aimed at residential work", "Built-in rendering with GPU ray tracing", "One licence runs natively on Windows or Mac"],
+    "cons": ["IFC is not listed among its import and export formats", "New licences are subscription only", "Needs an internet connection every 14 days for licence checks"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "Free trial (printing, saving and exporting disabled)", "minSeats": 1,
+    "plans": [
+      {"name": "Premier", "monthly": 229, "annual": 166.25, "notes": "Per licence, billed yearly at $1,995. Includes upgrades, premium catalogs and priority support."}
+    ],
+    "features": {"bimModeling": null, "nativeDwg": false, "ifcSupport": null, "builtInRendering": true, "perpetualLicense": false},
+    "platforms": ["Windows", "macOS"],
+    "founded": "1992", "hq": "Coeur d'Alene, Idaho, United States",
+    "integrations": "Chief As-Built app, 3D Viewer app; DWG/DXF, SKP, OBJ import",
+    "support": ["Priority technical support (included)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "chiefarchitect.com: Chief Architect Premier", "url": "https://www.chiefarchitect.com/products/premier/", "date": "2026"},
+      {"label": "chiefarchitect.com: Detailed feature list", "url": "https://www.chiefarchitect.com/products/features/", "date": "2026"},
+      {"label": "chiefarchitect.com: Company", "url": "https://www.chiefarchitect.com/company/", "date": "2026"}
+    ]
+  }
+]
