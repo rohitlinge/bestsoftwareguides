@@ -64,6 +64,6 @@ HHS's sample wording is optional; the terms are what count.
 3. Workspace settings: sharing, retention, and who can invite the note taker.
 4. Your own risk analysis, updated to include the new vendor.
 
-Compare prices and HIPAA options side by side in our [AI meeting note takers ranking](/best/ai-meeting-note-takers/), which shows each tool's HIPAA option in its feature table.
+Compare prices and HIPAA options in our [HIPAA-compliant AI note takers](/best/hipaa-compliant-ai-note-takers/) list and the full [AI meeting note takers ranking](/best/ai-meeting-note-takers/).
 
 *Facts checked November 15, 2026 on the HHS and vendor pages linked above.*
