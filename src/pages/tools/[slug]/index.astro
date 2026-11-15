@@ -5,6 +5,7 @@ import Faq from '../../../components/Faq.astro';
 import Sources from '../../../components/Sources.astro';
 import LogoTile from '../../../components/LogoTile.astro';
 import ProductHead from '../../../components/ProductHead.astro';
+import Reviews from '../../../components/Reviews.astro';
 import { per, lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, alsoRankedIn, rankingsFor, featuredLabel, withArticle, quoteOnly, type Tool } from '../../../lib/data';
 import { crumbsLd, faqLd, softwareLd, articleLd } from '../../../lib/ld';
 
@@ -67,6 +68,8 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
     <div class="card pros"><strong>Where it wins</strong><ul>{t.pros.map((p) => <li>{p}</li>)}</ul></div>
     <div class="card cons"><strong>Where it falls short</strong><ul>{t.cons.map((p) => <li>{p}</li>)}</ul></div>
   </div>
+
+  <Reviews slug={t.slug} name={t.name} />
 
   <h2>{t.name} pricing</h2>
   <PriceTable tool={t} />

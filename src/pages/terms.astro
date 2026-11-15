@@ -5,8 +5,9 @@ import { site } from '../lib/data';
 <Base title="Terms of Use" description={`Terms of use for ${site.name}.`} path="/terms/">
   <article class="prose">
     <h1>Terms of use</h1>
-    <p class="note">Template. Review and adapt before launch.</p>
+    {/* TODO(owner): review and adapt with a lawyer. */}
     <p>Content on {site.name} is for general information. Prices and features change; always confirm on the vendor's own website before you buy. We are not responsible for decisions made from this information.</p>
+    <p>Reviews are the opinions of their authors, not of {site.name}. By submitting a review you confirm it is your own honest experience and that you were not paid or rewarded for it, and you allow us to publish it on this site. Reviews are moderated under the <a href="/review-guidelines/">review guidelines</a>.</p>
     <p>Our open data (<a href="/data/tools.json">/data/tools.json</a>) may be reused with attribution to {site.name} and a link to the page you used.</p>
   </article>
 </Base>

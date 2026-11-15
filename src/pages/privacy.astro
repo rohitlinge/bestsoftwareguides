@@ -5,8 +5,11 @@ import { site } from '../lib/data';
 <Base title="Privacy Policy" description={`Privacy policy for ${site.name}.`} path="/privacy/">
   <article class="prose">
     <h1>Privacy policy</h1>
-    <p class="note">Template. Review it (ideally with a lawyer) and edit it to match the analytics, ads and affiliate tools you actually use before launch.</p>
-    <p>{site.name} does not require accounts and does not sell personal data. Our hosting provider may log standard request data (IP address, browser, pages visited) for security and performance. If we add analytics or advertising, we will list the providers here and, where required, ask for consent.</p>
+    {/* TODO(owner): review this with a lawyer and list any analytics, ads or affiliate tools you add. */}
+    <p>{site.name} does not sell personal data. You can read the whole site without an account. Our hosting provider (Cloudflare) may log standard request data (IP address, browser, pages visited) for security and performance. If we add analytics or advertising, we will list the providers here and, where required, ask for consent.</p>
+    <h2>If you write a review</h2>
+    <p>Writing a review needs a LinkedIn sign-in. LinkedIn shares your name, profile photo, email address and member ID with us; we store them with your review in a Cloudflare database. We use them to show who wrote the review (as you choose: full name and photo, or first name and last initial), to stop duplicate reviews, and to contact you about your review. Your email is never published or shared. A signed sign-in cookie keeps you signed in for up to 30 days; signing out removes it.</p>
+    <p>You can edit or delete your review at any time on the tool's page. To delete everything we hold about you, email us. See the <a href="/review-guidelines/">review guidelines</a> for how reviews are moderated.</p>
     <p>If you email us, we use your email only to reply. Contact: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>.</p>
   </article>
 </Base>

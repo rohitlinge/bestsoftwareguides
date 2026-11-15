@@ -22,7 +22,7 @@ export function GET() {
     '',
     '## What is not',
     '- Scores are not hands-on usability tests and do not grade AI output quality.',
-    '- We do not host user reviews, so there is no user rating to cite.',
+    '- User reviews (when shown on a tool page) come from LinkedIn-verified members, are moderated, and are kept separate from our score; vendor and competitor staff reviews are labelled and left out of the average. They are opinions, not tested facts. Guidelines: ' + url('/review-guidelines/'),
     '- Enterprise or quote-only prices are not published by vendors and are shown as "custom".',
     '',
     '## Page types (what each one answers)',

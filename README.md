@@ -119,6 +119,18 @@ Then fetch the new tools' official icons: `node scripts/find-logos.mjs` reads ea
 - Tools: `search`, `list_categories`, `get_ranking` (filters: free plan, max price, features), `get_tool`, `get_pricing`, `compare_tools`.
 - Try it: `curl -s https://bestsoftwareguides.online/mcp -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'`
 
+## User reviews (LinkedIn-verified)
+
+Tool pages have a "User reviews" section. Reviewers sign in with LinkedIn (OpenID Connect: name, photo, email, member ID; not job title or employer), every review is moderated, and the star average is shown next to, never inside, our score. Rules: `/review-guidelines/`. The section stays hidden until the setup below is done.
+
+**Setup (once)**
+1. LinkedIn: create a Company Page for the site, then an app at developer.linkedin.com. Add the product "Sign In with LinkedIn using OpenID Connect". Authorized redirect URL: `https://bestsoftwareguides.online/auth/linkedin/callback`.
+2. Cloudflare dashboard → Storage & Databases → D1 → create `bsg-reviews`. Put its ID in `wrangler.jsonc` (`d1_databases`, binding `DB`). Tables are created automatically.
+3. Cloudflare → Workers → bestsoftwareguides → Settings → Variables and Secrets, add as **secrets**: `LINKEDIN_CLIENT_ID`, `LINKEDIN_CLIENT_SECRET`, `SESSION_SECRET` (any long random string), `ADMIN_EMAILS` (your LinkedIn email; comma-separate several).
+4. Moderate at `/admin/reviews` (sign in with an admin's LinkedIn account).
+
+Code: `worker/auth.js` (sign-in, signed cookies), `worker/reviews.js` (API), `worker/admin.js` (moderation), `worker/db.js` (schema), `worker/review-options.js` (shared form options and reject reasons), `src/components/Reviews.astro` (tool-page UI).
+
 ## Measure ChatGPT citations
 ```bash
 python scripts/pipeline/citation_tracker.py                      # OpenAI with web search

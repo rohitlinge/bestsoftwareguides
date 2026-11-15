@@ -40,7 +40,7 @@ export const softwareLd = (t: Tool, c: Category) => {
     ...(prices.length
       ? { offers: { '@type': 'AggregateOffer', priceCurrency: 'USD', lowPrice: Math.min(...prices), highPrice: Math.max(...prices), offerCount: t.plans.length, url: t.pricingUrl } }
       : {}),
-    // Editorial review of a third-party product (not self-serving). No aggregateRating: we have no user reviews.
+    // Editorial review of a third-party product (not self-serving). No aggregateRating yet: user reviews load in the browser, not at build time.
     review: {
       '@type': 'Review',
       author: authorLd(),

@@ -1,0 +1,171 @@
+---
+// LinkedIn-verified user reviews for one tool. Rendered hidden; the script reveals it only when the
+// Worker says reviews are switched on (LinkedIn secrets + database set), so nothing shows before setup.
+import { RELATIONSHIPS, COMPANY_SIZES, USAGE, LIMITS, REJECT_REASONS } from '../../worker/review-options.js';
+interface Props { slug: string; name: string; }
+const { slug, name } = Astro.props;
+---
+<section id="reviews" class="reviews" data-tool={slug} data-name={name} data-reasons={JSON.stringify(REJECT_REASONS)} hidden>
+  <div class="section-head">
+    <div>
+      <h2>User reviews of {name}</h2>
+      <p>From LinkedIn-verified members. Shown separately: user ratings never change <a href="/methodology/">our score</a>.</p>
+    </div>
+    <a href="/review-guidelines/">How reviews work</a>
+  </div>
+
+  <div class="rv-top">
+    <div class="card rv-summary">
+      <div class="rv-avg"><span class="num" data-avg>–</span><span class="rv-stars" data-avg-stars aria-hidden="true"></span><span class="small muted" data-count>No reviews yet</span></div>
+      <div class="rv-dist" data-dist></div>
+    </div>
+    <div class="card rv-cta" data-cta>
+      <strong>Used {name}?</strong>
+      <p class="small muted">Share what works and what doesn't. Sign in with LinkedIn so readers know you're a real person; we never post to your LinkedIn.</p>
+      <div data-cta-body></div>
+    </div>
+  </div>
+
+  <form class="card rv-form" data-form hidden novalidate>
+    <h3 id="write-review">Your review of {name}</h3>
+    <fieldset class="rv-rate">
+      <legend>Overall rating <span aria-hidden="true">*</span></legend>
+      <div class="rv-rate-inputs">
+        {[5, 4, 3, 2, 1].map((n) => <><input type="radio" name="rating" id={`rate-${n}`} value={n} required /><label for={`rate-${n}`} title={`${n} star${n > 1 ? 's' : ''}`}><span class="sr-only">{n} star{n > 1 ? 's' : ''}</span>★</label></>)}
+      </div>
+    </fieldset>
+    <label>Title <span aria-hidden="true">*</span><input name="title" maxlength={LIMITS.title[1]} minlength={LIMITS.title[0]} required placeholder="Sum it up in a line" /></label>
+    <label>What do you like best? <span aria-hidden="true">*</span><textarea name="pros" rows="4" maxlength={LIMITS.pros[1]} minlength={LIMITS.pros[0]} required></textarea></label>
+    <label>What do you dislike? <span aria-hidden="true">*</span><textarea name="cons" rows="4" maxlength={LIMITS.cons[1]} minlength={LIMITS.cons[0]} required></textarea></label>
+    <div class="rv-row">
+      <label>Your role (optional)<input name="role" maxlength={LIMITS.role[1]} placeholder="e.g. QA lead" /></label>
+      <label>Company size<select name="companySize"><option value="">Prefer not to say</option>{COMPANY_SIZES.map((s) => <option value={s}>{s} employees</option>)}</select></label>
+      <label>How long have you used it?<select name="usage"><option value="">Prefer not to say</option>{USAGE.map((s) => <option>{s}</option>)}</select></label>
+    </div>
+    <fieldset>
+      <legend>How are you connected to {name}? <span aria-hidden="true">*</span></legend>
+      {Object.entries(RELATIONSHIPS).map(([k, v]) => <label class="rv-inline"><input type="radio" name="relationship" value={k} required /> {v}</label>)}
+      <p class="small muted">Reviews from the vendor's or a competitor's staff are published with a label and left out of the average.</p>
+    </fieldset>
+    <fieldset>
+      <legend>Show my name as</legend>
+      <label class="rv-inline"><input type="radio" name="nameMode" value="short" checked /> <span data-short-name>First name and last initial</span></label>
+      <label class="rv-inline"><input type="radio" name="nameMode" value="full" /> <span data-full-name>Full name</span> with LinkedIn photo</label>
+    </fieldset>
+    <label class="rv-inline"><input type="checkbox" name="consent" required /> This is my own honest experience, I'm not being paid or rewarded for it, and I agree to the <a href="/review-guidelines/">review guidelines</a>.</label>
+    <p class="rv-error" data-error role="alert" hidden></p>
+    <div class="btn-row"><button class="btn" type="submit">Submit for moderation</button><button class="btn ghost" type="button" data-cancel>Cancel</button></div>
+  </form>
+
+  <div class="rv-list" data-list></div>
+  <button class="btn ghost" type="button" data-more hidden>Show more reviews</button>
+</section>
+
+<script>
+  const root = document.getElementById('reviews') as HTMLElement | null;
+  if (root) init(root);
+
+  type Review = { id: number; rating: number; title: string; pros: string; cons: string; role: string | null; companySize: string | null; usage: string | null; relationship: string; relationshipLabel: string; author: string; picture: string | null; date: string };
+
+  function esc(s: unknown) { return String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!); }
+  const stars = (n: number) => '★'.repeat(Math.round(n)) + '☆'.repeat(5 - Math.round(n));
+  const fmtDate = (d: string) => new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+
+  async function init(root: HTMLElement) {
+    const tool = root.dataset.tool!, name = root.dataset.name!;
+    const reasons = JSON.parse(root.dataset.reasons || '{}');
+    const $ = <T extends Element = HTMLElement>(sel: string) => root.querySelector(sel) as T;
+    const form = $<HTMLFormElement>('[data-form]');
+    const ctaBody = $('[data-cta-body]');
+    const here = location.pathname;
+    let shown = 10;
+
+    const [me, data] = await Promise.all([
+      fetch('/auth/me').then((r) => r.json()).catch(() => ({ enabled: false })),
+      fetch(`/api/reviews?tool=${encodeURIComponent(tool)}`).then((r) => r.json()).catch(() => ({ enabled: false })),
+    ]);
+    if (!me.enabled || !data.enabled) return; // reviews not switched on yet: keep the section hidden
+    root.hidden = false;
+
+    // summary
+    const s = data.summary;
+    $('[data-avg]').textContent = s.average != null ? s.average.toFixed(1) : '–';
+    $('[data-avg-stars]').textContent = s.average != null ? stars(s.average) : '';
+    $('[data-count]').textContent = s.count ? `${s.count} review${s.count === 1 ? '' : 's'}${s.counted !== s.count ? ` · ${s.counted} in the average` : ''}` : 'No reviews yet. Be the first.';
+    $('[data-dist]').innerHTML = s.distribution.map((d: any) => `<div class="rv-bar"><span>${d.stars}★</span><span class="meter"><span style="width:${s.counted ? (d.count / s.counted) * 100 : 0}%"></span></span><span>${d.count}</span></div>`).join('');
+    const headRating = document.querySelector('[data-user-rating]') as HTMLElement | null;
+    if (headRating && s.average != null) { headRating.textContent = `★ ${s.average.toFixed(1)} · ${s.count} user review${s.count === 1 ? '' : 's'}`; headRating.hidden = false; }
+
+    // list
+    const list = $('[data-list]'), more = $('[data-more]');
+    const renderList = () => {
+      list.innerHTML = data.reviews.slice(0, shown).map((r: Review) => `
+        <article class="card rv-item">
+          <header>
+            ${r.picture ? `<img class="rv-avatar" src="${esc(r.picture)}" alt="" referrerpolicy="no-referrer" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'rv-avatar',textContent:'${esc(r.author[0])}'}))">` : `<span class="rv-avatar">${esc(r.author[0])}</span>`}
+            <div>
+              <strong>${esc(r.author)}</strong> <span class="badge blue">✓ Verified LinkedIn member</span>${r.relationship === 'vendor' || r.relationship === 'competitor' ? ` <span class="badge dark">${esc(r.relationshipLabel)}</span>` : ''}
+              <div class="small muted">${[r.role, r.companySize && `${r.companySize} employees`, r.usage && `Used ${r.usage.toLowerCase()}`].filter(Boolean).map(esc).join(' · ')}</div>
+            </div>
+          </header>
+          <div class="rv-item-head"><span class="rv-stars" aria-label="${r.rating} out of 5 stars">${stars(r.rating)}</span><h3>${esc(r.title)}</h3><span class="small muted">${fmtDate(r.date)}</span></div>
+          <p><strong>What I like:</strong> ${esc(r.pros).replace(/\n/g, '<br>')}</p>
+          <p><strong>What I dislike:</strong> ${esc(r.cons).replace(/\n/g, '<br>')}</p>
+        </article>`).join('');
+      more.hidden = data.reviews.length <= shown;
+    };
+    renderList();
+    more.addEventListener('click', () => { shown += 10; renderList(); });
+
+    // call to action
+    const openForm = () => { form.hidden = false; form.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+    if (!me.user) {
+      ctaBody.innerHTML = `<a class="btn" href="/auth/linkedin/start?return=${encodeURIComponent(here + '#write-review')}">Sign in with LinkedIn to review</a>`;
+    } else {
+      const first = me.user.name.split(' ')[0], rest = me.user.name.split(' ').slice(1).join(' ');
+      $('[data-short-name]').textContent = rest ? `${first} ${rest[0]}.` : first;
+      $('[data-full-name]').textContent = me.user.name;
+      const m = data.mine;
+      const status = m ? ({ pending: 'Your review is waiting for moderation.', approved: 'Your review is published below.', rejected: `Your review was not published: ${esc(reasons[m.rejectReason] ?? 'see the guidelines')}. You can edit and resubmit it.` } as any)[m.status] : '';
+      ctaBody.innerHTML = `${m ? `<p class="small"><strong>${status}</strong></p>` : ''}
+        <div class="btn-row"><button class="btn" type="button" data-write>${m ? 'Edit your review' : 'Write a review'}</button>${m ? '<button class="btn ghost" type="button" data-delete>Delete it</button>' : ''}</div>
+        <p class="small muted" style="margin-top:8px">Signed in as ${esc(me.user.name)} · <a href="/auth/logout?return=${encodeURIComponent(here)}">Sign out</a></p>`;
+      if (m) {
+        (form.elements.namedItem('title') as HTMLInputElement).value = m.title;
+        (form.elements.namedItem('pros') as HTMLTextAreaElement).value = m.pros;
+        (form.elements.namedItem('cons') as HTMLTextAreaElement).value = m.cons;
+        (form.elements.namedItem('role') as HTMLInputElement).value = m.role ?? '';
+        (form.elements.namedItem('companySize') as HTMLSelectElement).value = m.companySize ?? '';
+        (form.elements.namedItem('usage') as HTMLSelectElement).value = m.usage ?? '';
+        form.querySelector<HTMLInputElement>(`input[name=rating][value="${m.rating}"]`)!.checked = true;
+        form.querySelector<HTMLInputElement>(`input[name=relationship][value="${m.relationship}"]`)!.checked = true;
+        form.querySelector<HTMLInputElement>(`input[name=nameMode][value="${m.nameMode}"]`)!.checked = true;
+      }
+      ctaBody.querySelector('[data-write]')!.addEventListener('click', openForm);
+      ctaBody.querySelector('[data-delete]')?.addEventListener('click', async () => {
+        if (!confirm(`Delete your review of ${name}? This cannot be undone.`)) return;
+        await fetch(`/api/reviews?tool=${encodeURIComponent(tool)}`, { method: 'DELETE' });
+        location.reload();
+      });
+      if (location.hash === '#write-review') openForm();
+    }
+
+    $('[data-cancel]').addEventListener('click', () => { form.hidden = true; });
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const err = $('[data-error]');
+      const f = new FormData(form);
+      const body = {
+        tool, rating: Number(f.get('rating')), title: f.get('title'), pros: f.get('pros'), cons: f.get('cons'), role: f.get('role'),
+        companySize: f.get('companySize'), usage: f.get('usage'), relationship: f.get('relationship'), nameMode: f.get('nameMode'), consent: f.get('consent') === 'on',
+      };
+      const btn = form.querySelector('button[type=submit]') as HTMLButtonElement;
+      btn.disabled = true;
+      const r = await fetch('/api/reviews', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+      const j = await r.json().catch(() => ({ error: 'Something went wrong. Please try again.' }));
+      btn.disabled = false;
+      if (!r.ok) { err.textContent = j.error; err.hidden = false; return; }
+      form.innerHTML = `<h3>Thank you!</h3><p>${esc(j.message)}</p>`;
+    });
+  }
+</script>

@@ -11,7 +11,7 @@ export function allUrls(): UrlEntry[] {
     { path: '/best/', lastmod: latest, published: '2000-01-01', indexable: true },
     { path: '/compare/', lastmod: latest, published: '2000-01-01', indexable: true },
     { path: '/blog/', lastmod: latest, published: '2000-01-01', indexable: true },
-    ...['/methodology/', '/about/', '/disclosure/', '/contact/', '/ai/'].map((p) => ({ path: p, lastmod: latest, published: '2000-01-01', indexable: true })),
+    ...['/methodology/', '/about/', '/disclosure/', '/contact/', '/ai/', '/review-guidelines/'].map((p) => ({ path: p, lastmod: latest, published: '2000-01-01', indexable: true })),
   ];
   for (const c of categories) {
     out.push({ path: `/best/${c.slug}/`, lastmod: c.updated, published: iso(c.publishDate), indexable: c.indexable });

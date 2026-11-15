@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../lib/data';
+import { RELATIONSHIPS, REJECT_REASONS, DAILY_LIMIT } from '../../worker/review-options.js';
+const description = `How ${site.name} collects, verifies and moderates user reviews from LinkedIn-verified members, and why negative reviews are never removed.`;
+---
+<Base title="Review Guidelines and Moderation" description={description} path="/review-guidelines/">
+  <article class="prose">
+    <h1>Review guidelines and moderation</h1>
+    <div class="answer">
+      <p>Anyone with a LinkedIn account can review a tool. We check that a real LinkedIn member wrote it, publish every honest first-hand review, positive or negative, and keep user ratings separate from <a href="/methodology/">our score</a>.</p>
+    </div>
+
+    <h2>How verification works</h2>
+    <p>You sign in with LinkedIn ("Sign In with LinkedIn using OpenID Connect"). LinkedIn tells us your name, profile photo, email address and a member ID. That is all. It does not tell us your job or employer, so reviews are labelled <strong>Verified LinkedIn member</strong>, not "verified employee". Your role and company size are what you tell us. We never post to LinkedIn and never see your password.</p>
+    <p>Each member can write one review per tool, and edit or delete it at any time. Up to {DAILY_LIMIT} reviews a day per member.</p>
+
+    <h2>Conflicts of interest</h2>
+    <p>Every reviewer says how they are connected to the product:</p>
+    <ul>{Object.values(RELATIONSHIPS).map((r) => <li>{r}</li>)}</ul>
+    <p>Reviews from the vendor's or a competitor's staff are published with that label and left out of the average rating. Do not accept payment, discounts or gifts in exchange for a review. {site.name} never offers incentives for reviews, and vendors cannot pay to remove one. This applies to featured partners too: featured placement has no effect on reviews.</p>
+
+    <h2>Moderation</h2>
+    <p>Every new or edited review is checked by a person before it appears, usually within 2 working days. <strong>A negative opinion is never a reason to reject a review.</strong> We only reject a review for one of these reasons, and tell the author which one:</p>
+    <ul>{Object.values(REJECT_REASONS).map((r) => <li>{r}</li>)}</ul>
+    <p>We do not edit review text. If something needs fixing, the author can edit and resubmit.</p>
+
+    <h2>Ratings and our score</h2>
+    <p>The user rating is the average star rating from customers and other users. It is shown next to, never inside, our score, which comes from the <a href="/methodology/">published formula</a> on dated pricing and feature data.</p>
+
+    <h2>Your data</h2>
+    <p>We store your LinkedIn name, photo, email and member ID with your reviews. Your email is never shown. You choose whether your review shows your full name and photo or only your first name and last initial. Deleting a review removes it at once. To delete everything we hold about you, email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>. See the <a href="/privacy/">privacy policy</a>.</p>
+
+    <h2>Report a review</h2>
+    <p>If you think a review breaks these guidelines, email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a> with the page and the reviewer's name.</p>
+  </article>
+</Base>

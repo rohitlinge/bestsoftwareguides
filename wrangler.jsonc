@@ -9,16 +9,23 @@
   // wrangler runs this before every deploy, so dist/ is always fresh on Workers Builds too
   // (its build step alone did not leave dist/ in place for the deploy step).
   "build": { "command": "npm run build" },
-  // MCP server for AI assistants at /mcp (worker/index.js). Only /mcp runs the Worker;
-  // every other URL is served straight from dist/ as before.
+  // worker/index.js runs only for the run_worker_first paths: the MCP server (/mcp), LinkedIn
+  // sign-in (/auth/*), the reviews API (/api/*) and moderation (/admin/*). Every other URL is
+  // served straight from dist/.
   "main": "worker/index.js",
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
-    "run_worker_first": ["/mcp", "/mcp/"],
+    "run_worker_first": ["/mcp", "/mcp/", "/auth/*", "/api/*", "/admin/*"],
     "not_found_handling": "404-page",
     "html_handling": "auto-trailing-slash"
   },
   // The site is served on its own domain; don't publish a duplicate copy on workers.dev.
-  "workers_dev": false
+  "workers_dev": false,
+  // Reviews: secrets LINKEDIN_CLIENT_ID, LINKEDIN_CLIENT_SECRET, SESSION_SECRET and ADMIN_EMAILS are
+  // set in the Cloudflare dashboard (Worker -> Settings -> Variables and Secrets), never in this file.
+  // Keep dashboard variables when deploying.
+  "keep_vars": true
+  // Reviews database: create a D1 database named "bsg-reviews", then add (with its real id):
+  // "d1_databases": [{ "binding": "DB", "database_name": "bsg-reviews", "database_id": "<id>" }]
 }

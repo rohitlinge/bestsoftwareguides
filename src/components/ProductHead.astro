@@ -21,6 +21,7 @@ const tabs = [
     <div class="meta" style="margin-top:8px">
       {t.featured ? <span class="badge featured">{featuredLabel}</span> : <span class="badge blue">#{t.rank} in {c.name}</span>}
       {t.freePlan && <span class="badge">Free plan</span>}
+      {current === 'overview' ? <a class="user-rating" href="#reviews" data-user-rating hidden></a> : null}
       <a href={`/best/${c.slug}/`}>See the {c.name} ranking</a>
     </div>
   </div>
