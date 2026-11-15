@@ -37,7 +37,7 @@ function errorPage(message, status = 400) {
   return new Response(
     `<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Sign-in problem</title>
 <body style="font-family:system-ui,sans-serif;max-width:560px;margin:60px auto;padding:0 20px;color:#0b0d12">
-<h1 style="font-size:1.5rem">Sign-in did not complete</h1><p>${message}</p><p><a href="/" style="color:#1d4ed8">Back to BestSoftwareGuides</a></p></body>`,
+<h1 style="font-size:1.5rem">Sign-in did not complete</h1><p>${message}</p><p><a href="/" style="color:#c2410c">Back to BestSoftwareGuides</a></p></body>`,
     { status, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } },
   );
 }

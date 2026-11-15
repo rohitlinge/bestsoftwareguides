@@ -9,7 +9,7 @@ import { loadData } from './mcp.js';
 const page = (title, body, status = 200) => new Response(`<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>${esc(title)}</title>
 <style>
-:root{--ink:#0b0d12;--ink2:#4b5563;--line:#e5e7eb;--bg2:#f6f8fc;--brand:#1d4ed8;--dark:#07090d}
+:root{--ink:#0b0d12;--ink2:#4b5563;--line:#e5e7eb;--bg2:#f6f8fc;--brand:#c2410c;--dark:#07090d}
 *{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--bg2);line-height:1.5}
 header{background:var(--dark);color:#fff;padding:14px 20px;display:flex;gap:16px;align-items:center}header a{color:#c3cad6}header strong{margin-right:auto}
 main{max-width:980px;margin:0 auto;padding:20px}nav.tabs{display:flex;gap:6px;margin-bottom:16px}nav.tabs a{padding:7px 14px;border-radius:8px;background:#fff;border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600}
