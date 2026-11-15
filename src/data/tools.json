@@ -5527,13 +5527,7 @@
     "name": "iceDQ",
     "category": "etl-testing-tools",
     "alsoIn": [
-      "data-reconciliation-tools",
-      "bi-report-testing-tools",
-      "power-bi-report-testing-tools",
-      "file-testing-tools",
-      "data-monitoring-testing-tools",
-      "data-quality-tools",
-      "api-testing-tools"
+      "data-reconciliation-tools"
     ],
     "website": "https://icedq.com",
     "logo": "https://cdn-ildhhnd.nitrocdn.com/lLTTsRqXojmKENiGvwrypcTvmrbIWtKJ/assets/images/source/rev-d92ee25/icedq.com/wp-content/uploads/2024/03/iceDQ-Favicon-Primary.svg",

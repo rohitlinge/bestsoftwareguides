@@ -183,7 +183,6 @@
     "singular": "ETL testing tool",
     "plural": "ETL testing tools",
     "topic": "Data Testing & Quality",
-    "featured": "icedq",
     "priceUnit": {
       "short": "mo",
       "long": "month"
@@ -232,7 +231,6 @@
     "singular": "data reconciliation tool",
     "plural": "data reconciliation tools",
     "topic": "Data Testing & Quality",
-    "featured": "icedq",
     "priceUnit": {
       "short": "mo",
       "long": "month"
@@ -270,7 +268,6 @@
     "singular": "data monitoring tool",
     "plural": "data monitoring tools",
     "topic": "Data Testing & Quality",
-    "featured": "icedq",
     "priceUnit": {
       "short": "mo",
       "long": "month"
@@ -308,7 +305,6 @@
     "singular": "data quality tool",
     "plural": "data quality tools",
     "topic": "Data Testing & Quality",
-    "featured": "icedq",
     "priceUnit": {
       "short": "mo",
       "long": "month"
@@ -357,7 +353,6 @@
     "singular": "Power BI report testing tool",
     "plural": "Power BI report testing tools",
     "topic": "Data Testing & Quality",
-    "featured": "icedq",
     "priceUnit": {
       "short": "mo",
       "long": "month"
@@ -391,7 +386,6 @@
     "singular": "BI report testing tool",
     "plural": "BI report testing tools",
     "topic": "Data Testing & Quality",
-    "featured": "icedq",
     "priceUnit": {
       "short": "mo",
       "long": "month"
@@ -436,7 +430,6 @@
     "singular": "file testing tool",
     "plural": "file testing tools",
     "topic": "Data Testing & Quality",
-    "featured": "icedq",
     "priceUnit": {
       "short": "mo",
       "long": "month"
