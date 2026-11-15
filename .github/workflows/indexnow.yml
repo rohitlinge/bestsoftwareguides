@@ -24,7 +24,8 @@ jobs:
         with:
           node-version: 22
       - name: Save the live URL list before the new build goes out
-        run: curl -sf -H "Cache-Control: no-cache" https://bestsoftwareguides.online/urls.json -o /tmp/urls-before.json || echo "[]" > /tmp/urls-before.json
+        run: |
+          curl -sf -H "Cache-Control: no-cache" https://bestsoftwareguides.online/urls.json -o /tmp/urls-before.json || echo "[]" > /tmp/urls-before.json
       - name: Wait for Cloudflare to deploy this commit (up to 5 minutes)
         run: |
           before=$(sha1sum /tmp/urls-before.json | cut -d' ' -f1)
