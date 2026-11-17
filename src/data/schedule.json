@@ -50,6 +50,16 @@
       "slug": "architectural-cad-software",
       "day": 1,
       "comparesDay": 1
+    },
+    {
+      "slug": "vpns",
+      "day": 3,
+      "comparesDay": 3
+    },
+    {
+      "slug": "website-builders",
+      "day": 3,
+      "comparesDay": 3
     }
   ],
   "posts": [
@@ -96,6 +106,26 @@
     {
       "slug": "cad-vs-bim-vs-drawing-review-software",
       "day": 1
+    },
+    {
+      "slug": "free-vs-paid-vpn",
+      "day": 3
+    },
+    {
+      "slug": "vpn-prices-after-first-term",
+      "day": 3
+    },
+    {
+      "slug": "hubspot-free-crm-pipeline-setup",
+      "day": 3
+    },
+    {
+      "slug": "per-seat-vs-flat-pricing",
+      "day": 3
+    },
+    {
+      "slug": "fix-fireflies-otter-not-joining-google-meet",
+      "day": 3
     }
   ]
 }
