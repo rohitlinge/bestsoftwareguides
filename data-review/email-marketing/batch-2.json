@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "activecampaign", "name": "ActiveCampaign", "category": "email-marketing-software",
+    "website": "https://www.activecampaign.com", "pricingUrl": "https://www.activecampaign.com/pricing",
+    "tagline": "Email marketing and automation platform with four plans priced by contact count.",
+    "bestFor": "Small and mid-size businesses that rely on automated email sequences",
+    "description": "ActiveCampaign is an email marketing and marketing automation platform with a visual automation builder, segmentation and optional CRM. It sells Starter, Plus, Pro and Enterprise plans whose price rises with the number of contacts, starting at 1,000 contacts.",
+    "pros": ["Multi-step automations on every plan, including Starter", "Annual billing cuts the monthly price by roughly 17-21%", "Transactional email and SMS sold as add-ons from ActiveCampaign itself"],
+    "cons": ["No free plan, only a 14-day trial", "Starter limits automations to 5 actions each and has no landing pages", "Smallest tier is 1,000 contacts, so very small lists still pay the 1,000-contact price"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "14-day free trial", "minSeats": 1,
+    "plans": [
+      {"name": "Starter", "monthly": 19, "annual": 15, "notes": "Price for 1,000 contacts (smallest tier); 10,000 emails/month (10x contacts). 1 user, 15 active business goals, 5 actions per automation, no landing pages. Annual = $180 billed yearly."},
+      {"name": "Plus", "monthly": 59, "annual": 49, "notes": "Price for 1,000 contacts (smallest tier); 10,000 emails/month (10x contacts). 1 user, 25 business goals, unlimited automation actions, landing pages and site messages. Annual = $588 billed yearly."},
+      {"name": "Pro", "monthly": 99, "annual": 79, "notes": "Price for 1,000 contacts (smallest tier); 12,000 emails/month (12x contacts). 3 users, 200 business goals, A/B testing in emails and automations. Annual = $948 billed yearly."},
+      {"name": "Enterprise", "monthly": 179, "annual": 145, "notes": "Price for 1,000 contacts (smallest tier); 15,000 emails/month (15x contacts). 5 users, 200 business goals. Annual = $1,740 billed yearly."}
+    ],
+    "features": {"marketingAutomation": true, "abTesting": true, "landingPages": true, "smsMarketing": true, "transactionalEmail": true},
+    "platforms": ["Web", "iOS", "Android"],
+    "founded": "2003", "hq": "Chicago, United States",
+    "integrations": "Over 1,000 app integrations",
+    "compliance": [], "support": [],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "activecampaign.com: Pricing", "url": "https://www.activecampaign.com/pricing", "date": "2026"},
+      {"label": "activecampaign.com: Pricing catalog data used by the pricing page (ac2024, USD)", "url": "https://www.activecampaign.com/marketing/api/v1/pricing-catalog?c=ac2024&currency=USD", "date": "2026"},
+      {"label": "Wikipedia: ActiveCampaign", "url": "https://en.wikipedia.org/wiki/ActiveCampaign", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Starter", "at1000": {"monthly": 19, "annual": 15, "tier": "1,000 contacts"}, "at10000": {"monthly": 189, "annual": 149, "tier": "10,000 contacts"}},
+        {"name": "Plus", "at1000": {"monthly": 59, "annual": 49, "tier": "1,000 contacts"}, "at10000": {"monthly": 239, "annual": 189, "tier": "10,000 contacts"}},
+        {"name": "Pro", "at1000": {"monthly": 99, "annual": 79, "tier": "1,000 contacts"}, "at10000": {"monthly": 469, "annual": 375, "tier": "10,000 contacts"}},
+        {"name": "Enterprise", "at1000": {"monthly": 179, "annual": 145, "tier": "1,000 contacts"}, "at10000": {"monthly": 739, "annual": 589, "tier": "10,000 contacts"}}
+      ],
+      "freePlanLimits": "No free plan; 14-day free trial.",
+      "notes": "The pricing page renders prices with JavaScript; the figures come from the USD pricing catalog the page loads (yearly totals divided by 12: Starter $180, Plus $588, Pro $948, Enterprise $1,740 at 1,000 contacts; $1,788 / $2,268 / $4,500 / $7,068 at 10,000). Annual billing exists; the saving is not a flat percentage (about 21% Starter, 17% Plus, 20% Pro, 19% Enterprise). The page also advertises a 30-day money-back guarantee. Send limits scale with contacts (10x Starter/Plus, 12x Pro, 15x Enterprise). SMS is an add-on on Plus, Pro and Enterprise (not available on Starter); transactional email is an add-on on all plans. The catalog also contains a separate engagement-based model (ai2026) that is not shown as the main plan cards."
+    }
+  },
+  {
+    "slug": "klaviyo", "name": "Klaviyo", "category": "email-marketing-software",
+    "website": "https://www.klaviyo.com", "pricingUrl": "https://www.klaviyo.com/pricing",
+    "tagline": "Email and SMS marketing platform for online stores, priced by active profiles.",
+    "bestFor": "Ecommerce brands that want email tied to store data",
+    "description": "Klaviyo is a marketing platform for ecommerce that combines email, SMS, flows, segmentation, reviews and a customer data platform. Its Email and Marketing plans are priced by the number of active profiles, with a free plan for up to 250 active profiles.",
+    "pros": ["Free plan with 250 active profiles and 500 emails a month", "Flows, segmentation and A/B testing included", "Transactional flow emails available on paid accounts after approval"],
+    "cons": ["No annual billing option shown on the pricing page", "SMS and MMS are a paid add-on on the Email and Marketing plans", "Price climbs quickly past 10,000 active profiles"],
+    "freePlan": true, "freePlanDetails": "Up to 250 active profiles and 500 emails per month; $5 of mobile messages and $5 of Composer usage per month.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Email", "monthly": 20, "annual": null, "notes": "Price for 500 active profiles (smallest tier); 5,000 emails/month. Profiles are treated as contacts. SMS/MMS is an add-on."},
+      {"name": "Marketing", "monthly": 25, "annual": null, "notes": "Price for 500 active profiles (smallest tier); 5,000 emails/month. Adds social marketing and Customer Hub for the full profile count and reviews with no order limit. Promo: first month for $1 for up to 5,000 active profiles (limited time); regular price shown."}
+    ],
+    "features": {"marketingAutomation": true, "abTesting": true, "landingPages": true, "smsMarketing": true, "transactionalEmail": true},
+    "platforms": ["Web", "iOS", "Android"],
+    "founded": "2012", "hq": "Boston, United States",
+    "integrations": null,
+    "compliance": [], "support": [],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "klaviyo.com: Pricing", "url": "https://www.klaviyo.com/pricing", "date": "2026"},
+      {"label": "help.klaviyo.com: How to use flows to send transactional emails", "url": "https://help.klaviyo.com/hc/en-us/articles/360003165732", "date": "2026"},
+      {"label": "help.klaviyo.com: Getting started with Landing Pages", "url": "https://help.klaviyo.com/hc/en-us/articles/45373923808155", "date": "2026"},
+      {"label": "Wikipedia: Klaviyo", "url": "https://en.wikipedia.org/wiki/Klaviyo", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Email", "at1000": {"monthly": 30, "annual": null, "tier": "1,000 active profiles (10,000 emails/month)"}, "at10000": {"monthly": 150, "annual": null, "tier": "10,000 active profiles (100,000 emails/month)"}},
+        {"name": "Marketing", "at1000": {"monthly": 40, "annual": null, "tier": "1,000 active profiles (10,000 emails/month)"}, "at10000": {"monthly": 195, "annual": null, "tier": "10,000 active profiles (100,000 emails/month)"}}
+      ],
+      "freePlanLimits": "250 active profiles, 500 emails per month, $5 of mobile messages and $5 of Composer usage per month.",
+      "notes": "Klaviyo prices by active profiles; treated here as contacts. Tier prices come from the slider data embedded in the vendor's pricing page (USD). No annual billing is offered on the page, so annual fields are null. Sends are 10x profiles on both paid plans. Custom plan (talk to sales) covers over 150,000 active profiles. Marketing plan promo: first month $1 for up to 5,000 active profiles. A pricing FAQ says the free plan gets 150 SMS credits, while the plan card says $5 of mobile messages per month; the card is used here. Transactional status for flow emails needs a paid account and Klaviyo review."
+    }
+  },
+  {
+    "slug": "getresponse", "name": "GetResponse", "category": "email-marketing-software",
+    "website": "https://www.getresponse.com", "pricingUrl": "https://www.getresponse.com/pricing",
+    "tagline": "Email marketing platform with automation, landing pages, webinars and course tools.",
+    "bestFor": "Small businesses and creators who want email plus landing pages and webinars",
+    "description": "GetResponse is an email marketing platform that adds automation workflows, landing pages, a website builder, webinars and online courses. It sells Starter, Marketer and Creator plans priced by list size, plus a custom-priced Enterprise plan and a limited free account.",
+    "pros": ["Free account for up to 500 contacts after the 14-day trial", "Unlimited monthly sends on paid plans", "18% off with 12-month billing"],
+    "cons": ["Starter allows only one automation workflow and has no A/B testing", "SMS and transactional email are only on the custom-priced Enterprise plan", "Smallest paid tier is 1,000 contacts"],
+    "freePlan": true, "freePlanDetails": "Up to 500 contacts (unconfirmed and removed contacts count) and 2,500 messages per month; no A/B tests, landing pages limited to 1,000 unique visits, webinars up to 10 people, GetResponse badge on messages.",
+    "trial": "14-day free trial of premium features, no credit card", "minSeats": 1,
+    "plans": [
+      {"name": "Starter", "monthly": 19, "annual": 15.58, "notes": "Price for 1,000 contacts (smallest tier); unlimited email sends. One automation workflow, landing pages and signup forms, no A/B testing, up to 3 users."},
+      {"name": "Marketer", "monthly": 59, "annual": 48.38, "notes": "Price for 1,000 contacts (smallest tier); unlimited email sends. Unlimited automation workflows, A/B testing, abandoned cart recovery, sales funnels, up to 5 users."},
+      {"name": "Creator", "monthly": 69, "annual": 56.58, "notes": "Price for 1,000 contacts (smallest tier); unlimited email sends. Everything in Marketer plus webinars (up to 100 attendees), website builder and course creator."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing. Adds SMS marketing, transactional emails (API/SMTP), dedicated sending domain and IP, SSO, priority support; monthly, 12-month or 24-month billing."}
+    ],
+    "features": {"marketingAutomation": true, "abTesting": true, "landingPages": true, "smsMarketing": true, "transactionalEmail": true},
+    "platforms": ["Web", "iOS", "Android"],
+    "founded": "1998", "hq": "Gdańsk, Poland",
+    "integrations": null,
+    "compliance": [], "support": ["Chat"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "getresponse.com: Pricing", "url": "https://www.getresponse.com/pricing", "date": "2026"},
+      {"label": "getresponse.com: Can I try GetResponse before I buy?", "url": "https://www.getresponse.com/help/can-i-try-getresponse-before-i-buy.md", "date": "2026"},
+      {"label": "getresponse.com: How many messages can I send using my Free account?", "url": "https://www.getresponse.com/help/how-many-messages-can-i-send-using-my-free-account.md", "date": "2026"},
+      {"label": "Wikipedia: GetResponse", "url": "https://en.wikipedia.org/wiki/GetResponse", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Starter", "at1000": {"monthly": 19, "annual": 15.58, "tier": "1,000 contacts"}, "at10000": {"monthly": 79, "annual": 64.78, "tier": "10,000 contacts"}},
+        {"name": "Marketer", "at1000": {"monthly": 59, "annual": 48.38, "tier": "1,000 contacts"}, "at10000": {"monthly": 114, "annual": 93.48, "tier": "10,000 contacts"}},
+        {"name": "Creator", "at1000": {"monthly": 69, "annual": 56.58, "tier": "1,000 contacts"}, "at10000": {"monthly": 134, "annual": 109.88, "tier": "10,000 contacts"}}
+      ],
+      "freePlanLimits": "500 contacts and 2,500 messages per month; no A/B tests; landing pages capped at 1,000 unique visits; webinars up to 10 people.",
+      "notes": "The page localised to INR/EUR for this location, but it embeds a USD price table (pricing2025, currency USD), which is used here. 12-month billing is 18% off (per-month figures shown); 24-month billing is only for Enterprise. List tiers: 1k, 2.5k, 5k, 10k, 25k, 50k, 100k. The page meta description says 'Plans from $13.30/mo', which does not match the embedded USD table (lowest is $15.58/month on annual Starter); it may refer to an older or promotional price. A Black Friday banner exists in the page code but was flagged inactive. 50% off monthly plans for nonprofits. Help articles disagree on how many landing pages the free account can publish."
+    }
+  },
+  {
+    "slug": "moosend", "name": "Moosend", "category": "email-marketing-software",
+    "website": "https://moosend.com", "pricingUrl": "https://moosend.com/pricing/",
+    "tagline": "Low-cost email marketing and automation tool with one self-serve plan priced by contacts.",
+    "bestFor": "Small businesses on a tight budget that want unlimited sends",
+    "description": "Moosend is an email marketing and automation tool owned by Constant Contact, with a newsletter editor, automation workflows, landing pages and forms. It sells one self-serve Pro plan priced by contact count, plus custom-priced Moosend+ and Enterprise plans.",
+    "pros": ["Pro starts at $9 a month for 500 contacts with unlimited sends", "20% off with annual billing, 15% off with biannual billing", "30-day free trial with no credit card"],
+    "cons": ["No permanent free plan", "Transactional email is an add-on on the custom Moosend+ plan, not Pro", "No built-in SMS marketing listed on the pricing page"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "30-day free trial, no credit card required", "minSeats": 1,
+    "plans": [
+      {"name": "Pro", "monthly": 9, "annual": 7, "notes": "Price for 500 contacts (smallest tier); unlimited email campaigns/sends. 5 team members. Biannual billing $8/month."},
+      {"name": "Moosend+", "monthly": null, "annual": null, "custom": true, "notes": "Custom plan: all Pro features plus chosen add-ons (transactional emails, dedicated IPs, custom reports, SSO & SAML, hosted files, extra team members)."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Quote only. All Pro and Enterprise-level features, 10+ team members, account manager, priority support."}
+    ],
+    "features": {"marketingAutomation": true, "abTesting": true, "landingPages": true, "smsMarketing": false, "transactionalEmail": true},
+    "platforms": ["Web"],
+    "founded": null, "hq": null,
+    "integrations": "80+ integrations and an API",
+    "compliance": [], "support": ["Email", "Live chat", "Knowledge base"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "moosend.com: Pricing", "url": "https://moosend.com/pricing/", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Pro", "at1000": {"monthly": 16, "annual": 13, "tier": "1,000 contacts"}, "at10000": {"monthly": 88, "annual": 70, "tier": "10,000 contacts"}}
+      ],
+      "freePlanLimits": "No free plan. The 30-day trial allows unlimited sends to up to 1,000 contacts, 1 published automation workflow, 1 unpublished form and landing page, 2 team members.",
+      "notes": "Prices read from the data attributes of the contact selector on Moosend's pricing page (USD): monthly, biannual (15% off) and annual (20% off) per-month figures, which Moosend rounds to whole dollars. Tiers: 500, 1k, 2k, 3k, 5k, 8k, 10k, 25k and up to 1M contacts. Nonprofits get 25% off, stackable with the annual discount. Pay-as-you-go email credits also exist (350,000 credits for $350, never expire). SMS set to false: the plan comparison lists no SMS channel and searches found only third-party SMS integrations. Founded/HQ not set because no reliable source was checked; the page footer says Moosend is now a Constant Contact company."
+    }
+  },
+  {
+    "slug": "omnisend", "name": "Omnisend", "category": "email-marketing-software",
+    "website": "https://www.omnisend.com", "pricingUrl": "https://www.omnisend.com/pricing/",
+    "tagline": "Email, SMS and push marketing platform built for online stores.",
+    "bestFor": "Ecommerce stores that want email and SMS in one tool",
+    "description": "Omnisend is an ecommerce marketing platform that combines email, SMS/MMS and web push with pre-built store workflows, forms and landing pages. It has a free plan, Standard and Pro plans priced by contact count, and a custom plan above 150,000 active profiles.",
+    "pros": ["Free plan includes pre-built ecommerce workflows, A/B testing and landing pages", "Pro includes unlimited emails under a fair-use policy (60x list)", "Order confirmation flows can be triggered through the API"],
+    "cons": ["No annual billing option", "SMS/MMS only on the Pro plan, paid per message", "Pro has a 2,500-contact minimum price"],
+    "freePlan": true, "freePlanDetails": "250 contacts, 500 emails per month and 500 web push notifications per month; no time limit, no credit card.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Standard", "monthly": 16, "annual": null, "notes": "Price for up to 500 contacts (smallest paid tier); 6,000 emails/month (12x list). Unlimited web push, custom workflows. Black Friday promo: 30% off for 3 months ($11.20/month); regular price shown."},
+      {"name": "Pro", "monthly": 59, "annual": null, "notes": "Price for up to 2,500 contacts (smallest Pro tier; smaller lists pay the same); unlimited emails under fair use (up to 60x list). SMS/MMS from $0.007 per message. Black Friday promo: 30% off for 3 months ($41.30/month); regular price shown."},
+      {"name": "Custom", "monthly": null, "annual": null, "custom": true, "notes": "For more than 150,000 active profiles; custom SMS rates."}
+    ],
+    "features": {"marketingAutomation": true, "abTesting": true, "landingPages": true, "smsMarketing": true, "transactionalEmail": true},
+    "platforms": ["Web"],
+    "founded": "2014", "hq": null,
+    "integrations": null,
+    "compliance": [], "support": ["24/7 support"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "omnisend.com: Pricing", "url": "https://www.omnisend.com/pricing/", "date": "2026"},
+      {"label": "omnisend.com: Pricing page script with tier price table", "url": "https://www.omnisend.com/wp-content/themes/omnisend-v2/assets/js/pricing-new.min.js", "date": "2026"},
+      {"label": "api-docs.omnisend.com: How to enable order confirmation flow", "url": "https://api-docs.omnisend.com/docs/how-to-enable-order-confirmation-flow", "date": "2026"},
+      {"label": "Wikipedia: Omnisend", "url": "https://en.wikipedia.org/wiki/Omnisend", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Standard", "at1000": {"monthly": 20, "annual": null, "tier": "501-1,000 contacts (12,000 emails/month)"}, "at10000": {"monthly": 132, "annual": null, "tier": "9,001-10,000 contacts (120,000 emails/month)"}},
+        {"name": "Pro", "at1000": {"monthly": 59, "annual": null, "tier": "501-1,000 contacts (billed at the 2,500-contact minimum)"}, "at10000": {"monthly": 150, "annual": null, "tier": "9,001-10,000 contacts"}}
+      ],
+      "freePlanLimits": "250 contacts, 500 emails/month, 500 web push/month.",
+      "notes": "Tier prices come from the price table in the vendor's own pricing-page script (USD; local-currency prices are estimates and billing is in USD). No annual billing; the only prepay option shown is 'Pay 3 months upfront (save 30%)', which is the current Black Friday offer (30% off for 3 months). Regular prices are recorded. Global SMS add-on shows a $50/month base with US rates from $0.009 down to $0.007 per SMS by volume. The Standard plan card says 6,000 emails at 500 contacts and the table says 12x list, which agree. Transactional email set true because Omnisend documents order-confirmation flows triggered through its API; it does not offer a general SMTP relay, and password resets on Shopify/WooCommerce are sent by the store platform. Founded 2014 (as Soundest) per Wikipedia; HQ left null because the Wikipedia article carries an undisclosed-paid-editing notice."
+    }
+  }
+]

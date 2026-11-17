@@ -507,7 +507,7 @@
     "buyingTips": [
       "Check whether the price is per user or per account: Copy.ai, Writesonic, Anyword and Sudowrite charge a flat price that includes a set number of seats.",
       "Look at usage caps, not just the price: AI prompt limits (Grammarly), credits (Sudowrite) and daily rewrite limits (Wordtune) decide what you can actually do.",
-      "Annual billing roughly halves the cost on several tools, for example Grammarly Pro (2 vs 0 a month) and QuillBot Premium (.33 vs 9.95).",
+      "Annual billing roughly halves the cost on several tools, for example Grammarly Pro ($12 vs $30 a month) and QuillBot Premium ($8.33 vs $19.95).",
       "If you publish for clients or students, check that the plan you pick includes the plagiarism checker; free tiers usually do not.",
       "Marketing teams should confirm brand voice limits per plan, since entry tiers often allow only one or two voices."
     ],
@@ -630,7 +630,7 @@
     "buyingTips": [
       "Decide between 2D drafting and BIM first: BIM tools (Revit, Archicad, Vectorworks, Allplan) cost more but produce schedules and coordinated sheets from one model.",
       "Check the operating system: Revit, Allplan and the AutoCAD Architecture toolset are Windows only, while Archicad, Vectorworks, Chief Architect and Rhino run on Mac.",
-      "Price the full year: the main BIM tools cost about ,530 to ,005 per user a year on annual billing, and month-to-month billing costs roughly a third to over two-thirds more (Vectorworks +33%, Revit +52%, Archicad Studio +72%).",
+      "Price the full year: the main BIM tools cost about $1,530 to $3,005 per user a year on annual billing, and month-to-month billing costs roughly a third to over two-thirds more (Vectorworks +33%, Revit +52%, Archicad Studio +72%).",
       "If you want to own the software outright, Rhino and BricsCAD still sell one-time licences; most others are subscription only.",
       "Confirm IFC support if you exchange models with consultants who use a different BIM tool."
     ],
@@ -671,6 +671,145 @@
         "ruleText": "Builds an intelligent BIM model (walls, doors, schedules), not only lines or geometry.",
         "rule": {
           "feature": "bimModeling"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "vpns",
+    "name": "VPN Services",
+    "singular": "VPN",
+    "plural": "VPNs",
+    "topic": "Security & Privacy",
+    "intro": "A VPN encrypts your internet traffic and routes it through a server in another location, hiding your IP address from the sites you visit and your traffic from the local network. Consumer VPNs are sold per account, not per user, and almost all of them advertise a low first-term price on a 1- or 2-year plan that renews at a higher yearly rate. Compare the renewal price and the device limit, not just the headline monthly figure.",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "buyingTips": [
+      "Read the renewal line, not the headline: NordVPN Basic costs $73.35 for the first 15 months, then renews at $139.08 a year; Surfshark Starter costs $44.85 for 15 months, then $79 a year.",
+      "Long plans usually renew yearly at the regular rate: NordVPN, ExpressVPN, Surfshark, Proton VPN and IPVanish 2-year plans all switch to a yearly renewal price after the first term.",
+      "Private Internet Access is the exception in our list: its 1-year plan renews at the same $47.88 a year.",
+      "Count your devices: Surfshark, Private Internet Access, IPVanish and Windscribe allow unlimited simultaneous connections, NordVPN allows 10, CyberGhost 7 and Mullvad 5.",
+      "Check the refund window before you commit to a long plan: most give 30 days, CyberGhost 45 days and Mullvad 14 days.",
+      "Prefer a VPN whose no-logs policy has been checked by a named audit firm; the auditor and year are on each tool's page."
+    ],
+    "featureLabels": {
+      "killSwitch": "Kill switch",
+      "splitTunneling": "Split tunneling",
+      "wireGuard": "WireGuard protocol",
+      "auditedNoLogs": "Independently audited no-logs policy",
+      "unlimitedDevices": "Unlimited devices on the entry plan"
+    },
+    "faqs": [
+      {
+        "q": "Why is a VPN so much cheaper on a 2-year plan?",
+        "a": "The 2-year price is an introductory deal paid up front. After the first term, most VPNs renew yearly at a higher regular price, for example NordVPN Basic at $139.08 a year and ExpressVPN Basic at $99.95 a year."
+      },
+      {
+        "q": "Is there a good free VPN?",
+        "a": "Proton VPN has a permanent free plan with no data cap, limited to 1 device and servers in 10 countries. Windscribe's free plan gives 10GB a month with a confirmed email. Read free vs paid VPN for what you give up."
+      }
+    ],
+    "compareTop": 6,
+    "useCases": [
+      {
+        "slug": "vpns-for-linux",
+        "name": "VPNs for Linux",
+        "singular": "VPN for Linux",
+        "intro": "Every VPN here ships a Linux app, not just setup instructions for a manual OpenVPN or WireGuard configuration.",
+        "ruleText": "Has a Linux app.",
+        "rule": {
+          "platform": "Linux"
+        }
+      },
+      {
+        "slug": "vpns-with-unlimited-devices",
+        "name": "VPNs with Unlimited Devices",
+        "singular": "VPN with unlimited devices",
+        "intro": "One subscription covers every phone, laptop and TV in the house. These VPNs set no limit on simultaneous connections on their entry plan.",
+        "ruleText": "Allows unlimited simultaneous connections on the cheapest paid plan.",
+        "rule": {
+          "feature": "unlimitedDevices"
+        }
+      },
+      {
+        "slug": "cheap-vpns",
+        "name": "Cheap VPNs (Under $4 a Month)",
+        "singular": "cheap VPN",
+        "intro": "These VPNs cost under $4 a month on their 1-year plan in the first term. Check each one's renewal price: most rise after the first year.",
+        "ruleText": "The 1-year plan costs under $4 a month for the first term.",
+        "rule": {
+          "maxEntryPrice": 3.99
+        }
+      }
+    ]
+  },
+  {
+    "slug": "website-builders",
+    "name": "Website Builders",
+    "singular": "website builder",
+    "plural": "website builders",
+    "topic": "Websites & Marketing",
+    "intro": "Website builders host your site and give you templates and a visual editor, so you can publish without writing code. They split into all-round builders (Wix, Squarespace, WordPress.com, Jimdo, GoDaddy), design-led builders for marketers and designers (Webflow, Framer), store-first platforms (Shopify), hosting companies with a builder included (Hostinger) and one-page tools (Carrd). Prices are per website, and the first-term price is not always what you pay at renewal.",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "buyingTips": [
+      "Check the renewal price: Hostinger's Premium plan costs $1.99 a month for the first term, then renews at $10.99 a month. Wix, Webflow, WordPress.com, Framer and Shopify show one price with no first-term discount.",
+      "The free domain lasts one year only. After that it renews at the registrar's standard rate, which none of these builders prints on its pricing page.",
+      "Selling online? Compare transaction fees as well as the plan price: Shopify Basic adds 2% on sales through third-party payment providers, and Webflow's Ecommerce Standard plan charges 2%.",
+      "Multi-year terms cut the price further on some builders: WordPress.com Personal is $9 billed monthly, $4 a month billed yearly and $2.75 a month on a 3-year term.",
+      "Free plans put your site on the builder's own subdomain with its branding (wixsite.com, wordpress.com, webflow.io, carrd.co). Pay for a plan before you buy a custom domain."
+    ],
+    "featureLabels": {
+      "ecommerce": "Built-in online store",
+      "freeDomain": "Free domain for the first year",
+      "blogging": "Built-in blog",
+      "aiBuilder": "AI site generator",
+      "memberships": "Member-only content or paid memberships"
+    },
+    "faqs": [
+      {
+        "q": "Which website builder is cheapest?",
+        "a": "For a one-page site, Carrd Pro Standard costs $19 a year for 10 sites with custom domains. For a full site, WordPress.com Personal costs $4 a month on yearly billing, and Hostinger's Premium plan costs $1.99 a month for the first term but renews at $10.99 a month."
+      },
+      {
+        "q": "Do website builders raise the price after the first year?",
+        "a": "Some do. Hostinger's builder plans renew at about 5 to 6 times the first-term price. Wix, Webflow, WordPress.com, Framer, Shopify and Carrd list one price with no intro discount, but the free domain included with annual plans renews at the standard domain rate after year one."
+      }
+    ],
+    "compareTop": 6,
+    "useCases": [
+      {
+        "slug": "website-builders-for-ecommerce",
+        "name": "Website Builders for Ecommerce",
+        "singular": "website builder for ecommerce",
+        "intro": "Every builder here can run an online store with a built-in cart and checkout on at least one plan. Check which plan adds selling and what transaction fee it charges.",
+        "ruleText": "Has a built-in online store on at least one plan.",
+        "rule": {
+          "feature": "ecommerce"
+        }
+      },
+      {
+        "slug": "website-builders-with-free-domain",
+        "name": "Website Builders with a Free Domain",
+        "singular": "website builder with a free domain",
+        "intro": "These builders include a custom domain free for the first year when you pay annually. The domain then renews at the standard rate, so budget for it from year two.",
+        "ruleText": "Includes a free custom domain for the first year on an annual plan.",
+        "rule": {
+          "feature": "freeDomain"
+        }
+      },
+      {
+        "slug": "cheap-website-builders",
+        "name": "Cheap Website Builders (Under $10 a Month)",
+        "singular": "cheap website builder",
+        "intro": "These builders have a paid plan that costs $10 a month or less on yearly billing. Hostinger's price is for the first term only; check each one's renewal price.",
+        "ruleText": "The paid entry plan costs $10/month or less on annual billing.",
+        "rule": {
+          "maxEntryPrice": 10
         }
       }
     ]

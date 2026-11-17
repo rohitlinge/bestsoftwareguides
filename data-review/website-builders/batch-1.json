@@ -1,0 +1,199 @@
+[
+  {
+    "slug": "wix", "name": "Wix", "category": "website-builders",
+    "website": "https://www.wix.com", "pricingUrl": "https://www.wix.com/plans",
+    "tagline": "A drag-and-drop website builder with an AI site generator, templates and built-in business tools.",
+    "bestFor": "Small businesses that want an all-in-one site with selling and booking tools",
+    "description": "Wix is a hosted website builder that lets users create a site from a prompt or a template and edit it with a drag-and-drop editor. Paid plans add a custom domain, more storage, and on Core and above, payments, ecommerce and scheduling.",
+    "pros": ["Free plan with no time limit", "Free domain voucher for one year on yearly and multi-year plans", "AI site generation and over 2,000 templates"],
+    "cons": ["Free plan shows Wix branding and uses a wixsite.com address", "Light plan cannot accept payments or sell online", "Month-to-month prices are not shown on the pricing page"],
+    "freePlan": true,
+    "freePlanDetails": "Free forever; site lives at username.wixsite.com/sitename, shows Wix branding, and cannot connect a custom domain.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Light", "monthly": null, "annual": 17, "notes": "USD reference price per month on a yearly subscription paid up front. 2 GB storage, 2 site collaborators, free domain for 1 year. No payments or ecommerce. Renews at the regular yearly price; no first-term discount shown."},
+      {"name": "Core", "monthly": null, "annual": 29, "notes": "USD reference price per month, yearly. 50 GB storage, 5 collaborators, accept payments, basic eCommerce, scheduling. Free domain for 1 year."},
+      {"name": "Business", "monthly": null, "annual": 39, "notes": "USD reference price per month, yearly. 100 GB storage, 10 collaborators, standard eCommerce. Free domain for 1 year."},
+      {"name": "Business Elite", "monthly": null, "annual": 159, "notes": "USD reference price per month, yearly. Unlimited storage, 100 collaborators, advanced eCommerce and developer platform. Free domain for 1 year."}
+    ],
+    "features": {"ecommerce": true, "freeDomain": true, "blogging": true, "aiBuilder": true, "memberships": true},
+    "platforms": ["Web", "iOS", "Android"],
+    "founded": "2006", "hq": "Tel Aviv, Israel",
+    "integrations": "Wix App Market apps; payments, scheduling and marketing tools built in",
+    "compliance": [], "support": ["24/7 customer care", "Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "wix.com: Plans", "url": "https://www.wix.com/plans", "date": "2026"},
+      {"label": "support.wix.com: Using your free 1 year domain voucher", "url": "https://support.wix.com/en/article/using-your-free-1-year-domain-voucher", "date": "2026"},
+      {"label": "support.wix.com: Price of Wix domain renewals", "url": "https://support.wix.com/en/article/price-of-wix-domain-renewals-6790543", "date": "2026"},
+      {"label": "Wikipedia: Wix.com", "url": "https://en.wikipedia.org/wiki/Wix.com", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Light", "monthly": null, "annualFirstTerm": 17, "annualRenewal": 17, "twoYear": null, "promo": "None shown in the USD view. A hidden sticky price bar in the page code contains '(Save 50%)' labels, but they are not displayed.", "renewalSource": "https://www.wix.com/plans (no separate renewal price stated; yearly price shown is the standard price)"},
+        {"name": "Core", "monthly": null, "annualFirstTerm": 29, "annualRenewal": 29, "twoYear": null, "promo": "None shown", "renewalSource": "https://www.wix.com/plans"},
+        {"name": "Business", "monthly": null, "annualFirstTerm": 39, "annualRenewal": 39, "twoYear": null, "promo": "None shown", "renewalSource": "https://www.wix.com/plans"},
+        {"name": "Business Elite", "monthly": null, "annualFirstTerm": 159, "annualRenewal": 159, "twoYear": null, "promo": "None shown", "renewalSource": "https://www.wix.com/plans"}
+      ],
+      "domainAfterYear1": "Renews at Wix's regular domain price for the extension (no figure on the pricing page or the help article; voucher must be claimed within 60 days and is only for a new domain).",
+      "notes": "The pricing page localises to INR from this location (Light ₹250, Core ₹500, Business ₹900, Business Elite ₹1,800 per month, yearly). The USD figures are the page's own 'USD prices displayed for reference only' shown before localisation; the page says final price is shown at checkout and prices vary by location. Only yearly prices are shown; monthly and multi-year prices are not on the page, so monthly and twoYear are null. Wix offers a 14-day money-back guarantee rather than a trial. The free domain voucher does not apply on plan renewal or upgrade. Memberships = Wix Pricing Plans / members area apps (subscriptions listed under 'Art and content monetization')."
+    }
+  },
+  {
+    "slug": "squarespace", "name": "Squarespace", "category": "website-builders",
+    "website": "https://www.squarespace.com", "pricingUrl": "https://www.squarespace.com/pricing",
+    "tagline": "A template-based website builder with built-in ecommerce, scheduling and memberships.",
+    "bestFor": "Creatives and small businesses that want designed templates with selling built in",
+    "description": "Squarespace is a hosted website builder with designer templates, a drag-and-drop editor and AI site creation. All three paid plans can sell products, services and memberships, with transaction fees that fall on higher plans.",
+    "pros": ["Selling, donations and memberships on every paid plan", "Free custom domain for one year on annual plans", "14-day free trial with no credit card"],
+    "cons": ["No free plan", "Basic plan charges a 2% online store transaction fee", "Prices are set per billing country, so the amount varies by location"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": "14-day free trial (no credit card)", "minSeats": 1,
+    "plans": [
+      {"name": "Basic", "monthly": null, "annual": null, "notes": "US price could not be read: page served regional pricing for India. 2 contributors, 2% online store fee, 7% fee on digital content and memberships. Free domain for 1 year on annual plans."},
+      {"name": "Core", "monthly": null, "annual": null, "notes": "US price could not be read. Unlimited contributors, 0% online store fee, 5% fee on digital content and memberships, free year of Google Workspace email."},
+      {"name": "Advanced", "monthly": null, "annual": null, "notes": "US price could not be read. 0% fees on store and on digital content and memberships, reserved cart and countdown timer, high-traffic checkout."}
+    ],
+    "features": {"ecommerce": true, "freeDomain": true, "blogging": true, "aiBuilder": true, "memberships": true},
+    "platforms": ["Web", "iOS", "Android"],
+    "founded": "2003", "hq": "New York, United States",
+    "integrations": "Squarespace Extensions, Mailchimp and Zapier (Core and Advanced), Google Workspace",
+    "compliance": [], "support": ["24/7 customer support", "Help center", "Webinars"],
+    "checked": "2026-11-15", "verification": "reported",
+    "sources": [
+      {"label": "squarespace.com: Pricing", "url": "https://www.squarespace.com/pricing", "date": "2026"},
+      {"label": "Wikipedia: Squarespace", "url": "https://en.wikipedia.org/wiki/Squarespace", "date": "2026"},
+      {"label": "websitebuilderexpert.com: Squarespace pricing (third-party, US figures not used in plans)", "url": "https://www.websitebuilderexpert.com/website-builders/squarespace/squarespace-pricing/", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Basic", "monthly": null, "annualFirstTerm": null, "annualRenewal": null, "twoYear": null, "promo": "Code NOV50WF: 50% off selected new website plans, expires November 23, 2026 (11:59 PM EST). Applies to the first payment of a new subscription only; does not apply to recurring payments, upgrades, or with other offers.", "renewalSource": "https://www.squarespace.com/pricing (offer terms banner: 'Does not apply to recurring payments')"},
+        {"name": "Core", "monthly": null, "annualFirstTerm": null, "annualRenewal": null, "twoYear": null, "promo": "Same NOV50WF 50% off first payment offer", "renewalSource": "https://www.squarespace.com/pricing"},
+        {"name": "Advanced", "monthly": null, "annualFirstTerm": null, "annualRenewal": null, "twoYear": null, "promo": "Same NOV50WF 50% off first payment offer", "renewalSource": "https://www.squarespace.com/pricing"}
+      ],
+      "domainAfterYear1": "Free domain (annual plans only, cheapest pricing tier, register within one year) renews at Squarespace's standard rate plus taxes after the first year; no figure stated.",
+      "notes": "Squarespace prices per billing country. From this location the page showed INR (Basic ₹630, Core ₹720, Advanced ₹1,100 per month annual; ₹810/₹1,080/₹1,530 monthly). Switching the page's currency selector to USD showed India-region USD prices (Basic $7 annual / $9 monthly, Core $8 / $12, Advanced $12 / $17), and the page's structured data repeats these labelled as region 'US', but they match the India amounts converted and are far below US figures reported elsewhere, so they were not used. Third-party sites (checked Oct 2026, not verified) report US prices of Basic $19, Core $29, Advanced $99 per month annual and $25 / $39 / $139 monthly, and some list a Plus plan at $49 annual / $65 monthly that the page shown here did not include. Annual billing saves 'up to 36%'. The 50% off badge on each plan is the NOV50WF code, so the first annual payment for a new customer would be half the list price, renewing at full list price. Needs a US-located check."
+    }
+  },
+  {
+    "slug": "wordpress-com", "name": "WordPress.com", "category": "website-builders",
+    "website": "https://wordpress.com", "pricingUrl": "https://wordpress.com/pricing/",
+    "tagline": "Managed WordPress hosting with a site builder, plugins and themes, run by Automattic.",
+    "bestFor": "Bloggers and businesses that want WordPress without managing hosting",
+    "description": "WordPress.com is Automattic's hosted version of WordPress, with a free plan and four paid plans that add a custom domain, plugins, storage and ecommerce. Plans can be paid monthly, yearly, or every two or three years, with lower monthly rates on longer terms.",
+    "pros": ["Free plan with no expiry", "Plugin installation on every paid plan", "Lower per-month rates on 2- and 3-year terms"],
+    "cons": ["Free plan shows ads and uses a wordpress.com subdomain", "Monthly plans do not include the free domain", "WooCommerce store extensions only bundled on the Commerce plan"],
+    "freePlan": true,
+    "freePlanDetails": "Free forever; yoursite.wordpress.com subdomain, 1 GB storage, WordPress.com ads shown to visitors, no plugins, 7 days of basic stats.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Personal", "monthly": 9, "annual": 4, "notes": "Per site. 6 GB storage, no ads, plugins, free domain for 1 year on yearly or longer terms. 2-year term $3.25/mo, 3-year term $2.75/mo ($99 total). No first-term discount shown in USD."},
+      {"name": "Premium", "monthly": 18, "annual": 8, "notes": "13 GB storage, payment buttons (PayPal, Stripe), premium stats, video upload. 2-year $6.50/mo, 3-year $5.50/mo ($198 total)."},
+      {"name": "Business", "monthly": 40, "annual": 25, "notes": "50 GB, priority 24/7 support, VideoPress, staging, real-time backups, free business email for 1 year. 2-year $20/mo, 3-year $17.50/mo ($630 total)."},
+      {"name": "Commerce", "monthly": 70, "annual": 45, "notes": "Everything in Business plus bundled WooCommerce store extensions, sell in 60+ countries. 2-year $36/mo, 3-year $31.50/mo ($1,134 total)."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "WordPress VIP; contact sales."}
+    ],
+    "features": {"ecommerce": true, "freeDomain": true, "blogging": true, "aiBuilder": true, "memberships": true},
+    "platforms": ["Web", "iOS", "Android"],
+    "founded": "2005", "hq": "San Francisco, United States",
+    "integrations": "60,000+ WordPress plugins (WooCommerce, Yoast SEO, MemberPress), Jetpack, Blaze ads",
+    "compliance": [], "support": ["Email/chat support on paid plans", "24/7 priority support (Business, Commerce)", "Community forums"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "wordpress.com: Pricing", "url": "https://wordpress.com/pricing/", "date": "2026"},
+      {"label": "public-api.wordpress.com: Plans (USD price feed)", "url": "https://public-api.wordpress.com/rest/v1.5/plans?currency=USD", "date": "2026"},
+      {"label": "wordpress.com: Register a free domain", "url": "https://wordpress.com/support/domains/register-a-free-domain/", "date": "2026"},
+      {"label": "Wikipedia: WordPress.com", "url": "https://en.wikipedia.org/wiki/WordPress.com", "date": "2026"},
+      {"label": "Wikipedia: Automattic", "url": "https://en.wikipedia.org/wiki/Automattic", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Personal", "monthly": 9, "annualFirstTerm": 4, "annualRenewal": 4, "twoYear": 3.25, "promo": "None in USD; 'Pay yearly up to 64% off' and 'every 2 years up to 71% off' compare against the monthly price.", "renewalSource": "https://wordpress.com/pricing/ and plans API (no separate renewal price; orig_cost equals price)"},
+        {"name": "Premium", "monthly": 18, "annualFirstTerm": 8, "annualRenewal": 8, "twoYear": 6.5, "promo": "None in USD", "renewalSource": "https://wordpress.com/pricing/"},
+        {"name": "Business", "monthly": 40, "annualFirstTerm": 25, "annualRenewal": 25, "twoYear": 20, "promo": "None in USD", "renewalSource": "https://wordpress.com/pricing/"},
+        {"name": "Commerce", "monthly": 70, "annualFirstTerm": 45, "annualRenewal": 45, "twoYear": 36, "promo": "None in USD", "renewalSource": "https://wordpress.com/pricing/"}
+      ],
+      "domainAfterYear1": "Renews at the standard domain price for the extension, separate from the plan (no figure stated). Free domain only on annual and multi-year plans.",
+      "notes": "USD prices read from the pricing page's server-rendered price tiles (monthly, yearly, 2-yearly) and matched against WordPress.com's public plans API in USD (yearly totals $48/$96/$300/$540). After loading, the page localised to INR and showed a struck-through intro price on yearly Personal (₹200 to ₹160) in the FAQ, so a first-term discount may exist in some regions; none appears in USD. Monthly plans do not include a free domain. Memberships = paid content/subscriptions blocks; MemberPress plugin is also installable on paid plans."
+    }
+  },
+  {
+    "slug": "webflow", "name": "Webflow", "category": "website-builders",
+    "website": "https://webflow.com", "pricingUrl": "https://webflow.com/pricing",
+    "tagline": "A visual website builder and CMS for designers and marketing teams, with hosting included.",
+    "bestFor": "Designers and marketing teams that want fine design control and a CMS",
+    "description": "Webflow is a visual web development platform where sites are designed on a canvas and hosted by Webflow, with site plans priced per site. Basic covers static sites, Premium adds the CMS, and separate ecommerce site plans add a store and checkout.",
+    "pros": ["Free Starter plan for building and testing", "CMS and site search on the Premium plan", "Ecommerce site plans with custom cart and checkout"],
+    "cons": ["No free domain on any plan", "Basic plan has no CMS", "Built-in user accounts (memberships) were retired in January 2026"],
+    "freePlan": true,
+    "freePlanDetails": "Starter: webflow.io subdomain only, 2 static pages, limited CMS, 1 GB bandwidth, 50 form submissions.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Basic", "monthly": 25, "annual": 15, "notes": "Per site. Custom domain, 300 static pages, 10 GB bandwidth, unlimited form submissions, password protection, no CMS."},
+      {"name": "Premium", "monthly": 39, "annual": 25, "notes": "Price shown for the 50 GB bandwidth tier; price rises with the bandwidth tier chosen (up to 2.5 TB). Adds Webflow CMS, code components, site search, form file upload."},
+      {"name": "Ecommerce Standard", "monthly": 42, "annual": 29, "notes": "500 ecommerce items, 2% transaction fee, custom cart and checkout."},
+      {"name": "Ecommerce Plus", "monthly": 84, "annual": 74, "notes": "5,000 items, 0% transaction fee, unbranded emails."},
+      {"name": "Ecommerce Advanced", "monthly": 235, "annual": 212, "notes": "15,000 items, 0% transaction fee, unbranded emails."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing; contact sales. A Team platform plan is listed at $2,500/mo with an annual contract."}
+    ],
+    "features": {"ecommerce": true, "freeDomain": false, "blogging": true, "aiBuilder": true, "memberships": false},
+    "platforms": ["Web"],
+    "founded": "2013", "hq": "San Francisco, United States",
+    "integrations": "Webflow Apps marketplace, REST APIs, MCP server, add-ons for Analyze, Optimize and Localize",
+    "compliance": [], "support": ["Support portal", "Priority support (Team plan)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "webflow.com: Pricing", "url": "https://webflow.com/pricing", "date": "2026"},
+      {"label": "help.webflow.com: User Accounts sunset", "url": "https://help.webflow.com/hc/en-us/articles/36046006227731", "date": "2026"},
+      {"label": "Wikipedia: Webflow", "url": "https://en.wikipedia.org/wiki/Webflow", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Basic", "monthly": 25, "annualFirstTerm": 15, "annualRenewal": 15, "twoYear": null, "promo": "None; yearly billing 'Save up to 40%' versus monthly.", "renewalSource": "https://webflow.com/pricing (no separate renewal price)"},
+        {"name": "Premium", "monthly": 39, "annualFirstTerm": 25, "annualRenewal": 25, "twoYear": null, "promo": "None", "renewalSource": "https://webflow.com/pricing"},
+        {"name": "Ecommerce Standard", "monthly": 42, "annualFirstTerm": 29, "annualRenewal": 29, "twoYear": null, "promo": "None", "renewalSource": "https://webflow.com/pricing"},
+        {"name": "Ecommerce Plus", "monthly": 84, "annualFirstTerm": 74, "annualRenewal": 74, "twoYear": null, "promo": "None", "renewalSource": "https://webflow.com/pricing"},
+        {"name": "Ecommerce Advanced", "monthly": 235, "annualFirstTerm": 212, "annualRenewal": 212, "twoYear": null, "promo": "None", "renewalSource": "https://webflow.com/pricing"}
+      ],
+      "domainAfterYear1": "Not applicable; Webflow does not include a free domain.",
+      "notes": "Page states 'All prices in USD, per site, plus applicable taxes'. Workspace plans excluded as requested. Premium is listed as NEW and its price depends on the bandwidth slider; only the 50 GB starting price was recorded. No multi-year billing shown. Memberships false because Webflow User Accounts was shut down on January 29, 2026 (Webflow recommends Memberstack or Outseta). aiBuilder true: 'Webflow AI' listed on all site plans and Webflow markets an AI site builder."
+    }
+  },
+  {
+    "slug": "framer", "name": "Framer", "category": "website-builders",
+    "website": "https://www.framer.com", "pricingUrl": "https://www.framer.com/pricing",
+    "tagline": "A design-first website builder with an AI design agent, CMS and hosting.",
+    "bestFor": "Designers, startups and agencies building marketing sites",
+    "description": "Framer is a website builder where sites are designed on an editable canvas, generated or edited with AI agents, and published on Framer hosting. Paid site plans add a custom domain, more CMS collections, bandwidth and AI credits.",
+    "pros": ["Free plan with 500 AI credits a month", "Free custom domain for the first year on yearly plans", "Staging and branch previews on Pro"],
+    "cons": ["No built-in online store or checkout", "Additional editors cost $20 per month each", "Free plan cannot connect a custom domain"],
+    "freePlan": true,
+    "freePlanDetails": "Framer subdomain only (no custom domain), 1 GB bandwidth, 500 AI credits/month, intended for non-commercial use.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Basic", "monthly": 15, "annual": 10, "notes": "Per site. 1,000 AI credits/month, 30 pages, 2 CMS collections, 1,000 CMS items, 50 GB bandwidth, free custom domain for 1 year on yearly billing. Workspace owner free; extra editors $20/mo, content editors $10/mo."},
+      {"name": "Pro", "monthly": 45, "annual": 30, "notes": "3,000 AI credits/month, 150 pages, 10 CMS collections, 2,500 items, 100 GB bandwidth, redirects, staging, branching. Usage add-ons available."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom limits, SSO, SCIM, annual billing; contact sales."}
+    ],
+    "features": {"ecommerce": false, "freeDomain": true, "blogging": true, "aiBuilder": true, "memberships": false},
+    "platforms": ["Web", "macOS", "Windows"],
+    "founded": null, "hq": null,
+    "integrations": "Plugins marketplace, MCP server, Shopify via third-party components",
+    "compliance": [], "support": ["Help center", "Dedicated support (Enterprise)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "framer.com: Pricing", "url": "https://www.framer.com/pricing", "date": "2026"},
+      {"label": "api.framer.com: Site prices (USD price feed used by the pricing page)", "url": "https://api.framer.com/site/prices?currency=USD", "date": "2026"},
+      {"label": "framer.com: Free custom domains", "url": "https://www.framer.com/domains/", "date": "2026"},
+      {"label": "framer.com: Terms of service", "url": "https://www.framer.com/legal/terms-of-service/", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Basic", "monthly": 15, "annualFirstTerm": 10, "annualRenewal": 10, "twoYear": null, "promo": "No price discount; '2x credits first month' on paid plans.", "renewalSource": "https://www.framer.com/legal/terms-of-service/ (auto-renews; fee increases capped at 10% a year, effective no earlier than next renewal)"},
+        {"name": "Pro", "monthly": 45, "annualFirstTerm": 30, "annualRenewal": 30, "twoYear": null, "promo": "No price discount; '2x credits first month'.", "renewalSource": "https://www.framer.com/legal/terms-of-service/"}
+      ],
+      "domainAfterYear1": "Free domain is registered through Hover and auto-renews at the standard rate after year one; no figure stated. Redeeming it forfeits the refund option.",
+      "notes": "Yearly prices ($10, $30) read on the pricing page in USD before it localised to INR (Basic ₹361, Pro ₹1,084 per month yearly from this location). Monthly prices come from the page's own price feed in USD (basic_site_monthly $15, pro_site_monthly $45; yearly totals $120 and $360 match the page). No multi-year billing. Ecommerce false: no native store or checkout (Shopify requires third-party components). Memberships false: only site password protection is listed. Founded year and HQ left null: Framer B.V. is a Dutch company per its terms, but no reliable source for founding year or city was confirmed."
+    }
+  }
+]

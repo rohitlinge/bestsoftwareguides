@@ -1,0 +1,242 @@
+[
+  {
+    "slug": "cyberghost", "name": "CyberGhost", "category": "vpns",
+    "website": "https://www.cyberghostvpn.com", "pricingUrl": "https://www.cyberghostvpn.com/en_US/buy",
+    "tagline": "A consumer VPN with one plan sold on 1-month, 6-month and 2-year terms.",
+    "bestFor": "Streaming and everyday privacy on up to 7 devices",
+    "description": "CyberGhost is a consumer VPN run from Bucharest, Romania, with servers in 100+ countries and WireGuard among its protocols. It sells a single plan on 1-month, 6-month and 2-year terms, and the longer terms renew yearly after an introductory first period.",
+    "pros": ["45-day money-back guarantee on 6-month and longer terms", "No-logs policy audited by Deloitte Audit Romania three times (2022, 2024, 2025)", "Content Blocker and Identity Guard included in every plan"],
+    "cons": ["No 1-year plan", "Limited to 7 simultaneous connections", "Only 14-day refund window on the 1-month plan"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "CyberGhost VPN", "monthly": 12.99, "annual": null, "notes": "Single plan. No 1-year term is sold, so annual is null. 1 month: $12.99, renews at $12.99 a month. 6 months: $6.99/mo ($41.94 every 6 months, renews at $41.94 every 6 months). 2 years + 4 free months: $2.19/mo ($61.32 for the first 28 months), then renews at $61.32 a year. Prices are third-party reports: CyberGhost's site returned a bot-check page (HTTP 403) and could not be read. 7 simultaneous connections. Dedicated IP and Security Suite (Windows) are paid add-ons."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": true, "unlimitedDevices": false},
+    "platforms": ["Windows", "macOS", "Linux", "iOS", "Android", "Android TV"],
+    "founded": "2011", "hq": "Bucharest, Romania",
+    "integrations": null,
+    "compliance": [],
+    "support": ["24/7 live chat", "Email", "Help center"],
+    "checked": "2026-11-15", "verification": "reported",
+    "sources": [
+      {"label": "gizmodo.com: CyberGhost deal for November 2026 (price and renewal table)", "url": "https://gizmodo.com/best-vpn/cyberghost/coupon", "date": "2026"},
+      {"label": "pricingsaas.com: CyberGhost pricing page changes, week 46 2026", "url": "https://pricingsaas.com/companies/cyberghostvpn/diffs/2026W46", "date": "2026"},
+      {"label": "support.cyberghostvpn.com: How do CyberGhost's Plans and Offers Work?", "url": "https://support.cyberghostvpn.com/hc/en-us/articles/213849009-How-do-the-CyberGhost-plans-look-like", "date": "2026"},
+      {"label": "support.cyberghostvpn.com: Split tunneling on Android", "url": "https://support.cyberghostvpn.com/hc/en-us/articles/360022345054-How-to-use-split-tunneling-with-CyberGhost-for-Android", "date": "2026"},
+      {"label": "support.cyberghostvpn.com: What happens if a VPN connection drops (kill switch)", "url": "https://support.cyberghostvpn.com/hc/en-us/articles/214387805-What-Happens-If-a-VPN-Connection-Drops", "date": "2026"},
+      {"label": "cyberghostvpn.com: Third Deloitte Romania audit", "url": "https://www.cyberghostvpn.com/privacyhub/privacy-audit-2025/", "date": "2026"},
+      {"label": "cyberghostvpn.com: Meet the CyberGhost VPN team (founding, Bucharest)", "url": "https://CyberGhost.com/en_US/transparency-report/about-us", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "CyberGhost VPN", "oneMonth": 12.99,
+         "oneYear": null,
+         "sixMonth": {"perMonth": 6.99, "upfront": 41.94, "renewalUpfront": 41.94, "renewalTerm": "renews every 6 months at"},
+         "twoYear": {"perMonth": 2.19, "upfront": 61.32, "months": 24, "bonusMonths": 4, "renewalUpfront": 61.32, "renewalTerm": "renews yearly at"},
+         "renewalSource": "https://gizmodo.com/best-vpn/cyberghost/coupon"}
+      ],
+      "freeTier": null,
+      "devices": "7 simultaneous connections",
+      "moneyBackDays": 45,
+      "audit": "Deloitte Audit Romania, no-logs assurance reports in 2022, 2024 and 2025 (ISAE 3000)",
+      "notes": "Every cyberghostvpn.com page (buy, pricing, checkout) returned a Cloudflare bot-check (HTTP 403) to curl, WebFetch and the built-in browser, so no price was read on the vendor's own page; all prices are from Gizmodo's November 2026 table and the pricingsaas.com tracker of CyberGhost's pricing page. The tracker logged the 2-year offer changing on 9 Nov 2026 from 2 years + 2 months ($56.94) to 2 years + 4 months ($61.32) at the same $2.19/mo; a search snippet of an older official checkout page read 'valid for the first 26 months, then $56.94 yearly', which matches the pattern of the 2-year plan renewing yearly at its first-term upfront amount. CyberGhost's own support article (updated 8 Nov 2026) says longer offers 'renew annually at the standard rate' with the exact figure shown at checkout. Currency assumed USD from the $ sign in both third-party sources. Money-back is 45 days on 6-month and longer terms, 14 days on 1-month (not for app-store purchases). Split tunneling confirmed on Android (App Split Tunnel); Windows has a website-exceptions feature. Owned by Kape Technologies."
+    }
+  },
+  {
+    "slug": "mullvad", "name": "Mullvad", "category": "vpns",
+    "website": "https://mullvad.net", "pricingUrl": "https://mullvad.net/en/pricing",
+    "tagline": "A Swedish VPN with one flat price, numbered accounts and no email needed to sign up.",
+    "bestFor": "Privacy-focused users who want to pay anonymously",
+    "description": "Mullvad is a VPN from Mullvad VPN AB in Gothenburg, Sweden, that uses account numbers instead of email sign-ups and accepts cash and cryptocurrency. It charges a flat 5 EUR a month whatever the length of time bought, with up to 5 devices per account.",
+    "pros": ["Same flat price for any term, so no renewal price jump", "Accepts cash, Monero and Bitcoin as well as cards and PayPal", "Regular published third-party audits of apps and VPN servers"],
+    "cons": ["Priced only in EUR, no USD price", "Up to 5 devices per account", "No split tunneling on iOS"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Mullvad VPN", "monthly": null, "annual": null, "notes": "Flat 5 EUR per month including VAT for any length bought (1 month, 1 year or 1 decade). Mullvad publishes no USD price (its pricing page shows about $5.51 only as a conversion of 5 EUR), so USD fields are null. No introductory discount, so the price does not rise at renewal. Up to 5 devices."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": true, "unlimitedDevices": false},
+    "platforms": ["Windows", "macOS", "Linux", "iOS", "Android"],
+    "founded": "2009", "hq": "Gothenburg, Sweden",
+    "integrations": null,
+    "compliance": [],
+    "support": ["Email", "Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "mullvad.net: Pricing", "url": "https://mullvad.net/en/pricing", "date": "2026"},
+      {"label": "mullvad.net: About", "url": "https://mullvad.net/en/about", "date": "2026"},
+      {"label": "mullvad.net: Using the Mullvad VPN app (kill switch, lockdown mode, split tunneling)", "url": "https://mullvad.net/en/help/using-mullvad-vpn-app", "date": "2026"},
+      {"label": "mullvad.net: VPN server audit found no information leakage or logging of customer data (Assured AB, 2022)", "url": "https://mullvad.net/en/blog/vpn-server-audit-found-no-information-leakage-or-logging-of-customer-data", "date": "2022"},
+      {"label": "mullvad.net: Fourth infrastructure audit completed by Cure53 (2024)", "url": "https://mullvad.net/en/blog/fourth-infrastructure-audit-completed-by-cure53", "date": "2024"},
+      {"label": "mullvad.net: Audits blog tag", "url": "https://mullvad.net/en/blog/tag/audits", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Mullvad VPN", "oneMonth": null, "oneYear": null, "twoYear": null,
+         "eur": {"oneMonth": 5, "oneYear": 60, "oneDecade": 600, "note": "5 EUR/month flat rate incl. VAT for every top-up length; 1-year and 1-decade totals are the flat rate times 12 and 120"},
+         "renewalSource": "https://mullvad.net/en/pricing"}
+      ],
+      "freeTier": null,
+      "devices": "Up to 5 devices per account",
+      "moneyBackDays": 14,
+      "audit": "Assured AB VPN-server audit 2022 (scope included whether Mullvad logs customer activity; found no logging of customer data); Cure53 infrastructure audit June 2024",
+      "notes": "Prices null because Mullvad charges only in EUR; the pricing page shows $5.51 purely as a currency conversion of 5 EUR, not as a USD price. There is no 2-year option and no tiers. The 14-day money-back guarantee excludes cash payments. Kill switch: always on in the desktop app while connected, plus an optional lockdown mode. Split tunneling (exclude apps) on Windows, macOS 13+, Linux and Android, not iOS. Recent audits on Mullvad's blog also include X41 D-Sec (account and payment services, Jan 2026), Assured Security Consultants (GotaTun WireGuard implementation, Mar 2026) and Leviathan Security Group (Android app, Jun 2026); the most recent audit that explicitly covered logging on VPN servers is 2024 (Cure53) / 2022 (Assured AB). 'Founded 2009' is the service launch date (March 2009) on Mullvad's About page."
+    }
+  },
+  {
+    "slug": "ipvanish", "name": "IPVanish", "category": "vpns",
+    "website": "https://www.ipvanish.com", "pricingUrl": "https://www.ipvanish.com/pricing/",
+    "tagline": "A US-based VPN with unlimited simultaneous connections and three tiers that add antivirus and cloud storage.",
+    "bestFor": "Households that want to cover any number of devices",
+    "description": "IPVanish is a VPN owned by Ziff Davis that does not limit simultaneous connections and runs 3,100+ servers. It sells Essential, Complete and Advanced tiers on monthly, yearly and 2-year terms, and the yearly and 2-year plans renew yearly at a higher price after the first term.",
+    "pros": ["Unlimited simultaneous connections on every tier", "Renewal prices listed on the pricing page", "No-logs policy audited by Leviathan (2022) and Schellman (2025, 2026)"],
+    "cons": ["Yearly and 2-year plans renew at $99.99 a year or more", "Monthly plan costs $14.99 or more", "2-year plans switch to yearly billing after the first term"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Essential", "monthly": 14.99, "annual": 3.89, "notes": "VPN, Threat Protection, 24/7 live chat, 3GB eSIM data, unlimited devices. Monthly renews monthly at $14.99. 1-year: $46.68 for the first year, then renews at $99.99/year. 2-year: $2.19/mo, $52.56 for the first 2 years, then renews at $99.99/year (yearly cycle)."},
+      {"name": "Complete", "monthly": 15.99, "annual": 4.79, "notes": "Adds next-gen antivirus and phone support. Monthly renews at $15.99. 1-year: $57.48 for the first year, then $109.99/year. 2-year: $2.79/mo, $66.96 for the first 2 years, then $109.99/year."},
+      {"name": "Advanced", "monthly": 17.99, "annual": 5.39, "notes": "Adds 1TB cloud storage, Secure Browser and 2GB bonus eSIM data (5GB total). Monthly renews at $17.99. 1-year: $64.68 for the first year, then $129.99/year. 2-year: $3.29/mo, $78.96 for the first 2 years, then $129.99/year."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": true, "unlimitedDevices": true},
+    "platforms": ["Windows", "macOS", "Linux", "ChromeOS", "iOS", "Android", "Fire TV", "Apple TV", "Apple Vision Pro"],
+    "founded": "2012", "hq": "New York City, United States",
+    "integrations": null,
+    "compliance": [],
+    "support": ["24/7 live chat", "Phone (Complete and Advanced)", "Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "ipvanish.com: Pricing (plans, FAQ renewal prices)", "url": "https://www.ipvanish.com/pricing/", "date": "2026"},
+      {"label": "techradar.com: IPVanish clears a third independent audit", "url": "https://techradar.com/vpn/vpn-services/ipvanish-clears-a-third-independent-audit-reinforcing-its-no-logs-credentials-for-the-second-year-in-a-row", "date": "2026"},
+      {"label": "businesswire.com: IPVanish certifies no-logs VPN protection with third-party audit (Leviathan, 2022)", "url": "https://www.businesswire.com/news/home/20220405005182/en", "date": "2022"},
+      {"label": "Wikipedia: IPVanish", "url": "https://en.wikipedia.org/wiki/IPVanish", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Essential", "oneMonth": 14.99,
+         "oneYear": {"perMonth": 3.89, "upfront": 46.68, "renewalUpfront": 99.99, "renewalTerm": "renews yearly at"},
+         "twoYear": {"perMonth": 2.19, "upfront": 52.56, "months": 24, "bonusMonths": 0, "renewalUpfront": 99.99, "renewalTerm": "renews yearly at (2-year plans switch to a yearly cycle)"},
+         "renewalSource": "https://www.ipvanish.com/pricing/"},
+        {"name": "Complete", "oneMonth": 15.99,
+         "oneYear": {"perMonth": 4.79, "upfront": 57.48, "renewalUpfront": 109.99, "renewalTerm": "renews yearly at"},
+         "twoYear": {"perMonth": 2.79, "upfront": 66.96, "months": 24, "bonusMonths": 0, "renewalUpfront": 109.99, "renewalTerm": "renews yearly at (2-year plans switch to a yearly cycle)"},
+         "renewalSource": "https://www.ipvanish.com/pricing/"},
+        {"name": "Advanced", "oneMonth": 17.99,
+         "oneYear": {"perMonth": 5.39, "upfront": 64.68, "renewalUpfront": 129.99, "renewalTerm": "renews yearly at"},
+         "twoYear": {"perMonth": 3.29, "upfront": 78.96, "months": 24, "bonusMonths": 0, "renewalUpfront": 129.99, "renewalTerm": "renews yearly at (2-year plans switch to a yearly cycle)"},
+         "renewalSource": "https://www.ipvanish.com/pricing/"}
+      ],
+      "freeTier": null,
+      "devices": "Unlimited simultaneous connections",
+      "moneyBackDays": 30,
+      "audit": "Leviathan Security Group (2022); Schellman Compliance (2025 and 2026, latest completed 25 Sep 2026)",
+      "notes": "Prices read in USD on ipvanish.com/pricing (curl, en-US). The pricing FAQ states renewal prices: yearly and 2-year plans renew at $99.99/year (Essential), $109.99/year (Complete), $129.99/year (Advanced); 2-year plans renew on a yearly cycle. Monthly plans renew monthly at the same price. 'Retail value' list prices shown on the page: yearly $179.88/$191.88/$215.88 and 2-year $359.76/$383.76/$431.76. Taxes not included. Split tunneling is listed under the plans' privacy features (Wikipedia notes it on Windows, Android and Fire TV). Founded 2012 by Mudhook Media (Highwinds, Orlando); now owned by Ziff Davis, New York."
+    }
+  },
+  {
+    "slug": "windscribe", "name": "Windscribe", "category": "vpns",
+    "website": "https://windscribe.com", "pricingUrl": "https://windscribe.com/upgrade",
+    "tagline": "A Canadian VPN with a permanent free plan, a Pro plan and a pay-per-location Build A Plan option.",
+    "bestFor": "Free VPN use and paying only for the locations you need",
+    "description": "Windscribe is a VPN from Toronto, Canada, that offers a free plan with 10GB a month, a Pro plan with all locations, and a Build A Plan option priced per location. Every plan, including the free one, allows unlimited simultaneous connections.",
+    "pros": ["Permanent free plan with 10GB/month on 10 countries", "Unlimited simultaneous connections, including on the free plan", "Build A Plan from $3/month for selected locations"],
+    "cons": ["Refunds only within 7 days and under 10GB used", "No 2-year plan", "Build A Plan data is capped at 10GB per chosen location"],
+    "freePlan": true, "freePlanDetails": "10GB/month with a confirmed email (2GB without), servers in 10 countries, unlimited devices; extra data for posting about Windscribe on X (5GB/month) or referrals (1GB each).",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Pro", "monthly": 9.00, "annual": 5.75, "notes": "All locations, unlimited data, R.O.B.E.R.T blocker, config generator (OpenVPN, IKEv2, WireGuard). Monthly $9.00 billed every month; yearly $69 billed every 12 months ($5.75/mo). Renews automatically; the pricing page shows no separate renewal price. Black Friday promo until 30 Nov 2026: Pro yearly $29 ($2.42/mo), 'Renews at $29 yearly. Forever.'"},
+      {"name": "Build A Plan", "monthly": 3.00, "annual": null, "notes": "$1.00 per location per month with a $3 minimum (3 locations); each location adds 10GB to the monthly data allowance; up to 7 locations. Billed monthly, renews automatically. An 'Unlimited Data + R.O.B.E.R.T' add-on is offered; its price was not shown in the page text."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": null, "unlimitedDevices": true},
+    "platforms": ["Windows", "macOS", "Linux", "iOS", "Android", "Chrome extension", "Firefox extension"],
+    "founded": "2016", "hq": "Toronto, Canada",
+    "integrations": null,
+    "compliance": [],
+    "support": ["Support tickets", "Help center", "Chatbot (Garry)"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "windscribe.com: Upgrade (pricing)", "url": "https://windscribe.com/upgrade", "date": "2026"},
+      {"label": "windscribe.com: Home (Black Friday sale banner)", "url": "https://windscribe.com/", "date": "2026"},
+      {"label": "windscribe.com: Use for free", "url": "https://windscribe.com/features/use-for-free", "date": "2026"},
+      {"label": "windscribe.com: What is the refund policy for Windscribe plans?", "url": "https://windscribe.com/knowledge-base/articles/what-is-the-refund-policy-for-windscribe-plans", "date": "2026"},
+      {"label": "windscribe.com: Has Windscribe been audited?", "url": "https://windscribe.com/knowledge-base/articles/has-windscribe-been-audited", "date": "2026"},
+      {"label": "windscribe.com: What is split tunneling and how to use it", "url": "https://windscribe.com/knowledge-base/articles/what-is-split-tunneling-and-how-to-use-it", "date": "2026"},
+      {"label": "windscribe.com: Official information about Windscribe (founding, HQ, connections)", "url": "https://windscribe.com/llm-info", "date": "2026"},
+      {"label": "Wikipedia: Windscribe", "url": "https://en.wikipedia.org/wiki/Windscribe", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Pro", "oneMonth": 9.00,
+         "oneYear": {"perMonth": 5.75, "upfront": 69, "renewalUpfront": null, "renewalTerm": "renews automatically every 12 months (no separate renewal price shown)"},
+         "twoYear": null,
+         "promo": {"oneYearUpfront": 29, "perMonth": 2.42, "renewalUpfront": 29, "renewalTerm": "renews at $29 yearly, forever", "ends": "2026-11-30", "url": "https://windscribe.com/upgrade?promo=BEEPBOOP"},
+         "renewalSource": "https://windscribe.com/upgrade"},
+        {"name": "Build A Plan", "oneMonth": 3.00, "oneYear": null, "twoYear": null,
+         "pricing": "$1 per location per month, $3 minimum, max 7 locations, +10GB/month per location",
+         "renewalSource": "https://windscribe.com/upgrade"}
+      ],
+      "freeTier": "Permanent free plan: 10GB/month with confirmed email (2GB without), 10 countries (US, Canada, UK, Hong Kong, France, Germany, Netherlands, Switzerland, Norway, Romania), unlimited devices, not throttled.",
+      "devices": "Unlimited simultaneous connections on all plans, including free",
+      "moneyBackDays": 7,
+      "audit": "No named no-logs audit. Packetlabs audited server infrastructure (June 2024); Leviathan Security Group audited the desktop app (2021) and mobile apps (2022)",
+      "notes": "Prices are listed in USD on windscribe.com/upgrade. Windscribe does not advertise introductory pricing on the standard page, but it does not state a renewal figure either, so renewalUpfront is null. The homepage Black Friday banner links to a promo-code page with Pro yearly at $29 and the text 'Renews at $29 yearly. Forever.' (ends 30 Nov 2026); on that promo page the monthly box also displayed $29.00, which looks like a page glitch and was not used. Refunds: within 7 days of the first purchase and under 10GB used; renewals are not refundable. auditedNoLogs is null: Windscribe's audit page lists only infrastructure and app audits, not a no-logs audit; secondary sources say the 2024 Packetlabs test found no attempt to bypass the no-logs policy, and a 2025 Greek court case is cited by Windscribe as testing its policy, but neither is a no-logs audit. The firewall acts as the kill switch. Split tunneling on Windows, macOS, Linux and Android."
+    }
+  },
+  {
+    "slug": "purevpn", "name": "PureVPN", "category": "vpns",
+    "website": "https://www.purevpn.com", "pricingUrl": "https://www.purevpn.com/order",
+    "tagline": "A VPN sold in Standard, Plus and Max tiers that add a password manager and data removal.",
+    "bestFor": "Buyers who want a VPN bundled with password and data-removal tools",
+    "description": "PureVPN is a VPN registered in the British Virgin Islands that sells Standard, Plus and Max tiers on monthly, 1-year, 2-year and 5-year terms. One account covers up to 10 devices, and long terms renew yearly at listed renewal prices after the first term.",
+    "pros": ["31-day money-back guarantee", "Published renewal price table for every tier and term", "No-logs claims assessed by KPMG"],
+    "cons": ["Limited to 10 simultaneous connections", "Prices differ between the pricing page and checkout", "1-year plans renew higher than the first year"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Standard", "monthly": 12.95, "annual": 3.40, "notes": "Fast VPN and tracker blocker. Monthly $12.95, renews at $12.95. 1-year: $40.80 for 12 months, then $57.95/year. 2-year: $2.15/mo, $58.20 for 27 months (24 + 3 extra), then $47.95/year. 5-year: $1.49/mo, $93.87 for 63 months, then $47.95/year. Black Friday checkout prices."},
+      {"name": "Plus", "monthly": 17.95, "annual": 6.06, "notes": "Adds password manager. Checkout shows monthly $17.95, but the pricing page and renewal table list $15.95. 1-year: $72.80 for 12 months, then $69.95/year. 2-year: $2.73/mo, $73.80 for 27 months, then $69.95/year. 5-year: $2.19/mo, $137.97 for 63 months, then $69.95/year."},
+      {"name": "Max", "monthly": 19.95, "annual": 7.40, "notes": "Adds data removal and dark web monitoring. Monthly $19.95, renews at $19.95. 1-year: $88.80 for 12 months, then $89.95/year. 2-year: $3.55/mo, $95.85 for 27 months, then $84.95/year. 5-year: $2.49/mo, $156.87 for 63 months, then $84.95/year."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": true, "unlimitedDevices": false},
+    "platforms": ["Windows", "macOS", "Linux", "iOS", "Android", "Android TV", "Fire TV", "Apple TV", "Chrome extension", "Firefox extension", "Edge extension"],
+    "founded": "2007", "hq": "Tortola, British Virgin Islands",
+    "integrations": null,
+    "compliance": [],
+    "support": ["24/7 support", "Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "purevpn.com: Order (checkout plans and renewal text)", "url": "https://www.purevpn.com/order", "date": "2026"},
+      {"label": "purevpn.com: Pricing", "url": "https://www.purevpn.com/pricing", "date": "2026"},
+      {"label": "purevpn.com: Subscription renewal prices", "url": "https://www.purevpn.com/subscription-renewal-plan", "date": "2026"},
+      {"label": "support.purevpn.com: What are the features offered by PureVPN?", "url": "https://support.purevpn.com/en_US/about-purevpn/purevpn-features-world%E2%80%99s-fastest-vpn-with-exclusive-features", "date": "2026"},
+      {"label": "purevpn.com: KPMG validates PureVPN no-log claims", "url": "https://www.purevpn.com/blog/kpmg-validates-purevpn-no-log-claims/", "date": "2021"},
+      {"label": "purevpn.com: Fourth successful no-log assessment", "url": "https://www.purevpn.com/blog/fourth-successful-no-log-assessment/", "date": "2023"},
+      {"label": "Wikipedia: PureVPN", "url": "https://en.wikipedia.org/wiki/PureVPN", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Standard", "oneMonth": 12.95,
+         "oneYear": {"perMonth": 3.40, "upfront": 40.80, "renewalUpfront": 57.95, "renewalTerm": "renews yearly at"},
+         "twoYear": {"perMonth": 2.15, "upfront": 58.20, "months": 24, "bonusMonths": 3, "renewalUpfront": 47.95, "renewalTerm": "renews yearly at"},
+         "fiveYear": {"perMonth": 1.49, "upfront": 93.87, "months": 60, "bonusMonths": 3, "renewalUpfront": 47.95, "renewalTerm": "renews yearly at"},
+         "renewalSource": "https://www.purevpn.com/subscription-renewal-plan"},
+        {"name": "Plus", "oneMonth": 17.95,
+         "oneYear": {"perMonth": 6.06, "upfront": 72.80, "renewalUpfront": 69.95, "renewalTerm": "renews yearly at"},
+         "twoYear": {"perMonth": 2.73, "upfront": 73.80, "months": 24, "bonusMonths": 3, "renewalUpfront": 69.95, "renewalTerm": "renews yearly at"},
+         "fiveYear": {"perMonth": 2.19, "upfront": 137.97, "months": 60, "bonusMonths": 3, "renewalUpfront": 69.95, "renewalTerm": "renews yearly at"},
+         "renewalSource": "https://www.purevpn.com/subscription-renewal-plan"},
+        {"name": "Max", "oneMonth": 19.95,
+         "oneYear": {"perMonth": 7.40, "upfront": 88.80, "renewalUpfront": 89.95, "renewalTerm": "renews yearly at"},
+         "twoYear": {"perMonth": 3.55, "upfront": 95.85, "months": 24, "bonusMonths": 3, "renewalUpfront": 84.95, "renewalTerm": "renews yearly at"},
+         "fiveYear": {"perMonth": 2.49, "upfront": 156.87, "months": 60, "bonusMonths": 3, "renewalUpfront": 84.95, "renewalTerm": "renews yearly at"},
+         "renewalSource": "https://www.purevpn.com/subscription-renewal-plan"}
+      ],
+      "freeTier": null,
+      "devices": "Up to 10 simultaneous connections",
+      "moneyBackDays": 31,
+      "audit": "KPMG no-log assessments (2020, and a second 'always-on' evaluation in 2021); PureVPN reports a fourth assessment in 2023 by an audit firm not named in the text read",
+      "notes": "Plan prices are from the /order checkout page (Black Friday deal live today), which is internally consistent (upfront / months = per-month). The /pricing page shows different and inconsistent figures (2-year $2.15/$2.73/$3.55 per month but 'billed $57.95/$89.95/$109.95'; 1-year $2.55/$4.55/$5.55 per month but 'billed $47.95/$69.95/$84.95', which match renewal amounts) and lists Plus monthly at $15.95 rather than $17.95, so those were not used. Renewal prices come from the official Subscription Renewal Prices page (USD, before tax): Standard 1-month $12.95, 1-year $57.95, 2-year and 5-year $47.95/year; Plus 1-month $15.95, 1-year $69.95, 2-year and 5-year $69.95/year; Max 1-month $19.95, 1-year $89.95, 2-year and 5-year $84.95/year; these match the checkout 'then auto-renews at' text. Fetch note: this network's DNS returned a non-working address for www.purevpn.com, so the three PureVPN pages were fetched by pointing at the Cloudflare address that public DNS (1.1.1.1) gives for the site; a later attempt to fetch more PureVPN pages that way was blocked by the session's permission check, so audit and feature details come from PureVPN's support site and search results. Kill switch, split tunneling (Windows, Android) and WireGuard are confirmed on PureVPN's support site. A 3GB eSIM data bonus is listed on all tiers."
+    }
+  }
+]

@@ -8,7 +8,7 @@ const AI_BOTS = [
   'PerplexityBot', 'Perplexity-User',
   'ClaudeBot', 'Claude-SearchBot', 'Claude-User',
   'Google-Extended', 'Applebot-Extended', 'Bingbot', 'DuckAssistBot',
-  'MistralAI-User', 'Meta-ExternalAgent', 'Amazonbot', 'CCBot',
+  'MistralAI-User', 'Meta-ExternalAgent', 'Amazonbot', 'CCBot', 'Cloudflare-AI-Search',
 ];
 
 // Machine-only or private paths that are not pages: sign-in (redirects to LinkedIn), APIs, moderation,

@@ -1,0 +1,657 @@
+[
+  {
+    "slug": "hostinger-website-builder",
+    "name": "Hostinger Website Builder",
+    "category": "website-builders",
+    "website": "https://www.hostinger.com/website-builder",
+    "pricingUrl": "https://www.hostinger.com/website-builder",
+    "tagline": "A drag-and-drop and AI website builder sold with Hostinger hosting, with low first-term prices that renew higher.",
+    "bestFor": "Small sites and shops on a tight first-year budget",
+    "description": "Hostinger Website Builder combines hosting, templates, a drag-and-drop editor and an AI mode that builds sites and web apps from prompts. Plans are paid up front for 1, 12, 24 or 48 months, and the intro price applies to the first term only.",
+    "pros": [
+      "First-term price from $1.99/mo on 12-, 24- and 48-month terms",
+      "Free domain for 1 year on terms of 12 months or longer",
+      "0% transaction fees on its ecommerce tools"
+    ],
+    "cons": [
+      "Renewal prices are about 4 to 6 times the intro price (e.g. Premium $1.99 renews at $10.99/mo)",
+      "Ecommerce is not on the Premium plan and is listed as free for 1 year only on the others",
+      "No free plan; month-to-month costs $12.99 to $27.99"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial; 30-day money-back guarantee",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Premium",
+        "monthly": 12.99,
+        "annual": 1.99,
+        "notes": "Up to 3 websites. $1.99/mo is the first-term price on the 12-, 24- or 48-month plan (paid up front; 48 months = $95.52); renews at $10.99/mo. Month-to-month is $12.99 and renews at $12.99. Free domain and 2 mailboxes per site for 1 year. No ecommerce listed."
+      },
+      {
+        "name": "Unlimited",
+        "monthly": 18.99,
+        "annual": 2.79,
+        "notes": "Unlimited websites (fair use). $2.79/mo first term on 12-, 24- or 48-month plans (48 months = $133.92); renews at $16.99/mo. Month-to-month $18.99. Free domain, unlimited mailboxes and ecommerce listed as free for 1 year; priority 24/7 support."
+      },
+      {
+        "name": "Cloud Startup",
+        "monthly": 27.99,
+        "annual": 7.99,
+        "notes": "Unlimited websites on cloud hosting. $7.99/mo first term on 12-, 24- or 48-month plans (48 months = $383.52); renews at $25.99/mo. Month-to-month $27.99. Same inclusions as Unlimited. Shown as 'Startup plan' in the cart."
+      }
+    ],
+    "features": {
+      "ecommerce": true,
+      "freeDomain": true,
+      "blogging": true,
+      "aiBuilder": true,
+      "memberships": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2004",
+    "hq": "Vilnius, Lithuania",
+    "integrations": "Stripe payments, Hostinger Reach email marketing, Google Search Console",
+    "compliance": [],
+    "support": [
+      "24/7 chat (Hostinger Agent)",
+      "Priority 24/7 expert support (Unlimited, Cloud Startup)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "hostinger.com: Website builder pricing",
+        "url": "https://www.hostinger.com/website-builder",
+        "date": "2026"
+      },
+      {
+        "label": "cart.hostinger.com: Cart period selector (1/12/24/48 months)",
+        "url": "https://cart.hostinger.com/",
+        "date": "2026"
+      },
+      {
+        "label": "hostinger.com: Membership website",
+        "url": "https://www.hostinger.com/membership-website",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Hostinger",
+        "url": "https://en.wikipedia.org/wiki/Hostinger",
+        "date": "2026"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Premium",
+          "monthly": 12.99,
+          "annualFirstTerm": 1.99,
+          "annualRenewal": 10.99,
+          "longestTerm": {
+            "months": 48,
+            "firstTermPerMonth": 1.99,
+            "renewalPerMonth": 10.99
+          },
+          "promo": "Black Friday 'Special offer 85% off' ($12.99 list); 2x AI credits (500 instead of 250) on the 48-month plan only. Cart: 'Lowest price of the year. Gone when sale ends'.",
+          "renewalSource": "Pricing card: 'Today you pay $95.52 for 48 months. Renews at $10.99/mo'. Cart for 12 months: 'Renews after 12 months at $10.99/mo for 12 months'; for 48 months: 'Renews after 48 months at $10.99/mo for 12 months'."
+        },
+        {
+          "name": "Unlimited",
+          "monthly": 18.99,
+          "annualFirstTerm": 2.79,
+          "annualRenewal": 16.99,
+          "longestTerm": {
+            "months": 48,
+            "firstTermPerMonth": 2.79,
+            "renewalPerMonth": 16.99
+          },
+          "promo": "Black Friday 'Special offer 85% off' ($18.99 list); 2x AI credits (1000 instead of 500) on 48 months.",
+          "renewalSource": "Pricing card: 'Renews at $16.99/mo for the same term'. Cart: 'Renews after 12 months at $16.99/mo for 12 months' (and for 24/48 months the renewal term matches)."
+        },
+        {
+          "name": "Cloud Startup",
+          "monthly": 27.99,
+          "annualFirstTerm": 7.99,
+          "annualRenewal": 25.99,
+          "longestTerm": {
+            "months": 48,
+            "firstTermPerMonth": 7.99,
+            "renewalPerMonth": 25.99
+          },
+          "promo": "'71% off' ($27.99 list); 2x AI credits (2000 instead of 1000) on 48 months.",
+          "renewalSource": "Pricing card: 'Today you pay $383.52 for 48 months. Renews at $25.99/mo'. Cart: 'Renews after 12 months at $25.99/mo for 12 months'."
+        }
+      ],
+      "domainAfterYear1": "No renewal figure stated. Cart tooltip: 'After the first year, your domain will renew at the regular price'; the cart order summary values the free domain at $13.99.",
+      "notes": "The pricing page shows only the 48-month offer; 1-, 12- and 24-month prices were read in Hostinger's cart period selector for each plan. During the current Black Friday sale the 12-, 24- and 48-month first-term per-month prices are the same; only the AI-credit bonus differs. Prices exclude tax (the cart added estimated tax based on location). Free domain applies only to plans of 1 year or longer. Ecommerce and mailboxes are labelled 'free for 1 year'; the page does not state what they cost after that. Memberships/subscriptions need Agentic (AI) mode and an ecommerce plan, paid via Stripe; not available in manual drag-and-drop mode."
+    }
+  },
+  {
+    "slug": "godaddy-website-builder",
+    "name": "GoDaddy Website Builder (Airo AI Builder)",
+    "category": "website-builders",
+    "website": "https://www.godaddy.com/websites/website-builder",
+    "pricingUrl": "https://www.godaddy.com/websites/website-builder",
+    "tagline": "GoDaddy's AI builder that generates websites, online stores and web apps from a text prompt.",
+    "bestFor": "Small businesses that want an AI-built site with bookings and payments",
+    "description": "GoDaddy Website Builder now runs on Airo AI Builder, which creates pages, copy, databases and logic from prompts and hosts the result on GoDaddy. Paid plans are priced by AI credits and the number of published sites, with a free tier for building previews.",
+    "pros": [
+      "Free tier with 50 AI credits a month, no credit card",
+      "Free custom domain for the first year with an annual plan",
+      "Professional plan adds product catalog, online payments, bookings and sales tax"
+    ],
+    "cons": [
+      "Month-to-month costs double the annual rate ($19.99 vs $9.99 on Starter)",
+      "Store features start on the $24.99/mo Professional plan; Starter only has payment links",
+      "Credits expire each billing cycle and do not roll over",
+      "No free publishing: the free tier is for building and previewing only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "free preview plan (build and preview sites; publishing needs a paid plan)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 19.99,
+        "annual": 9.99,
+        "notes": "150 AI credits/mo, publish 1 site or app, free custom domain (annual), marketing and blog posts, payment links/QR codes. Annual billed yearly."
+      },
+      {
+        "name": "Professional",
+        "monthly": 49.99,
+        "annual": 24.99,
+        "notes": "300 AI credits/mo, up to 10 sites or apps, advanced analytics, third-party connectors, online payments and deposits, appointment bookings, product catalog, automatic sales tax, shipping rates."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": 199.99,
+        "annual": 99.99,
+        "notes": "750 AI credits/mo, up to 50 sites or apps, team collaboration, client hand-off, GitHub sync, priority support, one 30-min expert session."
+      }
+    ],
+    "features": {
+      "ecommerce": true,
+      "freeDomain": true,
+      "blogging": true,
+      "aiBuilder": true,
+      "memberships": null
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "1997",
+    "hq": "Tempe, United States",
+    "integrations": "Facebook, Instagram, Notion, Google Business Profile, Mailchimp, GitHub, GoDaddy Payments",
+    "compliance": [],
+    "support": [
+      "24/7 expert support",
+      "Priority support (Ultimate)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "godaddy.com: Website Builder plans (US view)",
+        "url": "https://www.godaddy.com/websites/website-builder?countryview=1&currencyType=USD",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: GoDaddy",
+        "url": "https://en.wikipedia.org/wiki/GoDaddy",
+        "date": "2026"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Starter",
+          "monthly": 19.99,
+          "annualFirstTerm": 9.99,
+          "annualRenewal": 9.99,
+          "longestTerm": {
+            "months": 12,
+            "firstTermPerMonth": 9.99,
+            "renewalPerMonth": 9.99
+          },
+          "promo": "None shown on the plan; only the free first-year domain.",
+          "renewalSource": "Plan card shows only 'Billed annually' with no 'renews at' figure; renewal assumed equal to the listed price. Not confirmed in the cart (cart page did not render)."
+        },
+        {
+          "name": "Professional",
+          "monthly": 49.99,
+          "annualFirstTerm": 24.99,
+          "annualRenewal": 24.99,
+          "longestTerm": {
+            "months": 12,
+            "firstTermPerMonth": 24.99,
+            "renewalPerMonth": 24.99
+          },
+          "promo": "None shown on the plan; only the free first-year domain.",
+          "renewalSource": "Plan card shows only 'Billed annually'; no renewal price stated. Not confirmed in cart."
+        },
+        {
+          "name": "Ultimate",
+          "monthly": 199.99,
+          "annualFirstTerm": 99.99,
+          "annualRenewal": 99.99,
+          "longestTerm": {
+            "months": 12,
+            "firstTermPerMonth": 99.99,
+            "renewalPerMonth": 99.99
+          },
+          "promo": "None shown on the plan; only the free first-year domain.",
+          "renewalSource": "Plan card shows only 'Billed annually'; no renewal price stated. Not confirmed in cart."
+        }
+      ],
+      "domainAfterYear1": "No figure stated. Tooltip: '1 free available domain with new purchase of annual Airo AI Builder plan. Plus annual ICANN fee per domain... Offer valid for 1st year only; renews at current prices.'",
+      "notes": "Page geolocates to India; the US version was read using ?countryview=1&currencyType=USD. Only Annual and Monthly toggles are offered (no multi-year terms on the builder page). Monthly prices come from GoDaddy price tokens for the 1-month term. The older Basic/Premium/Commerce Website Builder plans are no longer shown; the builder page now sells Airo AI Builder plans. Card/transaction fees for GoDaddy Payments are not stated on the page. Memberships/gated content are not mentioned. Prices are per account, which can publish 1, 10 or 50 sites."
+    }
+  },
+  {
+    "slug": "shopify",
+    "name": "Shopify",
+    "category": "website-builders",
+    "website": "https://www.shopify.com",
+    "pricingUrl": "https://www.shopify.com/pricing",
+    "tagline": "An ecommerce platform for building an online store and selling online, in person and in AI chats.",
+    "bestFor": "Businesses whose website is mainly an online store",
+    "description": "Shopify provides hosted online stores with themes, checkout, payments, inventory, shipping and marketing tools, plus a point-of-sale system for in-person sales. Plans differ mainly in card rates, staff accounts and third-party transaction fees.",
+    "pros": [
+      "3-day free trial, then $1/month for the first 3 months",
+      "Unlimited products and built-in blog on every plan",
+      "Store can be generated from a prompt; Sidekick AI assistant included"
+    ],
+    "cons": [
+      "No free custom domain (free myshopify.com address only; $20 credit offered for adding a domain)",
+      "Third-party payment providers add a 2% / 1% / 0.6% fee on Basic / Grow / Advanced",
+      "Grow and Advanced cost $89 and $359 per month billed yearly"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "3-day free trial, then $1/month for 3 months",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 39,
+        "annual": 29,
+        "notes": "Online card rates 2.9% + 30¢; in-person 2.6% + 10¢; third-party transaction fee 2%. Up to 3 B2B catalogs, 10 inventory locations."
+      },
+      {
+        "name": "Grow",
+        "monthly": 105,
+        "annual": 89,
+        "notes": "Online card rates 2.7% + 30¢; in-person 2.5% + 10¢; third-party fee 1%. 5 staff accounts."
+      },
+      {
+        "name": "Advanced",
+        "monthly": 399,
+        "annual": 359,
+        "notes": "Online card rates 2.5% + 30¢; in-person 2.4% + 10¢; third-party fee 0.6%. 15 staff accounts, live third-party shipping rates."
+      },
+      {
+        "name": "Plus",
+        "monthly": 2300,
+        "annual": null,
+        "notes": "Starting price ('Starts at $2,300 USD/mo'); 1- or 3-year terms. Online card rates 2.25% + 30¢; third-party fee 0.2%; unlimited staff, priority 24/7 phone support."
+      }
+    ],
+    "features": {
+      "ecommerce": true,
+      "freeDomain": false,
+      "blogging": true,
+      "aiBuilder": true,
+      "memberships": null
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2006",
+    "hq": "Ottawa, Canada",
+    "integrations": "Shopify App Store (thousands of apps), social and marketplace channels, PayPal",
+    "compliance": [
+      "PCI DSS Level 1"
+    ],
+    "support": [
+      "24/7 live chat",
+      "Priority 24/7 phone support (Plus)"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "shopify.com: Pricing (US version, Wayback Machine capture of 2026-11-15)",
+        "url": "https://web.archive.org/web/20261115075035/https://www.shopify.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "shopify.com: Pricing",
+        "url": "https://www.shopify.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "help.shopify.com: Blogs",
+        "url": "https://help.shopify.com/en/manual/online-store/blogs",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Shopify",
+        "url": "https://en.wikipedia.org/wiki/Shopify",
+        "date": "2026"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Basic",
+          "monthly": 39,
+          "annualFirstTerm": 29,
+          "annualRenewal": 29,
+          "longestTerm": {
+            "months": 12,
+            "firstTermPerMonth": 29,
+            "renewalPerMonth": 29
+          },
+          "promo": "Try 3 days free, then $1/month for 3 months (monthly billing), then standard monthly pricing.",
+          "renewalSource": "No intro discount on yearly billing; FAQ: 'most plans start at just $1 per month for the first 3 months, then switch to standard monthly pricing.'"
+        },
+        {
+          "name": "Grow",
+          "monthly": 105,
+          "annualFirstTerm": 89,
+          "annualRenewal": 89,
+          "longestTerm": {
+            "months": 12,
+            "firstTermPerMonth": 89,
+            "renewalPerMonth": 89
+          },
+          "promo": "Same 3-day trial and $1/month for 3 months offer.",
+          "renewalSource": "Pricing page comparison table (Pay monthly / Pay yearly)."
+        },
+        {
+          "name": "Advanced",
+          "monthly": 399,
+          "annualFirstTerm": 359,
+          "annualRenewal": 359,
+          "longestTerm": {
+            "months": 12,
+            "firstTermPerMonth": 359,
+            "renewalPerMonth": 359
+          },
+          "promo": "Same 3-day trial and $1/month for 3 months offer.",
+          "renewalSource": "Pricing page comparison table."
+        },
+        {
+          "name": "Plus",
+          "monthly": 2300,
+          "annualFirstTerm": null,
+          "annualRenewal": null,
+          "longestTerm": {
+            "months": 36,
+            "firstTermPerMonth": null,
+            "renewalPerMonth": null
+          },
+          "promo": "'Try for $399' button; terms not stated.",
+          "renewalSource": "'Starts at $2,300 USD/mo'; FAQ mentions 1- or 3-year Plus subscriptions."
+        }
+      ],
+      "domainAfterYear1": "No free domain. Every store gets a free myshopify.com address; plans show 'Add a domain, get $20'.",
+      "notes": "shopify.com/pricing geolocates to INR from this location and a ?country=US parameter did not change it, so USD figures were read from the Wayback Machine copy of the vendor's own US pricing page captured today (2026-11-15 07:50 UTC). Fees: online premium card rates 3.5%/3.3%/3.1%/2.95% + 30¢, international cards +1%, PayPal wallet from 3.49% + 49¢, marketplace orders over 50/month 1% up to $99/mo. POS Pro add-on $89/mo per location. A separate $0/mo 'Agentic' plan exists only for selling in AI channels (pay per sale, card rate 2.9% + 30¢); it has no online store, so freePlan is false. Gated member content is not listed as a built-in feature (Customer Accounts only)."
+    }
+  },
+  {
+    "slug": "carrd",
+    "name": "Carrd",
+    "category": "website-builders",
+    "website": "https://carrd.com",
+    "pricingUrl": "https://carrd.com/pro",
+    "tagline": "A builder for simple, responsive one-page sites, priced per year for a set number of sites.",
+    "bestFor": "One-page landing pages, profiles and link pages",
+    "description": "Carrd builds one-page sites from templates or a blank page, and the free plan allows up to three sites per account. Pro plans are billed yearly and add custom domains, forms, embeds and more sites.",
+    "pros": [
+      "Free plan with up to 3 sites",
+      "Pro Standard is $19 per year for 10 sites with custom domains",
+      "7-day free Pro trial with no card required"
+    ],
+    "cons": [
+      "One-page sites only; no blog or online store",
+      "Custom domains, forms and embeds need Pro Standard or higher",
+      "No free domain; you must bring a domain you own"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 3 sites per account on a carrd.co address with 'Made with Carrd' branding; core features only.",
+    "trial": "7-day free trial of Pro, no payment or card required",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Pro Lite",
+        "monthly": null,
+        "annual": 0.75,
+        "notes": "$9 per year (9/12 = $0.75/mo) for 3 sites. Premium URLs, no branding, premium templates; no custom domains, forms or embeds. Also Pro Lite 10 ($14/yr) and Pro Lite 25 ($29/yr)."
+      },
+      {
+        "name": "Pro Standard",
+        "monthly": null,
+        "annual": 1.58,
+        "notes": "$19 per year (19/12 = $1.58/mo, rounded to the cent) for 10 sites. Custom domains, forms (incl. payment-enabled forms), widgets and embeds (Stripe, PayPal, Gumroad), analytics. Higher tiers: 25 sites $39, 50 $69, 100 $119, 250 $249, 500 $399, 1000 $599 per year."
+      },
+      {
+        "name": "Pro Plus",
+        "monthly": null,
+        "annual": 4.08,
+        "notes": "$49 per year (49/12 = $4.08/mo, rounded to the cent) for 25 sites. Adds advanced forms, password protection, redirects, site downloads, site files. Higher tiers: 50 sites $89, 100 $159, 250 $349, 500 $599, 1000 $999 per year."
+      }
+    ],
+    "features": {
+      "ecommerce": false,
+      "freeDomain": false,
+      "blogging": false,
+      "aiBuilder": false,
+      "memberships": false
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Stripe, PayPal, Gumroad, Typeform, Mailchimp, Kit, beehiiv, ActiveCampaign and other form/email services",
+    "compliance": [],
+    "support": [
+      "Documentation",
+      "Contact form"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "carrd.com: Go Pro (plans)",
+        "url": "https://carrd.com/pro",
+        "date": "2026"
+      },
+      {
+        "label": "carrd.com: Home",
+        "url": "https://carrd.com/",
+        "date": "2026"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Pro Lite",
+          "monthly": null,
+          "annualFirstTerm": 0.75,
+          "annualRenewal": 0.75,
+          "longestTerm": {
+            "months": 12,
+            "firstTermPerMonth": 0.75,
+            "renewalPerMonth": 0.75
+          },
+          "promo": "None",
+          "renewalSource": "No intro pricing; 'Automatically renew yearly or simply pay as you go'."
+        },
+        {
+          "name": "Pro Standard",
+          "monthly": null,
+          "annualFirstTerm": 1.58,
+          "annualRenewal": 1.58,
+          "longestTerm": {
+            "months": 12,
+            "firstTermPerMonth": 1.58,
+            "renewalPerMonth": 1.58
+          },
+          "promo": "None",
+          "renewalSource": "No intro pricing shown on carrd.com/pro."
+        },
+        {
+          "name": "Pro Plus",
+          "monthly": null,
+          "annualFirstTerm": 4.08,
+          "annualRenewal": 4.08,
+          "longestTerm": {
+            "months": 12,
+            "firstTermPerMonth": 4.08,
+            "renewalPerMonth": 4.08
+          },
+          "promo": "None",
+          "renewalSource": "No intro pricing shown on carrd.com/pro."
+        }
+      ],
+      "domainAfterYear1": "Not applicable; Carrd does not sell or include domains.",
+      "notes": "Carrd is priced per year per account for a set number of sites, not per website per month. Per-month figures are the yearly price divided by 12 (Pro Lite $9/yr, Pro Standard $19/yr, Pro Plus $49/yr); $19/12 and $49/12 are rounded to the cent. Per-site cost on Pro Standard is about $1.90 per site per year. No monthly billing option. Payments are possible through payment-enabled forms and Stripe/PayPal embeds, but there is no product catalog or store, so ecommerce is set false. Password protection (Pro Plus) is the only access control; no member accounts. No blog or AI generator is listed on the site. Founded year and HQ not confirmed from a reliable source."
+    }
+  },
+  {
+    "slug": "jimdo",
+    "name": "Jimdo",
+    "category": "website-builders",
+    "website": "https://www.jimdo.com",
+    "pricingUrl": "https://www.jimdo.com/pricing/",
+    "tagline": "An AI website builder for the self-employed and micro-businesses, with bookings, payment links and a shop.",
+    "bestFor": "Self-employed people and micro-businesses in Europe",
+    "description": "Jimdo builds a website with AI and adds bookings, payment links, a contact list and, on the Grow plan, an online shop, with Companion AI on every plan. It offers a free plan and paid plans billed monthly, every 12 months or every 24 months, with EU hosting.",
+    "pros": [
+      "Free plan with AI-built site, bookings and payment links",
+      "Free domain for the first term on paid plans",
+      "0% commission on sales, bookings and payment links"
+    ],
+    "cons": [
+      "Online shop only on Grow and Unlimited",
+      "Free plan shows ads and Jimdo branding and allows 5 pages",
+      "Support hours are Monday to Friday, German business hours only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Jimdo subdomain, 5 pages, 5 GB storage, 1 Smart Form, ads and Jimdo branding, 7 days of statistics; includes Companion AI, link-in-bio page and payment links.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Start",
+        "monthly": null,
+        "annual": null,
+        "notes": "USD price could not be read (page localised to INR). 10 pages, 30 GB, own domain free for the first term, SEO settings, 1 email forwarding address."
+      },
+      {
+        "name": "Grow",
+        "monthly": null,
+        "annual": null,
+        "notes": "USD price could not be read. Adds online shop (card, PayPal, Apple Pay, Google Pay), shipping, stock and order tracking, Facebook/Instagram selling, 50 pages, 50 GB, 5 email forwarding addresses."
+      },
+      {
+        "name": "Unlimited",
+        "monthly": null,
+        "annual": null,
+        "notes": "USD price could not be read. Unlimited pages, 500 GB storage, 20 email forwarding addresses."
+      }
+    ],
+    "features": {
+      "ecommerce": true,
+      "freeDomain": true,
+      "blogging": null,
+      "aiBuilder": true,
+      "memberships": null
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2007",
+    "hq": "Hamburg, Germany",
+    "integrations": "Calendly, YouTube, Instagram, Google Docs (Smart Apps), Google Search Console, Google Ads, PayPal",
+    "compliance": [
+      "GDPR"
+    ],
+    "support": [
+      "Help center",
+      "Support team Mon-Fri 7:00-17:00 German time"
+    ],
+    "checked": "2026-11-15",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "jimdo.com: Pricing",
+        "url": "https://www.jimdo.com/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Jimdo",
+        "url": "https://en.wikipedia.org/wiki/Jimdo",
+        "date": "2026"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Start",
+          "monthly": null,
+          "annualFirstTerm": null,
+          "annualRenewal": null,
+          "longestTerm": {
+            "months": 24,
+            "firstTermPerMonth": null,
+            "renewalPerMonth": null
+          },
+          "promo": "'Save 33% vs. monthly' on 12 months; free domain for the first term.",
+          "renewalSource": "FAQ: 'Your plan renews automatically at its regular price. First-term discounts and the free domain apply to your first term only.'"
+        },
+        {
+          "name": "Grow",
+          "monthly": null,
+          "annualFirstTerm": null,
+          "annualRenewal": null,
+          "longestTerm": {
+            "months": 24,
+            "firstTermPerMonth": null,
+            "renewalPerMonth": null
+          },
+          "promo": "'Save 31% vs. monthly' on 12 months; free domain for the first term.",
+          "renewalSource": "Same FAQ statement; no renewal figure shown."
+        },
+        {
+          "name": "Unlimited",
+          "monthly": null,
+          "annualFirstTerm": null,
+          "annualRenewal": null,
+          "longestTerm": {
+            "months": 24,
+            "firstTermPerMonth": null,
+            "renewalPerMonth": null
+          },
+          "promo": "'Save 32% vs. monthly' on 12 months; free domain for the first term.",
+          "renewalSource": "Same FAQ statement; no renewal figure shown."
+        }
+      ],
+      "domainAfterYear1": "No figure stated: 'Upon renewal, the domain is charged separately at the regular domain prices.' Free first-term domain covers .de, .com, .net, .org, .info, .at, .ch, .es, .it, .fr and .nl.",
+      "notes": "USD prices NOT confirmed: jimdo.com/pricing loads prices from a catalog chosen by visitor country and showed INR from this location, with no currency selector. No third-party USD figures were used. INR prices seen today (incl. VAT): Start Rs1,630/mo monthly, Rs1,087/mo on 12 months (Rs13,044), Rs996/mo on 24 months (Rs23,904); Grow Rs2,626 monthly, Rs1,811 on 12 months (Rs21,732), Rs1,539.50 on 24 months (Rs36,948); Unlimited Rs6,701 monthly, Rs4,528 on 12 months (Rs54,336), Rs4,120.50 on 24 months (Rs98,892). The page does not say whether the 12/24-month rates are first-term discounts or ongoing term discounts. JimdoPay charges a payment processing fee per transaction. The 14-day right of withdrawal applies to consumers where the law provides it; the free plan is described as the trial. Blog and member-area features are not mentioned on the pricing page."
+    }
+  }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "slug": "nordvpn", "name": "NordVPN", "category": "vpns",
+    "website": "https://nordvpn.com", "pricingUrl": "https://nordvpn.com/pricing/",
+    "tagline": "A VPN service from Nord Security with its WireGuard-based NordLynx protocol and add-on security tools in higher tiers.",
+    "bestFor": "People who want a VPN plus antivirus, password manager and cloud storage in one subscription",
+    "description": "NordVPN is a VPN service developed by Nord Security that offers its own WireGuard-based NordLynx protocol, a kill switch and split tunneling. It sells three tiers (Basic, Complete and Complete Max) on 1-month, 1-year and 2-year terms, with up to 10 devices at once.",
+    "pros": ["NordLynx protocol based on WireGuard", "No-logs policy assessed by Deloitte six times, most recently in late 2025", "Complete tier bundles antivirus, password manager and 1 TB cloud storage"],
+    "cons": ["Limited to 10 devices at once on every tier", "Renewal prices are far above first-term prices (Basic renews at $139.08/year)", "No free plan"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Basic", "monthly": 14.69, "annual": 4.89, "notes": "1-year plan: $73.35 for the first 15 months (12 + 3 extra), then renews at $139.08/year. 2-year plan: $2.99/mo, $80.73 for the first 27 months (24 + 3 extra), then renews at $139.08/year. 1-month plan billed every month at $14.69. VPN only; 10 devices; dedicated IP can be added at checkout. Prices shown in USD to an Indian IP with a 'GST may apply' note, so US prices may differ."},
+      {"name": "Complete", "monthly": 19.49, "annual": 5.89, "notes": "1-year plan: $88.35 for the first 15 months, then renews at $219.48/year. 2-year plan: $3.89/mo, $105.03 for the first 27 months, then renews at $219.48/year. Adds next-gen antivirus, ad and tracker blocker, password manager, 1 TB encrypted cloud storage, call and message protection and Dark Web Monitor Pro. 10 devices."},
+      {"name": "Complete Max", "monthly": 21.49, "annual": 7.79, "notes": "1-year plan: $116.85 for the first 15 months, then renews at $301.08/year. 2-year plan: $5.89/mo, $159.03 for the first 27 months, then renews at $301.08/year. Everything in Complete plus an included dedicated IP. 10 devices."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": true, "unlimitedDevices": false},
+    "platforms": ["Windows", "macOS", "Linux", "iOS", "Android", "Android TV", "Browser extensions"],
+    "founded": "2012", "hq": null,
+    "integrations": null,
+    "compliance": [], "support": ["24/7 live chat", "Email", "Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "nordvpn.com: Pricing", "url": "https://nordvpn.com/pricing/", "date": "2026"},
+      {"label": "nordvpn.com: Features", "url": "https://nordvpn.com/features/", "date": "2026"},
+      {"label": "nordvpn.com: NordLynx protocol", "url": "https://nordvpn.com/blog/nordlynx-protocol-wireguard/", "date": "2026"},
+      {"label": "nordvpn.com: Sixth no-logs assessment", "url": "https://nordvpn.com/blog/nordvpn-no-logs-assurance-engagement-2025/", "date": "2026"},
+      {"label": "Wikipedia: NordVPN", "url": "https://en.wikipedia.org/wiki/NordVPN", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Basic", "oneMonth": 14.69, "oneYear": {"perMonth": 4.89, "upfront": 73.35, "months": 15, "bonusMonths": 3, "renewalUpfront": 139.08, "renewalTerm": "renews yearly at"}, "twoYear": {"perMonth": 2.99, "upfront": 80.73, "months": 27, "bonusMonths": 3, "renewalUpfront": 139.08, "renewalTerm": "renews yearly at"}, "renewalSource": "https://nordvpn.com/pricing/"},
+        {"name": "Complete", "oneMonth": 19.49, "oneYear": {"perMonth": 5.89, "upfront": 88.35, "months": 15, "bonusMonths": 3, "renewalUpfront": 219.48, "renewalTerm": "renews yearly at"}, "twoYear": {"perMonth": 3.89, "upfront": 105.03, "months": 27, "bonusMonths": 3, "renewalUpfront": 219.48, "renewalTerm": "renews yearly at"}, "renewalSource": "https://nordvpn.com/pricing/"},
+        {"name": "Complete Max", "oneMonth": 21.49, "oneYear": {"perMonth": 7.79, "upfront": 116.85, "months": 15, "bonusMonths": 3, "renewalUpfront": 301.08, "renewalTerm": "renews yearly at"}, "twoYear": {"perMonth": 5.89, "upfront": 159.03, "months": 27, "bonusMonths": 3, "renewalUpfront": 301.08, "renewalTerm": "renews yearly at"}, "renewalSource": "https://nordvpn.com/pricing/"}
+      ],
+      "freeTier": null,
+      "devices": "10 simultaneous devices on every tier",
+      "moneyBackDays": 30,
+      "audit": "Deloitte Lithuania, ISAE 3000 reasonable assurance engagement, fieldwork 10 Nov - 12 Dec 2025 (sixth assessment; earlier ones 2018, 2020, 2022, 2023, 2024)",
+      "notes": "nordvpn.com returns HTTP 403 to automated fetches, so prices were read in a real browser. The page was served to an Indian IP: prices are in USD but carry a 'GST may apply' note, so US visitors may see different figures; I could not load a US version. Renewal prices are printed on each card ('Renews at $X/year'); 1-year and 2-year plans both renew yearly. Current tiers are Basic, Complete and Complete Max (no Plus/Ultimate shown). Black Friday pricing was live on the check date. Kill switch and split tunneling confirmed on nordvpn.com/features; NordLynx is described by NordVPN as built on WireGuard."
+    }
+  },
+  {
+    "slug": "expressvpn", "name": "ExpressVPN", "category": "vpns",
+    "website": "https://www.expressvpn.com", "pricingUrl": "https://www.expressvpn.com/pricing",
+    "tagline": "A VPN service owned by Kape Technologies that uses its own Lightway protocol and also offers WireGuard.",
+    "bestFor": "Users who want a VPN with bundled password manager and email alias tools",
+    "description": "ExpressVPN is a VPN service owned by Kape Technologies that offers its Lightway protocol plus WireGuard and OpenVPN, a kill switch (Network Lock) and split tunneling. It sells Basic, Advanced and Express Pro tiers on 1-month, 12-month and 2-year terms, allowing 10 to 14 devices at once.",
+    "pros": ["Offers Lightway, WireGuard and OpenVPN protocols", "No-logs claims examined by KPMG as of 28 February 2025", "Higher tiers add a password manager, email alias service and dedicated IP"],
+    "cons": ["Highest 1-month price in this group ($14.99 for Basic)", "Device limit of 10 on Basic", "Express Pro renews at $199.95/year"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Basic", "monthly": 14.99, "annual": 4.99, "notes": "12-month plan: $74.85 for the first 15 months (12 + 3), then autorenews at $99.95/year. 2-year plan: $2.99/mo, $83.72 for the first 28 months (24 + 4), then autorenews at $99.95/year. 1-month autorenews at $14.99. 10 devices; dedicated IP available as add-on."},
+      {"name": "Advanced", "monthly": 16.99, "annual": 5.99, "notes": "12-month plan: $89.85 for the first 15 months, then autorenews at $119.95/year. 2-year plan: $4.19/mo, $117.32 for the first 28 months, then autorenews at $119.95/year. 12 devices; adds ExpressKeys password manager and more ExpressMailGuard aliases."},
+      {"name": "Express Pro", "monthly": 22.99, "annual": 8.99, "notes": "12-month plan: $134.85 for the first 15 months, then autorenews at $199.95/year. 2-year plan: $7.19/mo, $201.32 for the first 28 months, then autorenews at $199.95/year. 14 devices; dedicated IP included."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": true, "unlimitedDevices": false},
+    "platforms": ["Windows", "macOS", "Linux", "iOS", "Android", "Routers", "Browser extensions"],
+    "founded": "2009", "hq": null,
+    "integrations": null,
+    "compliance": [], "support": ["24/7 live chat", "Email", "Support center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "expressvpn.com: Pricing", "url": "https://www.expressvpn.com/pricing", "date": "2026"},
+      {"label": "expressvpn.com: Order page", "url": "https://www.expressvpn.com/order", "date": "2026"},
+      {"label": "expressvpn.com: Features", "url": "https://www.expressvpn.com/features", "date": "2026"},
+      {"label": "expressvpn.com: KPMG 2025 no-logs audit", "url": "https://expressvpn.com/blog/kpmg-2025-no-logs-policy-audit/", "date": "2026"},
+      {"label": "Wikipedia: ExpressVPN", "url": "https://en.wikipedia.org/wiki/ExpressVPN", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Basic", "oneMonth": 14.99, "oneYear": {"perMonth": 4.99, "upfront": 74.85, "months": 15, "bonusMonths": 3, "renewalUpfront": 99.95, "renewalTerm": "autorenews annually at"}, "twoYear": {"perMonth": 2.99, "upfront": 83.72, "months": 28, "bonusMonths": 4, "renewalUpfront": 99.95, "renewalTerm": "autorenews annually at"}, "renewalSource": "https://www.expressvpn.com/pricing"},
+        {"name": "Advanced", "oneMonth": 16.99, "oneYear": {"perMonth": 5.99, "upfront": 89.85, "months": 15, "bonusMonths": 3, "renewalUpfront": 119.95, "renewalTerm": "autorenews annually at"}, "twoYear": {"perMonth": 4.19, "upfront": 117.32, "months": 28, "bonusMonths": 4, "renewalUpfront": 119.95, "renewalTerm": "autorenews annually at"}, "renewalSource": "https://www.expressvpn.com/pricing"},
+        {"name": "Express Pro", "oneMonth": 22.99, "oneYear": {"perMonth": 8.99, "upfront": 134.85, "months": 15, "bonusMonths": 3, "renewalUpfront": 199.95, "renewalTerm": "autorenews annually at"}, "twoYear": {"perMonth": 7.19, "upfront": 201.32, "months": 28, "bonusMonths": 4, "renewalUpfront": 199.95, "renewalTerm": "autorenews annually at"}, "renewalSource": "https://www.expressvpn.com/pricing"}
+      ],
+      "freeTier": null,
+      "devices": "10 (Basic), 12 (Advanced), 14 (Express Pro)",
+      "moneyBackDays": 30,
+      "audit": "KPMG LLP, ISAE 3000 Type I assessment of privacy policy and TrustedServer as of 28 February 2025",
+      "notes": "Page states 'All amounts shown are in USD'. A/B pricing seen: the browser and a direct download showed Advanced 2-year at $4.19/mo ($117.32) and Express Pro at $7.19/mo ($201.32) under a 'prebfcm' (Black Friday early access) offer, while a separate fetch of the same page showed $4.49/mo ($125.72) and $7.49/mo ($209.72). Basic 2-year ($2.99, $83.72) and all renewal prices matched in both. Renewal prices are printed under each card ('Then autorenews at $X annually'). 30-day money-back guarantee is for new users only. WireGuard is listed on the features page alongside Lightway and OpenVPN."
+    }
+  },
+  {
+    "slug": "surfshark", "name": "Surfshark", "category": "vpns",
+    "website": "https://surfshark.com", "pricingUrl": "https://surfshark.com/pricing",
+    "tagline": "A Netherlands-based VPN service that allows unlimited simultaneous devices on every plan.",
+    "bestFor": "Households that want to cover many devices with one subscription",
+    "description": "Surfshark is a VPN service run by Surfshark B.V. in Amsterdam that allows unlimited simultaneous connections and includes a kill switch, Bypasser split tunneling and WireGuard. It sells Starter, One and One+ plans on 1-month, 12-month and 24-month terms, with the higher tiers adding antivirus, breach alerts and Incogni data removal.",
+    "pros": ["Unlimited simultaneous devices on every plan", "Renewal prices published on a dedicated page", "No-logs policy assessed by Deloitte in 2023 and 2025"],
+    "cons": ["1-month Starter plan costs $18.95", "No free plan", "Starter renews at $79/year after the first term"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "Starter", "monthly": 18.95, "annual": 2.99, "notes": "12-month plan: $44.85 for the first 15 months (12 + 3 extra), then renews at $79.00/year. 24-month plan: $2.49/mo, $67.23 for the first 27 months (24 + 3 extra), then renews at $79.00 for a 1-year term. 1-month renews at $18.95. Includes VPN and Alternative ID. VAT may apply."},
+      {"name": "One", "monthly": 19.95, "annual": 2.99, "notes": "12-month plan: $44.85 for the first 15 months, then renews at $99.00/year. 24-month plan: $2.49/mo, $67.23 for the first 27 months, then renews at $99.00/year. 1-month renews at $19.95. Adds antivirus, Alert breach monitoring and Search."},
+      {"name": "One+", "monthly": 22.85, "annual": 6.99, "notes": "12-month plan: $104.85 for the first 15 months, then renews at $119.00/year. 24-month plan: $3.99/mo, $107.73 for the first 27 months, then renews at $119.00/year. 1-month renews at $22.85. Adds Incogni data removal and identity theft coverage (US residents except New York)."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": true, "unlimitedDevices": true},
+    "platforms": ["Windows", "macOS", "Linux", "iOS", "Android", "Apple TV", "Fire TV", "Browser extensions"],
+    "founded": "2018", "hq": "Amsterdam, Netherlands",
+    "integrations": null,
+    "compliance": [], "support": ["24/7 live chat", "Email", "Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "surfshark.com: Pricing", "url": "https://surfshark.com/pricing", "date": "2026"},
+      {"label": "surfshark.com: Subscription renewal prices", "url": "https://surfshark.com/terms-of-service/pricing", "date": "2026"},
+      {"label": "surfshark.com: Features", "url": "https://surfshark.com/features", "date": "2026"},
+      {"label": "surfshark.com: WireGuard protocol", "url": "https://surfshark.com/blog/wireguard-protocol", "date": "2026"},
+      {"label": "surfshark.com: Deloitte no-logs audit 2025", "url": "https://surfshark.com/blog/deloitte-no-logs-audit-2025", "date": "2026"},
+      {"label": "Wikipedia: Surfshark", "url": "https://en.wikipedia.org/wiki/Surfshark", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "Starter", "oneMonth": 18.95, "oneYear": {"perMonth": 2.99, "upfront": 44.85, "months": 15, "bonusMonths": 3, "renewalUpfront": 79.00, "renewalTerm": "renews yearly at"}, "twoYear": {"perMonth": 2.49, "upfront": 67.23, "months": 27, "bonusMonths": 3, "renewalUpfront": 79.00, "renewalTerm": "renews for a 1-year term at"}, "renewalSource": "https://surfshark.com/terms-of-service/pricing"},
+        {"name": "One", "oneMonth": 19.95, "oneYear": {"perMonth": 2.99, "upfront": 44.85, "months": 15, "bonusMonths": 3, "renewalUpfront": 99.00, "renewalTerm": "renews yearly at"}, "twoYear": {"perMonth": 2.49, "upfront": 67.23, "months": 27, "bonusMonths": 3, "renewalUpfront": 99.00, "renewalTerm": "renews for a 1-year term at"}, "renewalSource": "https://surfshark.com/terms-of-service/pricing"},
+        {"name": "One+", "oneMonth": 22.85, "oneYear": {"perMonth": 6.99, "upfront": 104.85, "months": 15, "bonusMonths": 3, "renewalUpfront": 119.00, "renewalTerm": "renews yearly at"}, "twoYear": {"perMonth": 3.99, "upfront": 107.73, "months": 27, "bonusMonths": 3, "renewalUpfront": 119.00, "renewalTerm": "renews for a 1-year term at"}, "renewalSource": "https://surfshark.com/terms-of-service/pricing"}
+      ],
+      "freeTier": null,
+      "devices": "Unlimited simultaneous devices (FAQ says free-trial users are limited to 3 devices until the trial ends)",
+      "moneyBackDays": 30,
+      "audit": "Deloitte Lietuva, ISAE 3000 reasonable assurance report dated 10 June 2025 (earlier Deloitte assessment in 2023)",
+      "notes": "Renewal prices come from Surfshark's 'Subscription renewal prices' page (before taxes) and match the recurring prices in the pricing page's own plan data. The 24-month prices were read on the rendered pricing page; the 12-month and 1-month first-term prices come from the pricing page's embedded plan data (query country IN, currency USD) because the tab would not switch in the automated browser. Surfshark says it bills USD for the US and the rest of the world, and a separate fetch showed the same 24-month USD prices. Surfshark's renewal page says displayed renewal prices may be subject to A/B price testing. Black Friday deal live on the check date. The site mentions a free trial but I did not confirm its length or terms."
+    }
+  },
+  {
+    "slug": "proton-vpn", "name": "Proton VPN", "category": "vpns",
+    "website": "https://protonvpn.com", "pricingUrl": "https://protonvpn.com/pricing",
+    "tagline": "A Swiss VPN from Proton AG with open-source apps and a free plan that has no data cap.",
+    "bestFor": "Users who want a free VPN with no data limit or a VPN bundled with Proton Mail and Drive",
+    "description": "Proton VPN is a VPN service from Proton AG in Switzerland with open-source apps, a kill switch in all apps, split tunneling and WireGuard. It offers a permanent free plan for one device and paid VPN Plus and Proton Unlimited plans on 1-month, 1-year and 2-year terms.",
+    "pros": ["Permanent free plan with no data limit", "No-logs policy audited by Securitum (fourth audit in 2025)", "Renewal price printed on the pricing page for every term"],
+    "cons": ["Free plan is limited to 1 device and servers in 10 randomly selected countries", "Paid plans limited to 10 devices", "2-year plans cost more per month than the 1-year deal during this promotion"],
+    "freePlan": true, "freePlanDetails": "Proton Free: 1 device at a time, medium speed, servers in 10 randomly selected countries, no streaming, no P2P, no ad and malware blocker; no data limit and no credit card required.",
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "VPN Plus", "monthly": 9.99, "annual": 2.99, "notes": "1-year plan: $35.88 for the first 12 months, then renews at $83.88 every 12 months. 2-year plan: $3.49/mo, $83.76 for the first 24 months, then renews at $83.88 every 12 months. 1-month renews at $9.99. 10 devices. A pop-up offered VPN Plus at $1.00 for the first month, renewing at $9.99."},
+      {"name": "Proton Unlimited", "monthly": 12.99, "annual": 6.49, "notes": "1-year plan: $77.88 for the first 12 months, then renews at $119.88 every 12 months. 2-year plan: $7.99/mo, $191.76 for the first 24 months, then renews at $119.88 every 12 months. 1-month renews at $12.99. Includes Proton VPN, Pass, Mail, Calendar and Drive; 10 devices."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": true, "unlimitedDevices": false},
+    "platforms": ["Windows", "macOS", "Linux", "iOS", "Android", "Android TV", "Apple TV", "Chromebook", "Browser extensions"],
+    "founded": "2017", "hq": "Plan-les-Ouates, Switzerland",
+    "integrations": "Bundled with Proton Mail, Calendar, Drive and Pass on Proton Unlimited",
+    "compliance": [], "support": ["Live chat (paid plans)", "Email", "Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "protonvpn.com: Pricing", "url": "https://protonvpn.com/pricing?currency=USD", "date": "2026"},
+      {"label": "protonvpn.com: Features", "url": "https://protonvpn.com/features", "date": "2026"},
+      {"label": "securitum.com: Proton VPN no-logs audit 2025 (PDF)", "url": "https://www.securitum.com/public-reports/securitum-protonvpn-nologs-2025.pdf", "date": "2026"},
+      {"label": "Wikipedia: Proton VPN", "url": "https://en.wikipedia.org/wiki/Proton_VPN", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "VPN Plus", "oneMonth": 9.99, "oneYear": {"perMonth": 2.99, "upfront": 35.88, "months": 12, "bonusMonths": 0, "renewalUpfront": 83.88, "renewalTerm": "renews every 12 months at"}, "twoYear": {"perMonth": 3.49, "upfront": 83.76, "months": 24, "bonusMonths": 0, "renewalUpfront": 83.88, "renewalTerm": "renews every 12 months at"}, "renewalSource": "https://protonvpn.com/pricing?currency=USD"},
+        {"name": "Proton Unlimited", "oneMonth": 12.99, "oneYear": {"perMonth": 6.49, "upfront": 77.88, "months": 12, "bonusMonths": 0, "renewalUpfront": 119.88, "renewalTerm": "renews every 12 months at"}, "twoYear": {"perMonth": 7.99, "upfront": 191.76, "months": 24, "bonusMonths": 0, "renewalUpfront": 119.88, "renewalTerm": "renews every 12 months at"}, "renewalSource": "https://protonvpn.com/pricing?currency=USD"}
+      ],
+      "freeTier": "Permanent free plan: 1 device, medium speed, servers in 10 randomly selected countries, no streaming/P2P/ad blocker, no data cap.",
+      "devices": "1 (Free), 10 (VPN Plus and Proton Unlimited)",
+      "moneyBackDays": 30,
+      "audit": "Securitum, no-logs audit with on-site work 18-20 August 2025 (fourth annual Securitum audit)",
+      "notes": "Prices read in USD using the page's currency switch (?currency=USD); the page also offers CHF and EUR. Each term shows its own billing line, e.g. 'Billed at $35.88 for the first 12 months, then renews at $83.88 every 12 months'. The 2-year plan renews yearly, not every 2 years. During this promotion the 1-year VPN Plus deal ($2.99/mo) is cheaper per month than the 2-year deal ($3.49/mo). One secondary source mentions a fifth Securitum audit in 2026; not verified. Split tunneling is on Windows, macOS, Linux, Android, Android TV and the browser extension (not listed for iOS)."
+    }
+  },
+  {
+    "slug": "private-internet-access", "name": "Private Internet Access", "category": "vpns",
+    "website": "https://www.privateinternetaccess.com", "pricingUrl": "https://www.privateinternetaccess.com/buy-vpn-online",
+    "tagline": "A VPN service owned by Kape Technologies with open-source apps and unlimited simultaneous devices.",
+    "bestFor": "Budget buyers who want unlimited devices and a long-term plan that renews at the same price",
+    "description": "Private Internet Access (PIA) is a VPN service owned by Kape Technologies with open-source apps, an advanced kill switch, split tunneling and WireGuard. It sells one VPN plan on 1-month, 1-year and 3-year terms and allows unlimited devices at once.",
+    "pros": ["Unlimited simultaneous devices", "1-year and 3-year plans renew at the same price as the first term", "No-logs claims assessed by Deloitte three times, most recently in December 2025"],
+    "cons": ["No 2-year plan on the website", "Pricing page localises currency by IP with no visible currency switch", "No free plan"],
+    "freePlan": false, "freePlanDetails": null,
+    "trial": null, "minSeats": 1,
+    "plans": [
+      {"name": "VPN", "monthly": 11.95, "annual": 3.99, "notes": "1-year plan: $47.88 billed the first year, then autorenews annually at $47.88. 3-year plan: $81.20 for 3 years + 4 extra months (40 months, about $2.03/mo), then autorenews at $81.20 every 3 years. 1-month autorenews at $11.95. Unlimited devices. Antivirus and dedicated IP are paid add-ons at checkout."}
+    ],
+    "features": {"killSwitch": true, "splitTunneling": true, "wireGuard": true, "auditedNoLogs": true, "unlimitedDevices": true},
+    "platforms": ["Windows", "macOS", "Linux", "iOS", "Android", "Routers", "Browser extensions"],
+    "founded": "2010", "hq": null,
+    "integrations": null,
+    "compliance": [], "support": ["24/7 live chat", "Email", "Help center"],
+    "checked": "2026-11-15", "verification": "verified",
+    "sources": [
+      {"label": "privateinternetaccess.com: Buy VPN (pricing)", "url": "https://www.privateinternetaccess.com/buy-vpn-online", "date": "2026"},
+      {"label": "checkout.privateinternetaccess.com: Order page (USD)", "url": "https://checkout.privateinternetaccess.com/order", "date": "2026"},
+      {"label": "privateinternetaccess.com: VPN features", "url": "https://www.privateinternetaccess.com/vpn-features", "date": "2026"},
+      {"label": "privateinternetaccess.com: Third Deloitte audit", "url": "https://privateinternetaccess.com/blog/security-audit-2025", "date": "2026"},
+      {"label": "Wikipedia: Private Internet Access", "url": "https://en.wikipedia.org/wiki/Private_Internet_Access", "date": "2026"}
+    ],
+    "research": {
+      "plans": [
+        {"name": "VPN", "oneMonth": 11.95, "oneYear": {"perMonth": 3.99, "upfront": 47.88, "months": 12, "bonusMonths": 0, "renewalUpfront": 47.88, "renewalTerm": "autorenews annually at"}, "twoYear": null, "threeYear": {"perMonth": 2.03, "upfront": 81.20, "months": 40, "bonusMonths": 4, "renewalUpfront": 81.20, "renewalTerm": "autorenews every 3 years at"}, "renewalSource": "https://checkout.privateinternetaccess.com/order"}
+      ],
+      "freeTier": null,
+      "devices": "Unlimited simultaneous devices",
+      "moneyBackDays": 30,
+      "audit": "Deloitte Audit Romania, ISAE 3000 (Revised), completed 19 December 2025 (third Deloitte audit)",
+      "notes": "The public pricing page showed INR to an Indian IP and ignored ?currency=USD / ?cur=usd. USD prices were read on PIA's own checkout page with cur=usd for each offer ('All amounts are shown in USD'): 1-month $11.95; 1-year $47.88 (list $143.40, 66% off); 3 years + 4 months $81.20 (list $478.00, 83% off, labelled Black Friday early access). Renewal prices come from the checkout page's plan data (renewal equals first-term price for 1-year and 3-year) and match the INR pricing page wording ('Billed at X first year and then autorenews annually at X'; 'Autorenews at X every 3 years'). No 2-year plan is offered, so twoYear is null and the 3-year plan is under threeYear. The $2.03/mo figure is my calculation ($81.20 / 40 months); the vendor's USD per-month figure for that card was not displayed. Money-back guarantee is for new subscribers only."
+    }
+  }
+]
