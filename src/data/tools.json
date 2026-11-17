@@ -10012,5 +10012,879 @@
         "date": "2026"
       }
     ]
+  },
+  {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "category": "email-marketing-software",
+    "website": "https://mailchimp.com",
+    "logo": "https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/mailchimp-favicons/apple-touch-icon.png",
+    "pricingUrl": "https://mailchimp.com/pricing/marketing/",
+    "tagline": "Email marketing platform with a free plan and three paid plans priced by contact count.",
+    "bestFor": "Small businesses that want an easy email tool with a free starting tier",
+    "description": "Mailchimp is an email marketing platform owned by Intuit, with a drag-and-drop email builder, automation flows, segmentation, forms and landing pages. It sells Essentials, Standard and Premium plans whose price rises with the number of contacts, plus a free plan for up to 250 contacts.",
+    "pros": [
+      "Free plan for up to 250 contacts and 500 emails a month",
+      "A/B testing, landing pages and forms included from Essentials up",
+      "SMS and transactional email (formerly Mandrill) sold as add-ons from Mailchimp itself"
+    ],
+    "cons": [
+      "No self-serve annual billing; annual plans only through sales for Standard and Premium at 10,000+ contacts",
+      "Essentials limits automation flows to 4 steps, and transactional email needs Standard or Premium",
+      "Premium starts at $350 a month because its smallest tier is 10,000 contacts"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 250 contacts and 500 emails per month (max 250 per day); 1 seat, 1 audience, email support for the first 30 days only; no automation flows (preview only), no scheduling, Mailchimp branding on emails.",
+    "trial": "14-day free trial of Standard or Essentials (payment details required)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Essentials",
+        "monthly": 13,
+        "annual": null,
+        "notes": "Price for 500 contacts (smallest tier); 5,000 emails/month (10x contacts). 3 seats, 3 audiences, automation flows up to 4 steps, A/B testing, 24/7 email and chat support. SMS add-on available. Promo: 15% off the first 12 months for 10,000+ contacts; regular price shown."
+      },
+      {
+        "name": "Standard",
+        "monthly": 20,
+        "annual": null,
+        "notes": "Price for 500 contacts (smallest tier); 6,000 emails/month (12x contacts). 5 seats, 5 audiences, up to 200 automation flows with branching, dynamic content, custom reports, 1 onboarding session. SMS/MMS and transactional email add-ons. Promo: 15% off the first 12 months for 10,000+ contacts; regular price shown."
+      },
+      {
+        "name": "Premium",
+        "monthly": 350,
+        "annual": null,
+        "notes": "Price for 10,000 contacts (smallest tier; smaller lists pay the same); 150,000 emails/month (15x contacts). Unlimited seats and audiences, multivariate testing, phone and priority support, SSO. Promo: 15% off the first 12 months; regular price shown. Over 200,000 contacts: custom pricing."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2001",
+    "hq": "Atlanta, United States",
+    "integrations": "300+ integrations",
+    "compliance": [],
+    "support": [
+      "24/7 email and chat",
+      "Phone (Premium)"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "mailchimp.com: Marketing pricing",
+        "url": "https://mailchimp.com/pricing/marketing/",
+        "date": "2026"
+      },
+      {
+        "label": "mailchimp.com: Pricing data used by the pricing page (USD, US visitor; Wayback capture of 2026-11-16)",
+        "url": "https://web.archive.org/web/20261116132720/https://mailchimp.com/forms/pricing/?currency=USD",
+        "date": "2026"
+      },
+      {
+        "label": "mailchimp.com: Compare plans",
+        "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Mailchimp",
+        "url": "https://en.wikipedia.org/wiki/Mailchimp",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "brevo",
+    "name": "Brevo",
+    "category": "email-marketing-software",
+    "website": "https://www.brevo.com",
+    "logo": "https://corp-backend.brevo.com/wp-content/uploads/2025/07/Brevo_logo.svg",
+    "pricingUrl": "https://www.brevo.com/pricing/",
+    "tagline": "Email, SMS and transactional messaging platform priced by monthly email volume.",
+    "bestFor": "Small businesses that want a large free plan and marketing plus transactional email in one account",
+    "description": "Brevo (formerly Sendinblue) is a marketing platform for email, SMS, WhatsApp, push and live chat, with automation, transactional email over API/SMTP and built-in sales tools. It has a free plan, Starter and Standard plans priced by monthly email volume, a Professional plan from 150,000 emails a month and a custom-priced Enterprise plan.",
+    "pros": [
+      "Free plan stores up to 100,000 contacts and sends 300 emails a day",
+      "Transactional email (API, SMTP, webhooks) and SMS credits available on every plan, including Free",
+      "10% off with yearly billing"
+    ],
+    "cons": [
+      "On Starter and Standard the email tier also caps contacts: the 5,000-email entry tier stores only 500",
+      "A/B testing, landing pages and automation beyond 2,000 contacts start at Standard; Starter shows the Brevo logo unless you buy an add-on",
+      "Professional jumps to $499/month, a large step up from Standard"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "300 emails per day (unused sends do not carry over) and up to 100,000 contacts; 1 user, Brevo logo on emails, marketing automation up to 2,000 contacts, transactional email and SMS (prepaid credits), email support. No credit card, no time limit.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 9,
+        "annual": 8.08,
+        "notes": "Price for 5,000 emails/month (smallest tier), which stores up to 500 contacts; 10,000 emails = 1,500 contacts, 15,000 = 2,500, 20,000-100,000 = up to 500,000. No daily sending limit, 1 user. Brevo logo removal is a paid add-on. Annual = $97 billed yearly."
+      },
+      {
+        "name": "Standard",
+        "monthly": 18,
+        "annual": 16.17,
+        "notes": "Price for 5,000 emails/month (smallest tier), which stores up to 500 contacts; same contact caps as Starter, tiers up to 500,000 emails. Adds A/B testing, automation with no contact cap, 1 landing page, send-time optimisation, no Brevo logo; up to 3 users ($12/month per extra seat). Annual = $194 billed yearly."
+      },
+      {
+        "name": "Professional",
+        "monthly": 499,
+        "annual": 449.08,
+        "notes": "Price for 150,000 emails/month (smallest tier), up to 2 million contacts. 10 users, 10 landing pages, WhatsApp (add-on), contact scoring, phone support. Annual = $5,389 billed yearly."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing (talk to sales). Custom sending volumes, unlimited contacts and users, dedicated IP, SAML SSO, SLA and customer success manager."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2012",
+    "hq": "Paris, France",
+    "integrations": "150+ integrations, plus API and SMTP",
+    "compliance": [],
+    "support": [
+      "Email",
+      "Phone"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "brevo.com: Pricing",
+        "url": "https://www.brevo.com/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "brevo.com: Public pricing API used by the pricing page (USD)",
+        "url": "https://pricing-backend.brevo.com/public/pricing/api/plans/all?currency=USD",
+        "date": "2026"
+      },
+      {
+        "label": "help.brevo.com: About Brevo's pricing plans",
+        "url": "https://help.brevo.com/hc/en-us/articles/208589409",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Brevo",
+        "url": "https://en.wikipedia.org/wiki/Brevo",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "mailerlite",
+    "name": "MailerLite",
+    "category": "email-marketing-software",
+    "website": "https://www.mailerlite.com",
+    "logo": "https://www.mailerlite.com/site/themes/new/img/favicons/apple-touch-icon.png",
+    "pricingUrl": "https://www.mailerlite.com/pricing",
+    "tagline": "Email marketing platform with automation, landing pages and websites, priced by subscriber count.",
+    "bestFor": "Small businesses, creators and newsletter writers who want a low-cost, easy-to-use tool",
+    "description": "MailerLite is an email marketing platform with a drag-and-drop editor, automation workflows, landing pages, websites, signup forms and tools for selling digital products and paid newsletters. It has a free plan for up to 250 subscribers, Comfort and Power plans priced by subscriber tier, and a custom Enterprise plan above 200,000 subscribers.",
+    "pros": [
+      "Free plan for up to 250 subscribers with automations, email A/B testing, a website and a landing page",
+      "Both paid plans include the full feature set, including multivariate testing, dynamic content and landing page A/B tests",
+      "Power plan adds unlimited monthly emails and unlimited user seats from $25 a month"
+    ],
+    "cons": [
+      "Comfort caps sending at 10x the subscriber tier and allows 50 active automations, 10 landing pages and 3 seats",
+      "Annual billing saves only 10%",
+      "No SMS marketing; transactional email needs a separate MailerSend account and plan"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 250 subscribers and 2,500 emails per month; 2 user seats, 3 active automations (5 steps each), 1 website and 1 landing page, 3 active forms, MailerLite logo on emails, knowledge base support only, limited API access with no API sending.",
+    "trial": "14-day free trial of premium features, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Comfort",
+        "monthly": 12,
+        "annual": 10.8,
+        "notes": "Price for 500 subscribers (smallest tier); 5,000 emails/month (10x the tier ceiling). 3 user seats, 50 active automations, 10 websites/landing pages, 10 forms, 5 digital products or bookings, email support. Annual = $129.60 billed yearly."
+      },
+      {
+        "name": "Power",
+        "monthly": 25,
+        "annual": 22.5,
+        "notes": "Price for 500 subscribers (smallest tier); unlimited emails/month under a fair use policy. Unlimited user seats, automations, forms, sites and digital products, multiple automation triggers, partner discounts, priority email and 24/7 live chat support. Annual = $270 billed yearly."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing for 200,000+ subscribers. Custom sending volume, dedicated IP, deliverability support, account audit and onboarding."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": false,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web",
+      "iOS"
+    ],
+    "founded": "2010",
+    "hq": "Dublin, Ireland",
+    "integrations": "100+ integrations, plus an API, webhooks and an MCP server",
+    "compliance": [
+      "GDPR"
+    ],
+    "support": [
+      "Email",
+      "24/7 live chat",
+      "Knowledge base"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "mailerlite.com: Pricing",
+        "url": "https://www.mailerlite.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "mailerlite.com: Transactional (MailerSend) pricing",
+        "url": "https://www.mailerlite.com/pricing-mailersend",
+        "date": "2026"
+      },
+      {
+        "label": "mailerlite.com: Terms of service",
+        "url": "https://www.mailerlite.com/legal/terms-of-service",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "kit",
+    "name": "Kit",
+    "category": "email-marketing-software",
+    "website": "https://kit.com",
+    "logo": "https://kit.com/apple-touch-icon.png",
+    "pricingUrl": "https://kit.com/pricing",
+    "tagline": "Email marketing platform for creators, with a free plan and two paid plans priced by subscriber count.",
+    "bestFor": "Creators and newsletter writers who want email, landing pages and digital product sales in one tool",
+    "description": "Kit, formerly ConvertKit (renamed in 2024), is an email marketing platform for creators with landing pages, forms, broadcasts, visual automations and built-in sales of digital products and paid newsletters. It has a free plan for up to 10,000 subscribers and Creator and Pro plans whose price rises with subscriber count, starting at 1,000 subscribers.",
+    "pros": [
+      "Free plan covers up to 10,000 subscribers with unlimited landing pages, forms and broadcasts",
+      "No sending limits on any plan",
+      "Annual billing gives 2 months free (about 17% off)"
+    ],
+    "cons": [
+      "Visual automations and email sequences are not on the free plan",
+      "Creator plan A/B tests only 2 subject lines; content tests and 5-way tests need Pro",
+      "No transactional email service"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 10,000 subscribers, unlimited landing pages, forms and email broadcasts, 1 user, A/B tests of 2 subject lines, digital product and paid newsletter sales (3.5% + 30c per transaction); no visual automations or email sequences, Kit branding stays on, email support only.",
+    "trial": "14-day free trial of Creator or Pro, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Creator",
+        "monthly": 39,
+        "annual": 32.5,
+        "notes": "Price for 1,000 subscribers (smallest tier); unlimited email sends. Unlimited visual automations and sequences, SMS marketing, RSS campaigns, 100+ app integrations, branding removal, 2 users. Annual = $390 billed yearly."
+      },
+      {
+        "name": "Pro",
+        "monthly": 79,
+        "annual": 65.83,
+        "notes": "Price for 1,000 subscribers (smallest tier); unlimited email sends. Adds unlimited users, A/B tests of up to 5 subject lines or content, deliverability reporting, engagement scoring, Subscriber Signals, custom tracking domain, priority support. Annual = $790 billed yearly. Promo until November 30, 2026: 25% off the first year of annual Pro for lists up to 75,000 ($593 first year at 1,000 subscribers); regular price shown."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": false
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2013",
+    "hq": null,
+    "integrations": "100+ direct app integrations and an API",
+    "compliance": [],
+    "support": [
+      "Email",
+      "Live chat",
+      "24/7 support"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "kit.com: Pricing",
+        "url": "https://kit.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "kit.com: Pricing page script with subscriber-tier price table",
+        "url": "https://kit.com/_next/static/chunks/21439-fac47b9c43a2f824.js",
+        "date": "2026"
+      },
+      {
+        "label": "help.kit.com: Creator plan vs Creator Pro plan",
+        "url": "https://help.kit.com/en/articles/4494683-creator-plan-vs-creator-pro-plan",
+        "date": "2026"
+      },
+      {
+        "label": "Business Wire: ConvertKit rebrands to Kit",
+        "url": "https://www.businesswire.com/news/home/20241001564521/en",
+        "date": "2024"
+      }
+    ]
+  },
+  {
+    "slug": "constant-contact",
+    "name": "Constant Contact",
+    "category": "email-marketing-software",
+    "website": "https://www.constantcontact.com",
+    "logo": "https://www.constantcontact.com/favicon.ico",
+    "pricingUrl": "https://www.constantcontact.com/pricing",
+    "tagline": "Email, social and SMS marketing platform for small businesses, priced by contact count.",
+    "bestFor": "Small businesses and nonprofits that want simple email marketing with phone support",
+    "description": "Constant Contact is an email marketing platform for small businesses that also covers social posting, SMS, events, landing pages and ad management. It sells Lite, Standard and Premium plans priced by number of contacts, plus a custom-priced Multi-Account (Teams) option.",
+    "pros": [
+      "Live phone and chat support on every plan",
+      "Prepaying 12 months saves 15%; nonprofits can save up to 30%",
+      "Premium includes 500 SMS messages a month (US only)"
+    ],
+    "cons": [
+      "No free plan; the 30-day trial is capped at 100 email sends",
+      "Lite has no A/B testing and only one automation template; custom automations need Premium",
+      "Sends over the monthly limit are billed at $0.002 per email"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial, no credit card required (up to 100 email sends)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Lite",
+        "monthly": 12,
+        "annual": 10.2,
+        "notes": "Price for 0-500 contacts (smallest tier); email sends up to 10x contacts (5,000/month). 1 user, 1 automation template, 1 custom segment, basic reporting. SMS add-on from $10/month for 500 messages (US only). Annual = 12-month prepay at 15% off."
+      },
+      {
+        "name": "Standard",
+        "monthly": 35,
+        "annual": 29.75,
+        "notes": "Price for 0-500 contacts (smallest tier); email sends up to 12x contacts (6,000/month). 3 users, email scheduling, subject line A/B testing, resend to non-openers, 3 automation templates, 10 custom segments, open/click reporting. SMS add-on from $10/month. Annual = 12-month prepay at 15% off."
+      },
+      {
+        "name": "Premium",
+        "monthly": 80,
+        "annual": 68,
+        "notes": "Price for 0-500 contacts (smallest tier); email sends up to 24x contacts (12,000/month). Unlimited users, custom automations, unlimited segments, dynamic content, Google Ads manager, SEO recommendations, 500 SMS messages/month included, priority support. Annual = 12-month prepay at 15% off."
+      },
+      {
+        "name": "Multi-Account (Teams)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing (talk to sales) for teams that need 5+ accounts, with central control of templates, messaging and approvals."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": false
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "1995",
+    "hq": "Waltham, Massachusetts, United States",
+    "integrations": "300+ integrations",
+    "compliance": [],
+    "support": [
+      "Phone",
+      "Live chat"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "constantcontact.com: Pricing",
+        "url": "https://www.constantcontact.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "constantcontact.com: Pricing page script with tiered fee schedule (USD)",
+        "url": "https://www.constantcontact.com/_next/static/chunks/9360-0993df873b59d151.js",
+        "date": "2026"
+      },
+      {
+        "label": "knowledgebase.constantcontact.com: Constant Contact free trial",
+        "url": "https://knowledgebase.constantcontact.com/email-digital-marketing/articles/KnowledgeBase/5549-Constant-Contact-free-trial?lang=en_US",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Constant Contact",
+        "url": "https://en.wikipedia.org/wiki/Constant_Contact",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "activecampaign",
+    "name": "ActiveCampaign",
+    "category": "email-marketing-software",
+    "website": "https://www.activecampaign.com",
+    "logo": "https://www.activecampaign.com/dist/favicon-180x180.png",
+    "pricingUrl": "https://www.activecampaign.com/pricing",
+    "tagline": "Email marketing and automation platform with four plans priced by contact count.",
+    "bestFor": "Small and mid-size businesses that rely on automated email sequences",
+    "description": "ActiveCampaign is an email marketing and marketing automation platform with a visual automation builder, segmentation and optional CRM. It sells Starter, Plus, Pro and Enterprise plans whose price rises with the number of contacts, starting at 1,000 contacts.",
+    "pros": [
+      "Multi-step automations on every plan, including Starter",
+      "Annual billing cuts the monthly price by roughly 17-21%",
+      "Transactional email and SMS sold as add-ons from ActiveCampaign itself"
+    ],
+    "cons": [
+      "No free plan, only a 14-day trial",
+      "Starter limits automations to 5 actions each and has no landing pages",
+      "Smallest tier is 1,000 contacts, so very small lists still pay the 1,000-contact price"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 19,
+        "annual": 15,
+        "notes": "Price for 1,000 contacts (smallest tier); 10,000 emails/month (10x contacts). 1 user, 15 active business goals, 5 actions per automation, no landing pages. Annual = $180 billed yearly."
+      },
+      {
+        "name": "Plus",
+        "monthly": 59,
+        "annual": 49,
+        "notes": "Price for 1,000 contacts (smallest tier); 10,000 emails/month (10x contacts). 1 user, 25 business goals, unlimited automation actions, landing pages and site messages. Annual = $588 billed yearly."
+      },
+      {
+        "name": "Pro",
+        "monthly": 99,
+        "annual": 79,
+        "notes": "Price for 1,000 contacts (smallest tier); 12,000 emails/month (12x contacts). 3 users, 200 business goals, A/B testing in emails and automations. Annual = $948 billed yearly."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 179,
+        "annual": 145,
+        "notes": "Price for 1,000 contacts (smallest tier); 15,000 emails/month (15x contacts). 5 users, 200 business goals. Annual = $1,740 billed yearly."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2003",
+    "hq": "Chicago, United States",
+    "integrations": "Over 1,000 app integrations",
+    "compliance": [],
+    "support": [],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "activecampaign.com: Pricing",
+        "url": "https://www.activecampaign.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "activecampaign.com: Pricing catalog data used by the pricing page (ac2024, USD)",
+        "url": "https://www.activecampaign.com/marketing/api/v1/pricing-catalog?c=ac2024&currency=USD",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: ActiveCampaign",
+        "url": "https://en.wikipedia.org/wiki/ActiveCampaign",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "klaviyo",
+    "name": "Klaviyo",
+    "category": "email-marketing-software",
+    "website": "https://www.klaviyo.com",
+    "logo": "https://www.klaviyo.com/icons/icon-512x512.png",
+    "pricingUrl": "https://www.klaviyo.com/pricing",
+    "tagline": "Email and SMS marketing platform for online stores, priced by active profiles.",
+    "bestFor": "Ecommerce brands that want email tied to store data",
+    "description": "Klaviyo is a marketing platform for ecommerce that combines email, SMS, flows, segmentation, reviews and a customer data platform. Its Email and Marketing plans are priced by the number of active profiles, with a free plan for up to 250 active profiles.",
+    "pros": [
+      "Free plan with 250 active profiles and 500 emails a month",
+      "Flows, segmentation and A/B testing included",
+      "Transactional flow emails available on paid accounts after approval"
+    ],
+    "cons": [
+      "No annual billing option shown on the pricing page",
+      "SMS and MMS are a paid add-on on the Email and Marketing plans",
+      "Price climbs quickly past 10,000 active profiles"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 250 active profiles and 500 emails per month; $5 of mobile messages and $5 of Composer usage per month.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Email",
+        "monthly": 20,
+        "annual": null,
+        "notes": "Price for 500 active profiles (smallest tier); 5,000 emails/month. Profiles are treated as contacts. SMS/MMS is an add-on."
+      },
+      {
+        "name": "Marketing",
+        "monthly": 25,
+        "annual": null,
+        "notes": "Price for 500 active profiles (smallest tier); 5,000 emails/month. Adds social marketing and Customer Hub for the full profile count and reviews with no order limit. Promo: first month for $1 for up to 5,000 active profiles (limited time); regular price shown."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2012",
+    "hq": "Boston, United States",
+    "integrations": null,
+    "compliance": [],
+    "support": [],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "klaviyo.com: Pricing",
+        "url": "https://www.klaviyo.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "help.klaviyo.com: How to use flows to send transactional emails",
+        "url": "https://help.klaviyo.com/hc/en-us/articles/360003165732",
+        "date": "2026"
+      },
+      {
+        "label": "help.klaviyo.com: Getting started with Landing Pages",
+        "url": "https://help.klaviyo.com/hc/en-us/articles/45373923808155",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Klaviyo",
+        "url": "https://en.wikipedia.org/wiki/Klaviyo",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "getresponse",
+    "name": "GetResponse",
+    "category": "email-marketing-software",
+    "website": "https://www.getresponse.com",
+    "logo": "https://www.getresponse.com/global/favicons/apple-touch-icon-180x180.png",
+    "pricingUrl": "https://www.getresponse.com/pricing",
+    "tagline": "Email marketing platform with automation, landing pages, webinars and course tools.",
+    "bestFor": "Small businesses and creators who want email plus landing pages and webinars",
+    "description": "GetResponse is an email marketing platform that adds automation workflows, landing pages, a website builder, webinars and online courses. It sells Starter, Marketer and Creator plans priced by list size, plus a custom-priced Enterprise plan and a limited free account.",
+    "pros": [
+      "Free account for up to 500 contacts after the 14-day trial",
+      "Unlimited monthly sends on paid plans",
+      "18% off with 12-month billing"
+    ],
+    "cons": [
+      "Starter allows only one automation workflow and has no A/B testing",
+      "SMS and transactional email are only on the custom-priced Enterprise plan",
+      "Smallest paid tier is 1,000 contacts"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 500 contacts (unconfirmed and removed contacts count) and 2,500 messages per month; no A/B tests, landing pages limited to 1,000 unique visits, webinars up to 10 people, GetResponse badge on messages.",
+    "trial": "14-day free trial of premium features, no credit card",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 19,
+        "annual": 15.58,
+        "notes": "Price for 1,000 contacts (smallest tier); unlimited email sends. One automation workflow, landing pages and signup forms, no A/B testing, up to 3 users."
+      },
+      {
+        "name": "Marketer",
+        "monthly": 59,
+        "annual": 48.38,
+        "notes": "Price for 1,000 contacts (smallest tier); unlimited email sends. Unlimited automation workflows, A/B testing, abandoned cart recovery, sales funnels, up to 5 users."
+      },
+      {
+        "name": "Creator",
+        "monthly": 69,
+        "annual": 56.58,
+        "notes": "Price for 1,000 contacts (smallest tier); unlimited email sends. Everything in Marketer plus webinars (up to 100 attendees), website builder and course creator."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing. Adds SMS marketing, transactional emails (API/SMTP), dedicated sending domain and IP, SSO, priority support; monthly, 12-month or 24-month billing."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "1998",
+    "hq": "Gdańsk, Poland",
+    "integrations": null,
+    "compliance": [],
+    "support": [
+      "Chat"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "getresponse.com: Pricing",
+        "url": "https://www.getresponse.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "getresponse.com: Can I try GetResponse before I buy?",
+        "url": "https://www.getresponse.com/help/can-i-try-getresponse-before-i-buy.md",
+        "date": "2026"
+      },
+      {
+        "label": "getresponse.com: How many messages can I send using my Free account?",
+        "url": "https://www.getresponse.com/help/how-many-messages-can-i-send-using-my-free-account.md",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: GetResponse",
+        "url": "https://en.wikipedia.org/wiki/GetResponse",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "moosend",
+    "name": "Moosend",
+    "category": "email-marketing-software",
+    "website": "https://moosend.com",
+    "logo": "https://moosend.com/wp-content/uploads/2026/06/cropped-moosend-logomark-light-background-180x180.png",
+    "pricingUrl": "https://moosend.com/pricing/",
+    "tagline": "Low-cost email marketing and automation tool with one self-serve plan priced by contacts.",
+    "bestFor": "Small businesses on a tight budget that want unlimited sends",
+    "description": "Moosend is an email marketing and automation tool owned by Constant Contact, with a newsletter editor, automation workflows, landing pages and forms. It sells one self-serve Pro plan priced by contact count, plus custom-priced Moosend+ and Enterprise plans.",
+    "pros": [
+      "Pro starts at $9 a month for 500 contacts with unlimited sends",
+      "20% off with annual billing, 15% off with biannual billing",
+      "30-day free trial with no credit card"
+    ],
+    "cons": [
+      "No permanent free plan",
+      "Transactional email is an add-on on the custom Moosend+ plan, not Pro",
+      "No built-in SMS marketing listed on the pricing page"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Pro",
+        "monthly": 9,
+        "annual": 7,
+        "notes": "Price for 500 contacts (smallest tier); unlimited email campaigns/sends. 5 team members. Biannual billing $8/month."
+      },
+      {
+        "name": "Moosend+",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom plan: all Pro features plus chosen add-ons (transactional emails, dedicated IPs, custom reports, SSO & SAML, hosted files, extra team members)."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. All Pro and Enterprise-level features, 10+ team members, account manager, priority support."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": false,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "80+ integrations and an API",
+    "compliance": [],
+    "support": [
+      "Email",
+      "Live chat",
+      "Knowledge base"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "moosend.com: Pricing",
+        "url": "https://moosend.com/pricing/",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "omnisend",
+    "name": "Omnisend",
+    "category": "email-marketing-software",
+    "website": "https://www.omnisend.com",
+    "logo": "https://www.omnisend.com/wp-content/uploads/2022/07/cropped-favi-180x180.png",
+    "pricingUrl": "https://www.omnisend.com/pricing/",
+    "tagline": "Email, SMS and push marketing platform built for online stores.",
+    "bestFor": "Ecommerce stores that want email and SMS in one tool",
+    "description": "Omnisend is an ecommerce marketing platform that combines email, SMS/MMS and web push with pre-built store workflows, forms and landing pages. It has a free plan, Standard and Pro plans priced by contact count, and a custom plan above 150,000 active profiles.",
+    "pros": [
+      "Free plan includes pre-built ecommerce workflows, A/B testing and landing pages",
+      "Pro includes unlimited emails under a fair-use policy (60x list)",
+      "Order confirmation flows can be triggered through the API"
+    ],
+    "cons": [
+      "No annual billing option",
+      "SMS/MMS only on the Pro plan, paid per message",
+      "Pro has a 2,500-contact minimum price"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "250 contacts, 500 emails per month and 500 web push notifications per month; no time limit, no credit card.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Standard",
+        "monthly": 16,
+        "annual": null,
+        "notes": "Price for up to 500 contacts (smallest paid tier); 6,000 emails/month (12x list). Unlimited web push, custom workflows. Black Friday promo: 30% off for 3 months ($11.20/month); regular price shown."
+      },
+      {
+        "name": "Pro",
+        "monthly": 59,
+        "annual": null,
+        "notes": "Price for up to 2,500 contacts (smallest Pro tier; smaller lists pay the same); unlimited emails under fair use (up to 60x list). SMS/MMS from $0.007 per message. Black Friday promo: 30% off for 3 months ($41.30/month); regular price shown."
+      },
+      {
+        "name": "Custom",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "For more than 150,000 active profiles; custom SMS rates."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2014",
+    "hq": null,
+    "integrations": null,
+    "compliance": [],
+    "support": [
+      "24/7 support"
+    ],
+    "checked": "2026-11-15",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "omnisend.com: Pricing",
+        "url": "https://www.omnisend.com/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "omnisend.com: Pricing page script with tier price table",
+        "url": "https://www.omnisend.com/wp-content/themes/omnisend-v2/assets/js/pricing-new.min.js",
+        "date": "2026"
+      },
+      {
+        "label": "api-docs.omnisend.com: How to enable order confirmation flow",
+        "url": "https://api-docs.omnisend.com/docs/how-to-enable-order-confirmation-flow",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Omnisend",
+        "url": "https://en.wikipedia.org/wiki/Omnisend",
+        "date": "2026"
+      }
+    ]
   }
 ]

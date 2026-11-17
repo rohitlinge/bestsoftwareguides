@@ -813,5 +813,79 @@
         }
       }
     ]
+  },
+  {
+    "slug": "email-marketing-software",
+    "name": "Email Marketing Software",
+    "singular": "email marketing tool",
+    "plural": "email marketing tools",
+    "topic": "Websites & Marketing",
+    "intro": "Email marketing software sends newsletters and automated emails to a contact list, with templates, signup forms, segmentation and reports. Almost every vendor prices by list size (contacts or subscribers), and the bill climbs quickly as the list grows; Brevo is the exception and prices by the number of emails you send. Free plans are common but small, so compare the price at the list size you expect to reach in a year, not the entry price.",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "buyingTips": [
+      "Price the list you will have, not the one you have: at 1,000 contacts the cheapest monthly plans are Moosend Pro ($16), Brevo Starter ($17) and MailerLite Comfort, GetResponse Starter and ActiveCampaign Starter ($19 each). At 10,000 contacts GetResponse Starter costs $79 a month, MailerLite Comfort $89 and ActiveCampaign Starter $189.",
+      "Brevo prices by emails sent, but its 5,000-email entry tier stores only 500 contacts, so a 1,000-contact list needs the 10,000-email tier ($17 a month on Starter). Sending about four emails a month to 10,000 contacts costs $46 on Starter.",
+      "Check the send limit: Mailchimp Essentials, ActiveCampaign Starter, MailerLite Comfort and Constant Contact Lite allow about 10 emails per contact a month, while GetResponse, Kit and Moosend set no monthly cap on their paid plans.",
+      "Free plans differ widely: Kit's covers up to 10,000 subscribers but has no automations, Brevo's stores up to 100,000 contacts but sends 300 emails a day, and Mailchimp, Klaviyo and Omnisend stop at 250 contacts and 500 emails a month. ActiveCampaign, Moosend and Constant Contact have no free plan.",
+      "Annual billing saves 10% at MailerLite and Brevo, 15% at Constant Contact, about 17% at Kit, 18% at GetResponse and up to 21% at ActiveCampaign. Mailchimp, Klaviyo and Omnisend sell self-serve plans monthly only.",
+      "If you also need texts or receipts and password-reset emails, check the add-ons: MailerLite has no SMS, and Kit and Constant Contact have no transactional email service."
+    ],
+    "featureLabels": {
+      "marketingAutomation": "Multi-step automations",
+      "abTesting": "Email A/B testing",
+      "landingPages": "Landing pages",
+      "smsMarketing": "SMS marketing",
+      "transactionalEmail": "Transactional email (API or SMTP)"
+    },
+    "faqs": [
+      {
+        "q": "How much does email marketing software cost for 1,000 contacts?",
+        "a": "On monthly billing, the entry paid plan costs $16 to $39 a month in our list: Moosend Pro $16, Brevo Starter $17 (10,000 emails), MailerLite Comfort, GetResponse Starter and ActiveCampaign Starter $19, Omnisend Standard $20, Mailchimp Essentials $29, Klaviyo Email and Constant Contact Lite $30, and Kit Creator $39. Kit's free plan also covers 1,000 subscribers, without automations."
+      },
+      {
+        "q": "How much does email marketing software cost for 10,000 contacts?",
+        "a": "On monthly billing: GetResponse Starter $79, Moosend Pro $88, MailerLite Comfort $89, Mailchimp Essentials $110, Constant Contact Lite $120, Omnisend Standard $132, Kit Creator $139, Klaviyo Email $150 and ActiveCampaign Starter $189. Brevo prices by volume instead: Starter costs $46 a month for 40,000 emails, about four sends to 10,000 contacts."
+      },
+      {
+        "q": "Which email marketing software has the best free plan?",
+        "a": "It depends on what you need. Kit's free plan has the largest list limit among plans that send without a daily cap (10,000 subscribers) but no automations. Brevo stores up to 100,000 contacts but sends only 300 emails a day. MailerLite's free plan includes automations and A/B testing for up to 250 subscribers, and GetResponse allows 500 contacts and 2,500 messages a month."
+      }
+    ],
+    "compareTop": 6,
+    "useCases": [
+      {
+        "slug": "email-marketing-software-with-sms",
+        "name": "Email Marketing Software with SMS",
+        "singular": "email marketing tool with SMS",
+        "intro": "Send texts from the same tool as your emails, to the same contacts and segments. Each tool here sells SMS from its own platform, usually as an add-on or credits on top of the email plan. Check each one's plan notes: some limit SMS to certain plans or countries.",
+        "ruleText": "Sends SMS from its own platform (an add-on counts).",
+        "rule": {
+          "feature": "smsMarketing"
+        }
+      },
+      {
+        "slug": "email-marketing-software-with-transactional-email",
+        "name": "Email Marketing Software with Transactional Email",
+        "singular": "email marketing tool with transactional email",
+        "intro": "Receipts, password resets and order updates are sent one at a time by your app or store, through an API or SMTP. These vendors sell that service too, so marketing and transactional email come from one vendor. Most charge for it separately from the marketing plan.",
+        "ruleText": "Offers transactional email (API or SMTP) from the same vendor; a paid add-on or sister product counts.",
+        "rule": {
+          "feature": "transactionalEmail"
+        }
+      },
+      {
+        "slug": "cheap-email-marketing-software",
+        "name": "Cheap Email Marketing Software (Under $15 a Month)",
+        "singular": "cheap email marketing tool",
+        "intro": "These tools have a paid plan that costs $15 a month or less on annual billing at their smallest list size (500 or 1,000 contacts, or 5,000 emails for Brevo). Prices rise with your list, so check the price at the size you expect to reach. Tools sold on monthly billing only are left out.",
+        "ruleText": "Cheapest paid plan costs $15 a month or less, billed annually.",
+        "rule": {
+          "maxEntryPrice": 15
+        }
+      }
+    ]
   }
 ]

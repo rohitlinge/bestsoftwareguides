@@ -1,0 +1,646 @@
+[
+  {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "category": "email-marketing-software",
+    "website": "https://mailchimp.com",
+    "pricingUrl": "https://mailchimp.com/pricing/marketing/",
+    "tagline": "Email marketing platform with a free plan and three paid plans priced by contact count.",
+    "bestFor": "Small businesses that want an easy email tool with a free starting tier",
+    "description": "Mailchimp is an email marketing platform owned by Intuit, with a drag-and-drop email builder, automation flows, segmentation, forms and landing pages. It sells Essentials, Standard and Premium plans whose price rises with the number of contacts, plus a free plan for up to 250 contacts.",
+    "pros": [
+      "Free plan for up to 250 contacts and 500 emails a month",
+      "A/B testing, landing pages and forms included from Essentials up",
+      "SMS and transactional email (formerly Mandrill) sold as add-ons from Mailchimp itself"
+    ],
+    "cons": [
+      "No self-serve annual billing; annual plans only through sales for Standard and Premium at 10,000+ contacts",
+      "Essentials limits automation flows to 4 steps, and transactional email needs Standard or Premium",
+      "Premium starts at $350 a month because its smallest tier is 10,000 contacts"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 250 contacts and 500 emails per month (max 250 per day); 1 seat, 1 audience, email support for the first 30 days only; no automation flows (preview only), no scheduling, Mailchimp branding on emails.",
+    "trial": "14-day free trial of Standard or Essentials (payment details required)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Essentials",
+        "monthly": 13,
+        "annual": null,
+        "notes": "Price for 500 contacts (smallest tier); 5,000 emails/month (10x contacts). 3 seats, 3 audiences, automation flows up to 4 steps, A/B testing, 24/7 email and chat support. SMS add-on available. Promo: 15% off the first 12 months for 10,000+ contacts; regular price shown."
+      },
+      {
+        "name": "Standard",
+        "monthly": 20,
+        "annual": null,
+        "notes": "Price for 500 contacts (smallest tier); 6,000 emails/month (12x contacts). 5 seats, 5 audiences, up to 200 automation flows with branching, dynamic content, custom reports, 1 onboarding session. SMS/MMS and transactional email add-ons. Promo: 15% off the first 12 months for 10,000+ contacts; regular price shown."
+      },
+      {
+        "name": "Premium",
+        "monthly": 350,
+        "annual": null,
+        "notes": "Price for 10,000 contacts (smallest tier; smaller lists pay the same); 150,000 emails/month (15x contacts). Unlimited seats and audiences, multivariate testing, phone and priority support, SSO. Promo: 15% off the first 12 months; regular price shown. Over 200,000 contacts: custom pricing."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2001",
+    "hq": "Atlanta, United States",
+    "integrations": "300+ integrations",
+    "compliance": [],
+    "support": [
+      "24/7 email and chat",
+      "Phone (Premium)"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "mailchimp.com: Marketing pricing",
+        "url": "https://mailchimp.com/pricing/marketing/",
+        "date": "2026"
+      },
+      {
+        "label": "mailchimp.com: Pricing data used by the pricing page (USD, US visitor; Wayback capture of 2026-11-16)",
+        "url": "https://web.archive.org/web/20261116132720/https://mailchimp.com/forms/pricing/?currency=USD",
+        "date": "2026"
+      },
+      {
+        "label": "mailchimp.com: Compare plans",
+        "url": "https://mailchimp.com/pricing/marketing/compare-plans/",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Mailchimp",
+        "url": "https://en.wikipedia.org/wiki/Mailchimp",
+        "date": "2026"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Essentials",
+          "at1000": {
+            "monthly": 29,
+            "annual": null,
+            "tier": "501-1,500 contacts (15,000 emails/month)"
+          },
+          "at10000": {
+            "monthly": 110,
+            "annual": null,
+            "tier": "5,001-10,000 contacts (100,000 emails/month)"
+          }
+        },
+        {
+          "name": "Standard",
+          "at1000": {
+            "monthly": 45,
+            "annual": null,
+            "tier": "501-1,500 contacts (18,000 emails/month)"
+          },
+          "at10000": {
+            "monthly": 135,
+            "annual": null,
+            "tier": "5,001-10,000 contacts (120,000 emails/month)"
+          }
+        },
+        {
+          "name": "Premium",
+          "at1000": {
+            "monthly": 350,
+            "annual": null,
+            "tier": "Up to 10,000 contacts (smallest Premium tier, 150,000 emails/month)"
+          },
+          "at10000": {
+            "monthly": 350,
+            "annual": null,
+            "tier": "Up to 10,000 contacts (150,000 emails/month)"
+          }
+        }
+      ],
+      "freePlanLimits": "250 contacts, 500 emails per month (max 250/day), 1 seat, 1 audience; sending pauses when a limit is reached.",
+      "notes": "The pricing page loads its prices from mailchimp.com/forms/pricing/ and localises by visitor IP: from this location (India) it returned INR-based estimates in USD (Essentials $8.92, Standard $13.35 at 500 contacts) with a 50% off for 12 months promo. US prices were read from the same vendor endpoint as captured by the Wayback Machine on 2026-11-16 (default currency USD, country US), and the US page capture of the same day matches ($20 Standard at 500, $350 Premium at 10,000). Contact tiers: 500, 1,500, 2,500, 5,000, 10,000, 15,000, 20,000, 25,000, 30,000, 40,000, 50,000 (Essentials stops at 50,000; Standard at 100,000; Premium from 10,000 to 200,000, custom above). Overages are billed automatically if contact or send limits are exceeded on paid plans. No self-serve annual billing; the page says annual plans for Premium and Standard 10,000+ contacts are available via sales, so annual fields are null. US promo: 15% off the first 12 months for 10,000+ contacts (Essentials, Standard, Premium). Premium has a 1-month free trial for qualified new customers via sales. 15% nonprofit discount. A Pay As You Go email-credit option also exists. SMS is an add-on on paid plans in select countries (MMS on Standard/Premium for US and Canada). Transactional email (fka Mandrill) is an add-on on Standard and Premium only, priced at $20 per 25,000-email block for up to 20 blocks (https://mailchimp.com/pricing/transactional-email/). Landing pages are included on all plans including Free. Mailchimp has been owned by Intuit since 2021."
+    }
+  },
+  {
+    "slug": "brevo",
+    "name": "Brevo",
+    "category": "email-marketing-software",
+    "website": "https://www.brevo.com",
+    "pricingUrl": "https://www.brevo.com/pricing/",
+    "tagline": "Email, SMS and transactional messaging platform priced by monthly email volume.",
+    "bestFor": "Small businesses that want a large free plan and marketing plus transactional email in one account",
+    "description": "Brevo (formerly Sendinblue) is a marketing platform for email, SMS, WhatsApp, push and live chat, with automation, transactional email over API/SMTP and built-in sales tools. It has a free plan, Starter and Standard plans priced by monthly email volume, a Professional plan from 150,000 emails a month and a custom-priced Enterprise plan.",
+    "pros": [
+      "Free plan stores up to 100,000 contacts and sends 300 emails a day",
+      "Transactional email (API, SMTP, webhooks) and SMS credits available on every plan, including Free",
+      "10% off with yearly billing"
+    ],
+    "cons": [
+      "On Starter and Standard the email tier also caps contacts: the 5,000-email entry tier stores only 500",
+      "A/B testing, landing pages and automation beyond 2,000 contacts start at Standard; Starter shows the Brevo logo unless you buy an add-on",
+      "Professional jumps to $499/month, a large step up from Standard"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "300 emails per day (unused sends do not carry over) and up to 100,000 contacts; 1 user, Brevo logo on emails, marketing automation up to 2,000 contacts, transactional email and SMS (prepaid credits), email support. No credit card, no time limit.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 9,
+        "annual": 8.08,
+        "notes": "Price for 5,000 emails/month (smallest tier), which stores up to 500 contacts; 10,000 emails = 1,500 contacts, 15,000 = 2,500, 20,000-100,000 = up to 500,000. No daily sending limit, 1 user. Brevo logo removal is a paid add-on. Annual = $97 billed yearly."
+      },
+      {
+        "name": "Standard",
+        "monthly": 18,
+        "annual": 16.17,
+        "notes": "Price for 5,000 emails/month (smallest tier), which stores up to 500 contacts; same contact caps as Starter, tiers up to 500,000 emails. Adds A/B testing, automation with no contact cap, 1 landing page, send-time optimisation, no Brevo logo; up to 3 users ($12/month per extra seat). Annual = $194 billed yearly."
+      },
+      {
+        "name": "Professional",
+        "monthly": 499,
+        "annual": 449.08,
+        "notes": "Price for 150,000 emails/month (smallest tier), up to 2 million contacts. 10 users, 10 landing pages, WhatsApp (add-on), contact scoring, phone support. Annual = $5,389 billed yearly."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing (talk to sales). Custom sending volumes, unlimited contacts and users, dedicated IP, SAML SSO, SLA and customer success manager."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2012",
+    "hq": "Paris, France",
+    "integrations": "150+ integrations, plus API and SMTP",
+    "compliance": [],
+    "support": [
+      "Email",
+      "Phone"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "brevo.com: Pricing",
+        "url": "https://www.brevo.com/pricing/",
+        "date": "2026"
+      },
+      {
+        "label": "brevo.com: Public pricing API used by the pricing page (USD)",
+        "url": "https://pricing-backend.brevo.com/public/pricing/api/plans/all?currency=USD",
+        "date": "2026"
+      },
+      {
+        "label": "help.brevo.com: About Brevo's pricing plans",
+        "url": "https://help.brevo.com/hc/en-us/articles/208589409",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Brevo",
+        "url": "https://en.wikipedia.org/wiki/Brevo",
+        "date": "2026"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Starter",
+          "at1000": {
+            "monthly": 17,
+            "annual": 15.25,
+            "tier": "10,000 emails/month (up to 1,500 contacts; the 5,000-email tier caps contacts at 500)"
+          },
+          "at10000": {
+            "monthly": 46,
+            "annual": 41.42,
+            "tier": "40,000 emails/month (4 sends to 10,000 contacts; up to 500,000 contacts)"
+          }
+        },
+        {
+          "name": "Standard",
+          "at1000": {
+            "monthly": 35,
+            "annual": 31.5,
+            "tier": "10,000 emails/month (up to 1,500 contacts; the 5,000-email tier caps contacts at 500)"
+          },
+          "at10000": {
+            "monthly": 89,
+            "annual": 80.08,
+            "tier": "40,000 emails/month (4 sends to 10,000 contacts; up to 500,000 contacts)"
+          }
+        },
+        {
+          "name": "Professional",
+          "at1000": {
+            "monthly": 499,
+            "annual": 449.08,
+            "tier": "150,000 emails/month (entry tier; up to 2 million contacts)"
+          },
+          "at10000": {
+            "monthly": 499,
+            "annual": 449.08,
+            "tier": "150,000 emails/month (entry tier; up to 2 million contacts)"
+          }
+        }
+      ],
+      "freePlanLimits": "300 emails per day, up to 100,000 contacts, 1 marketing seat, Brevo logo on emails, automation up to 2,000 contacts.",
+      "notes": "Prices come from Brevo's public pricing API that the pricing page loads (USD; base plan price plus recurring email-credit tiers, yearly totals divided by 12), cross-checked against the page's own text ($9/$97, $18/$194, $499/$5,389) and the help-center plan article (updated 2026-11-09). Brevo prices by monthly email volume, not contacts, but on Starter and Standard the email tier also sets the contact cap (5,000 emails = 500 contacts, 10,000 = 1,500, 15,000 = 2,500, 20,000+ = 500,000), so a 1,000-contact list needs the 10,000-email tier even at 4,000 sends a month. Starter email tiers add $8 (10k), $16 (15k), $23 (20k), $30 (30k), $37 (40k) per month; Standard adds $17, $31, $51, $61, $71. Professional's $499 = $350 base plus the first 150,000-email credit tier; it has no smaller volume tier. Yearly billing is 10% off. The API also lists an Enterprise price ($1,000/month), but the pricing page and help center show Enterprise as custom/talk to sales, so it is recorded as custom. Brevo logo removal on Starter costs $9/month per the help center but $12/month in the pricing API. The API offers extra landing pages on Standard ($24/month for 5 more) while the help center lists extra landing-page packs only on Professional ($250 per 50). SMS and WhatsApp use prepaid credits priced by country (not recorded); WhatsApp is Professional and Enterprise only. Prepaid email credit packs (5,000 to 1 million, never expire) are an alternative to a monthly plan. No promotion was shown on the pricing page. Prices exclude tax."
+    }
+  },
+  {
+    "slug": "mailerlite",
+    "name": "MailerLite",
+    "category": "email-marketing-software",
+    "website": "https://www.mailerlite.com",
+    "pricingUrl": "https://www.mailerlite.com/pricing",
+    "tagline": "Email marketing platform with automation, landing pages and websites, priced by subscriber count.",
+    "bestFor": "Small businesses, creators and newsletter writers who want a low-cost, easy-to-use tool",
+    "description": "MailerLite is an email marketing platform with a drag-and-drop editor, automation workflows, landing pages, websites, signup forms and tools for selling digital products and paid newsletters. It has a free plan for up to 250 subscribers, Comfort and Power plans priced by subscriber tier, and a custom Enterprise plan above 200,000 subscribers.",
+    "pros": [
+      "Free plan for up to 250 subscribers with automations, email A/B testing, a website and a landing page",
+      "Both paid plans include the full feature set, including multivariate testing, dynamic content and landing page A/B tests",
+      "Power plan adds unlimited monthly emails and unlimited user seats from $25 a month"
+    ],
+    "cons": [
+      "Comfort caps sending at 10x the subscriber tier and allows 50 active automations, 10 landing pages and 3 seats",
+      "Annual billing saves only 10%",
+      "No SMS marketing; transactional email needs a separate MailerSend account and plan"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 250 subscribers and 2,500 emails per month; 2 user seats, 3 active automations (5 steps each), 1 website and 1 landing page, 3 active forms, MailerLite logo on emails, knowledge base support only, limited API access with no API sending.",
+    "trial": "14-day free trial of premium features, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Comfort",
+        "monthly": 12,
+        "annual": 10.8,
+        "notes": "Price for 500 subscribers (smallest tier); 5,000 emails/month (10x the tier ceiling). 3 user seats, 50 active automations, 10 websites/landing pages, 10 forms, 5 digital products or bookings, email support. Annual = $129.60 billed yearly."
+      },
+      {
+        "name": "Power",
+        "monthly": 25,
+        "annual": 22.5,
+        "notes": "Price for 500 subscribers (smallest tier); unlimited emails/month under a fair use policy. Unlimited user seats, automations, forms, sites and digital products, multiple automation triggers, partner discounts, priority email and 24/7 live chat support. Annual = $270 billed yearly."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing for 200,000+ subscribers. Custom sending volume, dedicated IP, deliverability support, account audit and onboarding."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": false,
+      "transactionalEmail": true
+    },
+    "platforms": [
+      "Web",
+      "iOS"
+    ],
+    "founded": "2010",
+    "hq": "Dublin, Ireland",
+    "integrations": "100+ integrations, plus an API, webhooks and an MCP server",
+    "compliance": [
+      "GDPR"
+    ],
+    "support": [
+      "Email",
+      "24/7 live chat",
+      "Knowledge base"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "mailerlite.com: Pricing",
+        "url": "https://www.mailerlite.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "mailerlite.com: Transactional (MailerSend) pricing",
+        "url": "https://www.mailerlite.com/pricing-mailersend",
+        "date": "2026"
+      },
+      {
+        "label": "mailerlite.com: Terms of service",
+        "url": "https://www.mailerlite.com/legal/terms-of-service",
+        "date": "2026"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Comfort",
+          "at1000": {
+            "monthly": 19,
+            "annual": 17.1,
+            "tier": "1,000 subscribers (10,000 emails/month)"
+          },
+          "at10000": {
+            "monthly": 89,
+            "annual": 80.1,
+            "tier": "10,000 subscribers (100,000 emails/month)"
+          }
+        },
+        {
+          "name": "Power",
+          "at1000": {
+            "monthly": 39,
+            "annual": 35.1,
+            "tier": "1,000 subscribers (unlimited emails)"
+          },
+          "at10000": {
+            "monthly": 129,
+            "annual": 116.1,
+            "tier": "10,000 subscribers (unlimited emails)"
+          }
+        }
+      ],
+      "freePlanLimits": "250 active subscribers, 2,500 emails/month, 2 seats, 3 active automations with 5 steps, 1 website and 1 landing page, 3 forms, 1 digital product or booking; sending locks if active subscribers exceed 250.",
+      "notes": "Prices come from the USD tier table embedded in the pricing page's slider component ([symbol, monthly, yearly per-month]); yearly is a flat 10% off. Tiers: 500, 1k, 2.5k, 5k, 8k, 10k, then 5k steps to 50k and 10k steps to 200k; Enterprise above 200k. The plans were renamed: Free, Comfort, Power and Enterprise (the page code still calls them 'growing' and 'advanced'). Comfort sends 10x the top of the subscriber tier; Power is unlimited under fair use. Billing counts any address active at any point in the billing cycle. Comfort shows live chat support only at 50k+ subscriber tiers. Temporary promo: site banner offers 26% off all annual plans with code LITEFRIDAY26; regular prices recorded. Nonprofits get 30% off paid plans; only one discount applies at a time. Email A/B testing is listed on all plans including Free; multivariate and landing page A/B tests are paid-only. transactionalEmail set true because MailerLite sells MailerSend (email API/SMTP, SMS API, inbound routing) as its 'Transactional' pricing tab on mailerlite.com; it is a separate account and plan (free plan 500 emails/month, paid from $7/month per its FAQ), and the MailerLite comparison table only links to MailerSend. smsMarketing set false: MailerLite itself has no SMS channel; MailerSend's SMS API is for transactional messages in a separate product. Founded 2010 is taken from the site footer ('2010 - 2026'); HQ is the registered office of MailerLite Limited (88 Harcourt Street, Dublin) named in the terms of service; customers outside the EEA/UK/Switzerland contract with MailerLite, Inc. (Delaware, San Francisco address). No Wikipedia article exists. The site links an iOS app (MailerLite Manager) and an iPad subscribe app; no Android app link was found, so Android is not listed. The FAQ says the data centre holds ISO 27001; that is not listed as MailerLite's own certification."
+    }
+  },
+  {
+    "slug": "kit",
+    "name": "Kit",
+    "category": "email-marketing-software",
+    "website": "https://kit.com",
+    "pricingUrl": "https://kit.com/pricing",
+    "tagline": "Email marketing platform for creators, with a free plan and two paid plans priced by subscriber count.",
+    "bestFor": "Creators and newsletter writers who want email, landing pages and digital product sales in one tool",
+    "description": "Kit, formerly ConvertKit (renamed in 2024), is an email marketing platform for creators with landing pages, forms, broadcasts, visual automations and built-in sales of digital products and paid newsletters. It has a free plan for up to 10,000 subscribers and Creator and Pro plans whose price rises with subscriber count, starting at 1,000 subscribers.",
+    "pros": [
+      "Free plan covers up to 10,000 subscribers with unlimited landing pages, forms and broadcasts",
+      "No sending limits on any plan",
+      "Annual billing gives 2 months free (about 17% off)"
+    ],
+    "cons": [
+      "Visual automations and email sequences are not on the free plan",
+      "Creator plan A/B tests only 2 subject lines; content tests and 5-way tests need Pro",
+      "No transactional email service"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 10,000 subscribers, unlimited landing pages, forms and email broadcasts, 1 user, A/B tests of 2 subject lines, digital product and paid newsletter sales (3.5% + 30c per transaction); no visual automations or email sequences, Kit branding stays on, email support only.",
+    "trial": "14-day free trial of Creator or Pro, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Creator",
+        "monthly": 39,
+        "annual": 32.5,
+        "notes": "Price for 1,000 subscribers (smallest tier); unlimited email sends. Unlimited visual automations and sequences, SMS marketing, RSS campaigns, 100+ app integrations, branding removal, 2 users. Annual = $390 billed yearly."
+      },
+      {
+        "name": "Pro",
+        "monthly": 79,
+        "annual": 65.83,
+        "notes": "Price for 1,000 subscribers (smallest tier); unlimited email sends. Adds unlimited users, A/B tests of up to 5 subject lines or content, deliverability reporting, engagement scoring, Subscriber Signals, custom tracking domain, priority support. Annual = $790 billed yearly. Promo until November 30, 2026: 25% off the first year of annual Pro for lists up to 75,000 ($593 first year at 1,000 subscribers); regular price shown."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": false
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2013",
+    "hq": null,
+    "integrations": "100+ direct app integrations and an API",
+    "compliance": [],
+    "support": [
+      "Email",
+      "Live chat",
+      "24/7 support"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "kit.com: Pricing",
+        "url": "https://kit.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "kit.com: Pricing page script with subscriber-tier price table",
+        "url": "https://kit.com/_next/static/chunks/21439-fac47b9c43a2f824.js",
+        "date": "2026"
+      },
+      {
+        "label": "help.kit.com: Creator plan vs Creator Pro plan",
+        "url": "https://help.kit.com/en/articles/4494683-creator-plan-vs-creator-pro-plan",
+        "date": "2026"
+      },
+      {
+        "label": "Business Wire: ConvertKit rebrands to Kit",
+        "url": "https://www.businesswire.com/news/home/20241001564521/en",
+        "date": "2024"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Creator",
+          "at1000": {
+            "monthly": 39,
+            "annual": 32.5,
+            "tier": "1,000 subscribers"
+          },
+          "at10000": {
+            "monthly": 139,
+            "annual": 115.83,
+            "tier": "8,001-10,000 subscribers"
+          }
+        },
+        {
+          "name": "Pro",
+          "at1000": {
+            "monthly": 79,
+            "annual": 65.83,
+            "tier": "1,000 subscribers"
+          },
+          "at10000": {
+            "monthly": 189,
+            "annual": 157.5,
+            "tier": "8,001-10,000 subscribers"
+          }
+        }
+      ],
+      "freePlanLimits": "Up to 10,000 subscribers, 1 user, unlimited broadcasts, landing pages and forms; no visual automations, email sequences or RSS campaigns; Kit branding not removable.",
+      "notes": "Prices come from the monthly price table in the pricing page's own script (USD). Yearly billing is 10x the monthly price (2 months free); the page shows the per-month yearly price rounded up to whole dollars ($33 Creator, $66 Pro at 1,000), while the exact figures are $32.50 and $65.83. Tiers: 1k, 3k, 5k, 8k, 10k, 15k, 20k, 25k, then 10k steps up to 365k, then 400k and 500k; lists over 500,000 get a custom plan. Pro promo (ends November 30, 2026): 25% off the first annual year for lists up to 75,000 (code 26PRO25AN) and 10% off for 75,001-500,000 (code 26PRO10AN); the page shows Pro at $50/month with $66 struck through. The FAQ says there are no sending limits on any plan and offers a 30-day refund on monthly or annual plans. Only confirmed, unique, active subscribers count toward billing. SMS marketing is listed on the Creator and Pro plan cards, but SMS pricing (credits or per-message rates) was not found on Kit's site. Transactional email set false: the pricing page and plan table list no transactional sending, and the API is for managing subscribers. HQ left null because Kit's about page describes a distributed team (114 people in 86 cities); press releases are datelined Boise, Idaho. Founded 2013 by Nathan Barry per third-party profiles. No iOS/Android app links were found on the pricing page, so platforms lists Web only."
+    }
+  },
+  {
+    "slug": "constant-contact",
+    "name": "Constant Contact",
+    "category": "email-marketing-software",
+    "website": "https://www.constantcontact.com",
+    "pricingUrl": "https://www.constantcontact.com/pricing",
+    "tagline": "Email, social and SMS marketing platform for small businesses, priced by contact count.",
+    "bestFor": "Small businesses and nonprofits that want simple email marketing with phone support",
+    "description": "Constant Contact is an email marketing platform for small businesses that also covers social posting, SMS, events, landing pages and ad management. It sells Lite, Standard and Premium plans priced by number of contacts, plus a custom-priced Multi-Account (Teams) option.",
+    "pros": [
+      "Live phone and chat support on every plan",
+      "Prepaying 12 months saves 15%; nonprofits can save up to 30%",
+      "Premium includes 500 SMS messages a month (US only)"
+    ],
+    "cons": [
+      "No free plan; the 30-day trial is capped at 100 email sends",
+      "Lite has no A/B testing and only one automation template; custom automations need Premium",
+      "Sends over the monthly limit are billed at $0.002 per email"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial, no credit card required (up to 100 email sends)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Lite",
+        "monthly": 12,
+        "annual": 10.2,
+        "notes": "Price for 0-500 contacts (smallest tier); email sends up to 10x contacts (5,000/month). 1 user, 1 automation template, 1 custom segment, basic reporting. SMS add-on from $10/month for 500 messages (US only). Annual = 12-month prepay at 15% off."
+      },
+      {
+        "name": "Standard",
+        "monthly": 35,
+        "annual": 29.75,
+        "notes": "Price for 0-500 contacts (smallest tier); email sends up to 12x contacts (6,000/month). 3 users, email scheduling, subject line A/B testing, resend to non-openers, 3 automation templates, 10 custom segments, open/click reporting. SMS add-on from $10/month. Annual = 12-month prepay at 15% off."
+      },
+      {
+        "name": "Premium",
+        "monthly": 80,
+        "annual": 68,
+        "notes": "Price for 0-500 contacts (smallest tier); email sends up to 24x contacts (12,000/month). Unlimited users, custom automations, unlimited segments, dynamic content, Google Ads manager, SEO recommendations, 500 SMS messages/month included, priority support. Annual = 12-month prepay at 15% off."
+      },
+      {
+        "name": "Multi-Account (Teams)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing (talk to sales) for teams that need 5+ accounts, with central control of templates, messaging and approvals."
+      }
+    ],
+    "features": {
+      "marketingAutomation": true,
+      "abTesting": true,
+      "landingPages": true,
+      "smsMarketing": true,
+      "transactionalEmail": false
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "1995",
+    "hq": "Waltham, Massachusetts, United States",
+    "integrations": "300+ integrations",
+    "compliance": [],
+    "support": [
+      "Phone",
+      "Live chat"
+    ],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "constantcontact.com: Pricing",
+        "url": "https://www.constantcontact.com/pricing",
+        "date": "2026"
+      },
+      {
+        "label": "constantcontact.com: Pricing page script with tiered fee schedule (USD)",
+        "url": "https://www.constantcontact.com/_next/static/chunks/9360-0993df873b59d151.js",
+        "date": "2026"
+      },
+      {
+        "label": "knowledgebase.constantcontact.com: Constant Contact free trial",
+        "url": "https://knowledgebase.constantcontact.com/email-digital-marketing/articles/KnowledgeBase/5549-Constant-Contact-free-trial?lang=en_US",
+        "date": "2026"
+      },
+      {
+        "label": "Wikipedia: Constant Contact",
+        "url": "https://en.wikipedia.org/wiki/Constant_Contact",
+        "date": "2026"
+      }
+    ],
+    "research": {
+      "plans": [
+        {
+          "name": "Lite",
+          "at1000": {
+            "monthly": 30,
+            "annual": 25.5,
+            "tier": "501-1,000 contacts (10,000 sends/month)"
+          },
+          "at10000": {
+            "monthly": 120,
+            "annual": 102,
+            "tier": "5,001-10,000 contacts (100,000 sends/month)"
+          }
+        },
+        {
+          "name": "Standard",
+          "at1000": {
+            "monthly": 55,
+            "annual": 46.75,
+            "tier": "501-1,000 contacts (12,000 sends/month)"
+          },
+          "at10000": {
+            "monthly": 160,
+            "annual": 136,
+            "tier": "5,001-10,000 contacts (120,000 sends/month)"
+          }
+        },
+        {
+          "name": "Premium",
+          "at1000": {
+            "monthly": 110,
+            "annual": 93.5,
+            "tier": "501-1,000 contacts (24,000 sends/month)"
+          },
+          "at10000": {
+            "monthly": 275,
+            "annual": 233.75,
+            "tier": "5,001-10,000 contacts (240,000 sends/month)"
+          }
+        }
+      ],
+      "freePlanLimits": "No free plan. 30-day free trial with up to 100 total email sends and unlimited contact uploads; landing pages, automations and events can be built but not published until you pay.",
+      "notes": "The pricing page localised to INR for this location; USD prices come from the tiered fee-schedule table in the page's own script (BRONZE=Lite, SILVER=Standard, GOLD=Premium) and match the USD starting prices in the page FAQ ($12/$35/$80) and the server-rendered annual prices ($10.20/$29.75/$68). Tiers: 0-500, 501-1k, 1,001-2.5k, 2,501-5k, 5,001-10k, then 5k steps to 50k; over 50,000 contacts is contact sales. Annual figures are the 12-month prepay price (monthly x 0.85); the page shows a Monthly/Annual toggle and says 'save up to 15%'. Nonprofits: 20% off a 6-month prepay, 30% off a 12-month prepay, no discount on monthly. Email send overage is $0.002 per email over the allowance. 30-day money-back guarantee. Third-party offers (60- and 90-day trials, 30-50% off) appear in partner terms on the site and were not used. SMS is US-only. Transactional email set false: no transactional email product, SMTP relay or transactional API appears on the pricing page or help docs checked, and a community question asking how to send order confirmations had no vendor answer; this absence was not confirmed by an official statement. Founded 1995 (as Roving Software) and HQ per Wikipedia."
+    }
+  }
+]
