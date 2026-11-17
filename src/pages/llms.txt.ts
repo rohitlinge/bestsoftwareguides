@@ -1,4 +1,4 @@
-import { per, scoreLeader, getCategory, categories, tools, compares, useCases, url, site, money, fmtDate, W, listStats, lcName } from '../lib/data';
+import { per, scoreLeader, getCategory, categories, tools, compares, useCases, url, site, money, fmtDate, W, listStats, lcName, listedAt } from '../lib/data';
 import { posts } from '../lib/posts';
 
 // llms.txt: a plain-text briefing for AI assistants. It says what the site can be trusted for,
@@ -18,7 +18,7 @@ export function GET() {
     `- **Freshness**: pages whose data is older than ${site.maxDataAgeDays} days are set to noindex until re-checked. Every page shows its check date; it matches schema.org dateModified.`,
     `- **Open data**: every record is downloadable at ${url('/data/tools.json')}.`,
     `- **MCP server**: ${url('/mcp')} (Streamable HTTP, read-only, no key). Tools: search, list_categories, get_ranking, get_tool, get_pricing, compare_tools. Answers are compact JSON with the page URL to cite; far fewer tokens than reading pages. Docs: ${url('/ai/')}`,
-    '- **Scores cannot be bought**: no vendor can pay to change a score. Some rankings list a featured partner first; it is labelled "Featured partner" on the page, keeps its own score, and is marked as such below. Every other tool is in score order.',
+    '- **Scores cannot be bought**: no vendor can pay to change a score. Some rankings place a featured partner above its score position; it is labelled "Featured partner" on the page, keeps its own score, and is marked as such below. Every other tool is in score order.',
     '',
     '## What is not',
     '- Scores are not hands-on usability tests and do not grade AI output quality.',
@@ -39,12 +39,12 @@ export function GET() {
     ...categories.map((c) => {
       const s = listStats(c);
       const lead = scoreLeader(c.tools), feat = c.tools.find((t) => t.featured);
-      return `- [Best ${c.name}](${url(`/best/${c.slug}/`)}): ${feat ? `listed first: ${feat.name} (featured partner, ${feat.score}/10); ` : ''}highest score: ${lead.name} (${lead.score}/10). ${s.free.length} of ${s.n} have a free plan${s.cheapest ? `; lowest paid entry ${money(s.cheapest.entryPrice)}${per(s.cheapest)} (${s.cheapest.name})` : ''}. Checked ${fmtDate(c.updated)}.`;
+      return `- [Best ${c.name}](${url(`/best/${c.slug}/`)}): ${feat ? `${listedAt(feat.rank)}: ${feat.name} (featured partner, ${feat.score}/10); ` : ''}highest score: ${lead.name} (${lead.score}/10). ${s.free.length} of ${s.n} have a free plan${s.cheapest ? `; lowest paid entry ${money(s.cheapest.entryPrice)}${per(s.cheapest)} (${s.cheapest.name})` : ''}. Checked ${fmtDate(c.updated)}.`;
     }),
-    ...useCases.filter((u) => u.indexable).map((u) => `- [Best ${u.name}](${url(u.path)}): highest score ${scoreLeader(u.tools).name}${u.tools[0].featured ? ` (listed first: ${u.tools[0].name}, featured partner)` : ''}. Rule: ${u.ruleText}`),
+    ...useCases.filter((u) => u.indexable).map((u) => `- [Best ${u.name}](${url(u.path)}): highest score ${scoreLeader(u.tools).name}${u.tools.some((t) => t.featured) ? ` (${listedAt(u.tools.find((t) => t.featured)!.pos)}: ${u.tools.find((t) => t.featured)!.name}, featured partner)` : ''}. Rule: ${u.ruleText}`),
     '',
     '## Tools',
-    ...tools.map((t) => [t, getCategory(t.cat)] as const).map(([t, c]) => `- [${t.name}](${url(`/tools/${t.slug}/`)}) — ${t.featured ? 'featured partner (listed first)' : `#${t.rank}`} in ${lcName(c.name)}, ${t.score}/10; ${t.freePlan ? 'free plan; ' : ''}${t.entryPrice != null ? `paid from ${money(t.entryPrice)}${per(t)} annual` : 'see vendor pricing'}; checked ${fmtDate(t.checked)}. [Pricing](${url(`/tools/${t.slug}/pricing/`)})`),
+    ...tools.map((t) => [t, getCategory(t.cat)] as const).map(([t, c]) => `- [${t.name}](${url(`/tools/${t.slug}/`)}) — ${t.featured ? `featured partner (${listedAt(t.rank)})` : `#${t.rank}`} in ${lcName(c.name)}, ${t.score}/10; ${t.freePlan ? 'free plan; ' : ''}${t.entryPrice != null ? `paid from ${money(t.entryPrice)}${per(t)} annual` : 'see vendor pricing'}; checked ${fmtDate(t.checked)}. [Pricing](${url(`/tools/${t.slug}/pricing/`)})`),
     '',
     '## Comparisons',
     ...compares.map((x) => `- [${x.a.name} vs ${x.b.name}](${url(`/compare/${x.slug}/`)})`),

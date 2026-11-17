@@ -32,7 +32,32 @@
       "comparesDay": 0
     },
     {
+      "slug": "data-monitoring-testing-tools",
+      "day": 0,
+      "comparesDay": 0
+    },
+    {
+      "slug": "data-quality-tools",
+      "day": 0,
+      "comparesDay": 0
+    },
+    {
       "slug": "power-bi-report-testing-tools",
+      "day": 0,
+      "comparesDay": 0
+    },
+    {
+      "slug": "bi-report-testing-tools",
+      "day": 0,
+      "comparesDay": 0
+    },
+    {
+      "slug": "file-testing-tools",
+      "day": 0,
+      "comparesDay": 0
+    },
+    {
+      "slug": "api-testing-tools",
       "day": 0,
       "comparesDay": 0
     },

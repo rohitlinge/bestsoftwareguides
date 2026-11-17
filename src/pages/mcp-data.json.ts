@@ -13,7 +13,7 @@ export function GET() {
       slug: c.slug, name: c.name, topic: c.topic, updated: c.updated, url: url(`/best/${c.slug}/`),
       unit: c.priceUnit?.long ?? 'user/month', // a tool can override this; its priceSummary always states its own unit
       features: c.featureLabels,
-      // In page order: a featured partner (if any) first, then score order.
+      // In page order: a featured partner (if any) at its pinned position, everything else in score order.
       tools: c.tools.map((t) => ({ slug: t.slug, rank: t.rank, scoreRank: t.scoreRank, score: t.score, ...(t.featured ? { featured: true } : {}) })),
     })),
     useCases: useCases.filter((u) => u.indexable).map((u) => ({

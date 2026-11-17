@@ -1,6 +1,6 @@
 ---
 import LogoTile from './LogoTile.astro';
-import { priceLine, featuredLabel, type Tool } from '../lib/data';
+import { priceLine, featuredLabel, listedAt, type Tool } from '../lib/data';
 interface Props { tool: Tool; pos?: number; }
 const { tool: t, pos } = Astro.props;
 // Scores run 5.0 to 9.8 (see methodology); the bar shows the score out of 10.
@@ -12,7 +12,7 @@ const pct = Math.max(0, Math.min(100, t.score * 10));
     <span class="rank-num">#{pos ?? t.rank}</span>
   </div>
   <div class="rc-body">
-    {t.featured && <div class="featured-note"><span class="badge featured">{featuredLabel}</span> Listed first by arrangement with {t.name}; its score is from the same formula as every other tool (#{t.scoreRank} by score). <a href="/disclosure/">Disclosure</a></div>}
+    {t.featured && <div class="featured-note"><span class="badge featured">{featuredLabel}</span> {listedAt(t.rank).replace(/^l/, 'L')} by arrangement with {t.name}; its score is from the same formula as every other tool (#{t.scoreRank} by score). <a href="/disclosure/">Disclosure</a></div>}
     <h3><a href={`/tools/${t.slug}/`}>{t.name}</a></h3>
     <div class="small"><span class="badge blue">Best for</span>{t.bestFor}</div>
     <p class="tagline">{t.tagline}</p>

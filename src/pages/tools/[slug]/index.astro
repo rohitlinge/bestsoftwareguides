@@ -6,7 +6,7 @@ import Sources from '../../../components/Sources.astro';
 import LogoTile from '../../../components/LogoTile.astro';
 import ProductHead from '../../../components/ProductHead.astro';
 import Reviews from '../../../components/Reviews.astro';
-import { per, lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, alsoRankedIn, rankingsFor, featuredLabel, withArticle, quoteOnly, type Tool } from '../../../lib/data';
+import { per, lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, alsoRankedIn, rankingsFor, featuredLabel, listedAt, withArticle, quoteOnly, type Tool } from '../../../lib/data';
 import { crumbsLd, faqLd, softwareLd, articleLd } from '../../../lib/ld';
 
 export function getStaticPaths() {
@@ -31,7 +31,7 @@ const also = alsoRankedIn(t).filter((x) => x.u.indexable);
 // Other categories this tool is ranked in (a tool can sit in several).
 const otherCats = rankingsFor(t.slug).filter((x) => x.c.slug !== c.slug);
 const featuredIn = rankingsFor(t.slug).filter((x) => x.t.featured);
-const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${x.scoreRank} by score` : `#${x.rank}`);
+const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, ${listedAt(x.rank)}; #${x.scoreRank} by score` : `#${x.rank}`);
 ---
 <Base title={title} short={[`${t.name} Review: Pricing, Pros and Cons`, `${t.name} Review and Pricing`, `${t.name} Review`]} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article" published={iso(t.publishDate)} modified={t.checked}>
   <Fragment slot="band"><ProductHead t={t} c={c} heading={`${t.name} review`} current="overview" /></Fragment>
@@ -47,13 +47,13 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
 
   <div class="answer">
     <p><strong>{t.name}</strong> is {withArticle(t.tagline)} {t.featured
-      ? <>It is our <span class="badge featured">{featuredLabel}</span> in {lcName(c.name)} and is listed first there; by score it is <strong>#{t.scoreRank} of {c.tools.length}</strong> ({t.score}/10).</>
+      ? <>It is our <span class="badge featured">{featuredLabel}</span> in {lcName(c.name)} and is {listedAt(t.rank)} there; by score it is <strong>#{t.scoreRank} of {c.tools.length}</strong> ({t.score}/10).</>
       : <>It ranks <strong>#{t.rank} of {c.tools.length}</strong> in our {lcName(c.name)} list ({t.score}/10).</>} Best for {lc1(t.bestFor)}.</p>
     {otherCats.length > 0 && <p>Also ranked in {otherCats.map((x, i) => <>{i > 0 && ', '}<a href={`/best/${x.c.slug}/`}>{x.c.name}</a> ({rankText(x.t)}, {x.t.score}/10)</>)}.</p>}
     <p><strong>Price:</strong> {priceLine(t)}.</p>
   </div>
 
-  {featuredIn.length > 0 && <p class="small muted">Disclosure: {t.name} is a featured partner of {site.name} and is listed first in {featuredIn.map((x) => x.c.name).join(', ')}. That does not change its score, pros, cons or prices on this page. <a href="/disclosure/">Read our disclosure</a>.</p>}
+  {featuredIn.length > 0 && <p class="small muted">Disclosure: {t.name} is a featured partner of {site.name} and is placed above its score position in {featuredIn.map((x) => `${x.c.name} (${listedAt(x.t.rank)})`).join(', ')}. That does not change its score, pros, cons or prices on this page. <a href="/disclosure/">Read our disclosure</a>.</p>}
   <div class="btn-row">
     <a class="btn" href={t.website} rel="nofollow noopener" target="_blank">Visit {t.name}</a>
     <a class="btn ghost" href={`/tools/${t.slug}/pricing/`}>Full pricing</a>
@@ -120,7 +120,7 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, listed first; #${
       <h2>At a glance</h2>
       <dl class="facts">
         <div><dt>Our score</dt><dd>{t.score}/10</dd></div>
-        <div><dt>Rank</dt><dd>{t.featured ? `#${t.scoreRank} by score` : `#${t.rank} of ${c.tools.length}`}</dd></div>
+        <div><dt>Rank</dt><dd>{t.featured ? `#${t.rank} (${featuredLabel}); #${t.scoreRank} by score` : `#${t.rank} of ${c.tools.length}`}</dd></div>
         <div><dt>Free plan</dt><dd>{t.freePlan ? 'Yes' : 'No'}</dd></div>
         <div><dt>Paid from</dt><dd>{t.entryPrice != null ? `${money(t.entryPrice)}${per(t)}` : quoteOnly(t) ? 'Quote' : 'See vendor'}</dd></div>
         <div><dt>Free trial</dt><dd>{t.trial ? 'Yes' : '—'}</dd></div>

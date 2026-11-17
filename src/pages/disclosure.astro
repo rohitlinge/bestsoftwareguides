@@ -2,12 +2,12 @@
 import Base from '../layouts/Base.astro';
 import { site, categories } from '../lib/data';
 // Every live ranking with a featured partner, grouped by partner, so readers can see exactly where each one is pinned.
-const partners = new Map<string, { name: string; slug: string; cats: { name: string; slug: string }[] }>();
+const partners = new Map<string, { name: string; slug: string; cats: { name: string; slug: string; rank: number }[] }>();
 for (const c of categories) {
   const t = c.tools.find((x) => x.featured);
   if (!t) continue;
   if (!partners.has(t.slug)) partners.set(t.slug, { name: t.name, slug: t.slug, cats: [] });
-  partners.get(t.slug)!.cats.push({ name: c.name, slug: c.slug });
+  partners.get(t.slug)!.cats.push({ name: c.name, slug: c.slug, rank: t.rank });
 }
 ---
 <Base title="Affiliate and Sponsorship Disclosure" description={`How ${site.name} makes money and how we keep it separate from scores and rankings.`} path="/disclosure/">
@@ -15,15 +15,15 @@ for (const c of categories) {
     <h1>Affiliate and sponsorship disclosure</h1>
     <ul>
       <li><strong>Affiliate links.</strong> Some "Visit" links may earn us a commission if you buy. You pay the same price.</li>
-      <li><strong>Featured partners.</strong> In some rankings a featured partner is listed first. It always carries a "Featured partner" label, keeps its own formula score, and the page names the highest-scoring tool separately. Every other tool stays in score order.</li>
+      <li><strong>Featured partners.</strong> In some rankings a featured partner is placed above its score position (for example first or second). It always carries a "Featured partner" label, keeps its own formula score, and the page names the highest-scoring tool separately. Every other tool stays in score order.</li>
       <li><strong>What money cannot buy.</strong> No vendor can pay to change a score, a price we publish or a verdict, or to move another tool down. Scores come from the <a href="/methodology/">published formula</a> only.</li>
     </ul>
     {partners.size > 0 && (
       <>
         <h2>Current featured partners</h2>
-        <p>These vendors have a commercial arrangement with {site.name} and are listed first, with a "Featured partner" label, in the rankings below. Their scores, prices, pros and cons come from the same data and formula as every other tool.</p>
+        <p>These vendors have a commercial arrangement with {site.name} and are placed above their score position, with a "Featured partner" label, in the rankings below. Their scores, prices, pros and cons come from the same data and formula as every other tool.</p>
         <ul>
-          {[...partners.values()].map((p) => <li><a href={`/tools/${p.slug}/`}>{p.name}</a>: {p.cats.map((c, i) => <>{i > 0 && ', '}<a href={`/best/${c.slug}/`}>{c.name}</a></>)}</li>)}
+          {[...partners.values()].map((p) => <li><a href={`/tools/${p.slug}/`}>{p.name}</a>: {p.cats.map((c, i) => <>{i > 0 && ', '}<a href={`/best/${c.slug}/`}>{c.name}</a> (#{c.rank})</>)}</li>)}
         </ul>
       </>
     )}

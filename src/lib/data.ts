@@ -20,7 +20,7 @@ export type Tool = {
   indexable: boolean; publishDate: Date;
   cat: string;          // the category this copy of the tool was ranked in (a tool can be in several)
   scoreRank: number;    // position by score alone, ignoring a featured placement
-  featured: boolean;    // pinned to #1 as a labelled featured partner (see Category.featured)
+  featured: boolean;    // pinned above its score position as a labelled featured partner (see Category.featured)
   unit: PriceUnit;
 };
 export type PriceUnit = { short: string; long: string };
@@ -29,8 +29,10 @@ export type Category = {
   slug: string; name: string; singular: string; topic: string; intro: string;
   buyingTips: string[]; featureLabels: Record<string, string>; faqs: { q: string; a: string }[];
   plural?: string; useCases?: UseCaseDef[];
-  // A featured partner is pinned to #1 with a visible label; every other tool keeps its score order.
+  // A featured partner is pinned at `featuredRank` (default 1) with a visible label; every other tool keeps
+  // its score order. Where the partner already scores at or above that spot it is ranked by score, unlabelled.
   featured?: string;
+  featuredRank?: number;
   priceUnit?: PriceUnit;
   compareTop?: number; // only build head-to-head pages among the top N (default: every pair)
   // computed
@@ -136,7 +138,9 @@ export const allCategories: Category[] = catBase
       .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
       .map((t, i) => ({ ...t, scoreRank: i + 1 }));
     const pin = byScore.find((t) => t.slug === c.featured);
-    const tools = (pin ? [{ ...pin, featured: true }, ...byScore.filter((t) => t !== pin)] : byScore).map((t, i) => ({ ...t, rank: i + 1 }));
+    const at = Math.max(1, c.featuredRank ?? 1);
+    const rest = byScore.filter((t) => t !== pin);
+    const tools = (pin && pin.scoreRank > at ? [...rest.slice(0, at - 1), { ...pin, featured: true }, ...rest.slice(at - 1)] : byScore).map((t, i) => ({ ...t, rank: i + 1 }));
     const updated = tools.map((t) => t.checked).sort().pop() || iso(publishDate);
     return {
       ...c, tools, publishDate, comparesDate: addDays(launch, s.comparesDay ?? s.day), updated,
@@ -163,6 +167,9 @@ export const rankingsFor = (slug: string) =>
 // The highest-scoring tool in a list, ignoring any featured placement.
 export const scoreLeader = <T extends Tool>(list: T[]) => [...list].sort((a, b) => a.scoreRank - b.scoreRank)[0];
 export const featuredLabel = 'Featured partner';
+// Where a featured partner sits on its page: "listed first", "listed second", …
+const ORDINALS = ['first', 'second', 'third', 'fourth', 'fifth'];
+export const listedAt = (pos: number) => `listed ${ORDINALS[pos - 1] ?? `#${pos}`}`;
 
 // ---------- comparisons ----------
 export type Compare = { slug: string; a: Tool; b: Tool; category: Category };
@@ -209,7 +216,7 @@ export function categoryFaqs(c: Category) {
   const second = c.tools.filter((t) => t !== top).sort((a, b) => a.scoreRank - b.scoreRank)[0];
   const feat = c.tools.find((t) => t.featured);
   const faqs = [
-    { q: `What is the best ${c.singular} in ${today.getUTCFullYear()}?`, a: `${top.name} ranks first on our data score (${top.score}/10). It is best for ${lc1(top.bestFor)}. ${second ? `${second.name} is second (${second.score}/10).` : ''}${feat && feat !== top ? ` ${feat.name} is our featured partner and is listed first (${featuredLabel}); its own score is ${feat.score}/10.` : ''}`.trim() },
+    { q: `What is the best ${c.singular} in ${today.getUTCFullYear()}?`, a: `${top.name} ranks first on our data score (${top.score}/10). It is best for ${lc1(top.bestFor)}. ${second ? `${second.name} has the second-highest score (${second.score}/10).` : ''}${feat && feat !== top ? ` ${feat.name} is our featured partner and is ${listedAt(feat.rank)} (${featuredLabel}); its own score is ${feat.score}/10.` : ''}`.trim() },
   ];
   if (priced.length) faqs.push({ q: `What is the cheapest ${c.singular}?`, a: `${priced[0].name} has the lowest paid entry price in this list at ${money(priced[0].entryPrice)} ${perLong(priced[0])} billed annually${free.length ? `. Free plans are available from ${free.map((t) => t.name).join(', ')}` : ''}.` });
   if (free.length) faqs.push({ q: `Which ${lcName(c.name)} have a free plan?`, a: `${free.map((t) => t.name).join(', ')} offer a free plan. ${(() => { const n = c.tools.filter((t) => !t.freePlan); return n.length ? `${n.map((t) => t.name).join(', ')} ${n.length === 1 ? 'does' : 'do'} not.` : 'Every tool in this list has one.'; })()}`.trim() });

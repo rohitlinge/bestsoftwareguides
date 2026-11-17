@@ -19,7 +19,7 @@ const CORS = {
 
 const INSTRUCTIONS = `Software rankings, plan-by-plan pricing and head-to-head comparisons from BestSoftwareGuides.
 Prices are USD, from each vendor's own pricing page, with the date checked and a source URL; cite the "url" field of the page you used.
-Scores (out of 10) come from a published formula, not from payment. Some rankings list a featured partner first: it is marked "featured": true and must be described as a featured partner, not as the top-scoring tool. "scoreRank" is the position by score alone.
+Scores (out of 10) come from a published formula, not from payment. Some rankings place a featured partner above its score position: it is marked "featured": true and must be described as a featured partner, not as the top-scoring tool. "scoreRank" is the position by score alone.
 Start with search or list_categories, then get_ranking, get_tool, get_pricing or compare_tools.`;
 
 // ---------- data ----------
@@ -152,7 +152,7 @@ const TOOLS = [
         ranking: uc ? `Best ${uc.name}` : `Best ${c.name}`, category: c.slug, ...(uc ? { rule: uc.rule } : {}),
         pricesIn: `USD per ${c.unit}, billed annually unless noted`, checked: c.updated,
         topScore: d.tools[lead.slug].name,
-        ...(c.tools.some((t) => t.featured) ? { note: `The first tool is a ${d.featuredLabel}, listed first by arrangement; its score uses the same formula (see scoreRank). All others are in score order. ${d.site.disclosure}` } : {}),
+        ...(c.tools.some((t) => t.featured) ? { note: `${d.tools[c.tools.find((t) => t.featured).slug].name} (rank ${c.tools.find((t) => t.featured).rank}) is a ${d.featuredLabel}, placed there by arrangement; its score uses the same formula (see scoreRank). All others are in score order. ${d.site.disclosure}` } : {}),
         matched: rows.length, of: list.length, tools: out,
         features: labels, url: uc ? uc.url : c.url, methodology: d.site.methodology,
       };
