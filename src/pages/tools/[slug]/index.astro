@@ -6,7 +6,7 @@ import Sources from '../../../components/Sources.astro';
 import LogoTile from '../../../components/LogoTile.astro';
 import ProductHead from '../../../components/ProductHead.astro';
 import Reviews from '../../../components/Reviews.astro';
-import { per, lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, alsoRankedIn, rankingsFor, featuredLabel, listedAt, withArticle, quoteOnly, type Tool } from '../../../lib/data';
+import { per, lcName, lc1, tools, toolCategory, comparesFor, toolFaqs, priceLine, money, fmtDate, iso, site, alsoRankedIn, rankingsFor, featuredLabel, listedAt, withArticle, quoteOnly, userRating, type Tool } from '../../../lib/data';
 import { crumbsLd, faqLd, softwareLd, articleLd } from '../../../lib/ld';
 
 export function getStaticPaths() {
@@ -22,7 +22,7 @@ const alts = c.tools.filter((o) => o.slug !== t.slug);
 const vs = comparesFor(t);
 const jsonld = [
   crumbsLd([{ name: 'Home', path: '/' }, { name: c.name, path: `/best/${c.slug}/` }, { name: t.name, path }]),
-  softwareLd(t, c),
+  softwareLd(t, c, userRating(t.slug)),
   faqLd(faqs),
   articleLd({ headline: title, description, path, published: iso(t.publishDate), modified: t.checked }),
 ];

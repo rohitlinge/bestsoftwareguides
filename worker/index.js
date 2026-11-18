@@ -3,10 +3,11 @@
 //   /mcp             MCP server for AI assistants (worker/mcp.js)
 //   /auth/*          Sign in with LinkedIn (worker/auth.js)
 //   /api/reviews     LinkedIn-verified reviews (worker/reviews.js)
+//   /api/reviews/summary  approved-review totals for every tool (read by the build for star ratings)
 //   /admin/reviews   review moderation (worker/admin.js)
 import { handleMcp } from './mcp.js';
 import { handleAuth } from './auth.js';
-import { handleReviews } from './reviews.js';
+import { handleReviews, handleSummary } from './reviews.js';
 import { handleAdmin } from './admin.js';
 import { json } from './util.js';
 
@@ -16,6 +17,7 @@ export default {
     try {
       if (pathname === '/mcp' || pathname === '/mcp/') return await handleMcp(request, env);
       if (pathname.startsWith('/auth/')) return await handleAuth(request, env, pathname);
+      if (pathname === '/api/reviews/summary') return await handleSummary(request, env);
       if (pathname === '/api/reviews') return await handleReviews(request, env);
       if (pathname === '/api/admin/reviews' || pathname === '/admin/reviews' || pathname === '/admin/reviews/') return await handleAdmin(request, env, pathname.replace(/\/$/, ''));
     } catch (e) {

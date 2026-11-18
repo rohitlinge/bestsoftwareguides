@@ -49,7 +49,15 @@ const DAY = 86400000;
 // Set in astro.config.mjs (resolved in Node at build time). Never read the clock or
 // process.env here: on Cloudflare Workers Builds this module runs where both are unreliable.
 declare const __BUILD_DATE__: string, __LAUNCH_DATE__: string, __PREVIEW__: boolean;
+declare const __REVIEW_SUMMARY__: Record<string, { average: number; count: number; latest: string }>;
 export const PREVIEW = __PREVIEW__;
+// Approved LinkedIn-verified user ratings (1-5 stars), snapshotted at build time from /api/reviews/summary.
+// Shown, and marked up as AggregateRating, only once a tool has enough of them to mean something.
+export const MIN_USER_RATINGS = 3;
+export const userRating = (slug: string) => {
+  const r = __REVIEW_SUMMARY__[slug];
+  return r && r.count >= MIN_USER_RATINGS ? r : null;
+};
 export const launch = new Date(__LAUNCH_DATE__ + 'T00:00:00Z');
 const today = new Date(__BUILD_DATE__ + 'T00:00:00Z');
 export const buildDate = today;

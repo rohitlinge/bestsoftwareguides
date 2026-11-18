@@ -1,9 +1,10 @@
 ---
 import LogoTile from './LogoTile.astro';
-import { featuredLabel, type Tool, type Category } from '../lib/data';
+import { featuredLabel, userRating, type Tool, type Category } from '../lib/data';
 interface Props { t: Tool; c: Category; heading: string; current: 'overview' | 'pricing' | 'alternatives'; }
 const { t, c, heading, current } = Astro.props;
 const base = `/tools/${t.slug}/`;
+const rating = current === 'overview' ? userRating(t.slug) : null;
 const tabs = [
   { key: 'overview', href: base, label: 'Overview' },
   { key: 'pricing', href: `${base}pricing/`, label: 'Pricing' },
@@ -21,7 +22,9 @@ const tabs = [
     <div class="meta" style="margin-top:8px">
       {t.featured ? <span class="badge featured">{featuredLabel}</span> : <span class="badge blue">#{t.rank} in {c.name}</span>}
       {t.freePlan && <span class="badge">Free plan</span>}
-      {current === 'overview' ? <a class="user-rating" href="#reviews" data-user-rating hidden></a> : null}
+      {current === 'overview' ? (rating
+        ? <a class="user-rating" href="#reviews" data-user-rating>★ {rating.average}/5 · {rating.count} verified user ratings</a>
+        : <a class="user-rating" href="#reviews" data-user-rating hidden></a>) : null}
       <a href={`/best/${c.slug}/`}>See the {c.name} ranking</a>
     </div>
   </div>

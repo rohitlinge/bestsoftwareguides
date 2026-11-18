@@ -61,6 +61,20 @@ function validate(body) {
   return { v, errors };
 }
 
+// Approved-review totals for every tool, in one call. The site build reads this to add star ratings
+// (schema.org AggregateRating) to tool pages. Only reviews that count in the average are included,
+// so vendor and competitor staff reviews never raise a tool's stars.
+export async function handleSummary(request, env) {
+  if (request.method !== 'GET') return json({ error: 'Method not allowed' }, 405);
+  if (!reviewsEnabled(env)) return json({ enabled: false, tools: {} });
+  const d = db(env);
+  await d.ready;
+  const { results } = await d.DB.prepare(`SELECT tool, COUNT(*) AS n, AVG(rating) AS avg, MAX(COALESCE(moderated_at, created_at)) AS latest
+    FROM reviews WHERE status = 'approved' AND relationship IN (${[...COUNTS_IN_AVERAGE].map((r) => `'${r}'`).join(', ')}) GROUP BY tool`).all();
+  const tools = Object.fromEntries(results.map((r) => [r.tool, { average: Math.round(r.avg * 10) / 10, count: r.n, latest: String(r.latest).slice(0, 10) }]));
+  return json({ enabled: true, tools }, 200, { 'Cache-Control': 'public, max-age=300' });
+}
+
 export async function handleReviews(request, env) {
   if (!reviewsEnabled(env)) return json({ enabled: false, error: 'Reviews are not switched on yet.' }, 503);
   const d = db(env);

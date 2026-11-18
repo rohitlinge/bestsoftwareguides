@@ -26,7 +26,8 @@ export const faqLd = (faqs: { q: string; a: string }[]) => ({
   mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
 });
 
-export const softwareLd = (t: Tool, c: Category) => {
+// `rating`: approved user ratings, only passed on pages that show them (the tool overview).
+export const softwareLd = (t: Tool, c: Category, rating?: { average: number; count: number } | null) => {
   const prices = t.plans.flatMap((p) => [p.annual, p.monthly]).filter((v): v is number => typeof v === 'number');
   return {
     '@context': 'https://schema.org',
@@ -40,7 +41,9 @@ export const softwareLd = (t: Tool, c: Category) => {
     ...(prices.length
       ? { offers: { '@type': 'AggregateOffer', priceCurrency: 'USD', lowPrice: Math.min(...prices), highPrice: Math.max(...prices), offerCount: t.plans.length, url: t.pricingUrl } }
       : {}),
-    // Editorial review of a third-party product (not self-serving). No aggregateRating yet: user reviews load in the browser, not at build time.
+    // User ratings of a third-party product from LinkedIn-verified members (vendor and competitor staff excluded).
+    ...(rating ? { aggregateRating: { '@type': 'AggregateRating', ratingValue: rating.average, ratingCount: rating.count, bestRating: 5, worstRating: 1 } } : {}),
+    // Editorial review of a third-party product (not self-serving).
     review: {
       '@type': 'Review',
       author: authorLd(),
