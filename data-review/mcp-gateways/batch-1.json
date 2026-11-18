@@ -1,0 +1,540 @@
+[
+  {
+    "slug": "composio",
+    "name": "Composio",
+    "category": "mcp-gateways",
+    "website": "https://composio.dev",
+    "logo": "https://composio.dev/apple-touch-icon.png",
+    "pricingUrl": "https://composio.dev/pricing",
+    "tagline": "Hosted tool and MCP platform that connects agents to 1,700+ apps with managed per-user authentication.",
+    "bestFor": "Developers adding many SaaS integrations to their own agents",
+    "description": "Composio hosts tools for 1,700+ apps and generates per-user MCP URLs, handling each user's OAuth connections and letting you restrict which tools a server exposes. A free plan includes 10,000 tool calls per month, and the Standard plan costs $18 per seat per month.",
+    "pros": [
+      "Free plan includes 10,000 tool calls per month and up to 3 members",
+      "1,700+ apps available on every plan",
+      "allowed_tools setting limits which tools each MCP server exposes",
+      "Extra tool calls on Standard cost $0.005 each"
+    ],
+    "cons": [
+      "Audit logs, SCIM and SIEM streaming are Enterprise-only",
+      "No annual price listed",
+      "Free plan has no Firewall or SSO and stops at 10,000 tool calls"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "10,000 tool calls per month, $2 one-time credits, up to 3 members, up to 3 custom MCP servers, 5 connections and 25 skills; no credit card required.",
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": { "short": "user/mo", "long": "user/month" },
+    "plans": [
+      { "name": "Free", "monthly": 0, "annual": null, "custom": false, "notes": "10,000 tool calls per month; app tool calls stop at the limit; $2 one-time credits; up to 3 members." },
+      { "name": "Standard", "monthly": 18, "annual": null, "custom": false, "notes": "Per seat per month. 10,000 tool calls per seat per month, pooled across the workspace, plus $18 credits per seat. Extra tool calls $0.005 each; Firewall policies $0.50 per 1M tokens. Includes SSO and zero data retention." },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Volume pricing. Bring your own cloud, custom connectors, SCIM, audit logs, SIEM streaming, dedicated Slack channel and SLAs. IT admin seats are free." }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": null,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": ["Cloud (SaaS)", "Bring your own cloud (Enterprise)"],
+    "founded": null,
+    "hq": null,
+    "integrations": "1,700+ apps",
+    "compliance": ["SOC 2 Type II", "ISO/IEC 27001:2022", "SSO (Standard and Enterprise)"],
+    "support": ["Dedicated Slack channel (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Composio pricing page", "url": "https://composio.dev/pricing", "date": "2026-11-18" },
+      { "label": "Composio docs: MCP overview", "url": "https://docs.composio.dev/docs/mcp-overview", "date": "2026-11-18" },
+      { "label": "Composio docs: Security overview", "url": "https://docs.composio.dev/docs/security/overview", "date": "2026-11-18" },
+      { "label": "Composio enterprise page", "url": "https://composio.dev/enterprise", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "mintive",
+    "name": "Mintive (formerly MintMCP)",
+    "category": "mcp-gateways",
+    "website": "https://www.mintive.com",
+    "logo": "https://www.mintive.com/favicon.svg",
+    "pricingUrl": "https://www.mintive.com/pricing",
+    "tagline": "Managed MCP gateway that hosts connectors and adds SSO, per-user credentials and audit logs.",
+    "bestFor": "Companies rolling out MCP servers to many employees",
+    "description": "Mintive, renamed from MintMCP in October 2026, runs MCP connectors in its own cloud and exposes them to clients such as ChatGPT, Claude and Cursor with per-user OAuth tokens, access policies and audit logs. Pricing is not published; it is quoted per user plus a platform fee.",
+    "pros": [
+      "1,000+ pre-built connectors",
+      "Records every tool call with user, timestamp and optional payload",
+      "Per-user OAuth tokens stored encrypted and refreshed automatically",
+      "SOC 2 Type II audited"
+    ],
+    "cons": [
+      "No public prices or free plan",
+      "Only a managed cloud deployment is listed",
+      "Renamed in October 2026, so some pages still use the MintMCP name"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      { "name": "Custom", "monthly": null, "annual": null, "custom": true, "notes": "Per-user licensing plus platform fees; quoted by team size (1-100, 101-1,000, 1,001-9,999 and 10,000+ users)." }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": null,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": ["Cloud (SaaS)"],
+    "founded": null,
+    "hq": null,
+    "integrations": "1,000+ pre-built connectors",
+    "compliance": ["SOC 2 Type II", "SSO/SAML and OIDC"],
+    "support": [],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Mintive pricing page", "url": "https://www.mintive.com/pricing", "date": "2026-11-18" },
+      { "label": "Mintive docs: Introduction", "url": "https://www.mintive.com/docs", "date": "2026-11-18" },
+      { "label": "Mintive docs: Architecture", "url": "https://www.mintive.com/docs/architecture", "date": "2026-11-18" },
+      { "label": "MintMCP blog: Meet Mintive", "url": "https://www.mintmcp.com/blog/meet-mintive", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "docker-mcp-gateway",
+    "name": "Docker MCP Gateway",
+    "category": "mcp-gateways",
+    "website": "https://docs.docker.com/ai/mcp-catalog-and-toolkit/mcp-gateway/",
+    "logo": "https://www.docker.com/app/uploads/2024/02/cropped-docker-logo-favicon-192x192.png",
+    "pricingUrl": "https://github.com/docker/mcp-gateway",
+    "tagline": "Open-source Docker CLI plugin that runs MCP servers in containers behind one gateway.",
+    "bestFor": "Developers running local MCP servers in isolated containers",
+    "description": "Docker MCP Gateway is the MIT-licensed engine behind the MCP Toolkit in Docker Desktop: it runs each MCP server in its own container, injects secrets, handles OAuth flows and lets you enable or disable individual tools per profile. The gateway is free; a managed governance offering is invite-only through Docker Sales.",
+    "pros": [
+      "MIT license, 1,600+ GitHub stars",
+      "Docker MCP Catalog lists 300+ servers; Docker builds and signs the local ones",
+      "Per-profile tool allowlists (enable or disable single tools)",
+      "Runs over stdio, SSE or streaming HTTP on a chosen port"
+    ],
+    "cons": [
+      "Mainly a single-machine developer tool; team access control is not documented in the open-source gateway",
+      "Profiles and secrets features rely on Docker Desktop 4.59+ by default",
+      "Docker AI Governance (central management) is invite-only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open-source gateway (MIT); included with the MCP Toolkit in Docker Desktop.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      { "name": "Open source", "monthly": 0, "annual": 0, "custom": false, "notes": "MIT-licensed docker-mcp CLI plugin; works in Docker Desktop or standalone." },
+      { "name": "Docker AI Governance", "monthly": null, "annual": null, "custom": true, "notes": "Invite-only; contact Docker Sales. Price not published." }
+    ],
+    "features": {
+      "openSource": true,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": null,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": ["Self-hosted (Docker)", "Docker Desktop (Windows, macOS, Linux)", "CLI"],
+    "founded": null,
+    "hq": null,
+    "integrations": "300+ MCP servers in the Docker MCP Catalog",
+    "compliance": [],
+    "support": ["GitHub issues"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "docker/mcp-gateway GitHub repository", "url": "https://github.com/docker/mcp-gateway", "date": "2026-11-18" },
+      { "label": "Docker docs: MCP Gateway", "url": "https://docs.docker.com/ai/mcp-catalog-and-toolkit/mcp-gateway/", "date": "2026-11-18" },
+      { "label": "Docker docs: MCP Catalog", "url": "https://docs.docker.com/ai/mcp-catalog-and-toolkit/catalog/", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "obot",
+    "name": "Obot",
+    "category": "mcp-gateways",
+    "website": "https://obot.ai",
+    "logo": "https://obot.ai/favicon.ico",
+    "pricingUrl": "https://obot.ai",
+    "tagline": "Open-source MCP gateway, server host and registry with identity-based access control and audit logs.",
+    "bestFor": "IT teams that want a self-hosted MCP control plane",
+    "description": "Obot is an MIT-licensed platform that hosts MCP servers in Docker or Kubernetes, combines them into virtual MCP endpoints, manages OAuth and shared credentials, and controls server and tool access by user or identity-provider group. The self-hosted Community edition is free for up to 100 users; Obot Cloud and Enterprise prices are not published.",
+    "pros": [
+      "MIT license; Community edition free for up to 100 users",
+      "Virtual MCP servers combine several servers behind one endpoint with per-group tool access",
+      "Turns any OpenAPI-described HTTP API into a hosted MCP server",
+      "SCIM provisioning from Okta and correlated audit logs"
+    ],
+    "cons": [
+      "Obot Cloud and Enterprise prices are not published",
+      "Enterprise auth providers in Community require registration",
+      "Device management (Obot Sentry) is still in beta"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Obot Community: open source, self-hosted, up to 100 users and 100 Sentry devices.",
+    "trial": "7-day free trial of Obot Cloud",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Community", "monthly": 0, "annual": 0, "custom": false, "notes": "Open source (MIT), self-hosted; up to 100 users and 100 Sentry devices." },
+      { "name": "Obot Cloud", "monthly": null, "annual": null, "custom": true, "notes": "Hosted, dedicated control plane; enterprise SSO/OIDC, no user limit. Price not published; 7-day free trial." },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Self-hosted; unlimited users and devices, enterprise support. Contact sales." }
+    ],
+    "features": {
+      "openSource": true,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": ["Cloud (SaaS)", "Self-hosted (Docker)", "Kubernetes"],
+    "founded": null,
+    "hq": null,
+    "integrations": null,
+    "compliance": ["SSO/OIDC (Cloud and Enterprise)", "SCIM (Okta)"],
+    "support": ["GitHub issues", "Enterprise support (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Obot homepage (editions)", "url": "https://obot.ai", "date": "2026-11-18" },
+      { "label": "obot-platform/obot GitHub repository", "url": "https://github.com/obot-platform/obot", "date": "2026-11-18" },
+      { "label": "Obot Cloud trial page", "url": "https://obot.ai/obot-cloud-trial/", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "truefoundry-mcp-gateway",
+    "name": "TrueFoundry MCP Gateway",
+    "category": "mcp-gateways",
+    "website": "https://www.truefoundry.com/mcp-gateway",
+    "logo": "https://cdn.prod.website-files.com/6291b38507a5238373237679/62c52662b8171f9546cfa886_Untitled%20design%20(4).png",
+    "pricingUrl": "https://www.truefoundry.com/pricing",
+    "tagline": "MCP gateway bundled with an LLM gateway, with per-user OAuth, per-tool RBAC and audit logs.",
+    "bestFor": "Teams that want LLM and MCP traffic governed in one gateway",
+    "description": "TrueFoundry's AI Gateway includes an MCP gateway that stores and refreshes each user's OAuth tokens, enforces per-server and per-tool permissions, and lets virtual MCP servers expose a subset of tools to chosen users or teams. The Developer plan is free for up to 3 users and Pro costs $25 per user per month.",
+    "pros": [
+      "Free Developer plan for up to 3 users, with 5 MCP servers and 10K gateway requests per user per month",
+      "Permissions per server and per tool, by user, team or virtual account",
+      "Deploys in VPC, on-prem or air-gapped (Enterprise)",
+      "SOC 2 Type II, HIPAA and GDPR listed in the Trust Center"
+    ],
+    "cons": [
+      "Developer and Pro run as SaaS only",
+      "MCP tool approvals are Enterprise-only",
+      "Pro charges $20 per additional 100K gateway requests above 20K per user"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Developer plan: free for up to 3 users; 5 MCP servers, 1 virtual MCP, 5 model accounts, 10K gateway requests per user per month; no credit card.",
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": { "short": "user/mo", "long": "user/month" },
+    "plans": [
+      { "name": "Developer", "monthly": 0, "annual": null, "custom": false, "notes": "Free for up to 3 users; SaaS only; 5 MCP servers, 1 virtual MCP, 10K AI Gateway requests per user per month." },
+      { "name": "Pro", "monthly": 25, "annual": null, "custom": false, "notes": "Per user per month, no minimum commitment; unlimited virtual MCPs; 20K requests per user per month, then $20 per additional 100K; SSO included; SaaS only. Model-provider costs billed separately without markup." },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Annual commitment; MCP tool approvals, custom guardrails, VPC, on-prem or air-gapped deployment." }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": ["Cloud (SaaS)", "VPC / on-prem (Enterprise)", "Air-gapped (Enterprise)"],
+    "founded": "2021",
+    "hq": "San Francisco, United States",
+    "integrations": null,
+    "compliance": ["SOC 2 Type II", "HIPAA", "GDPR", "SSO (Pro and Enterprise)"],
+    "support": [],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "TrueFoundry pricing page", "url": "https://www.truefoundry.com/pricing", "date": "2026-11-18" },
+      { "label": "TrueFoundry MCP Gateway page", "url": "https://www.truefoundry.com/mcp-gateway", "date": "2026-11-18" },
+      { "label": "TrueFoundry docs: MCP authentication and security", "url": "https://www.truefoundry.com/docs/ai-gateway/mcp/mcp-gateway-auth-security", "date": "2026-11-18" },
+      { "label": "TrueFoundry docs: Connect MCP servers from your IDE", "url": "https://www.truefoundry.com/docs/ai-gateway/mcp/connect-mcp-from-ide", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "ibm-contextforge",
+    "name": "IBM ContextForge",
+    "category": "mcp-gateways",
+    "website": "https://ibm.github.io/mcp-context-forge/",
+    "logo": "https://ibm.github.io/mcp-context-forge/latest/favicon.ico",
+    "pricingUrl": "https://github.com/IBM/mcp-context-forge",
+    "tagline": "Open-source registry and proxy that federates MCP, A2A and REST/gRPC services behind one endpoint.",
+    "bestFor": "Platform teams self-hosting a federated MCP registry",
+    "description": "ContextForge is an Apache-2.0 gateway from IBM that federates MCP servers, A2A agents and REST or gRPC APIs, bundles selected tools into virtual servers, and adds team-scoped RBAC and user-scoped OAuth tokens. It is free to self-host via PyPI, Docker or Kubernetes.",
+    "pros": [
+      "Apache-2.0 license, about 4,800 GitHub stars",
+      "Converts REST and gRPC services into MCP tools",
+      "Team-scoped RBAC with a tools.execute permission",
+      "40+ plugins and OpenTelemetry tracing"
+    ],
+    "cons": [
+      "No paid support plan or hosted version listed",
+      "Production containers do not support arm64",
+      "Audit logging of individual tool calls is not clearly documented"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open source (Apache-2.0); self-hosted.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      { "name": "Open source", "monthly": 0, "annual": 0, "custom": false, "notes": "Apache-2.0; install from PyPI (mcp-contextforge-gateway), Docker image or Kubernetes/Helm." }
+    ],
+    "features": {
+      "openSource": true,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": null,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": ["Self-hosted (Docker)", "Kubernetes", "PyPI (Python)"],
+    "founded": null,
+    "hq": null,
+    "integrations": "40+ plugins",
+    "compliance": ["SSO via Google, GitHub or Entra ID"],
+    "support": ["GitHub issues"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "IBM/mcp-context-forge GitHub repository", "url": "https://github.com/IBM/mcp-context-forge", "date": "2026-11-18" },
+      { "label": "ContextForge docs: RBAC", "url": "https://ibm.github.io/mcp-context-forge/latest/manage/rbac/", "date": "2026-11-18" },
+      { "label": "ContextForge docs: MCP Server Catalog", "url": "https://ibm.github.io/mcp-context-forge/latest/manage/catalog/", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "microsoft-mcp-gateway",
+    "name": "Microsoft MCP Gateway",
+    "category": "mcp-gateways",
+    "website": "https://microsoft.github.io/mcp-gateway/",
+    "logo": null,
+    "pricingUrl": "https://github.com/microsoft/mcp-gateway",
+    "tagline": "Open-source reverse proxy that deploys and routes MCP servers on Kubernetes with Entra ID authorization.",
+    "bestFor": "Azure and Kubernetes teams hosting their own MCP servers",
+    "description": "Microsoft MCP Gateway is an MIT-licensed reverse proxy and control plane that deploys MCP servers to Kubernetes, routes each request statelessly and checks Entra ID app roles for read and write access. It is free to self-host, with a one-click Azure deployment option.",
+    "pros": [
+      "MIT license, about 900 GitHub stars",
+      "REST control plane to deploy, update and delete MCP servers",
+      "Entra ID roles control who can read or change each server and tool",
+      "One-click deploy to Azure"
+    ],
+    "cons": [
+      "Requires Kubernetes",
+      "Current version only works with MCP 2026-07-28 clients",
+      "No catalog of ready-made servers; you supply container images"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Open source (MIT); self-hosted.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      { "name": "Open source", "monthly": 0, "annual": 0, "custom": false, "notes": "MIT-licensed; runs on your own Kubernetes cluster or Azure. Azure resource costs are separate." }
+    ],
+    "features": {
+      "openSource": true,
+      "selfHost": true,
+      "serverCatalog": false,
+      "oauthManagement": null,
+      "accessControl": true,
+      "auditLogs": null,
+      "remoteEndpoints": true,
+      "toolFiltering": null
+    },
+    "platforms": ["Kubernetes", "Azure"],
+    "founded": null,
+    "hq": null,
+    "integrations": null,
+    "compliance": ["Microsoft Entra ID authentication"],
+    "support": ["GitHub issues"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "microsoft/mcp-gateway GitHub repository", "url": "https://github.com/microsoft/mcp-gateway", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "zapier-mcp",
+    "name": "Zapier MCP",
+    "category": "mcp-gateways",
+    "website": "https://zapier.com/mcp",
+    "logo": "https://cdn.zapier.com/zapier/images/favicon.ico",
+    "pricingUrl": "https://zapier.com/pricing",
+    "tagline": "Hosted MCP server that gives AI clients actions across Zapier's 9,000+ connected apps.",
+    "bestFor": "Non-developers connecting AI assistants to business apps",
+    "description": "Zapier MCP exposes actions from 9,000+ apps to Claude, ChatGPT, Cursor and other clients over Streamable HTTP, with credentials kept in Zapier's managed connections and every action recorded in History. It is included in every Zapier plan, including Free (100 tasks per month), and each successful tool call uses two tasks.",
+    "pros": [
+      "Included in every Zapier plan, including Free",
+      "9,000+ apps; failed tool calls do not use tasks",
+      "Every MCP action is recorded in Zapier History",
+      "Enterprise admins can set app-level and action-level access"
+    ],
+    "cons": [
+      "Each successful tool call uses two tasks, so the Free plan's 100 tasks cover 50 calls",
+      "Cloud only; MCP servers outside Zapier cannot be added",
+      "Admin controls (per-workspace enablement, action restrictions) are Enterprise features"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Zapier Free plan: 100 tasks per month (50 MCP tool calls), 1 user.",
+    "trial": "14-day free trial of Professional, no credit card",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Free", "monthly": 0, "annual": 0, "custom": false, "notes": "100 tasks per month; 1 user. Each successful MCP tool call uses 2 tasks." },
+      { "name": "Professional", "monthly": 29.99, "annual": 19.99, "custom": false, "notes": "Flat price for 750 tasks per month; 1 user. Higher task tiers cost more." },
+      { "name": "Team", "monthly": 103.5, "annual": 69, "custom": false, "notes": "Flat price for 2,000 tasks per month; up to 25 users." },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Unlimited users; MCP admin controls, action restrictions, managed connections. Contact sales." }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": false,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": ["Cloud (SaaS)"],
+    "founded": null,
+    "hq": null,
+    "integrations": "9,000+ apps",
+    "compliance": ["SOC 2 Type II"],
+    "support": [],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Zapier MCP page", "url": "https://zapier.com/mcp", "date": "2026-11-18" },
+      { "label": "Zapier pricing page", "url": "https://zapier.com/pricing", "date": "2026-11-18" },
+      { "label": "Zapier MCP docs: Connect a client", "url": "https://docs.zapier.com/mcp/get-started/connect", "date": "2026-11-18" },
+      { "label": "Zapier MCP docs: Usage and billing", "url": "https://docs.zapier.com/mcp/usage-and-billing", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "kong-ai-gateway",
+    "name": "Kong AI Gateway",
+    "category": "mcp-gateways",
+    "website": "https://developer.konghq.com/ai-gateway/mcp/",
+    "logo": "https://konghq.com/favicon-180.png",
+    "pricingUrl": "https://konghq.com/pricing",
+    "tagline": "API gateway with plugins that proxy MCP traffic, turn REST APIs into MCP tools and apply per-tool ACLs.",
+    "bestFor": "Companies already running Kong for their APIs",
+    "description": "Kong AI Gateway adds MCP support through plugins that convert REST APIs into MCP tools, validate MCP OAuth 2.0 tokens and enforce per-tool access rules with audit logging. Konnect Plus starts at $25 per month plus usage, but Kong's plugin docs list the MCP Proxy and MCP OAuth2 plugins as AI Gateway Enterprise features.",
+    "pros": [
+      "Converts existing REST API paths into MCP tools",
+      "Per-tool ACLs since version 3.13, with allowed and denied attempts written to an audit log",
+      "Runs on-prem or in Konnect",
+      "30-day Plus trial, no credit card"
+    ],
+    "cons": [
+      "MCP Proxy and MCP OAuth2 plugins are documented as AI Gateway Enterprise-only",
+      "Plus pricing adds many usage meters (requests, control planes, APIs)",
+      "SSO, RBAC and audit logging in Konnect are Enterprise-only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial of Konnect Plus, no credit card",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Plus (AI Management)", "monthly": 25, "annual": null, "custom": false, "notes": "From $25 per month plus usage, billed monthly. 1M gateway requests included, then $200 per additional 1M; serverless control plane $25/month each; 5 LLMs included, then $100/month per model. Email support, 2-business-day SLA." },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Billed annually; custom pricing. Required for AI MCP Proxy and AI MCP OAuth2 plugins per plugin docs; SSO, RBAC and audit logging." }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "serverCatalog": null,
+      "oauthManagement": null,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": null
+    },
+    "platforms": ["Cloud (SaaS)", "Self-hosted (on-prem)", "Kubernetes"],
+    "founded": null,
+    "hq": null,
+    "integrations": null,
+    "compliance": ["SSO (Enterprise)"],
+    "support": ["Email (Plus)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Kong pricing page", "url": "https://konghq.com/pricing", "date": "2026-11-18" },
+      { "label": "Kong docs: AI Gateway MCP", "url": "https://developer.konghq.com/ai-gateway/mcp/", "date": "2026-11-18" },
+      { "label": "Kong docs: AI MCP Proxy plugin", "url": "https://developer.konghq.com/plugins/ai-mcp-proxy/", "date": "2026-11-18" },
+      { "label": "Kong docs: AI MCP OAuth2 plugin", "url": "https://developer.konghq.com/plugins/ai-mcp-oauth2/", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "arcade",
+    "name": "Arcade",
+    "category": "mcp-gateways",
+    "website": "https://www.arcade.dev",
+    "logo": "https://www.arcade.dev/favicon.svg",
+    "pricingUrl": "https://www.arcade.dev/pricing",
+    "tagline": "Tool runtime with MCP gateways that combine tools from several servers under per-user authorization.",
+    "bestFor": "Agent developers who need tools that act as the signed-in user",
+    "description": "Arcade hosts 8,000+ tools and lets you build MCP gateways that federate tools from several servers, choose exactly which tools each gateway exposes, and serve them at a Streamable HTTP URL with tokens scoped to the signed-in user. A free plan includes 2,000 tool calls per month, and the Team plan costs $25 per month plus $0.01 per tool call.",
+    "pros": [
+      "Free plan includes 2,000 tool calls per month, no credit card",
+      "8,000+ pre-built tools",
+      "Each gateway exposes only the tools you select",
+      "Enterprise can run in your VPC or fully air-gapped"
+    ],
+    "cons": [
+      "SSO, RBAC and audit logs are Enterprise-only",
+      "Team plan bills every tool call at $0.01 on top of the $25 fee",
+      "No annual price listed"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "2,000 tool calls per month on Arcade Cloud; community support on Discord and GitHub; no credit card.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      { "name": "Free", "monthly": 0, "annual": null, "custom": false, "notes": "2,000 tool calls per month; fully managed on Arcade Cloud." },
+      { "name": "Team", "monthly": 25, "annual": null, "custom": false, "notes": "Flat $25 per month platform fee plus usage: tool calls $0.01 each. Next-business-day email support." },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Annual tool-call bundles with volume discounts; SSO, RBAC, audit logs, private registry; Arcade Cloud, VPC or air-gapped; 24/7 SLA support." }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": ["Cloud (SaaS)", "VPC (Enterprise)", "Air-gapped (Enterprise)"],
+    "founded": null,
+    "hq": "South San Francisco, United States",
+    "integrations": "8,000+ tools",
+    "compliance": ["SOC 2", "SSO (Enterprise)"],
+    "support": ["Discord", "GitHub", "Email (Team)", "24/7 SLA support (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Arcade pricing page", "url": "https://www.arcade.dev/pricing", "date": "2026-11-18" },
+      { "label": "Arcade docs: MCP Gateways", "url": "https://docs.arcade.dev/en/guides/create-tools/mcp-gateways", "date": "2026-11-18" },
+      { "label": "Arcade homepage", "url": "https://www.arcade.dev/", "date": "2026-11-18" }
+    ]
+  }
+]

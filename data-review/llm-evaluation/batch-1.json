@@ -1,0 +1,481 @@
+[
+  {
+    "slug": "braintrust",
+    "name": "Braintrust",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.braintrust.dev",
+    "logo": "https://www.braintrust.dev/icon.png",
+    "pricingUrl": "https://www.braintrust.dev/pricing",
+    "tagline": "Evaluation and observability platform for LLM apps and agents, with experiments, scorers and tracing.",
+    "bestFor": "Product teams running evals in CI on every pull request",
+    "description": "Braintrust runs offline experiments against datasets, scores results with code or LLM-as-judge scorers, and traces production calls for online scoring. The Starter plan is free with unlimited users; Pro costs $249 per month flat plus usage.",
+    "pros": [
+      "Free Starter plan includes unlimited users, projects, datasets and experiments",
+      "Pro includes 5 GB of processed data, 50K scores and $100 of model credits per month",
+      "Official GitHub Action posts eval results as a pull request comment",
+      "Trace-level scorers can check tool usage, tool failures and step budgets in agent runs"
+    ],
+    "cons": [
+      "Platform is proprietary; only the autoevals scorer library is MIT-licensed",
+      "Starter keeps data for 14 days and Pro for 30 days",
+      "SAML SSO and self-hosted data plane are Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Starter: unlimited users, 1 GB processed data, 10K scores, $10 of model credits per month, 14-day retention, 1 human review score per project. No credit card required.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {"name": "Starter", "monthly": 0, "annual": 0, "custom": false, "notes": "Overage: $4/GB processed data, $2.50 per 1,000 scores; community support."},
+      {"name": "Pro", "monthly": 249, "annual": null, "custom": false, "notes": "Flat monthly platform fee for the whole team (not per seat) plus usage: 5 GB included then $3/GB, 50K scores then $1.50 per 1,000, 30-day retention then $0.50/GB/month. No annual price published. 6-12 months free for qualifying startups."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing; on-prem or hosted deployment, SAML SSO, custom retention, BAA for HIPAA, premium support with SLAs."}
+    ],
+    "features": {"openSource": false, "selfHost": true, "tracing": true, "llmJudge": true, "datasets": true, "promptManagement": true, "cicdIntegration": true, "agentEvals": true},
+    "platforms": ["Cloud (SaaS)", "Self-hosted (hybrid data plane)", "Python SDK", "TypeScript SDK"],
+    "founded": "2023",
+    "hq": "San Francisco, USA",
+    "integrations": "Self-hosted data plane via Terraform on AWS, GCP and Azure; GitHub Actions",
+    "compliance": ["SOC 2 Type II", "HIPAA BAA (Enterprise)", "SSO/SAML (Enterprise)"],
+    "support": ["Community", "Priority support (Pro)", "Premium support with SLAs (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "Braintrust pricing page", "url": "https://www.braintrust.dev/pricing", "date": "2026-11-18"},
+      {"label": "Braintrust docs: self-hosting", "url": "https://docs.braintrust.dev/self-hosting", "date": "2026-11-18"},
+      {"label": "Braintrust docs: evaluating agents", "url": "https://www.braintrust.dev/docs/best-practices/agents", "date": "2026-11-18"},
+      {"label": "GitHub: braintrustdata/eval-action", "url": "https://github.com/braintrustdata/eval-action", "date": "2026-11-18"},
+      {"label": "GitHub: braintrustdata/autoevals", "url": "https://github.com/braintrustdata/autoevals", "date": "2026-11-18"}
+    ]
+  },
+  {
+    "slug": "langfuse",
+    "name": "Langfuse",
+    "category": "llm-evaluation-tools",
+    "website": "https://langfuse.com",
+    "logo": "https://langfuse.com/favicon-32x32.png",
+    "pricingUrl": "https://langfuse.com/pricing",
+    "tagline": "Open-source LLM engineering platform for tracing, evaluation and prompt management.",
+    "bestFor": "Teams that want an MIT-licensed tool they can self-host",
+    "description": "Langfuse combines tracing, datasets and experiments, LLM-as-a-judge evaluators and versioned prompt management, and can be self-hosted for free under the MIT license. Cloud plans start with a free Hobby tier, and Core costs $29 per month flat plus usage.",
+    "pros": [
+      "Core features are MIT-licensed and free to self-host with unlimited usage",
+      "Cloud Core and above include unlimited users",
+      "GitHub Action (langfuse/experiment-action) fails a pull request when an experiment regresses",
+      "Evaluators receive tool calls as structured fields for agent evaluation"
+    ],
+    "cons": [
+      "Hobby plan is limited to 2 users and 30 days of data access",
+      "SOC 2, ISO 27001 reports and HIPAA BAA start on the $199 Pro plan",
+      "Enterprise SSO on Pro needs the $300/month Teams add-on"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Hobby (cloud): 50k units per month, 30 days data access, 2 users, 1 annotation queue, 2 alerts; no credit card. Self-hosted open source: free with unlimited usage.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {"name": "Hobby", "monthly": 0, "annual": 0, "custom": false, "notes": "50k units/month, no overage allowed; community support via GitHub."},
+      {"name": "Core", "monthly": 29, "annual": null, "custom": false, "notes": "Flat per month, unlimited users. 100k units/month included, then $8 per 100k units (falling to $6 per 100k above 50M). 90 days data access. Yearly commitment available above a minimum contract value (amount not published)."},
+      {"name": "Pro", "monthly": 199, "annual": null, "custom": false, "notes": "Flat per month plus the same unit overage. 3 years data access, SOC 2 / ISO 27001, HIPAA BAA available. Optional Teams add-on $300/month adds Enterprise SSO and a Slack channel."},
+      {"name": "Enterprise", "monthly": 2499, "annual": null, "custom": false, "notes": "Flat per month plus unit overage, or a yearly commitment with custom volume pricing. Enterprise SSO, support and uptime SLAs."},
+      {"name": "Self-hosted Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing, additive to a ClickHouse commercial plan; adds project-level RBAC, retention policies, audit logs and support SLA."}
+    ],
+    "features": {"openSource": true, "selfHost": true, "tracing": true, "llmJudge": true, "datasets": true, "promptManagement": true, "cicdIntegration": true, "agentEvals": true},
+    "platforms": ["Cloud (SaaS)", "Self-hosted", "Python SDK", "TypeScript SDK", "OpenTelemetry"],
+    "founded": "2023",
+    "hq": "Berlin, Germany",
+    "integrations": "OpenTelemetry; self-host with Docker Compose or Kubernetes (Helm); GitHub Actions",
+    "compliance": ["SOC 2 Type II (Pro+)", "ISO 27001 (Pro+)", "HIPAA BAA (Pro+)", "SSO/SAML (Enterprise or Teams add-on)"],
+    "support": ["GitHub community", "In-app support", "Slack channel (Teams add-on)", "Named support engineer (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "Langfuse pricing page", "url": "https://langfuse.com/pricing", "date": "2026-11-18"},
+      {"label": "Langfuse self-hosted pricing page", "url": "https://langfuse.com/pricing-self-host", "date": "2026-11-18"},
+      {"label": "Langfuse docs: evaluation overview", "url": "https://langfuse.com/docs/evaluation/overview", "date": "2026-11-18"},
+      {"label": "Langfuse docs: CI/CD experiments", "url": "https://langfuse.com/docs/evaluation/experiments/experiments-ci-cd", "date": "2026-11-18"},
+      {"label": "Langfuse changelog: evaluate tool calls", "url": "https://langfuse.com/changelog/2026-07-10-evaluator-tool-calls", "date": "2026-11-18"},
+      {"label": "ClickHouse blog: ClickHouse acquires Langfuse", "url": "https://clickhouse.com/blog/clickhouse-acquires-langfuse-open-source-llm-observability", "date": "2026-11-18"}
+    ]
+  },
+  {
+    "slug": "langsmith",
+    "name": "LangSmith",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.langchain.com/langsmith",
+    "logo": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/69a17e4a429d54e956e2a763_favicon.png",
+    "pricingUrl": "https://www.langchain.com/pricing",
+    "tagline": "LangChain's platform for tracing, evaluating and deploying LLM agents.",
+    "bestFor": "Teams building agents with LangChain or LangGraph",
+    "description": "LangSmith traces LLM and agent runs, runs offline and online evaluations with LLM-as-judge evaluators, and integrates with pytest and Vitest for evals in CI. The Developer plan is free for 1 seat, and Plus costs $39 per seat per month plus trace usage.",
+    "pros": [
+      "Free Developer plan includes 5k base traces per month",
+      "pytest and Vitest/Jest integrations run evals as test cases",
+      "Trajectory LLM-as-judge evaluators for agent runs via OpenEvals/agentevals",
+      "SOC 2 Type II, HIPAA, GDPR and ISO 27001 listed"
+    ],
+    "cons": [
+      "Proprietary; self-hosting only on Enterprise",
+      "Priced per seat, and Developer allows only 1 seat",
+      "Base traces are kept 14 days; the price for extended (180-day) retention is not published"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Developer: 1 seat, 5k base traces per month, then pay as you go; community support.",
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": {"short": "user/mo", "long": "user/month"},
+    "plans": [
+      {"name": "Developer", "monthly": 0, "annual": 0, "custom": false, "notes": "1 seat; 5k base traces/month, then pay as you go (per-trace rate not stated on pricing page)."},
+      {"name": "Plus", "monthly": 39, "annual": null, "custom": false, "notes": "Per seat per month, unlimited seats; 10k base traces/month included, then pay as you go. Deployment (Agent Server, Fleet) billed in LSUs at $1 per LSU. Up to $10,000 in credits for VC-backed startups."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing invoiced annually upfront; cloud, hybrid or self-hosted; custom SSO; support SLA."}
+    ],
+    "features": {"openSource": false, "selfHost": true, "tracing": true, "llmJudge": true, "datasets": true, "promptManagement": true, "cicdIntegration": true, "agentEvals": true},
+    "platforms": ["Cloud (SaaS)", "Self-hosted (Enterprise)", "Python SDK", "TypeScript SDK"],
+    "founded": "2022",
+    "hq": "San Francisco, USA",
+    "integrations": "LangChain, LangGraph; pytest, Vitest/Jest",
+    "compliance": ["SOC 2 Type II", "HIPAA", "GDPR", "ISO 27001", "Custom SSO (Enterprise)"],
+    "support": ["Community", "Slack, email and support portal (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "LangChain pricing page", "url": "https://www.langchain.com/pricing", "date": "2026-11-18"},
+      {"label": "LangSmith docs: evaluation", "url": "https://docs.langchain.com/langsmith/evaluation", "date": "2026-11-18"},
+      {"label": "LangSmith docs: run evaluations with pytest", "url": "https://docs.langchain.com/langsmith/pytest", "date": "2026-11-18"},
+      {"label": "LangChain docs: agent evals (trajectory)", "url": "https://docs.langchain.com/oss/python/langchain/test/evals", "date": "2026-11-18"},
+      {"label": "LangSmith docs: regions FAQ (compliance)", "url": "https://docs.langchain.com/langsmith/regions-faq", "date": "2026-11-18"}
+    ]
+  },
+  {
+    "slug": "arize-phoenix",
+    "name": "Arize Phoenix",
+    "category": "llm-evaluation-tools",
+    "website": "https://phoenix.arize.com",
+    "logo": "https://arize.com/wp-content/themes/arize-2022/images/favicon.png",
+    "pricingUrl": "https://arize.com/pricing/",
+    "tagline": "Source-available tracing and evaluation tool for LLM apps, with a hosted Arize AX tier.",
+    "bestFor": "Teams that want OpenTelemetry tracing and evals they can run locally",
+    "description": "Phoenix traces LLM apps with OpenTelemetry, runs LLM and code evals, and manages versioned datasets, experiments and prompts; it can be self-hosted with Docker or Kubernetes. The hosted Arize AX product has a free tier, and AX Pro costs $50 per month.",
+    "pros": [
+      "Phoenix self-hosts free with Docker or a Helm chart",
+      "AX Free includes 25k spans, 1 GB ingestion and unlimited users",
+      "Prebuilt LLM-as-judge evaluators for tool selection and tool parameters",
+      "pytest integration and GitHub Actions example for CI checks"
+    ],
+    "cons": [
+      "Phoenix is under the Elastic License 2.0, which is source-available, not OSI open source",
+      "AX Pro allows 50k spans and 30-day retention; overage rates are not published",
+      "HIPAA and enterprise SSO are AX Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Phoenix: free to self-host. AX Free (SaaS): 25k trace spans and 1 GB ingestion per month, 15-day retention, unlimited users; no credit card.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {"name": "Phoenix (self-hosted)", "monthly": 0, "annual": 0, "custom": false, "notes": "Source-available under Elastic License 2.0; you run the infrastructure."},
+      {"name": "AX Free", "monthly": 0, "annual": 0, "custom": false, "notes": "25k spans/month, 1 GB ingestion, 15-day retention, unlimited users; community support."},
+      {"name": "AX Pro", "monthly": 50, "annual": null, "custom": false, "notes": "Listed as $50 per month with unlimited users (no per-seat price stated). 50k spans/month, 10 GB ingestion, 30-day retention, email support. Overage rates not published."},
+      {"name": "AX Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing; SaaS or self-hosted; HIPAA, enterprise SSO, dedicated support."}
+    ],
+    "features": {"openSource": false, "selfHost": true, "tracing": true, "llmJudge": true, "datasets": true, "promptManagement": true, "cicdIntegration": true, "agentEvals": true},
+    "platforms": ["Cloud (SaaS)", "Self-hosted", "Python SDK", "TypeScript SDK", "OpenTelemetry"],
+    "founded": "2020",
+    "hq": "Berkeley, USA",
+    "integrations": "OpenTelemetry (OpenInference); Docker, Kubernetes (Helm); data regions US, EU or CA",
+    "compliance": ["SOC 2 Type II (AX Pro+)", "HIPAA (AX Enterprise)", "SSO/SAML (AX Enterprise)"],
+    "support": ["Community", "Email (AX Pro)", "Dedicated support (AX Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "Arize pricing page", "url": "https://arize.com/pricing/", "date": "2026-11-18"},
+      {"label": "GitHub: Arize-ai/phoenix (license, self-hosting)", "url": "https://github.com/Arize-ai/phoenix", "date": "2026-11-18"},
+      {"label": "Arize blog: how to evaluate tool-calling agents", "url": "https://arize.com/blog/how-to-evaluate-tool-calling-agents/", "date": "2026-11-18"},
+      {"label": "Phoenix docs: CI checks", "url": "https://arize.com/docs/phoenix/learn/ci-checks", "date": "2026-11-18"},
+      {"label": "Arize AX docs: compliance", "url": "https://arize.com/docs/ax/security-and-settings/compliance", "date": "2026-11-18"}
+    ]
+  },
+  {
+    "slug": "opik",
+    "name": "Comet Opik",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.comet.com/site/products/opik/",
+    "logo": "https://www.comet.com/site/wp-content/uploads/2025/01/cropped-apple-touch-icon-192x192.png",
+    "pricingUrl": "https://www.comet.com/site/pricing/",
+    "tagline": "Open-source LLM tracing, evaluation and prompt optimization platform from Comet.",
+    "bestFor": "Small teams that want a low-cost hosted plan or free self-hosting",
+    "description": "Opik traces LLM calls, runs LLM-as-a-judge metrics on datasets and experiments, includes a prompt playground, and integrates with pytest for CI; it is Apache 2.0 licensed. The cloud Free plan covers 25k spans per month, and Pro costs $19 per month flat.",
+    "pros": [
+      "Apache 2.0 licensed, self-hosts with Docker Compose or Helm",
+      "Pro is $19/month for up to 50 team members and 100k spans",
+      "Built-in trajectory accuracy metric for agent runs",
+      "Free cloud plan keeps data for 60 days"
+    ],
+    "cons": [
+      "Free cloud plan has no span overage; extra spans need Pro",
+      "SSO and compliance certifications are listed only on Enterprise",
+      "Free and Pro cloud data is hosted in the US region only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free cloud: 25k spans per month, 60-day retention, up to 10 team members. Open source self-hosted: unlimited spans and users.",
+    "trial": "Pro free trial offered (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      {"name": "Open Source", "monthly": 0, "annual": 0, "custom": false, "notes": "Self-hosted; unlimited spans, retention and users; community support."},
+      {"name": "Free Cloud", "monthly": 0, "annual": 0, "custom": false, "notes": "25k spans/month, 60-day retention, up to 10 members; no overage."},
+      {"name": "Pro Cloud", "monthly": 19, "annual": null, "custom": false, "notes": "Flat per month (not per seat), up to 50 members. 100k spans/month, then $5 per 100k spans; extended retention (60 to 400 days) $29 per 100k spans. Email support."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing; unlimited spans; on-prem or managed deployment; SSO (SAML, LDAP); 2-hour response SLA."}
+    ],
+    "features": {"openSource": true, "selfHost": true, "tracing": true, "llmJudge": true, "datasets": true, "promptManagement": true, "cicdIntegration": true, "agentEvals": true},
+    "platforms": ["Cloud (SaaS)", "Self-hosted", "Python SDK", "TypeScript SDK"],
+    "founded": "2017",
+    "hq": "New York, USA",
+    "integrations": "pytest; Docker Compose, Kubernetes (Helm)",
+    "compliance": ["SOC 2 (Enterprise)", "ISO 27001 (Enterprise)", "HIPAA (Enterprise)", "GDPR", "SSO/SAML (Enterprise)"],
+    "support": ["Slack community", "GitHub", "Email (Pro)", "Dedicated support with SLA (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "Comet pricing page (Opik plans)", "url": "https://www.comet.com/site/pricing/", "date": "2026-11-18"},
+      {"label": "GitHub: comet-ml/opik", "url": "https://github.com/comet-ml/opik", "date": "2026-11-18"},
+      {"label": "Opik docs: evaluate agent trajectories", "url": "https://www.comet.com/docs/opik/evaluation/evaluate_agent_trajectory", "date": "2026-11-18"},
+      {"label": "Opik docs: trajectory accuracy metric", "url": "https://www.comet.com/docs/opik/evaluation/metrics/trajectory_accuracy", "date": "2026-11-18"}
+    ]
+  },
+  {
+    "slug": "confident-ai",
+    "name": "Confident AI (DeepEval)",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.confident-ai.com",
+    "logo": "https://www.confident-ai.com/icon.png",
+    "pricingUrl": "https://www.confident-ai.com/pricing",
+    "tagline": "Hosted evaluation and tracing platform built on the open-source DeepEval framework.",
+    "bestFor": "Python teams writing LLM tests with pytest-style metrics",
+    "description": "Confident AI adds test-run tracking, tracing, datasets, prompt versioning and online evals on top of DeepEval, an Apache 2.0 framework with G-Eval and agent metrics such as tool correctness and task completion. The Free plan covers 2 seats, and Starter costs $200 per month flat per organization.",
+    "pros": [
+      "DeepEval is Apache 2.0 and lists about 40 metrics, including G-Eval and tool correctness",
+      "Paid plans are flat per organization with unlimited seats",
+      "Tests run in any CI system, with GitHub Actions setup documented",
+      "Starter includes online evals, annotation queues and chat simulations"
+    ],
+    "cons": [
+      "The Confident AI platform itself is proprietary; only DeepEval is open source",
+      "Free plan allows 5 test runs per week and 1 project",
+      "SSO and SOC 2 start on the $2,000/month Team plan"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "2 seats, 1 project, 1 GB-month of trace spans, 5 test runs per week; extra spans dropped; no credit card.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {"name": "Free", "monthly": 0, "annual": 0, "custom": false, "notes": "2 seats, 1 project, 1 GB-month spans, 5 test runs/week."},
+      {"name": "Starter", "monthly": 200, "annual": null, "custom": false, "notes": "Flat per organization, unlimited seats, 5 projects, 5 GB-months included, then $1 per GB-month ingested or retained. Annual billing discounted but price not published."},
+      {"name": "Team", "monthly": 2000, "annual": null, "custom": false, "notes": "Flat per organization, unlimited projects, 75 GB-months included, then $1 per GB-month. Adds SSO, SOC 2, custom RBAC, dataset/metric versioning."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom contract; dedicated on-prem deployment, HIPAA, data residency, 24x7 support."}
+    ],
+    "features": {"openSource": true, "selfHost": true, "tracing": true, "llmJudge": true, "datasets": true, "promptManagement": true, "cicdIntegration": true, "agentEvals": true},
+    "platforms": ["Cloud (SaaS)", "Self-hosted (Enterprise on-prem)", "Python SDK", "OpenTelemetry"],
+    "founded": "2024",
+    "hq": "San Francisco, USA",
+    "integrations": "pytest (deepeval test run), GitHub Actions, OpenTelemetry (confident-trace)",
+    "compliance": ["SOC 2 Type II (Team+)", "HIPAA (Enterprise)", "GDPR", "SSO (Team+)"],
+    "support": ["Community", "Documentation", "Dedicated support channel (Team)", "24x7 support (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "Confident AI pricing page", "url": "https://www.confident-ai.com/pricing", "date": "2026-11-18"},
+      {"label": "GitHub: confident-ai/deepeval", "url": "https://github.com/confident-ai/deepeval", "date": "2026-11-18"},
+      {"label": "Confident AI docs", "url": "https://www.confident-ai.com/docs", "date": "2026-11-18"},
+      {"label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/confident-ai", "date": "2026-11-18"}
+    ]
+  },
+  {
+    "slug": "promptfoo",
+    "name": "Promptfoo",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.promptfoo.dev",
+    "logo": "https://www.promptfoo.dev/img/logo-panda.svg",
+    "pricingUrl": "https://www.promptfoo.dev/pricing/",
+    "tagline": "Open-source CLI for testing prompts, models and agents, with red teaming.",
+    "bestFor": "Developers who want config-file evals and security tests in CI",
+    "description": "Promptfoo is an MIT-licensed CLI and library that runs test cases against prompts, models and agents with deterministic, model-graded (llm-rubric) and trajectory assertions, and also does red teaming. The Community edition is free; Enterprise and On-Premise plans are quote-only.",
+    "pros": [
+      "MIT-licensed; runs locally or self-hosted for free",
+      "Official GitHub Action runs before-and-after evals on pull requests",
+      "Trajectory assertions check tool use, tool order and step counts from traces",
+      "Community edition includes 10k red-team probes per month"
+    ],
+    "cons": [
+      "Paid plans have no published prices",
+      "Team sharing, SSO and continuous monitoring are Enterprise only",
+      "OpenAI agreed to acquire Promptfoo in March 2026; both say the project stays open source"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Community: all LLM evaluation features, all providers, vulnerability scanning, 10k red-team probes per month; community support.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {"name": "Community", "monthly": 0, "annual": 0, "custom": false, "notes": "Free forever; run locally or self-host."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Priced by team size and needs; team sharing, continuous monitoring, SSO, API access, managed cloud; extra probes available."},
+      {"name": "On-Premise", "monthly": null, "annual": null, "custom": true, "notes": "Enterprise features deployed on your own infrastructure with a dedicated runner and deployment engineer."}
+    ],
+    "features": {"openSource": true, "selfHost": true, "tracing": true, "llmJudge": true, "datasets": true, "promptManagement": null, "cicdIntegration": true, "agentEvals": true},
+    "platforms": ["CLI", "Self-hosted", "Node.js library", "Cloud (Enterprise)"],
+    "founded": null,
+    "hq": null,
+    "integrations": "GitHub Actions and other CI systems; OpenTelemetry (OTLP) tracing; all major model providers",
+    "compliance": ["SOC 2", "ISO 27001", "SSO (Enterprise)"],
+    "support": ["Community", "Priority support with SLA (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "Promptfoo pricing page", "url": "https://www.promptfoo.dev/pricing/", "date": "2026-11-18"},
+      {"label": "Promptfoo docs: GitHub Action", "url": "https://www.promptfoo.dev/docs/integrations/github-action/", "date": "2026-11-18"},
+      {"label": "Promptfoo docs: tracing", "url": "https://www.promptfoo.dev/docs/tracing/", "date": "2026-11-18"},
+      {"label": "Promptfoo docs: deterministic and trajectory assertions", "url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/deterministic/", "date": "2026-11-18"},
+      {"label": "Promptfoo docs: llm-rubric", "url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/llm-rubric/", "date": "2026-11-18"},
+      {"label": "OpenAI: OpenAI to acquire Promptfoo", "url": "https://openai.com/index/openai-to-acquire-promptfoo/", "date": "2026-11-18"}
+    ]
+  },
+  {
+    "slug": "wandb-weave",
+    "name": "W&B Weave",
+    "category": "llm-evaluation-tools",
+    "website": "https://wandb.ai/site/weave/",
+    "logo": "https://wandb.ai/site/favicon.ico",
+    "pricingUrl": "https://coreweave.com/forge-pricing",
+    "tagline": "Weights & Biases toolkit for tracing, scoring and comparing LLM apps and agents.",
+    "bestFor": "Teams already using Weights & Biases for model training",
+    "description": "Weave traces functions and LLM calls, runs evaluations with code or LLM-judge scorers over versioned datasets, and versions prompt objects; the SDK is Apache 2.0. The Free plan includes 1 GB of Weave ingestion per month, and Pro starts at $60 per month.",
+    "pros": [
+      "SDK is Apache 2.0 licensed",
+      "Free plan includes up to 5 seats and 1 GB of Weave ingestion per month",
+      "Pro has a 30-day free trial",
+      "Agent evaluation tutorial and Evaluation Playground for side-by-side model comparison"
+    ],
+    "cons": [
+      "Pro includes only 1.5 GB of ingestion, then $0.10 per MB",
+      "SSO, HIPAA option and dedicated deployment are Enterprise only",
+      "Pricing now sits on CoreWeave's Forge page, bundled with other W&B products"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 5 model seats, 5 GB storage and 1 GB Weave ingestion per month; email support.",
+    "trial": "30-day free trial of Pro",
+    "minSeats": 1,
+    "plans": [
+      {"name": "Free", "monthly": 0, "annual": 0, "custom": false, "notes": "Up to 5 seats, 1 GB/month Weave ingestion, 5 GB storage."},
+      {"name": "Pro", "monthly": 60, "annual": null, "custom": false, "notes": "Starts at $60/month billed monthly (flat starting price, up to 10 model seats). 1.5 GB/month Weave ingestion, then $0.10/MB; 100 GB storage, then $0.03/GB. No annual price published."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Quote-based with annual commitment discounts; extra Weave ingestion $0.20/MB; SSO, HIPAA option, dedicated deployment."}
+    ],
+    "features": {"openSource": true, "selfHost": true, "tracing": true, "llmJudge": true, "datasets": true, "promptManagement": true, "cicdIntegration": null, "agentEvals": true},
+    "platforms": ["Cloud (SaaS)", "Self-managed", "Python SDK", "TypeScript SDK"],
+    "founded": "2017",
+    "hq": "San Francisco, USA",
+    "integrations": "Weights & Biases Models; self-managed deployment on Kubernetes with ClickHouse",
+    "compliance": ["SOC 2 Type II", "HIPAA option (Enterprise)", "SSO (Enterprise)"],
+    "support": ["Email", "Priority email and chat (Pro)", "Dedicated Slack/Teams channel (Enterprise premium support)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "CoreWeave Forge pricing page (W&B pricing redirects here)", "url": "https://coreweave.com/forge-pricing", "date": "2026-11-18"},
+      {"label": "GitHub: wandb/weave", "url": "https://github.com/wandb/weave", "date": "2026-11-18"},
+      {"label": "Weave docs: evaluate your AI agent", "url": "https://docs.wandb.ai/weave/agent-evals", "date": "2026-11-18"},
+      {"label": "Weave docs: prompts", "url": "https://docs.wandb.ai/weave/guides/core-types/prompts", "date": "2026-11-18"},
+      {"label": "Weave docs: self-managed instance", "url": "https://weave-docs.wandb.ai/guides/platform/weave-self-managed", "date": "2026-11-18"}
+    ]
+  },
+  {
+    "slug": "maxim-ai",
+    "name": "Maxim AI",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.getmaxim.ai",
+    "logo": "https://www.getmaxim.ai/favicon.ico",
+    "pricingUrl": "https://www.getmaxim.ai/evals/pricing",
+    "tagline": "Platform for prompt experimentation, agent simulation, evaluation and observability.",
+    "bestFor": "Teams testing chat and voice agents with simulated users",
+    "description": "Maxim AI covers prompt playground and versioning, evaluator store with LLM-as-a-judge evaluators, agent and voice simulations, and production log tracing with online evals. The Developer plan is free for up to 3 seats, and Professional costs $29 per seat per month.",
+    "pros": [
+      "Free Developer plan for up to 3 seats and 10k logs per month",
+      "Simulated multi-turn sessions with personas to test agents",
+      "GitHub Action (maximhq/actions) runs test runs in CI",
+      "14-day free trial on Professional and Business"
+    ],
+    "cons": [
+      "Proprietary platform; only the Bifrost gateway is open source",
+      "Short log retention: 3 days free, 7 days Professional, 30 days Business",
+      "SSO, in-VPC deployment and SOC 2/HIPAA are Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Developer: up to 3 seats, 1 workspace, 10k logs per month, 3-day retention, 3 datasets; email support.",
+    "trial": "14-day free trial (Professional and Business)",
+    "minSeats": 1,
+    "priceUnit": {"short": "user/mo", "long": "user/month"},
+    "plans": [
+      {"name": "Developer", "monthly": 0, "annual": 0, "custom": false, "notes": "Up to 3 seats; 10k logs/month, no overage."},
+      {"name": "Professional", "monthly": 29, "annual": null, "custom": false, "notes": "Per seat per month, billed monthly; unlimited seats, 3 workspaces, 100k logs/month, then $1 per 10k logs; 7-day retention."},
+      {"name": "Business", "monthly": 49, "annual": null, "custom": false, "notes": "Per seat per month, billed monthly; unlimited workspaces, 500k logs/month, then $1 per 10k logs; 30-day retention, RBAC, private Slack support."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing, billed annually; SAML SSO, in-VPC deployment, SOC 2 Type II, ISO 27001, HIPAA, custom BAAs."}
+    ],
+    "features": {"openSource": false, "selfHost": true, "tracing": true, "llmJudge": true, "datasets": true, "promptManagement": true, "cicdIntegration": true, "agentEvals": true},
+    "platforms": ["Cloud (SaaS)", "In-VPC (Enterprise)", "Python SDK", "TypeScript SDK"],
+    "founded": "2023",
+    "hq": null,
+    "integrations": "LangChain, LangGraph, OpenAI Agents, LiveKit, CrewAI, Agno, LiteLLM, Anthropic, Bedrock, Mistral",
+    "compliance": ["SOC 2 Type II (Enterprise)", "ISO 27001 (Enterprise)", "HIPAA (Enterprise)", "GDPR (Enterprise)", "SSO/SAML (Enterprise)"],
+    "support": ["Email", "Private Slack (Business+)", "Dedicated CSM (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "Maxim AI pricing page", "url": "https://www.getmaxim.ai/evals/pricing", "date": "2026-11-18"},
+      {"label": "Maxim docs: prompt CI/CD integration", "url": "https://www.getmaxim.ai/docs/offline-evals/via-sdk/prompts/ci-cd-integration", "date": "2026-11-18"},
+      {"label": "Maxim docs: simulation runs", "url": "https://www.getmaxim.ai/docs/simulations/text-simulation/simulation-runs", "date": "2026-11-18"},
+      {"label": "Maxim docs: create custom AI evaluators", "url": "https://www.getmaxim.ai/docs/library/how-to/evaluators/create-custom-ai-evaluator", "date": "2026-11-18"}
+    ]
+  },
+  {
+    "slug": "laminar",
+    "name": "Laminar",
+    "category": "llm-evaluation-tools",
+    "website": "https://laminar.sh",
+    "logo": "https://laminar.sh/favicon.ico",
+    "pricingUrl": "https://laminar.sh/pricing",
+    "tagline": "Open-source tracing, evaluation and trace analysis platform for AI agents.",
+    "bestFor": "Teams debugging long-running and browser agents",
+    "description": "Laminar is an Apache 2.0 platform with OpenTelemetry tracing, browser session replay, SDK and CLI evaluations, datasets, labeling queues and an LLM-based Signals feature that flags issues in traces. The Free plan includes 1 GB of data, and Starter costs $30 per month flat with unlimited seats.",
+    "pros": [
+      "Apache 2.0 licensed; self-hosts with Docker Compose or Helm",
+      "Starter is $30/month with unlimited seats and projects",
+      "Agent evaluations run in real environments and capture full trajectories",
+      "Session replay for Browser Use and Stagehand agents"
+    ],
+    "cons": [
+      "No built-in LLM-as-judge scorer documented; you write evaluator functions",
+      "Free plan allows 1 seat, 1 project and 7 days of data access",
+      "Signals analysis is billed separately by tokens on paid plans"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "1 GB data with no overage, 7-day data access, 1 project, 1 seat; no Signals; community support.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {"name": "Free", "monthly": 0, "annual": 0, "custom": false, "notes": "1 GB data, no overage; Discord community support."},
+      {"name": "Starter", "monthly": 30, "annual": null, "custom": false, "notes": "Flat per month, unlimited seats and projects. 3 GB included, then $2/GB; 30-day data access; Signals billed at $0.05 per input Mtok, $0.30 per output Mtok; $5 one-time Signals credit; email support."},
+      {"name": "Pro", "monthly": 150, "annual": null, "custom": false, "notes": "Flat per month, unlimited seats. 10 GB included, then $1.50/GB; 6-month data access; same Signals token rates; Slack support."},
+      {"name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom limits, on-premise deployment, dedicated support."}
+    ],
+    "features": {"openSource": true, "selfHost": true, "tracing": true, "llmJudge": null, "datasets": true, "promptManagement": true, "cicdIntegration": true, "agentEvals": true},
+    "platforms": ["Cloud (SaaS)", "Self-hosted", "Python SDK", "TypeScript SDK", "CLI", "OpenTelemetry"],
+    "founded": "2024",
+    "hq": null,
+    "integrations": "Claude Agent SDK, OpenAI Agents SDK, Mastra, Pydantic AI, AI SDK, LangChain, OpenHands SDK, Browser Use, Stagehand, Playwright, LiteLLM",
+    "compliance": ["SOC 2 Type II", "HIPAA"],
+    "support": ["Discord", "Email (Starter)", "Slack (Pro)", "Dedicated support (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      {"label": "Laminar pricing page", "url": "https://laminar.sh/pricing", "date": "2026-11-18"},
+      {"label": "GitHub: lmnr-ai/lmnr", "url": "https://github.com/lmnr-ai/lmnr", "date": "2026-11-18"},
+      {"label": "Laminar docs index", "url": "https://laminar.sh/docs/llms.txt", "date": "2026-11-18"},
+      {"label": "Laminar docs: LLM evaluations", "url": "https://laminar.sh/docs/evaluations/introduction", "date": "2026-11-18"},
+      {"label": "Laminar docs: playground", "url": "https://laminar.sh/docs/playground", "date": "2026-11-18"},
+      {"label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/laminar", "date": "2026-11-18"}
+    ]
+  }
+]

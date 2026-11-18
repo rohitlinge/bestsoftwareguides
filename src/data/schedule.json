@@ -90,6 +90,21 @@
       "slug": "email-marketing-software",
       "day": 3,
       "comparesDay": 3
+    },
+    {
+      "slug": "llm-evaluation-tools",
+      "day": 4,
+      "comparesDay": 4
+    },
+    {
+      "slug": "mcp-gateways",
+      "day": 4,
+      "comparesDay": 4
+    },
+    {
+      "slug": "ai-test-automation-tools",
+      "day": 4,
+      "comparesDay": 4
     }
   ],
   "posts": [

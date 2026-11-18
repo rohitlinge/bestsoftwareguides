@@ -1,0 +1,454 @@
+[
+  {
+    "slug": "momentic",
+    "name": "Momentic",
+    "category": "ai-test-automation-tools",
+    "website": "https://momentic.ai",
+    "logo": "https://momentic.ai/images/apple-touch-icon.png",
+    "pricingUrl": "https://momentic.ai/pricing",
+    "tagline": "AI testing platform where an agent explores web, iOS and Android apps and turns approved flows into regression tests.",
+    "bestFor": "Engineering teams that want AI-written tests stored as YAML in their repo",
+    "description": "Momentic's agent, Mo, explores a web app or iOS/Android build, reports bugs and converts approved flows into tests that use natural-language element targets and AI actions. A Free plan includes $50 of usage a month, and the Scale plan is $500 a month as a prepaid usage balance.",
+    "pros": [
+      "Free plan with $50 of usage per month, 5 concurrent browsers and no credit card",
+      "Usage-based pricing with no per-seat charges; test steps cost $0.0125 each",
+      "iOS simulator and Android emulator testing on all plans",
+      "SOC 2 Type II on all plans; Google SSO on all plans"
+    ],
+    "cons": [
+      "Paid self-serve plan starts at $500 per month",
+      "AI-generated and failure-recovery steps cost double ($0.025 per step), and triage/auto-healing calls cost $1.25 each",
+      "SAML SSO, SCIM and audit logs are Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "$50 of usage per month, no overages or top-ups, 5 concurrent browsers, 2 Android + 2 iOS, 30-day result retention; runs pause when the balance reaches $0",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      { "name": "Free", "monthly": 0, "annual": null, "custom": false, "notes": "Flat $0 per month per account; includes $50 of usage each month that does not roll over" },
+      { "name": "Scale", "monthly": 500, "annual": null, "custom": false, "notes": "Flat $500 per month billed in advance as a usage balance; extra funds in $50-$1,000 top-ups that never expire; 25 concurrent browsers, 5 Android + 5 iOS; no annual price listed" },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom test-based pricing; SAML SSO, SCIM, audit log, uptime SLA, 1-hour mobile sessions" }
+    ],
+    "features": { "plainEnglish": true, "aiTestGeneration": true, "selfHealing": true, "webTesting": true, "mobileTesting": true, "apiTesting": null, "cicdIntegration": true, "managedService": null },
+    "platforms": ["Cloud (SaaS)", "CLI", "MCP server"],
+    "founded": "2023",
+    "hq": "San Francisco, USA",
+    "integrations": "GitHub, GitLab, Slack, CI pipelines, Claude Code and Cursor (MCP)",
+    "compliance": ["SOC 2 Type II", "Google SSO (all plans)", "SSO/SAML and OIDC (Enterprise)", "SCIM (Enterprise)"],
+    "support": ["Shared Slack channel (Scale and Enterprise)", "Priority support and account manager (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Momentic pricing page", "url": "https://momentic.ai/pricing", "date": "2026-11-18" },
+      { "label": "Momentic steps documentation", "url": "https://momentic.ai/docs/core-concepts/steps.md", "date": "2026-11-18" },
+      { "label": "Momentic homepage", "url": "https://momentic.ai/", "date": "2026-11-18" },
+      { "label": "TechCrunch: Momentic raises $15M", "url": "https://techcrunch.com/2025/11/24/momentic-raises-15m-to-automate-software-testing", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "qa-wolf",
+    "name": "QA Wolf",
+    "category": "ai-test-automation-tools",
+    "website": "https://www.qawolf.com",
+    "logo": "https://www.qawolf.com/assets/images/favicon.svg",
+    "pricingUrl": "https://www.qawolf.com/pricing",
+    "tagline": "AI agents build, run and maintain Playwright and Appium tests, with an optional service where QA Wolf staff own the suite.",
+    "bestFor": "Teams that want end-to-end coverage written and maintained by the vendor",
+    "description": "QA Wolf's agents create, run and repair end-to-end tests for web, mobile and desktop apps, and tests export as open-source Playwright and Appium code. Pay-as-you-go runs cost $1 per 5-minute web run and $2 for mobile or desktop, while the managed Coverage-as-a-Service is quoted by sales.",
+    "pros": [
+      "Published per-run price: $1 per 5-minute web run, $2 for mobile and desktop",
+      "No seat limits, no AI credits and parallel runs by default",
+      "Managed Coverage-as-a-Service with a stated 80%+ automated coverage guarantee",
+      "Tests export as open-source Playwright and Appium code"
+    ],
+    "cons": [
+      "Managed service pricing is quote-only",
+      "Monthly cost grows with run volume: the vendor's example of 50 web tests daily is $1,083 a month",
+      "API testing is not described on the site"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free runs for new teams (amount not stated)",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Pay as you go", "monthly": null, "annual": null, "custom": false, "notes": "Billed per test run, not per month: $1 per 5-minute block for web and Linux Electron, $2 for mobile and desktop; up to 3 attempts per run billed once; optional monthly spending cap" },
+      { "name": "Jump Start", "monthly": null, "annual": null, "custom": true, "notes": "QA Wolf writes the suite and your team runs it; quoted by sales" },
+      { "name": "Coverage-as-a-Service", "monthly": null, "annual": null, "custom": true, "notes": "QA Wolf writes, runs and maintains tests and investigates failures; 80%+ coverage guarantee; quoted by sales" }
+    ],
+    "features": { "plainEnglish": false, "aiTestGeneration": true, "selfHealing": true, "webTesting": true, "mobileTesting": true, "apiTesting": null, "cicdIntegration": true, "managedService": true },
+    "platforms": ["Cloud (SaaS)", "MCP server"],
+    "founded": "2019",
+    "hq": "Seattle, USA",
+    "integrations": "GitHub, GitLab, Slack, Microsoft Teams, Linear, Jira, Claude Code, Codex, Cursor",
+    "compliance": ["SOC 2 Type II"],
+    "support": ["Email"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "QA Wolf pricing page", "url": "https://www.qawolf.com/pricing", "date": "2026-11-18" },
+      { "label": "QA Wolf homepage", "url": "https://www.qawolf.com/", "date": "2026-11-18" },
+      { "label": "QA Wolf SOC 2 Type II announcement", "url": "https://www.qawolf.com/blog/soc2", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "testrigor",
+    "name": "testRigor",
+    "category": "ai-test-automation-tools",
+    "website": "https://testrigor.com",
+    "logo": "https://testrigor.com/wp-content/uploads/2022/01/favicon.png",
+    "pricingUrl": "https://testrigor.com/sign-up/",
+    "tagline": "Test automation tool where every test is written as plain-English steps and maintained by generative AI.",
+    "bestFor": "Manual QA teams moving to automation without writing code",
+    "description": "testRigor runs plain-English tests across web, iOS and Android, Windows desktop, API, email, SMS and 2FA flows, and can generate tests itself or through Claude Code via MCP. A free plan exists with public tests, while paid Pay As You Go and Enterprise prices are not published.",
+    "pros": [
+      "Free forever plan (tests and results are public)",
+      "Unlimited users, test cases and executions; price is based on the number of parallel AI agents",
+      "Covers web, native iOS/Android, Windows desktop, API, email and SMS in one tool",
+      "Lists SOC 2, ISO/IEC 27001:2022 and HIPAA"
+    ],
+    "cons": [
+      "No paid prices are published",
+      "Free plan makes all tests and results public and is limited to one parallel run",
+      "Windows desktop testing is paid-only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Public plan: free forever, all tests and results are public open source, 1 parallelization",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      { "name": "Public", "monthly": 0, "annual": null, "custom": false, "notes": "Free; tests and results are publicly visible" },
+      { "name": "Pay As You Go", "monthly": null, "annual": null, "custom": true, "notes": "Price not published; licensed by number of parallel AI agents (parallelizations), commitment length and operating systems; unlimited users" },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing" }
+    ],
+    "features": { "plainEnglish": true, "aiTestGeneration": true, "selfHealing": true, "webTesting": true, "mobileTesting": true, "apiTesting": true, "cicdIntegration": true, "managedService": null },
+    "platforms": ["Cloud (SaaS)"],
+    "founded": "2015",
+    "hq": "San Francisco, USA",
+    "integrations": "GitHub Actions, GitLab, Jenkins, Azure DevOps, CircleCI, Jira, TestRail",
+    "compliance": ["SOC 2", "ISO/IEC 27001:2022", "HIPAA", "GDPR", "CCPA"],
+    "support": ["Onboarding and training included"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "testRigor plans page", "url": "https://testrigor.com/sign-up/", "date": "2026-11-18" },
+      { "label": "testRigor licensing explanation", "url": "https://testrigor.com/sales-certification/how-does-licensing-work/", "date": "2026-11-18" },
+      { "label": "testRigor homepage", "url": "https://testrigor.com/", "date": "2026-11-18" },
+      { "label": "Y Combinator company profile", "url": "https://www.ycombinator.com/companies/testrigor", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "mabl",
+    "name": "mabl",
+    "category": "ai-test-automation-tools",
+    "website": "https://www.mabl.com",
+    "logo": "https://www.mabl.com/hubfs/mabl-logo-favicon.png",
+    "pricingUrl": "https://www.mabl.com/pricing",
+    "tagline": "Low-code test automation platform with AI agents for creating, running and auto-healing web, mobile and API tests.",
+    "bestFor": "QA teams wanting one platform for web, API and mobile tests",
+    "description": "mabl uses agents to create, run, analyze and maintain tests, with auto-healing and API testing included for all customers and iOS/Android testing as a paid add-on. Pricing is quote-only and based on monthly cloud-run credits, with a 14-day free trial.",
+    "pros": [
+      "Unlimited local and CI test runs; only cloud runs use credits",
+      "Unlimited test concurrency and unlimited participant licenses",
+      "API testing included for all customers, with Postman collection import",
+      "Customer Success Manager included; live support 24/5 in English and Japanese"
+    ],
+    "cons": [
+      "No published prices; quote required",
+      "Native iOS and Android testing is a paid add-on",
+      "Technical Account Manager costs extra"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Custom", "monthly": null, "annual": null, "custom": true, "notes": "Quote-based; usage measured in credits for cloud runs (vendor cites a 500 credits/month starting point); local and CI runs free; mobile is an add-on" }
+    ],
+    "features": { "plainEnglish": null, "aiTestGeneration": true, "selfHealing": true, "webTesting": true, "mobileTesting": true, "apiTesting": true, "cicdIntegration": true, "managedService": null },
+    "platforms": ["Cloud (SaaS)", "CLI"],
+    "founded": "2017",
+    "hq": "Boston, USA",
+    "integrations": "GitHub Actions, GitLab, Bitbucket Pipelines, CircleCI, Jenkins, Vercel, AWS, Jira, Linear, Slack, Microsoft Teams, Postman, Xray, Claude Code, Cursor",
+    "compliance": ["SOC 2"],
+    "support": ["In-app live support 24/5", "Customer Success Manager", "Technical Account Manager (paid)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "mabl pricing page", "url": "https://www.mabl.com/pricing", "date": "2026-11-18" },
+      { "label": "mabl homepage", "url": "https://www.mabl.com/", "date": "2026-11-18" },
+      { "label": "mabl SOC 2 announcement", "url": "https://www.mabl.com/blog/mabl-is-soc-2-compliant-mabl", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "functionize",
+    "name": "Functionize",
+    "category": "ai-test-automation-tools",
+    "website": "https://www.functionize.com",
+    "logo": "https://cdn.prod.website-files.com/5eb9845c1d37d7efad64e226/6a4d40ac789c9b302d65ff6e_fz-webclip.png",
+    "pricingUrl": "https://www.functionize.com/pricing",
+    "tagline": "Studio is an AI testing agent that builds, runs and maintains web UI tests from a description of what to test.",
+    "bestFor": "Teams wanting low-cost, credit-based AI testing of web workflows",
+    "description": "Functionize Studio builds tests from a plain description of what to check, runs them and repairs them as the app changes. Pricing is credit-based: a Free plan with 800,000 credits a month, Growth at $20 a month and Scale at $100 a month.",
+    "pros": [
+      "Free plan with 800,000 credits per month, five parallel runs and no credit card",
+      "Paid plans from $20 per month; extra credits are $10 per 200,000",
+      "Editing tests, reading reports and integrations do not use credits",
+      "SOC 2 Type II; SSO and RBAC from the Growth plan"
+    ],
+    "cons": [
+      "Credit cost per test run is not published and varies by task",
+      "No refunds; unused credits are forfeited on cancellation",
+      "Native mobile and API testing are not documented on the current site"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "800,000 credits per month, all agent capabilities, team workspace, five parallel runs; no time limit",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      { "name": "Free", "monthly": 0, "annual": null, "custom": false, "notes": "800,000 credits/month" },
+      { "name": "Growth", "monthly": 20, "annual": null, "custom": false, "notes": "Flat $20/month (no per-user wording on page); 3,200,000 credits/month, shared credit pool, SSO and RBAC; extra credits $10 per 200,000; no annual price listed" },
+      { "name": "Scale", "monthly": 100, "annual": null, "custom": false, "notes": "Flat $100/month (no per-user wording on page); 20,000,000 credits/month; extra credits $10 per 200,000" },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom credits; invoice/PO billing with 12-month minimum; premium support; private deployment option" }
+    ],
+    "features": { "plainEnglish": null, "aiTestGeneration": true, "selfHealing": true, "webTesting": true, "mobileTesting": null, "apiTesting": null, "cicdIntegration": true, "managedService": null },
+    "platforms": ["Cloud (SaaS)", "Private deployment (Enterprise)", "MCP server"],
+    "founded": "2014",
+    "hq": "San Francisco, USA",
+    "integrations": "CI/CD pipelines, MCP for coding agents, Jira, Slack, identity providers",
+    "compliance": ["SOC 2 Type II", "SSO and RBAC (Growth and above)", "Data residency (Enterprise)"],
+    "support": ["Self-serve support (Free, Growth, Scale)", "Premium support and account management (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Functionize pricing page", "url": "https://www.functionize.com/pricing", "date": "2026-11-18" },
+      { "label": "Functionize enterprise page", "url": "https://www.functionize.com/enterprise", "date": "2026-11-18" },
+      { "label": "Functionize homepage", "url": "https://www.functionize.com/", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "checksum",
+    "name": "Checksum",
+    "category": "ai-test-automation-tools",
+    "website": "https://checksum.ai",
+    "logo": "https://cdn.prod.website-files.com/6982de9247ee7bccfacb48f9/699c09e4113bc717128ba2b7_checksum_logo.png",
+    "pricingUrl": "https://checksum.ai/product/pricing",
+    "tagline": "AI agents generate and repair Playwright end-to-end tests in your repository, with a human engineer checking the results.",
+    "bestFor": "Engineering teams that want Playwright tests written and maintained for them",
+    "description": "Checksum's agents generate Playwright tests, run them in your CI and propose fixes for broken tests as pull requests, with final checks by a human engineer. Pricing is quote-only and set by the number of workflows maintained, starting with a 50-workflow Emerging plan and a 30-day free trial.",
+    "pros": [
+      "Tests are delivered as standard Playwright code that you own",
+      "Priced by workflows maintained, with no per-seat or per-run fees",
+      "30-day free trial on every plan",
+      "Dedicated solutions engineer on Slack from the first plan"
+    ],
+    "cons": [
+      "No published prices",
+      "API testing agent is Enterprise only",
+      "Native mobile testing is not mentioned"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Emerging", "monthly": null, "annual": null, "custom": true, "notes": "Quote-based; 50 maintained E2E workflows (a workflow is a test of up to 30 actions)" },
+      { "name": "Scaling", "monthly": null, "annual": null, "custom": true, "notes": "Quote-based; 200 workflows, parallel execution, custom style guides" },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Quote-based; 400+ workflows, API testing agent, custom SLA and security review" }
+    ],
+    "features": { "plainEnglish": false, "aiTestGeneration": true, "selfHealing": true, "webTesting": true, "mobileTesting": null, "apiTesting": true, "cicdIntegration": true, "managedService": true },
+    "platforms": ["Cloud (SaaS)"],
+    "founded": "2022",
+    "hq": "San Francisco, USA",
+    "integrations": "Playwright, your CI pipeline, GitHub pull requests",
+    "compliance": [],
+    "support": ["Slack (dedicated solutions engineer)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Checksum pricing page", "url": "https://checksum.ai/product/pricing", "date": "2026-11-18" },
+      { "label": "Checksum homepage", "url": "https://checksum.ai/", "date": "2026-11-18" },
+      { "label": "CB Insights company profile", "url": "https://www.cbinsights.com/company/checksum", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "kaneai",
+    "name": "KaneAI",
+    "category": "ai-test-automation-tools",
+    "website": "https://www.testmuai.com/kane-ai/",
+    "logo": "https://www.testmuai.com/apple-touch-icon.png",
+    "pricingUrl": "https://www.testmuai.com/pricing/",
+    "tagline": "AI test agent from TestMu AI (formerly LambdaTest) that writes and runs web and mobile tests from natural-language instructions.",
+    "bestFor": "Teams already using LambdaTest/TestMu AI device and browser clouds",
+    "description": "KaneAI turns natural-language steps, Jira tickets or documents into tests for web and mobile apps, updates steps when the UI changes and exports code to Selenium, Playwright and Appium. Plans are priced per agent, starting at $17 a month billed annually ($19 billed monthly).",
+    "pros": [
+      "Entry plan $17/month per agent billed annually",
+      "Exports tests to Selenium, Playwright and Appium code",
+      "Kane CLI runs headless in GitHub Actions, GitLab CI and Jenkins",
+      "14-day free trial and monthly billing available"
+    ],
+    "cons": [
+      "Priced per agent, and credits run out: Starter's 2,000 credits are about 25 tests of 40 steps",
+      "Cloud authoring needs Pro ($89/month annual); mobile authoring needs Max ($179/month annual)",
+      "All fees are non-refundable"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Starter", "monthly": 19, "annual": 17, "custom": false, "notes": "Per agent per month (each agent includes 1 Test Manager seat); 2,000 credits/month; local authoring via Kane CLI" },
+      { "name": "Pro", "monthly": 99, "annual": 89, "custom": false, "notes": "Per agent per month; 12,000 credits/month; cloud web authoring; 100 HyperExecute minutes/month" },
+      { "name": "Max", "monthly": 199, "annual": 179, "custom": false, "notes": "Per agent per month; 25,000 credits/month; cloud web and mobile authoring; 300 HyperExecute minutes/month" },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Unlimited credits, custom seats and concurrency, SSO, 24x7 support" }
+    ],
+    "features": { "plainEnglish": true, "aiTestGeneration": true, "selfHealing": true, "webTesting": true, "mobileTesting": true, "apiTesting": true, "cicdIntegration": true, "managedService": null },
+    "platforms": ["Cloud (SaaS)", "CLI"],
+    "founded": null,
+    "hq": "San Francisco, USA",
+    "integrations": "GitHub Actions, GitLab CI, Jenkins, Jira, GitHub pull requests, TestMu AI HyperExecute and real device cloud",
+    "compliance": ["SSO (Enterprise)", "RBAC and audit logs"],
+    "support": ["Dedicated 24x7 support (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "TestMu AI pricing page (KaneAI plans)", "url": "https://www.testmuai.com/pricing/", "date": "2026-11-18" },
+      { "label": "KaneAI product page", "url": "https://www.testmuai.com/kane-ai/", "date": "2026-11-18" },
+      { "label": "LambdaTest is now TestMu AI", "url": "https://www.testmuai.com/lambdatest-is-now-testmuai/", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "autify-aximo",
+    "name": "Autify Aximo",
+    "category": "ai-test-automation-tools",
+    "website": "https://autify.com/products/aximo",
+    "logo": "https://autify.com/assets/wf/673cbf81b71ad81b6e7aef6c/673cbf81b71ad81b6e7aefbe_webclip-256x256-.png",
+    "pricingUrl": "https://autify.com/pricing",
+    "tagline": "AI testing agent that runs end-to-end tests from plain-English scenarios on web, mobile and desktop apps without scripts or selectors.",
+    "bestFor": "Teams that want scenario-based AI testing across web and mobile",
+    "description": "Aximo takes a test scenario written in plain English and navigates the app like a user to check the expected outcome, without scripts or selectors. A free Individual plan includes 2,000 one-time credits, and the Core plan is $99 a month billed annually or $120 monthly.",
+    "pros": [
+      "Free Individual plan with 2,000 credits that do not expire",
+      "Published prices: Core $99/month annual, Team $450/month annual",
+      "Web and mobile testing on all plans, including the free plan",
+      "Autify lists SOC 2 Type II and ISO/IEC 27001:2022"
+    ],
+    "cons": [
+      "Desktop app testing and on-premises hosting are Enterprise only",
+      "Credits are used per AI step, and larger models and mobile runs use more",
+      "Add-on credits are not available on the free plan"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Individual User plan: 2,000 one-time credits with no expiration, 1 web and 1 mobile concurrent run",
+    "trial": "Free trial offered (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Individual User", "monthly": 0, "annual": null, "custom": false, "notes": "2,000 one-time credits" },
+      { "name": "Core", "monthly": 120, "annual": 99, "custom": false, "notes": "Flat per month (page does not say per user); 6,000 credits/month monthly or 72,000/year annual; 5 web / 2 mobile concurrent runs" },
+      { "name": "Team", "monthly": 550, "annual": 450, "custom": false, "notes": "Flat per month (page does not say per user); 30,000 credits/month or 360,000/year; 20 web / 5 mobile concurrent; script generation" },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom credits and concurrency; on-prem or dedicated infrastructure; desktop app testing" }
+    ],
+    "features": { "plainEnglish": true, "aiTestGeneration": true, "selfHealing": null, "webTesting": true, "mobileTesting": true, "apiTesting": null, "cicdIntegration": null, "managedService": true },
+    "platforms": ["Cloud (SaaS)", "On-premises (Enterprise)"],
+    "founded": "2016",
+    "hq": "San Francisco, USA",
+    "integrations": null,
+    "compliance": ["SOC 2 Type II", "ISO/IEC 27001:2022"],
+    "support": [],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Autify pricing page", "url": "https://autify.com/pricing", "date": "2026-11-18" },
+      { "label": "Autify Aximo product page", "url": "https://autify.com/products/aximo", "date": "2026-11-18" },
+      { "label": "Autify about page", "url": "https://autify.com/about", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "testsigma",
+    "name": "Testsigma",
+    "category": "ai-test-automation-tools",
+    "website": "https://testsigma.com",
+    "logo": "https://website-static.testsigma.com/website-next/nextjs/d4bf76/favicons/apple-touch-icon.png",
+    "pricingUrl": "https://testsigma.com/pricing",
+    "tagline": "Test automation platform with plain-English tests and AI agents for web, mobile, API, Salesforce and SAP.",
+    "bestFor": "Enterprise QA teams covering web, mobile, API and Salesforce in one tool",
+    "description": "Testsigma's AI coworker Atto generates plain-English tests from user stories, Jira or Figma, runs them and heals broken locators. Pro and Enterprise plans are quote-only, priced on expected usage.",
+    "pros": [
+      "Plain-English test steps across web, native mobile, API, Salesforce and SAP",
+      "Unlimited applications, projects and automated testing minutes on Pro",
+      "2,000+ real mobile devices and 800+ browser/OS combinations on Pro",
+      "On-premises or private cloud deployment on Enterprise"
+    ],
+    "cons": [
+      "No published prices",
+      "AI test case generation and SAML SSO are listed under Enterprise",
+      "Free trial length is not stated"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial offered (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Pro", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing based on expected usage; auto-healing, parallel runs, 30+ integrations, 24x5 support" },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Custom pricing; adds SAML SSO, on-prem or private cloud, AI test case generation, high-priority support" }
+    ],
+    "features": { "plainEnglish": true, "aiTestGeneration": true, "selfHealing": true, "webTesting": true, "mobileTesting": true, "apiTesting": true, "cicdIntegration": true, "managedService": null },
+    "platforms": ["Cloud (SaaS)", "On-premises / private cloud (Enterprise)"],
+    "founded": "2019",
+    "hq": null,
+    "integrations": "Jenkins, GitHub Actions, Azure DevOps, CircleCI, Jira, Figma, Postman, OpenAPI/Swagger",
+    "compliance": ["SOC 2", "GDPR", "SSO/SAML 2.0 (Enterprise)"],
+    "support": ["24x5 support (Pro)", "24x5 high-priority support (Enterprise)"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Testsigma pricing page", "url": "https://testsigma.com/pricing", "date": "2026-11-18" },
+      { "label": "Testsigma homepage", "url": "https://testsigma.com/", "date": "2026-11-18" },
+      { "label": "YourStory: Testsigma funding", "url": "https://yourstory.com/2024/06/testsigma-secures-82m-led-by-massmutual-ventures-low-code-test", "date": "2026-11-18" }
+    ]
+  },
+  {
+    "slug": "reflect",
+    "name": "Reflect",
+    "category": "ai-test-automation-tools",
+    "website": "https://smartbear.com/product/reflect/",
+    "logo": null,
+    "pricingUrl": "https://smartbear.com/product/reflect/pricing/",
+    "tagline": "No-code test tool from SmartBear that turns plain-English steps into web, mobile and API tests.",
+    "bestFor": "Teams that want no-code tests with unlimited users",
+    "description": "Reflect, owned by SmartBear since January 2024, lets testers write steps in plain English and runs web, real-device mobile and API tests without relying on fixed selectors. Plans are credit-based and quote-only, with a 14-day free trial.",
+    "pros": [
+      "Unlimited users and unlimited test creation on every plan",
+      "Clear credit rates: web test 1 credit, mobile test 5, API test 0.1",
+      "Mobile tests run on real devices, not emulators",
+      "Integrates with GitHub Actions, GitLab, Jenkins, CircleCI, Azure DevOps and Bitbucket"
+    ],
+    "cons": [
+      "No published prices",
+      "Mobile parallel testing is an add-on on every plan",
+      "Private-environment testing (Reflect Tunnel) is Enterprise only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial with full functionality",
+    "minSeats": 1,
+    "plans": [
+      { "name": "Premium", "monthly": null, "annual": null, "custom": true, "notes": "Quote-based; 5,000 credits/month; 3 web parallel tests; unlimited users" },
+      { "name": "Advanced", "monthly": null, "annual": null, "custom": true, "notes": "Quote-based; 20,000 credits/month; 4 web parallel tests" },
+      { "name": "Enterprise", "monthly": null, "annual": null, "custom": true, "notes": "Quote-based; 40,000 credits/month; 5 web parallel tests; private environment testing" }
+    ],
+    "features": { "plainEnglish": true, "aiTestGeneration": true, "selfHealing": true, "webTesting": true, "mobileTesting": true, "apiTesting": true, "cicdIntegration": true, "managedService": null },
+    "platforms": ["Cloud (SaaS)"],
+    "founded": null,
+    "hq": null,
+    "integrations": "Azure DevOps, Bitbucket, CircleCI, GitHub Actions, GitLab, Jenkins, Travis CI, Heroku, Zephyr, Claude Code, Cursor",
+    "compliance": [],
+    "support": ["SmartBear Community", "Case management portal"],
+    "checked": "2026-11-18",
+    "verification": "verified",
+    "sources": [
+      { "label": "Reflect pricing page", "url": "https://smartbear.com/product/reflect/pricing/", "date": "2026-11-18" },
+      { "label": "Reflect product page", "url": "https://smartbear.com/product/reflect/", "date": "2026-11-18" },
+      { "label": "SmartBear acquires Reflect", "url": "https://smartbear.com/news/news-releases/smartbear-acquires-reflect/", "date": "2026-11-18" }
+    ]
+  }
+]

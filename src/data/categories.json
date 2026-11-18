@@ -887,5 +887,203 @@
         }
       }
     ]
+  },
+  {
+    "slug": "llm-evaluation-tools",
+    "name": "LLM Evaluation Tools",
+    "singular": "LLM evaluation tool",
+    "plural": "LLM evaluation tools",
+    "topic": "AI Development",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "LLM evaluation tools test AI apps and agents before and after release. You run a prompt, model or agent against a dataset of test cases, score the outputs (with code checks, human review or an LLM acting as judge), and compare runs side by side. Most also trace production calls so you can turn real failures into new test cases. The main differences are pricing model (flat, per seat or per trace), whether you can self-host, and whether the core is open source.",
+    "buyingTips": [
+      "Check the price unit: most tools here charge a flat monthly fee plus usage (traces, spans or data ingested), but LangSmith and Maxim AI charge per seat, which costs more as the team grows.",
+      "If your data can't leave your network, pick a tool with documented self-hosting. Langfuse, Opik, DeepEval, Promptfoo, Weave and Laminar have an OSI open-source core.",
+      "Arize Phoenix is free to self-host, but it is under the Elastic License 2.0, which is not an OSI open-source license.",
+      "Run evals in CI: confirm the tool has a CLI or SDK that can fail a pull request when scores drop.",
+      "Look at included usage on the free tier (traces or spans a month) and the overage rate before you compare entry prices."
+    ],
+    "featureLabels": {
+      "openSource": "Open-source core (OSI license)",
+      "selfHost": "Self-hosting",
+      "tracing": "Tracing / observability",
+      "llmJudge": "LLM-as-judge scorers",
+      "datasets": "Datasets and experiments",
+      "promptManagement": "Prompt management",
+      "cicdIntegration": "CI/CD eval runs",
+      "agentEvals": "Agent / tool-call evals"
+    },
+    "faqs": [
+      {
+        "q": "What is an LLM evaluation tool?",
+        "a": "Software that tests the output of a large language model app. It runs your prompts or agent against a set of test cases, scores each answer with code checks, human review or an LLM acting as judge, and shows whether a change made results better or worse."
+      },
+      {
+        "q": "What is LLM-as-a-judge?",
+        "a": "Using a second language model to grade an answer against criteria such as correctness, relevance or tone. It scales better than human review but needs spot checks, because the judge model can be wrong or biased."
+      },
+      {
+        "q": "What is the difference between LLM evaluation and LLM observability?",
+        "a": "Evaluation scores outputs against test cases, usually before release. Observability records what happens in production (traces, latency, cost, errors). Most tools in this list do both, so production traces can become new test cases."
+      }
+    ],
+    "useCases": [
+      {
+        "slug": "open-source-llm-evaluation-tools",
+        "name": "Open-Source LLM Evaluation Tools",
+        "singular": "open-source LLM evaluation tool",
+        "intro": "These LLM evaluation tools publish their core under an OSI open-source license (MIT or Apache 2.0), so you can read the code and self-host it for free. Each also sells a hosted cloud or enterprise plan. Source-available licenses such as the Elastic License 2.0 are not counted.",
+        "ruleText": "Core code is under an OSI-approved open-source license.",
+        "rule": {
+          "feature": "openSource"
+        }
+      }
+    ],
+    "compareTop": 6
+  },
+  {
+    "slug": "mcp-gateways",
+    "name": "MCP Gateways",
+    "singular": "MCP gateway",
+    "plural": "MCP gateways",
+    "topic": "AI Development",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "An MCP gateway sits between AI assistants or agents (Claude, ChatGPT, Cursor, your own agents) and the Model Context Protocol servers they call. Instead of each user wiring up servers and API keys on their own machine, the gateway hosts or proxies the servers, signs users in to each app with OAuth, limits which tools each person or agent can use, and logs every tool call. Options range from free open-source gateways you run yourself to hosted platforms with large app catalogs.",
+    "buyingTips": [
+      "Decide between self-hosting and a hosted service first. Docker MCP Gateway, Obot, IBM ContextForge and Microsoft MCP Gateway are open source; most others are hosted, and several offer self-hosting on enterprise plans.",
+      "Check how pricing scales: some charge per user (Composio, TrueFoundry), some per tool call or task (Arcade, Zapier), and some per gateway or platform fee.",
+      "On Zapier MCP each successful tool call uses two tasks, so a 100-task plan covers about 50 calls.",
+      "If agents act on behalf of employees, confirm per-user OAuth (each person signs in to each app) rather than one shared API key.",
+      "For security reviews, look for tool-level permissions and an audit log of every tool call, plus SSO."
+    ],
+    "featureLabels": {
+      "openSource": "Open source (OSI license)",
+      "selfHost": "Self-hosting",
+      "serverCatalog": "Catalog of ready-made MCP servers",
+      "oauthManagement": "OAuth / credential management",
+      "accessControl": "Per-user or per-tool access control",
+      "auditLogs": "Tool-call audit logs",
+      "remoteEndpoints": "Remote (HTTP) MCP endpoints",
+      "toolFiltering": "Tool filtering"
+    },
+    "faqs": [
+      {
+        "q": "What is an MCP gateway?",
+        "a": "A service or proxy that sits between AI agents and Model Context Protocol (MCP) servers. It gives agents one endpoint to connect to, handles sign-in and API keys for each app, controls which tools each user or agent may call, and logs the calls."
+      },
+      {
+        "q": "Do I need an MCP gateway?",
+        "a": "Not for one person trying a few MCP servers on their own laptop. A gateway becomes useful when a team shares MCP servers, when agents act for many users with their own logins, or when security needs to approve and log which tools AI agents can use."
+      },
+      {
+        "q": "What is the difference between an MCP gateway and an MCP server?",
+        "a": "An MCP server exposes tools from one app or system (for example GitHub or a database). A gateway sits in front of many servers and adds shared sign-in, access control, tool filtering and logging."
+      }
+    ],
+    "useCases": [
+      {
+        "slug": "open-source-mcp-gateways",
+        "name": "Open-Source MCP Gateways",
+        "singular": "open-source MCP gateway",
+        "intro": "These MCP gateways publish their code under an OSI open-source license (MIT or Apache 2.0). You can run them on your own servers or Kubernetes cluster for free and keep tool calls and credentials inside your network.",
+        "ruleText": "Gateway code is under an OSI-approved open-source license.",
+        "rule": {
+          "feature": "openSource"
+        }
+      },
+      {
+        "slug": "self-hosted-mcp-gateways",
+        "name": "Self-Hosted MCP Gateways",
+        "singular": "self-hosted MCP gateway",
+        "intro": "Each of these MCP gateways documents a way to run it in your own environment (Docker, Kubernetes or a private cloud). Some are free and open source; others offer self-hosting only on an enterprise plan, so check each tool's plans.",
+        "ruleText": "The vendor documents self-hosting (any plan).",
+        "rule": {
+          "feature": "selfHost"
+        }
+      }
+    ],
+    "compareTop": 6
+  },
+  {
+    "slug": "ai-test-automation-tools",
+    "name": "AI Test Automation Tools",
+    "singular": "AI test automation tool",
+    "plural": "AI test automation tools",
+    "topic": "Software Testing",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "AI test automation tools create, run and maintain end-to-end tests of web and mobile apps with less hand-written code. Depending on the tool, you describe a test in plain English, let an AI agent explore the app and generate tests, or rely on self-healing that repairs a test when a button or locator changes. A few are managed services whose own engineers write and maintain the tests for you.",
+    "buyingTips": [
+      "Half the tools here publish no prices, so ask for a quote based on the number of tests or test runs you expect each month.",
+      "Check the billing unit: per test run (QA Wolf), per test step (Momentic), credits (Functionize, Autify Aximo, Reflect) or per agent (KaneAI). Model your current suite before comparing.",
+      "AI-generated and self-healed steps can cost more than plain steps on usage-based plans; read the overage rules.",
+      "If you test native iOS or Android apps, confirm mobile support; some tools cover web only or charge more for mobile runs.",
+      "Make sure tests can run from your CI/CD pipeline and block a release when they fail."
+    ],
+    "featureLabels": {
+      "plainEnglish": "Plain-English test steps",
+      "aiTestGeneration": "AI test generation",
+      "selfHealing": "Self-healing tests",
+      "webTesting": "Web app testing",
+      "mobileTesting": "Native mobile testing",
+      "apiTesting": "API testing",
+      "cicdIntegration": "CI/CD integration",
+      "managedService": "Managed service (vendor maintains tests)"
+    },
+    "faqs": [
+      {
+        "q": "What is AI test automation?",
+        "a": "End-to-end testing where AI does part of the work people used to do by hand: writing test steps from a description or by exploring the app, choosing elements on the page, and repairing tests when the interface changes."
+      },
+      {
+        "q": "What are self-healing tests?",
+        "a": "Tests that detect when an element they rely on (a button, field or locator) has changed and update the step automatically, instead of failing. They reduce maintenance, but you should still review what was changed."
+      },
+      {
+        "q": "Can AI test automation replace QA engineers?",
+        "a": "Not fully. The tools cut the time spent writing and fixing scripts, but someone still has to decide what to test, review failures and judge whether a change is a bug. Managed services such as QA Wolf supply those people as part of the price."
+      }
+    ],
+    "useCases": [
+      {
+        "slug": "ai-mobile-app-testing-tools",
+        "name": "AI Mobile App Testing Tools",
+        "singular": "AI mobile app testing tool",
+        "intro": "These AI test automation tools document testing of native iOS or Android apps, not only websites. Mobile runs often cost more than web runs or need a higher plan, so check each tool's plan notes.",
+        "ruleText": "The vendor documents native mobile (iOS or Android) app testing.",
+        "rule": {
+          "feature": "mobileTesting"
+        }
+      },
+      {
+        "slug": "plain-english-test-automation-tools",
+        "name": "Plain-English Test Automation Tools",
+        "singular": "plain-English test automation tool",
+        "intro": "With these tools you write test steps as ordinary sentences (for example \"click Sign in and check the dashboard loads\") and the AI turns them into actions in the browser or app. No selectors or test code are needed to get started.",
+        "ruleText": "Tests are written as natural-language steps.",
+        "rule": {
+          "feature": "plainEnglish"
+        }
+      },
+      {
+        "slug": "managed-qa-services",
+        "name": "Managed QA Services with AI",
+        "singular": "managed QA service",
+        "intro": "These vendors don't just sell software: their own team writes, runs and maintains your end-to-end tests, using AI to do it faster. They suit teams without QA engineers. Prices are usually quoted per test, workflow or run.",
+        "ruleText": "The vendor's people write and maintain the tests for you.",
+        "rule": {
+          "feature": "managedService"
+        }
+      }
+    ],
+    "compareTop": 6
   }
 ]
