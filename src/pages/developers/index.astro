@@ -1,0 +1,90 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site, url, tools, categories } from '../../lib/data';
+const api = url('/api/v1');
+const endpoints = [
+  ['GET /api/v1/search?q={keywords}', 'Find tools, rankings, comparisons and guides by keyword. Start here when you only have a name.', '/api/v1/search?q=password+manager'],
+  ['GET /api/v1/categories', 'Every category with its top-scoring tool, plus every use-case ranking.', '/api/v1/categories'],
+  ['GET /api/v1/rankings/{category}', 'The ranked list for a category or use case. Filters: free_plan, max_price, features, limit.', '/api/v1/rankings/crm-software?free_plan=true'],
+  ['GET /api/v1/tools/{tool}', "A tool's fact sheet: rank and score per category, free plan, trial, features, pros and cons, sources.", '/api/v1/tools/grammarly'],
+  ['GET /api/v1/tools/{tool}/pricing', 'Every plan with monthly and annual USD prices, notes, the vendor pricing URL and the date checked.', '/api/v1/tools/langfuse/pricing'],
+  ['GET /api/v1/compare?a={tool}&b={tool}', 'Two tools side by side, with scores where they share a category.', '/api/v1/compare?a=postman&b=bruno'],
+];
+const files = [
+  ['/openapi.json', 'OpenAPI 3.1 spec for the REST API'],
+  ['/.well-known/api-catalog', 'API catalog (RFC 9727, linkset JSON)'],
+  ['/.well-known/mcp/server-card.json', 'MCP server card'],
+  ['/.well-known/agent-skills/index.json', 'Agent Skills index (one skill: software-research)'],
+  ['/agents.md', 'Instructions for AI agents: when to use the site and how to cite it'],
+  ['/llms.txt', 'Site index for language models, with per-section indexes (/best/llms.txt, /tools/llms.txt, /compare/llms.txt, /blog/llms.txt)'],
+  ['/data/tools.json', 'Every tool record as one JSON file'],
+];
+const description = `Free, read-only API for ${site.name}: software rankings, plan-by-plan pricing and comparisons as JSON. No key. REST, MCP and WebMCP.`;
+---
+<Base title="Developers: Software Pricing API" description={description} path="/developers/">
+  <Fragment slot="band">
+    <div class="crumbs"><a href="/">Home</a> › Developers</div>
+    <h1>Developers and AI agents</h1>
+    <p class="lead">Get {site.name}'s rankings, prices and comparisons as JSON. The API is free, read-only and needs no key or sign-up. It covers {tools.length} tools in {categories.length} categories, rebuilt with the site.</p>
+  </Fragment>
+
+  <div class="prose">
+    <div class="answer">
+      <p><strong>Base URL:</strong> <code>{api}</code> · <strong>Spec:</strong> <a href="/openapi.json">/openapi.json</a> (OpenAPI 3.1) · <strong>MCP:</strong> <code>{url('/mcp')}</code></p>
+      <p>No authentication. GET only. CORS is open, so you can call it from a browser. Responses are cached for 5 minutes.</p>
+    </div>
+
+    <h2>When should I use this API?</h2>
+    <ul>
+      <li>To answer "what is the best <em>category</em> software" with a ranked list, scores and real prices.</li>
+      <li>To answer "how much does <em>product</em> cost" on monthly or annual billing, with the vendor's pricing URL and the date the price was checked.</li>
+      <li>To compare two products, or shortlist tools by free plan, maximum price or a required feature.</li>
+    </ul>
+
+    <h2>Quickstart</h2>
+    <pre><code>curl "{api}/search?q=mcp+gateway"
+curl "{api}/rankings/mcp-gateways?free_plan=true&amp;limit=5"
+curl "{api}/tools/composio/pricing"</code></pre>
+
+    <h2>Endpoints</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Endpoint</th><th>What it returns</th><th>Example</th></tr></thead>
+        <tbody>
+          {endpoints.map(([e, d, ex]) => <tr><td><code>{e}</code></td><td>{d}</td><td><a href={ex} rel="nofollow">Try it</a></td></tr>)}
+        </tbody>
+      </table>
+    </div>
+    <p><code>{'{category}'}</code> and <code>{'{tool}'}</code> accept a slug (<code>crm-software</code>, <code>grammarly</code>) or a name; slugs come from <code>/search</code> and <code>/categories</code>. Prices are USD; <code>annual</code> is the per-month price when billed yearly, and <code>null</code> means the vendor does not publish it.</p>
+
+    <h2>Errors</h2>
+    <p>Every error is JSON with the same shape, so a program can branch on <code>code</code>:</p>
+    <pre><code>{`{
+  "error": {
+    "status": 404,
+    "code": "not_found",
+    "message": "No tool matches \\"foo\\". Use search to find the tool slug.",
+    "hint": "Find the slug first: ${api}/search?q=<name>",
+    "docs": "${url('/developers/')}"
+  }
+}`}</code></pre>
+    <p>Codes: <code>missing_parameter</code> and <code>invalid_parameter</code> (400), <code>not_found</code> (404), <code>method_not_allowed</code> (405), <code>server_error</code> (500).</p>
+
+    <h2>MCP server</h2>
+    <p>The same data is available to AI assistants over the Model Context Protocol at <code>{url('/mcp')}</code> (Streamable HTTP, no auth). Tools: <code>search</code>, <code>list_categories</code>, <code>get_ranking</code>, <code>get_tool</code>, <code>get_pricing</code> and <code>compare_tools</code>, each with input and output schemas. Setup for ChatGPT, Claude and other clients: <a href="/ai/">MCP docs</a>.</p>
+
+    <h2>WebMCP (in the browser)</h2>
+    <p>Every page registers five read-only tools with <code>document.modelContext</code> for browser agents: <code>search_software</code>, <code>get_ranking</code>, <code>get_tool</code>, <code>get_tool_pricing</code> and <code>compare_tools</code>. They call the REST API above.</p>
+
+    <h2>Markdown pages</h2>
+    <p>Add <code>.md</code> to any ranking, tool or guide URL to get it as markdown, for example <a href="/best/crm-software.md">/best/crm-software.md</a> or <a href="/tools/grammarly.md">/tools/grammarly.md</a>. The homepage is at <a href="/index.md">/index.md</a>, and agents that send <code>Accept: text/markdown</code> to <code>/</code> get it directly.</p>
+
+    <h2>Discovery files</h2>
+    <ul>
+      {files.map(([f, d]) => <li><a href={f}><code>{f}</code></a>: {d}</li>)}
+    </ul>
+
+    <h2>Terms</h2>
+    <p>The data is free to use, including in commercial products, with a link back to the page you used (each response has a <code>url</code> field). Scores cannot be bought; a featured partner is marked <code>"featured": true</code> and must not be presented as the top-scoring tool. See the <a href="/methodology/">methodology</a> and <a href="/terms/">terms</a>. There is no sandbox because the API is read-only: every call is safe to repeat. Questions or higher limits: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>.</p>
+  </div>
+</Base>

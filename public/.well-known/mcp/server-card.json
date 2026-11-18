@@ -1,0 +1,40 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "online.bestsoftwareguides/mcp",
+  "title": "BestSoftwareGuides",
+  "version": "1.0.0",
+  "description": "Read-only software rankings, plan-by-plan pricing (USD, with check dates and vendor sources) and head-to-head comparisons. Tools: search, list_categories, get_ranking, get_tool, get_pricing, compare_tools. No key needed.",
+  "websiteUrl": "https://bestsoftwareguides.online/developers/",
+  "icons": [
+    {
+      "src": "https://bestsoftwareguides.online/logo.png"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://bestsoftwareguides.online/mcp",
+      "supportedProtocolVersions": [
+        "2025-11-25",
+        "2025-06-18",
+        "2025-03-26",
+        "2024-11-05"
+      ]
+    }
+  ],
+  "url": "https://bestsoftwareguides.online/mcp",
+  "transport": "streamable-http",
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    }
+  },
+  "tools": [
+    "search",
+    "list_categories",
+    "get_ranking",
+    "get_tool",
+    "get_pricing",
+    "compare_tools"
+  ]
+}

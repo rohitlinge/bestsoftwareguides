@@ -9,14 +9,15 @@
   // wrangler runs this before every deploy, so dist/ is always fresh on Workers Builds too
   // (its build step alone did not leave dist/ in place for the deploy step).
   "build": { "command": "npm run build" },
-  // worker/index.js runs only for the run_worker_first paths: the MCP server (/mcp), LinkedIn
+  // worker/index.js runs only for the run_worker_first paths: the homepage (Link headers and
+  // markdown for agents), the MCP server (/mcp), the public API (/api/v1), LinkedIn
   // sign-in (/auth/*), the reviews API (/api/*) and moderation (/admin/*). Every other URL is
   // served straight from dist/.
   "main": "worker/index.js",
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
-    "run_worker_first": ["/mcp", "/mcp/", "/auth/*", "/api/*", "/admin/*"],
+    "run_worker_first": ["/", "/mcp", "/mcp/", "/auth/*", "/api", "/api/*", "/admin/*"],
     "not_found_handling": "404-page",
     "html_handling": "auto-trailing-slash"
   },

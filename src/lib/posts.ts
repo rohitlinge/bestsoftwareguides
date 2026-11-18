@@ -18,6 +18,7 @@ export type PostType = keyof typeof POST_TYPES;
 export type Post = {
   slug: string; title: string; description: string; published: string; updated: string; Content: any; headings: any[];
   type: PostType; category: string | null; minutes: number;
+  raw: string; // markdown source, for the /blog/<slug>.md twin
 };
 
 export const allPosts: (Post & { date: Date })[] = Object.entries(files)
@@ -35,6 +36,7 @@ export const allPosts: (Post & { date: Date })[] = Object.entries(files)
       type: (fm.type in POST_TYPES ? fm.type : 'buying-guide') as PostType,
       category: fm.category ?? null,
       minutes: Math.max(1, Math.round(words / 230)),
+      raw,
     };
   })
   .filter(Boolean) as any;

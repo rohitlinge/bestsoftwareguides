@@ -11,10 +11,13 @@ const exists = (p) => {
   const f = path.join(dist, clean);
   return fs.existsSync(f) && (fs.statSync(f).isFile() || fs.existsSync(path.join(f, 'index.html')));
 };
+// Served by the Worker (worker/index.js), not from dist/.
+const WORKER_ROUTES = ['/api/', '/mcp', '/auth/', '/admin/'];
 let bad = 0;
 for (const f of files) {
   const html = fs.readFileSync(f, 'utf8');
   for (const m of html.matchAll(/href="(\/[^"]*)"/g)) {
+    if (WORKER_ROUTES.some((r) => m[1].startsWith(r))) continue;
     if (!exists(m[1])) { bad++; console.log(`${f.replace(dist, '/')} -> ${m[1]}`); }
   }
 }

@@ -16,7 +16,8 @@ const AI_BOTS = [
 // only the most specific group that names it (Bingbot reads the Bingbot group, not "*").
 // /data/tools.json (open data), /llms.txt and the MCP docs at /ai/ stay open on purpose.
 const DISALLOW = ['/auth/', '/api/', '/admin/', '/search/', '/mcp', '/mcp-data.json', '/search.json', '/urls.json'];
-const rules = DISALLOW.map((p) => `Disallow: ${p}`).join('\n');
+// The public read-only API is open to agents (longest match wins, so this beats Disallow: /api/).
+const rules = ['Allow: /api/v1/', ...DISALLOW.map((p) => `Disallow: ${p}`)].join('\n');
 
 export function GET() {
   const body = PREVIEW

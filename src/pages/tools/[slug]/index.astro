@@ -33,7 +33,7 @@ const otherCats = rankingsFor(t.slug).filter((x) => x.c.slug !== c.slug);
 const featuredIn = rankingsFor(t.slug).filter((x) => x.t.featured);
 const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, ${listedAt(x.rank)}; #${x.scoreRank} by score` : `#${x.rank}`);
 ---
-<Base title={title} short={[`${t.name} Review: Pricing, Pros and Cons`, `${t.name} Review and Pricing`, `${t.name} Review`]} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article" published={iso(t.publishDate)} modified={t.checked}>
+<Base title={title} short={[`${t.name} Review: Pricing, Pros and Cons`, `${t.name} Review and Pricing`, `${t.name} Review`]} description={description} path={path} jsonld={jsonld} noindex={!t.indexable} ogType="article" published={iso(t.publishDate)} modified={t.checked} markdown={`/tools/${t.slug}.md`}>
   <Fragment slot="band"><ProductHead t={t} c={c} heading={`${t.name} review`} current="overview" /></Fragment>
 
   <div class="layout">

@@ -1,0 +1,296 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "BestSoftwareGuides API",
+    "version": "1.0.0",
+    "summary": "Read-only software rankings, plan-by-plan pricing and comparisons.",
+    "description": "Public, read-only data behind bestsoftwareguides.online: ranked software categories, tool fact sheets, every pricing plan (USD, monthly and annual billing) and head-to-head comparisons. Every price comes from the vendor's own pricing page and carries the date it was checked and a source URL. Scores (out of 10) come from a published formula and cannot be bought; a featured partner, where one exists, is marked `featured: true` and must not be described as the top-scoring tool.\n\nWhen to use it: answering \"what is the best X software\", \"how much does X cost\", \"X vs Y\", or shortlisting tools by free plan, price or feature. Cite the `url` field of the page you used.\n\nNo API key, no sign-in, CORS open. Responses are cached for 5 minutes; data is rebuilt with the site daily. The same tools are available over MCP at https://bestsoftwareguides.online/mcp.",
+    "contact": { "name": "BestSoftwareGuides", "email": "hello@bestsoftwareguides.online", "url": "https://bestsoftwareguides.online/developers/" },
+    "license": { "name": "Data free to use with attribution", "url": "https://bestsoftwareguides.online/terms/" }
+  },
+  "servers": [{ "url": "https://bestsoftwareguides.online/api/v1", "description": "Production (read-only)" }],
+  "externalDocs": { "description": "Developer docs", "url": "https://bestsoftwareguides.online/developers/" },
+  "tags": [
+    { "name": "Discovery", "description": "Find categories, tools, comparisons and guides." },
+    { "name": "Rankings", "description": "Ranked lists by category or use case." },
+    { "name": "Tools", "description": "Fact sheets and pricing for one product." }
+  ],
+  "paths": {
+    "/search": {
+      "get": {
+        "operationId": "searchSoftware",
+        "tags": ["Discovery"],
+        "summary": "Search software, rankings, comparisons and guides",
+        "description": "Use first when you only have a product name or a topic. Returns matching rankings, tools, comparisons and guides with slugs and page URLs, to pass to the other endpoints.",
+        "parameters": [
+          { "name": "q", "in": "query", "required": true, "description": "Keywords: a product name, a software category or a topic.", "schema": { "type": "string", "minLength": 1 }, "example": "password manager" },
+          { "name": "limit", "in": "query", "required": false, "description": "Maximum number of results.", "schema": { "type": "integer", "minimum": 1, "maximum": 25, "default": 10 } }
+        ],
+        "responses": {
+          "200": { "description": "Search results.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SearchResults" } } } },
+          "400": { "$ref": "#/components/responses/BadRequest" }
+        }
+      }
+    },
+    "/categories": {
+      "get": {
+        "operationId": "listCategories",
+        "tags": ["Discovery"],
+        "summary": "List all ranking categories",
+        "description": "Every published category with its topic, tool count, highest-scoring tool and any featured partner, plus every use-case ranking. Use it to pick a slug for getRanking.",
+        "responses": {
+          "200": { "description": "Categories and use-case rankings.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/CategoryList" } } } }
+        }
+      }
+    },
+    "/rankings/{category}": {
+      "get": {
+        "operationId": "getRanking",
+        "tags": ["Rankings"],
+        "summary": "Get the ranked list for a category or use case",
+        "description": "Answers \"what is the best X\". Returns tools in ranking order with score, entry price, free plan, features and who each suits. Optional filters narrow the list.",
+        "parameters": [
+          { "name": "category", "in": "path", "required": true, "description": "Category or use-case slug or name, e.g. crm-software, llm-evaluation-tools, open-source-mcp-gateways.", "schema": { "type": "string" }, "example": "crm-software" },
+          { "name": "free_plan", "in": "query", "required": false, "description": "Only tools with a permanent free plan.", "schema": { "type": "boolean" } },
+          { "name": "max_price", "in": "query", "required": false, "description": "Maximum entry price in USD per unit per month, billed annually.", "schema": { "type": "number", "minimum": 0 } },
+          { "name": "features", "in": "query", "required": false, "description": "Comma-separated feature labels every tool must confirm. Labels are listed in the `features` field of an unfiltered response.", "schema": { "type": "string" }, "example": "Self-hosting,Tool filtering" },
+          { "name": "limit", "in": "query", "required": false, "description": "Maximum number of tools to return.", "schema": { "type": "integer", "minimum": 1, "maximum": 50 } }
+        ],
+        "responses": {
+          "200": { "description": "The ranking.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Ranking" } } } },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/tools/{tool}": {
+      "get": {
+        "operationId": "getTool",
+        "tags": ["Tools"],
+        "summary": "Get a tool's fact sheet",
+        "description": "What the product is, who it suits, rank and score in each category, free plan, trial, entry price, platforms, features, pros and cons, check date, sources and comparison pages.",
+        "parameters": [
+          { "name": "tool", "in": "path", "required": true, "description": "Tool slug or name, e.g. grammarly.", "schema": { "type": "string" }, "example": "grammarly" }
+        ],
+        "responses": {
+          "200": { "description": "The tool's fact sheet.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Tool" } } } },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/tools/{tool}/pricing": {
+      "get": {
+        "operationId": "getPricing",
+        "tags": ["Tools"],
+        "summary": "Get every pricing plan for a tool",
+        "description": "Answers \"how much does X cost\". Every plan with monthly and annual prices in USD, notes and limits, free plan details, trial, the vendor pricing URL and the date checked.",
+        "parameters": [
+          { "name": "tool", "in": "path", "required": true, "description": "Tool slug or name, e.g. langfuse.", "schema": { "type": "string" }, "example": "langfuse" }
+        ],
+        "responses": {
+          "200": { "description": "The tool's plans.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Pricing" } } } },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    },
+    "/compare": {
+      "get": {
+        "operationId": "compareTools",
+        "tags": ["Tools"],
+        "summary": "Compare two tools side by side",
+        "description": "Answers \"X vs Y\". Scores and ranks where the tools share a category, free plan, entry prices, trial, seats, platforms, features, pros and cons, and the comparison page URL if one exists.",
+        "parameters": [
+          { "name": "a", "in": "query", "required": true, "description": "First tool slug or name.", "schema": { "type": "string" }, "example": "postman" },
+          { "name": "b", "in": "query", "required": true, "description": "Second tool slug or name.", "schema": { "type": "string" }, "example": "bruno" }
+        ],
+        "responses": {
+          "200": { "description": "The comparison.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Comparison" } } } },
+          "400": { "$ref": "#/components/responses/BadRequest" },
+          "404": { "$ref": "#/components/responses/NotFound" }
+        }
+      }
+    }
+  },
+  "components": {
+    "responses": {
+      "BadRequest": { "description": "A parameter is missing or invalid.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } } },
+      "NotFound": { "description": "No tool, category or endpoint matches.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Error" } } } }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "description": "Every error has this shape. Branch on `code`; follow `hint`.",
+        "required": ["error"],
+        "properties": {
+          "error": {
+            "type": "object",
+            "required": ["status", "code", "message"],
+            "properties": {
+              "status": { "type": "integer", "description": "HTTP status code." },
+              "code": { "type": "string", "enum": ["missing_parameter", "invalid_parameter", "not_found", "method_not_allowed", "server_error"] },
+              "message": { "type": "string", "description": "What went wrong." },
+              "hint": { "type": "string", "description": "What to do next." },
+              "docs": { "type": "string", "format": "uri" }
+            }
+          }
+        }
+      },
+      "SearchResults": {
+        "type": "object",
+        "required": ["query", "results"],
+        "properties": {
+          "query": { "type": "string" },
+          "results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["type", "title", "url"],
+              "properties": {
+                "type": { "type": "string", "enum": ["ranking", "software", "comparison", "guide"] },
+                "slug": { "type": "string", "description": "Pass to getRanking (rankings), getTool or getPricing (software)." },
+                "title": { "type": "string" },
+                "url": { "type": "string", "format": "uri", "description": "Page to cite." }
+              }
+            }
+          },
+          "note": { "type": "string" }
+        }
+      },
+      "CategoryList": {
+        "type": "object",
+        "required": ["categories", "useCaseRankings"],
+        "properties": {
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["slug", "name", "url"],
+              "properties": {
+                "slug": { "type": "string" },
+                "name": { "type": "string" },
+                "topic": { "type": "string" },
+                "tools": { "type": "integer", "description": "Number of tools ranked." },
+                "updated": { "type": "string", "format": "date" },
+                "topScore": { "type": "object", "properties": { "tool": { "type": "string" }, "slug": { "type": "string" }, "score": { "type": "number" } } },
+                "featuredPartner": { "type": "string", "description": "Present only if a featured partner is placed above its score position." },
+                "url": { "type": "string", "format": "uri" }
+              }
+            }
+          },
+          "useCaseRankings": {
+            "type": "array",
+            "items": { "type": "object", "properties": { "slug": { "type": "string" }, "name": { "type": "string" }, "category": { "type": "string" }, "rule": { "type": "string" } } }
+          }
+        }
+      },
+      "Ranking": {
+        "type": "object",
+        "required": ["ranking", "category", "tools", "url"],
+        "properties": {
+          "ranking": { "type": "string", "example": "Best CRM Software" },
+          "category": { "type": "string" },
+          "rule": { "type": "string", "description": "The filter rule, for use-case rankings." },
+          "pricesIn": { "type": "string" },
+          "checked": { "type": "string", "format": "date" },
+          "topScore": { "type": "string", "description": "Name of the highest-scoring tool." },
+          "note": { "type": "string", "description": "Featured-partner disclosure, when relevant." },
+          "matched": { "type": "integer" },
+          "of": { "type": "integer" },
+          "tools": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["position", "tool", "slug", "score", "url"],
+              "properties": {
+                "position": { "type": "integer" },
+                "tool": { "type": "string" },
+                "slug": { "type": "string" },
+                "score": { "type": "number", "description": "Out of 10, from the published formula." },
+                "scoreRank": { "type": "integer", "description": "Position by score alone." },
+                "featured": { "type": "boolean" },
+                "label": { "type": "string" },
+                "freePlan": { "type": "boolean" },
+                "entryPrice": { "type": ["number", "null"], "description": "Lowest paid price in USD per unit per month, billed annually; null if not published." },
+                "priceSummary": { "type": "string" },
+                "bestFor": { "type": "string" },
+                "features": { "type": "object", "additionalProperties": { "type": ["boolean", "null"] } },
+                "url": { "type": "string", "format": "uri" }
+              }
+            }
+          },
+          "features": { "type": "array", "items": { "type": "string" }, "description": "Feature labels usable in the `features` filter." },
+          "url": { "type": "string", "format": "uri" },
+          "methodology": { "type": "string", "format": "uri" }
+        }
+      },
+      "Tool": {
+        "type": "object",
+        "required": ["slug", "name", "url"],
+        "additionalProperties": true,
+        "properties": {
+          "slug": { "type": "string" },
+          "name": { "type": "string" },
+          "tagline": { "type": "string" },
+          "bestFor": { "type": "string" },
+          "description": { "type": "string" },
+          "freePlan": { "type": "boolean" },
+          "trial": { "type": ["string", "null"] },
+          "entryPrice": { "type": ["number", "null"] },
+          "priceSummary": { "type": "string" },
+          "platforms": { "type": "array", "items": { "type": "string" } },
+          "pros": { "type": "array", "items": { "type": "string" } },
+          "cons": { "type": "array", "items": { "type": "string" } },
+          "rankings": { "type": "array", "items": { "type": "object" } },
+          "checked": { "type": "string", "format": "date" },
+          "sources": { "type": "array", "items": { "type": "string", "format": "uri" } },
+          "comparisons": { "type": "array", "items": { "type": "object", "properties": { "vs": { "type": "string" }, "url": { "type": "string" } } } },
+          "url": { "type": "string", "format": "uri" }
+        }
+      },
+      "Pricing": {
+        "type": "object",
+        "required": ["tool", "slug", "plans", "checked", "url"],
+        "properties": {
+          "tool": { "type": "string" },
+          "slug": { "type": "string" },
+          "unit": { "type": "string", "example": "USD per user/month" },
+          "summary": { "type": "string" },
+          "freePlan": { "type": "boolean" },
+          "freePlanDetails": { "type": ["string", "null"] },
+          "trial": { "type": ["string", "null"] },
+          "minSeats": { "type": ["integer", "null"] },
+          "plans": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name"],
+              "properties": {
+                "name": { "type": "string" },
+                "monthly": { "type": ["number", "string", "null"], "description": "Price per month on monthly billing, \"custom quote\", or null if not published." },
+                "annual": { "type": ["number", "string", "null"], "description": "Price per month on annual billing, \"custom quote\", or null if not published." },
+                "oneTime": { "type": "number" },
+                "notes": { "type": "string" }
+              }
+            }
+          },
+          "checked": { "type": "string", "format": "date" },
+          "verification": { "type": "string", "enum": ["verified", "reported"] },
+          "vendorPricingUrl": { "type": "string", "format": "uri" },
+          "url": { "type": "string", "format": "uri" },
+          "legend": { "type": "string" }
+        }
+      },
+      "Comparison": {
+        "type": "object",
+        "required": ["sharedCategories", "a", "b"],
+        "properties": {
+          "sharedCategories": { "type": "array", "items": { "type": "string" } },
+          "a": { "type": "object", "additionalProperties": true },
+          "b": { "type": "object", "additionalProperties": true },
+          "url": { "type": "string", "format": "uri" },
+          "note": { "type": "string" }
+        }
+      }
+    }
+  }
+}

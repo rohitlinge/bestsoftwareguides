@@ -62,8 +62,13 @@ const TOOLS = [
   {
     name: 'search',
     title: 'Search the site',
-    description: 'Find software, category rankings, comparisons and guides by keyword (e.g. "ETL testing", "grammarly", "password manager"). Returns slugs to use with the other tools.',
-    inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Keywords' }, limit: { type: 'integer', minimum: 1, maximum: 25, default: 10 } }, required: ['query'] },
+    description: 'Use first when you only have a product name or a topic. Finds software, category rankings, comparisons and guides by keyword (e.g. "ETL testing", "grammarly", "password manager") and returns their slugs and page URLs, to pass to get_tool, get_pricing, get_ranking or compare_tools.',
+    inputSchema: { type: 'object', properties: { query: { type: 'string', description: 'Keywords: a product name, a software category or a topic' }, limit: { type: 'integer', minimum: 1, maximum: 25, default: 10, description: 'Maximum number of results (1-25)' } }, required: ['query'] },
+    outputSchema: { type: 'object', properties: {
+      query: { type: 'string' },
+      results: { type: 'array', items: { type: 'object', properties: { type: { type: 'string', enum: ['ranking', 'software', 'comparison', 'guide'] }, slug: { type: 'string' }, title: { type: 'string' }, url: { type: 'string' } }, required: ['type', 'title', 'url'] } },
+      note: { type: 'string' },
+    }, required: ['query', 'results'] },
     run(d, { query, limit = 10 }) {
       const words = norm(query).split(' ').filter(Boolean);
       if (!words.length) return toolError('query is empty');
@@ -90,8 +95,12 @@ const TOOLS = [
   {
     name: 'list_categories',
     title: 'List ranking categories',
-    description: 'Every published software category with its topic, number of tools, highest-scoring tool and any featured partner.',
+    description: 'Use to see what the site covers. Returns every published software category (slug, name, topic, number of tools, highest-scoring tool, any featured partner) and every use-case ranking, so you can pick a slug for get_ranking.',
     inputSchema: { type: 'object', properties: {} },
+    outputSchema: { type: 'object', properties: {
+      categories: { type: 'array', items: { type: 'object', properties: { slug: { type: 'string' }, name: { type: 'string' }, topic: { type: 'string' }, tools: { type: 'integer' }, updated: { type: 'string' }, topScore: { type: 'object' }, featuredPartner: { type: 'string' }, url: { type: 'string' } }, required: ['slug', 'name', 'url'] } },
+      useCaseRankings: { type: 'array', items: { type: 'object', properties: { slug: { type: 'string' }, name: { type: 'string' }, category: { type: 'string' }, rule: { type: 'string' } } } },
+    }, required: ['categories', 'useCaseRankings'] },
     run(d) {
       return {
         categories: d.categories.map((c) => {
@@ -110,7 +119,7 @@ const TOOLS = [
   {
     name: 'get_ranking',
     title: 'Get a category ranking',
-    description: 'The ranked list for a category (e.g. "api-testing-tools", "CRM software") or use-case ranking, with score, entry price, free plan and who each tool suits. Optional filters: free plan only, maximum entry price, required features.',
+    description: 'Use to answer "what is the best X" or to shortlist tools. Returns the ranked list for a category (e.g. "api-testing-tools", "CRM software") or use-case ranking: score, entry price, free plan, features and who each tool suits, plus the page URL to cite. Optional filters: free plan only, maximum entry price, required features.',
     inputSchema: {
       type: 'object',
       properties: {
@@ -118,10 +127,20 @@ const TOOLS = [
         free_plan: { type: 'boolean', description: 'Only tools with a permanent free plan' },
         max_price: { type: 'number', description: 'Maximum entry price in USD per unit per month, billed annually' },
         features: { type: 'array', items: { type: 'string' }, description: 'Feature labels the tool must confirm (see the "features" list in the result)' },
-        limit: { type: 'integer', minimum: 1, maximum: 50 },
+        limit: { type: 'integer', minimum: 1, maximum: 50, description: 'Maximum number of tools to return (1-50)' },
       },
       required: ['category'],
     },
+    outputSchema: { type: 'object', properties: {
+      ranking: { type: 'string' }, category: { type: 'string' }, rule: { type: 'string' }, pricesIn: { type: 'string' }, checked: { type: 'string' },
+      topScore: { type: 'string' }, note: { type: 'string' }, matched: { type: 'integer' }, of: { type: 'integer' },
+      tools: { type: 'array', items: { type: 'object', properties: {
+        position: { type: 'integer' }, tool: { type: 'string' }, slug: { type: 'string' }, score: { type: 'number' }, scoreRank: { type: 'integer' },
+        featured: { type: 'boolean' }, label: { type: 'string' }, freePlan: { type: 'boolean' }, entryPrice: { type: ['number', 'null'] },
+        priceSummary: { type: 'string' }, bestFor: { type: 'string' }, features: { type: 'object' }, url: { type: 'string' },
+      }, required: ['position', 'tool', 'slug', 'score', 'url'] } },
+      features: { type: 'array', items: { type: 'string' } }, url: { type: 'string' }, methodology: { type: 'string' },
+    }, required: ['ranking', 'category', 'tools', 'url'] },
     run(d, { category, free_plan, max_price, features = [], limit }) {
       const uc = d.useCases.find((u) => u.slug === slugify(category) || norm(u.name) === norm(category).replace(/^best /, ''));
       const c = uc ? d.categories.find((x) => x.slug === uc.category) : findCategory(d, category);
@@ -161,8 +180,13 @@ const TOOLS = [
   {
     name: 'get_tool',
     title: 'Get a tool profile',
-    description: 'Fact sheet for one product: what it is, who it suits, rank and score in each category, free plan, trial, entry price, platforms, features, pros and cons, check date and sources.',
+    description: 'Use when asked about one product. Returns its fact sheet: what it is, who it suits, rank and score in each category, free plan, trial, entry price, platforms, features, pros and cons, check date, sources and comparison pages.',
     inputSchema: { type: 'object', properties: { tool: { type: 'string', description: 'Tool slug or name, e.g. "grammarly"' } }, required: ['tool'] },
+    outputSchema: { type: 'object', properties: {
+      slug: { type: 'string' }, name: { type: 'string' }, tagline: { type: 'string' }, bestFor: { type: 'string' }, freePlan: { type: 'boolean' },
+      entryPrice: { type: ['number', 'null'] }, priceSummary: { type: 'string' }, checked: { type: 'string' }, url: { type: 'string' },
+      rankings: { type: 'array', items: { type: 'object' } }, sources: { type: 'array', items: { type: 'string' } }, comparisons: { type: 'array', items: { type: 'object' } },
+    }, required: ['slug', 'name', 'url'] },
     run(d, { tool }) {
       const hit = findTool(d, tool);
       if (!hit) return notFound('tool', tool, d);
@@ -179,8 +203,14 @@ const TOOLS = [
   {
     name: 'get_pricing',
     title: 'Get plan-by-plan pricing',
-    description: 'Every plan for one product with monthly and annual prices (USD), plan notes, free plan details, trial, the vendor pricing URL and the date checked.',
-    inputSchema: { type: 'object', properties: { tool: { type: 'string', description: 'Tool slug or name' } }, required: ['tool'] },
+    description: 'Use when asked what a product costs. Returns every plan with monthly and annual prices in USD, plan notes and limits, free plan details, trial, minimum seats, the vendor pricing URL and the date the prices were checked.',
+    inputSchema: { type: 'object', properties: { tool: { type: 'string', description: 'Tool slug or name, e.g. "langfuse"' } }, required: ['tool'] },
+    outputSchema: { type: 'object', properties: {
+      tool: { type: 'string' }, slug: { type: 'string' }, unit: { type: 'string' }, summary: { type: 'string' }, freePlan: { type: 'boolean' },
+      freePlanDetails: { type: ['string', 'null'] }, trial: { type: ['string', 'null'] }, minSeats: { type: ['integer', 'null'] },
+      plans: { type: 'array', items: { type: 'object', properties: { name: { type: 'string' }, annual: { type: ['number', 'string', 'null'] }, monthly: { type: ['number', 'string', 'null'] }, oneTime: { type: 'number' }, notes: { type: 'string' } }, required: ['name'] } },
+      checked: { type: 'string' }, verification: { type: 'string' }, vendorPricingUrl: { type: 'string' }, url: { type: 'string' }, legend: { type: 'string' },
+    }, required: ['tool', 'slug', 'plans', 'checked', 'url'] },
     run(d, { tool }) {
       const hit = findTool(d, tool);
       if (!hit) return notFound('tool', tool, d);
@@ -197,8 +227,11 @@ const TOOLS = [
   {
     name: 'compare_tools',
     title: 'Compare two tools',
-    description: 'Side-by-side facts for two products: scores and ranks where they share a category, free plan, entry prices, trial, seats, platforms, features, pros and cons.',
-    inputSchema: { type: 'object', properties: { tool_a: { type: 'string' }, tool_b: { type: 'string' } }, required: ['tool_a', 'tool_b'] },
+    description: 'Use when asked "X vs Y" or which of two products to choose. Returns side-by-side facts: scores and ranks where they share a category, free plan, entry prices, trial, seats, platforms, features, pros and cons, and the comparison page URL if one exists.',
+    inputSchema: { type: 'object', properties: { tool_a: { type: 'string', description: 'First tool slug or name, e.g. "postman"' }, tool_b: { type: 'string', description: 'Second tool slug or name, e.g. "bruno"' } }, required: ['tool_a', 'tool_b'] },
+    outputSchema: { type: 'object', properties: {
+      sharedCategories: { type: 'array', items: { type: 'string' } }, a: { type: 'object' }, b: { type: 'object' }, url: { type: 'string' }, note: { type: 'string' },
+    }, required: ['sharedCategories', 'a', 'b'] },
     run(d, { tool_a, tool_b }) {
       const A = findTool(d, tool_a), B = findTool(d, tool_b);
       if (!A) return notFound('tool', tool_a, d);
@@ -253,8 +286,8 @@ async function handleMessage(msg, env) {
       try {
         const out = tool.run(await loadData(env), args);
         if (out.__error) return rpcResult(id, { content: [{ type: 'text', text: out.__error }], isError: true });
-        // Compact JSON: the whole point is to spend few tokens.
-        return rpcResult(id, { content: [{ type: 'text', text: JSON.stringify(out) }] });
+        // Compact JSON: the whole point is to spend few tokens. structuredContent matches the tool's outputSchema.
+        return rpcResult(id, { content: [{ type: 'text', text: JSON.stringify(out) }], structuredContent: out });
       } catch (e) {
         return rpcResult(id, { content: [{ type: 'text', text: `Server error: ${e.message}` }], isError: true });
       }
@@ -290,4 +323,4 @@ async function handleMcp(request, env) {
   return out ? json(out) : new Response(null, { status: 202, headers: CORS });
 }
 
-export { handleMcp };
+export { handleMcp, TOOL_MAP };

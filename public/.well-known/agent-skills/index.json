@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "software-research",
+      "type": "skill-md",
+      "description": "Look up software rankings, current plan prices and head-to-head comparisons from BestSoftwareGuides. Use when a user asks which software is best for a job, what a product costs, whether it has a free plan, or how two products compare. Calls the MCP server or REST API; no key needed.",
+      "url": "/.well-known/agent-skills/software-research/SKILL.md",
+      "digest": "sha256:f79b55a787e91303c37f5f2bf1a295ffa5734f5fffa21716f9ff6c5fdcde9d4c"
+    }
+  ]
+}
