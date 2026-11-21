@@ -1,0 +1,576 @@
+[
+  {
+    "slug": "airtable",
+    "name": "Airtable",
+    "category": "project-management-software",
+    "website": "https://www.airtable.com",
+    "logo": "https://www.airtable.com/favicon.ico",
+    "pricingUrl": "https://www.airtable.com/pricing",
+    "tagline": "Relational database platform for building project trackers, workflows and apps with automations and AI.",
+    "bestFor": "Teams that want to build custom trackers on a flexible database",
+    "description": "Airtable lets teams build bases of linked records and view them as grids, timelines and Gantt charts, with automations and AI credits included on every plan. The Free plan covers up to 5 editors; Team costs $20 per seat per month billed annually or $24 billed monthly.",
+    "pros": [
+      "Read-only collaborators, form submissions and share links are not billed on Team and Business",
+      "Team includes 50,000 records per base, 25,000 automation runs per month and 15,000 AI credits per billable collaborator",
+      "Timeline and Gantt views are included from the Team plan",
+      "Native apps for macOS, Windows, iOS and Android"
+    ],
+    "cons": [
+      "Free plan is capped at 1,000 records per base, 100 automation runs per month and 5 editors",
+      "Business costs $45 per seat per month billed annually ($54 monthly)",
+      "SAML SSO is listed for the Enterprise plan only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 5 editors, 1,000 records per base, 1 GB attachments per base, 100 automation runs and 1,000 API calls per workspace per month, 500 AI credits per editor per month.",
+    "trial": "14-day Team trial for the first workspace on a new account (120 days for .edu addresses)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 5 editors; 1,000 records and 1 GB attachments per base; 100 automation runs/month; no extensions or record coloring."
+      },
+      {
+        "name": "Team",
+        "monthly": 24,
+        "annual": 20,
+        "custom": false,
+        "notes": "Per user with edit permissions. 50,000 records and 20 GB attachments per base, 25,000 automation runs and 100,000 API calls per workspace/month, 15,000 AI credits per billable collaborator/month. Credit card payment."
+      },
+      {
+        "name": "Business",
+        "monthly": 54,
+        "annual": 45,
+        "custom": false,
+        "notes": "Self-serve price per user with edit permissions. 125,000 records and 100 GB attachments per base, 100,000 automation runs/month, unlimited API calls, 20,000 AI credits per paid user/month, two-way sync and admin panel. Invoicing available through sales."
+      },
+      {
+        "name": "Enterprise Scale",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales; unlimited org units, workspaces and bases; SAML SSO."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": null,
+      "automations": true,
+      "timeTracking": null,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2012",
+    "hq": "San Francisco, USA",
+    "integrations": "Two-way sync (Business); REST API with plan-based call limits",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 27001:2022",
+      "ISO/IEC 27701:2019",
+      "HIPAA",
+      "TX-RAMP Level 2",
+      "GDPR",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Airtable pricing page",
+        "url": "https://www.airtable.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Airtable support: Airtable plans",
+        "url": "https://support.airtable.com/docs/airtable-plans",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Airtable security page",
+        "url": "https://www.airtable.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Airtable download page",
+        "url": "https://www.airtable.com/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Airtable about page",
+        "url": "https://www.airtable.com/about",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "linear",
+    "name": "Linear",
+    "category": "project-management-software",
+    "website": "https://linear.app",
+    "logo": "https://linear.app/static/apple-touch-icon.png?v=2",
+    "pricingUrl": "https://linear.app/pricing",
+    "tagline": "Issue tracking and project planning tool for software teams, with cycles, project timelines, docs and built-in AI agents.",
+    "bestFor": "Software product teams tracking issues, cycles and roadmaps",
+    "description": "Linear tracks issues, cycles and projects, with a project timeline view, project and team documents, and Linear Agent and MCP access on every plan. The Free plan allows unlimited members with 250 issues and 2 teams; Basic costs $10 per user per month billed yearly.",
+    "pros": [
+      "Free plan includes unlimited members",
+      "Linear Agent, the agent platform and MCP access are included on all plans",
+      "Timeline view shows projects chronologically with dependencies",
+      "SOC 2 Type II audited and ISO/IEC 27001:2022 certified"
+    ],
+    "cons": [
+      "Free plan is limited to 250 issues, 2 teams and 10 MB file uploads",
+      "Triage rules and Triage Intelligence require Business or Enterprise",
+      "SAML, SCIM, audit log and HIPAA are Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Unlimited members, 2 teams, 250 issues, 10 MB file uploads; Google SSO.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Unlimited members, 2 teams, 250 issues."
+      },
+      {
+        "name": "Basic",
+        "monthly": null,
+        "annual": 10,
+        "custom": false,
+        "notes": "Per user, billed yearly. Unlimited issues, 5 teams, unlimited file uploads. Monthly billing exists but the monthly rate is not shown on the pricing page. Billed per unsuspended user."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 16,
+        "custom": false,
+        "notes": "Per user, billed yearly. Unlimited teams, Triage Intelligence and triage rules, Insights, Asks, Releases (15 pipelines). Monthly rate not shown on the pricing page."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing, annual billing only. SAML, SCIM, HIPAA, audit log, IP restrictions, uptime SLA."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": null,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2019",
+    "hq": null,
+    "integrations": "MCP server access on all plans",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 27001:2022",
+      "GDPR",
+      "HIPAA BAA (Enterprise)",
+      "SSO/SAML (Enterprise)",
+      "SCIM (Enterprise)"
+    ],
+    "support": [],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Linear pricing page",
+        "url": "https://linear.app/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear docs: billing and plans",
+        "url": "https://linear.app/docs/billing-and-plans",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear docs: timeline",
+        "url": "https://linear.app/docs/timeline",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear docs: documents",
+        "url": "https://linear.app/docs/documents",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear docs: triage",
+        "url": "https://linear.app/docs/triage",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear security page",
+        "url": "https://linear.app/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear download page",
+        "url": "https://linear.app/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear about page",
+        "url": "https://linear.app/about",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "plane",
+    "name": "Plane",
+    "category": "project-management-software",
+    "website": "https://plane.so",
+    "logo": "https://plane.so/favicon/favicon-256x256.png",
+    "pricingUrl": "https://plane.so/pricing",
+    "tagline": "Open-source project management tool with work items, cycles, timelines, pages and wiki, available in the cloud or self-hosted.",
+    "bestFor": "Teams that want an open-source Jira alternative they can self-host",
+    "description": "Plane tracks work items in list, board, calendar, table and Gantt-style timeline layouts, with cycles, pages and a wiki, and can run on Plane Cloud or be self-hosted. The Free plan covers up to 12 users; Pro costs $6 per seat per month billed annually or $8 monthly.",
+    "pros": [
+      "Free plan allows up to 12 users",
+      "Pro includes 500 Plane AI credits per seat per month and Business 1,000",
+      "Time tracking with worklogs from Pro",
+      "Open-source core that can be self-hosted"
+    ],
+    "cons": [
+      "Workflows and trigger-and-action automations start on Business ($13 per seat annually)",
+      "SSO on Plane Cloud requires Business",
+      "Windows desktop app for the latest version is listed as coming soon"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 12 users, cycles, pages, in-app intake and limited guest access; no AI credits, wiki, time tracking or automations.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 12 users."
+      },
+      {
+        "name": "Pro",
+        "monthly": 8,
+        "annual": 6,
+        "custom": false,
+        "notes": "Per seat; unlimited seats, 5 guests per paid member, wiki, timeline dependencies, historical worklogs, 500 AI credits per seat per month (cloud). No workflows or SSO on cloud."
+      },
+      {
+        "name": "Business",
+        "monthly": 15,
+        "annual": 13,
+        "custom": false,
+        "notes": "Per seat; single workflow plus trigger-and-action automations, worklog approvals, intake forms and email, SSO, 1,000 AI credits per seat per month (cloud)."
+      },
+      {
+        "name": "Enterprise Grid",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Listed as coming soon; multiple workflows with approvals, custom guest roles, private and managed deployments."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2022",
+    "hq": null,
+    "integrations": null,
+    "compliance": [
+      "SOC 2",
+      "ISO 27001",
+      "GDPR",
+      "HIPAA",
+      "SSO/SAML/OIDC (self-hosted; Business on cloud)"
+    ],
+    "support": [
+      "SLA support (Pro and above)",
+      "Priority support (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Plane pricing page",
+        "url": "https://plane.so/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Plane docs: layouts",
+        "url": "https://docs.plane.so/core-concepts/issues/layouts",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Plane download page",
+        "url": "https://plane.so/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Plane security page",
+        "url": "https://plane.so/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Plane about page",
+        "url": "https://plane.so/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "TechCrunch: Plane takes on Jira with open source project management tools",
+        "url": "https://techcrunch.com/2023/11/28/plane-takes-on-jira-with-open-source-project-management-tools-for-software-teams/",
+        "date": "2023-11-28"
+      }
+    ]
+  },
+  {
+    "slug": "zoho-projects",
+    "name": "Zoho Projects",
+    "category": "project-management-software",
+    "website": "https://www.zoho.com/projects/",
+    "logo": "https://www.zohowebstatic.com/sites/zweb/images/favicon.ico",
+    "pricingUrl": "https://www.zoho.com/projects/pricing.html",
+    "tagline": "Project management software with Gantt charts, timesheets, blueprints and Zia AI, part of the Zoho suite.",
+    "bestFor": "Budget-conscious teams that need Gantt charts and timesheets",
+    "description": "Zoho Projects combines task management, Gantt charts, time logs and timesheets, workflow rules and blueprints, with Zia AI features included from the Premium plan. The Free plan covers up to 5 users and 3 projects; Premium costs $4 per user per month billed yearly or $5 monthly.",
+    "pros": [
+      "Gantt chart available on every plan, including Free",
+      "Time logs and timesheets with multi-level approvals from Premium",
+      "Zia Insights, Zia Translate and content generation included on Premium",
+      "15-day free trial of paid plans with no credit card required"
+    ],
+    "cons": [
+      "Free plan is limited to 5 users, 3 projects and 50 workflow actions per month",
+      "SSO, critical path and baselines require Enterprise ($9 per user annually)",
+      "Premium support (24/5 phone and chat) is a paid add-on requiring at least 25 user licenses"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 5 users, 3 projects, 5 GB storage, subtasks, whiteboard, Gantt chart, 50 workflow action executions per month, iOS and Android apps.",
+    "trial": "15-day free trial of Premium, Enterprise or Ultimate; no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 5 users, 3 projects, 5 GB storage."
+      },
+      {
+        "name": "Premium",
+        "monthly": 5,
+        "annual": 4,
+        "custom": false,
+        "notes": "Per user. Unlimited projects, 100 GB storage, 20 project templates, timesheets, task blueprints, budgeting, 5,000 workflow executions/month, Zia AI features."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 10,
+        "annual": 9,
+        "custom": false,
+        "notes": "Per user. 120 GB storage, 10 read-only users, SSO, 2FA, portfolio dashboard, critical path and baseline, sandbox, 50,000 workflow executions/month, all Zia features."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": 15,
+        "annual": 14,
+        "custom": false,
+        "notes": "Per user. 15 GB storage per user (min 150 GB/org), 100 read-only users, 100 resources, multi-user and multi-project timesheets, 500,000 workflow executions/month."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "1996",
+    "hq": "Chennai, India",
+    "integrations": "Zapier, Zendesk, Microsoft Teams, Office 365, Slack, ServiceNow, Dropbox, SharePoint, Figma, GitHub, Zoho CRM and other Zoho apps",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 27001",
+      "ISO/IEC 27701",
+      "ISO/IEC 27017",
+      "ISO/IEC 27018",
+      "SOC 2 + HIPAA Type 2",
+      "GDPR",
+      "SSO (Enterprise)"
+    ],
+    "support": [
+      "Premium support add-on: live chat and phone 24/5, remote assistance, onboarding"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Zoho Projects pricing page",
+        "url": "https://www.zoho.com/projects/pricing.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Projects pricing data file loaded by the pricing page (USD prices)",
+        "url": "https://www.zohowebstatic.com/sites/zweb/json/pricing/projects-pricing-val.json",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Projects plan comparison",
+        "url": "https://www.zoho.com/projects/pricing-comparison.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Projects help: upgrade from Free plan",
+        "url": "https://help.zoho.com/portal/en/kb/projects/billing-and-upgrade/articles/upgrade-free-plan",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho compliance page",
+        "url": "https://www.zoho.com/compliance.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Zoho Corporation",
+        "url": "https://en.wikipedia.org/wiki/Zoho_Corporation",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "todoist",
+    "name": "Todoist",
+    "category": "project-management-software",
+    "website": "https://www.todoist.com",
+    "logo": "https://www.todoist.com/static/favicon-32x32.png",
+    "pricingUrl": "https://www.todoist.com/pricing",
+    "tagline": "Task manager for individuals and teams, with projects, filters, calendar layouts, automations and AI task capture.",
+    "bestFor": "Individuals and small teams managing tasks rather than complex projects",
+    "description": "Todoist organizes tasks into personal and team projects with filters, board and calendar layouts, Todoist Automations and AI-powered task capture. The Beginner plan is free; Pro costs $5 per month billed yearly for one user, and Business costs $8 per user per month billed yearly or $10 monthly.",
+    "pros": [
+      "Apps for Windows, macOS, Linux, iOS, Android, Apple Watch and WearOS",
+      "Unlimited AI-powered task capture, including Ramble, on Pro and Business",
+      "Todoist Automations with AI steps and approval steps on Pro and Business",
+      "SOC 2 Type II certification listed on all plans"
+    ],
+    "cons": [
+      "No timeline or Gantt view; layouts are list, board, calendar and table",
+      "No native time tracking; time tracking relies on the Toggl Track integration",
+      "Free Beginner plan is limited to 5 personal projects, 3 filters and 1 week of reporting history"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Beginner: 5 personal projects, 5 people per personal project, 5 team projects, 3 custom filters, 1 connected calendar, 5 MB uploads, 1 week reporting history, 10 AI task capture sessions per month.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Beginner",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free; 5 personal projects, 3 filters, no automations or calendar/table layouts."
+      },
+      {
+        "name": "Pro",
+        "monthly": 7,
+        "annual": 5,
+        "custom": false,
+        "notes": "Individual plan ($60 billed yearly), not priced per team seat. 300 personal projects, 150 filter views, 3 connected calendars, 100 MB uploads, full reporting history, automations (beta), auto backups."
+      },
+      {
+        "name": "Business",
+        "monthly": 10,
+        "annual": 8,
+        "custom": false,
+        "notes": "Per user ($96 per user billed yearly), plus local tax. Up to 500 team projects, 1,000 team members and guests, team roles and permissions, automations in the team workspace, centralized billing."
+      }
+    ],
+    "features": {
+      "timelineGantt": false,
+      "docsWiki": null,
+      "automations": true,
+      "timeTracking": false,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2007",
+    "hq": null,
+    "integrations": "Toggl Track (time tracking), calendar sync, Todoist MCP servers",
+    "compliance": [
+      "SOC 2 Type II"
+    ],
+    "support": [],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Todoist pricing page",
+        "url": "https://www.todoist.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Todoist downloads page",
+        "url": "https://www.todoist.com/downloads",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Todoist help: use Toggl Track with Todoist",
+        "url": "https://www.todoist.com/help/articles/use-toggl-track-with-todoist-mgRQcf",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Todoist about page",
+        "url": "https://www.todoist.com/about-us",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Todoist",
+        "url": "https://en.wikipedia.org/wiki/Todoist",
+        "date": "2026-11-21"
+      }
+    ]
+  }
+]

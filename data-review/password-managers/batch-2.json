@@ -1,0 +1,605 @@
+[
+  {
+    "slug": "zoho-vault",
+    "name": "Zoho Vault",
+    "category": "password-managers",
+    "website": "https://www.zoho.com/vault/",
+    "logo": "https://www.zohowebstatic.com/sites/zweb/images/favicon.ico",
+    "pricingUrl": "https://www.zoho.com/vault/pricing.html",
+    "tagline": "Zoho's cloud password manager for individuals and businesses, with team sharing, admin controls and SSO.",
+    "bestFor": "Small businesses already using Zoho, Google Workspace or Microsoft 365",
+    "description": "Zoho Vault stores passwords and passkeys with client-side AES-256 encryption and adds team sharing, user roles, access reports and SSO on paid plans. There is a free plan, and the paid Standard plan costs $0.90 per user per month billed annually ($1 billed monthly).",
+    "pros": [
+      "Free plan includes unlimited passwords, passkeys, storage and devices",
+      "Standard plan costs $0.90 per user per month billed annually",
+      "Enterprise adds Active Directory provisioning, SSO for cloud apps, request-release access workflows and SIEM integration",
+      "Zoho's SOC 2 + HIPAA Type 2 report lists Zoho Vault among covered products"
+    ],
+    "cons": [
+      "Group management, folder sharing and breached password alerts start on Professional, which needs at least 5 users",
+      "No native Linux desktop app; Linux is supported only through the CLI and browser extensions",
+      "File attachments are capped at 2 MB each"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free Forever: unlimited passwords, passkeys and storage, unlimited devices, autofill, passwordless unlock, password generator, security dashboard, offline access, built-in 2FA authenticator, folders, mobile apps, browser extensions and desktop apps. Basic email-only support.",
+    "trial": "15-day free trial (Enterprise features, up to 5 users), no credit card required; the account moves to the Free plan if you don't upgrade.",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free forever; email-only support."
+      },
+      {
+        "name": "Standard",
+        "monthly": 1,
+        "annual": 0.9,
+        "custom": false,
+        "notes": "Per user per month. Adds team password sharing, one-time sharing with third parties, TOTP sharing, passkey management, user roles, admin controls, IP restriction, Google Workspace/Microsoft 365 integration and priority support."
+      },
+      {
+        "name": "Professional",
+        "monthly": 5,
+        "annual": 4.5,
+        "custom": false,
+        "notes": "Per user per month, minimum 5 users. Adds user groups, folder sharing, SecureForms (3 active forms per user), break-glass emergency access, 10 webhooks, CLI, breached password alerts, geolocation restriction, Azure and Google user sync."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 8,
+        "annual": 7.2,
+        "custom": false,
+        "notes": "Per user per month, minimum 5 users. Adds Active Directory integration, SSO for cloud apps, request-release workflow, Okta/OneLogin integration, help desk and SIEM integration, rebranding, unlimited webhooks."
+      },
+      {
+        "name": "Flex",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom volume-based pricing via sales, with tailored onboarding and extended trials for large deployments."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android",
+      "Browser extensions",
+      "Web"
+    ],
+    "founded": "1996",
+    "hq": null,
+    "integrations": "Google Workspace, Microsoft 365, Azure AD, Okta, OneLogin, Active Directory/LDAP, SAML 2.0, help desk and SIEM tools, webhooks, CLI; Zoho Mail, Desk, Projects and Flow",
+    "compliance": [
+      "SOC 2 + HIPAA Type 2 (Zoho report naming Zoho Vault)",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Email (Free)",
+      "Priority email, phone and remote assistance (paid plans)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Zoho Vault pricing page (prices render in the visitor's local currency; INR figures shown on the page matched the pricing data file)",
+        "url": "https://www.zoho.com/vault/pricing.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Vault pricing data file loaded by the pricing page (USD monthly and yearly prices)",
+        "url": "https://www.zohowebstatic.com/sites/zweb/json/pricing/vault-pricing-val.json",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Vault apps download page",
+        "url": "https://www.zoho.com/vault/password-manager-application-download.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Vault security page",
+        "url": "https://www.zoho.com/vault/security.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho compliance page",
+        "url": "https://www.zoho.com/compliance.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho about us (timeline from AdventNet, 1996)",
+        "url": "https://www.zoho.com/aboutus.html",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "sticky-password",
+    "name": "Sticky Password",
+    "category": "password-managers",
+    "website": "https://www.stickypassword.com",
+    "logo": "https://www.stickypassword.com/apple-touch-icon.png",
+    "pricingUrl": "https://www.stickypassword.com/pricing",
+    "tagline": "Czech password manager with cloud or local Wi-Fi sync and a lifetime licence option.",
+    "bestFor": "Individuals who want local Wi-Fi sync or a one-time lifetime licence",
+    "description": "Sticky Password stores passwords and passkeys, autofills logins and lets you sync through its cloud, over local Wi-Fi or manually offline. A free local-only version is available, Premium costs $29.99 per year, and a lifetime Premium licence is $79.99 one-time.",
+    "pros": [
+      "Lifetime Premium licence for a one-time $79.99, including 1 year of Dark Web Monitoring",
+      "Choice of cloud sync, local Wi-Fi sync or manual offline sync",
+      "Premium and Teams include Dark Web Monitoring and breach alerts",
+      "30-day Premium trial with no credit card; Teams trial includes 5 seats"
+    ],
+    "cons": [
+      "Free version has no sync or backup across devices",
+      "No native Linux app; Linux and ChromeOS are supported only via Contactless Connect from a smartphone",
+      "Not open source and cannot be self-hosted"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Sticky Password Free: core password management stays available on the local device, without cloud backup, multi-device sync or priority support. Accounts move to Free when the 30-day Premium trial or a Premium licence ends.",
+    "trial": "30-day free trial of Premium, no credit card (excludes Dark Web Monitoring); Teams trial is 30 days with 5 seats.",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Local device only; no sync, cloud backup or priority support."
+      },
+      {
+        "name": "Premium (1 year)",
+        "monthly": null,
+        "annual": 2.5,
+        "custom": false,
+        "notes": "$29.99 per year for one user (shown against a struck-through $39.99). Includes Dark Web Monitoring for the subscription. No monthly billing."
+      },
+      {
+        "name": "Premium Lifetime",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "One-time $79.99 (shown against a struck-through $199.99). Never expires; includes 1 year of Dark Web Monitoring ($12 value), renewable separately.",
+        "oneTime": 79.99
+      },
+      {
+        "name": "Premium for teams",
+        "monthly": null,
+        "annual": 2.5,
+        "custom": false,
+        "notes": "$29.99 per user per year. Adds an admin console; includes Dark Web Monitoring. Up to 100 seats can be ordered online; larger orders through support."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "founded": "2001",
+    "hq": "Brno, Czech Republic",
+    "integrations": null,
+    "compliance": [],
+    "support": [
+      "Help center",
+      "Discussion board",
+      "Priority support for Premium users (typically within 24 hours on workdays)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Sticky Password pricing page",
+        "url": "https://www.stickypassword.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password help: Premium for teams",
+        "url": "https://www.stickypassword.com/help/sticky-password-for-teams-1129",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password help: what happens when Premium expires",
+        "url": "https://www.stickypassword.com/help/what-will-happen-to-my-data-when-my-premium-license-expires-142",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password help: how to get Sticky Password Free",
+        "url": "https://www.stickypassword.com/help/how-can-i-get-sticky-password-free-29",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password: operating systems and browsers",
+        "url": "https://www.stickypassword.com/operating-systems-and-browsers",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password: passkeys",
+        "url": "https://www.stickypassword.com/passkeys",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password: synchronization and backup",
+        "url": "https://www.stickypassword.com/synchronization-and-backup",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password: Dark Web Monitoring",
+        "url": "https://www.stickypassword.com/dark-web-monitoring",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password contact page (Lamantine Software, Brno)",
+        "url": "https://www.stickypassword.com/contact",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "nordpass-business",
+    "name": "NordPass Business",
+    "category": "password-managers",
+    "website": "https://nordpass.com/business-password-manager/",
+    "logo": "https://nordpass.com/next/favicon/favicon.ico",
+    "pricingUrl": "https://nordpass.com/plans/business/",
+    "tagline": "Business edition of NordPass with an admin panel, shared folders, breach scanning and SSO.",
+    "bestFor": "Small and mid-sized companies that want a low-cost managed password manager",
+    "description": "NordPass Business is the business edition of the NordPass password manager, sold as Teams, Business and Enterprise plans with an organization admin panel, password policies and activity logs. Teams starts at $1.99 per user per month on a 1-year plan, sold only as a 10-user pack.",
+    "pros": [
+      "Teams costs $1.99 per user per month on a 1-year plan ($1.79 on a 2-year plan)",
+      "Email masking, MFA, offline mode and Google Workspace SSO are included on every plan",
+      "Business and Enterprise users get a free personal Premium plan",
+      "14-day free Business trial with no credit card required"
+    ],
+    "cons": [
+      "Teams is sold only as a 10-user pack and lacks shared folders, password health and the Data Breach Scanner",
+      "Entra ID and Okta SSO and provisioning, Activity Log API and Splunk/Sentinel integrations are Enterprise only",
+      "Not open source and cannot be self-hosted"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free Business trial, no credit card required.",
+    "minSeats": 5,
+    "plans": [
+      {
+        "name": "Teams",
+        "monthly": 2.49,
+        "annual": 1.99,
+        "custom": false,
+        "notes": "Per user per month; sold only as a 10-user pack. 2-year plan: $1.79/user/month. Includes autofill, sharing, email masking, MFA, offline access, activity monitoring, Google Workspace SSO."
+      },
+      {
+        "name": "Business",
+        "monthly": 5.99,
+        "annual": 3.99,
+        "custom": false,
+        "notes": "Per user per month, minimum 5 users. 2-year plan: $3.59/user/month. Adds group and folder sharing, password health, Data Breach Scanner for 1 domain, Vanta integration, free personal Premium for users."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 7.99,
+        "annual": 5.99,
+        "custom": false,
+        "notes": "Per user per month, minimum 5 users. 2-year plan: $5.39/user/month. Adds Sharing Hub, Entra ID and Okta SSO and provisioning, network allowlist, Activity Log API, Splunk and Microsoft Sentinel, breach scanning for up to 10 domains, dedicated customer success manager."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": true,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "founded": "2019",
+    "hq": null,
+    "integrations": "SSO with Google Workspace (all plans), Entra ID and Okta SSO and user/group provisioning (Enterprise); Vanta (Business+); Splunk and Microsoft Sentinel (Enterprise); CLI",
+    "compliance": [
+      "ISO 27001",
+      "SOC 2 Type 2",
+      "HIPAA",
+      "Cure53 audit",
+      "SSO/SAML via Entra ID and Okta (Enterprise)"
+    ],
+    "support": [
+      "24/7 live support",
+      "Help center",
+      "Customized onboarding and training (Enterprise)",
+      "Dedicated customer success manager (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "NordPass Business plans page (2-year, 1-year and 1-month tabs; prices in USD excluding VAT)",
+        "url": "https://nordpass.com/plans/business/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "NordPass download page for Chrome (passkeys, email masking, Data Breach Scanner)",
+        "url": "https://nordpass.com/download/chrome/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "NordPass download page for Linux",
+        "url": "https://nordpass.com/download/linux/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: NordPass (launched 2019)",
+        "url": "https://en.wikipedia.org/wiki/NordPass",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "PR Newswire: NordVPN releases NordPass (Nov 2019)",
+        "url": "https://prnewswire.com/news-releases/nordvpn-officially-releases-its-new-password-manager-nordpass-300966182.html",
+        "date": "2019-11-27"
+      }
+    ]
+  },
+  {
+    "slug": "psono",
+    "name": "Psono",
+    "category": "password-managers",
+    "website": "https://psono.com",
+    "logo": "https://psono.com/favicon-32x32.png",
+    "pricingUrl": "https://psono.com/#pricing",
+    "tagline": "Open-source, self-hosted password manager for companies, with a hosted SaaS option.",
+    "bestFor": "Companies that want to self-host an open-source password manager",
+    "description": "Psono is an Apache-2.0 open-source password manager with client-side encryption that companies can run on their own servers or use as a hosted service. The Community Edition is free with unlimited users, the business edition is free up to 10 users, and larger companies pay $3 per user per month billed annually (minimum 25 users).",
+    "pros": [
+      "Community Edition is free and open source with unlimited users, self-hosted or on the free hosted psono.pw",
+      "Business features (LDAP, SAML and OIDC SSO, audit logging, policies) are free for up to 10 users when self-hosted",
+      "Native desktop apps for Windows, macOS and Linux (AppImage, APT and RPM)",
+      "Stores and shares passkeys; includes SSH/RDP/VNC gateway on business editions"
+    ],
+    "cons": [
+      "Paid business editions are billed annually with a 25-user minimum",
+      "Professional support and SLAs are quote-only; standard plans get basic support",
+      "No email aliases, and the hosted business edition lists SAML and OIDC SSO but not LDAP"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Self-hosted Community Edition: free, open source, unlimited users. Self-hosted business edition: free for up to 10 users with the complete feature set. Hosted Community edition at psono.pw: free, including hosting and updates.",
+    "trial": null,
+    "minSeats": 25,
+    "plans": [
+      {
+        "name": "Community Edition (self-hosted)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free and open source, unlimited users; password generator, sharing, MFA; basic support."
+      },
+      {
+        "name": "Enterprise Edition, up to 10 users (self-hosted)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free for up to 10 users with the complete business feature set: LDAP, SAML and OIDC SSO, audit logging, policies, compliance enforcement, SSH/RDP/VNC gateway."
+      },
+      {
+        "name": "Enterprise Edition (self-hosted)",
+        "monthly": null,
+        "annual": 3,
+        "custom": false,
+        "notes": "$3 per user per month, billed annually, minimum 25 users; purchased through sales. Extended support option quoted separately."
+      },
+      {
+        "name": "SaaS Community",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Community feature set hosted free at psono.pw, including hosting and updates."
+      },
+      {
+        "name": "SaaS Business",
+        "monthly": null,
+        "annual": 3.5,
+        "custom": false,
+        "notes": "$3.50 per user per month, billed annually, minimum 25 users; hosted business edition with SAML and OIDC SSO, audit logging, policies, gateway; purchased through sales."
+      }
+    ],
+    "features": {
+      "openSource": true,
+      "passkeys": true,
+      "selfHost": true,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions",
+      "Web"
+    ],
+    "founded": null,
+    "hq": "Vorra, Germany",
+    "integrations": "LDAP, SAML and OIDC SSO; SSH/RDP/VNC gateway; API keys and callbacks; psono-ci command-line client",
+    "compliance": [],
+    "support": [
+      "Basic support",
+      "Extended support and SLAs (by quote)",
+      "Discord community"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Psono homepage pricing section (On Premise and SaaS tabs)",
+        "url": "https://psono.com/#pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Psono docs: features",
+        "url": "https://doc.psono.com/user/getting-started/features.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Psono download page",
+        "url": "https://psono.com/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "GitLab: psono-server (Apache License 2.0)",
+        "url": "https://gitlab.com/psono/psono-server",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "passbolt",
+    "name": "Passbolt",
+    "category": "password-managers",
+    "website": "https://www.passbolt.com",
+    "logo": "https://www.passbolt.com/favicon.ico",
+    "pricingUrl": "https://www.passbolt.com/pricing",
+    "tagline": "Open-source team password manager from Luxembourg, self-hosted or cloud-hosted in the EU.",
+    "bestFor": "IT teams that want an open-source, self-hosted password manager for sharing credentials",
+    "description": "Passbolt is an AGPLv3 open-source password manager built for teams, with granular sharing, groups, role-based access control and a browser-extension-based client. The self-hosted Community Edition is free, and Pro (self-hosted) or Cloud Business costs $4.90 per user per month billed annually, with a 10-user minimum.",
+    "pros": [
+      "Community Edition is free, open source under AGPLv3, with unlimited users and instances",
+      "Pro adds LDAP/AD provisioning, SSO with Microsoft, Google, OpenID and AD FS, SCIM and account recovery",
+      "Cloud plans are hosted in the EU (Belgium/Germany, or Luxembourg on Sovereign)",
+      "Source code audited by Cure53 and a SOC 2 Type II audit completed in 2021"
+    ],
+    "cons": [
+      "Paid editions require at least 10 users",
+      "Passkey storage has not shipped; only WebAuthn as a login second factor (v5.17)",
+      "Desktop app is Windows only, and the web client needs the browser extension"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Community Edition (self-hosted): free forever, unlimited users and instances, password and folder sharing, users and groups, RBAC, browser extensions, CLI and open API; community support only.",
+    "trial": "7-day free trial of Cloud Business.",
+    "minSeats": 10,
+    "plans": [
+      {
+        "name": "Community (self-hosted)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free, unlimited users; community support only."
+      },
+      {
+        "name": "Pro (self-hosted)",
+        "monthly": null,
+        "annual": 4.9,
+        "custom": false,
+        "notes": "Per user per month billed annually, minimum 10 users; volume discounts after 100 users. EUR price €4.50. Email support with next-business-day SLA. After expiry Pro keeps working but without updates or support."
+      },
+      {
+        "name": "Enterprise (self-hosted)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom quote; unlimited users and instances, 4-hour business-hours SLA with phone, email and Slack support, HA/DR consulting."
+      },
+      {
+        "name": "Cloud Business",
+        "monthly": 5.4,
+        "annual": 4.9,
+        "custom": false,
+        "notes": "Per user per month, minimum 10 users (EUR €5 monthly, €4.50 annual). Multi-tenant hosting in Belgium and Germany (GCP); email support, next-business-day SLA; 7-day free trial."
+      },
+      {
+        "name": "Cloud Sovereign",
+        "monthly": null,
+        "annual": 8,
+        "custom": false,
+        "notes": "Per user per month billed annually in advance, minimum 10 users (EUR €7); hosted in Luxembourg; adds LDAP/AD provisioning and action logs; bought through sales."
+      },
+      {
+        "name": "Cloud Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom yearly quote; isolated container hosting in Luxembourg, custom domain and SSL, automated backups, phone and Slack support, 4-hour SLA."
+      }
+    ],
+    "features": {
+      "openSource": true,
+      "passkeys": false,
+      "selfHost": true,
+      "emailAliases": false,
+      "breachMonitoring": false
+    },
+    "platforms": [
+      "Windows",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "founded": "2016",
+    "hq": "Belvaux, Luxembourg",
+    "integrations": "LDAP/Active Directory provisioning, SSO with Microsoft, Google, OpenID and AD FS, SCIM, syslog output, CLI, open API",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR audit (Examin)",
+      "Cure53 security audits"
+    ],
+    "support": [
+      "Community (Community Edition)",
+      "Email with next-business-day SLA (Pro, Cloud Business, Sovereign)",
+      "Phone and Slack with 4-hour SLA (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Passbolt pricing page (self-hosted editions)",
+        "url": "https://www.passbolt.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt cloud pricing page",
+        "url": "https://www.passbolt.com/pricing/cloud",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt download page",
+        "url": "https://www.passbolt.com/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt about page",
+        "url": "https://www.passbolt.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt security page",
+        "url": "https://www.passbolt.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt community: PB-33600 passkey support (staff update 2026-10-20)",
+        "url": "https://community.passbolt.com/t/pb-33600-passkey-support/7710?page=2",
+        "date": "2026-11-21"
+      }
+    ]
+  }
+]

@@ -45,6 +45,36 @@
         "rule": {
           "platform": "iOS"
         }
+      },
+      {
+        "slug": "free-ai-note-takers-with-unlimited-recordings",
+        "name": "Free AI Note Takers with Unlimited Recordings",
+        "singular": "free AI note taker with unlimited recordings",
+        "intro": "Most free AI note-taker plans cap you at a few meetings or a few hundred minutes a month. These free plans do not cap how many meetings you record, though they may still limit AI features, meeting length or how long notes are kept, so check each free plan.",
+        "ruleText": "The free plan does not limit the number of meetings or recordings.",
+        "rule": {
+          "feature": "unlimitedFreeRecordings"
+        }
+      },
+      {
+        "slug": "ai-note-takers-for-mac",
+        "name": "AI Note Takers for Mac",
+        "singular": "AI note taker for Mac",
+        "intro": "These AI note takers ship a native macOS app. A desktop app can capture meetings from your computer audio, so some of them take notes without a bot joining the call.",
+        "ruleText": "Has a native macOS app.",
+        "rule": {
+          "platform": "macOS"
+        }
+      },
+      {
+        "slug": "ai-note-takers-for-sales-teams",
+        "name": "AI Note Takers for Sales Teams",
+        "singular": "AI note taker for sales teams",
+        "intro": "Sales teams need call notes in the CRM, not in another inbox. Every tool here can send meeting notes to a CRM such as HubSpot or Salesforce. Which CRMs are supported, and on which plan, differs, so check before you buy.",
+        "ruleText": "Syncs meeting notes to a CRM (for example HubSpot or Salesforce).",
+        "rule": {
+          "feature": "crmSync"
+        }
       }
     ]
   },
@@ -85,6 +115,36 @@
           "maxMinSeats": 1,
           "freePlan": true
         }
+      },
+      {
+        "slug": "project-management-software-with-time-tracking",
+        "name": "Project Management Software with Time Tracking",
+        "singular": "project management tool with time tracking",
+        "intro": "These project management tools track time natively, so you can log hours against tasks without a separate app. Some include it on every plan and others only on higher tiers, so check the plan you need.",
+        "ruleText": "Has native time tracking (not only through an integration or paid add-on).",
+        "rule": {
+          "feature": "timeTracking"
+        }
+      },
+      {
+        "slug": "project-management-software-for-linux",
+        "name": "Project Management Software for Linux",
+        "singular": "project management tool for Linux",
+        "intro": "Most project management tools run in the browser on Linux. These also ship a native Linux desktop app.",
+        "ruleText": "Has a native Linux desktop app.",
+        "rule": {
+          "platform": "Linux"
+        }
+      },
+      {
+        "slug": "project-management-software-with-wiki",
+        "name": "Project Management Software with a Built-In Wiki",
+        "singular": "project management tool with a built-in wiki",
+        "intro": "A built-in docs or wiki space keeps specs, meeting notes and how-tos next to the tasks they describe, so you do not need a separate tool such as Confluence.",
+        "ruleText": "Includes built-in docs or a wiki.",
+        "rule": {
+          "feature": "docsWiki"
+        }
       }
     ]
   },
@@ -124,6 +184,26 @@
         "rule": {
           "freePlan": true,
           "maxEntryPrice": 15
+        }
+      },
+      {
+        "slug": "crm-software-with-built-in-calling",
+        "name": "CRM Software with Built-In Calling",
+        "singular": "CRM with built-in calling",
+        "intro": "These CRMs let reps call from inside the CRM, so calls are logged against the contact automatically. Calling minutes and phone numbers are often billed separately or limited to higher plans.",
+        "ruleText": "Calling or a dialer is built in (not only through a third-party integration).",
+        "rule": {
+          "feature": "builtInCalling"
+        }
+      },
+      {
+        "slug": "crm-software-for-mac",
+        "name": "CRM Software for Mac",
+        "singular": "CRM for Mac",
+        "intro": "Every CRM here works in the browser, and these also ship a native macOS desktop app.",
+        "ruleText": "Has a native macOS desktop app.",
+        "rule": {
+          "platform": "macOS"
         }
       }
     ]
@@ -173,6 +253,26 @@
         "ruleText": "Includes email aliases or email masking.",
         "rule": {
           "feature": "emailAliases"
+        }
+      },
+      {
+        "slug": "open-source-password-managers",
+        "name": "Open-Source Password Managers",
+        "singular": "open-source password manager",
+        "intro": "These password managers publish their source code under an open-source licence, so anyone can audit how your vault is encrypted. Several also let you host the server yourself.",
+        "ruleText": "Source code is published under an open-source licence.",
+        "rule": {
+          "feature": "openSource"
+        }
+      },
+      {
+        "slug": "self-hosted-password-managers",
+        "name": "Self-Hosted Password Managers",
+        "singular": "self-hosted password manager",
+        "intro": "With these password managers you decide where the vault lives: on your own server, or only on your own devices and your own cloud storage. Some offer this on every plan and others only on enterprise plans.",
+        "ruleText": "You can host the server or vault yourself (any plan).",
+        "rule": {
+          "feature": "selfHost"
         }
       }
     ]

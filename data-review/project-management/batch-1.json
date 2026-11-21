@@ -1,0 +1,545 @@
+[
+  {
+    "slug": "jira",
+    "name": "Jira",
+    "category": "project-management-software",
+    "website": "https://www.atlassian.com/software/jira",
+    "logo": "https://www.atlassian.com/favicon.ico",
+    "pricingUrl": "https://www.atlassian.com/software/jira/pricing",
+    "tagline": "Atlassian's work tracking tool for planning, tracking and releasing software with boards, backlogs and timelines.",
+    "bestFor": "Software teams running Scrum or Kanban",
+    "description": "Jira tracks work items on Scrum and Kanban boards, backlogs, lists, timelines and calendars, with rule-based automation and built-in time logging. The Free plan covers up to 10 users, and Standard costs $9.70 per user per month on monthly billing.",
+    "pros": [
+      "Free plan for up to 10 users with 2 GB of storage and 150 automation steps per month",
+      "Rovo Search, Chat and Agents are included on every paid plan (25, 70 or 150 credits per user per month)",
+      "Monthly per-user price is graduated and drops above 100 users (Standard $8.20 for users 101-250)",
+      "Integrations with 3,000+ tools listed on the pricing page"
+    ],
+    "cons": [
+      "The Free plan does not include Rovo AI",
+      "No built-in wiki; Confluence is a separate Atlassian product",
+      "SSO, SCIM and Active Directory sync require a separate Atlassian Guard Standard subscription"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free forever for up to 10 users, 2 GB file storage, 150 automation steps per subscription per month, community support. Rovo AI not included.",
+    "trial": "14-day trial (Standard); 30-day trial (Premium)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 10 users, 2 GB storage, 150 automation steps per month, community support."
+      },
+      {
+        "name": "Standard",
+        "monthly": 9.7,
+        "annual": 7.92,
+        "custom": false,
+        "notes": "Monthly: $9.70 per user for users 1-100, then graduated ($8.20 for 101-250, $6.85 for 251-1,000). Annual is sold in user bands: $950/year for up to 10 users (about $7.92 per user per month); $9,700/year for 51-100 users. 250 GB storage, 400 automation steps per user per month, 25 Rovo credits per user per month, 9/5 regional support. Up to 100,000 users per site. Prices from Atlassian's catalog dated 13-10-2026."
+      },
+      {
+        "name": "Premium",
+        "monthly": 19.6,
+        "annual": 16.25,
+        "custom": false,
+        "notes": "Monthly: $19.60 per user for users 1-100, then graduated ($14.65 for 101-250). Annual: $1,950/year for up to 10 users (about $16.25 per user per month). Unlimited storage, 750 automation steps per user per month, 70 Rovo credits per user per month, cross-team planning, 24/7 support for critical issues, 99.9% uptime SLA."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales; listed for 801 to 100,000 users. 1,000 automation steps per user per month, 150 Rovo credits per user per month, multiple sites (up to 150), data residency, 24/7 support for all issues, 99.95% uptime SLA."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": false,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2002",
+    "hq": "San Francisco, USA",
+    "integrations": "3,000+ integrations; Rovo MCP Server connects Jira to Claude, ChatGPT, Cursor and VS Code",
+    "compliance": [],
+    "support": [
+      "Atlassian Community (Free)",
+      "9/5 regional support (Standard)",
+      "24/7 support for critical issues (Premium)",
+      "24/7 support for all issues (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Jira pricing page (incl. embedded plan catalog and Rovo FAQ)",
+        "url": "https://www.atlassian.com/software/jira/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Atlassian support: log time on a work item",
+        "url": "https://support.atlassian.com/jira-software-cloud/docs/log-time-on-an-issue/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Atlassian company page (history)",
+        "url": "https://www.atlassian.com/company",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Atlassian Form 10-K FY2026 (principal executive offices)",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001650372/000165037226000036/team-20260630.htm",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "wrike",
+    "name": "Wrike",
+    "category": "project-management-software",
+    "website": "https://www.wrike.com",
+    "logo": "https://www.wrike.com/tp/static/favicon.ico",
+    "pricingUrl": "https://www.wrike.com/price/",
+    "tagline": "Work management platform with Gantt charts, dashboards, request forms and AI agents for cross-team projects.",
+    "bestFor": "Mid-size and enterprise teams managing cross-department workflows",
+    "description": "Wrike combines task and project management with board, table and interactive Gantt views, dashboards and AI features, with resource planning and budgeting on higher tiers. A Free plan is available, and the Team plan costs $10 per user per month billed annually.",
+    "pros": [
+      "Team plan includes AI Essentials (AI content and editing, comment summaries, board AI, natural-language automation rule generation)",
+      "Interactive Gantt charts and shareable dashboards from the $10 Team plan",
+      "SOC2 Type II, ISO 27001:2013, ISO 27018:2019 and CSA STAR listed",
+      "Option to host data in Wrike's EU data center in Paris"
+    ],
+    "cons": [
+      "Business and higher plans are sold only as annual subscriptions, and no monthly-billing price is published for Team",
+      "Time tracking is listed only from the custom-priced Pinnacle plan",
+      "Seats are sold in groups of five for accounts up to 30 seats"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: web, desktop and mobile apps, project and task management, board and table views. No user, storage or task limits are stated on the pricing page.",
+    "trial": "14-day trial",
+    "minSeats": 2,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Project and task management, board and table views; no AI listed."
+      },
+      {
+        "name": "Team",
+        "monthly": null,
+        "annual": 10,
+        "custom": false,
+        "notes": "Per user per month, billed annually; 2 to 15 users. AI Essentials, shareable dashboards, interactive Gantt charts. No monthly-billing price published. Seats sold in groups of five up to 30 seats."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 25,
+        "custom": false,
+        "notes": "Per user per month, annual subscription only; 5 to 200 users. Starter pack of AI Elite actions, templates, standard integration."
+      },
+      {
+        "name": "Pinnacle",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. 3x more AI Elite actions, advanced resource and capacity planning with time tracking, budgeting, advanced reporting and BI."
+      },
+      {
+        "name": "Apex",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. 10x more AI Elite actions, unlimited Whiteboards, Wrike Integrate and Wrike Sync included. Pricing valid for new purchases on or after January 21, 2026."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": null,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2006",
+    "hq": "San Diego, USA",
+    "integrations": "Wrike Integrate (no-code automations, add-on) and Wrike Two-Way Sync with 22 systems (add-on); both included in Apex",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001:2013",
+      "ISO 27018:2019",
+      "CSA STAR",
+      "GDPR",
+      "CCPA"
+    ],
+    "support": [],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Wrike pricing page and FAQ",
+        "url": "https://www.wrike.com/price/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wrike about page",
+        "url": "https://www.wrike.com/about/",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "basecamp",
+    "name": "Basecamp",
+    "category": "project-management-software",
+    "website": "https://basecamp.com",
+    "logo": "https://basecamp.com/favicon.ico",
+    "pricingUrl": "https://basecamp.com/pricing",
+    "tagline": "37signals' flat-priced project management app with to-dos, message boards, card tables, chat and docs in each project.",
+    "bestFor": "Small businesses and agencies that want flat pricing with no per-user fees",
+    "description": "Basecamp puts to-dos, message boards, Kanban-style card tables, chat, calendars and docs and files inside each project, with a cross-project timeline called the Lineup. A free one-project plan is available, and paid packages start at $29 per month flat for up to 5 users.",
+    "pros": [
+      "Flat package prices with no per-user fees; Pro Unlimited includes unlimited users for $199 per month billed annually",
+      "Every package includes message boards, to-dos, card tables, chat, calendar, docs and files, and automatic check-ins",
+      "ChatGPT and Claude AI connectors with MCP support included on every package, including Free",
+      "Free for K-12, homeschool and university class work; 10% off for registered 501(c)(3) nonprofits"
+    ],
+    "cons": [
+      "Time tracking only on Pro Plus ($99/month) and Pro Unlimited",
+      "Freelancer, Pro and Pro Plus cap active projects (3, 8 and 12) and users (5, 10 and 15)",
+      "No Gantt chart or rule-based automations listed"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "One project at a time, 1 GB storage, up to 3 users; no templates, multiple tools per project or time tracking. No credit card required.",
+    "trial": "30-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "1 project, 1 GB storage, 3 users max."
+      },
+      {
+        "name": "Freelancer",
+        "monthly": 29,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat $29 per month for the whole account (not per user), up to 5 users. 3 active projects, 10 GB storage, 24/7/365 support. No templates, multiple tools per project, time tracking or annual billing."
+      },
+      {
+        "name": "Pro",
+        "monthly": 79,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat $79 per month, up to 10 users. 8 active projects, 25 GB storage, multiple tools per project, project templates. No time tracking or annual billing."
+      },
+      {
+        "name": "Pro Plus",
+        "monthly": 99,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat $99 per month, up to 15 users. 12 active projects, 100 GB storage, time tracking. No annual billing."
+      },
+      {
+        "name": "Pro Unlimited",
+        "monthly": null,
+        "annual": 199,
+        "custom": false,
+        "notes": "Flat $199 per month billed annually for the whole account; unlimited users and projects, 1 TB storage (extra 1 TB for $50/month), enhanced admin controls, priority 24/7/365 support, personalized onboarding. Annual billing by check, ACH, wire or card. Note: the pricing page FAQ still mentions $329/month for Pro Unlimited, which conflicts with the listed $199."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": false,
+      "timeTracking": true,
+      "aiIncluded": null
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2004",
+    "hq": "Chicago, USA",
+    "integrations": "ChatGPT and Claude AI connectors with MCP support; bring-your-own AI agents via CLI",
+    "compliance": [],
+    "support": [
+      "24/7/365 support (paid packages)",
+      "Priority 24/7/365 support and personalized onboarding (Pro Unlimited)",
+      "Learning library"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Basecamp pricing page",
+        "url": "https://basecamp.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Basecamp features page (Lineup, Hill Charts, Docs & Files)",
+        "url": "https://basecamp.com/features",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Basecamp apps page",
+        "url": "https://basecamp.com/via",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Basecamp press page (2004 launch)",
+        "url": "https://basecamp.com/press",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: 37signals (Chicago)",
+        "url": "https://en.wikipedia.org/wiki/37signals",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "smartsheet",
+    "name": "Smartsheet",
+    "category": "project-management-software",
+    "website": "https://www.smartsheet.com",
+    "logo": "https://www.smartsheet.com/sites/default/files/favicons/favicon-32x32.png",
+    "pricingUrl": "https://www.smartsheet.com/pricing",
+    "tagline": "Spreadsheet-style work management platform with Gantt, board, calendar and timeline views, automations and dashboards.",
+    "bestFor": "Teams that plan projects in spreadsheet-style sheets",
+    "description": "Smartsheet manages projects in spreadsheet-style sheets with Gantt, table, board and calendar views, automated workflows, forms, reports and dashboards, plus built-in AI tools. There is no free plan; Pro costs $9 per member per month billed yearly or $12 billed monthly.",
+    "pros": [
+      "AI tools (Smart Assist, Smart Columns, AI dashboard builder, formula generation) included on every plan",
+      "Unlimited free Contributors on Pro and unlimited Guests from Business",
+      "Business includes unlimited automations, timeline view, workload tracking and 1 TB of storage",
+      "Lists SOC 2, ISO 27001, ISO 27701, ISO 42001 and FedRAMP"
+    ],
+    "cons": [
+      "No free plan; only a 30-day trial",
+      "Pro is capped at 10 Members, has 250 automations per month and no timeline view, and is only available to new customers",
+      "Time and expense tracking needs the Resource Management add-on, which is not available on Pro"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Pro",
+        "monthly": 12,
+        "annual": 9,
+        "custom": false,
+        "notes": "Per Member per month; 1-10 Members, unlimited Contributors. 20 GB storage, 250 automations per month, Gantt (no timeline view). Only available to new customers."
+      },
+      {
+        "name": "Business",
+        "monthly": 24,
+        "annual": 19,
+        "custom": false,
+        "notes": "Per Member per month; minimum 3 Members, unlimited Guests and Contributors. 1 TB storage, unlimited automations, timeline view, workload tracking, connect to external AI tools."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing; 10+ Members. Unlimited storage, SAML-based SSO, directory integrations, enterprise access controls; HIPAA BAA available."
+      },
+      {
+        "name": "Advanced Work Management",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing. Enterprise plus Advanced Portfolios, Dynamic View, Data Shuttle, Connectors, DataMesh, Pivot App, Premium Support."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": null,
+      "automations": true,
+      "timeTracking": false,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2005",
+    "hq": "Bellevue, USA",
+    "integrations": "Microsoft 365, Google Workspace and Slack on all plans; Power BI, Tableau, Claude, ChatGPT, Microsoft Copilot and Gemini Enterprise from Business; nearly 100 more",
+    "compliance": [
+      "SOC 2",
+      "ISO 27001",
+      "ISO 27701",
+      "ISO 42001",
+      "FedRAMP",
+      "HIPAA BAA (Enterprise)",
+      "GDPR",
+      "SSO (all plans)",
+      "SAML SSO (Enterprise+)"
+    ],
+    "support": [
+      "Help & Learning content",
+      "Smartsheet Community",
+      "Web-based ticketing",
+      "Standard Support Package (add-on on Business, included on Enterprise)",
+      "Premium Support Package (add-on; included in Advanced Work Management)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Smartsheet pricing page",
+        "url": "https://www.smartsheet.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Smartsheet Trust Center",
+        "url": "https://www.smartsheet.com/trust",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Smartsheet about page",
+        "url": "https://www.smartsheet.com/about",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "teamwork",
+    "name": "Teamwork.com",
+    "category": "project-management-software",
+    "website": "https://www.teamwork.com",
+    "logo": "https://cdn-website.teamwork.com/offload/app/uploads/2019/03/04183535/cropped-favicon-32x32.png",
+    "pricingUrl": "https://www.teamwork.com/pricing/",
+    "tagline": "Project management and professional services automation for client work, with time tracking, budgets and AI agents.",
+    "bestFor": "Agencies and client-services teams that bill for their time",
+    "description": "Teamwork.com manages client projects with Gantt, table, list and board views, time tracking, budgets, invoicing, resource planning and automations, plus built-in AI agents. A free plan covers up to 5 users, and Basics costs $9.99 per user per month billed yearly or $13.99 monthly.",
+    "pros": [
+      "Every paid plan includes a monthly AI credit allowance (1,000 on Basics, 2,500 on Accelerate, 7,500 on Optimize)",
+      "Billable vs non-billable time tracking on every plan, including Free",
+      "Client users can be invited into projects from Basics",
+      "US or EU data hosting and SOC 2 compliance on every plan"
+    ],
+    "cons": [
+      "Minimum of 3 users on Basics and 5 on Accelerate",
+      "Timesheets, time budgets and invoicing start on Accelerate ($24.99 per user per month yearly)",
+      "Free plan is limited to 5 users, 5 projects and 100 MB of storage"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 5 users and 5 projects, 100 MB storage, 100 automations, 2 project templates, Gantt/table/list/board views, billable vs non-billable time tracking. No credit card required.",
+    "trial": "14-day trial",
+    "minSeats": 3,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Max 5 users, 5 projects, 100 MB storage, 100 automations."
+      },
+      {
+        "name": "Basics",
+        "monthly": 13.99,
+        "annual": 9.99,
+        "custom": false,
+        "notes": "Per user per month; minimum 3 users. 300 projects, 100 GB storage, 5,000 automations, 1,000 AI credits per month (shared), AI agents Scout and Flo. No timesheets."
+      },
+      {
+        "name": "Accelerate",
+        "monthly": 29.99,
+        "annual": 24.99,
+        "custom": false,
+        "notes": "Per user per month; minimum 5 users. 600 projects, 250 GB storage, 20,000 automations, 2,500 AI credits per month, timesheets, time budgets, workload planning, basic invoices."
+      },
+      {
+        "name": "Optimize",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. Unlimited projects, 500 GB storage, 100,000 automations, 7,500 AI credits per month, timesheet approvals, quotes, multi-currency."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. Unlimited projects, 1,000 GB storage, 100,000 automations, custom AI credits, Premium Support with one-hour-or-less response."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2007",
+    "hq": "Cork, Ireland",
+    "integrations": "MCP server for connecting LLMs on all plans; accounting, CRM and chat integrations",
+    "compliance": [
+      "SOC 2",
+      "Two-factor authentication (paid plans)",
+      "US or EU data hosting"
+    ],
+    "support": [
+      "Customer support (all plans)",
+      "Teamwork Helpdocs",
+      "Free expert training",
+      "Premium Support (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Teamwork.com pricing page and FAQ",
+        "url": "https://www.teamwork.com/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Teamwork.com support: using the desktop app",
+        "url": "https://support.teamwork.com/projects/desktop-apps/using-the-teamwork-desktop-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Teamwork.com support: downloading the mobile app",
+        "url": "https://support.teamwork.com/projects/mobile-apps/downloading-the-teamwork-mobile-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Teamwork (project management)",
+        "url": "https://en.wikipedia.org/wiki/Teamwork_(project_management)",
+        "date": "2026-11-21"
+      }
+    ]
+  }
+]

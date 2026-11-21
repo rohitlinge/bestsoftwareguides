@@ -394,6 +394,1099 @@
     ]
   },
   {
+    "slug": "granola",
+    "name": "Granola",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.granola.ai",
+    "logo": "https://www.granola.ai/favicon/favicon-96x96.png",
+    "pricingUrl": "https://www.granola.ai/pricing",
+    "tagline": "Bot-free AI notepad that turns your own meeting notes and device audio into finished notes.",
+    "bestFor": "People in back-to-back meetings who want notes without a bot joining the call",
+    "description": "Granola captures your computer's audio instead of sending a bot, then combines what it heard with the notes you typed to write up the meeting. The Basic plan is free with 30 days of meeting history, and Business costs $14 per user per month.",
+    "pros": [
+      "No bot joins the call; it captures device audio from Zoom, Google Meet, Microsoft Teams, WebEx and Slack huddles",
+      "Free Basic plan has no stated cap on meetings and includes AI chat, shared folders and custom templates",
+      "Business adds HubSpot, Attio, Affinity, Notion and Zapier integrations plus an API and MCP server",
+      "SOC 2 Type II listed on every plan"
+    ],
+    "cons": [
+      "Free Basic plan only shows 30 days of meeting history",
+      "Salesforce integration, HIPAA workspaces and SSO are Enterprise only, and SSO needs 50+ users",
+      "No annual billing price is published"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Basic: AI meeting notes, AI chat across meetings (auto model only), shared folders, custom templates, voice typing; meeting history limited to 30 days. Excludes pre-meeting briefs, follow-up emails, most integrations and API.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "30 days of meeting history; Slack integration only."
+      },
+      {
+        "name": "Business",
+        "monthly": 14,
+        "annual": null,
+        "custom": false,
+        "notes": "Per user per month. Unlimited notes and history, model selection, HubSpot/Attio/Affinity/Notion/Zapier, API and MCP, centralized billing. No annual price published."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 35,
+        "annual": null,
+        "custom": false,
+        "notes": "Per user per month (Granola's llms.txt says $35+). Adds SSO (workspaces with 50+ users), HIPAA workspaces, SCIM, audit API, Salesforce, workspace analytics and admin controls."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": true,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2023",
+    "hq": "London, United Kingdom",
+    "integrations": "Slack, Notion, HubSpot, Attio, Affinity, Zapier, Salesforce (Enterprise), API, MCP",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "HIPAA (Enterprise)",
+      "SSO (Enterprise, 50+ users)"
+    ],
+    "support": [
+      "Help center"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Granola pricing page",
+        "url": "https://www.granola.ai/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Granola llms.txt (company facts)",
+        "url": "https://www.granola.ai/llms.txt",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Granola blog: Granola for Windows",
+        "url": "https://www.granola.ai/blog/granola-for-windows-setup-teams-and-zoom-capture-and-what-it-controls",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "avoma",
+    "name": "Avoma",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.avoma.com",
+    "logo": "https://cdn.prod.website-files.com/5de236b4d41434460ade73ac/5de60e45eee20578cc43a906_Avoma-Icon-Color-256.png",
+    "pricingUrl": "https://www.avoma.com/pricing",
+    "tagline": "AI meeting assistant with transcription, notes, scheduling and add-on conversation and revenue intelligence.",
+    "bestFor": "Sales and customer-success teams that want meeting notes saved to the CRM",
+    "description": "Avoma records and transcribes meetings, writes AI notes, saves them to Salesforce or HubSpot records, and includes a meeting scheduler. Paid plans start at $29 per recorder seat per month, or $19 billed annually, and viewers are free.",
+    "pros": [
+      "Unlimited AI notes and transcription on every paid plan",
+      "Viewers, listeners and collaborators do not need a paid seat",
+      "14-day trial of the Organization plan with all add-ons, no credit card",
+      "SOC 2 Type II and ISO/IEC 42001:2023 certified"
+    ],
+    "cons": [
+      "No free recording plan; after the trial the account can only view past recordings",
+      "Conversation Intelligence and Revenue Intelligence are extra add-ons at $29-$35 per seat per month",
+      "SSO and HIPAA are Enterprise only, which is annual-only with a 10-seat minimum"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free recording plan. Viewer accounts (watch recordings, read notes) are free.",
+    "trial": "14-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Startup",
+        "monthly": 29,
+        "annual": 19,
+        "custom": false,
+        "notes": "Per recorder seat; up to 25 paid seats. Unlimited AI notes and transcription, 1:1 scheduling, dialer integration."
+      },
+      {
+        "name": "Organization",
+        "monthly": 39,
+        "annual": 29,
+        "custom": false,
+        "notes": "Per recorder seat; up to 100 paid seats. Adds custom AI templates, group/round-robin scheduling, API and webhooks."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 39,
+        "custom": false,
+        "notes": "Per recorder seat, annual billing only, minimum 10 paid seats. Adds SSO, HIPAA, data retention policies and a designated success manager. Optional add-ons on any plan, per seat: Conversation Intelligence or Revenue Intelligence $35 monthly / $29 annual each, Lead Router $25 monthly / $19 annual; optional onboarding $1,000 one-time."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Chrome extension"
+    ],
+    "founded": "2017",
+    "hq": "Fremont, USA",
+    "integrations": "Zoom, Microsoft Teams, Google Meet, Webex, GoToMeeting; Salesforce and HubSpot (two-way field updates need the Revenue Intelligence add-on); dialers; API and webhooks (Organization+)",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 42001:2023",
+      "GDPR",
+      "HIPAA (Enterprise)",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Knowledge base",
+      "Live chat",
+      "Email",
+      "Dedicated Slack channel",
+      "Customer success manager (Organization)",
+      "Designated success manager (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Avoma pricing page",
+        "url": "https://www.avoma.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Avoma security page",
+        "url": "https://www.avoma.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Avoma about page",
+        "url": "https://www.avoma.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Avoma llms.txt (company address)",
+        "url": "https://avoma.com/llms.txt",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "krisp",
+    "name": "Krisp",
+    "category": "ai-meeting-note-takers",
+    "website": "https://krisp.ai",
+    "logo": "https://krisp.ai/wp-content/uploads/2023/12/cropped-favicon-1-192x192.png",
+    "pricingUrl": "https://krisp.ai/pricing/",
+    "tagline": "Bot-free AI meeting assistant with built-in noise cancellation, accent conversion and AI notes.",
+    "bestFor": "Remote workers who want noise cancellation and meeting notes in one app",
+    "description": "Krisp captures meeting audio on your device, removes background noise, and produces transcripts and AI notes for Zoom, Google Meet, Microsoft Teams and other apps. There is a 7-day free trial, and Core costs $16 per user per month or $8 billed annually.",
+    "pros": [
+      "Bot-free by default, working at the audio level with any conferencing app; an optional bot is available for Zoom",
+      "Unlimited AI notes, transcription and noise cancellation on Core",
+      "Annual billing halves the per-seat price",
+      "HubSpot, Pipedrive, Affinity, Slack, Notion and Zapier on Core"
+    ],
+    "cons": [
+      "No permanent free plan for Meeting AI, only a 7-day trial",
+      "Salesforce needs Advanced; SSO, SCIM and HIPAA are Enterprise only",
+      "Core limits accent conversion to 1 hour a day and storage to 10 GB"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "7-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Core",
+        "monthly": 16,
+        "annual": 8,
+        "custom": false,
+        "notes": "Per user. Unlimited AI notes, transcription and noise cancellation; 1 hr/day accent conversion; 10 GB storage. A Black Friday code (KRISPBF2026) advertised 55% off annual plans on 2026-11-21."
+      },
+      {
+        "name": "Advanced",
+        "monthly": 30,
+        "annual": 15,
+        "custom": false,
+        "notes": "Per user. 4 hrs/day speaker-side accent conversion, unlimited listener-side; 60 GB storage; Salesforce and ConnectWise; BAA for teams with 100+ seats."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. Unlimited storage, SSO/SCIM, HIPAA, SOC 2 report access, custom limits, dedicated account manager. Volume discounts above 50 seats."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android",
+      "Chrome extension"
+    ],
+    "founded": "2017",
+    "hq": "Berkeley, USA",
+    "integrations": "Slack, Notion, Zapier, Microsoft Teams, HubSpot, Pipedrive, Affinity, MCP, API; Salesforce and ConnectWise (Advanced+)",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "PCI-DSS",
+      "HIPAA (Enterprise; BAA on Advanced for 100+ seats)",
+      "SSO/SCIM (Enterprise)"
+    ],
+    "support": [
+      "24/7 support",
+      "Slack community",
+      "Priority support (Advanced)",
+      "Dedicated account manager (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Krisp pricing page",
+        "url": "https://krisp.ai/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Krisp AI meeting assistant page",
+        "url": "https://krisp.ai/ai-meeting-assistant/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Krisp about page (HQ address)",
+        "url": "https://krisp.ai/about-us/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Krisp (founding year)",
+        "url": "https://en.wikipedia.org/wiki/Krisp",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "meetgeek",
+    "name": "MeetGeek",
+    "category": "ai-meeting-note-takers",
+    "website": "https://meetgeek.ai",
+    "logo": "https://cdn.prod.website-files.com/63af97f08f22087ab0e44f0a/63bce5d78d77f2295530d025_MeetGeek%20Favicon.png",
+    "pricingUrl": "https://meetgeek.ai/pricing",
+    "tagline": "AI meeting assistant that records, transcribes and summarizes meetings in 100+ languages.",
+    "bestFor": "Small teams that want CRM sync and a HIPAA BAA at a low per-seat price",
+    "description": "MeetGeek records Zoom, Google Meet and Microsoft Teams calls through a bot, desktop app, Chrome extension or mobile app, then writes transcripts and AI summaries. The free Basic plan includes 3 transcription hours a month, and Pro costs $15.99 per user per month or $9.99 billed annually.",
+    "pros": [
+      "Free Basic plan includes AI summaries, AI chat and 3 transcription hours a month",
+      "SOC 2 Type II on every plan, and a HIPAA BAA on annual Pro, Business or Enterprise plans",
+      "HubSpot, Salesforce and Pipedrive sync from Pro",
+      "Bot-free desktop app for macOS and Windows plus a Chrome extension and iOS/Android apps"
+    ],
+    "cons": [
+      "Pro is capped at 20 transcription hours a month, with extra hours at $0.50 each",
+      "Free recordings are capped at 2 hours each, with transcripts kept 3 months and audio 1 month",
+      "SSO and SCIM are Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Basic: 3 hours of transcription per month, recordings up to 2 hours, transcripts kept 3 months, audio kept 1 month, AI summaries and AI chat, 100+ languages. No credit card.",
+    "trial": "14-day trial (Business)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "3 transcription hours/month; recording stops when they are used up. 100 API/MCP requests per day."
+      },
+      {
+        "name": "Pro",
+        "monthly": 15.99,
+        "annual": 9.99,
+        "custom": false,
+        "notes": "Per user. 20 transcription hours/month, extra hours $0.50 each; transcripts 1 year, audio 6 months; 2-hour recordings; CRM sync, Zapier/Make/n8n."
+      },
+      {
+        "name": "Business",
+        "monthly": 27,
+        "annual": 17,
+        "custom": false,
+        "notes": "Per user. Unlimited transcription and transcript storage; audio and video kept 12 months; 3-hour recordings; 14-day trial, no credit card."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom quote. SSO and SCIM, zero or custom data retention, on-premise storage options, 4-hour recordings, dedicated onboarding and support."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Chrome extension",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2018",
+    "hq": null,
+    "integrations": "HubSpot, Salesforce, Pipedrive, Zapier, Make, n8n (Pro+); API and MCP; works with Zoom, Google Meet, Microsoft Teams, Webex, Slack and Discord",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "CCPA",
+      "HIPAA (BAA on annual paid plans)",
+      "SSO/SCIM (Enterprise)"
+    ],
+    "support": [
+      "Chat",
+      "Email",
+      "Dedicated onboarding and support (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "MeetGeek pricing page",
+        "url": "https://meetgeek.ai/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "MeetGeek help center: desktop app quickstart (macOS and Windows)",
+        "url": "https://support.meetgeek.ai/en/articles/13745672-meetgeek-desktop-app-quickstart-guide",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "MeetGeek blog author page: Dan Huru (co-founded 2018)",
+        "url": "https://meetgeek.ai/de/blog-author/dan-huru",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "jamie",
+    "name": "Jamie",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.meetjamie.ai",
+    "logo": "https://www.meetjamie.ai/favicon.png",
+    "pricingUrl": "https://www.meetjamie.ai/pricing",
+    "tagline": "Bot-free AI note taker for online and in-person meetings, hosted in the EU.",
+    "bestFor": "European teams that want bot-free notes with EU data hosting",
+    "description": "Jamie runs on your device and records any online platform or in-person meeting without a bot, then writes summaries and action items; data is hosted in Germany. The free plan covers 10 meetings a month up to 30 minutes, and US customers pay $29 per month for Plus, or a reported $24 a month billed annually.",
+    "pros": [
+      "No bot joins the call; works with Zoom, Google Meet, Microsoft Teams, Webex and in-person meetings",
+      "Data hosted and processed in the EU on German servers; GDPR and ISO 27001",
+      "Free plan includes 10 meetings a month and unlimited storage",
+      "Pro and above sync to HubSpot, Salesforce, Attio, Dynamics 365 and Pipedrive"
+    ],
+    "cons": [
+      "Free meetings are capped at 30 minutes each",
+      "SOC 2 Type II is still listed as pending, and no HIPAA or BAA is advertised",
+      "Plus has no CRM integrations and allows 20 meetings a month"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "10 meetings per month, 30-minute limit per meeting, Ask Jamie chat, 1 custom template, 50 custom vocabulary terms, unlimited storage; Google Docs, Notion and OneNote exports.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "10 meetings/month, 30 minutes per meeting."
+      },
+      {
+        "name": "Plus",
+        "monthly": 29,
+        "annual": 24,
+        "custom": false,
+        "notes": "20 meetings/month, 2 hours per meeting. US price; EUR price is 25 EUR monthly or 21 EUR billed annually. Annual USD figure is from a third-party breakdown."
+      },
+      {
+        "name": "Pro (Individual)",
+        "monthly": 55,
+        "annual": 46,
+        "custom": false,
+        "notes": "Unlimited meetings, 5 hours per meeting, CRM integrations. US price; EUR price is 47 EUR monthly or 39 EUR billed annually. Annual USD figure is from a third-party breakdown."
+      },
+      {
+        "name": "Team",
+        "monthly": 45,
+        "annual": 37,
+        "custom": false,
+        "notes": "Per member. Unlimited meetings, 5 hours per meeting, 100 vocabulary terms. US price; EUR price is 39 EUR monthly or 33 EUR billed annually. Annual USD figure is from a third-party breakdown."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing, billed annually, 10+ users. SAML SSO, DPAs, automatic exports to any endpoint, 250 vocabulary terms."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": false,
+      "sso": true
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android",
+      "Web"
+    ],
+    "founded": "2022",
+    "hq": null,
+    "integrations": "HubSpot, Salesforce, Pipedrive, Attio, Dynamics 365, DealCloud (Pro+); Google Docs, Notion, OneNote (all plans)",
+    "compliance": [
+      "GDPR",
+      "ISO 27001",
+      "SOC 2 Type II (pending)",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Email",
+      "Help docs"
+    ],
+    "checked": "2026-11-21",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Jamie pricing page (EUR prices, plan limits)",
+        "url": "https://www.meetjamie.ai/en/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Jamie docs: subscriptions and plans (USD monthly prices)",
+        "url": "https://docs.meetjamie.ai/billing-pricing/subscriptions-plans.md",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Jamie LLM info page (founded, platforms, compliance, integrations)",
+        "url": "https://www.meetjamie.ai/en/blog/llm-info",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Voibe: Jamie Pricing 2026 (USD annual prices, Android app)",
+        "url": "https://www.getvoibe.com/resources/jamie-pricing/",
+        "date": "2026-11-03"
+      }
+    ]
+  },
+  {
+    "slug": "notta",
+    "name": "Notta",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.notta.ai",
+    "logo": "https://www.notta.ai/apple-touch-icon.png",
+    "pricingUrl": "https://www.notta.ai/en/pricing",
+    "tagline": "AI transcription and meeting notes for Zoom, Teams, Google Meet and Webex, plus file uploads and mobile recording.",
+    "bestFor": "Individuals who need cheap multilingual transcription",
+    "description": "Notta records and transcribes online meetings, uploaded files and in-person audio, then writes AI summaries. A free plan includes 120 minutes per month, and Pro costs $8.17 per month billed annually ($97.99 per year).",
+    "pros": [
+      "Pro is $97.99 per year for 1,800 transcription minutes per month",
+      "Business includes unlimited transcription minutes, capped at 5 hours per recording",
+      "Business adds CRM sync with Salesforce, HubSpot, Pipedrive, Zoho CRM and others",
+      "Apps for web, iOS, Android, Mac, Windows and a Chrome extension"
+    ],
+    "cons": [
+      "Free plan caps each recording at 3 minutes and allows 10 AI summaries per month",
+      "SAML SSO is Enterprise only, and Enterprise starts at 51 seats",
+      "Real-time translation and bilingual transcription are paid add-ons ($10 and $15 per month)"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: 1 seat, 120 transcription minutes per month, 3 minutes max per recording, 50 file uploads and 10 AI summaries per month. No credit card required.",
+    "trial": "7-day trial (Business)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "120 minutes/month, 3-minute max per recording, 10 AI summaries/month."
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": 8.17,
+        "custom": false,
+        "notes": "1 seat. $97.99 billed annually. 1,800 minutes/month, 5 hours per recording, 100 file uploads and 100 AI summaries/month. Monthly-billing price was not shown in the pricing page text. 50% education discount."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 16.67,
+        "custom": false,
+        "notes": "Per seat; $199.99 per seat billed annually. Unlimited minutes (5 hours per recording), 200 file uploads and 200 AI summaries/month, CRM and Zapier integrations. Monthly-billing price was not shown in the pricing page text."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "From 51 seats. Adds SAML SSO, unlimited uploads and summaries, priority support."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Chrome extension",
+      "macOS",
+      "Windows"
+    ],
+    "founded": null,
+    "hq": "Tokyo, Japan",
+    "integrations": "Zoom, Microsoft Teams, Google Meet, Webex; Salesforce, HubSpot, Pipedrive, Zoho CRM, Zendesk Sell, Salesflare, Freshsales; Zapier",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001",
+      "GDPR",
+      "CCPA",
+      "HIPAA",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Help Center",
+      "Contact form",
+      "Priority support (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Notta pricing page",
+        "url": "https://www.notta.ai/en/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Notta company page (Notta Co., Ltd., Tokyo address)",
+        "url": "https://www.notta.ai/company",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "sembly",
+    "name": "Sembly",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.sembly.ai",
+    "logo": "https://www.sembly.ai/assets/favicon-32x32.png",
+    "pricingUrl": "https://www.sembly.ai/pricing/",
+    "tagline": "AI meeting notetaker for professional services that turns client calls into notes, tasks and deliverables.",
+    "bestFor": "Agencies and consultancies producing client deliverables from meetings",
+    "description": "Sembly records Zoom, Google Meet, Microsoft Teams and Webex calls, writes notes and uses monthly Studio credits to generate client deliverables. Basic costs $14 per user per month, or $10 billed annually.",
+    "pros": [
+      "Every paid plan includes unlimited meeting hours",
+      "Native automations push meeting notes to HubSpot and Salesforce",
+      "Supports 45+ languages on all plans",
+      "HIPAA compliance and custom SSO are available on MAX ($30 per user per month annually)"
+    ],
+    "cons": [
+      "Free plan is limited to 5 meeting hours in total and 1 month of history",
+      "Basic allows only 1 integration and 1 automation per user",
+      "MAX needs at least 3 users and Enterprise at least 10"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: 1 user, 5 meeting hours in total, 1 month of meeting history and video retention, a one-time bonus of Studio credits (the page lists both 1,500 and 2,500).",
+    "trial": "7-day trial (Basic, Pro, MAX)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "5 meeting hours total, 1 user."
+      },
+      {
+        "name": "Basic",
+        "monthly": 14,
+        "annual": 10,
+        "custom": false,
+        "notes": "1 user. Unlimited meeting hours, 12 months history, 1 integration and 1 automation per user. Monthly Studio credits listed inconsistently on the page (1,500 or 2,500)."
+      },
+      {
+        "name": "Pro",
+        "monthly": 29,
+        "annual": 20,
+        "custom": false,
+        "notes": "Per user, up to 40 users. Unlimited meeting hours, 24 months history, 5 integrations and 5 automations per user. Studio credits listed as 2,500 or 3,000 per month."
+      },
+      {
+        "name": "MAX",
+        "monthly": 39,
+        "annual": 30,
+        "custom": false,
+        "notes": "Per user, 3 to 500 users. 3,500 Studio credits per user per month, unlimited history, HIPAA compliance, custom SSO, audit log."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Minimum 10 users; unlimited users, clients and brand packages; HIPAA and custom SSO."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "macOS"
+    ],
+    "founded": "2019",
+    "hq": "New York, USA",
+    "integrations": "Zoom, Google Meet, Microsoft Teams, Webex; HubSpot and Salesforce automations; Zapier, webhooks, MCP",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "HIPAA (MAX and Enterprise)",
+      "SSO (MAX and Enterprise)"
+    ],
+    "support": [
+      "Email (support@sembly.ai)",
+      "Help Center",
+      "Priority support (higher plans)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Sembly pricing page",
+        "url": "https://www.sembly.ai/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sembly + HubSpot automation",
+        "url": "https://sembly.ai/product/automations/hubspot/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sembly + Salesforce automation",
+        "url": "https://sembly.ai/product/automations/salesforce/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sembly About page (2019 timeline, New York address)",
+        "url": "https://sembly.ai/about-us/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Apple App Store: Sembly AI (iPhone and Mac)",
+        "url": "https://apps.apple.com/us/app/sembly-ai/id1618211441",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "supernormal",
+    "name": "Supernormal",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.supernormal.com",
+    "logo": "https://framerusercontent.com/images/FYt9ZTgFqKhviWcqTh1Qq345RQs.png",
+    "pricingUrl": "https://www.supernormal.com/pricing",
+    "tagline": "Bot-free desktop notetaker that turns meetings into notes, documents, slides and other client work.",
+    "bestFor": "Agencies that want meeting notes without a bot joining calls",
+    "description": "Supernormal's Mac and Windows desktop app captures Zoom, Google Meet, Teams and Slack Huddle calls without a bot, then uses AI credits to write notes and documents. A free plan includes 15 credits per month, and Team costs $20 per month for 50 shared credits.",
+    "pros": [
+      "Desktop app captures meetings without a bot joining the call",
+      "Paid plans include unlimited seats that share one credit pool",
+      "Signs a HIPAA Business Associate Agreement on request",
+      "Unused credits roll over on annual plans"
+    ],
+    "cons": [
+      "Bot notetaker, Chrome extension, and video and audio recording were retired in 2026",
+      "Mac app requires Apple Silicon and macOS 14.4.1 or later; Windows app is in beta",
+      "Credit cost per meeting or task is not published"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: 15 credits per month, maximum 5 credits used per day, desktop app meeting capture, unlimited projects, MCP. No credit card required.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "15 credits/month, 5 credits/day max."
+      },
+      {
+        "name": "Team",
+        "monthly": 20,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat per workspace (not per seat): 50 credits/month shared by unlimited seats, no daily credit limit, credit rollover. Annual price not published (pricing page showed $0 placeholders)."
+      },
+      {
+        "name": "Business",
+        "monthly": 40,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat per workspace (not per seat): 50 credits/month shared by unlimited seats, plus SSO, audit logs, data retention and admin controls. Annual price not published."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": null,
+      "crmSync": null,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2020",
+    "hq": "New York, USA",
+    "integrations": "Google Calendar, Outlook Calendar, Slack, Gmail, Linear, Google Drive; MCP server for Claude, ChatGPT and Cursor",
+    "compliance": [
+      "SOC 2",
+      "GDPR",
+      "HIPAA BAA",
+      "SSO (Business)"
+    ],
+    "support": [
+      "Help Center"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Supernormal pricing page",
+        "url": "https://www.supernormal.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Supernormal help: Supernormal 2.0 plans and pricing (May 19, 2026)",
+        "url": "https://help.supernormal.com/en/articles/14418695-supernormal-2-0-plans-pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Supernormal help: Is Supernormal releasing new pricing",
+        "url": "https://help.supernormal.com/en/articles/14691492-is-supernormal-releasing-new-pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Supernormal help: How and why is Supernormal changing",
+        "url": "https://help.supernormal.com/en/articles/13890833-how-and-why-is-supernormal-changing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Supernormal help: Can I only capture online meetings",
+        "url": "https://help.supernormal.com/en/articles/11801265-can-i-only-capture-online-meetings",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Supernormal security page",
+        "url": "https://www.supernormal.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Supernormal integrations page",
+        "url": "https://www.supernormal.com/integrations",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Supernormal desktop app page (system requirements, via search snippet)",
+        "url": "https://supernormal.com/for-mac",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Supernormal About page (founded 2020, via search snippet)",
+        "url": "https://supernormal.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "LinkedIn: Supernormal (HQ New York)",
+        "url": "https://linkedin.com/company/supernormalapp",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "grain",
+    "name": "Grain",
+    "category": "ai-meeting-note-takers",
+    "website": "https://grain.com",
+    "logo": "https://cdn.prod.website-files.com/5f5e90c17e7c9eb95c7acb17/5f7c00be1be3c48c24ce7977_Grain-Web-Clip.png",
+    "pricingUrl": "https://grain.com/pricing",
+    "tagline": "AI meeting recorder and notetaker for sales and customer teams, with CRM autofill and coaching.",
+    "bestFor": "Sales teams that want notes and fields synced to HubSpot or Salesforce",
+    "description": "Grain records Zoom, Google Meet, Microsoft Teams and Webex calls, or captures them without a bot through its desktop app, and writes AI notes. A free plan is available, and Pro costs $19 per month or $15 per month billed yearly.",
+    "pros": [
+      "Business syncs notes and autofills CRM fields in HubSpot and Salesforce",
+      "Free Lite seats can view shared meetings and AI notes without a paid license",
+      "Desktop Capture on Mac and Windows records transcripts and notes without a bot",
+      "SOC 2 Type II certified"
+    ],
+    "cons": [
+      "Pro is for a single user; team workspaces need Business at $29-$39 per seat",
+      "Business requires a minimum of 2 paid seats",
+      "SAML SSO and SCIM are Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free for one person. The pricing page lists 20 meetings; Grain's help center says unlimited meetings up to 45 minutes each, 30-day history and 5 manual uploads.",
+    "trial": "14-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Single user; meetings up to 45 minutes each, 30-day history (pricing page also lists a 20-meeting limit)."
+      },
+      {
+        "name": "Pro",
+        "monthly": 19,
+        "annual": 15,
+        "custom": false,
+        "notes": "Single-user plan; unlimited meetings up to 4 hours each, full history, custom AI prompts and note templates."
+      },
+      {
+        "name": "Business",
+        "monthly": 39,
+        "annual": 29,
+        "custom": false,
+        "notes": "Per Full seat, minimum 2 Full seats; Lite (viewer) seats free. Meetings up to 8 hours, HubSpot, Salesforce, Slack and Aircall integrations with CRM field autofill, AI coaching."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. Adds SAML SSO, SCIM, audit logs, 1080p recording, bring-your-own LLM."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": null,
+      "crmSync": true,
+      "hipaaOption": false,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Windows",
+      "iOS"
+    ],
+    "founded": "2018",
+    "hq": "San Francisco, USA",
+    "integrations": "Zoom, Google Meet, Microsoft Teams, Webex, Slack huddles; HubSpot, Salesforce, Slack, Aircall",
+    "compliance": [
+      "SOC 2 Type II",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Help Center",
+      "Sales (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Grain pricing page",
+        "url": "https://grain.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Grain help: Billing",
+        "url": "https://support.grain.com/en/articles/9134931-billing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Grain help: Plans",
+        "url": "https://support.grain.com/en/articles/9253220-plans",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Grain security page",
+        "url": "https://grain.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Grain help: Download Grain (desktop and iPhone beta)",
+        "url": "https://support.grain.com/en/articles/8068361-download-grain",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "PricingSaaS: Grain pricing diff 2026 W47",
+        "url": "https://pricingsaas.com/companies/grain/diffs/2026W47",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "CB Insights: Grain (founded 2018, San Francisco)",
+        "url": "https://www.cbinsights.com/company/grain-2",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "bluedot",
+    "name": "Bluedot",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.bluedothq.com",
+    "logo": "https://cdn.prod.website-files.com/64ba882066506a1a593a0def/6a885639161c8d552d2bd246_Dot%2032px.png",
+    "pricingUrl": "https://www.bluedothq.com/pricing",
+    "tagline": "Bot-free AI notetaker that records, transcribes and summarizes online and in-person meetings.",
+    "bestFor": "Teams that want meeting notes without a bot in the call",
+    "description": "Bluedot records Zoom, Google Meet and Microsoft Teams calls through a Chrome extension and desktop and mobile apps without sending a bot, then writes AI notes. Basic costs $18 per user per month, or $14 billed annually.",
+    "pros": [
+      "Unlimited meetings and storage on every paid plan",
+      "Business syncs notes, transcripts and action items to HubSpot and Salesforce",
+      "SSO, SAML and SCIM supported on Business",
+      "Flat-rate company-wide pricing available on request"
+    ],
+    "cons": [
+      "Free plan is limited to 5 meetings in total",
+      "Basic records audio only and caps recordings at 1 hour",
+      "No HIPAA or BAA is mentioned on the pricing or security pages"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: 5 meetings lifetime, Chrome extension, desktop and mobile apps, Slack, Notion, Zapier and Make integrations.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "5 meetings lifetime."
+      },
+      {
+        "name": "Basic",
+        "monthly": 18,
+        "annual": 14,
+        "custom": false,
+        "notes": "Per recording user. Unlimited meetings (audio only), unlimited storage, max 1 hour per recording, webhooks, MCP."
+      },
+      {
+        "name": "Pro",
+        "monthly": 25,
+        "annual": 20,
+        "custom": false,
+        "notes": "Per recording user. Unlimited meetings with video, unlimited recording duration, custom note templates, Zoom and Google Drive imports."
+      },
+      {
+        "name": "Business",
+        "monthly": 39,
+        "annual": 32,
+        "custom": false,
+        "notes": "Per recording user. CRM and ATS integrations, advanced admin controls, SSO and SCIM, custom data retention, unlimited imports."
+      },
+      {
+        "name": "Flat rate",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "One fixed price for the whole company regardless of user count; request pricing."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": false,
+      "sso": true
+    },
+    "platforms": [
+      "Chrome extension",
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2021",
+    "hq": null,
+    "integrations": "Zoom, Google Meet, Microsoft Teams; HubSpot, Salesforce; Slack, Notion, Zapier, Make, webhooks, MCP",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "SSO/SAML (Business)"
+    ],
+    "support": [],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Bluedot pricing page",
+        "url": "https://www.bluedothq.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Bluedot security page",
+        "url": "https://www.bluedothq.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Bluedot integrations page",
+        "url": "https://www.bluedothq.com/integrations",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "StartupHub: Bluedot (founded 2021)",
+        "url": "https://www.startuphub.ai/startups/bluedot",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
     "slug": "asana",
     "name": "Asana",
     "category": "project-management-software",
@@ -800,6 +1893,1123 @@
     ]
   },
   {
+    "slug": "jira",
+    "name": "Jira",
+    "category": "project-management-software",
+    "website": "https://www.atlassian.com/software/jira",
+    "logo": "https://www.atlassian.com/favicon.ico",
+    "pricingUrl": "https://www.atlassian.com/software/jira/pricing",
+    "tagline": "Atlassian's work tracking tool for planning, tracking and releasing software with boards, backlogs and timelines.",
+    "bestFor": "Software teams running Scrum or Kanban",
+    "description": "Jira tracks work items on Scrum and Kanban boards, backlogs, lists, timelines and calendars, with rule-based automation and built-in time logging. The Free plan covers up to 10 users, and Standard costs $9.70 per user per month on monthly billing.",
+    "pros": [
+      "Free plan for up to 10 users with 2 GB of storage and 150 automation steps per month",
+      "Rovo Search, Chat and Agents are included on every paid plan (25, 70 or 150 credits per user per month)",
+      "Monthly per-user price is graduated and drops above 100 users (Standard $8.20 for users 101-250)",
+      "Integrations with 3,000+ tools listed on the pricing page"
+    ],
+    "cons": [
+      "The Free plan does not include Rovo AI",
+      "No built-in wiki; Confluence is a separate Atlassian product",
+      "SSO, SCIM and Active Directory sync require a separate Atlassian Guard Standard subscription"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free forever for up to 10 users, 2 GB file storage, 150 automation steps per subscription per month, community support. Rovo AI not included.",
+    "trial": "14-day trial (Standard); 30-day trial (Premium)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 10 users, 2 GB storage, 150 automation steps per month, community support."
+      },
+      {
+        "name": "Standard",
+        "monthly": 9.7,
+        "annual": 7.92,
+        "custom": false,
+        "notes": "Monthly: $9.70 per user for users 1-100, then graduated ($8.20 for 101-250, $6.85 for 251-1,000). Annual is sold in user bands: $950/year for up to 10 users (about $7.92 per user per month); $9,700/year for 51-100 users. 250 GB storage, 400 automation steps per user per month, 25 Rovo credits per user per month, 9/5 regional support. Up to 100,000 users per site. Prices from Atlassian's catalog dated 13-10-2026."
+      },
+      {
+        "name": "Premium",
+        "monthly": 19.6,
+        "annual": 16.25,
+        "custom": false,
+        "notes": "Monthly: $19.60 per user for users 1-100, then graduated ($14.65 for 101-250). Annual: $1,950/year for up to 10 users (about $16.25 per user per month). Unlimited storage, 750 automation steps per user per month, 70 Rovo credits per user per month, cross-team planning, 24/7 support for critical issues, 99.9% uptime SLA."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales; listed for 801 to 100,000 users. 1,000 automation steps per user per month, 150 Rovo credits per user per month, multiple sites (up to 150), data residency, 24/7 support for all issues, 99.95% uptime SLA."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": false,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2002",
+    "hq": "San Francisco, USA",
+    "integrations": "3,000+ integrations; Rovo MCP Server connects Jira to Claude, ChatGPT, Cursor and VS Code",
+    "compliance": [],
+    "support": [
+      "Atlassian Community (Free)",
+      "9/5 regional support (Standard)",
+      "24/7 support for critical issues (Premium)",
+      "24/7 support for all issues (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Jira pricing page (incl. embedded plan catalog and Rovo FAQ)",
+        "url": "https://www.atlassian.com/software/jira/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Atlassian support: log time on a work item",
+        "url": "https://support.atlassian.com/jira-software-cloud/docs/log-time-on-an-issue/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Atlassian company page (history)",
+        "url": "https://www.atlassian.com/company",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Atlassian Form 10-K FY2026 (principal executive offices)",
+        "url": "https://www.sec.gov/Archives/edgar/data/0001650372/000165037226000036/team-20260630.htm",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "wrike",
+    "name": "Wrike",
+    "category": "project-management-software",
+    "website": "https://www.wrike.com",
+    "logo": "https://www.wrike.com/tp/static/favicon.ico",
+    "pricingUrl": "https://www.wrike.com/price/",
+    "tagline": "Work management platform with Gantt charts, dashboards, request forms and AI agents for cross-team projects.",
+    "bestFor": "Mid-size and enterprise teams managing cross-department workflows",
+    "description": "Wrike combines task and project management with board, table and interactive Gantt views, dashboards and AI features, with resource planning and budgeting on higher tiers. A Free plan is available, and the Team plan costs $10 per user per month billed annually.",
+    "pros": [
+      "Team plan includes AI Essentials (AI content and editing, comment summaries, board AI, natural-language automation rule generation)",
+      "Interactive Gantt charts and shareable dashboards from the $10 Team plan",
+      "SOC2 Type II, ISO 27001:2013, ISO 27018:2019 and CSA STAR listed",
+      "Option to host data in Wrike's EU data center in Paris"
+    ],
+    "cons": [
+      "Business and higher plans are sold only as annual subscriptions, and no monthly-billing price is published for Team",
+      "Time tracking is listed only from the custom-priced Pinnacle plan",
+      "Seats are sold in groups of five for accounts up to 30 seats"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: web, desktop and mobile apps, project and task management, board and table views. No user, storage or task limits are stated on the pricing page.",
+    "trial": "14-day trial",
+    "minSeats": 2,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Project and task management, board and table views; no AI listed."
+      },
+      {
+        "name": "Team",
+        "monthly": null,
+        "annual": 10,
+        "custom": false,
+        "notes": "Per user per month, billed annually; 2 to 15 users. AI Essentials, shareable dashboards, interactive Gantt charts. No monthly-billing price published. Seats sold in groups of five up to 30 seats."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 25,
+        "custom": false,
+        "notes": "Per user per month, annual subscription only; 5 to 200 users. Starter pack of AI Elite actions, templates, standard integration."
+      },
+      {
+        "name": "Pinnacle",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. 3x more AI Elite actions, advanced resource and capacity planning with time tracking, budgeting, advanced reporting and BI."
+      },
+      {
+        "name": "Apex",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. 10x more AI Elite actions, unlimited Whiteboards, Wrike Integrate and Wrike Sync included. Pricing valid for new purchases on or after January 21, 2026."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": null,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2006",
+    "hq": "San Diego, USA",
+    "integrations": "Wrike Integrate (no-code automations, add-on) and Wrike Two-Way Sync with 22 systems (add-on); both included in Apex",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001:2013",
+      "ISO 27018:2019",
+      "CSA STAR",
+      "GDPR",
+      "CCPA"
+    ],
+    "support": [],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Wrike pricing page and FAQ",
+        "url": "https://www.wrike.com/price/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wrike about page",
+        "url": "https://www.wrike.com/about/",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "basecamp",
+    "name": "Basecamp",
+    "category": "project-management-software",
+    "website": "https://basecamp.com",
+    "logo": "https://basecamp.com/favicon.ico",
+    "pricingUrl": "https://basecamp.com/pricing",
+    "tagline": "37signals' flat-priced project management app with to-dos, message boards, card tables, chat and docs in each project.",
+    "bestFor": "Small businesses and agencies that want flat pricing with no per-user fees",
+    "description": "Basecamp puts to-dos, message boards, Kanban-style card tables, chat, calendars and docs and files inside each project, with a cross-project timeline called the Lineup. A free one-project plan is available, and paid packages start at $29 per month flat for up to 5 users.",
+    "pros": [
+      "Flat package prices with no per-user fees; Pro Unlimited includes unlimited users for $199 per month billed annually",
+      "Every package includes message boards, to-dos, card tables, chat, calendar, docs and files, and automatic check-ins",
+      "ChatGPT and Claude AI connectors with MCP support included on every package, including Free",
+      "Free for K-12, homeschool and university class work; 10% off for registered 501(c)(3) nonprofits"
+    ],
+    "cons": [
+      "Time tracking only on Pro Plus ($99/month) and Pro Unlimited",
+      "Freelancer, Pro and Pro Plus cap active projects (3, 8 and 12) and users (5, 10 and 15)",
+      "No Gantt chart or rule-based automations listed"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "One project at a time, 1 GB storage, up to 3 users; no templates, multiple tools per project or time tracking. No credit card required.",
+    "trial": "30-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "1 project, 1 GB storage, 3 users max."
+      },
+      {
+        "name": "Freelancer",
+        "monthly": 29,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat $29 per month for the whole account (not per user), up to 5 users. 3 active projects, 10 GB storage, 24/7/365 support. No templates, multiple tools per project, time tracking or annual billing."
+      },
+      {
+        "name": "Pro",
+        "monthly": 79,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat $79 per month, up to 10 users. 8 active projects, 25 GB storage, multiple tools per project, project templates. No time tracking or annual billing."
+      },
+      {
+        "name": "Pro Plus",
+        "monthly": 99,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat $99 per month, up to 15 users. 12 active projects, 100 GB storage, time tracking. No annual billing."
+      },
+      {
+        "name": "Pro Unlimited",
+        "monthly": null,
+        "annual": 199,
+        "custom": false,
+        "notes": "Flat $199 per month billed annually for the whole account; unlimited users and projects, 1 TB storage (extra 1 TB for $50/month), enhanced admin controls, priority 24/7/365 support, personalized onboarding. Annual billing by check, ACH, wire or card. Note: the pricing page FAQ still mentions $329/month for Pro Unlimited, which conflicts with the listed $199."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": false,
+      "timeTracking": true,
+      "aiIncluded": null
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2004",
+    "hq": "Chicago, USA",
+    "integrations": "ChatGPT and Claude AI connectors with MCP support; bring-your-own AI agents via CLI",
+    "compliance": [],
+    "support": [
+      "24/7/365 support (paid packages)",
+      "Priority 24/7/365 support and personalized onboarding (Pro Unlimited)",
+      "Learning library"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Basecamp pricing page",
+        "url": "https://basecamp.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Basecamp features page (Lineup, Hill Charts, Docs & Files)",
+        "url": "https://basecamp.com/features",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Basecamp apps page",
+        "url": "https://basecamp.com/via",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Basecamp press page (2004 launch)",
+        "url": "https://basecamp.com/press",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: 37signals (Chicago)",
+        "url": "https://en.wikipedia.org/wiki/37signals",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "smartsheet",
+    "name": "Smartsheet",
+    "category": "project-management-software",
+    "website": "https://www.smartsheet.com",
+    "logo": "https://www.smartsheet.com/sites/default/files/favicons/favicon-32x32.png",
+    "pricingUrl": "https://www.smartsheet.com/pricing",
+    "tagline": "Spreadsheet-style work management platform with Gantt, board, calendar and timeline views, automations and dashboards.",
+    "bestFor": "Teams that plan projects in spreadsheet-style sheets",
+    "description": "Smartsheet manages projects in spreadsheet-style sheets with Gantt, table, board and calendar views, automated workflows, forms, reports and dashboards, plus built-in AI tools. There is no free plan; Pro costs $9 per member per month billed yearly or $12 billed monthly.",
+    "pros": [
+      "AI tools (Smart Assist, Smart Columns, AI dashboard builder, formula generation) included on every plan",
+      "Unlimited free Contributors on Pro and unlimited Guests from Business",
+      "Business includes unlimited automations, timeline view, workload tracking and 1 TB of storage",
+      "Lists SOC 2, ISO 27001, ISO 27701, ISO 42001 and FedRAMP"
+    ],
+    "cons": [
+      "No free plan; only a 30-day trial",
+      "Pro is capped at 10 Members, has 250 automations per month and no timeline view, and is only available to new customers",
+      "Time and expense tracking needs the Resource Management add-on, which is not available on Pro"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Pro",
+        "monthly": 12,
+        "annual": 9,
+        "custom": false,
+        "notes": "Per Member per month; 1-10 Members, unlimited Contributors. 20 GB storage, 250 automations per month, Gantt (no timeline view). Only available to new customers."
+      },
+      {
+        "name": "Business",
+        "monthly": 24,
+        "annual": 19,
+        "custom": false,
+        "notes": "Per Member per month; minimum 3 Members, unlimited Guests and Contributors. 1 TB storage, unlimited automations, timeline view, workload tracking, connect to external AI tools."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing; 10+ Members. Unlimited storage, SAML-based SSO, directory integrations, enterprise access controls; HIPAA BAA available."
+      },
+      {
+        "name": "Advanced Work Management",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing. Enterprise plus Advanced Portfolios, Dynamic View, Data Shuttle, Connectors, DataMesh, Pivot App, Premium Support."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": null,
+      "automations": true,
+      "timeTracking": false,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2005",
+    "hq": "Bellevue, USA",
+    "integrations": "Microsoft 365, Google Workspace and Slack on all plans; Power BI, Tableau, Claude, ChatGPT, Microsoft Copilot and Gemini Enterprise from Business; nearly 100 more",
+    "compliance": [
+      "SOC 2",
+      "ISO 27001",
+      "ISO 27701",
+      "ISO 42001",
+      "FedRAMP",
+      "HIPAA BAA (Enterprise)",
+      "GDPR",
+      "SSO (all plans)",
+      "SAML SSO (Enterprise+)"
+    ],
+    "support": [
+      "Help & Learning content",
+      "Smartsheet Community",
+      "Web-based ticketing",
+      "Standard Support Package (add-on on Business, included on Enterprise)",
+      "Premium Support Package (add-on; included in Advanced Work Management)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Smartsheet pricing page",
+        "url": "https://www.smartsheet.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Smartsheet Trust Center",
+        "url": "https://www.smartsheet.com/trust",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Smartsheet about page",
+        "url": "https://www.smartsheet.com/about",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "teamwork",
+    "name": "Teamwork.com",
+    "category": "project-management-software",
+    "website": "https://www.teamwork.com",
+    "logo": "https://cdn-website.teamwork.com/offload/app/uploads/2019/03/04183535/cropped-favicon-32x32.png",
+    "pricingUrl": "https://www.teamwork.com/pricing/",
+    "tagline": "Project management and professional services automation for client work, with time tracking, budgets and AI agents.",
+    "bestFor": "Agencies and client-services teams that bill for their time",
+    "description": "Teamwork.com manages client projects with Gantt, table, list and board views, time tracking, budgets, invoicing, resource planning and automations, plus built-in AI agents. A free plan covers up to 5 users, and Basics costs $9.99 per user per month billed yearly or $13.99 monthly.",
+    "pros": [
+      "Every paid plan includes a monthly AI credit allowance (1,000 on Basics, 2,500 on Accelerate, 7,500 on Optimize)",
+      "Billable vs non-billable time tracking on every plan, including Free",
+      "Client users can be invited into projects from Basics",
+      "US or EU data hosting and SOC 2 compliance on every plan"
+    ],
+    "cons": [
+      "Minimum of 3 users on Basics and 5 on Accelerate",
+      "Timesheets, time budgets and invoicing start on Accelerate ($24.99 per user per month yearly)",
+      "Free plan is limited to 5 users, 5 projects and 100 MB of storage"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 5 users and 5 projects, 100 MB storage, 100 automations, 2 project templates, Gantt/table/list/board views, billable vs non-billable time tracking. No credit card required.",
+    "trial": "14-day trial",
+    "minSeats": 3,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Max 5 users, 5 projects, 100 MB storage, 100 automations."
+      },
+      {
+        "name": "Basics",
+        "monthly": 13.99,
+        "annual": 9.99,
+        "custom": false,
+        "notes": "Per user per month; minimum 3 users. 300 projects, 100 GB storage, 5,000 automations, 1,000 AI credits per month (shared), AI agents Scout and Flo. No timesheets."
+      },
+      {
+        "name": "Accelerate",
+        "monthly": 29.99,
+        "annual": 24.99,
+        "custom": false,
+        "notes": "Per user per month; minimum 5 users. 600 projects, 250 GB storage, 20,000 automations, 2,500 AI credits per month, timesheets, time budgets, workload planning, basic invoices."
+      },
+      {
+        "name": "Optimize",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. Unlimited projects, 500 GB storage, 100,000 automations, 7,500 AI credits per month, timesheet approvals, quotes, multi-currency."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. Unlimited projects, 1,000 GB storage, 100,000 automations, custom AI credits, Premium Support with one-hour-or-less response."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2007",
+    "hq": "Cork, Ireland",
+    "integrations": "MCP server for connecting LLMs on all plans; accounting, CRM and chat integrations",
+    "compliance": [
+      "SOC 2",
+      "Two-factor authentication (paid plans)",
+      "US or EU data hosting"
+    ],
+    "support": [
+      "Customer support (all plans)",
+      "Teamwork Helpdocs",
+      "Free expert training",
+      "Premium Support (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Teamwork.com pricing page and FAQ",
+        "url": "https://www.teamwork.com/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Teamwork.com support: using the desktop app",
+        "url": "https://support.teamwork.com/projects/desktop-apps/using-the-teamwork-desktop-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Teamwork.com support: downloading the mobile app",
+        "url": "https://support.teamwork.com/projects/mobile-apps/downloading-the-teamwork-mobile-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Teamwork (project management)",
+        "url": "https://en.wikipedia.org/wiki/Teamwork_(project_management)",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "airtable",
+    "name": "Airtable",
+    "category": "project-management-software",
+    "website": "https://www.airtable.com",
+    "logo": "https://www.airtable.com/favicon.ico",
+    "pricingUrl": "https://www.airtable.com/pricing",
+    "tagline": "Relational database platform for building project trackers, workflows and apps with automations and AI.",
+    "bestFor": "Teams that want to build custom trackers on a flexible database",
+    "description": "Airtable lets teams build bases of linked records and view them as grids, timelines and Gantt charts, with automations and AI credits included on every plan. The Free plan covers up to 5 editors; Team costs $20 per seat per month billed annually or $24 billed monthly.",
+    "pros": [
+      "Read-only collaborators, form submissions and share links are not billed on Team and Business",
+      "Team includes 50,000 records per base, 25,000 automation runs per month and 15,000 AI credits per billable collaborator",
+      "Timeline and Gantt views are included from the Team plan",
+      "Native apps for macOS, Windows, iOS and Android"
+    ],
+    "cons": [
+      "Free plan is capped at 1,000 records per base, 100 automation runs per month and 5 editors",
+      "Business costs $45 per seat per month billed annually ($54 monthly)",
+      "SAML SSO is listed for the Enterprise plan only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 5 editors, 1,000 records per base, 1 GB attachments per base, 100 automation runs and 1,000 API calls per workspace per month, 500 AI credits per editor per month.",
+    "trial": "14-day Team trial for the first workspace on a new account (120 days for .edu addresses)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 5 editors; 1,000 records and 1 GB attachments per base; 100 automation runs/month; no extensions or record coloring."
+      },
+      {
+        "name": "Team",
+        "monthly": 24,
+        "annual": 20,
+        "custom": false,
+        "notes": "Per user with edit permissions. 50,000 records and 20 GB attachments per base, 25,000 automation runs and 100,000 API calls per workspace/month, 15,000 AI credits per billable collaborator/month. Credit card payment."
+      },
+      {
+        "name": "Business",
+        "monthly": 54,
+        "annual": 45,
+        "custom": false,
+        "notes": "Self-serve price per user with edit permissions. 125,000 records and 100 GB attachments per base, 100,000 automation runs/month, unlimited API calls, 20,000 AI credits per paid user/month, two-way sync and admin panel. Invoicing available through sales."
+      },
+      {
+        "name": "Enterprise Scale",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales; unlimited org units, workspaces and bases; SAML SSO."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": null,
+      "automations": true,
+      "timeTracking": null,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2012",
+    "hq": "San Francisco, USA",
+    "integrations": "Two-way sync (Business); REST API with plan-based call limits",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 27001:2022",
+      "ISO/IEC 27701:2019",
+      "HIPAA",
+      "TX-RAMP Level 2",
+      "GDPR",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Airtable pricing page",
+        "url": "https://www.airtable.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Airtable support: Airtable plans",
+        "url": "https://support.airtable.com/docs/airtable-plans",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Airtable security page",
+        "url": "https://www.airtable.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Airtable download page",
+        "url": "https://www.airtable.com/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Airtable about page",
+        "url": "https://www.airtable.com/about",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "linear",
+    "name": "Linear",
+    "category": "project-management-software",
+    "website": "https://linear.app",
+    "logo": "https://linear.app/static/apple-touch-icon.png?v=2",
+    "pricingUrl": "https://linear.app/pricing",
+    "tagline": "Issue tracking and project planning tool for software teams, with cycles, project timelines, docs and built-in AI agents.",
+    "bestFor": "Software product teams tracking issues, cycles and roadmaps",
+    "description": "Linear tracks issues, cycles and projects, with a project timeline view, project and team documents, and Linear Agent and MCP access on every plan. The Free plan allows unlimited members with 250 issues and 2 teams; Basic costs $10 per user per month billed yearly.",
+    "pros": [
+      "Free plan includes unlimited members",
+      "Linear Agent, the agent platform and MCP access are included on all plans",
+      "Timeline view shows projects chronologically with dependencies",
+      "SOC 2 Type II audited and ISO/IEC 27001:2022 certified"
+    ],
+    "cons": [
+      "Free plan is limited to 250 issues, 2 teams and 10 MB file uploads",
+      "Triage rules and Triage Intelligence require Business or Enterprise",
+      "SAML, SCIM, audit log and HIPAA are Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Unlimited members, 2 teams, 250 issues, 10 MB file uploads; Google SSO.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Unlimited members, 2 teams, 250 issues."
+      },
+      {
+        "name": "Basic",
+        "monthly": null,
+        "annual": 10,
+        "custom": false,
+        "notes": "Per user, billed yearly. Unlimited issues, 5 teams, unlimited file uploads. Monthly billing exists but the monthly rate is not shown on the pricing page. Billed per unsuspended user."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 16,
+        "custom": false,
+        "notes": "Per user, billed yearly. Unlimited teams, Triage Intelligence and triage rules, Insights, Asks, Releases (15 pipelines). Monthly rate not shown on the pricing page."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing, annual billing only. SAML, SCIM, HIPAA, audit log, IP restrictions, uptime SLA."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": null,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2019",
+    "hq": null,
+    "integrations": "MCP server access on all plans",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 27001:2022",
+      "GDPR",
+      "HIPAA BAA (Enterprise)",
+      "SSO/SAML (Enterprise)",
+      "SCIM (Enterprise)"
+    ],
+    "support": [],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Linear pricing page",
+        "url": "https://linear.app/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear docs: billing and plans",
+        "url": "https://linear.app/docs/billing-and-plans",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear docs: timeline",
+        "url": "https://linear.app/docs/timeline",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear docs: documents",
+        "url": "https://linear.app/docs/documents",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear docs: triage",
+        "url": "https://linear.app/docs/triage",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear security page",
+        "url": "https://linear.app/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear download page",
+        "url": "https://linear.app/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Linear about page",
+        "url": "https://linear.app/about",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "plane",
+    "name": "Plane",
+    "category": "project-management-software",
+    "website": "https://plane.so",
+    "logo": "https://plane.so/favicon/favicon-256x256.png",
+    "pricingUrl": "https://plane.so/pricing",
+    "tagline": "Open-source project management tool with work items, cycles, timelines, pages and wiki, available in the cloud or self-hosted.",
+    "bestFor": "Teams that want an open-source Jira alternative they can self-host",
+    "description": "Plane tracks work items in list, board, calendar, table and Gantt-style timeline layouts, with cycles, pages and a wiki, and can run on Plane Cloud or be self-hosted. The Free plan covers up to 12 users; Pro costs $6 per seat per month billed annually or $8 monthly.",
+    "pros": [
+      "Free plan allows up to 12 users",
+      "Pro includes 500 Plane AI credits per seat per month and Business 1,000",
+      "Time tracking with worklogs from Pro",
+      "Open-source core that can be self-hosted"
+    ],
+    "cons": [
+      "Workflows and trigger-and-action automations start on Business ($13 per seat annually)",
+      "SSO on Plane Cloud requires Business",
+      "Windows desktop app for the latest version is listed as coming soon"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 12 users, cycles, pages, in-app intake and limited guest access; no AI credits, wiki, time tracking or automations.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 12 users."
+      },
+      {
+        "name": "Pro",
+        "monthly": 8,
+        "annual": 6,
+        "custom": false,
+        "notes": "Per seat; unlimited seats, 5 guests per paid member, wiki, timeline dependencies, historical worklogs, 500 AI credits per seat per month (cloud). No workflows or SSO on cloud."
+      },
+      {
+        "name": "Business",
+        "monthly": 15,
+        "annual": 13,
+        "custom": false,
+        "notes": "Per seat; single workflow plus trigger-and-action automations, worklog approvals, intake forms and email, SSO, 1,000 AI credits per seat per month (cloud)."
+      },
+      {
+        "name": "Enterprise Grid",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Listed as coming soon; multiple workflows with approvals, custom guest roles, private and managed deployments."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2022",
+    "hq": null,
+    "integrations": null,
+    "compliance": [
+      "SOC 2",
+      "ISO 27001",
+      "GDPR",
+      "HIPAA",
+      "SSO/SAML/OIDC (self-hosted; Business on cloud)"
+    ],
+    "support": [
+      "SLA support (Pro and above)",
+      "Priority support (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Plane pricing page",
+        "url": "https://plane.so/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Plane docs: layouts",
+        "url": "https://docs.plane.so/core-concepts/issues/layouts",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Plane download page",
+        "url": "https://plane.so/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Plane security page",
+        "url": "https://plane.so/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Plane about page",
+        "url": "https://plane.so/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "TechCrunch: Plane takes on Jira with open source project management tools",
+        "url": "https://techcrunch.com/2023/11/28/plane-takes-on-jira-with-open-source-project-management-tools-for-software-teams/",
+        "date": "2023-11-28"
+      }
+    ]
+  },
+  {
+    "slug": "zoho-projects",
+    "name": "Zoho Projects",
+    "category": "project-management-software",
+    "website": "https://www.zoho.com/projects/",
+    "logo": "https://www.zohowebstatic.com/sites/zweb/images/favicon.ico",
+    "pricingUrl": "https://www.zoho.com/projects/pricing.html",
+    "tagline": "Project management software with Gantt charts, timesheets, blueprints and Zia AI, part of the Zoho suite.",
+    "bestFor": "Budget-conscious teams that need Gantt charts and timesheets",
+    "description": "Zoho Projects combines task management, Gantt charts, time logs and timesheets, workflow rules and blueprints, with Zia AI features included from the Premium plan. The Free plan covers up to 5 users and 3 projects; Premium costs $4 per user per month billed yearly or $5 monthly.",
+    "pros": [
+      "Gantt chart available on every plan, including Free",
+      "Time logs and timesheets with multi-level approvals from Premium",
+      "Zia Insights, Zia Translate and content generation included on Premium",
+      "15-day free trial of paid plans with no credit card required"
+    ],
+    "cons": [
+      "Free plan is limited to 5 users, 3 projects and 50 workflow actions per month",
+      "SSO, critical path and baselines require Enterprise ($9 per user annually)",
+      "Premium support (24/5 phone and chat) is a paid add-on requiring at least 25 user licenses"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 5 users, 3 projects, 5 GB storage, subtasks, whiteboard, Gantt chart, 50 workflow action executions per month, iOS and Android apps.",
+    "trial": "15-day free trial of Premium, Enterprise or Ultimate; no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 5 users, 3 projects, 5 GB storage."
+      },
+      {
+        "name": "Premium",
+        "monthly": 5,
+        "annual": 4,
+        "custom": false,
+        "notes": "Per user. Unlimited projects, 100 GB storage, 20 project templates, timesheets, task blueprints, budgeting, 5,000 workflow executions/month, Zia AI features."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 10,
+        "annual": 9,
+        "custom": false,
+        "notes": "Per user. 120 GB storage, 10 read-only users, SSO, 2FA, portfolio dashboard, critical path and baseline, sandbox, 50,000 workflow executions/month, all Zia features."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": 15,
+        "annual": 14,
+        "custom": false,
+        "notes": "Per user. 15 GB storage per user (min 150 GB/org), 100 read-only users, 100 resources, multi-user and multi-project timesheets, 500,000 workflow executions/month."
+      }
+    ],
+    "features": {
+      "timelineGantt": true,
+      "docsWiki": true,
+      "automations": true,
+      "timeTracking": true,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "1996",
+    "hq": "Chennai, India",
+    "integrations": "Zapier, Zendesk, Microsoft Teams, Office 365, Slack, ServiceNow, Dropbox, SharePoint, Figma, GitHub, Zoho CRM and other Zoho apps",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 27001",
+      "ISO/IEC 27701",
+      "ISO/IEC 27017",
+      "ISO/IEC 27018",
+      "SOC 2 + HIPAA Type 2",
+      "GDPR",
+      "SSO (Enterprise)"
+    ],
+    "support": [
+      "Premium support add-on: live chat and phone 24/5, remote assistance, onboarding"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Zoho Projects pricing page",
+        "url": "https://www.zoho.com/projects/pricing.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Projects pricing data file loaded by the pricing page (USD prices)",
+        "url": "https://www.zohowebstatic.com/sites/zweb/json/pricing/projects-pricing-val.json",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Projects plan comparison",
+        "url": "https://www.zoho.com/projects/pricing-comparison.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Projects help: upgrade from Free plan",
+        "url": "https://help.zoho.com/portal/en/kb/projects/billing-and-upgrade/articles/upgrade-free-plan",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho compliance page",
+        "url": "https://www.zoho.com/compliance.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Zoho Corporation",
+        "url": "https://en.wikipedia.org/wiki/Zoho_Corporation",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "todoist",
+    "name": "Todoist",
+    "category": "project-management-software",
+    "website": "https://www.todoist.com",
+    "logo": "https://www.todoist.com/static/favicon-32x32.png",
+    "pricingUrl": "https://www.todoist.com/pricing",
+    "tagline": "Task manager for individuals and teams, with projects, filters, calendar layouts, automations and AI task capture.",
+    "bestFor": "Individuals and small teams managing tasks rather than complex projects",
+    "description": "Todoist organizes tasks into personal and team projects with filters, board and calendar layouts, Todoist Automations and AI-powered task capture. The Beginner plan is free; Pro costs $5 per month billed yearly for one user, and Business costs $8 per user per month billed yearly or $10 monthly.",
+    "pros": [
+      "Apps for Windows, macOS, Linux, iOS, Android, Apple Watch and WearOS",
+      "Unlimited AI-powered task capture, including Ramble, on Pro and Business",
+      "Todoist Automations with AI steps and approval steps on Pro and Business",
+      "SOC 2 Type II certification listed on all plans"
+    ],
+    "cons": [
+      "No timeline or Gantt view; layouts are list, board, calendar and table",
+      "No native time tracking; time tracking relies on the Toggl Track integration",
+      "Free Beginner plan is limited to 5 personal projects, 3 filters and 1 week of reporting history"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Beginner: 5 personal projects, 5 people per personal project, 5 team projects, 3 custom filters, 1 connected calendar, 5 MB uploads, 1 week reporting history, 10 AI task capture sessions per month.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Beginner",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free; 5 personal projects, 3 filters, no automations or calendar/table layouts."
+      },
+      {
+        "name": "Pro",
+        "monthly": 7,
+        "annual": 5,
+        "custom": false,
+        "notes": "Individual plan ($60 billed yearly), not priced per team seat. 300 personal projects, 150 filter views, 3 connected calendars, 100 MB uploads, full reporting history, automations (beta), auto backups."
+      },
+      {
+        "name": "Business",
+        "monthly": 10,
+        "annual": 8,
+        "custom": false,
+        "notes": "Per user ($96 per user billed yearly), plus local tax. Up to 500 team projects, 1,000 team members and guests, team roles and permissions, automations in the team workspace, centralized billing."
+      }
+    ],
+    "features": {
+      "timelineGantt": false,
+      "docsWiki": null,
+      "automations": true,
+      "timeTracking": false,
+      "aiIncluded": true
+    },
+    "platforms": [
+      "Web",
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2007",
+    "hq": null,
+    "integrations": "Toggl Track (time tracking), calendar sync, Todoist MCP servers",
+    "compliance": [
+      "SOC 2 Type II"
+    ],
+    "support": [],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Todoist pricing page",
+        "url": "https://www.todoist.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Todoist downloads page",
+        "url": "https://www.todoist.com/downloads",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Todoist help: use Toggl Track with Todoist",
+        "url": "https://www.todoist.com/help/articles/use-toggl-track-with-todoist-mgRQcf",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Todoist about page",
+        "url": "https://www.todoist.com/about-us",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Todoist",
+        "url": "https://en.wikipedia.org/wiki/Todoist",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
     "slug": "hubspot-crm",
     "name": "HubSpot CRM",
     "category": "crm-software",
@@ -1191,6 +3401,1107 @@
     ]
   },
   {
+    "slug": "close",
+    "name": "Close",
+    "category": "crm-software",
+    "website": "https://www.close.com",
+    "logo": "https://close.com/apple-touch-icon.png",
+    "pricingUrl": "https://www.close.com/pricing",
+    "tagline": "Sales CRM with built-in calling, SMS and email for inside sales teams.",
+    "bestFor": "Inside sales teams that make a lot of calls",
+    "description": "Close is a sales CRM that puts calling, SMS, email and pipeline management in one app, with an AI assistant called Chloe on every plan. Paid plans start at $9 per month billed annually ($19 monthly) for the single-user Solo plan, and multi-user plans start at $35 per user per month billed annually.",
+    "pros": [
+      "Built-in calling and SMS on every plan, billed by usage at about $0.02 per minute for most outbound calls",
+      "Chloe AI assistant and AI credits included on every plan (500 to 2,000 credits per user per month)",
+      "Drag-and-drop pipeline view and multiple pipelines on all plans",
+      "Native desktop apps for Mac and Windows plus iOS and Android apps"
+    ],
+    "cons": [
+      "No free plan; only a 14-day trial",
+      "Workflows, bulk email and the Power Dialer require the Growth plan ($99 per user per month billed annually)",
+      "Calling minutes and phone numbers are billed on top of the plan price"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial, no credit card required; 30-day money-back guarantee on new purchases",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Solo",
+        "monthly": 19,
+        "annual": 9,
+        "custom": false,
+        "notes": "1 user only; up to 10,000 leads; 500 AI credits per month; 3 connected email accounts; built-in calling and SMS (usage-based); 30-day call recording. No email open tracking or workflows."
+      },
+      {
+        "name": "Essentials",
+        "monthly": 49,
+        "annual": 35,
+        "custom": false,
+        "notes": "Unlimited users and leads; 1,000 AI credits per user per month; email open tracking; 3 connected email accounts; 30-day call recording. No workflows or bulk email."
+      },
+      {
+        "name": "Growth",
+        "monthly": 109,
+        "annual": 99,
+        "custom": false,
+        "notes": "Adds Workflows, Power Dialer, bulk email, email and text scheduling, AI Playbooks, automated lead assignment; 1,500 AI credits per user per month; 10 connected email accounts; 90-day call recording."
+      },
+      {
+        "name": "Scale",
+        "monthly": 149,
+        "annual": 139,
+        "custom": false,
+        "notes": "Adds Predictive Dialer, advanced roles and permissions, customer success manager; 2,000 AI credits per user per month; unlimited call recording retention."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2013",
+    "hq": null,
+    "integrations": "Connects with 100+ tools including Zoom and Google Meet; MCP access for ChatGPT, Claude and Grok; migration from HubSpot, Salesforce and Pipedrive",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR (DPA available)"
+    ],
+    "support": [
+      "Help center",
+      "Free migration help",
+      "Customer success manager (Scale)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Close pricing page",
+        "url": "https://www.close.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close about page",
+        "url": "https://www.close.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close help: Opportunity Pipeline View",
+        "url": "https://help.close.com/docs/opportunity-pipeline-view",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close help: Desktop App",
+        "url": "https://help.close.com/docs/desktop-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close help: Close mobile app",
+        "url": "https://help.close.com/docs/close-mobile-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close blog: Introducing Close for Android",
+        "url": "https://close.com/blog/close-for-android",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close security page",
+        "url": "https://close.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close GDPR page",
+        "url": "https://www.close.com/gdpr",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "copper",
+    "name": "Copper",
+    "category": "crm-software",
+    "website": "https://www.copper.com",
+    "logo": "https://cdn.prod.website-files.com/69bdc11d6d8dca48c8a32ff4/6a68a40aeb4851e2572f03ee_copper-logo-icon.png",
+    "pricingUrl": "https://www.copper.com/pricing",
+    "tagline": "CRM built around Google Workspace, with pipelines and contact management inside Gmail.",
+    "bestFor": "Small teams that work in Gmail and Google Workspace",
+    "description": "Copper is a CRM that integrates natively with Gmail, Google Calendar, Drive and Sheets, with drag-and-drop pipelines and task automation. Plans start at $23 per seat per month billed annually ($29 monthly) for Basic, which allows 2,500 contacts.",
+    "pros": [
+      "Native integration with Gmail, Google Calendar, Google Drive, Google Sheets and Looker Studio",
+      "Drag-and-drop pipelines with AI-powered flags and alerts",
+      "Pipeline automations can send emails or reminders when a deal moves stage (Professional and up)",
+      "Email open tracking on Professional, plus link tracking on Business"
+    ],
+    "cons": [
+      "No free plan; only a 14-day trial",
+      "Basic is capped at 2,500 contacts and has task automation only, not workflow automation",
+      "No built-in dialer; calling relies on integrations such as JustCall and RingCentral"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 29,
+        "annual": 23,
+        "custom": false,
+        "notes": "2,500 contacts; task automation; pipelines; project management; contact enrichment."
+      },
+      {
+        "name": "Professional",
+        "monthly": 69,
+        "annual": 59,
+        "custom": false,
+        "notes": "15,000 contacts; workflow automation; bulk email; reporting; integrations; email open tracking. Personal onboarding for eligible annual accounts."
+      },
+      {
+        "name": "Business",
+        "monthly": 134,
+        "annual": 99,
+        "custom": false,
+        "notes": "Unlimited contacts; email series; custom reports; multi-currency; premium support; email link tracking."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": false,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2012",
+    "hq": null,
+    "integrations": "Native Google Workspace (Gmail, Calendar, Drive, Sheets, Looker Studio); JustCall, RingCentral, Zapier",
+    "compliance": [
+      "SSO (Okta, Sign in with Google)"
+    ],
+    "support": [
+      "Live chat",
+      "Help center",
+      "Personal onboarding for eligible annual accounts (Professional, Business)",
+      "Premium support (Business)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Copper pricing page",
+        "url": "https://www.copper.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Copper features page",
+        "url": "https://www.copper.com/features",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Copper help: Email tracking",
+        "url": "https://support.copper.com/en/articles/8823289-email-tracking",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Copper about page",
+        "url": "https://www.copper.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Copper security page",
+        "url": "https://www.copper.com/security",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "attio",
+    "name": "Attio",
+    "category": "crm-software",
+    "website": "https://attio.com",
+    "logo": "https://attio.com/favicon.ico",
+    "pricingUrl": "https://attio.com/pricing",
+    "tagline": "Customizable, AI-native CRM with flexible data objects, workflows and an AI assistant.",
+    "bestFor": "Startups that want a flexible, data-model-driven CRM",
+    "description": "Attio is a CRM that builds records automatically from email and calendar data, with custom objects, kanban views, workflows and the Ask Attio AI assistant. It has a free plan for up to 3 users, and Plus costs $40 per month billed annually ($50 monthly) per workspace including 1 user, with extra users at $35 per month billed annually.",
+    "pros": [
+      "Free plan for up to 3 users with 50,000 records, workflows and Ask Attio",
+      "Kanban views let you drag records between pipeline stages",
+      "Workflows and Ask Attio AI included on every plan, metered by credits",
+      "MCP server and ChatGPT and Claude connections on all plans"
+    ],
+    "cons": [
+      "Plus is capped at 10 users",
+      "Email sequences, call recording and custom objects require Pro ($100 per month billed annually including 1 user, plus $79 per extra user)",
+      "SSO needs the Ultra plan or a $30 per user per month Governance add-on on Pro"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 3 users; 50,000 records; 3 objects; Ask Attio (100 credits per user per month); 250 workspace credits for workflows; automatic enrichment; 200 emails sent per user per month.",
+    "trial": "14-day trial of Pro for every new workspace",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 3 users; 50,000 records; 3 objects; 3 reports; 250 workspace credits; 200 emails per user per month."
+      },
+      {
+        "name": "Plus",
+        "monthly": 50,
+        "annual": 40,
+        "custom": false,
+        "notes": "Priced per workspace including 1 user; extra users $44/month monthly or $35/month annual; up to 10 users; 250,000 records; 5 objects; 15 reports; 500 Ask Attio credits per user; 1,500 workspace credits; 1,000 emails per user per month."
+      },
+      {
+        "name": "Pro",
+        "monthly": 125,
+        "annual": 100,
+        "custom": false,
+        "notes": "Priced per workspace including 1 user; extra users $99/month monthly or $79/month annual; no user limit; 1,000,000 records; 12 objects; sequences; call recording and intelligence; custom objects; priority support; 10,000 workspace credits. Governance add-on (SSO, SCIM, audit logs) $30 per user per month billed annually."
+      },
+      {
+        "name": "Ultra",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$1,000 per month per workspace, annual billing only, including 5 users; extra users $189/month; 3,000,000 records; unlimited objects and reports; SSO, SCIM and audit logs included; 20,000 workspace credits."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": null,
+      "builtInCalling": false,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": null,
+    "hq": "London, United Kingdom",
+    "integrations": "Gmail, Outlook, Slack, Segment, Mailchimp, Outreach, Mixmax, Typeform, Zapier; MCP server plus ChatGPT and Claude connections; imports from Salesforce, HubSpot, Pipedrive and Zoho",
+    "compliance": [
+      "SSO/SCIM (Ultra, or Pro with Governance add-on)"
+    ],
+    "support": [
+      "Help center",
+      "Chat and email support (all plans)",
+      "Priority support (Pro, Ultra)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Attio pricing page",
+        "url": "https://attio.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Attio help: Attio plans and features",
+        "url": "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Attio help: Create and manage kanban views",
+        "url": "https://attio.com/help/reference/managing-your-data/views/create-and-manage-kanban-views",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Attio help: Track status of sequence recipients",
+        "url": "https://attio.com/help/reference/automations/sequences/track-status-of-sequence-recipients",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Attio about page",
+        "url": "https://attio.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Craft: Attio company profile",
+        "url": "https://craft.co/attio",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "less-annoying-crm",
+    "name": "Less Annoying CRM",
+    "category": "crm-software",
+    "website": "https://www.lessannoyingcrm.com",
+    "logo": "https://cdn.prod.website-files.com/5eb25de94cee6c29635fe867/63160cdfa8feb4b86a085c5e_256x256.png",
+    "pricingUrl": "https://www.lessannoyingcrm.com/pricing",
+    "tagline": "Simple, single-plan CRM for small businesses with contacts, pipelines and tasks.",
+    "bestFor": "Small businesses that want a simple CRM at one flat price",
+    "description": "Less Annoying CRM is a simple CRM for small businesses with contact management, pipelines with a board view, tasks, calendar and email logging. It has one plan at $15 per user per month with every feature included and a 30-day free trial.",
+    "pros": [
+      "One plan at $15 per user per month with no feature tiers or contracts",
+      "Unlimited contacts, pipelines and custom fields, plus 25 GB of file storage per user",
+      "Free email and phone support and human CRM coaches for every user",
+      "HIPAA compliance with a BAA available"
+    ],
+    "cons": [
+      "No free plan after the 30-day trial",
+      "No built-in calling; phone features come from integrations such as JustCall and CallHippo",
+      "Native mobile app is new (launched June 2026) and its help center says features like push notifications are still being added"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Less Annoying CRM",
+        "monthly": 15,
+        "annual": null,
+        "custom": false,
+        "notes": "Single plan, all features; unlimited contacts and companies (recommended under 50,000 total); unlimited pipelines and custom fields; 25 GB file storage per user. No annual price published."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": null,
+      "builtInCalling": false,
+      "aiAssistant": null,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2009",
+    "hq": "St. Louis, USA",
+    "integrations": "Zapier, Mailchimp, Google Contacts, Google Calendar, Outlook Calendar, QuickBooks Sync, JustCall, CallHippo and about 25 more listed",
+    "compliance": [
+      "HIPAA (BAA available)"
+    ],
+    "support": [
+      "Email support (free)",
+      "Phone support (free)",
+      "Free CRM coaches"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Less Annoying CRM pricing page",
+        "url": "https://www.lessannoyingcrm.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM homepage",
+        "url": "https://www.lessannoyingcrm.com/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM blog: Board view for your pipelines (May 4, 2026)",
+        "url": "https://www.lessannoyingcrm.com/blog/new-board-view-for-your-pipelines",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM blog: Build a Sequence, how one automation can run your whole process (June 2, 2026)",
+        "url": "https://www.lessannoyingcrm.com/blog/build-a-sequence-how-one-automation-can-run-your-whole-process",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM blog: Native Mobile App (June 15, 2026)",
+        "url": "https://lessannoyingcrm.com/blog/product-update-native-mobile-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM help: Mobile access",
+        "url": "https://www.lessannoyingcrm.com/help/mobile-access",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM integrations page",
+        "url": "https://www.lessannoyingcrm.com/integrations",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "capsule-crm",
+    "name": "Capsule CRM",
+    "category": "crm-software",
+    "website": "https://capsulecrm.com",
+    "logo": "https://capsulecrm.com/icons/icon-144x144.png",
+    "pricingUrl": "https://capsulecrm.com/pricing/",
+    "tagline": "Simple CRM for small businesses with sales pipelines, project boards and AI tools.",
+    "bestFor": "Small businesses that want simple pipelines and project tracking",
+    "description": "Capsule CRM manages contacts, sales pipelines and project boards, with workflow automations and Capsule AI tools on higher plans. It has a free plan for 2 users and 250 contacts, and paid plans start at $18 per user per month billed annually ($22 monthly).",
+    "pros": [
+      "Free plan for up to 2 users with 250 contacts and 1 sales pipeline",
+      "Drag-and-drop Kanban sales pipeline",
+      "Capsule AI includes summaries, meeting prep, email drafting and contact enrichment",
+      "100+ integrations including Xero, QuickBooks and Zapier"
+    ],
+    "cons": [
+      "Workflow automations start on Growth ($36 per user per month billed annually)",
+      "No built-in calling listed on the pricing or features pages",
+      "Marketing campaigns run in Transpond, a separate add-on"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 2 users; 250 contacts; 5 custom fields; 1 sales pipeline; Gmail or Outlook mail connection.",
+    "trial": "14-day free trial of paid plans, no card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 2 users; 250 contacts; 5 custom fields; 1 sales pipeline."
+      },
+      {
+        "name": "Starter",
+        "monthly": 22,
+        "annual": 18,
+        "custom": false,
+        "notes": "30,000 contacts; email templates; AI Pipeline Generator; premium integrations (Xero, Zendesk, Import2). Pipeline count not stated."
+      },
+      {
+        "name": "Growth",
+        "monthly": 40,
+        "annual": 36,
+        "custom": false,
+        "notes": "60,000 contacts; 5 pipelines and 5 project boards; workflow automations; advanced reporting and dashboards; email sync; AI connectors, enrichment and summaries."
+      },
+      {
+        "name": "Advanced",
+        "monthly": 60,
+        "annual": 54,
+        "custom": false,
+        "notes": "120,000 contacts; 50 pipelines and 50 project boards; everything in Growth."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": 75,
+        "annual": 72,
+        "custom": false,
+        "notes": "All features; expert support, own account manager and custom training. Contact and pipeline limits not stated."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": null,
+      "builtInCalling": false,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2009",
+    "hq": "Manchester, United Kingdom",
+    "integrations": "100+ integrations including Xero, QuickBooks, FreshBooks, Zendesk, Mailchimp, Zapier, Microsoft 365, Google Workspace and WhatsApp; Transpond for marketing; public API; Capsule MCP (beta)",
+    "compliance": [
+      "GDPR",
+      "Two-factor authentication",
+      "SSO via Microsoft 365 or Google Workspace",
+      "PCI-DSS (payment collection)"
+    ],
+    "support": [
+      "Support docs",
+      "Video tutorials and webinars",
+      "Account manager and custom training (Ultimate)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Capsule CRM pricing page",
+        "url": "https://capsulecrm.com/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Capsule CRM features page",
+        "url": "https://capsulecrm.com/features/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Capsule AI page",
+        "url": "https://capsulecrm.com/ai/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Capsule about page",
+        "url": "https://capsulecrm.com/about/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Capsule security page",
+        "url": "https://capsulecrm.com/security/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Capsule (CRM)",
+        "url": "https://en.wikipedia.org/wiki/Capsule_(CRM)",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "nutshell",
+    "name": "Nutshell",
+    "category": "crm-software",
+    "website": "https://www.nutshell.com",
+    "logo": "https://www.nutshell.com/wp-content/uploads/2023/04/cropped-nutshell-logo-192x192.png",
+    "pricingUrl": "https://www.nutshell.com/pricing",
+    "tagline": "Sales CRM for small and midsize teams with pipelines, email tracking, click-to-call and built-in marketing tools.",
+    "bestFor": "Small B2B sales teams that want sales and marketing in one CRM",
+    "description": "Nutshell manages contacts, leads and deals in visual pipelines, with two-way Google and Microsoft email sync, sales automation and AI call and meeting summaries. Paid plans start at $13 per user per month billed annually ($19 billed monthly) for Foundation.",
+    "pros": [
+      "Unlimited contacts and storage on every plan",
+      "Built-in click-to-call with AI call and meeting summaries on Pro and above",
+      "Email open and click tracking for emails sent from Nutshell, with lists sortable by engagement",
+      "Free live support on every plan"
+    ],
+    "cons": [
+      "Foundation is limited to 100 open leads",
+      "Sales automation and custom pipelines start at Pro ($42/user/month billed annually)",
+      "Two-way SMS, unified inbox and advanced email marketing are paid add-ons (Engagement from $16/user/month, Marketing from $49/month)"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14 days, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Foundation",
+        "monthly": 19,
+        "annual": 13,
+        "custom": false,
+        "notes": "Limit of 100 open leads; 10 AI outcomes/month; unlimited contacts; email and calendar sync; AI chatbot; form builder and landing pages."
+      },
+      {
+        "name": "Growth",
+        "monthly": 32,
+        "annual": 25,
+        "custom": false,
+        "notes": "20 AI outcomes/month; activity reports, sales quotas, lead assignment rules, custom stage goals, hot leads."
+      },
+      {
+        "name": "Pro",
+        "monthly": 49,
+        "annual": 42,
+        "custom": false,
+        "notes": "40 AI outcomes/month; 5 custom pipelines; sales automation; advanced reporting; AI lead recaps; meeting scheduler; click-to-call and AI call summaries."
+      },
+      {
+        "name": "Business",
+        "monthly": 67,
+        "annual": 59,
+        "custom": false,
+        "notes": "100 AI outcomes/month; 10 custom pipelines; audit log; email templates from Gmail and Outlook; additional teams and territories."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 89,
+        "annual": 79,
+        "custom": false,
+        "notes": "150 AI outcomes/month; unlimited pipelines and custom fields; enterprise SSO; SQL data access; phone support."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2009",
+    "hq": "Ann Arbor, USA",
+    "integrations": "5,000+ software integrations; two-way Google and Microsoft email and calendar sync",
+    "compliance": [
+      "SOC 2",
+      "GDPR"
+    ],
+    "support": [
+      "Free live support on every plan",
+      "Phone support (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Nutshell pricing page",
+        "url": "https://www.nutshell.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Nutshell CRM features page",
+        "url": "https://www.nutshell.com/crm",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Nutshell: calls and meetings",
+        "url": "https://www.nutshell.com/crm/calls-and-meetings",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Nutshell help center: how to track emails sent from Nutshell",
+        "url": "https://support.nutshell.com/en/articles/8428959-how-to-track-emails-sent-from-nutshell",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Nutshell about page",
+        "url": "https://www.nutshell.com/about",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "insightly",
+    "name": "Insightly",
+    "category": "crm-software",
+    "website": "https://www.insightly.com",
+    "logo": "",
+    "pricingUrl": "https://www.insightly.com/pricing/",
+    "tagline": "CRM with lead, opportunity and project management in one system, plus workflow automation and AI Copilot.",
+    "bestFor": "Teams that hand closed deals off to project delivery",
+    "description": "Insightly combines lead, contact and opportunity management with project management, kanban pipelines and reports. Plans start at $29 per user per month billed annually for Plus; no monthly-billing price is published.",
+    "pros": [
+      "Project management is included on every plan, including Plus",
+      "Kanban view of pipelines on all plans, with stage totals that update as cards are dragged",
+      "Phone and email support included for all users",
+      "Mobile apps for iOS and Android"
+    ],
+    "cons": [
+      "Workflow automation, lead routing and AI Copilot require Professional ($49/user/month billed annually)",
+      "Pricing page lists only annual billing; no monthly price is published",
+      "Email open tracking must be enabled by an admin, works only on paid plans and only for template emails sent from Insightly"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14 days on Plus and Professional, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Plus",
+        "monthly": null,
+        "annual": 29,
+        "custom": false,
+        "notes": "Billed annually. Lead and contact management, project management, advanced reports, pre-built dashboards."
+      },
+      {
+        "name": "Professional",
+        "monthly": null,
+        "annual": 49,
+        "custom": false,
+        "notes": "Billed annually. Adds lead assignment and routing, workflow automation and AI Copilot."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 99,
+        "custom": false,
+        "notes": "Billed annually; purchased through sales. Adds sandboxes, products, pricebooks and quotes, comprehensive audit logging."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": null,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2009",
+    "hq": "San Francisco, USA",
+    "integrations": "Two-way Gmail and Outlook email sync; AppConnect integration platform sold separately from $249/month for 25,000 tasks",
+    "compliance": [],
+    "support": [
+      "Phone and email support for all users (Mon-Fri, 9am-4pm PT)",
+      "Premier Support and Success Plan (paid add-on)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Insightly pricing page",
+        "url": "https://www.insightly.com/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Insightly homepage",
+        "url": "https://www.insightly.com/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Insightly help center: what is the kanban view?",
+        "url": "https://support.insight.ly/en-us/Knowledge/article/1299/What_is_the_kanban_view",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Insightly help center: how to enable or disable email tracking",
+        "url": "https://support.insight.ly/en-us/Knowledge/article/1338/How_to_enable_or_disable_email_tracking",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Insightly about page (acquired by Unbounce, July 2024)",
+        "url": "https://www.insightly.com/about/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Insightly (founding year, headquarters)",
+        "url": "https://en.wikipedia.org/wiki/Insightly",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "bigin",
+    "name": "Bigin by Zoho",
+    "category": "crm-software",
+    "website": "https://www.bigin.com",
+    "logo": "https://oweb.zohowebstatic.com/sites/oweb/images/zohobigin/favicon.ico",
+    "pricingUrl": "https://www.bigin.com/pricing.html",
+    "tagline": "Pipeline-centric CRM from Zoho for small businesses, with a free plan and built-in phone.",
+    "bestFor": "Very small businesses moving off spreadsheets on a tight budget",
+    "description": "Bigin is Zoho's lightweight CRM built around team pipelines, with built-in phone, email and WhatsApp integration, and workflow automations on every plan. A free plan covers one user; paid plans start at $7 per user per month billed yearly ($9 billed monthly) for Express.",
+    "pros": [
+      "Free plan includes built-in phone with call recording, automated voice responses and call routing",
+      "Workflow automations on every plan (3 on Free, up to 100 on Bigin 360)",
+      "Paid plans include phone, email and live chat support plus onboarding and admin training",
+      "Native apps for iOS, iPadOS, Android and macOS"
+    ],
+    "cons": [
+      "Free plan is limited to 1 user, 500 records and one pipeline",
+      "AI features (writing assistant, record summary, churn analyzer) start at Premier and run on monthly AI credits",
+      "No Windows desktop app"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: 1 user, 500 records, single pipeline, 3 automations, built-in phone, apps for iOS, iPadOS, Android and macOS.",
+    "trial": "15 days; afterwards the account moves to the Free plan with no automatic charge",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "1 user, 500 records, 1 pipeline, 3 automations."
+      },
+      {
+        "name": "Express",
+        "monthly": 9,
+        "annual": 7,
+        "custom": false,
+        "notes": "50,000 records, 3 team pipelines, 30 automations, mass emails with email insights, email and WhatsApp integration."
+      },
+      {
+        "name": "Premier",
+        "monthly": 15,
+        "annual": 12,
+        "custom": false,
+        "notes": "100,000 records, 5 team pipelines, 50 advanced automations, stage transition rules, sequences, 1,000 AI credits/month."
+      },
+      {
+        "name": "Bigin 360",
+        "monthly": 21,
+        "annual": 18,
+        "custom": false,
+        "notes": "1 million records, 15 team pipelines, 100 advanced automation rules, 3,000 AI credits/month, webhooks, 5 GB file cabinet."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "macOS"
+    ],
+    "founded": "2020",
+    "hq": "Chennai, India",
+    "integrations": "Email and WhatsApp integration; 100+ third-party telephony providers; MCP support",
+    "compliance": [
+      "GDPR",
+      "HIPAA (BAA available)"
+    ],
+    "support": [
+      "Phone, email and live chat (paid plans)",
+      "Onboarding, webinars and admin training (paid plans)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Bigin pricing page",
+        "url": "https://www.bigin.com/pricing.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Zoho CRM (application) - Bigin launched in 2020",
+        "url": "https://en.wikipedia.org/wiki/Zoho_CRM_(application)",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Zoho Corporation (headquarters)",
+        "url": "https://en.wikipedia.org/wiki/Zoho_Corporation",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Bigin help: Stay GDPR compliant with Bigin",
+        "url": "https://help.zoho.com/portal/en/kb/bigin/explore-settings/articles/gdpr",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Bigin help: HIPAA compliance in Bigin",
+        "url": "https://help.zoho.com/portal/en/kb/bigin/explore-settings/articles/hipaa-compliance-with-bigin",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Tech.yahoo review: Bigin by Zoho CRM (no Windows app)",
+        "url": "https://tech.yahoo.com/apps/articles/bigin-zoho-crm-190000241.html",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "folk",
+    "name": "folk",
+    "category": "crm-software",
+    "website": "https://www.folk.app",
+    "logo": "https://cdn.prod.website-files.com/626be00c396339c5a816353b/6a16a47c29e4d51e63db578b_logo.png",
+    "pricingUrl": "https://www.folk.app/pricing",
+    "tagline": "Relationship-focused CRM with LinkedIn and Gmail capture, AI assistants and drag-and-drop pipelines.",
+    "bestFor": "Agencies, founders and small teams that sell through their network",
+    "description": "folk captures contacts from LinkedIn, Gmail and the web, syncs email, calendar and WhatsApp, and runs AI research, follow-up and workflow assistants. Plans start at $24 per user per month billed yearly ($30 billed monthly) for Standard.",
+    "pros": [
+      "Unlimited contacts on every plan",
+      "AI Research, Follow-up and Recap assistants included on all plans",
+      "Calls placed from the mobile app are recorded, transcribed and summarised",
+      "Native desktop apps for macOS and Windows plus iOS and Android apps"
+    ],
+    "cons": [
+      "No free plan; the account is blocked after the 14-day trial unless upgraded",
+      "Custom objects, deals, dashboards and Zapier/Make apps require Premium ($48/user/month billed yearly)",
+      "Standard keeps only the last 30 interactions per contact"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14 days with all premium features, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Standard",
+        "monthly": 30,
+        "annual": 24,
+        "custom": false,
+        "notes": "Unlimited contacts; 500 email finds/month; 2,000 AI fields/month; Workflow Assistant 1,500/month; 2,000 messages/member/month; 1 synced account per member; last 30 interactions per contact."
+      },
+      {
+        "name": "Premium",
+        "monthly": 60,
+        "annual": 48,
+        "custom": false,
+        "notes": "Custom objects and deals, email sequences, dashboards, Zapier and Make apps, migration service; 1,000 email finds/month; 5,000 AI fields/month; Workflow Assistant 10,000/month; full interaction history."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 80,
+        "custom": true,
+        "notes": "Starting price, annual billing only. Custom limits, security controls, group-level permissions, priority support, 1:1 onboarding with a dedicated account manager."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": null,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2020",
+    "hq": "Paris, France",
+    "integrations": "LinkedIn and web capture extension; Gmail, Outlook, calendar and WhatsApp sync; Zapier and Make (Premium and up); MCP server; API",
+    "compliance": [
+      "SOC 2",
+      "GDPR"
+    ],
+    "support": [
+      "Support team (all plans)",
+      "Migration service (Premium and up)",
+      "Priority support and 1:1 onboarding (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "folk pricing page",
+        "url": "https://www.folk.app/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "folk help center: folk desktop app",
+        "url": "https://help.folk.app/en/articles/8062551-folk-desktop-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "EU-Startups: Paris-based SaaS startup folk raises €2.8 million (Sept 2021)",
+        "url": "https://www.eu-startups.com/2021/09/paris-based-saas-startup-folk-raises-e2-8-million-to-reinvent-and-replace-crms/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Medium: interview with folk co-founder Simo Lemhandez (founded April 2020)",
+        "url": "https://medium.com/strtupboost/revolutionizing-crm-solutions-with-folk-insights-from-forbes-30-under-30-entrepreneur-simo-89cdc7ca8056",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "monday-crm",
+    "name": "monday CRM",
+    "category": "crm-software",
+    "website": "https://mondaycrm.ai",
+    "logo": "https://cdn.prod.website-files.com/6a8c495e2a9cc494dc883a22/6abbd663fef87f9bd2bbd126_CRM%20Logo.png",
+    "pricingUrl": "https://mondaycrm.ai/pricing",
+    "tagline": "No-code CRM on monday.com's work platform, with customizable pipelines, email tracking and AI agents.",
+    "bestFor": "Teams already on monday.com that want a customizable no-code CRM",
+    "description": "monday CRM runs leads, contacts and deals on customizable boards with kanban views, email tracking, automations and AI agents for outreach calls and meeting notes. Plans start at $12 per seat per month billed yearly ($18 billed monthly) for Basic, sold in seat buckets from 3 seats.",
+    "pros": [
+      "Unlimited customizable pipelines and boards",
+      "Email tracking with automated rules when a lead receives, opens or replies to an email",
+      "Native calling via monday Smart Call from the mobile app, plus an AI outreach caller agent (up to 200 minutes on Basic to Pro)",
+      "Native desktop apps for Mac and Windows; 24/7 customer support"
+    ],
+    "cons": [
+      "Plans start at 3 seats, so the entry cost is at least $36/month billed yearly",
+      "Basic caps active contacts and deals at 1,000 and lists no custom automations",
+      "Mass emails and email sequences require Pro ($28/seat/month billed yearly)"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14 days, no credit card required",
+    "minSeats": 3,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 18,
+        "annual": 12,
+        "custom": false,
+        "notes": "Minimum 3 seats. 1 workspace, 1 custom dashboard, 1,000 active contacts and deals, 5 columns per board, 20 quotes and invoices/month, 1,000 API calls/day."
+      },
+      {
+        "name": "Standard",
+        "monthly": 25,
+        "annual": 17,
+        "custom": false,
+        "notes": "Minimum 3 seats. 3 workspaces, 10,000 active contacts and deals, 15 columns per board, 250 custom automations/month, AI agents, centralized comms hub, iOS and Android apps."
+      },
+      {
+        "name": "Pro",
+        "monthly": 41,
+        "annual": 28,
+        "custom": false,
+        "notes": "Minimum 3 seats. 15 workspaces, 100,000 active contacts and deals, 75 columns per board, 25K custom automations/month, AI workflow builder, mass emails, email sequences."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing via sales. Unlimited contacts, deals and workspaces, advanced permissions, HIPAA compliance, 24/7 prioritized support, tailored onboarding, white-glove migration."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2012",
+    "hq": "Tel Aviv, Israel",
+    "integrations": "Salesforce, HubSpot, Mailchimp, DocuSign, Aircall, PandaDoc, WhatsApp and other monday.com integrations; MCP server",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 27001",
+      "ISO/IEC 27018",
+      "HIPAA (Ultimate)"
+    ],
+    "support": [
+      "Self-serve knowledge base",
+      "24/7 customer support",
+      "Daily live webinars",
+      "24/7 prioritized support and tailored onboarding (Ultimate)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "monday CRM pricing page",
+        "url": "https://mondaycrm.ai/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "monday.com support: Get started with monday Smart Call (read via search excerpt; page blocks automated fetch)",
+        "url": "https://support.monday.com/hc/en-us/articles/35893698534674-Get-started-with-monday-Smart-Call",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "monday.com support: monday.com's desktop app (read via search excerpt; page blocks automated fetch)",
+        "url": "https://support.monday.com/hc/en-us/articles/115005316885-monday-com-s-desktop-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Monday.com (founding year, headquarters)",
+        "url": "https://en.wikipedia.org/wiki/Monday.com",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
     "slug": "1password",
     "name": "1Password",
     "category": "password-managers",
@@ -1555,6 +4866,1211 @@
         "label": "Mac Myths: best password managers (Dashlane plan change Feb 2026)",
         "url": "https://macmyths.com/best-password-managers-5-picks-by-use-case-for-u-s-users/",
         "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "keeper",
+    "name": "Keeper",
+    "category": "password-managers",
+    "website": "https://www.keepersecurity.com",
+    "logo": "https://www.keepersecurity.com/assets/branding/apple-icon-180x180.png",
+    "pricingUrl": "https://www.keepersecurity.com/pricing/personal-and-family.html",
+    "tagline": "Zero-knowledge password manager for individuals, families and businesses, with optional dark-web monitoring and privileged access add-ons.",
+    "bestFor": "Businesses that want password management with compliance certifications and PAM add-ons",
+    "description": "Keeper stores passwords, passkeys, identities and payment cards in an encrypted vault that syncs across desktop, mobile, browser extensions and a web app. Keeper Unlimited costs $42.99 per year ($3.58 per month) for one user, and business plans start at $2 per user per month billed annually.",
+    "pros": [
+      "Native desktop apps for Windows, macOS and Linux as well as iOS, Android, browser extensions and a web vault",
+      "Family plan covers 5 users with private vaults and includes 10 GB of encrypted file storage for $91.99 per year",
+      "Business plan includes a free Family plan for every user",
+      "Holds SOC 2 Type 2 and ISO 27001/27017/27018 certifications, and its government cloud is FedRAMP High"
+    ],
+    "cons": [
+      "BreachWatch dark-web monitoring is a paid add-on ($26.99 per year) on Personal and Family plans",
+      "Free tier is limited to one mobile device and 10 records, according to Security.org",
+      "Business Starter is capped at 5–10 users; SSO/SAML, SCIM and role-based access control need the Enterprise plan"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Keeper Free: mobile app only, one mobile device, 10 records for passwords or passkeys, no cloud backup, emergency access or support (as reported by Security.org, updated 2026-04-17). Not listed on Keeper's pricing page.",
+    "trial": "30-day free trial for personal and family plans; free trials for Business, Enterprise and KeeperPAM (length not stated on the business pricing page)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Mobile only, one device, 10 records (reported by Security.org, 2026-04-17)."
+      },
+      {
+        "name": "Personal (Keeper Unlimited)",
+        "monthly": null,
+        "annual": 3.58,
+        "custom": false,
+        "notes": "$42.99 billed annually; 1 user, unlimited devices and password storage, 24/7 support. BreachWatch add-on $26.99/year; Secure File Storage add-on from $13.99/year."
+      },
+      {
+        "name": "Family",
+        "monthly": null,
+        "annual": 7.67,
+        "custom": false,
+        "notes": "$91.99 billed annually for 5 users with private vaults; includes 10 GB Secure File Storage and emergency access. BreachWatch add-on $26.99/year."
+      },
+      {
+        "name": "Business Starter",
+        "monthly": null,
+        "annual": 2,
+        "custom": false,
+        "notes": "Per user per month billed annually; for 5–10 users. Encrypted vault, admin console, sharing and autofill."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 4,
+        "custom": false,
+        "notes": "Per user per month billed annually; adds shared team folders, delegated administration and a free Family plan for every user."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 6,
+        "custom": true,
+        "notes": "Listed at $6.00 per user per month billed annually with a Request a Quote button; adds SCIM, AD/LDAP, SSO/SAML provisioning, advanced 2FA, RBAC and developer APIs. KeeperPAM is sales-only with custom pricing."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions",
+      "Web"
+    ],
+    "founded": "2011",
+    "hq": "Chicago, USA",
+    "integrations": "SCIM, Active Directory/LDAP and SSO/SAML provisioning (Enterprise); developer APIs; Secrets Manager CLI and SDKs, CI/CD and IaC integrations, ITSM and SIEM integrations as add-ons",
+    "compliance": [
+      "SOC 2 Type 2",
+      "ISO 27001",
+      "ISO 27017",
+      "ISO 27018",
+      "FedRAMP High (Keeper Government Cloud)"
+    ],
+    "support": [
+      "24/7 customer support",
+      "Concierge Service add-on ($137.99/year)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Keeper personal and family pricing page",
+        "url": "https://www.keepersecurity.com/pricing/personal-and-family.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Keeper business and enterprise pricing page",
+        "url": "https://www.keepersecurity.com/pricing/business-and-enterprise.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Keeper downloads page",
+        "url": "https://www.keepersecurity.com/download.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Keeper security and certifications page",
+        "url": "https://www.keepersecurity.com/security.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Keeper about page (Chicago headquarters)",
+        "url": "https://www.keepersecurity.com/about.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Security.org Keeper review (free plan limits, founding year), updated 2026-04-17",
+        "url": "https://www.security.org/password-manager/keeper/",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "roboform",
+    "name": "RoboForm",
+    "category": "password-managers",
+    "website": "https://www.roboform.com",
+    "logo": "https://www.roboform.com/favicon-light.svg",
+    "pricingUrl": "https://www.roboform.com/pricing-personal",
+    "tagline": "Long-running password manager and form filler from Siber Systems, with a free single-device plan and low-cost Premium, Family and Business tiers.",
+    "bestFor": "Individuals who want a cheap password manager with strong form filling",
+    "description": "RoboForm saves and autofills passwords, passkeys and web forms, with a free plan for unlimited passwords on one device. Premium renews at $29.88 per year ($2.49 per month), and Business costs $39.95 per user per year ($3.33 per month).",
+    "pros": [
+      "Free plan stores unlimited passwords on a single device, with 2FA, compromised-password alerts and a built-in TOTP authenticator",
+      "Premium includes data-breach monitoring for 5 email addresses, emergency access and an optional local-only mode",
+      "Business includes SSO, SCIM provisioning and role-based access control, plus a Family plan for staff when 10+ licences are bought",
+      "Enterprise offers a self-hosting model for environments of 1,000+ users"
+    ],
+    "cons": [
+      "No native Linux app; downloads cover Windows, Mac, iOS, Android and browsers",
+      "Free plan has no sync across devices, no web access and no sharing",
+      "Advertised sale prices apply to the first year only; Premium renews at $29.88 and Family at $47.75 per year"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Unlimited passwords on a single device; advanced 2FA, compromised-password monitoring, integrated TOTP authenticator, passwordless unlock and cloud backup. No multi-device access, web access, breach monitoring, emergency access or sharing.",
+    "trial": "Business: 14-day free trial for up to 30 users, extendable once by 5 days, no credit card. Personal plans: 30-day money-back guarantee.",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Single device, unlimited passwords; 24/7 email support."
+      },
+      {
+        "name": "Premium",
+        "monthly": null,
+        "annual": 2.49,
+        "custom": false,
+        "notes": "Regular price $29.88/year. Black Friday promo (ends Nov 30, 2026): new users pay $18.00 for the first year ($1.50/month), then renews at $29.88. Unlimited devices, breach monitoring for 5 emails, priority email support plus weekday live chat and phone."
+      },
+      {
+        "name": "Family",
+        "monthly": null,
+        "annual": 3.98,
+        "custom": false,
+        "notes": "Up to 5 Premium accounts. Regular price $47.75/year; promo $28.65 for the first year for new users, then renews at $47.75."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 3.33,
+        "custom": false,
+        "notes": "Per user; regular $39.95/user/year. Promo $23.97 for the first year for new users, then renews at $39.95. Multi-year discount available. Includes SSO, SCIM, RBAC and a Family plan for personal use with 10+ paid licences."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom volume-based pricing; dedicated onboarding, custom SLA, self-hosting model for 1,000+ users."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": true,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android",
+      "Browser extensions",
+      "Web"
+    ],
+    "founded": "1999",
+    "hq": "Fairfax, USA",
+    "integrations": "Single sign-on (SSO) and SCIM provisioning (Business); MSP portal",
+    "compliance": [],
+    "support": [
+      "24/7 email support",
+      "Priority email support (Premium/Family)",
+      "Live chat and phone, Monday-Friday (Premium/Family)",
+      "Priority 24/7 support (Business)",
+      "Dedicated account manager (Business/Enterprise)",
+      "Help center"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "RoboForm personal and family pricing page",
+        "url": "https://www.roboform.com/pricing-personal",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "RoboForm business pricing page",
+        "url": "https://www.roboform.com/pricing-business",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "RoboForm help center: Business company account creation (trial terms)",
+        "url": "https://help.roboform.com/hc/en-us/articles/230297048-RoboForm-for-Business-Company-Account-Creation",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "RoboForm security page",
+        "url": "https://www.roboform.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "RoboForm llms.txt (established 1999, Fairfax, Virginia)",
+        "url": "https://www.roboform.com/llms.txt",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "enpass",
+    "name": "Enpass",
+    "category": "password-managers",
+    "website": "https://www.enpass.io",
+    "logo": "https://www.enpass.io/wp-content/uploads/2018/12/apple-touch-icon-180x180.png",
+    "pricingUrl": "https://www.enpass.io/pricing/",
+    "tagline": "Password manager that keeps your encrypted vault in your own cloud storage or on your device instead of on Enpass servers.",
+    "bestFor": "People who want to keep their vault in their own cloud storage",
+    "description": "Enpass stores passwords, passkeys and cards in an encrypted vault that syncs through your own iCloud, Google Drive, OneDrive, Dropbox, Box or Nextcloud, never on Enpass servers. A free plan covers 25 items, Premium renews at $23.99 per year ($1.99 per month), and a one-time Lifetime licence costs $99.99.",
+    "pros": [
+      "Vault is stored in your own cloud account or locally, never on Enpass servers",
+      "One-time Lifetime licence for $99.99 as an alternative to a subscription",
+      "Native apps for Windows, macOS, Linux, iOS and Android, plus Apple Watch and Wear OS",
+      "Business plan is $1.99 per user per month and includes SSO, SCIM and SIEM integration"
+    ],
+    "cons": [
+      "Free plan is limited to 25 items in one vault",
+      "No web app; access is through native apps and browser extensions",
+      "Breach and dark-web monitoring is not included in the Free plan"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 25 items in 1 vault, 1 account, import limited to 25 items.",
+    "trial": "Business: 30-day free trial, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "25 items, 1 vault."
+      },
+      {
+        "name": "Premium",
+        "monthly": null,
+        "annual": 1.99,
+        "custom": false,
+        "notes": "Regular price $23.99 billed yearly. Promo: $14.39 for the first year (40% off), then $23.99. 3-year option: $47.99 (pay for 2 years, get 1 free; promo $33.59)."
+      },
+      {
+        "name": "Premium Lifetime",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "One-time payment of $99.99 (promo $59.99, 40% off).",
+        "oneTime": 99.99
+      },
+      {
+        "name": "Family",
+        "monthly": null,
+        "annual": 3.99,
+        "custom": false,
+        "notes": "Up to 6 people. Regular price $47.99 billed yearly; promo $35.99 for the first year (25% off)."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 1.99,
+        "custom": false,
+        "notes": "Per user per month, billed yearly; taxes extra. Includes admin controls, policies, audit logs, SCIM, SSO, SIEM integration, dark web monitoring."
+      },
+      {
+        "name": "Large Enterprises",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales; volume, multi-year and site-based pricing, account manager, complimentary Enpass family plan for employees."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": true,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "founded": null,
+    "hq": "Wilmington, USA",
+    "integrations": "Vault sync via iCloud, Google Drive, OneDrive, Dropbox, Box or Nextcloud; Microsoft 365 and Google Workspace data location, SCIM, SSO, SIEM, UEM/MDM deployment and an MCP server (Business)",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001",
+      "GDPR"
+    ],
+    "support": [
+      "Priority support (Premium/Family)",
+      "24/7/365 technical support (Business)",
+      "Account manager (Large Enterprises)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Enpass personal pricing page (USD prices)",
+        "url": "https://www.enpass.io/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Enpass business pricing page",
+        "url": "https://www.enpass.io/pricing-business/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Enpass about page (Wilmington, Delaware headquarters)",
+        "url": "https://www.enpass.io/about/",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "lastpass",
+    "name": "LastPass",
+    "category": "password-managers",
+    "website": "https://www.lastpass.com",
+    "logo": "https://www.lastpass.com/-/media/43c6c6862a08410a8ef34ab46a3a750b.ico",
+    "pricingUrl": "https://www.lastpass.com/pricing",
+    "tagline": "Cloud password manager with personal, family and business plans, a free tier and built-in dark web monitoring.",
+    "bestFor": "Small businesses that want simple admin controls at a low per-user price",
+    "description": "LastPass stores passwords, passkeys and notes in a cloud vault that is reached through browser extensions, desktop and mobile apps and a web vault. A free plan works on one device type, Premium costs $3 per month billed annually, and business plans start at $4.25 per user per month.",
+    "pros": [
+      "Free plan includes unlimited password storage, autofill and dark web monitoring",
+      "Families covers 6 Premium accounts for $4 per month billed annually",
+      "Business plan includes a free Families account for every employee",
+      "Lists ISO 27001, ISO 27701, SOC 2 Type II and BSI C5 certifications"
+    ],
+    "cons": [
+      "In the 2022 breach, attackers copied backups of customer vault data, including encrypted passwords and unencrypted website URLs (LastPass notice and TechCrunch, December 2022)",
+      "Free plan works on either desktop or mobile, not both, and shares one password with one person at a time",
+      "No native Linux app; the VPN in the Plus plan runs on Windows only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Limited to 1 device type (desktop or mobile). Unlimited password storage, autofill, dark web monitoring, basic sharing (one password with one person at a time); self-service support only; includes a 30-day Premium trial.",
+    "trial": "30 days for personal plans, 14 days for business plans; no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "One device type; self-service support."
+      },
+      {
+        "name": "Premium",
+        "monthly": null,
+        "annual": 3,
+        "custom": false,
+        "notes": "Billed annually; 1 user, all devices, emergency access, hardware MFA, personal support."
+      },
+      {
+        "name": "Families",
+        "monthly": null,
+        "annual": 4,
+        "custom": false,
+        "notes": "Billed annually; 6 Premium accounts."
+      },
+      {
+        "name": "Plus",
+        "monthly": null,
+        "annual": 7,
+        "custom": false,
+        "notes": "Billed annually; 1 user; Premium plus LastPass VPN on up to 10 devices (Windows only). No trial."
+      },
+      {
+        "name": "Teams",
+        "monthly": null,
+        "annual": 4.25,
+        "custom": false,
+        "notes": "Per user per month billed annually; up to 50 users; admin console, shared folders, essential security policies."
+      },
+      {
+        "name": "Business",
+        "monthly": null,
+        "annual": 7,
+        "custom": false,
+        "notes": "Per user per month billed annually; unlimited users; 100+ security policies, group management, Families account for employees."
+      },
+      {
+        "name": "Business Max",
+        "monthly": null,
+        "annual": 11,
+        "custom": false,
+        "notes": "Per user per month billed annually; adds AI, SaaS and Web Monitoring & Protect, unlimited SSO apps and advanced MFA."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android",
+      "Browser extensions",
+      "Web"
+    ],
+    "founded": "2008",
+    "hq": "Boston, USA",
+    "integrations": "Single sign-on apps (Business Max: unlimited); browser extensions for Chrome, Firefox, Edge, Opera and Safari",
+    "compliance": [
+      "ISO 27001",
+      "ISO 27701",
+      "SOC 2 Type II",
+      "BSI C5"
+    ],
+    "support": [
+      "Self-service support center (Free)",
+      "Personal customer care (Premium and above)",
+      "Sales contact for business"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "LastPass pricing page (personal and business tabs)",
+        "url": "https://www.lastpass.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "LastPass downloads page",
+        "url": "https://www.lastpass.com/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "LastPass support: log in to the web vault",
+        "url": "https://support.lastpass.com/s/document-item?language=en_US&bundleId=lastpass&topicId=LastPass%2Flog_in_online_web_vault.html&_LANG=enus",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "LastPass support: what are passkeys in LastPass",
+        "url": "https://support.lastpass.com/s/document-item?language=en_US&bundleId=lastpass&topicId=LastPass%2Fabout_passkeys.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "LastPass about us (founded 2008, Boston)",
+        "url": "https://www.lastpass.com/company/about-us",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "LastPass blog: Notice of recent security incident (December 22, 2022 update)",
+        "url": "https://blog.lastpass.com/posts/notice-of-recent-security-incident",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "TechCrunch: LastPass says hackers stole customers' password vaults (2022-12-22)",
+        "url": "https://techcrunch.com/2022/12/22/lastpass-customer-password-vaults-stolen/",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "keepassxc",
+    "name": "KeePassXC",
+    "category": "password-managers",
+    "website": "https://keepassxc.org",
+    "logo": "https://keepassxc.org/assets/img/apple-touch-icon-precomposed.png",
+    "pricingUrl": "https://keepassxc.org/",
+    "tagline": "Free, open-source, offline password manager for Windows, macOS and Linux that stores your vault in a local KeePass database file.",
+    "bestFor": "Privacy-minded desktop users who want a free offline vault",
+    "description": "KeePassXC is a community-built, GPLv3-licensed port of KeePass that keeps passwords in a local encrypted database file, with browser integration and passkey support through the KeePassXC-Browser extension. It is free; there are no paid plans.",
+    "pros": [
+      "Free and open source under GPLv3, with no account or subscription",
+      "Vault is a local database file you control; sync it with any cloud folder if you want",
+      "Supports passkeys through the KeePassXC-Browser extension (since version 2.7.7)",
+      "Database reports include password health and an on-demand Have I Been Pwned check"
+    ],
+    "cons": [
+      "No official mobile apps; the project points to third-party KeePass apps such as KeePassDX, KeePass2Android, Strongbox and KeePassium",
+      "No built-in sync, sharing or web vault",
+      "No continuous breach monitoring or email alias features"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Fully free open-source software (GPLv3); donations accepted.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free (open source)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "All features free; latest stable release 2.8.0 (21 October 2026)."
+      }
+    ],
+    "features": {
+      "openSource": true,
+      "passkeys": true,
+      "selfHost": true,
+      "emailAliases": false,
+      "breachMonitoring": false
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Browser extensions"
+    ],
+    "founded": "2016",
+    "hq": null,
+    "integrations": "KeePassXC-Browser extension; keepassxc-cli; database files usable in third-party KeePass apps (KeePassDX, KeePass2Android, Strongbox, KeePassium)",
+    "compliance": [],
+    "support": [
+      "Documentation and user guide",
+      "GitHub issues",
+      "Matrix community chat"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "KeePassXC homepage (GPLv3, platforms, 2.8.0 release)",
+        "url": "https://keepassxc.org/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "KeePassXC documentation and FAQ",
+        "url": "https://keepassxc.org/docs/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "KeePassXC 2.7.7 release notes (passkeys)",
+        "url": "https://keepassxc.org/blog/2024-03-10-2.7.7-released/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "GitHub: keepassxreboot/keepassxc",
+        "url": "https://github.com/keepassxreboot/keepassxc",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: KeePassXC (project founded 2016)",
+        "url": "https://en.wikipedia.org/wiki/KeePassXC",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "zoho-vault",
+    "name": "Zoho Vault",
+    "category": "password-managers",
+    "website": "https://www.zoho.com/vault/",
+    "logo": "https://www.zohowebstatic.com/sites/zweb/images/favicon.ico",
+    "pricingUrl": "https://www.zoho.com/vault/pricing.html",
+    "tagline": "Zoho's cloud password manager for individuals and businesses, with team sharing, admin controls and SSO.",
+    "bestFor": "Small businesses already using Zoho, Google Workspace or Microsoft 365",
+    "description": "Zoho Vault stores passwords and passkeys with client-side AES-256 encryption and adds team sharing, user roles, access reports and SSO on paid plans. There is a free plan, and the paid Standard plan costs $0.90 per user per month billed annually ($1 billed monthly).",
+    "pros": [
+      "Free plan includes unlimited passwords, passkeys, storage and devices",
+      "Standard plan costs $0.90 per user per month billed annually",
+      "Enterprise adds Active Directory provisioning, SSO for cloud apps, request-release access workflows and SIEM integration",
+      "Zoho's SOC 2 + HIPAA Type 2 report lists Zoho Vault among covered products"
+    ],
+    "cons": [
+      "Group management, folder sharing and breached password alerts start on Professional, which needs at least 5 users",
+      "No native Linux desktop app; Linux is supported only through the CLI and browser extensions",
+      "File attachments are capped at 2 MB each"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free Forever: unlimited passwords, passkeys and storage, unlimited devices, autofill, passwordless unlock, password generator, security dashboard, offline access, built-in 2FA authenticator, folders, mobile apps, browser extensions and desktop apps. Basic email-only support.",
+    "trial": "15-day free trial (Enterprise features, up to 5 users), no credit card required; the account moves to the Free plan if you don't upgrade.",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free forever; email-only support."
+      },
+      {
+        "name": "Standard",
+        "monthly": 1,
+        "annual": 0.9,
+        "custom": false,
+        "notes": "Per user per month. Adds team password sharing, one-time sharing with third parties, TOTP sharing, passkey management, user roles, admin controls, IP restriction, Google Workspace/Microsoft 365 integration and priority support."
+      },
+      {
+        "name": "Professional",
+        "monthly": 5,
+        "annual": 4.5,
+        "custom": false,
+        "notes": "Per user per month, minimum 5 users. Adds user groups, folder sharing, SecureForms (3 active forms per user), break-glass emergency access, 10 webhooks, CLI, breached password alerts, geolocation restriction, Azure and Google user sync."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 8,
+        "annual": 7.2,
+        "custom": false,
+        "notes": "Per user per month, minimum 5 users. Adds Active Directory integration, SSO for cloud apps, request-release workflow, Okta/OneLogin integration, help desk and SIEM integration, rebranding, unlimited webhooks."
+      },
+      {
+        "name": "Flex",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom volume-based pricing via sales, with tailored onboarding and extended trials for large deployments."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android",
+      "Browser extensions",
+      "Web"
+    ],
+    "founded": "1996",
+    "hq": null,
+    "integrations": "Google Workspace, Microsoft 365, Azure AD, Okta, OneLogin, Active Directory/LDAP, SAML 2.0, help desk and SIEM tools, webhooks, CLI; Zoho Mail, Desk, Projects and Flow",
+    "compliance": [
+      "SOC 2 + HIPAA Type 2 (Zoho report naming Zoho Vault)",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Email (Free)",
+      "Priority email, phone and remote assistance (paid plans)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Zoho Vault pricing page (prices render in the visitor's local currency; INR figures shown on the page matched the pricing data file)",
+        "url": "https://www.zoho.com/vault/pricing.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Vault pricing data file loaded by the pricing page (USD monthly and yearly prices)",
+        "url": "https://www.zohowebstatic.com/sites/zweb/json/pricing/vault-pricing-val.json",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Vault apps download page",
+        "url": "https://www.zoho.com/vault/password-manager-application-download.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho Vault security page",
+        "url": "https://www.zoho.com/vault/security.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho compliance page",
+        "url": "https://www.zoho.com/compliance.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Zoho about us (timeline from AdventNet, 1996)",
+        "url": "https://www.zoho.com/aboutus.html",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "sticky-password",
+    "name": "Sticky Password",
+    "category": "password-managers",
+    "website": "https://www.stickypassword.com",
+    "logo": "https://www.stickypassword.com/apple-touch-icon.png",
+    "pricingUrl": "https://www.stickypassword.com/pricing",
+    "tagline": "Czech password manager with cloud or local Wi-Fi sync and a lifetime licence option.",
+    "bestFor": "Individuals who want local Wi-Fi sync or a one-time lifetime licence",
+    "description": "Sticky Password stores passwords and passkeys, autofills logins and lets you sync through its cloud, over local Wi-Fi or manually offline. A free local-only version is available, Premium costs $29.99 per year, and a lifetime Premium licence is $79.99 one-time.",
+    "pros": [
+      "Lifetime Premium licence for a one-time $79.99, including 1 year of Dark Web Monitoring",
+      "Choice of cloud sync, local Wi-Fi sync or manual offline sync",
+      "Premium and Teams include Dark Web Monitoring and breach alerts",
+      "30-day Premium trial with no credit card; Teams trial includes 5 seats"
+    ],
+    "cons": [
+      "Free version has no sync or backup across devices",
+      "No native Linux app; Linux and ChromeOS are supported only via Contactless Connect from a smartphone",
+      "Not open source and cannot be self-hosted"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Sticky Password Free: core password management stays available on the local device, without cloud backup, multi-device sync or priority support. Accounts move to Free when the 30-day Premium trial or a Premium licence ends.",
+    "trial": "30-day free trial of Premium, no credit card (excludes Dark Web Monitoring); Teams trial is 30 days with 5 seats.",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Local device only; no sync, cloud backup or priority support."
+      },
+      {
+        "name": "Premium (1 year)",
+        "monthly": null,
+        "annual": 2.5,
+        "custom": false,
+        "notes": "$29.99 per year for one user (shown against a struck-through $39.99). Includes Dark Web Monitoring for the subscription. No monthly billing."
+      },
+      {
+        "name": "Premium Lifetime",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "One-time $79.99 (shown against a struck-through $199.99). Never expires; includes 1 year of Dark Web Monitoring ($12 value), renewable separately.",
+        "oneTime": 79.99
+      },
+      {
+        "name": "Premium for teams",
+        "monthly": null,
+        "annual": 2.5,
+        "custom": false,
+        "notes": "$29.99 per user per year. Adds an admin console; includes Dark Web Monitoring. Up to 100 seats can be ordered online; larger orders through support."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "founded": "2001",
+    "hq": "Brno, Czech Republic",
+    "integrations": null,
+    "compliance": [],
+    "support": [
+      "Help center",
+      "Discussion board",
+      "Priority support for Premium users (typically within 24 hours on workdays)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Sticky Password pricing page",
+        "url": "https://www.stickypassword.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password help: Premium for teams",
+        "url": "https://www.stickypassword.com/help/sticky-password-for-teams-1129",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password help: what happens when Premium expires",
+        "url": "https://www.stickypassword.com/help/what-will-happen-to-my-data-when-my-premium-license-expires-142",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password help: how to get Sticky Password Free",
+        "url": "https://www.stickypassword.com/help/how-can-i-get-sticky-password-free-29",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password: operating systems and browsers",
+        "url": "https://www.stickypassword.com/operating-systems-and-browsers",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password: passkeys",
+        "url": "https://www.stickypassword.com/passkeys",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password: synchronization and backup",
+        "url": "https://www.stickypassword.com/synchronization-and-backup",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password: Dark Web Monitoring",
+        "url": "https://www.stickypassword.com/dark-web-monitoring",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Sticky Password contact page (Lamantine Software, Brno)",
+        "url": "https://www.stickypassword.com/contact",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "nordpass-business",
+    "name": "NordPass Business",
+    "category": "password-managers",
+    "website": "https://nordpass.com/business-password-manager/",
+    "logo": "https://nordpass.com/next/favicon/favicon.ico",
+    "pricingUrl": "https://nordpass.com/plans/business/",
+    "tagline": "Business edition of NordPass with an admin panel, shared folders, breach scanning and SSO.",
+    "bestFor": "Small and mid-sized companies that want a low-cost managed password manager",
+    "description": "NordPass Business is the business edition of the NordPass password manager, sold as Teams, Business and Enterprise plans with an organization admin panel, password policies and activity logs. Teams starts at $1.99 per user per month on a 1-year plan, sold only as a 10-user pack.",
+    "pros": [
+      "Teams costs $1.99 per user per month on a 1-year plan ($1.79 on a 2-year plan)",
+      "Email masking, MFA, offline mode and Google Workspace SSO are included on every plan",
+      "Business and Enterprise users get a free personal Premium plan",
+      "14-day free Business trial with no credit card required"
+    ],
+    "cons": [
+      "Teams is sold only as a 10-user pack and lacks shared folders, password health and the Data Breach Scanner",
+      "Entra ID and Okta SSO and provisioning, Activity Log API and Splunk/Sentinel integrations are Enterprise only",
+      "Not open source and cannot be self-hosted"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free Business trial, no credit card required.",
+    "minSeats": 5,
+    "plans": [
+      {
+        "name": "Teams",
+        "monthly": 2.49,
+        "annual": 1.99,
+        "custom": false,
+        "notes": "Per user per month; sold only as a 10-user pack. 2-year plan: $1.79/user/month. Includes autofill, sharing, email masking, MFA, offline access, activity monitoring, Google Workspace SSO."
+      },
+      {
+        "name": "Business",
+        "monthly": 5.99,
+        "annual": 3.99,
+        "custom": false,
+        "notes": "Per user per month, minimum 5 users. 2-year plan: $3.59/user/month. Adds group and folder sharing, password health, Data Breach Scanner for 1 domain, Vanta integration, free personal Premium for users."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 7.99,
+        "annual": 5.99,
+        "custom": false,
+        "notes": "Per user per month, minimum 5 users. 2-year plan: $5.39/user/month. Adds Sharing Hub, Entra ID and Okta SSO and provisioning, network allowlist, Activity Log API, Splunk and Microsoft Sentinel, breach scanning for up to 10 domains, dedicated customer success manager."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "passkeys": true,
+      "selfHost": false,
+      "emailAliases": true,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "founded": "2019",
+    "hq": null,
+    "integrations": "SSO with Google Workspace (all plans), Entra ID and Okta SSO and user/group provisioning (Enterprise); Vanta (Business+); Splunk and Microsoft Sentinel (Enterprise); CLI",
+    "compliance": [
+      "ISO 27001",
+      "SOC 2 Type 2",
+      "HIPAA",
+      "Cure53 audit",
+      "SSO/SAML via Entra ID and Okta (Enterprise)"
+    ],
+    "support": [
+      "24/7 live support",
+      "Help center",
+      "Customized onboarding and training (Enterprise)",
+      "Dedicated customer success manager (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "NordPass Business plans page (2-year, 1-year and 1-month tabs; prices in USD excluding VAT)",
+        "url": "https://nordpass.com/plans/business/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "NordPass download page for Chrome (passkeys, email masking, Data Breach Scanner)",
+        "url": "https://nordpass.com/download/chrome/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "NordPass download page for Linux",
+        "url": "https://nordpass.com/download/linux/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: NordPass (launched 2019)",
+        "url": "https://en.wikipedia.org/wiki/NordPass",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "PR Newswire: NordVPN releases NordPass (Nov 2019)",
+        "url": "https://prnewswire.com/news-releases/nordvpn-officially-releases-its-new-password-manager-nordpass-300966182.html",
+        "date": "2019-11-27"
+      }
+    ]
+  },
+  {
+    "slug": "psono",
+    "name": "Psono",
+    "category": "password-managers",
+    "website": "https://psono.com",
+    "logo": "https://psono.com/favicon-32x32.png",
+    "pricingUrl": "https://psono.com/#pricing",
+    "tagline": "Open-source, self-hosted password manager for companies, with a hosted SaaS option.",
+    "bestFor": "Companies that want to self-host an open-source password manager",
+    "description": "Psono is an Apache-2.0 open-source password manager with client-side encryption that companies can run on their own servers or use as a hosted service. The Community Edition is free with unlimited users, the business edition is free up to 10 users, and larger companies pay $3 per user per month billed annually (minimum 25 users).",
+    "pros": [
+      "Community Edition is free and open source with unlimited users, self-hosted or on the free hosted psono.pw",
+      "Business features (LDAP, SAML and OIDC SSO, audit logging, policies) are free for up to 10 users when self-hosted",
+      "Native desktop apps for Windows, macOS and Linux (AppImage, APT and RPM)",
+      "Stores and shares passkeys; includes SSH/RDP/VNC gateway on business editions"
+    ],
+    "cons": [
+      "Paid business editions are billed annually with a 25-user minimum",
+      "Professional support and SLAs are quote-only; standard plans get basic support",
+      "No email aliases, and the hosted business edition lists SAML and OIDC SSO but not LDAP"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Self-hosted Community Edition: free, open source, unlimited users. Self-hosted business edition: free for up to 10 users with the complete feature set. Hosted Community edition at psono.pw: free, including hosting and updates.",
+    "trial": null,
+    "minSeats": 25,
+    "plans": [
+      {
+        "name": "Community Edition (self-hosted)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free and open source, unlimited users; password generator, sharing, MFA; basic support."
+      },
+      {
+        "name": "Enterprise Edition, up to 10 users (self-hosted)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free for up to 10 users with the complete business feature set: LDAP, SAML and OIDC SSO, audit logging, policies, compliance enforcement, SSH/RDP/VNC gateway."
+      },
+      {
+        "name": "Enterprise Edition (self-hosted)",
+        "monthly": null,
+        "annual": 3,
+        "custom": false,
+        "notes": "$3 per user per month, billed annually, minimum 25 users; purchased through sales. Extended support option quoted separately."
+      },
+      {
+        "name": "SaaS Community",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Community feature set hosted free at psono.pw, including hosting and updates."
+      },
+      {
+        "name": "SaaS Business",
+        "monthly": null,
+        "annual": 3.5,
+        "custom": false,
+        "notes": "$3.50 per user per month, billed annually, minimum 25 users; hosted business edition with SAML and OIDC SSO, audit logging, policies, gateway; purchased through sales."
+      }
+    ],
+    "features": {
+      "openSource": true,
+      "passkeys": true,
+      "selfHost": true,
+      "emailAliases": false,
+      "breachMonitoring": true
+    },
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "iOS",
+      "Android",
+      "Browser extensions",
+      "Web"
+    ],
+    "founded": null,
+    "hq": "Vorra, Germany",
+    "integrations": "LDAP, SAML and OIDC SSO; SSH/RDP/VNC gateway; API keys and callbacks; psono-ci command-line client",
+    "compliance": [],
+    "support": [
+      "Basic support",
+      "Extended support and SLAs (by quote)",
+      "Discord community"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Psono homepage pricing section (On Premise and SaaS tabs)",
+        "url": "https://psono.com/#pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Psono docs: features",
+        "url": "https://doc.psono.com/user/getting-started/features.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Psono download page",
+        "url": "https://psono.com/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "GitLab: psono-server (Apache License 2.0)",
+        "url": "https://gitlab.com/psono/psono-server",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "passbolt",
+    "name": "Passbolt",
+    "category": "password-managers",
+    "website": "https://www.passbolt.com",
+    "logo": "https://www.passbolt.com/favicon.ico",
+    "pricingUrl": "https://www.passbolt.com/pricing",
+    "tagline": "Open-source team password manager from Luxembourg, self-hosted or cloud-hosted in the EU.",
+    "bestFor": "IT teams that want an open-source, self-hosted password manager for sharing credentials",
+    "description": "Passbolt is an AGPLv3 open-source password manager built for teams, with granular sharing, groups, role-based access control and a browser-extension-based client. The self-hosted Community Edition is free, and Pro (self-hosted) or Cloud Business costs $4.90 per user per month billed annually, with a 10-user minimum.",
+    "pros": [
+      "Community Edition is free, open source under AGPLv3, with unlimited users and instances",
+      "Pro adds LDAP/AD provisioning, SSO with Microsoft, Google, OpenID and AD FS, SCIM and account recovery",
+      "Cloud plans are hosted in the EU (Belgium/Germany, or Luxembourg on Sovereign)",
+      "Source code audited by Cure53 and a SOC 2 Type II audit completed in 2021"
+    ],
+    "cons": [
+      "Paid editions require at least 10 users",
+      "Passkey storage has not shipped; only WebAuthn as a login second factor (v5.17)",
+      "Desktop app is Windows only, and the web client needs the browser extension"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Community Edition (self-hosted): free forever, unlimited users and instances, password and folder sharing, users and groups, RBAC, browser extensions, CLI and open API; community support only.",
+    "trial": "7-day free trial of Cloud Business.",
+    "minSeats": 10,
+    "plans": [
+      {
+        "name": "Community (self-hosted)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Free, unlimited users; community support only."
+      },
+      {
+        "name": "Pro (self-hosted)",
+        "monthly": null,
+        "annual": 4.9,
+        "custom": false,
+        "notes": "Per user per month billed annually, minimum 10 users; volume discounts after 100 users. EUR price €4.50. Email support with next-business-day SLA. After expiry Pro keeps working but without updates or support."
+      },
+      {
+        "name": "Enterprise (self-hosted)",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom quote; unlimited users and instances, 4-hour business-hours SLA with phone, email and Slack support, HA/DR consulting."
+      },
+      {
+        "name": "Cloud Business",
+        "monthly": 5.4,
+        "annual": 4.9,
+        "custom": false,
+        "notes": "Per user per month, minimum 10 users (EUR €5 monthly, €4.50 annual). Multi-tenant hosting in Belgium and Germany (GCP); email support, next-business-day SLA; 7-day free trial."
+      },
+      {
+        "name": "Cloud Sovereign",
+        "monthly": null,
+        "annual": 8,
+        "custom": false,
+        "notes": "Per user per month billed annually in advance, minimum 10 users (EUR €7); hosted in Luxembourg; adds LDAP/AD provisioning and action logs; bought through sales."
+      },
+      {
+        "name": "Cloud Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom yearly quote; isolated container hosting in Luxembourg, custom domain and SSL, automated backups, phone and Slack support, 4-hour SLA."
+      }
+    ],
+    "features": {
+      "openSource": true,
+      "passkeys": false,
+      "selfHost": true,
+      "emailAliases": false,
+      "breachMonitoring": false
+    },
+    "platforms": [
+      "Windows",
+      "iOS",
+      "Android",
+      "Browser extensions"
+    ],
+    "founded": "2016",
+    "hq": "Belvaux, Luxembourg",
+    "integrations": "LDAP/Active Directory provisioning, SSO with Microsoft, Google, OpenID and AD FS, SCIM, syslog output, CLI, open API",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR audit (Examin)",
+      "Cure53 security audits"
+    ],
+    "support": [
+      "Community (Community Edition)",
+      "Email with next-business-day SLA (Pro, Cloud Business, Sovereign)",
+      "Phone and Slack with 4-hour SLA (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Passbolt pricing page (self-hosted editions)",
+        "url": "https://www.passbolt.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt cloud pricing page",
+        "url": "https://www.passbolt.com/pricing/cloud",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt download page",
+        "url": "https://www.passbolt.com/download",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt about page",
+        "url": "https://www.passbolt.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt security page",
+        "url": "https://www.passbolt.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Passbolt community: PB-33600 passkey support (staff update 2026-10-20)",
+        "url": "https://community.passbolt.com/t/pb-33600-passkey-support/7710?page=2",
+        "date": "2026-11-21"
       }
     ]
   },

@@ -1,0 +1,521 @@
+[
+  {
+    "slug": "granola",
+    "name": "Granola",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.granola.ai",
+    "logo": "https://www.granola.ai/favicon/favicon-96x96.png",
+    "pricingUrl": "https://www.granola.ai/pricing",
+    "tagline": "Bot-free AI notepad that turns your own meeting notes and device audio into finished notes.",
+    "bestFor": "People in back-to-back meetings who want notes without a bot joining the call",
+    "description": "Granola captures your computer's audio instead of sending a bot, then combines what it heard with the notes you typed to write up the meeting. The Basic plan is free with 30 days of meeting history, and Business costs $14 per user per month.",
+    "pros": [
+      "No bot joins the call; it captures device audio from Zoom, Google Meet, Microsoft Teams, WebEx and Slack huddles",
+      "Free Basic plan has no stated cap on meetings and includes AI chat, shared folders and custom templates",
+      "Business adds HubSpot, Attio, Affinity, Notion and Zapier integrations plus an API and MCP server",
+      "SOC 2 Type II listed on every plan"
+    ],
+    "cons": [
+      "Free Basic plan only shows 30 days of meeting history",
+      "Salesforce integration, HIPAA workspaces and SSO are Enterprise only, and SSO needs 50+ users",
+      "No annual billing price is published"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Basic: AI meeting notes, AI chat across meetings (auto model only), shared folders, custom templates, voice typing; meeting history limited to 30 days. Excludes pre-meeting briefs, follow-up emails, most integrations and API.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "30 days of meeting history; Slack integration only."
+      },
+      {
+        "name": "Business",
+        "monthly": 14,
+        "annual": null,
+        "custom": false,
+        "notes": "Per user per month. Unlimited notes and history, model selection, HubSpot/Attio/Affinity/Notion/Zapier, API and MCP, centralized billing. No annual price published."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 35,
+        "annual": null,
+        "custom": false,
+        "notes": "Per user per month (Granola's llms.txt says $35+). Adds SSO (workspaces with 50+ users), HIPAA workspaces, SCIM, audit API, Salesforce, workspace analytics and admin controls."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": true,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2023",
+    "hq": "London, United Kingdom",
+    "integrations": "Slack, Notion, HubSpot, Attio, Affinity, Zapier, Salesforce (Enterprise), API, MCP",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "HIPAA (Enterprise)",
+      "SSO (Enterprise, 50+ users)"
+    ],
+    "support": [
+      "Help center"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Granola pricing page",
+        "url": "https://www.granola.ai/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Granola llms.txt (company facts)",
+        "url": "https://www.granola.ai/llms.txt",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Granola blog: Granola for Windows",
+        "url": "https://www.granola.ai/blog/granola-for-windows-setup-teams-and-zoom-capture-and-what-it-controls",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "avoma",
+    "name": "Avoma",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.avoma.com",
+    "logo": "https://cdn.prod.website-files.com/5de236b4d41434460ade73ac/5de60e45eee20578cc43a906_Avoma-Icon-Color-256.png",
+    "pricingUrl": "https://www.avoma.com/pricing",
+    "tagline": "AI meeting assistant with transcription, notes, scheduling and add-on conversation and revenue intelligence.",
+    "bestFor": "Sales and customer-success teams that want meeting notes saved to the CRM",
+    "description": "Avoma records and transcribes meetings, writes AI notes, saves them to Salesforce or HubSpot records, and includes a meeting scheduler. Paid plans start at $29 per recorder seat per month, or $19 billed annually, and viewers are free.",
+    "pros": [
+      "Unlimited AI notes and transcription on every paid plan",
+      "Viewers, listeners and collaborators do not need a paid seat",
+      "14-day trial of the Organization plan with all add-ons, no credit card",
+      "SOC 2 Type II and ISO/IEC 42001:2023 certified"
+    ],
+    "cons": [
+      "No free recording plan; after the trial the account can only view past recordings",
+      "Conversation Intelligence and Revenue Intelligence are extra add-ons at $29-$35 per seat per month",
+      "SSO and HIPAA are Enterprise only, which is annual-only with a 10-seat minimum"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free recording plan. Viewer accounts (watch recordings, read notes) are free.",
+    "trial": "14-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Startup",
+        "monthly": 29,
+        "annual": 19,
+        "custom": false,
+        "notes": "Per recorder seat; up to 25 paid seats. Unlimited AI notes and transcription, 1:1 scheduling, dialer integration."
+      },
+      {
+        "name": "Organization",
+        "monthly": 39,
+        "annual": 29,
+        "custom": false,
+        "notes": "Per recorder seat; up to 100 paid seats. Adds custom AI templates, group/round-robin scheduling, API and webhooks."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 39,
+        "custom": false,
+        "notes": "Per recorder seat, annual billing only, minimum 10 paid seats. Adds SSO, HIPAA, data retention policies and a designated success manager. Optional add-ons on any plan, per seat: Conversation Intelligence or Revenue Intelligence $35 monthly / $29 annual each, Lead Router $25 monthly / $19 annual; optional onboarding $1,000 one-time."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Chrome extension"
+    ],
+    "founded": "2017",
+    "hq": "Fremont, USA",
+    "integrations": "Zoom, Microsoft Teams, Google Meet, Webex, GoToMeeting; Salesforce and HubSpot (two-way field updates need the Revenue Intelligence add-on); dialers; API and webhooks (Organization+)",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 42001:2023",
+      "GDPR",
+      "HIPAA (Enterprise)",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Knowledge base",
+      "Live chat",
+      "Email",
+      "Dedicated Slack channel",
+      "Customer success manager (Organization)",
+      "Designated success manager (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Avoma pricing page",
+        "url": "https://www.avoma.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Avoma security page",
+        "url": "https://www.avoma.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Avoma about page",
+        "url": "https://www.avoma.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Avoma llms.txt (company address)",
+        "url": "https://avoma.com/llms.txt",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "krisp",
+    "name": "Krisp",
+    "category": "ai-meeting-note-takers",
+    "website": "https://krisp.ai",
+    "logo": "https://krisp.ai/wp-content/uploads/2023/12/cropped-favicon-1-192x192.png",
+    "pricingUrl": "https://krisp.ai/pricing/",
+    "tagline": "Bot-free AI meeting assistant with built-in noise cancellation, accent conversion and AI notes.",
+    "bestFor": "Remote workers who want noise cancellation and meeting notes in one app",
+    "description": "Krisp captures meeting audio on your device, removes background noise, and produces transcripts and AI notes for Zoom, Google Meet, Microsoft Teams and other apps. There is a 7-day free trial, and Core costs $16 per user per month or $8 billed annually.",
+    "pros": [
+      "Bot-free by default, working at the audio level with any conferencing app; an optional bot is available for Zoom",
+      "Unlimited AI notes, transcription and noise cancellation on Core",
+      "Annual billing halves the per-seat price",
+      "HubSpot, Pipedrive, Affinity, Slack, Notion and Zapier on Core"
+    ],
+    "cons": [
+      "No permanent free plan for Meeting AI, only a 7-day trial",
+      "Salesforce needs Advanced; SSO, SCIM and HIPAA are Enterprise only",
+      "Core limits accent conversion to 1 hour a day and storage to 10 GB"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "7-day trial",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Core",
+        "monthly": 16,
+        "annual": 8,
+        "custom": false,
+        "notes": "Per user. Unlimited AI notes, transcription and noise cancellation; 1 hr/day accent conversion; 10 GB storage. A Black Friday code (KRISPBF2026) advertised 55% off annual plans on 2026-11-21."
+      },
+      {
+        "name": "Advanced",
+        "monthly": 30,
+        "annual": 15,
+        "custom": false,
+        "notes": "Per user. 4 hrs/day speaker-side accent conversion, unlimited listener-side; 60 GB storage; Salesforce and ConnectWise; BAA for teams with 100+ seats."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Contact sales. Unlimited storage, SSO/SCIM, HIPAA, SOC 2 report access, custom limits, dedicated account manager. Volume discounts above 50 seats."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android",
+      "Chrome extension"
+    ],
+    "founded": "2017",
+    "hq": "Berkeley, USA",
+    "integrations": "Slack, Notion, Zapier, Microsoft Teams, HubSpot, Pipedrive, Affinity, MCP, API; Salesforce and ConnectWise (Advanced+)",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "PCI-DSS",
+      "HIPAA (Enterprise; BAA on Advanced for 100+ seats)",
+      "SSO/SCIM (Enterprise)"
+    ],
+    "support": [
+      "24/7 support",
+      "Slack community",
+      "Priority support (Advanced)",
+      "Dedicated account manager (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Krisp pricing page",
+        "url": "https://krisp.ai/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Krisp AI meeting assistant page",
+        "url": "https://krisp.ai/ai-meeting-assistant/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Krisp about page (HQ address)",
+        "url": "https://krisp.ai/about-us/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Krisp (founding year)",
+        "url": "https://en.wikipedia.org/wiki/Krisp",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "meetgeek",
+    "name": "MeetGeek",
+    "category": "ai-meeting-note-takers",
+    "website": "https://meetgeek.ai",
+    "logo": "https://cdn.prod.website-files.com/63af97f08f22087ab0e44f0a/63bce5d78d77f2295530d025_MeetGeek%20Favicon.png",
+    "pricingUrl": "https://meetgeek.ai/pricing",
+    "tagline": "AI meeting assistant that records, transcribes and summarizes meetings in 100+ languages.",
+    "bestFor": "Small teams that want CRM sync and a HIPAA BAA at a low per-seat price",
+    "description": "MeetGeek records Zoom, Google Meet and Microsoft Teams calls through a bot, desktop app, Chrome extension or mobile app, then writes transcripts and AI summaries. The free Basic plan includes 3 transcription hours a month, and Pro costs $15.99 per user per month or $9.99 billed annually.",
+    "pros": [
+      "Free Basic plan includes AI summaries, AI chat and 3 transcription hours a month",
+      "SOC 2 Type II on every plan, and a HIPAA BAA on annual Pro, Business or Enterprise plans",
+      "HubSpot, Salesforce and Pipedrive sync from Pro",
+      "Bot-free desktop app for macOS and Windows plus a Chrome extension and iOS/Android apps"
+    ],
+    "cons": [
+      "Pro is capped at 20 transcription hours a month, with extra hours at $0.50 each",
+      "Free recordings are capped at 2 hours each, with transcripts kept 3 months and audio 1 month",
+      "SSO and SCIM are Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Basic: 3 hours of transcription per month, recordings up to 2 hours, transcripts kept 3 months, audio kept 1 month, AI summaries and AI chat, 100+ languages. No credit card.",
+    "trial": "14-day trial (Business)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "3 transcription hours/month; recording stops when they are used up. 100 API/MCP requests per day."
+      },
+      {
+        "name": "Pro",
+        "monthly": 15.99,
+        "annual": 9.99,
+        "custom": false,
+        "notes": "Per user. 20 transcription hours/month, extra hours $0.50 each; transcripts 1 year, audio 6 months; 2-hour recordings; CRM sync, Zapier/Make/n8n."
+      },
+      {
+        "name": "Business",
+        "monthly": 27,
+        "annual": 17,
+        "custom": false,
+        "notes": "Per user. Unlimited transcription and transcript storage; audio and video kept 12 months; 3-hour recordings; 14-day trial, no credit card."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom quote. SSO and SCIM, zero or custom data retention, on-premise storage options, 4-hour recordings, dedicated onboarding and support."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "Chrome extension",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2018",
+    "hq": null,
+    "integrations": "HubSpot, Salesforce, Pipedrive, Zapier, Make, n8n (Pro+); API and MCP; works with Zoom, Google Meet, Microsoft Teams, Webex, Slack and Discord",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR",
+      "CCPA",
+      "HIPAA (BAA on annual paid plans)",
+      "SSO/SCIM (Enterprise)"
+    ],
+    "support": [
+      "Chat",
+      "Email",
+      "Dedicated onboarding and support (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "MeetGeek pricing page",
+        "url": "https://meetgeek.ai/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "MeetGeek help center: desktop app quickstart (macOS and Windows)",
+        "url": "https://support.meetgeek.ai/en/articles/13745672-meetgeek-desktop-app-quickstart-guide",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "MeetGeek blog author page: Dan Huru (co-founded 2018)",
+        "url": "https://meetgeek.ai/de/blog-author/dan-huru",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "jamie",
+    "name": "Jamie",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.meetjamie.ai",
+    "logo": "https://www.meetjamie.ai/favicon.png",
+    "pricingUrl": "https://www.meetjamie.ai/pricing",
+    "tagline": "Bot-free AI note taker for online and in-person meetings, hosted in the EU.",
+    "bestFor": "European teams that want bot-free notes with EU data hosting",
+    "description": "Jamie runs on your device and records any online platform or in-person meeting without a bot, then writes summaries and action items; data is hosted in Germany. The free plan covers 10 meetings a month up to 30 minutes, and US customers pay $29 per month for Plus, or a reported $24 a month billed annually.",
+    "pros": [
+      "No bot joins the call; works with Zoom, Google Meet, Microsoft Teams, Webex and in-person meetings",
+      "Data hosted and processed in the EU on German servers; GDPR and ISO 27001",
+      "Free plan includes 10 meetings a month and unlimited storage",
+      "Pro and above sync to HubSpot, Salesforce, Attio, Dynamics 365 and Pipedrive"
+    ],
+    "cons": [
+      "Free meetings are capped at 30 minutes each",
+      "SOC 2 Type II is still listed as pending, and no HIPAA or BAA is advertised",
+      "Plus has no CRM integrations and allows 20 meetings a month"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "10 meetings per month, 30-minute limit per meeting, Ask Jamie chat, 1 custom template, 50 custom vocabulary terms, unlimited storage; Google Docs, Notion and OneNote exports.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "10 meetings/month, 30 minutes per meeting."
+      },
+      {
+        "name": "Plus",
+        "monthly": 29,
+        "annual": 24,
+        "custom": false,
+        "notes": "20 meetings/month, 2 hours per meeting. US price; EUR price is 25 EUR monthly or 21 EUR billed annually. Annual USD figure is from a third-party breakdown."
+      },
+      {
+        "name": "Pro (Individual)",
+        "monthly": 55,
+        "annual": 46,
+        "custom": false,
+        "notes": "Unlimited meetings, 5 hours per meeting, CRM integrations. US price; EUR price is 47 EUR monthly or 39 EUR billed annually. Annual USD figure is from a third-party breakdown."
+      },
+      {
+        "name": "Team",
+        "monthly": 45,
+        "annual": 37,
+        "custom": false,
+        "notes": "Per member. Unlimited meetings, 5 hours per meeting, 100 vocabulary terms. US price; EUR price is 39 EUR monthly or 33 EUR billed annually. Annual USD figure is from a third-party breakdown."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing, billed annually, 10+ users. SAML SSO, DPAs, automatic exports to any endpoint, 250 vocabulary terms."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": true,
+      "hipaaOption": false,
+      "sso": true
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS",
+      "Android",
+      "Web"
+    ],
+    "founded": "2022",
+    "hq": null,
+    "integrations": "HubSpot, Salesforce, Pipedrive, Attio, Dynamics 365, DealCloud (Pro+); Google Docs, Notion, OneNote (all plans)",
+    "compliance": [
+      "GDPR",
+      "ISO 27001",
+      "SOC 2 Type II (pending)",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Email",
+      "Help docs"
+    ],
+    "checked": "2026-11-21",
+    "verification": "reported",
+    "sources": [
+      {
+        "label": "Jamie pricing page (EUR prices, plan limits)",
+        "url": "https://www.meetjamie.ai/en/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Jamie docs: subscriptions and plans (USD monthly prices)",
+        "url": "https://docs.meetjamie.ai/billing-pricing/subscriptions-plans.md",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Jamie LLM info page (founded, platforms, compliance, integrations)",
+        "url": "https://www.meetjamie.ai/en/blog/llm-info",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Voibe: Jamie Pricing 2026 (USD annual prices, Android app)",
+        "url": "https://www.getvoibe.com/resources/jamie-pricing/",
+        "date": "2026-11-03"
+      }
+    ]
+  }
+]

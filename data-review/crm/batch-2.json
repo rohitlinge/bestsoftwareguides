@@ -1,0 +1,542 @@
+[
+  {
+    "slug": "nutshell",
+    "name": "Nutshell",
+    "category": "crm-software",
+    "website": "https://www.nutshell.com",
+    "logo": "https://www.nutshell.com/wp-content/uploads/2023/04/cropped-nutshell-logo-192x192.png",
+    "pricingUrl": "https://www.nutshell.com/pricing",
+    "tagline": "Sales CRM for small and midsize teams with pipelines, email tracking, click-to-call and built-in marketing tools.",
+    "bestFor": "Small B2B sales teams that want sales and marketing in one CRM",
+    "description": "Nutshell manages contacts, leads and deals in visual pipelines, with two-way Google and Microsoft email sync, sales automation and AI call and meeting summaries. Paid plans start at $13 per user per month billed annually ($19 billed monthly) for Foundation.",
+    "pros": [
+      "Unlimited contacts and storage on every plan",
+      "Built-in click-to-call with AI call and meeting summaries on Pro and above",
+      "Email open and click tracking for emails sent from Nutshell, with lists sortable by engagement",
+      "Free live support on every plan"
+    ],
+    "cons": [
+      "Foundation is limited to 100 open leads",
+      "Sales automation and custom pipelines start at Pro ($42/user/month billed annually)",
+      "Two-way SMS, unified inbox and advanced email marketing are paid add-ons (Engagement from $16/user/month, Marketing from $49/month)"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14 days, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Foundation",
+        "monthly": 19,
+        "annual": 13,
+        "custom": false,
+        "notes": "Limit of 100 open leads; 10 AI outcomes/month; unlimited contacts; email and calendar sync; AI chatbot; form builder and landing pages."
+      },
+      {
+        "name": "Growth",
+        "monthly": 32,
+        "annual": 25,
+        "custom": false,
+        "notes": "20 AI outcomes/month; activity reports, sales quotas, lead assignment rules, custom stage goals, hot leads."
+      },
+      {
+        "name": "Pro",
+        "monthly": 49,
+        "annual": 42,
+        "custom": false,
+        "notes": "40 AI outcomes/month; 5 custom pipelines; sales automation; advanced reporting; AI lead recaps; meeting scheduler; click-to-call and AI call summaries."
+      },
+      {
+        "name": "Business",
+        "monthly": 67,
+        "annual": 59,
+        "custom": false,
+        "notes": "100 AI outcomes/month; 10 custom pipelines; audit log; email templates from Gmail and Outlook; additional teams and territories."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 89,
+        "annual": 79,
+        "custom": false,
+        "notes": "150 AI outcomes/month; unlimited pipelines and custom fields; enterprise SSO; SQL data access; phone support."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2009",
+    "hq": "Ann Arbor, USA",
+    "integrations": "5,000+ software integrations; two-way Google and Microsoft email and calendar sync",
+    "compliance": [
+      "SOC 2",
+      "GDPR"
+    ],
+    "support": [
+      "Free live support on every plan",
+      "Phone support (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Nutshell pricing page",
+        "url": "https://www.nutshell.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Nutshell CRM features page",
+        "url": "https://www.nutshell.com/crm",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Nutshell: calls and meetings",
+        "url": "https://www.nutshell.com/crm/calls-and-meetings",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Nutshell help center: how to track emails sent from Nutshell",
+        "url": "https://support.nutshell.com/en/articles/8428959-how-to-track-emails-sent-from-nutshell",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Nutshell about page",
+        "url": "https://www.nutshell.com/about",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "insightly",
+    "name": "Insightly",
+    "category": "crm-software",
+    "website": "https://www.insightly.com",
+    "logo": "",
+    "pricingUrl": "https://www.insightly.com/pricing/",
+    "tagline": "CRM with lead, opportunity and project management in one system, plus workflow automation and AI Copilot.",
+    "bestFor": "Teams that hand closed deals off to project delivery",
+    "description": "Insightly combines lead, contact and opportunity management with project management, kanban pipelines and reports. Plans start at $29 per user per month billed annually for Plus; no monthly-billing price is published.",
+    "pros": [
+      "Project management is included on every plan, including Plus",
+      "Kanban view of pipelines on all plans, with stage totals that update as cards are dragged",
+      "Phone and email support included for all users",
+      "Mobile apps for iOS and Android"
+    ],
+    "cons": [
+      "Workflow automation, lead routing and AI Copilot require Professional ($49/user/month billed annually)",
+      "Pricing page lists only annual billing; no monthly price is published",
+      "Email open tracking must be enabled by an admin, works only on paid plans and only for template emails sent from Insightly"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14 days on Plus and Professional, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Plus",
+        "monthly": null,
+        "annual": 29,
+        "custom": false,
+        "notes": "Billed annually. Lead and contact management, project management, advanced reports, pre-built dashboards."
+      },
+      {
+        "name": "Professional",
+        "monthly": null,
+        "annual": 49,
+        "custom": false,
+        "notes": "Billed annually. Adds lead assignment and routing, workflow automation and AI Copilot."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 99,
+        "custom": false,
+        "notes": "Billed annually; purchased through sales. Adds sandboxes, products, pricebooks and quotes, comprehensive audit logging."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": null,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2009",
+    "hq": "San Francisco, USA",
+    "integrations": "Two-way Gmail and Outlook email sync; AppConnect integration platform sold separately from $249/month for 25,000 tasks",
+    "compliance": [],
+    "support": [
+      "Phone and email support for all users (Mon-Fri, 9am-4pm PT)",
+      "Premier Support and Success Plan (paid add-on)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Insightly pricing page",
+        "url": "https://www.insightly.com/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Insightly homepage",
+        "url": "https://www.insightly.com/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Insightly help center: what is the kanban view?",
+        "url": "https://support.insight.ly/en-us/Knowledge/article/1299/What_is_the_kanban_view",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Insightly help center: how to enable or disable email tracking",
+        "url": "https://support.insight.ly/en-us/Knowledge/article/1338/How_to_enable_or_disable_email_tracking",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Insightly about page (acquired by Unbounce, July 2024)",
+        "url": "https://www.insightly.com/about/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Insightly (founding year, headquarters)",
+        "url": "https://en.wikipedia.org/wiki/Insightly",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "bigin",
+    "name": "Bigin by Zoho",
+    "category": "crm-software",
+    "website": "https://www.bigin.com",
+    "logo": "https://oweb.zohowebstatic.com/sites/oweb/images/zohobigin/favicon.ico",
+    "pricingUrl": "https://www.bigin.com/pricing.html",
+    "tagline": "Pipeline-centric CRM from Zoho for small businesses, with a free plan and built-in phone.",
+    "bestFor": "Very small businesses moving off spreadsheets on a tight budget",
+    "description": "Bigin is Zoho's lightweight CRM built around team pipelines, with built-in phone, email and WhatsApp integration, and workflow automations on every plan. A free plan covers one user; paid plans start at $7 per user per month billed yearly ($9 billed monthly) for Express.",
+    "pros": [
+      "Free plan includes built-in phone with call recording, automated voice responses and call routing",
+      "Workflow automations on every plan (3 on Free, up to 100 on Bigin 360)",
+      "Paid plans include phone, email and live chat support plus onboarding and admin training",
+      "Native apps for iOS, iPadOS, Android and macOS"
+    ],
+    "cons": [
+      "Free plan is limited to 1 user, 500 records and one pipeline",
+      "AI features (writing assistant, record summary, churn analyzer) start at Premier and run on monthly AI credits",
+      "No Windows desktop app"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: 1 user, 500 records, single pipeline, 3 automations, built-in phone, apps for iOS, iPadOS, Android and macOS.",
+    "trial": "15 days; afterwards the account moves to the Free plan with no automatic charge",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "1 user, 500 records, 1 pipeline, 3 automations."
+      },
+      {
+        "name": "Express",
+        "monthly": 9,
+        "annual": 7,
+        "custom": false,
+        "notes": "50,000 records, 3 team pipelines, 30 automations, mass emails with email insights, email and WhatsApp integration."
+      },
+      {
+        "name": "Premier",
+        "monthly": 15,
+        "annual": 12,
+        "custom": false,
+        "notes": "100,000 records, 5 team pipelines, 50 advanced automations, stage transition rules, sequences, 1,000 AI credits/month."
+      },
+      {
+        "name": "Bigin 360",
+        "monthly": 21,
+        "annual": 18,
+        "custom": false,
+        "notes": "1 million records, 15 team pipelines, 100 advanced automation rules, 3,000 AI credits/month, webhooks, 5 GB file cabinet."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "macOS"
+    ],
+    "founded": "2020",
+    "hq": "Chennai, India",
+    "integrations": "Email and WhatsApp integration; 100+ third-party telephony providers; MCP support",
+    "compliance": [
+      "GDPR",
+      "HIPAA (BAA available)"
+    ],
+    "support": [
+      "Phone, email and live chat (paid plans)",
+      "Onboarding, webinars and admin training (paid plans)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Bigin pricing page",
+        "url": "https://www.bigin.com/pricing.html",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Zoho CRM (application) - Bigin launched in 2020",
+        "url": "https://en.wikipedia.org/wiki/Zoho_CRM_(application)",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Zoho Corporation (headquarters)",
+        "url": "https://en.wikipedia.org/wiki/Zoho_Corporation",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Bigin help: Stay GDPR compliant with Bigin",
+        "url": "https://help.zoho.com/portal/en/kb/bigin/explore-settings/articles/gdpr",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Bigin help: HIPAA compliance in Bigin",
+        "url": "https://help.zoho.com/portal/en/kb/bigin/explore-settings/articles/hipaa-compliance-with-bigin",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Tech.yahoo review: Bigin by Zoho CRM (no Windows app)",
+        "url": "https://tech.yahoo.com/apps/articles/bigin-zoho-crm-190000241.html",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "folk",
+    "name": "folk",
+    "category": "crm-software",
+    "website": "https://www.folk.app",
+    "logo": "https://cdn.prod.website-files.com/626be00c396339c5a816353b/6a16a47c29e4d51e63db578b_logo.png",
+    "pricingUrl": "https://www.folk.app/pricing",
+    "tagline": "Relationship-focused CRM with LinkedIn and Gmail capture, AI assistants and drag-and-drop pipelines.",
+    "bestFor": "Agencies, founders and small teams that sell through their network",
+    "description": "folk captures contacts from LinkedIn, Gmail and the web, syncs email, calendar and WhatsApp, and runs AI research, follow-up and workflow assistants. Plans start at $24 per user per month billed yearly ($30 billed monthly) for Standard.",
+    "pros": [
+      "Unlimited contacts on every plan",
+      "AI Research, Follow-up and Recap assistants included on all plans",
+      "Calls placed from the mobile app are recorded, transcribed and summarised",
+      "Native desktop apps for macOS and Windows plus iOS and Android apps"
+    ],
+    "cons": [
+      "No free plan; the account is blocked after the 14-day trial unless upgraded",
+      "Custom objects, deals, dashboards and Zapier/Make apps require Premium ($48/user/month billed yearly)",
+      "Standard keeps only the last 30 interactions per contact"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14 days with all premium features, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Standard",
+        "monthly": 30,
+        "annual": 24,
+        "custom": false,
+        "notes": "Unlimited contacts; 500 email finds/month; 2,000 AI fields/month; Workflow Assistant 1,500/month; 2,000 messages/member/month; 1 synced account per member; last 30 interactions per contact."
+      },
+      {
+        "name": "Premium",
+        "monthly": 60,
+        "annual": 48,
+        "custom": false,
+        "notes": "Custom objects and deals, email sequences, dashboards, Zapier and Make apps, migration service; 1,000 email finds/month; 5,000 AI fields/month; Workflow Assistant 10,000/month; full interaction history."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": 80,
+        "custom": true,
+        "notes": "Starting price, annual billing only. Custom limits, security controls, group-level permissions, priority support, 1:1 onboarding with a dedicated account manager."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": null,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2020",
+    "hq": "Paris, France",
+    "integrations": "LinkedIn and web capture extension; Gmail, Outlook, calendar and WhatsApp sync; Zapier and Make (Premium and up); MCP server; API",
+    "compliance": [
+      "SOC 2",
+      "GDPR"
+    ],
+    "support": [
+      "Support team (all plans)",
+      "Migration service (Premium and up)",
+      "Priority support and 1:1 onboarding (Enterprise)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "folk pricing page",
+        "url": "https://www.folk.app/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "folk help center: folk desktop app",
+        "url": "https://help.folk.app/en/articles/8062551-folk-desktop-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "EU-Startups: Paris-based SaaS startup folk raises €2.8 million (Sept 2021)",
+        "url": "https://www.eu-startups.com/2021/09/paris-based-saas-startup-folk-raises-e2-8-million-to-reinvent-and-replace-crms/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Medium: interview with folk co-founder Simo Lemhandez (founded April 2020)",
+        "url": "https://medium.com/strtupboost/revolutionizing-crm-solutions-with-folk-insights-from-forbes-30-under-30-entrepreneur-simo-89cdc7ca8056",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "monday-crm",
+    "name": "monday CRM",
+    "category": "crm-software",
+    "website": "https://mondaycrm.ai",
+    "logo": "https://cdn.prod.website-files.com/6a8c495e2a9cc494dc883a22/6abbd663fef87f9bd2bbd126_CRM%20Logo.png",
+    "pricingUrl": "https://mondaycrm.ai/pricing",
+    "tagline": "No-code CRM on monday.com's work platform, with customizable pipelines, email tracking and AI agents.",
+    "bestFor": "Teams already on monday.com that want a customizable no-code CRM",
+    "description": "monday CRM runs leads, contacts and deals on customizable boards with kanban views, email tracking, automations and AI agents for outreach calls and meeting notes. Plans start at $12 per seat per month billed yearly ($18 billed monthly) for Basic, sold in seat buckets from 3 seats.",
+    "pros": [
+      "Unlimited customizable pipelines and boards",
+      "Email tracking with automated rules when a lead receives, opens or replies to an email",
+      "Native calling via monday Smart Call from the mobile app, plus an AI outreach caller agent (up to 200 minutes on Basic to Pro)",
+      "Native desktop apps for Mac and Windows; 24/7 customer support"
+    ],
+    "cons": [
+      "Plans start at 3 seats, so the entry cost is at least $36/month billed yearly",
+      "Basic caps active contacts and deals at 1,000 and lists no custom automations",
+      "Mass emails and email sequences require Pro ($28/seat/month billed yearly)"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14 days, no credit card required",
+    "minSeats": 3,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 18,
+        "annual": 12,
+        "custom": false,
+        "notes": "Minimum 3 seats. 1 workspace, 1 custom dashboard, 1,000 active contacts and deals, 5 columns per board, 20 quotes and invoices/month, 1,000 API calls/day."
+      },
+      {
+        "name": "Standard",
+        "monthly": 25,
+        "annual": 17,
+        "custom": false,
+        "notes": "Minimum 3 seats. 3 workspaces, 10,000 active contacts and deals, 15 columns per board, 250 custom automations/month, AI agents, centralized comms hub, iOS and Android apps."
+      },
+      {
+        "name": "Pro",
+        "monthly": 41,
+        "annual": 28,
+        "custom": false,
+        "notes": "Minimum 3 seats. 15 workspaces, 100,000 active contacts and deals, 75 columns per board, 25K custom automations/month, AI workflow builder, mass emails, email sequences."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing via sales. Unlimited contacts, deals and workspaces, advanced permissions, HIPAA compliance, 24/7 prioritized support, tailored onboarding, white-glove migration."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2012",
+    "hq": "Tel Aviv, Israel",
+    "integrations": "Salesforce, HubSpot, Mailchimp, DocuSign, Aircall, PandaDoc, WhatsApp and other monday.com integrations; MCP server",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO/IEC 27001",
+      "ISO/IEC 27018",
+      "HIPAA (Ultimate)"
+    ],
+    "support": [
+      "Self-serve knowledge base",
+      "24/7 customer support",
+      "Daily live webinars",
+      "24/7 prioritized support and tailored onboarding (Ultimate)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "monday CRM pricing page",
+        "url": "https://mondaycrm.ai/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "monday.com support: Get started with monday Smart Call (read via search excerpt; page blocks automated fetch)",
+        "url": "https://support.monday.com/hc/en-us/articles/35893698534674-Get-started-with-monday-Smart-Call",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "monday.com support: monday.com's desktop app (read via search excerpt; page blocks automated fetch)",
+        "url": "https://support.monday.com/hc/en-us/articles/115005316885-monday-com-s-desktop-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Monday.com (founding year, headquarters)",
+        "url": "https://en.wikipedia.org/wiki/Monday.com",
+        "date": "2026-11-21"
+      }
+    ]
+  }
+]

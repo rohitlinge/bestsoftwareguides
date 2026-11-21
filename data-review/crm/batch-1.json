@@ -1,0 +1,563 @@
+[
+  {
+    "slug": "close",
+    "name": "Close",
+    "category": "crm-software",
+    "website": "https://www.close.com",
+    "logo": "https://close.com/apple-touch-icon.png",
+    "pricingUrl": "https://www.close.com/pricing",
+    "tagline": "Sales CRM with built-in calling, SMS and email for inside sales teams.",
+    "bestFor": "Inside sales teams that make a lot of calls",
+    "description": "Close is a sales CRM that puts calling, SMS, email and pipeline management in one app, with an AI assistant called Chloe on every plan. Paid plans start at $9 per month billed annually ($19 monthly) for the single-user Solo plan, and multi-user plans start at $35 per user per month billed annually.",
+    "pros": [
+      "Built-in calling and SMS on every plan, billed by usage at about $0.02 per minute for most outbound calls",
+      "Chloe AI assistant and AI credits included on every plan (500 to 2,000 credits per user per month)",
+      "Drag-and-drop pipeline view and multiple pipelines on all plans",
+      "Native desktop apps for Mac and Windows plus iOS and Android apps"
+    ],
+    "cons": [
+      "No free plan; only a 14-day trial",
+      "Workflows, bulk email and the Power Dialer require the Growth plan ($99 per user per month billed annually)",
+      "Calling minutes and phone numbers are billed on top of the plan price"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial, no credit card required; 30-day money-back guarantee on new purchases",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Solo",
+        "monthly": 19,
+        "annual": 9,
+        "custom": false,
+        "notes": "1 user only; up to 10,000 leads; 500 AI credits per month; 3 connected email accounts; built-in calling and SMS (usage-based); 30-day call recording. No email open tracking or workflows."
+      },
+      {
+        "name": "Essentials",
+        "monthly": 49,
+        "annual": 35,
+        "custom": false,
+        "notes": "Unlimited users and leads; 1,000 AI credits per user per month; email open tracking; 3 connected email accounts; 30-day call recording. No workflows or bulk email."
+      },
+      {
+        "name": "Growth",
+        "monthly": 109,
+        "annual": 99,
+        "custom": false,
+        "notes": "Adds Workflows, Power Dialer, bulk email, email and text scheduling, AI Playbooks, automated lead assignment; 1,500 AI credits per user per month; 10 connected email accounts; 90-day call recording."
+      },
+      {
+        "name": "Scale",
+        "monthly": 149,
+        "annual": 139,
+        "custom": false,
+        "notes": "Adds Predictive Dialer, advanced roles and permissions, customer success manager; 2,000 AI credits per user per month; unlimited call recording retention."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2013",
+    "hq": null,
+    "integrations": "Connects with 100+ tools including Zoom and Google Meet; MCP access for ChatGPT, Claude and Grok; migration from HubSpot, Salesforce and Pipedrive",
+    "compliance": [
+      "SOC 2 Type II",
+      "GDPR (DPA available)"
+    ],
+    "support": [
+      "Help center",
+      "Free migration help",
+      "Customer success manager (Scale)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Close pricing page",
+        "url": "https://www.close.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close about page",
+        "url": "https://www.close.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close help: Opportunity Pipeline View",
+        "url": "https://help.close.com/docs/opportunity-pipeline-view",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close help: Desktop App",
+        "url": "https://help.close.com/docs/desktop-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close help: Close mobile app",
+        "url": "https://help.close.com/docs/close-mobile-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close blog: Introducing Close for Android",
+        "url": "https://close.com/blog/close-for-android",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close security page",
+        "url": "https://close.com/security",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Close GDPR page",
+        "url": "https://www.close.com/gdpr",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "copper",
+    "name": "Copper",
+    "category": "crm-software",
+    "website": "https://www.copper.com",
+    "logo": "https://cdn.prod.website-files.com/69bdc11d6d8dca48c8a32ff4/6a68a40aeb4851e2572f03ee_copper-logo-icon.png",
+    "pricingUrl": "https://www.copper.com/pricing",
+    "tagline": "CRM built around Google Workspace, with pipelines and contact management inside Gmail.",
+    "bestFor": "Small teams that work in Gmail and Google Workspace",
+    "description": "Copper is a CRM that integrates natively with Gmail, Google Calendar, Drive and Sheets, with drag-and-drop pipelines and task automation. Plans start at $23 per seat per month billed annually ($29 monthly) for Basic, which allows 2,500 contacts.",
+    "pros": [
+      "Native integration with Gmail, Google Calendar, Google Drive, Google Sheets and Looker Studio",
+      "Drag-and-drop pipelines with AI-powered flags and alerts",
+      "Pipeline automations can send emails or reminders when a deal moves stage (Professional and up)",
+      "Email open tracking on Professional, plus link tracking on Business"
+    ],
+    "cons": [
+      "No free plan; only a 14-day trial",
+      "Basic is capped at 2,500 contacts and has task automation only, not workflow automation",
+      "No built-in dialer; calling relies on integrations such as JustCall and RingCentral"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day free trial, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 29,
+        "annual": 23,
+        "custom": false,
+        "notes": "2,500 contacts; task automation; pipelines; project management; contact enrichment."
+      },
+      {
+        "name": "Professional",
+        "monthly": 69,
+        "annual": 59,
+        "custom": false,
+        "notes": "15,000 contacts; workflow automation; bulk email; reporting; integrations; email open tracking. Personal onboarding for eligible annual accounts."
+      },
+      {
+        "name": "Business",
+        "monthly": 134,
+        "annual": 99,
+        "custom": false,
+        "notes": "Unlimited contacts; email series; custom reports; multi-currency; premium support; email link tracking."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": false,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2012",
+    "hq": null,
+    "integrations": "Native Google Workspace (Gmail, Calendar, Drive, Sheets, Looker Studio); JustCall, RingCentral, Zapier",
+    "compliance": [
+      "SSO (Okta, Sign in with Google)"
+    ],
+    "support": [
+      "Live chat",
+      "Help center",
+      "Personal onboarding for eligible annual accounts (Professional, Business)",
+      "Premium support (Business)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Copper pricing page",
+        "url": "https://www.copper.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Copper features page",
+        "url": "https://www.copper.com/features",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Copper help: Email tracking",
+        "url": "https://support.copper.com/en/articles/8823289-email-tracking",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Copper about page",
+        "url": "https://www.copper.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Copper security page",
+        "url": "https://www.copper.com/security",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "attio",
+    "name": "Attio",
+    "category": "crm-software",
+    "website": "https://attio.com",
+    "logo": "https://attio.com/favicon.ico",
+    "pricingUrl": "https://attio.com/pricing",
+    "tagline": "Customizable, AI-native CRM with flexible data objects, workflows and an AI assistant.",
+    "bestFor": "Startups that want a flexible, data-model-driven CRM",
+    "description": "Attio is a CRM that builds records automatically from email and calendar data, with custom objects, kanban views, workflows and the Ask Attio AI assistant. It has a free plan for up to 3 users, and Plus costs $40 per month billed annually ($50 monthly) per workspace including 1 user, with extra users at $35 per month billed annually.",
+    "pros": [
+      "Free plan for up to 3 users with 50,000 records, workflows and Ask Attio",
+      "Kanban views let you drag records between pipeline stages",
+      "Workflows and Ask Attio AI included on every plan, metered by credits",
+      "MCP server and ChatGPT and Claude connections on all plans"
+    ],
+    "cons": [
+      "Plus is capped at 10 users",
+      "Email sequences, call recording and custom objects require Pro ($100 per month billed annually including 1 user, plus $79 per extra user)",
+      "SSO needs the Ultra plan or a $30 per user per month Governance add-on on Pro"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 3 users; 50,000 records; 3 objects; Ask Attio (100 credits per user per month); 250 workspace credits for workflows; automatic enrichment; 200 emails sent per user per month.",
+    "trial": "14-day trial of Pro for every new workspace",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 3 users; 50,000 records; 3 objects; 3 reports; 250 workspace credits; 200 emails per user per month."
+      },
+      {
+        "name": "Plus",
+        "monthly": 50,
+        "annual": 40,
+        "custom": false,
+        "notes": "Priced per workspace including 1 user; extra users $44/month monthly or $35/month annual; up to 10 users; 250,000 records; 5 objects; 15 reports; 500 Ask Attio credits per user; 1,500 workspace credits; 1,000 emails per user per month."
+      },
+      {
+        "name": "Pro",
+        "monthly": 125,
+        "annual": 100,
+        "custom": false,
+        "notes": "Priced per workspace including 1 user; extra users $99/month monthly or $79/month annual; no user limit; 1,000,000 records; 12 objects; sequences; call recording and intelligence; custom objects; priority support; 10,000 workspace credits. Governance add-on (SSO, SCIM, audit logs) $30 per user per month billed annually."
+      },
+      {
+        "name": "Ultra",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$1,000 per month per workspace, annual billing only, including 5 users; extra users $189/month; 3,000,000 records; unlimited objects and reports; SSO, SCIM and audit logs included; 20,000 workspace credits."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": null,
+      "builtInCalling": false,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": null,
+    "hq": "London, United Kingdom",
+    "integrations": "Gmail, Outlook, Slack, Segment, Mailchimp, Outreach, Mixmax, Typeform, Zapier; MCP server plus ChatGPT and Claude connections; imports from Salesforce, HubSpot, Pipedrive and Zoho",
+    "compliance": [
+      "SSO/SCIM (Ultra, or Pro with Governance add-on)"
+    ],
+    "support": [
+      "Help center",
+      "Chat and email support (all plans)",
+      "Priority support (Pro, Ultra)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Attio pricing page",
+        "url": "https://attio.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Attio help: Attio plans and features",
+        "url": "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Attio help: Create and manage kanban views",
+        "url": "https://attio.com/help/reference/managing-your-data/views/create-and-manage-kanban-views",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Attio help: Track status of sequence recipients",
+        "url": "https://attio.com/help/reference/automations/sequences/track-status-of-sequence-recipients",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Attio about page",
+        "url": "https://attio.com/about",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Craft: Attio company profile",
+        "url": "https://craft.co/attio",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "less-annoying-crm",
+    "name": "Less Annoying CRM",
+    "category": "crm-software",
+    "website": "https://www.lessannoyingcrm.com",
+    "logo": "https://cdn.prod.website-files.com/5eb25de94cee6c29635fe867/63160cdfa8feb4b86a085c5e_256x256.png",
+    "pricingUrl": "https://www.lessannoyingcrm.com/pricing",
+    "tagline": "Simple, single-plan CRM for small businesses with contacts, pipelines and tasks.",
+    "bestFor": "Small businesses that want a simple CRM at one flat price",
+    "description": "Less Annoying CRM is a simple CRM for small businesses with contact management, pipelines with a board view, tasks, calendar and email logging. It has one plan at $15 per user per month with every feature included and a 30-day free trial.",
+    "pros": [
+      "One plan at $15 per user per month with no feature tiers or contracts",
+      "Unlimited contacts, pipelines and custom fields, plus 25 GB of file storage per user",
+      "Free email and phone support and human CRM coaches for every user",
+      "HIPAA compliance with a BAA available"
+    ],
+    "cons": [
+      "No free plan after the 30-day trial",
+      "No built-in calling; phone features come from integrations such as JustCall and CallHippo",
+      "Native mobile app is new (launched June 2026) and its help center says features like push notifications are still being added"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "30-day free trial, no credit card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Less Annoying CRM",
+        "monthly": 15,
+        "annual": null,
+        "custom": false,
+        "notes": "Single plan, all features; unlimited contacts and companies (recommended under 50,000 total); unlimited pipelines and custom fields; 25 GB file storage per user. No annual price published."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": null,
+      "builtInCalling": false,
+      "aiAssistant": null,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2009",
+    "hq": "St. Louis, USA",
+    "integrations": "Zapier, Mailchimp, Google Contacts, Google Calendar, Outlook Calendar, QuickBooks Sync, JustCall, CallHippo and about 25 more listed",
+    "compliance": [
+      "HIPAA (BAA available)"
+    ],
+    "support": [
+      "Email support (free)",
+      "Phone support (free)",
+      "Free CRM coaches"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Less Annoying CRM pricing page",
+        "url": "https://www.lessannoyingcrm.com/pricing",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM homepage",
+        "url": "https://www.lessannoyingcrm.com/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM blog: Board view for your pipelines (May 4, 2026)",
+        "url": "https://www.lessannoyingcrm.com/blog/new-board-view-for-your-pipelines",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM blog: Build a Sequence, how one automation can run your whole process (June 2, 2026)",
+        "url": "https://www.lessannoyingcrm.com/blog/build-a-sequence-how-one-automation-can-run-your-whole-process",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM blog: Native Mobile App (June 15, 2026)",
+        "url": "https://lessannoyingcrm.com/blog/product-update-native-mobile-app",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM help: Mobile access",
+        "url": "https://www.lessannoyingcrm.com/help/mobile-access",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Less Annoying CRM integrations page",
+        "url": "https://www.lessannoyingcrm.com/integrations",
+        "date": "2026-11-21"
+      }
+    ]
+  },
+  {
+    "slug": "capsule-crm",
+    "name": "Capsule CRM",
+    "category": "crm-software",
+    "website": "https://capsulecrm.com",
+    "logo": "https://capsulecrm.com/icons/icon-144x144.png",
+    "pricingUrl": "https://capsulecrm.com/pricing/",
+    "tagline": "Simple CRM for small businesses with sales pipelines, project boards and AI tools.",
+    "bestFor": "Small businesses that want simple pipelines and project tracking",
+    "description": "Capsule CRM manages contacts, sales pipelines and project boards, with workflow automations and Capsule AI tools on higher plans. It has a free plan for 2 users and 250 contacts, and paid plans start at $18 per user per month billed annually ($22 monthly).",
+    "pros": [
+      "Free plan for up to 2 users with 250 contacts and 1 sales pipeline",
+      "Drag-and-drop Kanban sales pipeline",
+      "Capsule AI includes summaries, meeting prep, email drafting and contact enrichment",
+      "100+ integrations including Xero, QuickBooks and Zapier"
+    ],
+    "cons": [
+      "Workflow automations start on Growth ($36 per user per month billed annually)",
+      "No built-in calling listed on the pricing or features pages",
+      "Marketing campaigns run in Transpond, a separate add-on"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Up to 2 users; 250 contacts; 5 custom fields; 1 sales pipeline; Gmail or Outlook mail connection.",
+    "trial": "14-day free trial of paid plans, no card required",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Up to 2 users; 250 contacts; 5 custom fields; 1 sales pipeline."
+      },
+      {
+        "name": "Starter",
+        "monthly": 22,
+        "annual": 18,
+        "custom": false,
+        "notes": "30,000 contacts; email templates; AI Pipeline Generator; premium integrations (Xero, Zendesk, Import2). Pipeline count not stated."
+      },
+      {
+        "name": "Growth",
+        "monthly": 40,
+        "annual": 36,
+        "custom": false,
+        "notes": "60,000 contacts; 5 pipelines and 5 project boards; workflow automations; advanced reporting and dashboards; email sync; AI connectors, enrichment and summaries."
+      },
+      {
+        "name": "Advanced",
+        "monthly": 60,
+        "annual": 54,
+        "custom": false,
+        "notes": "120,000 contacts; 50 pipelines and 50 project boards; everything in Growth."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": 75,
+        "annual": 72,
+        "custom": false,
+        "notes": "All features; expert support, own account manager and custom training. Contact and pipeline limits not stated."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": null,
+      "builtInCalling": false,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "founded": "2009",
+    "hq": "Manchester, United Kingdom",
+    "integrations": "100+ integrations including Xero, QuickBooks, FreshBooks, Zendesk, Mailchimp, Zapier, Microsoft 365, Google Workspace and WhatsApp; Transpond for marketing; public API; Capsule MCP (beta)",
+    "compliance": [
+      "GDPR",
+      "Two-factor authentication",
+      "SSO via Microsoft 365 or Google Workspace",
+      "PCI-DSS (payment collection)"
+    ],
+    "support": [
+      "Support docs",
+      "Video tutorials and webinars",
+      "Account manager and custom training (Ultimate)"
+    ],
+    "checked": "2026-11-21",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Capsule CRM pricing page",
+        "url": "https://capsulecrm.com/pricing/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Capsule CRM features page",
+        "url": "https://capsulecrm.com/features/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Capsule AI page",
+        "url": "https://capsulecrm.com/ai/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Capsule about page",
+        "url": "https://capsulecrm.com/about/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Capsule security page",
+        "url": "https://capsulecrm.com/security/",
+        "date": "2026-11-21"
+      },
+      {
+        "label": "Wikipedia: Capsule (CRM)",
+        "url": "https://en.wikipedia.org/wiki/Capsule_(CRM)",
+        "date": "2026-11-21"
+      }
+    ]
+  }
+]
