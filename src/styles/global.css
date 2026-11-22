@@ -306,6 +306,10 @@ a.card:hover h3, a.card:hover > strong { color: var(--brand); }
 .footer-grid ul { list-style: none; padding: 0; margin: 0; }
 .footer-grid li { margin: 6px 0; }
 .footer-grid .logo { margin-bottom: 12px; }
+.footer-grid .footer-social { display: flex; gap: 10px; margin-top: 16px; }
+.footer-grid .footer-social li { margin: 0; }
+.footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--dark-line); }
+.footer-social a:hover { border-color: #c3cad6; }
 .footer-bottom { border-top: 1px solid var(--dark-line); margin-top: 36px; padding-top: 20px; font-size: 0.84rem; }
 
 /* ---------- responsive ---------- */

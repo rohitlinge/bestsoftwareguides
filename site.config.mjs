@@ -18,8 +18,9 @@ export default {
     bio: '',
     sameAs: [],
   },
-  // Organization profiles (X, LinkedIn page, GitHub). Used in Organization schema.
-  sameAs: [],
+  // Organization profiles (X, LinkedIn page, GitHub). Used in Organization schema and shown as
+  // icon links in the page footer (YouTube and LinkedIn get icons; others a text link).
+  sameAs: ['https://www.youtube.com/@bestsoftwareguides/', 'https://www.linkedin.com/company/bestsoftwareguides/'],
   // Search-console verification codes (the content="" value only). Leave empty if you verify by DNS.
   verification: { bing: 'B44B109BD1960C9727A4D8506739AE85', google: 'a5cNXQkPUuuJLY8hpXAeXhwlj8QIOn-qPo73MJgsF5E' },
 
