@@ -1,3 +1,25 @@
 # Permanent redirects for pages that moved (Cloudflare Workers static assets read this file).
 # A comparison URL follows the ranking order, so it moves when that order changes.
 /compare/icedq-vs-dbt/ /compare/dbt-vs-icedq/ 301
+/compare/autify-aximo-vs-momentic/ /compare/momentic-vs-autify-aximo/ 301
+/compare/close-vs-zoho-crm/ /compare/zoho-crm-vs-close/ 301
+/compare/composio-vs-arcade/ /compare/arcade-vs-composio/ 301
+/compare/docker-mcp-gateway-vs-arcade/ /compare/arcade-vs-docker-mcp-gateway/ 301
+/compare/functionize-vs-momentic/ /compare/momentic-vs-functionize/ 301
+/compare/godaddy-website-builder-vs-webflow/ /compare/webflow-vs-godaddy-website-builder/ 301
+/compare/ibm-contextforge-vs-arcade/ /compare/arcade-vs-ibm-contextforge/ 301
+/compare/kaneai-vs-autify-aximo/ /compare/autify-aximo-vs-kaneai/ 301
+/compare/kaneai-vs-momentic/ /compare/momentic-vs-kaneai/ 301
+/compare/laminar-vs-arize-phoenix/ /compare/arize-phoenix-vs-laminar/ 301
+/compare/langsmith-vs-arize-phoenix/ /compare/arize-phoenix-vs-langsmith/ 301
+/compare/maxim-ai-vs-arize-phoenix/ /compare/arize-phoenix-vs-maxim-ai/ 301
+/compare/notta-vs-fireflies-ai/ /compare/fireflies-ai-vs-notta/ 301
+/compare/notta-vs-meetgeek/ /compare/meetgeek-vs-notta/ 301
+/compare/obot-vs-arcade/ /compare/arcade-vs-obot/ 301
+/compare/otter-ai-vs-fireflies-ai/ /compare/fireflies-ai-vs-otter-ai/ 301
+/compare/otter-ai-vs-meetgeek/ /compare/meetgeek-vs-otter-ai/ 301
+/compare/pipedrive-vs-attio/ /compare/attio-vs-pipedrive/ 301
+/compare/pipedrive-vs-insightly/ /compare/insightly-vs-pipedrive/ 301
+/compare/testrigor-vs-autify-aximo/ /compare/autify-aximo-vs-testrigor/ 301
+/compare/testrigor-vs-momentic/ /compare/momentic-vs-testrigor/ 301
+/compare/zapier-mcp-vs-arcade/ /compare/arcade-vs-zapier-mcp/ 301

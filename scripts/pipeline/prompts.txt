@@ -34,3 +34,23 @@ tools to validate CSV and Parquet files against a database
 best API testing tools 2026
 iceDQ alternatives
 iceDQ vs QuerySurge
+new AI meeting note takers 2026
+bot-free AI note taker for Mac
+Wispr Flow Notetaker pricing
+Granola vs Wispr Flow Notetaker
+new AI CRM software 2026
+SparrowCRM pricing
+Twenty CRM vs Attio
+Day AI CRM pricing
+new AI website builders 2026
+Bluehost AI Builder pricing
+Cloudways AI Website Builder review
+new LLM evaluation tools 2026
+Judgment Labs pricing
+Raindrop AI pricing
+new AI testing tools 2026
+TestSprite pricing
+TestSprite vs Momentic
+new MCP gateways 2026
+Cloudflare MCP server portals pricing
+Metorial vs Composio

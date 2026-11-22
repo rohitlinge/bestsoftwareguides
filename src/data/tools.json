@@ -18372,5 +18372,2621 @@
         "date": "2026-11-18"
       }
     ]
+  },
+  {
+    "slug": "voibe-work",
+    "name": "Voibe Work",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.getvoibe.com",
+    "logo": "https://www.getvoibe.com/icon.iconset/icon_32x32.png",
+    "pricingUrl": "https://www.getvoibe.com/pricing",
+    "tagline": "Bot-free meeting notes and dictation for Mac and Windows, with notes stored on your computer.",
+    "bestFor": "Individuals who want dictation and bot-free meeting notes in one desktop app",
+    "description": "Voibe Work adds meeting notes to the Voibe dictation app. It records your microphone and the meeting audio on your computer, so no bot joins the call, and saves the summary and transcript locally. It costs $19 per month, or $149 per year ($12.42 a month) at list price.",
+    "pros": [
+      "No bot joins the call; works with Zoom, Teams, Google Meet, Webex and Slack huddles",
+      "Transcripts and summaries are saved on your computer and meeting audio is deleted after processing",
+      "One seat covers one Mac and the same person's Windows PC",
+      "Lifetime license available for $399"
+    ],
+    "cons": [
+      "No iPhone or Android app",
+      "No native CRM, Notion or calendar integration listed; Voibe Meeting MCP is the main way to export data to other tools",
+      "Team admin features need Enterprise, which starts above 10 seats and is quote-only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Voibe Free covers dictation with a weekly word limit on one Mac or Windows device. The pricing page does not list meeting notes on the free plan. Users drop to Free after the 30-day Voibe Work trial.",
+    "trial": "30-day trial of Voibe Work, no credit card",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Dictation only, limited words. Meeting notes not listed."
+      },
+      {
+        "name": "Voibe Dictation",
+        "monthly": 9.9,
+        "annual": 8.25,
+        "custom": false,
+        "notes": "Dictation only, no meeting notes. $99 per year list price ($8.25 a month); a 25% launch offer ($74.25) was running on Nov 22, 2026. Lifetime $199."
+      },
+      {
+        "name": "Voibe Work",
+        "monthly": 19,
+        "annual": 12.42,
+        "custom": false,
+        "notes": "Dictation plus unlimited meeting notes. $149 per year list price ($12.42 a month); a 25% offer ($111.75) was running on Nov 22, 2026. Lifetime $399. 30-day money-back guarantee."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "More than 10 seats. Team admin, central billing and invoicing, custom terms, BAA on request."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": false,
+      "hipaaOption": true,
+      "sso": null
+    },
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Records Zoom, Microsoft Teams, Google Meet, Webex, Slack huddles and other meeting apps; Voibe Meeting MCP for Claude, ChatGPT, Cursor and Claude Code",
+    "compliance": [
+      "BAA available on request",
+      "Local storage of transcripts and summaries"
+    ],
+    "support": [
+      "Email (hi@getvoibe.com)",
+      "Help Center"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Voibe pricing page",
+        "url": "https://www.getvoibe.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Voibe: Introducing Voibe Work (launch article)",
+        "url": "https://www.getvoibe.com/resources/voibe-work-meeting-notes-no-bot/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Voibe Help: What's in Voibe Work (Essence AI Ltd.)",
+        "url": "https://www.getvoibe.com/help/voibe-work/",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "wispr-flow-notetaker",
+    "name": "Wispr Flow Notetaker",
+    "category": "ai-meeting-note-takers",
+    "website": "https://wisprflow.ai",
+    "logo": "https://cdn.prod.website-files.com/682f84b3838c89f8ff7667db/68d27d1a8a10f417b5644527_flow-wc-v2.png",
+    "pricingUrl": "https://wisprflow.ai/pricing",
+    "tagline": "Bot-free meeting notetaker built into the Wispr Flow dictation app.",
+    "bestFor": "People who already dictate with Wispr Flow and want meeting notes in the same app",
+    "description": "Wispr Flow Notetaker records Zoom, Google Meet, Microsoft Teams and Slack huddle calls from your device, shows a live transcript and writes notes on decisions and tasks. It is included in Wispr Flow plans, from a limited free tier to Pro at $15 per user per month, or $12 billed annually.",
+    "pros": [
+      "Included on the free plan with speaker identification and meeting Q&A",
+      "Pro at $12 per user per month annually covers both dictation and meeting notes",
+      "MCP access lets Claude, ChatGPT and Cursor read meeting notes and transcripts",
+      "SOC 2 Type II and ISO 27001 apply on every plan"
+    ],
+    "cons": [
+      "Free plan has a weekly meeting limit; the plan list also mentions 30-day meeting history on desktop",
+      "SSO and HIPAA BAA require Growth or Enterprise",
+      "No Android notetaker yet, and no native CRM integration listed"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: Notetaker with speaker identification, a weekly meeting limit (recordings under 5 minutes do not count), questions about any meeting and MCP access. Dictation has a weekly word limit. No credit card.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Weekly meeting limit for Notetaker and weekly word limit for dictation."
+      },
+      {
+        "name": "Pro",
+        "monthly": 15,
+        "annual": 12,
+        "custom": false,
+        "notes": "Per user. Unlimited Notetaker history and higher meeting limits. 50% student and 40% educator discounts."
+      },
+      {
+        "name": "Growth",
+        "monthly": 23,
+        "annual": 18,
+        "custom": false,
+        "notes": "Per user. Unlimited Notetaker, SAML SSO, org-wide HIPAA enforcement with BAA, admin tools. The pricing page also shows a second, unlabeled set of figures ($33 monthly, $26 annual); the comparison table lists $18."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Annual only. SCIM, audit logs, MDM deployment, enforced privacy mode, dedicated support with SLAs. Notetaker listed as an add-on."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": null,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS"
+    ],
+    "founded": "2021",
+    "hq": null,
+    "integrations": "Zoom, Google Meet, Microsoft Teams, Slack huddles; calendar and Slack context; MCP for Claude, ChatGPT, Cursor and other agents",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001",
+      "HIPAA (BAA on Growth and Enterprise)",
+      "SSO/SAML (Growth and Enterprise)"
+    ],
+    "support": [
+      "Priority support (Pro)",
+      "Dedicated support with SLAs (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Wispr Flow pricing page",
+        "url": "https://wisprflow.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Wispr Flow for teams",
+        "url": "https://wisprflow.ai/teams",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Wispr Flow: Wispr Flow Notetaker is here",
+        "url": "https://wisprflow.ai/post/wispr-flow-notetaker",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Computerworld: Wispr moves beyond AI dictation (founded 2021)",
+        "url": "https://www.computerworld.com/article/4206765/wispr-moves-beyond-ai-dictation-with-note-taking-assistant.html",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "talat",
+    "name": "talat",
+    "category": "ai-meeting-note-takers",
+    "website": "https://talat.app",
+    "logo": "https://talat.app/apple-touch-icon.png",
+    "pricingUrl": "https://talat.app/",
+    "tagline": "Private meeting notes app that transcribes and summarizes on your own computer.",
+    "bestFor": "Privacy-focused users who want meeting notes that never leave their device",
+    "description": "talat records the microphone and system audio during Zoom, Teams, Meet or any other call, transcribes on-device and writes a summary with a local model or your own API key. No bot and no account are needed. It costs $89 per year or $189 for a lifetime license.",
+    "pros": [
+      "Transcription runs on-device and recordings are stored in a local database",
+      "No meeting bot and no account required",
+      "Lifetime license for $189 as an alternative to the $89 yearly plan",
+      "Exports to Markdown, Obsidian and PDF, with webhooks and a built-in MCP server"
+    ],
+    "cons": [
+      "Mac version needs Apple Silicon and macOS 15 or later",
+      "No compliance certifications listed and no SSO",
+      "Teams plan needs at least 3 seats"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. The trial gives 10 hours of recording with all features, no account or credit card. After that you can still search, export and summarize existing meetings but cannot record new ones.",
+    "trial": "10 hours of free recording",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Monthly",
+        "monthly": 9,
+        "annual": null,
+        "custom": false,
+        "notes": "The comparison table says \"From $9/mo\"; the monthly toggle did not show a separate price in the page text."
+      },
+      {
+        "name": "Yearly",
+        "monthly": null,
+        "annual": 7.42,
+        "custom": false,
+        "notes": "$89 billed yearly. 30-day money-back guarantee."
+      },
+      {
+        "name": "Lifetime",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$189 one-time payment.",
+        "oneTime": 189
+      },
+      {
+        "name": "Teams",
+        "monthly": null,
+        "annual": 7.42,
+        "custom": false,
+        "notes": "$89 per seat per year, minimum 3 seats."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "MDM deployment or custom builds on request."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": false,
+      "hipaaOption": null,
+      "sso": false
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS"
+    ],
+    "founded": null,
+    "hq": "Yorkshire, UK",
+    "integrations": "Auto-detects Zoom, Teams and Meet, records any app including FaceTime; Apple Calendar, Google Calendar, Outlook (experimental); Markdown, Obsidian and PDF export; webhooks; MCP; bring your own model (Claude, OpenAI, Ollama, Qwen)",
+    "compliance": [],
+    "support": [
+      "Email (hello@talat.app)",
+      "Docs",
+      "Discord"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "talat homepage and pricing (Lumikey LTD)",
+        "url": "https://talat.app/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "TechCrunch: Talat's AI meeting notes stay on your machine",
+        "url": "https://techcrunch.com/2026/03/24/talats-ai-meeting-notes-stay-on-your-machine-not-in-the-cloud/",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "twinmind",
+    "name": "TwinMind",
+    "category": "ai-meeting-note-takers",
+    "website": "https://twinmind.com",
+    "logo": "https://framerusercontent.com/images/oKjt7g1GYIq14W6mTW82FFSCv0w.png",
+    "pricingUrl": "https://twinmind.com/pricing",
+    "tagline": "AI note taker that captures meetings and conversations from your phone, desktop and browser without a bot.",
+    "bestFor": "Individuals who want notes from both online meetings and in-person conversations",
+    "description": "TwinMind captures audio in the background on iPhone, Android, Mac, Windows and Chrome, then writes summaries, daily digests and answers about past conversations. No bot joins calls. A free plan is available, and Pro costs $11.99 per month billed annually.",
+    "pros": [
+      "Free plan includes transcription, AI summaries, AI chat and daily digests",
+      "Apps for iOS, Android, Mac, Windows and a Chrome extension",
+      "Transcribes in 140+ languages",
+      "MCP access to ChatGPT and Claude on every plan"
+    ],
+    "cons": [
+      "Monthly-billing prices are not shown on the pricing page",
+      "Speaker separation is limited to the Max plan",
+      "SOC 2 is listed only for Enterprise, and SSO and HIPAA are not mentioned"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: AI summaries, AI chats, daily digests and recaps, transcription, MCP access capped at 5 tool calls per day. No credit card, does not expire. The page does not state a transcription cap.",
+    "trial": "7-day trial (Max)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "MCP capped at 5 tool calls per day."
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": 11.99,
+        "custom": false,
+        "notes": "Billed annually. Unlimited transcription, ChatGPT, Gemini and Claude models, MCP with 10 tool calls per day, Apple Watch capture, uploads up to 20 hours per day. Monthly-billing price not shown."
+      },
+      {
+        "name": "Max",
+        "monthly": null,
+        "annual": 29.99,
+        "custom": false,
+        "notes": "Billed annually, labeled 40% off. 5x limits, speaker separation, auto-tagging and draft emails, unlimited MCP, priority support. Monthly-billing price not shown."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom limits, admin controls, SOC 2 compliance, dedicated support."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": null,
+      "crmSync": null,
+      "hipaaOption": null,
+      "sso": null
+    },
+    "platforms": [
+      "iOS",
+      "Android",
+      "macOS",
+      "Windows",
+      "Chrome extension"
+    ],
+    "founded": "2024",
+    "hq": null,
+    "integrations": "Zoom, Google Meet and Microsoft Teams via desktop apps and Chrome extension; calendar and email connections; MCP for ChatGPT, Claude and other tools; Apple Watch capture",
+    "compliance": [
+      "SOC 2 (Enterprise)"
+    ],
+    "support": [
+      "Help Center",
+      "Discord",
+      "Contact form",
+      "Priority support (Max)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "TwinMind pricing page",
+        "url": "https://twinmind.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "TechCrunch: Ex-Google X trio raised $6M for TwinMind",
+        "url": "https://techcrunch.com/2025/09/10/ex-google-x-trio-wants-their-ai-to-be-your-second-brain-and-they-just-raised-6m-to-make-it-happen",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "sparrowcrm",
+    "name": "SparrowCRM",
+    "category": "crm-software",
+    "website": "https://www.sparrowcrm.com",
+    "logo": "https://static.cdn.sparrowcrm.com/site/assets/favicon/favicon.ico",
+    "pricingUrl": "https://www.sparrowcrm.com/pricing",
+    "tagline": "AI CRM from the SurveySparrow team with deal pipelines, email sequences, AI agents and the Ask Zulie assistant.",
+    "bestFor": "Small sales teams that want a free AI CRM and can grow into per-seat plans",
+    "description": "SparrowCRM is a sales CRM from SurveySparrow, launched in September 2026. It covers contacts, companies and deals with Kanban views, email sync and sequences, workflows, and AI agents that update records and summarize calls and emails. A free plan covers 3 seats; paid plans start at $19 per seat per month billed annually ($24 billed monthly) for Growth.",
+    "pros": [
+      "Free plan for up to 3 seats and 50,000 records, with the Ask Zulie AI assistant and deal Kanban views",
+      "Sequence analytics show open, click and reply rates per step",
+      "Workflows, email sequences and unlimited seats from Growth ($19/seat/month billed annually)",
+      "Custom AI agents can be built by describing a task in plain language"
+    ],
+    "cons": [
+      "Calling runs through connected apps (RingCentral or Aircall); no native dialer is documented",
+      "Mobile app access is listed only on Enterprise",
+      "Public API, custom objects and lead routing require Pro ($49/seat/month billed annually)"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free forever for up to 3 seats and 50,000 records; includes Ask Zulie, email sync, deal Kanban views, reports and 100 AI credits per user per month. No credit card required.",
+    "trial": "14 days on paid plans",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "3 seats, 50,000 records; Ask Zulie AI copilot; enrichment; email auto sync; calling and call recording via connected apps; deal Kanban views; custom reports and dashboards; 100 AI credits per user/month."
+      },
+      {
+        "name": "Growth",
+        "monthly": 24,
+        "annual": 19,
+        "custom": false,
+        "notes": "Unlimited seats and records; meeting recording and transcription; email sequences; workflows; audit log; all app integrations; custom roles; chat and email support; 600 AI credits per user/month."
+      },
+      {
+        "name": "Pro",
+        "monthly": 62,
+        "annual": 49,
+        "custom": false,
+        "notes": "Meeting and deal intelligence; AI scores; custom objects; lead routing; email sequence analytics; public API; 2 active AI agents per user; 2,000 AI credits per user/month."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. Unlimited AI agents; SSO/SAML; MCP; goals and forecasting; mobile app access; priority support; 4,000 AI credits per user/month."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": false,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2017",
+    "hq": "Palo Alto, USA",
+    "integrations": "App integrations on Growth and above, including Zoom, RingCentral and Aircall; public API on Pro; MCP on Enterprise",
+    "compliance": [
+      "ISO 27001"
+    ],
+    "support": [
+      "Help center",
+      "Chat and email support (Growth and above)",
+      "Priority support (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "SparrowCRM pricing page",
+        "url": "https://www.sparrowcrm.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "SparrowCRM homepage",
+        "url": "https://www.sparrowcrm.com",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "SparrowCRM help center: managing sequences and tracking results",
+        "url": "https://support.sparrowcrm.com/hc/en/articles/7109383981-managing-sequences-and-tracking-results/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "SparrowCRM help center: set up calling",
+        "url": "https://support.sparrowcrm.com/hc/en/articles/8065335127-set-up-calling/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Newswire: SurveySparrow launches SparrowCRM",
+        "url": "https://www.newswire.com/view/content/surveysparrow-launches-sparrowcrm-the-ai-native-agentic-crm-for-revenue-teams",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "twenty",
+    "name": "Twenty",
+    "category": "crm-software",
+    "website": "https://twenty.com",
+    "logo": "https://twenty.com/favicon.ico",
+    "pricingUrl": "https://twenty.com/pricing",
+    "tagline": "Open-source CRM with custom objects, Kanban views, workflows and AI agents, available as cloud or self-hosted.",
+    "bestFor": "Technical teams that want an open-source CRM they can self-host or customize",
+    "description": "Twenty is an open-source CRM (AGPL v3) with people, companies and opportunities, unlimited custom objects, table, Kanban and calendar views, workflows and AI agents. Version 2.0 shipped in April 2026. Self-hosting is free; Cloud Pro costs $9 per user per month billed yearly ($12 billed monthly).",
+    "pros": [
+      "Open-source core can be self-hosted for free",
+      "Unlimited custom objects, fields, views and records on every plan",
+      "Workflows, AI agents, REST and GraphQL APIs, webhooks and an MCP server on every cloud plan",
+      "Low entry price: $9/user/month billed yearly"
+    ],
+    "cons": [
+      "Custom roles, SSO and audit logs require Organization ($39/user/month billed yearly)",
+      "No built-in dialer or email open tracking is listed on the pricing page",
+      "No mobile apps are listed"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Self-hosting the open-source core is free, with AI running on your own provider keys and community support. There is no free cloud plan.",
+    "trial": "30 days on cloud plans",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Self-hosted",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Open-source core under AGPL v3; all Pro CRM features plus custom roles; bring your own AI provider keys; community support on Discord."
+      },
+      {
+        "name": "Pro",
+        "monthly": 12,
+        "annual": 9,
+        "custom": false,
+        "notes": "Cloud. About 100 personal AI tasks per member per week; 1 workspace credit per user per month (about 10,000 workflow steps); Admin and Member roles; email and chat support; 50 API calls/min."
+      },
+      {
+        "name": "Organization",
+        "monthly": 52,
+        "annual": 39,
+        "custom": false,
+        "notes": "Cloud. About 500 personal AI tasks per member per week; 4 workspace credits per user per month; custom roles down to fields and rows; SAML/OIDC SSO; audit logs; custom domain; priority support."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "From $50k per year. SCIM, single-tenant isolation, IP allow-listing, dedicated support with SLA."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": null,
+      "builtInCalling": null,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2023",
+    "hq": "Paris, France",
+    "integrations": "Google and Microsoft email and calendar sync; Slack; People Data Labs; app marketplace; REST and GraphQL APIs, webhooks and MCP server (works with Claude, ChatGPT and Cursor)",
+    "compliance": [],
+    "support": [
+      "Community support (all plans)",
+      "Email and chat support (Pro)",
+      "Priority support (Organization)",
+      "Dedicated support with SLA (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Twenty pricing page (monthly and yearly toggle)",
+        "url": "https://twenty.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Twenty docs: pricing plans",
+        "url": "https://docs.twenty.com/user-guide/billing/capabilities/pricing-plans",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Twenty GitHub release v2.0.0",
+        "url": "https://github.com/twentyhq/twenty/releases/tag/v2.0.0",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "heise: Twenty 2.0, the open-source CRM follows up",
+        "url": "https://heise.de/-11268835",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Y Combinator company profile: Twenty",
+        "url": "https://www.ycombinator.com/companies/twenty",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "day-ai",
+    "name": "Day AI",
+    "category": "crm-software",
+    "website": "https://day.ai",
+    "logo": "https://day.ai/favicon-dark.png",
+    "pricingUrl": "https://day.ai/pricing",
+    "tagline": "AI-native CRM that builds customer records from email, calendar, meetings and Slack, priced per AI agent.",
+    "bestFor": "B2B revenue teams that want AI agents to keep the pipeline current, alone or on top of Salesforce or HubSpot",
+    "description": "Day AI builds a customer record from email, calendar, meetings and Slack, and runs AI agents that prep meetings, draft follow-ups and update the pipeline. It can replace Salesforce or HubSpot or draft updates back to them. Pricing is per agent, where each agent is assigned to one person; pipeline management starts at Professional, $60 per agent per month billed annually ($75 billed monthly).",
+    "pros": [
+      "Free seats for teammates who only need their meetings and emails captured",
+      "Pipeline board and table views, custom properties and pipeline analytics on Professional",
+      "Can run as the CRM or on top of Salesforce or HubSpot, drafting updates for review",
+      "Volume discounts apply automatically on annual billing (Professional drops to $30 at 301+ agents)"
+    ],
+    "cons": [
+      "Every workspace needs at least one Professional or Executive agent ($60 or $200/month billed annually)",
+      "No built-in dialer or email open tracking is described",
+      "No dedicated mobile app; mobile access goes through the Claude mobile app"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free for teammates who capture meetings, emails and interactions; they can search, view and share records. A workspace needs at least one paid Professional or Executive agent.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Gmail and calendar ingestion, meeting recording, search and read customer memory, create and update people and organizations. No automated skills."
+      },
+      {
+        "name": "Turbo",
+        "monthly": 30,
+        "annual": 24,
+        "custom": false,
+        "notes": "Per agent. Tasks, email drafts, web search, pages, lists; 2 automated skill slots. Annual price falls to $12 at 301+ agents."
+      },
+      {
+        "name": "Professional",
+        "monthly": 75,
+        "annual": 60,
+        "custom": false,
+        "notes": "Per agent. Pipeline and opportunity management, pipeline analytics, campaign sequences, custom views and properties; 5 automated skill slots. Annual price falls to $30 at 301+ agents."
+      },
+      {
+        "name": "Executive",
+        "monthly": 250,
+        "annual": 200,
+        "custom": false,
+        "notes": "Per agent. Campaigns from lists or customer memory, custom campaign instructions, contact identification; 10 automated skill slots. Annual price falls to $117 at volume."
+      },
+      {
+        "name": "Super",
+        "monthly": null,
+        "annual": 800,
+        "custom": false,
+        "notes": "Per agent, annual plans only. Agentic web prospecting, lookalike prospecting, end-to-end campaign setup."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": null,
+      "builtInCalling": null,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2023",
+    "hq": "Boston, USA",
+    "integrations": "Gmail and Google Calendar, Slack, Zoom, Gong, Snowflake, Amplitude, Asana, Zapier; Salesforce and HubSpot write-back; API, SDK and MCP",
+    "compliance": [],
+    "support": [
+      "Trust Center and setup guide",
+      "Contact form"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Day AI pricing page (monthly and annual toggle)",
+        "url": "https://day.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Day AI homepage",
+        "url": "https://day.ai",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Day AI setup guide",
+        "url": "https://day.ai/resources/day-ai-setup-guide",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Day AI llms.txt (product FAQ)",
+        "url": "https://day.ai/llms.txt",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Pulse 2.0: Day AI raises $20M Series A and launches CRMx",
+        "url": "https://pulse2.com/day-ai-20-million-series-a/",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "lightfield",
+    "name": "Lightfield",
+    "category": "crm-software",
+    "website": "https://lightfield.com",
+    "logo": "https://lightfield.com/apple-touch-icon.png",
+    "pricingUrl": "https://lightfield.com/pricing",
+    "tagline": "AI-native CRM that updates records from email, meetings and Slack, with a call recorder, sequences and enrichment built in.",
+    "bestFor": "Founder-led and small sales teams that want the CRM to fill itself in from calls and email",
+    "description": "Lightfield is an AI-native CRM from the founders of Tome. It syncs email, calendar and Slack, records and transcribes meetings, and updates accounts, contacts and opportunities on its own. Starter costs $89 per user per month billed monthly for up to 3 seats; larger plans are priced per workspace and billed annually, from $999 per month.",
+    "pros": [
+      "Records update automatically from email and meeting content",
+      "Meeting recording and transcription included from Starter",
+      "Opportunity boards grouped by stage, with automatic stage changes that can be corrected in one click",
+      "SOC 2 Type II, HIPAA and GDPR listed on the pricing page"
+    ],
+    "cons": [
+      "Starter is limited to 3 seats; the next plan is $999/month per workspace billed annually",
+      "Workflows, sequences and dashboards start at Pro",
+      "Voice dialer is listed as coming soon; no built-in calling yet"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14 days on Starter",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 89,
+        "annual": null,
+        "custom": false,
+        "notes": "Per user, billed monthly; no annual price published. Up to 3 seats and 50,000 records; automatic record updates; meeting recording; email, calendar and Slack sync; custom objects and pipelines; email support."
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$999/month per workspace, billed annually (not a per-user price). 5 capture seats, unlimited viewer seats, 250,000 records; workflows, multi-channel sequences, dashboards, workspace credits; dedicated CSM. Extra capture seats $200/month billed annually."
+      },
+      {
+        "name": "Growth",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$2,999/month per workspace, billed annually (not a per-user price). 10 capture seats, 750,000 records; inbox warming, advanced enrichment, Lightfield Assistant; voice dialer coming soon."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only, billed annually. Object and record permissions, SSO, SCIM, enforced MFA, bi-directional CRM sync, custom integrations."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": false,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2020",
+    "hq": "San Francisco, USA",
+    "integrations": "Google and Outlook email and calendar, Slack, LinkedIn; API, MCP and CLI; two-way sync with Salesforce or HubSpot on Enterprise",
+    "compliance": [
+      "SOC 2 Type II",
+      "HIPAA",
+      "GDPR"
+    ],
+    "support": [
+      "Email support (Starter)",
+      "Dedicated CSM and Slack support (Pro)",
+      "Help center"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Lightfield pricing page",
+        "url": "https://lightfield.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Lightfield homepage",
+        "url": "https://lightfield.com",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Lightfield docs: pipelines (boards grouped by stage)",
+        "url": "https://docs.lightfield.app/help/settings/pipelines/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Lightfield blog: Why we built Lightfield",
+        "url": "https://lightfield.com/blog/why-we-built-lightfield",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Lightfield blog: Our $47M Series A",
+        "url": "https://lightfield.com/blog/our-series-a",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "reevo",
+    "name": "Reevo",
+    "category": "crm-software",
+    "website": "https://reevo.ai",
+    "logo": "https://reevo.ai/assets/images/favicon-light.png",
+    "pricingUrl": "https://reevo.ai/pricing",
+    "tagline": "AI sales platform that combines CRM, dialer, sequences, enrichment and call recording in one product.",
+    "bestFor": "Sales teams that want to replace a separate CRM, dialer, sequencer and data provider with one platform",
+    "description": "Reevo combines a CRM with prospecting data, email sequences, a built-in dialer, meeting recording and the Ask Reevo AI assistant. Opportunities have Kanban views, multiple pipelines and forecasting. Pricing is not published; all plans are quoted by sales.",
+    "pros": [
+      "Built-in dialer with 1,000 minutes per user per month on Core and an iOS app for calls",
+      "Kanban opportunity views, multiple pipelines and forecasting",
+      "Email open rates reported for outreach",
+      "SOC 2 and ISO 27001 listed"
+    ],
+    "cons": [
+      "No prices are published; every plan requires talking to sales",
+      "Workflow automation is metered by workflow credits per org per month",
+      "No free plan or self-serve trial is listed"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": null,
+    "plans": [
+      {
+        "name": "Core",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. 1,000 enrichment credits, 1,000 dialer minutes and 2,500 meeting minutes per user/month; 50 active sequences; 20,000 workflow credits per org/month; 48-hour support SLA."
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. 2,000 enrichment credits, 2,000 dialer minutes and 4,000 meeting minutes per user/month; 100 active sequences; 40,000 workflow credits per org/month; 24-hour SLA; Slack Connect with the Reevo team."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Quote only. Plan built with the customer."
+      }
+    ],
+    "features": {
+      "visualPipeline": true,
+      "emailTracking": true,
+      "builtInCalling": true,
+      "aiAssistant": true,
+      "workflowAutomation": true
+    },
+    "platforms": [
+      "Web",
+      "iOS"
+    ],
+    "founded": "2024",
+    "hq": "Santa Clara, USA",
+    "integrations": "Integrations page and MCP; webhook forms from HubSpot, Typeform, Webflow and others; Clay webhooks; public API",
+    "compliance": [
+      "SOC 2",
+      "ISO 27001"
+    ],
+    "support": [
+      "Help center",
+      "Support SLA of 48 hours (Core) or 24 hours (Pro)",
+      "Slack Connect (Pro)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Reevo pricing page",
+        "url": "https://reevo.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Reevo homepage",
+        "url": "https://reevo.ai",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Reevo help center: email open rates",
+        "url": "https://help.reevo.ai/Prospecting-and-Outreach/Email-Open-Rate",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Reevo help center: November 2025 product release (Kanban views)",
+        "url": "https://help.reevo.ai/product-releases/november-2025",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Reevo help center: Dialer",
+        "url": "https://help.reevo.ai/Conversations/Dialer",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Pulse 2.0: Reevo closes $80M to launch AI-native GTM platform",
+        "url": "https://pulse2.com/reevo-80-million-closed-to-launch-ai-native-go-to-market-platform-unifying-marketing-sales-and-customer-success",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "cloudways-ai-website-builder",
+    "name": "Cloudways AI Website Builder",
+    "category": "website-builders",
+    "website": "https://www.cloudways.com/en/ai-website-builder.php",
+    "logo": "https://www.cloudways.com/wp-content/themes/cw_multilingual/template/assets/img/favicon.png",
+    "pricingUrl": "https://www.cloudways.com/en/ai-website-builder.php",
+    "tagline": "AI builder that generates WordPress and WooCommerce sites from a text prompt and hosts them on Cloudways servers.",
+    "bestFor": "WordPress users and agencies who want AI-built sites on managed hosting",
+    "description": "Cloudways AI Website Builder turns a text prompt into a WordPress or WooCommerce site built from native Gutenberg blocks. You refine it by AI chat, a visual editor or a code editor, and it runs on a Cloudways managed server. The builder is billed per website, and hosting is billed separately.",
+    "pros": [
+      "Sites are standard WordPress with Gutenberg blocks and full WordPress admin access, so they are not locked to the builder",
+      "Per-site price drops from $7.99 to $5.99/mo at 21 or more sites",
+      "Edits in the visual and code editors, and chat questions, use no AI credits",
+      "5-day free trial with no credit card"
+    ],
+    "cons": [
+      "Hosting is billed separately from $11/mo, so one site costs at least $18.99/mo at regular prices",
+      "Only 20 AI credits per site per month, and they do not roll over",
+      "No free domain; you connect a domain you own"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "5-day free trial on a trial server, no credit card",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "1-5 websites",
+        "monthly": 7.99,
+        "annual": null,
+        "custom": false,
+        "notes": "Per website per month, plus hosting (Managed Hosting from $11/mo: 1 GB RAM, 1 vCPU, 25 GB SSD, 1 TB transfer, unlimited sites per server). 20 AI credits per site per month, no rollover; one-time top-up packs of 20 to 200 credits. No annual billing listed. Black Friday offer to Dec 4-5, 2026: 80% off for 2 months ($1.60/site/mo), then $7.99."
+      },
+      {
+        "name": "6-20 websites",
+        "monthly": 6.99,
+        "annual": null,
+        "custom": false,
+        "notes": "Per website per month, plus hosting. Same credits and features. Black Friday price $1.40/site/mo for 2 months."
+      },
+      {
+        "name": "21+ websites",
+        "monthly": 5.99,
+        "annual": null,
+        "custom": false,
+        "notes": "Per website per month, plus hosting. Same credits and features. Black Friday price $1.20/site/mo for 2 months."
+      }
+    ],
+    "features": {
+      "ecommerce": true,
+      "freeDomain": false,
+      "blogging": true,
+      "aiBuilder": true,
+      "memberships": null
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2011",
+    "hq": "St. Julian's, Malta",
+    "integrations": "WordPress, WooCommerce, Cloudflare, DNS Made Easy",
+    "compliance": [],
+    "support": [
+      "24/7 expert support",
+      "Knowledge base"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "cloudways.com: AI Website Builder pricing",
+        "url": "https://www.cloudways.com/en/ai-website-builder.php",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "cloudways.com: AI Website Builder general availability",
+        "url": "https://www.cloudways.com/blog/ai-website-builder-general-availability/",
+        "date": "2026-11-16"
+      },
+      {
+        "label": "DigitalOcean: Cloudways launches AI Website Builder",
+        "url": "https://investors.digitalocean.com/news/news-details/2026/Cloudways-Launches-AI-Website-Builder-Enabling-Businesses-To-Create-And-Launch-WordPress-Websites-In-Minutes/default.aspx",
+        "date": "2026-11-16"
+      }
+    ]
+  },
+  {
+    "slug": "bluehost-ai-builder",
+    "name": "Bluehost AI Builder",
+    "category": "website-builders",
+    "website": "https://www.bluehost.com/ai-builder",
+    "logo": "",
+    "pricingUrl": "https://www.bluehost.com/ai-builder",
+    "tagline": "Bluehost's prompt-based builder for websites and simple business apps, with a free tier on a Bluehost subdomain.",
+    "bestFor": "Small businesses that want a site with bookings, forms or a customer portal built by chat",
+    "description": "Bluehost AI Builder creates websites and web apps from a plain-language description and hosts them on Bluehost's cloud. It can add bookings, forms, databases, invoices and user accounts. Plans are priced by monthly AI credits; hosting does not use credits.",
+    "pros": [
+      "Free tier with no end date and no credit card, with unlimited sites and apps",
+      "Bookings, forms, data storage, user accounts and an admin panel on every plan",
+      "A published site stays online when credits run out; only new changes pause",
+      "24/7 human support on every plan, including Free"
+    ],
+    "cons": [
+      "Free sites use a .app.bluehost.ai address that search engines do not index, and a custom domain needs a paid plan",
+      "Credits expire after 30 days, including purchased top-ups",
+      "No free domain; domain registration is billed separately",
+      "The pricing page shows only yearly prices, and the Pro plan has no listed price"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "5 AI credits a day, up to 30 a month; unlimited sites and apps; publishes on a bluehost.ai subdomain with a Bluehost badge; no custom domain.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "5 credits a day, up to 30 a month. Forms, bookings, user accounts and roles, admin panel, cloud hosting on a bluehost.ai subdomain."
+      },
+      {
+        "name": "Lite",
+        "monthly": null,
+        "annual": 20,
+        "custom": false,
+        "notes": "100 credits a month, no daily limit, credit top-ups, custom domain, no Bluehost badge. Page shows '$16.00/mo' and 'Billed Yearly at $240.00' ($240 / 12 = $20); the FAQ says paid plans start at $20 a month. $16 appears to reflect a first-term 'Buy More, Save More' discount running Oct 1 to Nov 30, 2026. Month-to-month price not shown."
+      },
+      {
+        "name": "Standard",
+        "monthly": null,
+        "annual": 40,
+        "custom": false,
+        "notes": "200 credits a month plus everything in Lite. Page shows '$32.00/mo' and billed yearly at $480.00 ($480 / 12 = $40). Month-to-month price not shown."
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "400 credits a month per Bluehost's help article. No price is shown on the pricing page."
+      }
+    ],
+    "features": {
+      "ecommerce": null,
+      "freeDomain": false,
+      "blogging": true,
+      "aiBuilder": true,
+      "memberships": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2003",
+    "hq": "Jacksonville, United States",
+    "integrations": "Google Calendar (bookings), email notifications, domain purchase and transfer",
+    "compliance": [],
+    "support": [
+      "24/7 human support (all plans)",
+      "Help center"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "bluehost.com: AI Builder plans",
+        "url": "https://www.bluehost.com/ai-builder",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "bluehost.com: AI Website Builder pricing and FAQ",
+        "url": "https://www.bluehost.com/ai-website-builder",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "bluehost.com: How to start a Builder plan",
+        "url": "https://www.bluehost.com/help/article/bh-ai-builder-start-free-plan",
+        "date": "2026"
+      },
+      {
+        "label": "PR Newswire: Bluehost launches AI Builder",
+        "url": "https://www.prnewswire.com/news-releases/bluehost-launches-ai-builder-turning-business-ideas-into-websites-and-working-apps-in-minutes-302935303.html",
+        "date": "2026-11-10"
+      }
+    ]
+  },
+  {
+    "slug": "ploy",
+    "name": "Ploy",
+    "category": "website-builders",
+    "website": "https://ploy.ai",
+    "logo": "https://ploy.ai/_ploy_static/favicon-73dd826f1a32c48e6427f9a51f99ad4c8459e08f4dbda64f9d85d8e501c63e17.ico",
+    "pricingUrl": "https://ploy.ai/pricing",
+    "tagline": "AI platform that builds and hosts a company website, then runs SEO pages, visitor tracking and ads from it.",
+    "bestFor": "B2B startups that want the website and its marketing run by AI agents",
+    "description": "Ploy builds company websites with an AI builder, hosts them on a custom domain and adds a CMS called PloyDB. It also identifies site visitors, creates landing pages for SEO and account-based campaigns, and manages Meta ads. It was founded by Webflow co-founder Bryant Chou.",
+    "pros": [
+      "Free plan with no credit card",
+      "Hosting is included on every plan",
+      "Imports sites from WordPress, Webflow, Squarespace, Framer, Wix and Sanity",
+      "Annual billing cuts Starter from $50 to $40/mo"
+    ],
+    "cons": [
+      "Paid plans start at $50/mo, well above general website builders",
+      "Free plan has no custom domain and a 2,000-credit cap",
+      "No ecommerce features are mentioned"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "500 credits a day, 2,000 maximum; hosting included; no custom domain, collaborators or CRM and ad integrations.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "500 credits a day (2,000 max). GitHub sync via CLI only. No custom domain."
+      },
+      {
+        "name": "Starter",
+        "monthly": 50,
+        "annual": 40,
+        "custom": false,
+        "notes": "4,000 credits a month, 1 domain family, 50 enriched visitors a month, Google Workspace and GitHub sync. Annual billed $480/yr."
+      },
+      {
+        "name": "Pro",
+        "monthly": 300,
+        "annual": 240,
+        "custom": false,
+        "notes": "24,000 credits a month, 5 domain families, 1,000 enriched visitors a month, ad integrations, HubSpot and Attio. Annual billed $2,880/yr."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom credits and pricing, Salesforce, SSO, role-based access, white-glove onboarding."
+      }
+    ],
+    "features": {
+      "ecommerce": null,
+      "freeDomain": null,
+      "blogging": null,
+      "aiBuilder": true,
+      "memberships": null
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2025",
+    "hq": "San Francisco, United States",
+    "integrations": "HubSpot, Attio, Salesforce (Enterprise), Google Workspace, GitHub, Meta Ads, Notion import, Slack, Claude, ChatGPT, Cursor",
+    "compliance": [],
+    "support": [
+      "Demo booking",
+      "White-glove onboarding (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "ploy.ai: Pricing",
+        "url": "https://ploy.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "ploy.ai: Product overview",
+        "url": "https://ploy.ai/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Pulse 2.0: Ploy raises $27 million seed round",
+        "url": "https://pulse2.com/ploy-raises-27-million-seed-round-to-launch-ai-growth-platform/amp/",
+        "date": "2026-06-22"
+      }
+    ]
+  },
+  {
+    "slug": "figma-sites",
+    "name": "Figma Sites",
+    "category": "website-builders",
+    "website": "https://www.figma.com/sites/",
+    "logo": "https://static.figma.com/app/icon/2/touch-180.png",
+    "pricingUrl": "https://www.figma.com/pricing/",
+    "tagline": "Figma's tool for designing responsive websites on the Figma canvas and publishing them directly.",
+    "bestFor": "Designers who already work in Figma and want to publish their designs as live sites",
+    "description": "Figma Sites turns Figma designs into responsive websites and publishes them on a figma.site subdomain or a custom domain. It includes templates, prebuilt blocks, interaction presets, a CMS and AI-generated code for custom interactions. It is in open beta and is included with paid Figma Full seats.",
+    "pros": [
+      "Uses existing Figma designs, libraries and components",
+      "No limit on the number of published sites",
+      "CMS lets collaborators edit content without changing the layout",
+      "Password protection for published sites"
+    ],
+    "cons": [
+      "Still in open beta since May 2025",
+      "Priced per Full seat, not per site; publishing needs a paid plan",
+      "No code export, and no built-in store or memberships"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Professional (Full seat)",
+        "monthly": null,
+        "annual": 16,
+        "custom": false,
+        "notes": "Per Full seat per month as shown on figma.com/pricing. The page has a monthly/annual toggle but the fetched view showed one price; third-party guides report $20 billed monthly, not confirmed on Figma's page. Up to 10 custom domains. 3,000 AI credits a month per Full seat (Figma-wide, not Sites-specific)."
+      },
+      {
+        "name": "Organization (Full seat)",
+        "monthly": null,
+        "annual": 55,
+        "custom": false,
+        "notes": "Per Full seat per month, billed annually only. Unlimited custom domains; can restrict sites to an internal audience."
+      },
+      {
+        "name": "Enterprise (Full seat)",
+        "monthly": null,
+        "annual": 90,
+        "custom": false,
+        "notes": "Per Full seat per month, billed annually only. Unlimited custom domains; internal-only sites."
+      }
+    ],
+    "features": {
+      "ecommerce": false,
+      "freeDomain": false,
+      "blogging": true,
+      "aiBuilder": false,
+      "memberships": false
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2012",
+    "hq": "San Francisco, United States",
+    "integrations": "Figma Design libraries and components, Cloudflare (domains and routing)",
+    "compliance": [],
+    "support": [
+      "Help center",
+      "Community forum"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "figma.com: Pricing",
+        "url": "https://www.figma.com/pricing/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "figma.com: Pricing FAQs",
+        "url": "https://www.figma.com/pricing-faq/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "figma.com: Figma Sites",
+        "url": "https://www.figma.com/sites/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "help.figma.com: Publish a site",
+        "url": "https://help.figma.com/hc/en-us/articles/31242845959703",
+        "date": "2026"
+      }
+    ]
+  },
+  {
+    "slug": "readdy",
+    "name": "Readdy",
+    "category": "website-builders",
+    "website": "https://readdy.ai",
+    "logo": "https://readdy.ai/site-static/favicon/android-chrome-512x512.png",
+    "pricingUrl": "https://readdy.ai/pricing",
+    "tagline": "AI website builder that generates and hosts a site from a description, with forms, logins and an AI receptionist.",
+    "bestFor": "Small businesses and agencies that want AI-built sites with lead capture",
+    "description": "Readdy generates a website from a text description and lets you refine it with visual editing tools. It hosts the site with SSL, connects or sells custom domains, and adds forms, user logins and a built-in database. Agency plans add client management and white-labeling.",
+    "pros": [
+      "Free tier to try the editor, with 250 credits a month",
+      "Yearly plans include one free custom domain for the first year",
+      "Built-in Shop with checkout and orders; Stripe, PayPal or Square for payments",
+      "Adds email sign-up and sign-in pages through Readdy Backend"
+    ],
+    "cons": [
+      "Free plan cannot publish a site (0 sites included)",
+      "Monthly billing costs about two-thirds more than yearly (Starter $25 vs $15 a month)",
+      "Extra sites cost $6/mo each on Starter, Pro and Agency",
+      "No member-only content or paid memberships; sign-in only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "250 credits a month, 2 projects, 200 MB storage; 0 published sites, no code export or custom domain.",
+    "trial": "Free plan for trying the editor (250 credits a month); publishing a site needs a paid plan",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "250 credits a month, 2 projects, no published site included."
+      },
+      {
+        "name": "Starter",
+        "monthly": 25,
+        "annual": 15,
+        "custom": false,
+        "notes": "1 site, 10 projects, 30,000 credits, 1 GB storage, 1 free custom domain, code export, 1,000 leads a month. Yearly view shows $15/mo with $25 struck through (not labeled as the monthly-billing price). 2-year (50% off) and 3-year (60% off) terms offered, prices not shown."
+      },
+      {
+        "name": "Pro",
+        "monthly": 40,
+        "annual": 24,
+        "custom": false,
+        "notes": "2 sites, 50 projects, 72,000 credits, 5 GB storage, 1 free custom domain, AEO/GEO, 10,000 leads a month. $40 struck through."
+      },
+      {
+        "name": "Agency",
+        "monthly": 120,
+        "annual": 72,
+        "custom": false,
+        "notes": "6 sites, 150 projects, 216,000 credits a year, client management, GitHub, branded email. $120 struck through."
+      },
+      {
+        "name": "Agency Pro",
+        "monthly": 199,
+        "annual": 119,
+        "custom": false,
+        "notes": "10 sites, unlimited credits, white-label platform, extra sites $4.80/mo. $199 struck through."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": 1299,
+        "annual": 779,
+        "custom": false,
+        "notes": "Unlimited sites, projects and credits. $1,299 struck through. A separate Reseller Mode is quote-only."
+      }
+    ],
+    "features": {
+      "ecommerce": true,
+      "freeDomain": true,
+      "blogging": null,
+      "aiBuilder": true,
+      "memberships": false
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Stripe, Shopify, Calendly, Mailchimp, Google Analytics, Google Sheets, Supabase, GitHub, Resend",
+    "compliance": [],
+    "support": [
+      "Help center and docs",
+      "Community forum and Discord"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "readdy.ai: Pricing",
+        "url": "https://readdy.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "readdy.ai: Product overview",
+        "url": "https://readdy.ai",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "docs.readdy.ai: Introduction",
+        "url": "https://docs.readdy.ai/intro",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Product Hunt: Readdy launches",
+        "url": "https://www.producthunt.com/products/readdy/launches",
+        "date": "2025-04-02"
+      }
+    ]
+  },
+  {
+    "slug": "raindrop",
+    "name": "Raindrop",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.raindrop.ai",
+    "logo": "https://www.raindrop.ai/web-app-manifest-512x512.png",
+    "pricingUrl": "https://www.raindrop.ai/docs/platform/plans",
+    "tagline": "Monitoring platform for AI agents in production, with issue detection, signals and pre-merge simulations.",
+    "bestFor": "Teams that need to catch silent agent failures in production traffic",
+    "description": "Raindrop traces agent runs and flags failures that throw no error, such as wrong answers, tool loops and frustrated users. Signals are written in plain language and turned into classifiers. Simulations, in public beta, replay production events against a pull request and comment on it. Hobby is free with 1,000 events per month; Pro costs $299 per month plus metered events.",
+    "pros": [
+      "Signals are defined in plain language, and Raindrop drafts the classifier and shows its code",
+      "Issue Detection groups recurring failures and links the traces as evidence",
+      "Simulations comment on GitHub pull requests that change an agent",
+      "SDKs for TypeScript, Python, Go and browser, plus OpenTelemetry ingestion"
+    ],
+    "cons": [
+      "No prompt management or offline eval runner; Experiments compare cohorts of logged traffic only",
+      "Hobby stops ingesting after 1,000 events for the rest of the month",
+      "SSO/SAML is Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Hobby: 1,000 events per month, 1 custom signal, 15 Triage Agent messages per month; tracing, search, notifications, signal presets and MCP. No credit card required.",
+    "trial": "14-day free trial of Pro",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Hobby",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "1,000 events/month; ingestion stops for the rest of the calendar month after that. Issues and Experiments shown as previews only."
+      },
+      {
+        "name": "Pro",
+        "monthly": 299,
+        "annual": null,
+        "custom": false,
+        "notes": "Plus metered events: $0.003 per event up to 1M, then $0.002. 10 custom signals, 500 Triage Agent messages/month, Issue Detection, Experiments, data export. No annual price published; seat and retention limits not stated."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom limits, SSO/SAML, edge PII redaction, audit logs, warehouse exports, priority support and SLAs. PII Guard add-on from $80/month."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": null,
+      "tracing": true,
+      "llmJudge": null,
+      "datasets": true,
+      "promptManagement": false,
+      "cicdIntegration": true,
+      "agentEvals": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "TypeScript SDK",
+      "Python SDK",
+      "Go SDK",
+      "OpenTelemetry",
+      "HTTP API"
+    ],
+    "founded": null,
+    "hq": "San Francisco, USA",
+    "integrations": "Vercel AI SDK, OpenAI Agents SDK, Claude Agent SDK, LangChain, LangGraph, Mastra, CrewAI, Pydantic AI, Google ADK, AWS Bedrock, Azure OpenAI, Vertex AI, OpenRouter; GitHub (Simulations, Change Reports); Slack; MCP server",
+    "compliance": [
+      "SOC 2 Type II",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Docs and support page",
+      "Priority support and SLAs (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Raindrop docs: plans",
+        "url": "https://www.raindrop.ai/docs/platform/plans",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Raindrop homepage (pricing section)",
+        "url": "https://www.raindrop.ai/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Raindrop docs: signals",
+        "url": "https://raindrop.ai/docs/platform/signals.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Raindrop docs: simulations",
+        "url": "https://raindrop.ai/docs/platform/simulations.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Raindrop blog: seed round",
+        "url": "https://www.raindrop.ai/blog/seed-round",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Lightspeed: announcing Raindrop's Series A",
+        "url": "https://lsvp.com/stories/production-monitoring-for-an-increasingly-agentic-world-announcing-raindrops-series-a/",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "coval",
+    "name": "Coval",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.coval.ai",
+    "logo": "https://www.coval.ai/favicon.png",
+    "pricingUrl": "https://www.coval.ai/pricing",
+    "tagline": "Simulation and evaluation platform for voice and chat AI agents.",
+    "bestFor": "Teams testing voice agents before launch and monitoring live calls",
+    "description": "Coval runs simulated callers against voice and chat agents, scores the conversations with LLM-judge and other metrics, and evaluates live production calls. It checks timing, interruptions, audio issues and tool calls as well as transcripts. There is no free plan; Starter costs $100 per month with a 7-day trial.",
+    "pros": [
+      "Evaluates voice-specific behavior such as turn-taking, interruptions and audio quality",
+      "Unlimited seats on every plan",
+      "GitHub Actions tutorial and CLI for running simulations in CI",
+      "Connects to LiveKit, Pipecat, OpenAI Realtime, Gemini Live and phone numbers"
+    ],
+    "cons": [
+      "No free plan; the 7-day trial needs a credit card",
+      "Starter includes only 100 simulation minutes per month",
+      "SAML SSO and private deployment are Enterprise only, from $4,500 per month"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "7-day free trial on Starter and Growth (credit card required)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 100,
+        "annual": 80,
+        "custom": false,
+        "notes": "100 simulation minutes and 3,000 upload minutes/month; overage $0.40 per simulation minute and $0.10 per upload minute. 5 concurrent simulations, 1 project, 30-day trace retention, unlimited seats. Annual figure derived from the stated 20% annual discount; the page does not print it."
+      },
+      {
+        "name": "Growth",
+        "monthly": 500,
+        "annual": 400,
+        "custom": false,
+        "notes": "1,000 simulation minutes and 30,000 upload minutes/month; overage $0.25 and $0.05 per minute. 25 concurrent simulations, 5 projects, 90-day retention, 30-day audit logs, shared Slack. Annual figure derived from the stated 20% annual discount."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom, starting at $4,500/month billed annually. SAML SSO and SCIM, RBAC, private/VPC deployment, data residency, BYO storage, DPA, SLA up to 99.99%, named engineer."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "tracing": true,
+      "llmJudge": true,
+      "datasets": true,
+      "promptManagement": null,
+      "cicdIntegration": true,
+      "agentEvals": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Private/VPC deployment (Enterprise)",
+      "CLI",
+      "API",
+      "OpenTelemetry"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "LiveKit, Pipecat Cloud, Twilio ConversationRelay, OpenAI Realtime, Gemini Live, Grok Realtime, Deepgram Voice Agent, inbound/outbound phone, WebSocket and A2A chat; trace import from Langfuse, Arize Phoenix and LangSmith; GitHub Actions; MCP",
+    "compliance": [
+      "SOC 2 Type II",
+      "HIPAA",
+      "GDPR",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Community and email (Starter)",
+      "Priority email and shared Slack (Growth)",
+      "Dedicated Slack and named engineer (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Coval pricing page",
+        "url": "https://www.coval.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Coval docs index",
+        "url": "https://docs.coval.ai/llms.txt",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Coval docs: LLM judge metrics",
+        "url": "https://docs.coval.ai/concepts/metrics/types/llm-judge",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Coval docs: GitHub Actions tutorial",
+        "url": "https://docs.coval.ai/getting-started/github-actions-tutorial",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Coval blog: Coval raises $28M Series A",
+        "url": "https://www.coval.ai/blog/coval-raises-28m-series-a",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "judgment-labs",
+    "name": "Judgment Labs",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.judgmentlabs.ai",
+    "logo": "https://www.judgmentlabs.ai/favicon.ico",
+    "pricingUrl": "https://www.judgmentlabs.ai/pricing",
+    "tagline": "Agent behavior monitoring platform that traces full agent runs and scores them with custom judges.",
+    "bestFor": "Teams running multi-step agents that want judges aligned to their own reviewers",
+    "description": "Judgment Labs traces agents with subagents and tool calls, scores traces with code checks or LLM judges, and runs offline test suites that can gate pull requests in CI. Background agents group recurring failures into issues. The tracing SDK, judgeval, is Apache-2.0. Beginner is free with unlimited users; Pro costs $250 per month including $250 of model credits.",
+    "pros": [
+      "Free Beginner plan includes unlimited users, projects and tests",
+      "SOC 2 Type II and HIPAA apply on every plan, including free",
+      "Judge alignment checks that a judge flags issues the way the team would",
+      "Open-source judgeval SDK (Apache-2.0) is built on OpenTelemetry"
+    ],
+    "cons": [
+      "Beginner keeps data for 14 days",
+      "SSO/SAML and bring-your-own-cloud are Enterprise only",
+      "Dataset test runs were retired on 12 November 2026; datasets must be moved into test suites"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Beginner: unlimited users, projects, datasets and tests; 1 GB trace ingest and 10K evaluator runs per month; $100 of credits in the first month then $50/month; 14-day retention; community support.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Beginner",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Overage: $1.50/GB trace ingest, $2 per 1,000 evaluator runs. Model tokens for judges are charged from credits at provider rates."
+      },
+      {
+        "name": "Pro",
+        "monthly": 250,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat per month, unlimited users. Includes $250/month of credits, 50 GB ingest (then $0.50/GB), 50K evaluator runs (then $1 per 1,000), 180-day retention, RBAC, data export, custom dashboards, priority support. No annual price published."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Volume pricing, custom retention, SSO/SAML, bring your own cloud on AWS or Google Cloud, dedicated support with SLA."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "tracing": true,
+      "llmJudge": true,
+      "datasets": true,
+      "promptManagement": null,
+      "cicdIntegration": true,
+      "agentEvals": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Bring your own cloud (Enterprise)",
+      "Python SDK",
+      "OpenTelemetry",
+      "HTTP API"
+    ],
+    "founded": "2025",
+    "hq": "San Francisco, USA",
+    "integrations": "OpenAI, Anthropic, Google GenAI, Together AI, LangGraph, Claude Agent SDK; OpenTelemetry; MCP server for coding agents; Slack agent",
+    "compliance": [
+      "SOC 2 Type II",
+      "HIPAA",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Community (Beginner)",
+      "Priority support (Pro)",
+      "Dedicated support with SLA (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Judgment Labs pricing page",
+        "url": "https://www.judgmentlabs.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Judgment Labs docs: offline tests",
+        "url": "https://docs.judgmentlabs.ai/documentation/tests/overview",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Judgment Labs docs: judges",
+        "url": "https://docs.judgmentlabs.ai/documentation/judges/overview",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "GitHub: JudgmentLabs/judgeval",
+        "url": "https://github.com/JudgmentLabs/judgeval",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Lightspeed: Judgment Labs company profile",
+        "url": "https://lsvp.com/company/judgment-labs/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Judgment Labs blog: announcing $32M led by Lightspeed",
+        "url": "https://www.judgmentlabs.ai/blogs/announcing-32m-led-by-lightspeed",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "scorecard",
+    "name": "Scorecard",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.scorecard.io",
+    "logo": "https://cdn.prod.website-files.com/68012f5eeeda4ace0fca1c46/680294e237b58c5450075d64_Webclip.png",
+    "pricingUrl": "https://www.scorecard.io/pricing",
+    "tagline": "Evaluation platform for AI agents with testsets, AI and human metrics, tracing and prompt versioning.",
+    "bestFor": "Teams that want unlimited users and a large free score allowance",
+    "description": "Scorecard runs agents against testsets and scenarios, scores outputs with AI, human or code metrics, and traces LLM calls. It includes a prompt playground, versioned prompts and a GitHub Actions integration. Starter is free with 100,000 scores; Growth costs $299 per month with 1M scores.",
+    "pros": [
+      "Free Starter plan includes unlimited users and 100,000 scores",
+      "Metrics can be AI-judged, human-reviewed or code-based in Python or TypeScript",
+      "GitHub Actions integration for running evals in CI",
+      "Tracing integrations for LangChain, Vercel AI SDK and Claude Agent SDK"
+    ],
+    "cons": [
+      "Pricing page does not list data retention, seat limits or Starter overage",
+      "SOC 2 reporting and SAML SSO are Enterprise only",
+      "Self-hosting is not mentioned"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Starter: unlimited users and 100,000 scores. Retention and overage not stated.",
+    "trial": "Growth trial offered (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Unlimited users, 100,000 scores. Support and retention not listed."
+      },
+      {
+        "name": "Growth",
+        "monthly": 299,
+        "annual": null,
+        "custom": false,
+        "notes": "Unlimited users, 1M scores/month included, then $1 per 5,000 scores. Test set management, prompt playground, priority support. No annual price published."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing with volume discounts and custom contract terms; SAML SSO, SOC 2 compliance reporting, encryption at rest, 24/7 VIP support."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": null,
+      "tracing": true,
+      "llmJudge": true,
+      "datasets": true,
+      "promptManagement": true,
+      "cicdIntegration": true,
+      "agentEvals": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "TypeScript SDK",
+      "Python SDK",
+      "API"
+    ],
+    "founded": "2024",
+    "hq": "San Francisco, USA",
+    "integrations": "LangChain (OpenLLMetry), Vercel AI SDK, Claude Agent SDK, NeMo Guardrails, Guardrails AI; GitHub Actions; MCP server",
+    "compliance": [
+      "SOC 2 reporting (Enterprise)",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Priority support (Growth)",
+      "24/7 VIP support (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Scorecard pricing page",
+        "url": "https://www.scorecard.io/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Scorecard docs index",
+        "url": "https://docs.scorecard.io/llms.txt",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Scorecard docs: metrics",
+        "url": "https://docs.scorecard.io/features/metrics.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Scorecard docs: GitHub Actions",
+        "url": "https://docs.scorecard.io/features/github-actions.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "AI Journal: Scorecard raises $3.75M",
+        "url": "https://aijourn.com/scorecard-raises-3-75m-to-test-and-deploy-ai-agents-100x-faster/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "PitchBook: Scorecard AI profile",
+        "url": "https://pitchbook.com/profiles/company/531213-76",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "e2e",
+    "name": "e2e",
+    "category": "ai-test-automation-tools",
+    "website": "https://e2e.com",
+    "logo": "https://e2e.com/_next/static/immutable/media/apple-touch-icon.3orwsze8ucg8j.png",
+    "pricingUrl": "https://e2e.com",
+    "tagline": "Open-source TypeScript test runner that mixes fixed Playwright-style steps with AI agent steps for web and mobile apps.",
+    "bestFor": "Developers who want a free, code-first AI testing framework and already pay for model access",
+    "description": "e2e is an Apache-2.0 test framework from the team behind TesterArmy. Tests can use exact locators, natural-language goals run by an agent, or both, on Chromium, Firefox, WebKit, iOS simulators and Android emulators. Successful agent steps are cached and replayed without model calls, and the agent takes over again when the app changes. The framework is free; you supply your own model subscription, API key or local model.",
+    "pros": [
+      "Free and open source under Apache 2.0, including commercial use",
+      "Web (Chromium, Firefox, WebKit) and mobile (iOS simulators, Android emulators) in one runner",
+      "Cached agent steps replay without model calls, which cuts cost and run time",
+      "CI mode with JUnit output and a GitHub package that posts one PR comment per run"
+    ],
+    "cons": [
+      "No hosted cloud yet; the vendor says its test infrastructure is planned for 2027",
+      "You pay your model provider separately for agent steps and AI assertions",
+      "API testing is not described as a feature"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Whole framework is free and open source (Apache 2.0); model usage is billed by your own provider",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Open source",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "Free framework; bring your own model subscription, API key or local model. No paid plan or pricing page exists yet"
+      }
+    ],
+    "features": {
+      "plainEnglish": true,
+      "aiTestGeneration": true,
+      "selfHealing": true,
+      "webTesting": true,
+      "mobileTesting": true,
+      "apiTesting": false,
+      "cicdIntegration": true,
+      "managedService": false
+    },
+    "platforms": [
+      "CLI",
+      "Self-hosted (open source)"
+    ],
+    "founded": null,
+    "hq": "San Francisco, USA and Warsaw, Poland",
+    "integrations": "Playwright, GitHub (PR comments), JUnit reports, Claude Code and other coding agents, Kernel and EAS hosted browsers and devices",
+    "compliance": [],
+    "support": [
+      "GitHub issues",
+      "Documentation"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "e2e homepage",
+        "url": "https://e2e.com",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "e2e documentation",
+        "url": "https://e2e.com/docs",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "e2e GitHub repository",
+        "url": "https://github.com/e2e-inc/e2e",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "The Recursive: e2e raises EUR 7M",
+        "url": "https://therecursive.com/polish-e2e-raises-eur7m-to-develop-ai-powered-software-testing",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "bug0",
+    "name": "Bug0",
+    "category": "ai-test-automation-tools",
+    "website": "https://bug0.com",
+    "logo": "https://bug0.com/apple-icon.png?738264bc393a18e8",
+    "pricingUrl": "https://bug0.com/pricing",
+    "tagline": "Managed QA service where an assigned engineer builds Playwright tests on Bug0's AI engine and gates every release.",
+    "bestFor": "Startups that want end-to-end web coverage run for them at a flat monthly price",
+    "description": "Bug0 assigns a forward-deployed engineer who plans coverage and builds tests with Bug0's AI engine, which outputs Playwright and TypeScript. Tests run on every pull request through GitHub Actions or other CI and repair themselves when the UI changes, and the engineer reviews failures and files bugs. The managed plan is $2,500 a month, month to month, covering up to 500 user flows. The test engine is also published as a source-available Playwright library.",
+    "pros": [
+      "Published flat price: $2,500 per month, month to month, no annual contract",
+      "No charges for test runs, AI credits, infrastructure or engineer hours",
+      "Tests are standard Playwright and TypeScript",
+      "SOC 2 certified; BAAs available for healthcare"
+    ],
+    "cons": [
+      "No self-serve plan on the pricing page; the managed plan is the entry price",
+      "Mobile and API testing are not described on the site",
+      "Coverage above 500 user flows is priced pro rata, and Enterprise is quote-only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Discounted 60-day pilot (price not stated), credited if you continue",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Bug0 Managed",
+        "monthly": 2500,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat $2,500 per month, month to month; dedicated engineer, unlimited runs, up to 500 user flows (pro rata beyond), Slack channel, weekly digests. No annual price listed"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing for complex stacks, multiple repos or compliance needs; custom SLAs, quarterly reviews, NDAs, security reviews"
+      }
+    ],
+    "features": {
+      "plainEnglish": true,
+      "aiTestGeneration": true,
+      "selfHealing": true,
+      "webTesting": true,
+      "mobileTesting": null,
+      "apiTesting": null,
+      "cicdIntegration": true,
+      "managedService": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Playwright library (source-available)"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "GitHub Actions, GitLab, other CI pipelines, Slack, Microsoft Teams, Playwright",
+    "compliance": [
+      "SOC 2",
+      "HIPAA BAA available"
+    ],
+    "support": [
+      "Dedicated Slack channel",
+      "Email",
+      "Microsoft Teams"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Bug0 pricing page",
+        "url": "https://bug0.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Bug0 homepage",
+        "url": "https://bug0.com/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "InfoQ: Bug0 releases QA Agent",
+        "url": "https://infoq.com/news/2026/10/bug0-agent-testing-cached-replay",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Bug0 QA Agent on GitHub",
+        "url": "https://github.com/bug0inc/qa-agent",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "testsprite",
+    "name": "TestSprite",
+    "category": "ai-test-automation-tools",
+    "website": "https://www.testsprite.com",
+    "logo": "https://www.testsprite.com/apple-touch-icon.png",
+    "pricingUrl": "https://www.testsprite.com/pricing",
+    "tagline": "AI testing agent that writes and runs frontend and backend tests for code produced by AI coding tools.",
+    "bestFor": "Developers using Cursor, Claude Code or similar tools who want tests generated from inside the IDE",
+    "description": "TestSprite takes a plain-language description, PRD or ticket, writes end-to-end frontend and backend tests, runs them against the live app and reports failures with a suggested fix. It works through a web app, an open-source CLI, an MCP server and coding-agent plugins, and checks every GitHub pull request. A Free plan includes 150 credits a month, and paid plans start at $19 per seat a month.",
+    "pros": [
+      "Free plan with 150 credits a month and GitHub PR testing on one repo",
+      "Low entry price: Starter is $19 a month with the first month free",
+      "Tests both browser flows and live APIs",
+      "Works inside coding agents through an MCP server and CLI; SOC 2 certified"
+    ],
+    "cons": [
+      "Credit limits are low on lower tiers (400 on Starter, 800 on Standard)",
+      "Mobile app testing is not described on the site",
+      "Annual prices are not shown; the page only says annual billing saves 35%"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "150 credits per month, 1 seat, 1 environment, 30-day run history, GitHub PR auto-test on 1 repo, Slack notifications; no scheduled runs",
+    "trial": "Starter: first month free",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "user/mo",
+      "long": "user/month"
+    },
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "150 credits per month, 1 environment, 1 repo"
+      },
+      {
+        "name": "Starter",
+        "monthly": 19,
+        "annual": null,
+        "custom": false,
+        "notes": "First month free; 400 credits, 1 environment, 3 repos, 30-day history. Page says annual billing saves 35% but does not show the annual price"
+      },
+      {
+        "name": "Standard",
+        "monthly": 39,
+        "annual": null,
+        "custom": false,
+        "notes": "800 credits, 3 environments, 5 repos, 90-day history, Jira and Linear, advanced agent model, per-project memory; annual price not shown"
+      },
+      {
+        "name": "Pro",
+        "monthly": 69,
+        "annual": null,
+        "custom": false,
+        "notes": "1,600 credits, unlimited environments, repos and history, most capable agent model, priority execution; annual price not shown"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Listed as $199+ with a 10-seat minimum and 5,000+ credits; the page does not say whether $199 is per seat. SSO, SCIM, audit logs, single-tenant option, named CSM; also sold on AWS Marketplace"
+      }
+    ],
+    "features": {
+      "plainEnglish": true,
+      "aiTestGeneration": true,
+      "selfHealing": true,
+      "webTesting": true,
+      "mobileTesting": null,
+      "apiTesting": true,
+      "cicdIntegration": true,
+      "managedService": false
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "CLI",
+      "MCP server",
+      "IDE plugin"
+    ],
+    "founded": null,
+    "hq": "Seattle, USA",
+    "integrations": "GitHub, Jira, Linear, Slack, Claude Code, Cursor, VS Code, Windsurf, Trae, AWS Marketplace",
+    "compliance": [
+      "SOC 2",
+      "SSO/SCIM and audit logs (Enterprise)"
+    ],
+    "support": [
+      "Discord",
+      "Email",
+      "Named CSM with SLA (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "TestSprite pricing page",
+        "url": "https://www.testsprite.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "TestSprite homepage",
+        "url": "https://www.testsprite.com/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "TestSprite billing and plans docs",
+        "url": "https://docs.testsprite.com/web-portal/admin/billing-and-plans.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "TestSprite seed round announcement",
+        "url": "https://www.testsprite.com/blog/building-the-testing-backbone-announcing-our-seed-round",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "thunders",
+    "name": "Thunders",
+    "category": "ai-test-automation-tools",
+    "website": "https://www.thunders.ai",
+    "logo": "https://cdn.prod.website-files.com/68a3440e1b48f58abea46a9b/68b9e99b19ee4ec3ffbece33_favicon-256x256.png",
+    "pricingUrl": "https://www.thunders.ai/pricing",
+    "tagline": "No-code platform where AI agents write, run and maintain tests for web, mobile, API and desktop apps.",
+    "bestFor": "QA teams in Europe that need EU data residency and plain-language test authoring",
+    "description": "Thunders, formerly Thunder Code, turns plain-language requirements into test journeys that AI agents run and repair when the UI changes. It covers web, API, mobile and desktop apps, and adds AI personas for accessibility and security checks. Plans are credit-based: Starter is $479 a month or $375 a month billed yearly, and a 14-day trial includes Pro access. An optional QA-as-a-Service has specialists write and maintain tests.",
+    "pros": [
+      "Web and API testing on all plans; iOS and Android on Pro and up",
+      "ISO 27001, SOC 2, GDPR and EU data residency (Paris) on all plans",
+      "14-day trial with full Pro access and 100 credits",
+      "Integrates with Jira, Xray, Linear and an MCP server for Claude and Cursor"
+    ],
+    "cons": [
+      "Entry price is $479 a month ($375 billed yearly) with no free plan",
+      "Overage credits cost $1.50 each, more than the included rate",
+      "SSO, self-hosting and Playwright export are Enterprise only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day trial with full Pro access and 100 credits; account pauses after if no plan is chosen",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 479,
+        "annual": 375,
+        "custom": false,
+        "notes": "EUR 399 monthly or EUR 300 billed yearly; 300 credits (up to 30,000 test steps), up to 3 seats, 2 parallel runs, 30-day retention; no mobile; overage $1.50 per credit. Page does not label which figure is monthly vs yearly; higher figure assumed monthly"
+      },
+      {
+        "name": "Pro",
+        "monthly": 1199,
+        "annual": 1000,
+        "custom": false,
+        "notes": "EUR 999 monthly or EUR 800 billed yearly; 1,000 credits (up to 100,000 steps), up to 5 seats, 5 parallel runs, 90-day retention, iOS and Android, roles and hybrid deployment"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom credits or flat fee; SSO, self-hosted deployment, static IP, Playwright export and Cypress/Playwright import"
+      }
+    ],
+    "features": {
+      "plainEnglish": true,
+      "aiTestGeneration": true,
+      "selfHealing": true,
+      "webTesting": true,
+      "mobileTesting": true,
+      "apiTesting": true,
+      "cicdIntegration": true,
+      "managedService": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Hybrid (Pro and Enterprise)",
+      "Self-hosted (Enterprise)",
+      "MCP server"
+    ],
+    "founded": null,
+    "hq": "Paris, France",
+    "integrations": "GitHub, GitLab, Jenkins, Jira, Xray, Squash TM, Linear, ClickUp, Shortcut, Azure DevOps, Confluence, Notion, Claude, Cursor",
+    "compliance": [
+      "ISO 27001",
+      "SOC 2",
+      "GDPR",
+      "EU data residency",
+      "SSO (Enterprise)"
+    ],
+    "support": [
+      "QA-as-a-Service specialists (optional)",
+      "Dedicated devices and custom terms (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Thunders pricing page",
+        "url": "https://www.thunders.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Thunders homepage",
+        "url": "https://www.thunders.ai/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "TechCrunch: Thunder Code raises $9M",
+        "url": "https://techcrunch.com/2025/06/03/one-of-africas-most-successful-founders-is-back-with-a-new-ai-startup-and-already-raised-9m",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "cloudflare-mcp-server-portals",
+    "name": "Cloudflare MCP Server Portals",
+    "category": "mcp-gateways",
+    "website": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/",
+    "logo": "https://www.cloudflare.com/favicon.ico",
+    "pricingUrl": "https://www.cloudflare.com/plans/zero-trust-services/",
+    "tagline": "Zero Trust feature that puts many remote MCP servers behind one endpoint with SSO, access policies and logs.",
+    "bestFor": "Teams already using Cloudflare One or Cloudflare Access",
+    "description": "MCP server portals are part of Cloudflare One. A portal groups several remote MCP servers behind one URL, signs users in through Cloudflare Access and lets admins turn individual tools and prompts on or off. Portals became generally available on September 24, 2026. Cloudflare One is free for up to 50 users and costs $7 per user per month on Pay-as-you-go.",
+    "pros": [
+      "Cloudflare One Free plan covers up to 50 users",
+      "Per-portal tool and prompt allowlists, plus aliases to rename tools",
+      "Logs each tool call with time, status, server and duration",
+      "Optional Gateway routing adds HTTP logging and DLP scanning"
+    ],
+    "cons": [
+      "Only remote HTTP MCP servers are supported; stdio servers must be put behind HTTP first",
+      "Logpush export of portal logs requires an Enterprise plan",
+      "Pricing pages do not mention portals, so per-plan feature limits are unclear"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Cloudflare One Free plan: $0 for up to 50 users. Cloudflare says portals are available to all customers; the pricing page does not list portal limits per plan.",
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "user/mo",
+      "long": "user/month"
+    },
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "Cloudflare One (Zero Trust) Free plan, up to 50 users."
+      },
+      {
+        "name": "Pay-as-you-go",
+        "monthly": 7,
+        "annual": null,
+        "custom": false,
+        "notes": "Per user per month. The pricing page does not list an annual price for this plan."
+      },
+      {
+        "name": "Contract",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom annual price per user. Logpush export of portal logs is Enterprise-only."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": false,
+      "serverCatalog": null,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2009,
+    "hq": "San Francisco, CA",
+    "integrations": "Any remote MCP server over Streamable HTTP or SSE; up to 120 servers per portal",
+    "compliance": [
+      "SSO via Cloudflare Access",
+      "DLP scanning (with Gateway routing)"
+    ],
+    "support": [],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Cloudflare SASE / Zero Trust plans",
+        "url": "https://www.cloudflare.com/plans/sase-zero-trust.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Cloudflare docs: MCP server portals",
+        "url": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Cloudflare changelog: MCP server portals are now generally available",
+        "url": "https://developers.cloudflare.com/changelog/post/2026-09-24-mcp-portals-ga/",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "zuplo-mcp-gateway",
+    "name": "Zuplo MCP Gateway",
+    "category": "mcp-gateways",
+    "website": "https://zuplo.com/mcp-gateway",
+    "logo": "https://cdn.zuplo.com/www/favicon.svg",
+    "pricingUrl": "https://zuplo.com/pricing",
+    "tagline": "Managed proxy in the Zuplo API gateway that fronts remote MCP servers with OAuth, role-based tool access and audit logs.",
+    "bestFor": "API teams that want MCP access control in the same gateway as their APIs",
+    "description": "Zuplo MCP Gateway puts one or more remote MCP servers behind a single OAuth-protected endpoint. It stores per-user upstream tokens, filters which tools, prompts and resources each role sees, and logs every tool call against the end user. It entered public beta on June 2, 2026 and became generally available in the August 2026 changelog. Zuplo lists only an Enterprise plan with custom pricing.",
+    "pros": [
+      "Capability Filter exposes a curated set of tools per route, user, role or group",
+      "Per-user upstream credentials; raw upstream tokens never reach the AI client",
+      "Works with identity providers such as Auth0, Okta and Microsoft Entra",
+      "Runs on managed edge, managed dedicated or self-hosted deployments"
+    ],
+    "cons": [
+      "No public prices or free plan; only a custom Enterprise plan is listed",
+      "SSO, role-based access and self-hosting are priced as add-ons",
+      "Docs cover remote MCP servers only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial on request through sales",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Annual contract quoted on request volume, SLA and add-ons. Includes 1 million requests per month and MCP Gateway. SSO and role-based access, observability integrations and self-hosted options are add-ons."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Managed dedicated",
+      "Self-hosted"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Server library with upstreams such as Stripe, Linear, GitHub and PostHog, plus custom remote servers",
+    "compliance": [
+      "SSO (add-on)"
+    ],
+    "support": [
+      "Premium support (add-on)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Zuplo pricing page",
+        "url": "https://zuplo.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Zuplo docs: MCP Gateway overview",
+        "url": "https://zuplo.com/docs/mcp-gateway/overview",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Zuplo changelog: MCP Gateway public beta",
+        "url": "https://zuplo.com/changelog/2026/06/02/mcp-gateway-public-beta",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Zuplo monthly changelog, August 2026",
+        "url": "https://zuplo.com/changelog/2026/08/01/monthly-changelog",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "speakeasy-mcp-gateway",
+    "name": "Speakeasy MCP Gateway",
+    "category": "mcp-gateways",
+    "website": "https://www.speakeasy.com/product/mcp-gateway",
+    "logo": "https://www.speakeasy.com/apple-touch-icon-light.png",
+    "pricingUrl": "https://www.speakeasy.com/pricing",
+    "tagline": "Usage-billed MCP gateway with IdP sign-in, tool-level permissions and per-call audit logs.",
+    "bestFor": "Companies giving employees governed access to MCP servers across many AI clients",
+    "description": "Speakeasy MCP Gateway, the successor to Speakeasy's Gram platform, went live on March 10, 2026. Employees sign in through their identity provider, roles from IdP groups decide which servers and tools each person gets, and every tool call is logged with user, client, tool, arguments and result. Pay-as-you-go has no platform fee and bills usage, including $20 per GiB of MCP gateway egress.",
+    "pros": [
+      "No platform fee on Pay-as-you-go; billed only for usage",
+      "Tool-level allowlists per server and roles synced from the IdP",
+      "Audit logs stream to Datadog, Splunk, Grafana or any OTLP collector",
+      "Detects and blocks unapproved MCP servers by default"
+    ],
+    "cons": [
+      "Usage pricing makes monthly cost hard to predict",
+      "SSO and the full audit trail are listed under Enterprise",
+      "Free trial length is not stated"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial; length not stated. Adding a payment method converts to Pay-as-you-go.",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Pay as you go",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "No platform fee; usage billed monthly. Agent session storage $0.35 per 1M tokens, risk scanning $0.99 per 1M tokens scanned, MCP gateway egress $20 per GiB. Inference billed at provider cost."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Annual contract priced on tokens under management. Includes SSO, full audit trail, SLA-backed support with a forward-deployed engineer and concierge onboarding."
+      }
+    ],
+    "features": {
+      "openSource": null,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted (Enterprise)"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Pre-built connectors including GitHub, Notion, Linear, Stripe, HubSpot and PagerDuty, plus your own servers",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001",
+      "SSO (Enterprise)"
+    ],
+    "support": [
+      "Dedicated support channel and forward-deployed engineer (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Speakeasy pricing page",
+        "url": "https://www.speakeasy.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Speakeasy MCP Gateway product page",
+        "url": "https://www.speakeasy.com/product/mcp-gateway",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Speakeasy blog: MCP Gateway release",
+        "url": "https://www.speakeasy.com/blog/release-speakeasy-mcp-gateway",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Speakeasy: Managed vs self-hosted MCP gateway",
+        "url": "https://www.speakeasy.com/resources/managed-vs-self-hosted-mcp-gateway",
+        "date": "2026-11-22"
+      }
+    ]
+  },
+  {
+    "slug": "metorial",
+    "name": "Metorial",
+    "category": "mcp-gateways",
+    "website": "https://metorial.com",
+    "logo": "https://metorial.com/apple-touch-icon.png",
+    "pricingUrl": "https://metorial.com/pricing",
+    "tagline": "Open-source MCP and skills gateway that gives each employee one MCP URL for approved integrations.",
+    "bestFor": "Teams that want a self-hostable gateway with a large integration catalog",
+    "description": "Metorial is a Y Combinator Fall 2025 company from Vienna. Each user gets one MCP URL that connects their AI client to the integrations and tools they are allowed to use, with managed OAuth, per-tool read, write or off settings and logs of every call. The platform is open source under Apache 2.0. A free Dev plan includes 500,000 tool calls per month, and Scale costs $250 per month.",
+    "pros": [
+      "Free Dev plan includes 500,000 tool calls per month and unlimited auth connections",
+      "Open source under Apache 2.0 and self-hostable",
+      "1,000+ integrations, plus internal and third-party remote servers",
+      "Per-tool read, write or off permissions by person and group"
+    ],
+    "cons": [
+      "RBAC, SAML SSO, on-prem deployment and SOC 2 are listed under Enterprise",
+      "Dev plan allows 2 team members, 10 provider integrations and one project",
+      "No annual price listed"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Metorial Dev: $0, 500,000 tool calls and 10,000 callbacks per month, unlimited auth connections, up to 2 team members, up to 10 provider integrations, one environment and one project, 30-day log retention; no card required.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Metorial Dev",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "500,000 tool calls and 10,000 callbacks per month; up to 2 team members and 10 provider integrations; 30-day log retention."
+      },
+      {
+        "name": "Metorial Scale",
+        "monthly": 250,
+        "annual": null,
+        "custom": false,
+        "notes": "2,500,000 tool calls and 100,000 callbacks per month; 90-day log retention. Overage $1 per 1,500 tool calls and $1 per 750 callbacks."
+      },
+      {
+        "name": "Metorial for Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom limits, on-prem deployment, SOC 2 Type II and GDPR, RBAC, SAML/SSO and IAM, Slack or Teams support with SLA."
+      }
+    ],
+    "features": {
+      "openSource": true,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted",
+      "On-premises (Enterprise)"
+    ],
+    "founded": 2025,
+    "hq": "Vienna, Austria",
+    "integrations": "1,000+ integrations",
+    "compliance": [
+      "SOC 2 Type II (Enterprise)",
+      "GDPR",
+      "SAML SSO and SCIM (Enterprise)"
+    ],
+    "support": [
+      "Slack or Teams support with SLA (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Metorial pricing page",
+        "url": "https://metorial.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Metorial homepage",
+        "url": "https://metorial.com",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Metorial GitHub repository",
+        "url": "https://github.com/metorial/metorial",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Y Combinator company page: Metorial",
+        "url": "https://www.ycombinator.com/companies/metorial",
+        "date": "2026-11-22"
+      }
+    ]
   }
 ]

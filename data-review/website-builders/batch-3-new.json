@@ -1,0 +1,526 @@
+[
+  {
+    "slug": "cloudways-ai-website-builder",
+    "name": "Cloudways AI Website Builder",
+    "category": "website-builders",
+    "website": "https://www.cloudways.com/en/ai-website-builder.php",
+    "logo": null,
+    "pricingUrl": "https://www.cloudways.com/en/ai-website-builder.php",
+    "tagline": "AI builder that generates WordPress and WooCommerce sites from a text prompt and hosts them on Cloudways servers.",
+    "bestFor": "WordPress users and agencies who want AI-built sites on managed hosting",
+    "description": "Cloudways AI Website Builder turns a text prompt into a WordPress or WooCommerce site built from native Gutenberg blocks. You refine it by AI chat, a visual editor or a code editor, and it runs on a Cloudways managed server. The builder is billed per website, and hosting is billed separately.",
+    "pros": [
+      "Sites are standard WordPress with Gutenberg blocks and full WordPress admin access, so they are not locked to the builder",
+      "Per-site price drops from $7.99 to $5.99/mo at 21 or more sites",
+      "Edits in the visual and code editors, and chat questions, use no AI credits",
+      "5-day free trial with no credit card"
+    ],
+    "cons": [
+      "Hosting is billed separately from $11/mo, so one site costs at least $18.99/mo at regular prices",
+      "Only 20 AI credits per site per month, and they do not roll over",
+      "No free domain; you connect a domain you own"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "5-day free trial on a trial server, no credit card",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "1-5 websites",
+        "monthly": 7.99,
+        "annual": null,
+        "custom": false,
+        "notes": "Per website per month, plus hosting (Managed Hosting from $11/mo: 1 GB RAM, 1 vCPU, 25 GB SSD, 1 TB transfer, unlimited sites per server). 20 AI credits per site per month, no rollover; one-time top-up packs of 20 to 200 credits. No annual billing listed. Black Friday offer to Dec 4-5, 2026: 80% off for 2 months ($1.60/site/mo), then $7.99."
+      },
+      {
+        "name": "6-20 websites",
+        "monthly": 6.99,
+        "annual": null,
+        "custom": false,
+        "notes": "Per website per month, plus hosting. Same credits and features. Black Friday price $1.40/site/mo for 2 months."
+      },
+      {
+        "name": "21+ websites",
+        "monthly": 5.99,
+        "annual": null,
+        "custom": false,
+        "notes": "Per website per month, plus hosting. Same credits and features. Black Friday price $1.20/site/mo for 2 months."
+      }
+    ],
+    "features": {
+      "ecommerce": true,
+      "freeDomain": false,
+      "blogging": true,
+      "aiBuilder": true,
+      "memberships": null
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2011",
+    "hq": "St. Julian's, Malta",
+    "integrations": "WordPress, WooCommerce, Cloudflare, DNS Made Easy",
+    "compliance": [],
+    "support": [
+      "24/7 expert support",
+      "Knowledge base"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "cloudways.com: AI Website Builder pricing",
+        "url": "https://www.cloudways.com/en/ai-website-builder.php",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "cloudways.com: AI Website Builder general availability",
+        "url": "https://www.cloudways.com/blog/ai-website-builder-general-availability/",
+        "date": "2026-11-16"
+      },
+      {
+        "label": "DigitalOcean: Cloudways launches AI Website Builder",
+        "url": "https://investors.digitalocean.com/news/news-details/2026/Cloudways-Launches-AI-Website-Builder-Enabling-Businesses-To-Create-And-Launch-WordPress-Websites-In-Minutes/default.aspx",
+        "date": "2026-11-16"
+      }
+    ],
+    "launch": {
+      "date": "2026-11-16",
+      "what": "Cloudways launched its AI Website Builder after a public preview, with paid per-site pricing from $7.99 a month.",
+      "source": {
+        "label": "DigitalOcean press release",
+        "url": "https://investors.digitalocean.com/news/news-details/2026/Cloudways-Launches-AI-Website-Builder-Enabling-Businesses-To-Create-And-Launch-WordPress-Websites-In-Minutes/default.aspx"
+      }
+    }
+  },
+  {
+    "slug": "bluehost-ai-builder",
+    "name": "Bluehost AI Builder",
+    "category": "website-builders",
+    "website": "https://www.bluehost.com/ai-builder",
+    "logo": null,
+    "pricingUrl": "https://www.bluehost.com/ai-builder",
+    "tagline": "Bluehost's prompt-based builder for websites and simple business apps, with a free tier on a Bluehost subdomain.",
+    "bestFor": "Small businesses that want a site with bookings, forms or a customer portal built by chat",
+    "description": "Bluehost AI Builder creates websites and web apps from a plain-language description and hosts them on Bluehost's cloud. It can add bookings, forms, databases, invoices and user accounts. Plans are priced by monthly AI credits; hosting does not use credits.",
+    "pros": [
+      "Free tier with no end date and no credit card, with unlimited sites and apps",
+      "Bookings, forms, data storage, user accounts and an admin panel on every plan",
+      "A published site stays online when credits run out; only new changes pause",
+      "24/7 human support on every plan, including Free"
+    ],
+    "cons": [
+      "Free sites use a .app.bluehost.ai address that search engines do not index, and a custom domain needs a paid plan",
+      "Credits expire after 30 days, including purchased top-ups",
+      "No free domain; domain registration is billed separately",
+      "The pricing page shows only yearly prices, and the Pro plan has no listed price"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "5 AI credits a day, up to 30 a month; unlimited sites and apps; publishes on a bluehost.ai subdomain with a Bluehost badge; no custom domain.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "5 credits a day, up to 30 a month. Forms, bookings, user accounts and roles, admin panel, cloud hosting on a bluehost.ai subdomain."
+      },
+      {
+        "name": "Lite",
+        "monthly": null,
+        "annual": 20,
+        "custom": false,
+        "notes": "100 credits a month, no daily limit, credit top-ups, custom domain, no Bluehost badge. Page shows '$16.00/mo' and 'Billed Yearly at $240.00' ($240 / 12 = $20); the FAQ says paid plans start at $20 a month. $16 appears to reflect a first-term 'Buy More, Save More' discount running Oct 1 to Nov 30, 2026. Month-to-month price not shown."
+      },
+      {
+        "name": "Standard",
+        "monthly": null,
+        "annual": 40,
+        "custom": false,
+        "notes": "200 credits a month plus everything in Lite. Page shows '$32.00/mo' and billed yearly at $480.00 ($480 / 12 = $40). Month-to-month price not shown."
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "400 credits a month per Bluehost's help article. No price is shown on the pricing page."
+      }
+    ],
+    "features": {
+      "ecommerce": null,
+      "freeDomain": false,
+      "blogging": true,
+      "aiBuilder": true,
+      "memberships": true
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2003",
+    "hq": "Jacksonville, United States",
+    "integrations": "Google Calendar (bookings), email notifications, domain purchase and transfer",
+    "compliance": [],
+    "support": [
+      "24/7 human support (all plans)",
+      "Help center"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "bluehost.com: AI Builder plans",
+        "url": "https://www.bluehost.com/ai-builder",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "bluehost.com: AI Website Builder pricing and FAQ",
+        "url": "https://www.bluehost.com/ai-website-builder",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "bluehost.com: How to start a Builder plan",
+        "url": "https://www.bluehost.com/help/article/bh-ai-builder-start-free-plan",
+        "date": "2026"
+      },
+      {
+        "label": "PR Newswire: Bluehost launches AI Builder",
+        "url": "https://www.prnewswire.com/news-releases/bluehost-launches-ai-builder-turning-business-ideas-into-websites-and-working-apps-in-minutes-302935303.html",
+        "date": "2026-11-10"
+      }
+    ],
+    "launch": {
+      "date": "2026-11-10",
+      "what": "Bluehost launched AI Builder at its ELEVATE small business summit, with a free tier and credit-based paid plans.",
+      "source": {
+        "label": "PR Newswire",
+        "url": "https://www.prnewswire.com/news-releases/bluehost-launches-ai-builder-turning-business-ideas-into-websites-and-working-apps-in-minutes-302935303.html"
+      }
+    }
+  },
+  {
+    "slug": "ploy",
+    "name": "Ploy",
+    "category": "website-builders",
+    "website": "https://ploy.ai",
+    "logo": null,
+    "pricingUrl": "https://ploy.ai/pricing",
+    "tagline": "AI platform that builds and hosts a company website, then runs SEO pages, visitor tracking and ads from it.",
+    "bestFor": "B2B startups that want the website and its marketing run by AI agents",
+    "description": "Ploy builds company websites with an AI builder, hosts them on a custom domain and adds a CMS called PloyDB. It also identifies site visitors, creates landing pages for SEO and account-based campaigns, and manages Meta ads. It was founded by Webflow co-founder Bryant Chou.",
+    "pros": [
+      "Free plan with no credit card",
+      "Hosting is included on every plan",
+      "Imports sites from WordPress, Webflow, Squarespace, Framer, Wix and Sanity",
+      "Annual billing cuts Starter from $50 to $40/mo"
+    ],
+    "cons": [
+      "Paid plans start at $50/mo, well above general website builders",
+      "Free plan has no custom domain and a 2,000-credit cap",
+      "No ecommerce features are mentioned"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "500 credits a day, 2,000 maximum; hosting included; no custom domain, collaborators or CRM and ad integrations.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "500 credits a day (2,000 max). GitHub sync via CLI only. No custom domain."
+      },
+      {
+        "name": "Starter",
+        "monthly": 50,
+        "annual": 40,
+        "custom": false,
+        "notes": "4,000 credits a month, 1 domain family, 50 enriched visitors a month, Google Workspace and GitHub sync. Annual billed $480/yr."
+      },
+      {
+        "name": "Pro",
+        "monthly": 300,
+        "annual": 240,
+        "custom": false,
+        "notes": "24,000 credits a month, 5 domain families, 1,000 enriched visitors a month, ad integrations, HubSpot and Attio. Annual billed $2,880/yr."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom credits and pricing, Salesforce, SSO, role-based access, white-glove onboarding."
+      }
+    ],
+    "features": {
+      "ecommerce": null,
+      "freeDomain": null,
+      "blogging": null,
+      "aiBuilder": true,
+      "memberships": null
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": "2025",
+    "hq": "San Francisco, United States",
+    "integrations": "HubSpot, Attio, Salesforce (Enterprise), Google Workspace, GitHub, Meta Ads, Notion import, Slack, Claude, ChatGPT, Cursor",
+    "compliance": [],
+    "support": [
+      "Demo booking",
+      "White-glove onboarding (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "ploy.ai: Pricing",
+        "url": "https://ploy.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "ploy.ai: Product overview",
+        "url": "https://ploy.ai/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Pulse 2.0: Ploy raises $27 million seed round",
+        "url": "https://pulse2.com/ploy-raises-27-million-seed-round-to-launch-ai-growth-platform/amp/",
+        "date": "2026-06-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-06",
+      "what": "Ploy came out of stealth as generally available with a $27 million seed round led by First Round Capital and Y Combinator.",
+      "source": {
+        "label": "Pulse 2.0",
+        "url": "https://pulse2.com/ploy-raises-27-million-seed-round-to-launch-ai-growth-platform/amp/"
+      }
+    }
+  },
+  {
+    "slug": "figma-sites",
+    "name": "Figma Sites",
+    "category": "website-builders",
+    "website": "https://www.figma.com/sites/",
+    "logo": null,
+    "pricingUrl": "https://www.figma.com/pricing/",
+    "tagline": "Figma's tool for designing responsive websites on the Figma canvas and publishing them directly.",
+    "bestFor": "Designers who already work in Figma and want to publish their designs as live sites",
+    "description": "Figma Sites turns Figma designs into responsive websites and publishes them on a figma.site subdomain or a custom domain. It includes templates, prebuilt blocks, interaction presets, a CMS and AI-generated code for custom interactions. It is in open beta and is included with paid Figma Full seats.",
+    "pros": [
+      "Uses existing Figma designs, libraries and components",
+      "No limit on the number of published sites",
+      "CMS lets collaborators edit content without changing the layout",
+      "Password protection for published sites"
+    ],
+    "cons": [
+      "Still in open beta since May 2025",
+      "Priced per Full seat, not per site; publishing needs a paid plan",
+      "No code export, and no built-in store or memberships"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Figma Starter is free, but Figma's help pages say publishing a site needs a paid plan",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Professional (Full seat)",
+        "monthly": null,
+        "annual": 16,
+        "custom": false,
+        "notes": "Per Full seat per month as shown on figma.com/pricing. The page has a monthly/annual toggle but the fetched view showed one price; third-party guides report $20 billed monthly, not confirmed on Figma's page. Up to 10 custom domains. 3,000 AI credits a month per Full seat (Figma-wide, not Sites-specific)."
+      },
+      {
+        "name": "Organization (Full seat)",
+        "monthly": null,
+        "annual": 55,
+        "custom": false,
+        "notes": "Per Full seat per month, billed annually only. Unlimited custom domains; can restrict sites to an internal audience."
+      },
+      {
+        "name": "Enterprise (Full seat)",
+        "monthly": null,
+        "annual": 90,
+        "custom": false,
+        "notes": "Per Full seat per month, billed annually only. Unlimited custom domains; internal-only sites."
+      }
+    ],
+    "features": {
+      "ecommerce": false,
+      "freeDomain": false,
+      "blogging": true,
+      "aiBuilder": false,
+      "memberships": false
+    },
+    "platforms": [
+      "Web",
+      "macOS",
+      "Windows"
+    ],
+    "founded": "2012",
+    "hq": "San Francisco, United States",
+    "integrations": "Figma Design libraries and components, Cloudflare (domains and routing)",
+    "compliance": [],
+    "support": [
+      "Help center",
+      "Community forum"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "figma.com: Pricing",
+        "url": "https://www.figma.com/pricing/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "figma.com: Pricing FAQs",
+        "url": "https://www.figma.com/pricing-faq/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "figma.com: Figma Sites",
+        "url": "https://www.figma.com/sites/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "help.figma.com: Publish a site",
+        "url": "https://help.figma.com/hc/en-us/articles/31242845959703",
+        "date": "2026"
+      }
+    ],
+    "launch": {
+      "date": "2025-05-07",
+      "what": "Figma announced Figma Sites at Config 2025 and released it in open beta.",
+      "source": {
+        "label": "Figma blog: Introducing Figma Sites",
+        "url": "https://www.figma.com/blog/introducing-figma-sites/"
+      }
+    }
+  },
+  {
+    "slug": "readdy",
+    "name": "Readdy",
+    "category": "website-builders",
+    "website": "https://readdy.ai",
+    "logo": null,
+    "pricingUrl": "https://readdy.ai/pricing",
+    "tagline": "AI website builder that generates and hosts a site from a description, with forms, logins and an AI receptionist.",
+    "bestFor": "Small businesses and agencies that want AI-built sites with lead capture",
+    "description": "Readdy generates a website from a text description and lets you refine it with visual editing tools. It hosts the site with SSL, connects or sells custom domains, and adds forms, user logins and a built-in database. Agency plans add client management and white-labeling.",
+    "pros": [
+      "Free tier to try the editor, with 250 credits a month",
+      "Yearly plans include one free custom domain for the first year",
+      "Built-in Shop with checkout and orders; Stripe, PayPal or Square for payments",
+      "Adds email sign-up and sign-in pages through Readdy Backend"
+    ],
+    "cons": [
+      "Free plan cannot publish a site (0 sites included)",
+      "Monthly billing costs about two-thirds more than yearly (Starter $25 vs $15 a month)",
+      "Extra sites cost $6/mo each on Starter, Pro and Agency",
+      "No member-only content or paid memberships; sign-in only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "250 credits a month, 2 projects, 200 MB storage; 0 published sites, no code export or custom domain.",
+    "trial": "Free plan for trying the editor (250 credits a month); publishing a site needs a paid plan",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "250 credits a month, 2 projects, no published site included."
+      },
+      {
+        "name": "Starter",
+        "monthly": 25,
+        "annual": 15,
+        "custom": false,
+        "notes": "1 site, 10 projects, 30,000 credits, 1 GB storage, 1 free custom domain, code export, 1,000 leads a month. Yearly view shows $15/mo with $25 struck through (not labeled as the monthly-billing price). 2-year (50% off) and 3-year (60% off) terms offered, prices not shown."
+      },
+      {
+        "name": "Pro",
+        "monthly": 40,
+        "annual": 24,
+        "custom": false,
+        "notes": "2 sites, 50 projects, 72,000 credits, 5 GB storage, 1 free custom domain, AEO/GEO, 10,000 leads a month. $40 struck through."
+      },
+      {
+        "name": "Agency",
+        "monthly": 120,
+        "annual": 72,
+        "custom": false,
+        "notes": "6 sites, 150 projects, 216,000 credits a year, client management, GitHub, branded email. $120 struck through."
+      },
+      {
+        "name": "Agency Pro",
+        "monthly": 199,
+        "annual": 119,
+        "custom": false,
+        "notes": "10 sites, unlimited credits, white-label platform, extra sites $4.80/mo. $199 struck through."
+      },
+      {
+        "name": "Ultimate",
+        "monthly": 1299,
+        "annual": 779,
+        "custom": false,
+        "notes": "Unlimited sites, projects and credits. $1,299 struck through. A separate Reseller Mode is quote-only."
+      }
+    ],
+    "features": {
+      "ecommerce": true,
+      "freeDomain": true,
+      "blogging": null,
+      "aiBuilder": true,
+      "memberships": false
+    },
+    "platforms": [
+      "Web"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Stripe, Shopify, Calendly, Mailchimp, Google Analytics, Google Sheets, Supabase, GitHub, Resend",
+    "compliance": [],
+    "support": [
+      "Help center and docs",
+      "Community forum and Discord"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "readdy.ai: Pricing",
+        "url": "https://readdy.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "readdy.ai: Product overview",
+        "url": "https://readdy.ai",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "docs.readdy.ai: Introduction",
+        "url": "https://docs.readdy.ai/intro",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Product Hunt: Readdy launches",
+        "url": "https://www.producthunt.com/products/readdy/launches",
+        "date": "2025-04-02"
+      }
+    ],
+    "launch": {
+      "date": "2025-04-02",
+      "what": "Readdy launched publicly on Product Hunt as an AI website builder that builds and publishes sites.",
+      "source": {
+        "label": "Product Hunt",
+        "url": "https://www.producthunt.com/products/readdy/launches"
+      }
+    }
+  }
+]

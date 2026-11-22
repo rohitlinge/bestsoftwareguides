@@ -1,0 +1,478 @@
+[
+  {
+    "slug": "raindrop",
+    "name": "Raindrop",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.raindrop.ai",
+    "logo": null,
+    "pricingUrl": "https://www.raindrop.ai/docs/platform/plans",
+    "tagline": "Monitoring platform for AI agents in production, with issue detection, signals and pre-merge simulations.",
+    "bestFor": "Teams that need to catch silent agent failures in production traffic",
+    "description": "Raindrop traces agent runs and flags failures that throw no error, such as wrong answers, tool loops and frustrated users. Signals are written in plain language and turned into classifiers. Simulations, in public beta, replay production events against a pull request and comment on it. Hobby is free with 1,000 events per month; Pro costs $299 per month plus metered events.",
+    "pros": [
+      "Signals are defined in plain language, and Raindrop drafts the classifier and shows its code",
+      "Issue Detection groups recurring failures and links the traces as evidence",
+      "Simulations comment on GitHub pull requests that change an agent",
+      "SDKs for TypeScript, Python, Go and browser, plus OpenTelemetry ingestion"
+    ],
+    "cons": [
+      "No prompt management or offline eval runner; Experiments compare cohorts of logged traffic only",
+      "Hobby stops ingesting after 1,000 events for the rest of the month",
+      "SSO/SAML is Enterprise only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Hobby: 1,000 events per month, 1 custom signal, 15 Triage Agent messages per month; tracing, search, notifications, signal presets and MCP. No credit card required.",
+    "trial": "14-day free trial of Pro",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Hobby",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "1,000 events/month; ingestion stops for the rest of the calendar month after that. Issues and Experiments shown as previews only."
+      },
+      {
+        "name": "Pro",
+        "monthly": 299,
+        "annual": null,
+        "custom": false,
+        "notes": "Plus metered events: $0.003 per event up to 1M, then $0.002. 10 custom signals, 500 Triage Agent messages/month, Issue Detection, Experiments, data export. No annual price published; seat and retention limits not stated."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom limits, SSO/SAML, edge PII redaction, audit logs, warehouse exports, priority support and SLAs. PII Guard add-on from $80/month."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": null,
+      "tracing": true,
+      "llmJudge": null,
+      "datasets": true,
+      "promptManagement": false,
+      "cicdIntegration": true,
+      "agentEvals": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "TypeScript SDK",
+      "Python SDK",
+      "Go SDK",
+      "OpenTelemetry",
+      "HTTP API"
+    ],
+    "founded": null,
+    "hq": "San Francisco, USA",
+    "integrations": "Vercel AI SDK, OpenAI Agents SDK, Claude Agent SDK, LangChain, LangGraph, Mastra, CrewAI, Pydantic AI, Google ADK, AWS Bedrock, Azure OpenAI, Vertex AI, OpenRouter; GitHub (Simulations, Change Reports); Slack; MCP server",
+    "compliance": [
+      "SOC 2 Type II",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Docs and support page",
+      "Priority support and SLAs (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Raindrop docs: plans",
+        "url": "https://www.raindrop.ai/docs/platform/plans",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Raindrop homepage (pricing section)",
+        "url": "https://www.raindrop.ai/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Raindrop docs: signals",
+        "url": "https://raindrop.ai/docs/platform/signals.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Raindrop docs: simulations",
+        "url": "https://raindrop.ai/docs/platform/simulations.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Raindrop blog: seed round",
+        "url": "https://www.raindrop.ai/blog/seed-round",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Lightspeed: announcing Raindrop's Series A",
+        "url": "https://lsvp.com/stories/production-monitoring-for-an-increasingly-agentic-world-announcing-raindrops-series-a/",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-09-17",
+      "what": "Raindrop announced a CRV-led Series A, bringing total funding to $50 million, and opened early access to Simulations for testing agent changes before release.",
+      "source": {
+        "label": "The Next Web: Raindrop hits $50m in funding",
+        "url": "https://thenextweb.com/news/raindrop-series-a-50m-crv-agent-failures-simulations"
+      }
+    }
+  },
+  {
+    "slug": "coval",
+    "name": "Coval",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.coval.ai",
+    "logo": null,
+    "pricingUrl": "https://www.coval.ai/pricing",
+    "tagline": "Simulation and evaluation platform for voice and chat AI agents.",
+    "bestFor": "Teams testing voice agents before launch and monitoring live calls",
+    "description": "Coval runs simulated callers against voice and chat agents, scores the conversations with LLM-judge and other metrics, and evaluates live production calls. It checks timing, interruptions, audio issues and tool calls as well as transcripts. There is no free plan; Starter costs $100 per month with a 7-day trial.",
+    "pros": [
+      "Evaluates voice-specific behavior such as turn-taking, interruptions and audio quality",
+      "Unlimited seats on every plan",
+      "GitHub Actions tutorial and CLI for running simulations in CI",
+      "Connects to LiveKit, Pipecat, OpenAI Realtime, Gemini Live and phone numbers"
+    ],
+    "cons": [
+      "No free plan; the 7-day trial needs a credit card",
+      "Starter includes only 100 simulation minutes per month",
+      "SAML SSO and private deployment are Enterprise only, from $4,500 per month"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "7-day free trial on Starter and Growth (credit card required)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 100,
+        "annual": 80,
+        "custom": false,
+        "notes": "100 simulation minutes and 3,000 upload minutes/month; overage $0.40 per simulation minute and $0.10 per upload minute. 5 concurrent simulations, 1 project, 30-day trace retention, unlimited seats. Annual figure derived from the stated 20% annual discount; the page does not print it."
+      },
+      {
+        "name": "Growth",
+        "monthly": 500,
+        "annual": 400,
+        "custom": false,
+        "notes": "1,000 simulation minutes and 30,000 upload minutes/month; overage $0.25 and $0.05 per minute. 25 concurrent simulations, 5 projects, 90-day retention, 30-day audit logs, shared Slack. Annual figure derived from the stated 20% annual discount."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom, starting at $4,500/month billed annually. SAML SSO and SCIM, RBAC, private/VPC deployment, data residency, BYO storage, DPA, SLA up to 99.99%, named engineer."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "tracing": true,
+      "llmJudge": true,
+      "datasets": true,
+      "promptManagement": null,
+      "cicdIntegration": true,
+      "agentEvals": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Private/VPC deployment (Enterprise)",
+      "CLI",
+      "API",
+      "OpenTelemetry"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "LiveKit, Pipecat Cloud, Twilio ConversationRelay, OpenAI Realtime, Gemini Live, Grok Realtime, Deepgram Voice Agent, inbound/outbound phone, WebSocket and A2A chat; trace import from Langfuse, Arize Phoenix and LangSmith; GitHub Actions; MCP",
+    "compliance": [
+      "SOC 2 Type II",
+      "HIPAA",
+      "GDPR",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Community and email (Starter)",
+      "Priority email and shared Slack (Growth)",
+      "Dedicated Slack and named engineer (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Coval pricing page",
+        "url": "https://www.coval.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Coval docs index",
+        "url": "https://docs.coval.ai/llms.txt",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Coval docs: LLM judge metrics",
+        "url": "https://docs.coval.ai/concepts/metrics/types/llm-judge",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Coval docs: GitHub Actions tutorial",
+        "url": "https://docs.coval.ai/getting-started/github-actions-tutorial",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Coval blog: Coval raises $28M Series A",
+        "url": "https://www.coval.ai/blog/coval-raises-28m-series-a",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-06",
+      "what": "Coval raised a $28M Series A led by Norwest to expand its voice agent simulation and evaluation platform.",
+      "source": {
+        "label": "Coval blog: Coval raises $28M Series A",
+        "url": "https://www.coval.ai/blog/coval-raises-28m-series-a"
+      }
+    }
+  },
+  {
+    "slug": "judgment-labs",
+    "name": "Judgment Labs",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.judgmentlabs.ai",
+    "logo": null,
+    "pricingUrl": "https://www.judgmentlabs.ai/pricing",
+    "tagline": "Agent behavior monitoring platform that traces full agent runs and scores them with custom judges.",
+    "bestFor": "Teams running multi-step agents that want judges aligned to their own reviewers",
+    "description": "Judgment Labs traces agents with subagents and tool calls, scores traces with code checks or LLM judges, and runs offline test suites that can gate pull requests in CI. Background agents group recurring failures into issues. The tracing SDK, judgeval, is Apache-2.0. Beginner is free with unlimited users; Pro costs $250 per month including $250 of model credits.",
+    "pros": [
+      "Free Beginner plan includes unlimited users, projects and tests",
+      "SOC 2 Type II and HIPAA apply on every plan, including free",
+      "Judge alignment checks that a judge flags issues the way the team would",
+      "Open-source judgeval SDK (Apache-2.0) is built on OpenTelemetry"
+    ],
+    "cons": [
+      "Beginner keeps data for 14 days",
+      "SSO/SAML and bring-your-own-cloud are Enterprise only",
+      "Dataset test runs were retired on 12 November 2026; datasets must be moved into test suites"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Beginner: unlimited users, projects, datasets and tests; 1 GB trace ingest and 10K evaluator runs per month; $100 of credits in the first month then $50/month; 14-day retention; community support.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Beginner",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Overage: $1.50/GB trace ingest, $2 per 1,000 evaluator runs. Model tokens for judges are charged from credits at provider rates."
+      },
+      {
+        "name": "Pro",
+        "monthly": 250,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat per month, unlimited users. Includes $250/month of credits, 50 GB ingest (then $0.50/GB), 50K evaluator runs (then $1 per 1,000), 180-day retention, RBAC, data export, custom dashboards, priority support. No annual price published."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Volume pricing, custom retention, SSO/SAML, bring your own cloud on AWS or Google Cloud, dedicated support with SLA."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "tracing": true,
+      "llmJudge": true,
+      "datasets": true,
+      "promptManagement": null,
+      "cicdIntegration": true,
+      "agentEvals": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Bring your own cloud (Enterprise)",
+      "Python SDK",
+      "OpenTelemetry",
+      "HTTP API"
+    ],
+    "founded": "2025",
+    "hq": "San Francisco, USA",
+    "integrations": "OpenAI, Anthropic, Google GenAI, Together AI, LangGraph, Claude Agent SDK; OpenTelemetry; MCP server for coding agents; Slack agent",
+    "compliance": [
+      "SOC 2 Type II",
+      "HIPAA",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Community (Beginner)",
+      "Priority support (Pro)",
+      "Dedicated support with SLA (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Judgment Labs pricing page",
+        "url": "https://www.judgmentlabs.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Judgment Labs docs: offline tests",
+        "url": "https://docs.judgmentlabs.ai/documentation/tests/overview",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Judgment Labs docs: judges",
+        "url": "https://docs.judgmentlabs.ai/documentation/judges/overview",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "GitHub: JudgmentLabs/judgeval",
+        "url": "https://github.com/JudgmentLabs/judgeval",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Lightspeed: Judgment Labs company profile",
+        "url": "https://lsvp.com/company/judgment-labs/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Judgment Labs blog: announcing $32M led by Lightspeed",
+        "url": "https://www.judgmentlabs.ai/blogs/announcing-32m-led-by-lightspeed",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-05-12",
+      "what": "Judgment Labs announced $32M in seed and Series A funding led by Lightspeed, with Greenoaks co-leading the Series A.",
+      "source": {
+        "label": "Judgment Labs blog: announcing $32M led by Lightspeed",
+        "url": "https://www.judgmentlabs.ai/blogs/announcing-32m-led-by-lightspeed"
+      }
+    }
+  },
+  {
+    "slug": "scorecard",
+    "name": "Scorecard",
+    "category": "llm-evaluation-tools",
+    "website": "https://www.scorecard.io",
+    "logo": null,
+    "pricingUrl": "https://www.scorecard.io/pricing",
+    "tagline": "Evaluation platform for AI agents with testsets, AI and human metrics, tracing and prompt versioning.",
+    "bestFor": "Teams that want unlimited users and a large free score allowance",
+    "description": "Scorecard runs agents against testsets and scenarios, scores outputs with AI, human or code metrics, and traces LLM calls. It includes a prompt playground, versioned prompts and a GitHub Actions integration. Starter is free with 100,000 scores; Growth costs $299 per month with 1M scores.",
+    "pros": [
+      "Free Starter plan includes unlimited users and 100,000 scores",
+      "Metrics can be AI-judged, human-reviewed or code-based in Python or TypeScript",
+      "GitHub Actions integration for running evals in CI",
+      "Tracing integrations for LangChain, Vercel AI SDK and Claude Agent SDK"
+    ],
+    "cons": [
+      "Pricing page does not list data retention, seat limits or Starter overage",
+      "SOC 2 reporting and SAML SSO are Enterprise only",
+      "Self-hosting is not mentioned"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Starter: unlimited users and 100,000 scores. Retention and overage not stated.",
+    "trial": "Growth trial offered (length not stated)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Unlimited users, 100,000 scores. Support and retention not listed."
+      },
+      {
+        "name": "Growth",
+        "monthly": 299,
+        "annual": null,
+        "custom": false,
+        "notes": "Unlimited users, 1M scores/month included, then $1 per 5,000 scores. Test set management, prompt playground, priority support. No annual price published."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing with volume discounts and custom contract terms; SAML SSO, SOC 2 compliance reporting, encryption at rest, 24/7 VIP support."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": null,
+      "tracing": true,
+      "llmJudge": true,
+      "datasets": true,
+      "promptManagement": true,
+      "cicdIntegration": true,
+      "agentEvals": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "TypeScript SDK",
+      "Python SDK",
+      "API"
+    ],
+    "founded": "2024",
+    "hq": "San Francisco, USA",
+    "integrations": "LangChain (OpenLLMetry), Vercel AI SDK, Claude Agent SDK, NeMo Guardrails, Guardrails AI; GitHub Actions; MCP server",
+    "compliance": [
+      "SOC 2 reporting (Enterprise)",
+      "SSO/SAML (Enterprise)"
+    ],
+    "support": [
+      "Priority support (Growth)",
+      "24/7 VIP support (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Scorecard pricing page",
+        "url": "https://www.scorecard.io/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Scorecard docs index",
+        "url": "https://docs.scorecard.io/llms.txt",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Scorecard docs: metrics",
+        "url": "https://docs.scorecard.io/features/metrics.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Scorecard docs: GitHub Actions",
+        "url": "https://docs.scorecard.io/features/github-actions.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "AI Journal: Scorecard raises $3.75M",
+        "url": "https://aijourn.com/scorecard-raises-3-75m-to-test-and-deploy-ai-agents-100x-faster/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "PitchBook: Scorecard AI profile",
+        "url": "https://pitchbook.com/profiles/company/531213-76",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2025-10-17",
+      "what": "Scorecard launched its agent evaluation platform on Product Hunt, weeks after announcing a $3.75M seed round on 25 September 2025.",
+      "source": {
+        "label": "Product Hunt: Scorecard",
+        "url": "https://www.producthunt.com/products/scorecard?launch=scorecard-2"
+      }
+    }
+  }
+]

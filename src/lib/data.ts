@@ -35,6 +35,9 @@ export type Category = {
   featuredRank?: number;
   priceUnit?: PriceUnit;
   compareTop?: number; // only build head-to-head pages among the top N (default: every pair)
+  // Extra head-to-head pages outside the top N, as [slugA, slugB] (e.g. a new tool vs the leader).
+  // The URL still follows ranking order, so the order written here doesn't matter.
+  comparePairs?: [string, string][];
   // computed
   tools: Tool[]; publishDate: Date; comparesDate: Date; updated: string; indexable: boolean;
 };
@@ -187,6 +190,10 @@ export const compares: Compare[] = categories
     const out: Compare[] = [];
     const top = c.tools.slice(0, c.compareTop ?? c.tools.length);
     top.forEach((a, i) => top.slice(i + 1).forEach((b) => out.push({ slug: `${a.slug}-vs-${b.slug}`, a, b, category: c })));
+    for (const pair of c.comparePairs ?? []) {
+      const [a, b] = pair.map((s) => c.tools.find((t) => t.slug === s)).sort((x, y) => (x?.rank ?? 0) - (y?.rank ?? 0));
+      if (a && b && a !== b) out.push({ slug: `${a.slug}-vs-${b.slug}`, a, b, category: c });
+    }
     return out;
   })
   // Two tools that share several categories get one comparison page (the first category wins).

@@ -1,0 +1,430 @@
+[
+  {
+    "slug": "voibe-work",
+    "name": "Voibe Work",
+    "category": "ai-meeting-note-takers",
+    "website": "https://www.getvoibe.com",
+    "logo": null,
+    "pricingUrl": "https://www.getvoibe.com/pricing",
+    "tagline": "Bot-free meeting notes and dictation for Mac and Windows, with notes stored on your computer.",
+    "bestFor": "Individuals who want dictation and bot-free meeting notes in one desktop app",
+    "description": "Voibe Work adds meeting notes to the Voibe dictation app. It records your microphone and the meeting audio on your computer, so no bot joins the call, and saves the summary and transcript locally. It costs $19 per month, or $149 per year ($12.42 a month) at list price.",
+    "pros": [
+      "No bot joins the call; works with Zoom, Teams, Google Meet, Webex and Slack huddles",
+      "Transcripts and summaries are saved on your computer and meeting audio is deleted after processing",
+      "One seat covers one Mac and the same person's Windows PC",
+      "Lifetime license available for $399"
+    ],
+    "cons": [
+      "No iPhone or Android app",
+      "No native CRM, Notion or calendar integration listed; Voibe Meeting MCP is the main way to export data to other tools",
+      "Team admin features need Enterprise, which starts above 10 seats and is quote-only"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Voibe Free covers dictation with a weekly word limit on one Mac or Windows device. The pricing page does not list meeting notes on the free plan. Users drop to Free after the 30-day Voibe Work trial.",
+    "trial": "30-day trial of Voibe Work, no credit card",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Dictation only, limited words. Meeting notes not listed."
+      },
+      {
+        "name": "Voibe Dictation",
+        "monthly": 9.9,
+        "annual": 6.19,
+        "custom": false,
+        "notes": "Dictation only, no meeting notes. $74.25 per year on the current offer (list $99, 25% off); per-month figure derived. Lifetime $199."
+      },
+      {
+        "name": "Voibe Work",
+        "monthly": 19,
+        "annual": 9.31,
+        "custom": false,
+        "notes": "Dictation plus unlimited meeting notes. $111.75 per year on the current offer (list $149, 25% off); per-month figure derived. Lifetime $399. 30-day money-back guarantee."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "More than 10 seats. Team admin, central billing and invoicing, custom terms, BAA on request."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": false,
+      "hipaaOption": true,
+      "sso": null
+    },
+    "platforms": [
+      "macOS",
+      "Windows"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Records Zoom, Microsoft Teams, Google Meet, Webex, Slack huddles and other meeting apps; Voibe Meeting MCP for Claude, ChatGPT, Cursor and Claude Code",
+    "compliance": [
+      "BAA available on request",
+      "Local storage of transcripts and summaries"
+    ],
+    "support": [
+      "Email (hi@getvoibe.com)",
+      "Help Center"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Voibe pricing page",
+        "url": "https://www.getvoibe.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Voibe: Introducing Voibe Work (launch article)",
+        "url": "https://www.getvoibe.com/resources/voibe-work-meeting-notes-no-bot/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Voibe Help: What's in Voibe Work (Essence AI Ltd.)",
+        "url": "https://www.getvoibe.com/help/voibe-work/",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-09",
+      "what": "Voibe launched Voibe Work, a plan that adds bot-free meeting notes to its dictation app; Voibe Meeting MCP followed in October 2026.",
+      "source": {
+        "label": "Voibe: Introducing Voibe Work",
+        "url": "https://www.getvoibe.com/resources/voibe-work-meeting-notes-no-bot/"
+      }
+    }
+  },
+  {
+    "slug": "wispr-flow-notetaker",
+    "name": "Wispr Flow Notetaker",
+    "category": "ai-meeting-note-takers",
+    "website": "https://wisprflow.ai",
+    "logo": null,
+    "pricingUrl": "https://wisprflow.ai/pricing",
+    "tagline": "Bot-free meeting notetaker built into the Wispr Flow dictation app.",
+    "bestFor": "People who already dictate with Wispr Flow and want meeting notes in the same app",
+    "description": "Wispr Flow Notetaker records Zoom, Google Meet, Microsoft Teams and Slack huddle calls from your device, shows a live transcript and writes notes on decisions and tasks. It is included in Wispr Flow plans, from a limited free tier to Pro at $15 per user per month, or $12 billed annually.",
+    "pros": [
+      "Included on the free plan with speaker identification and meeting Q&A",
+      "Pro at $12 per user per month annually covers both dictation and meeting notes",
+      "MCP access lets Claude, ChatGPT and Cursor read meeting notes and transcripts",
+      "SOC 2 Type II and ISO 27001 apply on every plan"
+    ],
+    "cons": [
+      "Free plan has a weekly meeting limit; the plan list also mentions 30-day meeting history on desktop",
+      "SSO and HIPAA BAA require Growth or Enterprise",
+      "No Android notetaker yet, and no native CRM integration listed"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: Notetaker with speaker identification, a weekly meeting limit (recordings under 5 minutes do not count), questions about any meeting and MCP access. Dictation has a weekly word limit. No credit card.",
+    "trial": "None listed (free plan available)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Weekly meeting limit for Notetaker and weekly word limit for dictation."
+      },
+      {
+        "name": "Pro",
+        "monthly": 15,
+        "annual": 12,
+        "custom": false,
+        "notes": "Per user. Unlimited Notetaker history and higher meeting limits. 50% student and 40% educator discounts."
+      },
+      {
+        "name": "Growth",
+        "monthly": 23,
+        "annual": 18,
+        "custom": false,
+        "notes": "Per user. Unlimited Notetaker, SAML SSO, org-wide HIPAA enforcement with BAA, admin tools. The pricing page also shows a second, unlabeled set of figures ($33 monthly, $26 annual); the comparison table lists $18."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Annual only. SCIM, audit logs, MDM deployment, enforced privacy mode, dedicated support with SLAs. Notetaker listed as an add-on."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": null,
+      "hipaaOption": true,
+      "sso": true
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS"
+    ],
+    "founded": "2021",
+    "hq": null,
+    "integrations": "Zoom, Google Meet, Microsoft Teams, Slack huddles; calendar and Slack context; MCP for Claude, ChatGPT, Cursor and other agents",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001",
+      "HIPAA (BAA on Growth and Enterprise)",
+      "SSO/SAML (Growth and Enterprise)"
+    ],
+    "support": [
+      "Priority support (Pro)",
+      "Dedicated support with SLAs (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Wispr Flow pricing page",
+        "url": "https://wisprflow.ai/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Wispr Flow for teams",
+        "url": "https://wisprflow.ai/teams",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Wispr Flow: Wispr Flow Notetaker is here",
+        "url": "https://wisprflow.ai/post/wispr-flow-notetaker",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Computerworld: Wispr moves beyond AI dictation (founded 2021)",
+        "url": "https://www.computerworld.com/article/4206765/wispr-moves-beyond-ai-dictation-with-note-taking-assistant.html",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-08-05",
+      "what": "Wispr launched Notetaker, its first product beyond dictation, on Mac; Windows and iPhone versions followed.",
+      "source": {
+        "label": "9to5Mac: Wispr Flow takes on AI meeting assistants with Notetaker",
+        "url": "https://9to5mac.com/2026/08/05/wispr-flow-takes-on-ai-meeting-assistants-with-notetaker-its-first-product-beyond-dictation/"
+      }
+    }
+  },
+  {
+    "slug": "talat",
+    "name": "talat",
+    "category": "ai-meeting-note-takers",
+    "website": "https://talat.app",
+    "logo": null,
+    "pricingUrl": "https://talat.app/",
+    "tagline": "Private meeting notes app that transcribes and summarizes on your own computer.",
+    "bestFor": "Privacy-focused users who want meeting notes that never leave their device",
+    "description": "talat records the microphone and system audio during Zoom, Teams, Meet or any other call, transcribes on-device and writes a summary with a local model or your own API key. No bot and no account are needed. It costs $89 per year or $189 for a lifetime license.",
+    "pros": [
+      "Transcription runs on-device and recordings are stored in a local database",
+      "No meeting bot and no account required",
+      "Lifetime license for $189 as an alternative to the $89 yearly plan",
+      "Exports to Markdown, Obsidian and PDF, with webhooks and a built-in MCP server"
+    ],
+    "cons": [
+      "Mac version needs Apple Silicon and macOS 15 or later",
+      "No compliance certifications listed and no SSO",
+      "Teams plan needs at least 3 seats"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. The trial gives 10 hours of recording with all features, no account or credit card. After that you can still search, export and summarize existing meetings but cannot record new ones.",
+    "trial": "10 hours of free recording",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Monthly",
+        "monthly": 9,
+        "annual": null,
+        "custom": false,
+        "notes": "The comparison table says \"From $9/mo\"; the monthly toggle did not show a separate price in the page text."
+      },
+      {
+        "name": "Yearly",
+        "monthly": null,
+        "annual": 7.42,
+        "custom": false,
+        "notes": "$89 billed yearly. 30-day money-back guarantee."
+      },
+      {
+        "name": "Lifetime",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$189 one-time payment."
+      },
+      {
+        "name": "Teams",
+        "monthly": null,
+        "annual": 7.42,
+        "custom": false,
+        "notes": "$89 per seat per year, minimum 3 seats."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "MDM deployment or custom builds on request."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": false,
+      "crmSync": false,
+      "hipaaOption": null,
+      "sso": false
+    },
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS"
+    ],
+    "founded": null,
+    "hq": "Yorkshire, UK",
+    "integrations": "Auto-detects Zoom, Teams and Meet, records any app including FaceTime; Apple Calendar, Google Calendar, Outlook (experimental); Markdown, Obsidian and PDF export; webhooks; MCP; bring your own model (Claude, OpenAI, Ollama, Qwen)",
+    "compliance": [],
+    "support": [
+      "Email (hello@talat.app)",
+      "Docs",
+      "Discord"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "talat homepage and pricing (Lumikey LTD)",
+        "url": "https://talat.app/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "TechCrunch: Talat's AI meeting notes stay on your machine",
+        "url": "https://techcrunch.com/2026/03/24/talats-ai-meeting-notes-stay-on-your-machine-not-in-the-cloud/",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-03",
+      "what": "talat went public as a pre-release, local-only Mac meeting notes app sold for a one-time fee; it has since added Windows, iPhone and subscription plans.",
+      "source": {
+        "label": "TechCrunch: Talat's AI meeting notes stay on your machine, not in the cloud",
+        "url": "https://techcrunch.com/2026/03/24/talats-ai-meeting-notes-stay-on-your-machine-not-in-the-cloud/"
+      }
+    }
+  },
+  {
+    "slug": "twinmind",
+    "name": "TwinMind",
+    "category": "ai-meeting-note-takers",
+    "website": "https://twinmind.com",
+    "logo": null,
+    "pricingUrl": "https://twinmind.com/pricing",
+    "tagline": "AI note taker that captures meetings and conversations from your phone, desktop and browser without a bot.",
+    "bestFor": "Individuals who want notes from both online meetings and in-person conversations",
+    "description": "TwinMind captures audio in the background on iPhone, Android, Mac, Windows and Chrome, then writes summaries, daily digests and answers about past conversations. No bot joins calls. A free plan is available, and Pro costs $11.99 per month billed annually.",
+    "pros": [
+      "Free plan includes transcription, AI summaries, AI chat and daily digests",
+      "Apps for iOS, Android, Mac, Windows and a Chrome extension",
+      "Transcribes in 140+ languages",
+      "MCP access to ChatGPT and Claude on every plan"
+    ],
+    "cons": [
+      "Monthly-billing prices are not shown on the pricing page",
+      "Speaker separation is limited to the Max plan",
+      "SOC 2 is listed only for Enterprise, and SSO and HIPAA are not mentioned"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Free: AI summaries, AI chats, daily digests and recaps, transcription, MCP access capped at 5 tool calls per day. No credit card, does not expire. The page does not state a transcription cap.",
+    "trial": "7-day trial (Max)",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "MCP capped at 5 tool calls per day."
+      },
+      {
+        "name": "Pro",
+        "monthly": null,
+        "annual": 11.99,
+        "custom": false,
+        "notes": "Billed annually. Unlimited transcription, ChatGPT, Gemini and Claude models, MCP with 10 tool calls per day, Apple Watch capture, uploads up to 20 hours per day. Monthly-billing price not shown."
+      },
+      {
+        "name": "Max",
+        "monthly": null,
+        "annual": 29.99,
+        "custom": false,
+        "notes": "Billed annually, labeled 40% off. 5x limits, speaker separation, auto-tagging and draft emails, unlimited MCP, priority support. Monthly-billing price not shown."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom limits, admin controls, SOC 2 compliance, dedicated support."
+      }
+    ],
+    "features": {
+      "zoomMeetTeams": true,
+      "unlimitedFreeRecordings": null,
+      "crmSync": null,
+      "hipaaOption": null,
+      "sso": null
+    },
+    "platforms": [
+      "iOS",
+      "Android",
+      "macOS",
+      "Windows",
+      "Chrome extension"
+    ],
+    "founded": "2024",
+    "hq": null,
+    "integrations": "Zoom, Google Meet and Microsoft Teams via desktop apps and Chrome extension; calendar and email connections; MCP for ChatGPT, Claude and other tools; Apple Watch capture",
+    "compliance": [
+      "SOC 2 (Enterprise)"
+    ],
+    "support": [
+      "Help Center",
+      "Discord",
+      "Contact form",
+      "Priority support (Max)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "TwinMind pricing page",
+        "url": "https://twinmind.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "TechCrunch: Ex-Google X trio raised $6M for TwinMind",
+        "url": "https://techcrunch.com/2025/09/10/ex-google-x-trio-wants-their-ai-to-be-your-second-brain-and-they-just-raised-6m-to-make-it-happen",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2025-09-10",
+      "what": "TwinMind announced a $5.7M seed round led by Streamlined Ventures and released its Android app and Ear-3 speech model.",
+      "source": {
+        "label": "TechCrunch: Ex-Google X trio wants their AI to be your second brain",
+        "url": "https://techcrunch.com/2025/09/10/ex-google-x-trio-wants-their-ai-to-be-your-second-brain-and-they-just-raised-6m-to-make-it-happen"
+      }
+    }
+  }
+]

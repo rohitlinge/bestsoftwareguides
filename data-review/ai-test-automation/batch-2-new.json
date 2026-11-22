@@ -1,0 +1,307 @@
+[
+  {
+    "slug": "e2e",
+    "name": "e2e",
+    "category": "ai-test-automation-tools",
+    "website": "https://e2e.com",
+    "logo": null,
+    "pricingUrl": null,
+    "tagline": "Open-source TypeScript test runner that mixes fixed Playwright-style steps with AI agent steps for web and mobile apps.",
+    "bestFor": "Developers who want a free, code-first AI testing framework and already pay for model access",
+    "description": "e2e is an Apache-2.0 test framework from the team behind TesterArmy. Tests can use exact locators, natural-language goals run by an agent, or both, on Chromium, Firefox, WebKit, iOS simulators and Android emulators. Successful agent steps are cached and replayed without model calls, and the agent takes over again when the app changes. The framework is free; you supply your own model subscription, API key or local model.",
+    "pros": [
+      "Free and open source under Apache 2.0, including commercial use",
+      "Web (Chromium, Firefox, WebKit) and mobile (iOS simulators, Android emulators) in one runner",
+      "Cached agent steps replay without model calls, which cuts cost and run time",
+      "CI mode with JUnit output and a GitHub package that posts one PR comment per run"
+    ],
+    "cons": [
+      "No hosted cloud yet; the vendor says its test infrastructure is planned for 2027",
+      "You pay your model provider separately for agent steps and AI assertions",
+      "API testing is not described as a feature"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Whole framework is free and open source (Apache 2.0); model usage is billed by your own provider",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Open source",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "Free framework; bring your own model subscription, API key or local model. No paid plan or pricing page exists yet"
+      }
+    ],
+    "features": {
+      "plainEnglish": true,
+      "aiTestGeneration": true,
+      "selfHealing": true,
+      "webTesting": true,
+      "mobileTesting": true,
+      "apiTesting": false,
+      "cicdIntegration": true,
+      "managedService": false
+    },
+    "platforms": ["CLI", "Self-hosted (open source)"],
+    "founded": null,
+    "hq": "San Francisco, USA and Warsaw, Poland",
+    "integrations": "Playwright, GitHub (PR comments), JUnit reports, Claude Code and other coding agents, Kernel and EAS hosted browsers and devices",
+    "compliance": [],
+    "support": ["GitHub issues", "Documentation"],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      { "label": "e2e homepage", "url": "https://e2e.com", "date": "2026-11-22" },
+      { "label": "e2e documentation", "url": "https://e2e.com/docs", "date": "2026-11-22" },
+      { "label": "e2e GitHub repository", "url": "https://github.com/e2e-inc/e2e", "date": "2026-11-22" },
+      { "label": "The Recursive: e2e raises EUR 7M", "url": "https://therecursive.com/polish-e2e-raises-eur7m-to-develop-ai-powered-software-testing", "date": "2026-11-22" }
+    ],
+    "launch": {
+      "date": "2026-10-01",
+      "what": "The TesterArmy team launched e2e as an open-source AI testing framework, then announced a EUR 7M round on 2026-11-03; TesterArmy shuts down on 2027-01-15.",
+      "source": { "label": "The Recursive: e2e raises EUR 7M", "url": "https://therecursive.com/polish-e2e-raises-eur7m-to-develop-ai-powered-software-testing" }
+    }
+  },
+  {
+    "slug": "bug0",
+    "name": "Bug0",
+    "category": "ai-test-automation-tools",
+    "website": "https://bug0.com",
+    "logo": null,
+    "pricingUrl": "https://bug0.com/pricing",
+    "tagline": "Managed QA service where an assigned engineer builds Playwright tests on Bug0's AI engine and gates every release.",
+    "bestFor": "Startups that want end-to-end web coverage run for them at a flat monthly price",
+    "description": "Bug0 assigns a forward-deployed engineer who plans coverage and builds tests with Bug0's AI engine, which outputs Playwright and TypeScript. Tests run on every pull request through GitHub Actions or other CI and repair themselves when the UI changes, and the engineer reviews failures and files bugs. The managed plan is $2,500 a month, month to month, covering up to 500 user flows. The test engine is also published as a source-available Playwright library.",
+    "pros": [
+      "Published flat price: $2,500 per month, month to month, no annual contract",
+      "No charges for test runs, AI credits, infrastructure or engineer hours",
+      "Tests are standard Playwright and TypeScript",
+      "SOC 2 certified; BAAs available for healthcare"
+    ],
+    "cons": [
+      "No self-serve plan on the pricing page; the managed plan is the entry price",
+      "Mobile and API testing are not described on the site",
+      "Coverage above 500 user flows is priced pro rata, and Enterprise is quote-only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Discounted 60-day pilot (price not stated), credited if you continue",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Bug0 Managed",
+        "monthly": 2500,
+        "annual": null,
+        "custom": false,
+        "notes": "Flat $2,500 per month, month to month; dedicated engineer, unlimited runs, up to 500 user flows (pro rata beyond), Slack channel, weekly digests. No annual price listed"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom pricing for complex stacks, multiple repos or compliance needs; custom SLAs, quarterly reviews, NDAs, security reviews"
+      }
+    ],
+    "features": {
+      "plainEnglish": true,
+      "aiTestGeneration": true,
+      "selfHealing": true,
+      "webTesting": true,
+      "mobileTesting": null,
+      "apiTesting": null,
+      "cicdIntegration": true,
+      "managedService": true
+    },
+    "platforms": ["Cloud (SaaS)", "Playwright library (source-available)"],
+    "founded": null,
+    "hq": null,
+    "integrations": "GitHub Actions, GitLab, other CI pipelines, Slack, Microsoft Teams, Playwright",
+    "compliance": ["SOC 2", "HIPAA BAA available"],
+    "support": ["Dedicated Slack channel", "Email", "Microsoft Teams"],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      { "label": "Bug0 pricing page", "url": "https://bug0.com/pricing", "date": "2026-11-22" },
+      { "label": "Bug0 homepage", "url": "https://bug0.com/", "date": "2026-11-22" },
+      { "label": "InfoQ: Bug0 releases QA Agent", "url": "https://infoq.com/news/2026/10/bug0-agent-testing-cached-replay", "date": "2026-11-22" },
+      { "label": "Bug0 QA Agent on GitHub", "url": "https://github.com/bug0inc/qa-agent", "date": "2026-11-22" }
+    ],
+    "launch": {
+      "date": "2026-10-29",
+      "what": "Bug0 released QA Agent, a source-available Playwright library with plain-English steps, cached replays and self-repair; the managed service opened earlier as an open beta (date not stated).",
+      "source": { "label": "InfoQ: Bug0 releases QA Agent", "url": "https://infoq.com/news/2026/10/bug0-agent-testing-cached-replay" }
+    }
+  },
+  {
+    "slug": "testsprite",
+    "name": "TestSprite",
+    "category": "ai-test-automation-tools",
+    "website": "https://www.testsprite.com",
+    "logo": null,
+    "pricingUrl": "https://www.testsprite.com/pricing",
+    "tagline": "AI testing agent that writes and runs frontend and backend tests for code produced by AI coding tools.",
+    "bestFor": "Developers using Cursor, Claude Code or similar tools who want tests generated from inside the IDE",
+    "description": "TestSprite takes a plain-language description, PRD or ticket, writes end-to-end frontend and backend tests, runs them against the live app and reports failures with a suggested fix. It works through a web app, an open-source CLI, an MCP server and coding-agent plugins, and checks every GitHub pull request. A Free plan includes 150 credits a month, and paid plans start at $19 per seat a month.",
+    "pros": [
+      "Free plan with 150 credits a month and GitHub PR testing on one repo",
+      "Low entry price: Starter is $19 a month with the first month free",
+      "Tests both browser flows and live APIs",
+      "Works inside coding agents through an MCP server and CLI; SOC 2 certified"
+    ],
+    "cons": [
+      "Credit limits are low on lower tiers (400 on Starter, 800 on Standard)",
+      "Mobile app testing is not described on the site",
+      "Annual prices are not shown; the page only says annual billing saves 35%"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "150 credits per month, 1 seat, 1 environment, 30-day run history, GitHub PR auto-test on 1 repo, Slack notifications; no scheduled runs",
+    "trial": "Starter: first month free",
+    "minSeats": 1,
+    "priceUnit": "per seat",
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "150 credits per month, 1 environment, 1 repo"
+      },
+      {
+        "name": "Starter",
+        "monthly": 19,
+        "annual": null,
+        "custom": false,
+        "notes": "First month free; 400 credits, 1 environment, 3 repos, 30-day history. Page says annual billing saves 35% but does not show the annual price"
+      },
+      {
+        "name": "Standard",
+        "monthly": 39,
+        "annual": null,
+        "custom": false,
+        "notes": "800 credits, 3 environments, 5 repos, 90-day history, Jira and Linear, advanced agent model, per-project memory; annual price not shown"
+      },
+      {
+        "name": "Pro",
+        "monthly": 69,
+        "annual": null,
+        "custom": false,
+        "notes": "1,600 credits, unlimited environments, repos and history, most capable agent model, priority execution; annual price not shown"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Listed as $199+ with a 10-seat minimum and 5,000+ credits; the page does not say whether $199 is per seat. SSO, SCIM, audit logs, single-tenant option, named CSM; also sold on AWS Marketplace"
+      }
+    ],
+    "features": {
+      "plainEnglish": true,
+      "aiTestGeneration": true,
+      "selfHealing": true,
+      "webTesting": true,
+      "mobileTesting": null,
+      "apiTesting": true,
+      "cicdIntegration": true,
+      "managedService": false
+    },
+    "platforms": ["Cloud (SaaS)", "CLI", "MCP server", "IDE plugin"],
+    "founded": null,
+    "hq": "Seattle, USA",
+    "integrations": "GitHub, Jira, Linear, Slack, Claude Code, Cursor, VS Code, Windsurf, Trae, AWS Marketplace",
+    "compliance": ["SOC 2", "SSO/SCIM and audit logs (Enterprise)"],
+    "support": ["Discord", "Email", "Named CSM with SLA (Enterprise)"],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      { "label": "TestSprite pricing page", "url": "https://www.testsprite.com/pricing", "date": "2026-11-22" },
+      { "label": "TestSprite homepage", "url": "https://www.testsprite.com/", "date": "2026-11-22" },
+      { "label": "TestSprite billing and plans docs", "url": "https://docs.testsprite.com/web-portal/admin/billing-and-plans.md", "date": "2026-11-22" },
+      { "label": "TestSprite seed round announcement", "url": "https://www.testsprite.com/blog/building-the-testing-backbone-announcing-our-seed-round", "date": "2026-11-22" }
+    ],
+    "launch": {
+      "date": "2025-10-30",
+      "what": "TestSprite announced a $6.7M seed round led by Trilogy Equity Partners after its MCP-based 2.0 release, citing more than 35,000 users.",
+      "source": { "label": "TestSprite seed round announcement", "url": "https://www.testsprite.com/blog/building-the-testing-backbone-announcing-our-seed-round" }
+    }
+  },
+  {
+    "slug": "thunders",
+    "name": "Thunders",
+    "category": "ai-test-automation-tools",
+    "website": "https://www.thunders.ai",
+    "logo": null,
+    "pricingUrl": "https://www.thunders.ai/pricing",
+    "tagline": "No-code platform where AI agents write, run and maintain tests for web, mobile, API and desktop apps.",
+    "bestFor": "QA teams in Europe that need EU data residency and plain-language test authoring",
+    "description": "Thunders, formerly Thunder Code, turns plain-language requirements into test journeys that AI agents run and repair when the UI changes. It covers web, API, mobile and desktop apps, and adds AI personas for accessibility and security checks. Plans are credit-based: Starter is $479 a month or $375 a month billed yearly, and a 14-day trial includes Pro access. An optional QA-as-a-Service has specialists write and maintain tests.",
+    "pros": [
+      "Web and API testing on all plans; iOS and Android on Pro and up",
+      "ISO 27001, SOC 2, GDPR and EU data residency (Paris) on all plans",
+      "14-day trial with full Pro access and 100 credits",
+      "Integrates with Jira, Xray, Linear and an MCP server for Claude and Cursor"
+    ],
+    "cons": [
+      "Entry price is $479 a month ($375 billed yearly) with no free plan",
+      "Overage credits cost $1.50 each, more than the included rate",
+      "SSO, self-hosting and Playwright export are Enterprise only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "14-day trial with full Pro access and 100 credits; account pauses after if no plan is chosen",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 479,
+        "annual": 375,
+        "custom": false,
+        "notes": "EUR 399 monthly or EUR 300 billed yearly; 300 credits (up to 30,000 test steps), up to 3 seats, 2 parallel runs, 30-day retention; no mobile; overage $1.50 per credit. Page does not label which figure is monthly vs yearly; higher figure assumed monthly"
+      },
+      {
+        "name": "Pro",
+        "monthly": 1199,
+        "annual": 1000,
+        "custom": false,
+        "notes": "EUR 999 monthly or EUR 800 billed yearly; 1,000 credits (up to 100,000 steps), up to 5 seats, 5 parallel runs, 90-day retention, iOS and Android, roles and hybrid deployment"
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom credits or flat fee; SSO, self-hosted deployment, static IP, Playwright export and Cypress/Playwright import"
+      }
+    ],
+    "features": {
+      "plainEnglish": true,
+      "aiTestGeneration": true,
+      "selfHealing": true,
+      "webTesting": true,
+      "mobileTesting": true,
+      "apiTesting": true,
+      "cicdIntegration": true,
+      "managedService": true
+    },
+    "platforms": ["Cloud (SaaS)", "Hybrid (Pro and Enterprise)", "Self-hosted (Enterprise)", "MCP server"],
+    "founded": null,
+    "hq": "Paris, France",
+    "integrations": "GitHub, GitLab, Jenkins, Jira, Xray, Squash TM, Linear, ClickUp, Shortcut, Azure DevOps, Confluence, Notion, Claude, Cursor",
+    "compliance": ["ISO 27001", "SOC 2", "GDPR", "EU data residency", "SSO (Enterprise)"],
+    "support": ["QA-as-a-Service specialists (optional)", "Dedicated devices and custom terms (Enterprise)"],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      { "label": "Thunders pricing page", "url": "https://www.thunders.ai/pricing", "date": "2026-11-22" },
+      { "label": "Thunders homepage", "url": "https://www.thunders.ai/", "date": "2026-11-22" },
+      { "label": "TechCrunch: Thunder Code raises $9M", "url": "https://techcrunch.com/2025/06/03/one-of-africas-most-successful-founders-is-back-with-a-new-ai-startup-and-already-raised-9m", "date": "2026-11-22" }
+    ],
+    "launch": {
+      "date": "2025-06-03",
+      "what": "Thunder Code, now Thunders, came out with a $9M seed round and a live product for web testing, later adding mobile, API and desktop.",
+      "source": { "label": "TechCrunch: Thunder Code raises $9M", "url": "https://techcrunch.com/2025/06/03/one-of-africas-most-successful-founders-is-back-with-a-new-ai-startup-and-already-raised-9m" }
+    }
+  }
+]

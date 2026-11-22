@@ -1,0 +1,400 @@
+[
+  {
+    "slug": "cloudflare-mcp-server-portals",
+    "name": "Cloudflare MCP Server Portals",
+    "category": "mcp-gateways",
+    "website": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/",
+    "logo": "https://www.cloudflare.com/favicon.ico",
+    "pricingUrl": "https://www.cloudflare.com/plans/zero-trust-services/",
+    "tagline": "Zero Trust feature that puts many remote MCP servers behind one endpoint with SSO, access policies and logs.",
+    "bestFor": "Teams already using Cloudflare One or Cloudflare Access",
+    "description": "MCP server portals are part of Cloudflare One. A portal groups several remote MCP servers behind one URL, signs users in through Cloudflare Access and lets admins turn individual tools and prompts on or off. Portals became generally available on September 24, 2026. Cloudflare One is free for up to 50 users and costs $7 per user per month on Pay-as-you-go.",
+    "pros": [
+      "Cloudflare One Free plan covers up to 50 users",
+      "Per-portal tool and prompt allowlists, plus aliases to rename tools",
+      "Logs each tool call with time, status, server and duration",
+      "Optional Gateway routing adds HTTP logging and DLP scanning"
+    ],
+    "cons": [
+      "Only remote HTTP MCP servers are supported; stdio servers must be put behind HTTP first",
+      "Logpush export of portal logs requires an Enterprise plan",
+      "Pricing pages do not mention portals, so per-plan feature limits are unclear"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Cloudflare One Free plan: $0 for up to 50 users. Cloudflare says portals are available to all customers; the pricing page does not list portal limits per plan.",
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "user/mo",
+      "long": "user/month"
+    },
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "Cloudflare One (Zero Trust) Free plan, up to 50 users."
+      },
+      {
+        "name": "Pay-as-you-go",
+        "monthly": 7,
+        "annual": null,
+        "custom": false,
+        "notes": "Per user per month. The pricing page does not list an annual price for this plan."
+      },
+      {
+        "name": "Contract",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom annual price per user. Logpush export of portal logs is Enterprise-only."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": false,
+      "serverCatalog": null,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2009,
+    "hq": "San Francisco, CA",
+    "integrations": "Any remote MCP server over Streamable HTTP or SSE; up to 120 servers per portal",
+    "compliance": [
+      "SSO via Cloudflare Access",
+      "DLP scanning (with Gateway routing)"
+    ],
+    "support": [],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Cloudflare SASE / Zero Trust plans",
+        "url": "https://www.cloudflare.com/plans/sase-zero-trust.md",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Cloudflare docs: MCP server portals",
+        "url": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Cloudflare changelog: MCP server portals are now generally available",
+        "url": "https://developers.cloudflare.com/changelog/post/2026-09-24-mcp-portals-ga/",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-09-24",
+      "what": "MCP server portals became generally available to all Cloudflare customers after an open beta that began in August 2025.",
+      "source": {
+        "label": "Cloudflare changelog: MCP server portals are now generally available",
+        "url": "https://developers.cloudflare.com/changelog/post/2026-09-24-mcp-portals-ga/"
+      }
+    }
+  },
+  {
+    "slug": "zuplo-mcp-gateway",
+    "name": "Zuplo MCP Gateway",
+    "category": "mcp-gateways",
+    "website": "https://zuplo.com/mcp-gateway",
+    "logo": null,
+    "pricingUrl": "https://zuplo.com/pricing",
+    "tagline": "Managed proxy in the Zuplo API gateway that fronts remote MCP servers with OAuth, role-based tool access and audit logs.",
+    "bestFor": "API teams that want MCP access control in the same gateway as their APIs",
+    "description": "Zuplo MCP Gateway puts one or more remote MCP servers behind a single OAuth-protected endpoint. It stores per-user upstream tokens, filters which tools, prompts and resources each role sees, and logs every tool call against the end user. It entered public beta on June 2, 2026 and became generally available in the August 2026 changelog. Zuplo lists only an Enterprise plan with custom pricing.",
+    "pros": [
+      "Capability Filter exposes a curated set of tools per route, user, role or group",
+      "Per-user upstream credentials; raw upstream tokens never reach the AI client",
+      "Works with identity providers such as Auth0, Okta and Microsoft Entra",
+      "Runs on managed edge, managed dedicated or self-hosted deployments"
+    ],
+    "cons": [
+      "No public prices or free plan; only a custom Enterprise plan is listed",
+      "SSO, role-based access and self-hosting are priced as add-ons",
+      "Docs cover remote MCP servers only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial on request through sales",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Annual contract quoted on request volume, SLA and add-ons. Includes 1 million requests per month and MCP Gateway. SSO and role-based access, observability integrations and self-hosted options are add-ons."
+      }
+    ],
+    "features": {
+      "openSource": false,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Managed dedicated",
+      "Self-hosted"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Server library with upstreams such as Stripe, Linear, GitHub and PostHog, plus custom remote servers",
+    "compliance": [
+      "SSO (add-on)"
+    ],
+    "support": [
+      "Premium support (add-on)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Zuplo pricing page",
+        "url": "https://zuplo.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Zuplo docs: MCP Gateway overview",
+        "url": "https://zuplo.com/docs/mcp-gateway/overview",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Zuplo changelog: MCP Gateway public beta",
+        "url": "https://zuplo.com/changelog/2026/06/02/mcp-gateway-public-beta",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Zuplo monthly changelog, August 2026",
+        "url": "https://zuplo.com/changelog/2026/08/01/monthly-changelog",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-08-01",
+      "what": "MCP Gateway moved from public beta (June 2, 2026) to general availability, adding role-based tool access and audit logging.",
+      "source": {
+        "label": "Zuplo monthly changelog, August 2026",
+        "url": "https://zuplo.com/changelog/2026/08/01/monthly-changelog"
+      }
+    }
+  },
+  {
+    "slug": "speakeasy-mcp-gateway",
+    "name": "Speakeasy MCP Gateway",
+    "category": "mcp-gateways",
+    "website": "https://www.speakeasy.com/product/mcp-gateway",
+    "logo": null,
+    "pricingUrl": "https://www.speakeasy.com/pricing",
+    "tagline": "Usage-billed MCP gateway with IdP sign-in, tool-level permissions and per-call audit logs.",
+    "bestFor": "Companies giving employees governed access to MCP servers across many AI clients",
+    "description": "Speakeasy MCP Gateway, the successor to Speakeasy's Gram platform, went live on March 10, 2026. Employees sign in through their identity provider, roles from IdP groups decide which servers and tools each person gets, and every tool call is logged with user, client, tool, arguments and result. Pay-as-you-go has no platform fee and bills usage, including $20 per GiB of MCP gateway egress.",
+    "pros": [
+      "No platform fee on Pay-as-you-go; billed only for usage",
+      "Tool-level allowlists per server and roles synced from the IdP",
+      "Audit logs stream to Datadog, Splunk, Grafana or any OTLP collector",
+      "Detects and blocks unapproved MCP servers by default"
+    ],
+    "cons": [
+      "Usage pricing makes monthly cost hard to predict",
+      "SSO and the full audit trail are listed under Enterprise",
+      "Free trial length is not stated"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free trial; length not stated. Adding a payment method converts to Pay-as-you-go.",
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Pay as you go",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "No platform fee; usage billed monthly. Agent session storage $0.35 per 1M tokens, risk scanning $0.99 per 1M tokens scanned, MCP gateway egress $20 per GiB. Inference billed at provider cost."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Annual contract priced on tokens under management. Includes SSO, full audit trail, SLA-backed support with a forward-deployed engineer and concierge onboarding."
+      }
+    ],
+    "features": {
+      "openSource": null,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted (Enterprise)"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Pre-built connectors including GitHub, Notion, Linear, Stripe, HubSpot and PagerDuty, plus your own servers",
+    "compliance": [
+      "SOC 2 Type II",
+      "ISO 27001",
+      "SSO (Enterprise)"
+    ],
+    "support": [
+      "Dedicated support channel and forward-deployed engineer (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Speakeasy pricing page",
+        "url": "https://www.speakeasy.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Speakeasy MCP Gateway product page",
+        "url": "https://www.speakeasy.com/product/mcp-gateway",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Speakeasy blog: MCP Gateway release",
+        "url": "https://www.speakeasy.com/blog/release-speakeasy-mcp-gateway",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Speakeasy: Managed vs self-hosted MCP gateway",
+        "url": "https://www.speakeasy.com/resources/managed-vs-self-hosted-mcp-gateway",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2026-03-10",
+      "what": "Speakeasy launched its MCP Gateway as the successor to its Gram MCP platform.",
+      "source": {
+        "label": "Speakeasy blog: MCP Gateway release",
+        "url": "https://www.speakeasy.com/blog/release-speakeasy-mcp-gateway"
+      }
+    }
+  },
+  {
+    "slug": "metorial",
+    "name": "Metorial",
+    "category": "mcp-gateways",
+    "website": "https://metorial.com",
+    "logo": "https://metorial.com/favicon.ico",
+    "pricingUrl": "https://metorial.com/pricing",
+    "tagline": "Open-source MCP and skills gateway that gives each employee one MCP URL for approved integrations.",
+    "bestFor": "Teams that want a self-hostable gateway with a large integration catalog",
+    "description": "Metorial is a Y Combinator Fall 2025 company from Vienna. Each user gets one MCP URL that connects their AI client to the integrations and tools they are allowed to use, with managed OAuth, per-tool read, write or off settings and logs of every call. The platform is open source under Apache 2.0. A free Dev plan includes 500,000 tool calls per month, and Scale costs $250 per month.",
+    "pros": [
+      "Free Dev plan includes 500,000 tool calls per month and unlimited auth connections",
+      "Open source under Apache 2.0 and self-hostable",
+      "1,000+ integrations, plus internal and third-party remote servers",
+      "Per-tool read, write or off permissions by person and group"
+    ],
+    "cons": [
+      "RBAC, SAML SSO, on-prem deployment and SOC 2 are listed under Enterprise",
+      "Dev plan allows 2 team members, 10 provider integrations and one project",
+      "No annual price listed"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Metorial Dev: $0, 500,000 tool calls and 10,000 callbacks per month, unlimited auth connections, up to 2 team members, up to 10 provider integrations, one environment and one project, 30-day log retention; no card required.",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "Metorial Dev",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "500,000 tool calls and 10,000 callbacks per month; up to 2 team members and 10 provider integrations; 30-day log retention."
+      },
+      {
+        "name": "Metorial Scale",
+        "monthly": 250,
+        "annual": null,
+        "custom": false,
+        "notes": "2,500,000 tool calls and 100,000 callbacks per month; 90-day log retention. Overage $1 per 1,500 tool calls and $1 per 750 callbacks."
+      },
+      {
+        "name": "Metorial for Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom limits, on-prem deployment, SOC 2 Type II and GDPR, RBAC, SAML/SSO and IAM, Slack or Teams support with SLA."
+      }
+    ],
+    "features": {
+      "openSource": true,
+      "selfHost": true,
+      "serverCatalog": true,
+      "oauthManagement": true,
+      "accessControl": true,
+      "auditLogs": true,
+      "remoteEndpoints": true,
+      "toolFiltering": true
+    },
+    "platforms": [
+      "Cloud (SaaS)",
+      "Self-hosted",
+      "On-premises (Enterprise)"
+    ],
+    "founded": 2025,
+    "hq": "Vienna, Austria",
+    "integrations": "1,000+ integrations",
+    "compliance": [
+      "SOC 2 Type II (Enterprise)",
+      "GDPR",
+      "SAML SSO and SCIM (Enterprise)"
+    ],
+    "support": [
+      "Slack or Teams support with SLA (Enterprise)"
+    ],
+    "checked": "2026-11-22",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Metorial pricing page",
+        "url": "https://metorial.com/pricing",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Metorial homepage",
+        "url": "https://metorial.com",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Metorial GitHub repository",
+        "url": "https://github.com/metorial/metorial",
+        "date": "2026-11-22"
+      },
+      {
+        "label": "Y Combinator company page: Metorial",
+        "url": "https://www.ycombinator.com/companies/metorial",
+        "date": "2026-11-22"
+      }
+    ],
+    "launch": {
+      "date": "2025-11",
+      "what": "Metorial launched publicly through Y Combinator's Fall 2025 batch as a hosted MCP platform with 600+ servers; the YC page dates the post only as about one year ago.",
+      "source": {
+        "label": "YC Launches: Metorial, Vercel for MCP",
+        "url": "https://www.ycombinator.com/launches/OZW-metorial-vercel-for-mcp"
+      }
+    }
+  }
+]

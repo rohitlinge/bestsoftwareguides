@@ -912,6 +912,33 @@
           "maxEntryPrice": 10
         }
       }
+    ],
+    "comparePairs": [
+      ["bluehost-ai-builder", "wix"],
+      ["bluehost-ai-builder", "hostinger-website-builder"],
+      ["bluehost-ai-builder", "wordpress-com"],
+      ["cloudways-ai-website-builder", "wordpress-com"],
+      ["cloudways-ai-website-builder", "hostinger-website-builder"],
+      ["ploy", "framer"],
+      ["ploy", "webflow"],
+      ["figma-sites", "framer"],
+      ["figma-sites", "webflow"],
+      ["readdy", "framer"],
+      ["framer", "godaddy-website-builder"],
+      ["framer", "webflow"],
+      ["godaddy-website-builder", "webflow"],
+      ["hostinger-website-builder", "framer"],
+      ["hostinger-website-builder", "godaddy-website-builder"],
+      ["hostinger-website-builder", "webflow"],
+      ["wix", "framer"],
+      ["wix", "godaddy-website-builder"],
+      ["wix", "hostinger-website-builder"],
+      ["wix", "webflow"],
+      ["wordpress-com", "framer"],
+      ["wordpress-com", "godaddy-website-builder"],
+      ["wordpress-com", "hostinger-website-builder"],
+      ["wordpress-com", "webflow"],
+      ["wordpress-com", "wix"]
     ]
   },
   {
@@ -1042,7 +1069,34 @@
         }
       }
     ],
-    "compareTop": 6
+    "compareTop": 6,
+    "comparePairs": [
+      ["judgment-labs", "braintrust"],
+      ["judgment-labs", "langsmith"],
+      ["judgment-labs", "langfuse"],
+      ["coval", "braintrust"],
+      ["coval", "langsmith"],
+      ["scorecard", "braintrust"],
+      ["scorecard", "langsmith"],
+      ["raindrop", "braintrust"],
+      ["raindrop", "langsmith"],
+      ["raindrop", "langfuse"],
+      ["laminar", "arize-phoenix"],
+      ["laminar", "langsmith"],
+      ["laminar", "maxim-ai"],
+      ["langfuse", "arize-phoenix"],
+      ["langfuse", "laminar"],
+      ["langfuse", "langsmith"],
+      ["langfuse", "maxim-ai"],
+      ["langsmith", "arize-phoenix"],
+      ["langsmith", "maxim-ai"],
+      ["maxim-ai", "arize-phoenix"],
+      ["opik", "arize-phoenix"],
+      ["opik", "laminar"],
+      ["opik", "langfuse"],
+      ["opik", "langsmith"],
+      ["opik", "maxim-ai"]
+    ]
   },
   {
     "slug": "mcp-gateways",
@@ -1108,7 +1162,32 @@
         }
       }
     ],
-    "compareTop": 6
+    "compareTop": 6,
+    "comparePairs": [
+      ["cloudflare-mcp-server-portals", "composio"],
+      ["cloudflare-mcp-server-portals", "docker-mcp-gateway"],
+      ["cloudflare-mcp-server-portals", "zapier-mcp"],
+      ["zuplo-mcp-gateway", "kong-ai-gateway"],
+      ["zuplo-mcp-gateway", "composio"],
+      ["speakeasy-mcp-gateway", "composio"],
+      ["speakeasy-mcp-gateway", "arcade"],
+      ["metorial", "docker-mcp-gateway"],
+      ["composio", "arcade"],
+      ["composio", "docker-mcp-gateway"],
+      ["composio", "ibm-contextforge"],
+      ["composio", "obot"],
+      ["composio", "zapier-mcp"],
+      ["docker-mcp-gateway", "arcade"],
+      ["docker-mcp-gateway", "ibm-contextforge"],
+      ["ibm-contextforge", "arcade"],
+      ["obot", "arcade"],
+      ["obot", "docker-mcp-gateway"],
+      ["obot", "ibm-contextforge"],
+      ["obot", "zapier-mcp"],
+      ["zapier-mcp", "arcade"],
+      ["zapier-mcp", "docker-mcp-gateway"],
+      ["zapier-mcp", "ibm-contextforge"]
+    ]
   },
   {
     "slug": "ai-test-automation-tools",
@@ -1184,6 +1263,30 @@
         }
       }
     ],
-    "compareTop": 6
+    "compareTop": 6,
+    "comparePairs": [
+      ["e2e", "qa-wolf"],
+      ["bug0", "qa-wolf"],
+      ["bug0", "momentic"],
+      ["thunders", "mabl"],
+      ["testsprite", "mabl"],
+      ["testsprite", "qa-wolf"],
+      ["e2e", "mabl"],
+      ["autify-aximo", "functionize"],
+      ["autify-aximo", "momentic"],
+      ["autify-aximo", "reflect"],
+      ["functionize", "momentic"],
+      ["functionize", "reflect"],
+      ["kaneai", "autify-aximo"],
+      ["kaneai", "functionize"],
+      ["kaneai", "momentic"],
+      ["kaneai", "reflect"],
+      ["kaneai", "testrigor"],
+      ["momentic", "reflect"],
+      ["testrigor", "autify-aximo"],
+      ["testrigor", "functionize"],
+      ["testrigor", "momentic"],
+      ["testrigor", "reflect"]
+    ]
   }
 ]
