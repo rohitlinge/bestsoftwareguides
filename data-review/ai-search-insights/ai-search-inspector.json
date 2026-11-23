@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "ai-search-inspector",
+    "name": "AI Search Inspector",
+    "category": "ai-search-insights-tools",
+    "website": "https://aisearchinsights.online",
+    "logo": "https://aisearchinsights.online/icon.png",
+    "pricingUrl": "https://aisearchinsights.online/pricing",
+    "tagline": "Free, open-source (MIT) AI visibility tool that shows what ChatGPT, Claude, Gemini and Perplexity search, read and cite for your prompts.",
+    "bestFor": "Marketers and SEO teams who want AI visibility data without a subscription and are happy to use their own API keys",
+    "description": "AI Search Inspector runs your prompts through the official APIs of ChatGPT, Claude, Gemini and Perplexity with web search turned on, then shows each answer with the searches the AI ran, every page it read, which pages it cited and which brands it mentioned. The software is free under the MIT license, hosted or self-hosted on Cloudflare Workers or Node.js; you bring your own API keys and pay the AI providers directly. It is built by the team behind this site (see our disclosure).",
+    "pros": [
+      "Free with no plans, seats, credits or prompt limits: the pricing page lists one $0 plan with unlimited projects, prompts and runs",
+      "Tracks four assistants (ChatGPT, Claude, Gemini, Perplexity) and lets you pick the model for each",
+      "Shows the hidden search queries the AI ran (query fan-out), every page read vs cited, and the sentence each citation supports",
+      "Share of voice against each competitor, citation rate, average mention position and content gaps",
+      "Open source under MIT; self-host on Cloudflare Workers (D1) or Node.js, with API keys encrypted (AES-256-GCM)"
+    ],
+    "cons": [
+      "You pay AI providers per answer: the site estimates about $23 a month for 50 prompts on 4 assistants run weekly with the cheapest models, and Claude answers cost up to $0.18 each",
+      "Uses the assistants' APIs, not the consumer ChatGPT or Gemini apps, so answers can differ from what a signed-in user sees",
+      "Does not track Google AI Overviews or AI Mode",
+      "No sentiment analysis is listed, and Perplexity's API does not expose the searches it ran",
+      "No company details, support plan or compliance certifications are published"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "The only plan is $0 forever, hosted or self-hosted, with unlimited projects, prompts and runs. You pay OpenAI, Anthropic, Google or Perplexity directly for API usage (about $0.01–$0.18 per answer depending on model).",
+    "trial": null,
+    "minSeats": 1,
+    "plans": [
+      {
+        "name": "AI Search Inspector (free, open source)",
+        "monthly": 0,
+        "annual": 0,
+        "custom": false,
+        "notes": "Unlimited projects, prompts and runs. Bring your own API key; provider costs are separate (site example: about $23/month for 50 prompts × 4 assistants weekly on the cheapest models)."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": false,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": null,
+      "optimizationTips": null,
+      "apiAccess": null
+    },
+    "platforms": [
+      "Web (hosted)",
+      "Self-hosted (Cloudflare Workers or Node.js)"
+    ],
+    "hq": null,
+    "integrations": "OpenAI, Anthropic, Google Gemini and Perplexity APIs; CSV prompt import; raw JSON per answer",
+    "compliance": [
+      "API keys encrypted with AES-256-GCM"
+    ],
+    "support": [
+      "GitHub (open source)"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      { "label": "AI Search Inspector homepage", "url": "https://aisearchinsights.online", "date": "2026-11-23" },
+      { "label": "AI Search Inspector pricing", "url": "https://aisearchinsights.online/pricing", "date": "2026-11-23" },
+      { "label": "AI Search Inspector features", "url": "https://aisearchinsights.online/features", "date": "2026-11-23" },
+      { "label": "AI Search Inspector FAQ", "url": "https://aisearchinsights.online/faq", "date": "2026-11-23" },
+      { "label": "AI Search Inspector open source", "url": "https://aisearchinsights.online/open-source", "date": "2026-11-23" },
+      { "label": "GitHub: rohitlinge/aisearchinsights", "url": "https://github.com/rohitlinge/aisearchinsights", "date": "2026-11-23" }
+    ]
+  }
+]

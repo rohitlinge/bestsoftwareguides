@@ -1,0 +1,709 @@
+{
+  "gapFill": {
+    "querysurge": {
+      "ruleBasedChecks": true
+    },
+    "datagaps-etl-validator": {
+      "ruleBasedChecks": true,
+      "alerts": true,
+      "cloudWarehouses": true
+    },
+    "rightdata-datatrust": {
+      "flatFiles": null,
+      "noCodeTests": true,
+      "scheduling": true
+    },
+    "tricentis-data-integrity": {
+      "ruleBasedChecks": true,
+      "cicdIntegration": true,
+      "cloudWarehouses": true,
+      "alerts": null,
+      "noCodeTests": true
+    },
+    "bigeval": {
+      "alerts": true,
+      "flatFiles": true,
+      "cloudWarehouses": null,
+      "noCodeTests": null
+    },
+    "datafold": {
+      "ruleBasedChecks": true,
+      "flatFiles": true,
+      "alerts": true
+    },
+    "informatica-cloud-data-validation": {
+      "ruleBasedChecks": null,
+      "cicdIntegration": null,
+      "flatFiles": true
+    },
+    "dbt": {
+      "ruleBasedChecks": true,
+      "flatFiles": false,
+      "alerts": true,
+      "sourceTargetCompare": true,
+      "noCodeTests": false
+    }
+  },
+  "gapNotes": {
+    "querysurge": {
+      "ruleBasedChecks": "FAQ lists 'field-level rules (nulls, domains, formats)' and running 'data quality rules'; the features page itself is comparison-centric (QueryPairs, duplicate row checking, column thresholds)."
+    },
+    "datagaps-etl-validator": {
+      "ruleBasedChecks": "ETL testing guide: detects 'unexpected null values in required fields', unexpected duplicate records, and 'Verifies business logic with SQL, Python or Scala'. Range checks not named.",
+      "alerts": "Validation results can be sent to 'Email, Teams, Slack, and Jira'.",
+      "cloudWarehouses": "Lists Snowflake, Databricks, Redshift, Azure Synapse, Microsoft Fabric, Google BigQuery."
+    },
+    "rightdata-datatrust": {
+      "flatFiles": "No CSV/JSON/Parquet mention on DataTrust pages; the FAQ says connector support must be confirmed per source.",
+      "noCodeTests": "Vendor llms-full.txt lists 'Zero-code rule creation with AI-recommended quality rules' as a DataTrust capability.",
+      "scheduling": "Product page Job Designer caption: 'scheduled FDR, validation, TDR, and email steps'."
+    },
+    "tricentis-data-integrity": {
+      "ruleBasedChecks": "Rules cheat sheet: 'Correctness: Uniqueness, not null, Hash-Comparisons, Data Ranges'; product page: validate data 'against business rules'.",
+      "cicdIntegration": "Snowflake testing page: 'Integrates into CI/CD pipelines'. Failing the build is not described explicitly.",
+      "cloudWarehouses": "Product page pre-built connectors: 'SAP, Salesforce, Oracle, SQL Server, Snowflake, Databricks, and more'; the data warehouse testing guide also names BigQuery. Tosca docs connect through ODBC.",
+      "alerts": "Only profiling that can 'alert you to any values that fall out of the norm' and generic advice; no email/Slack/Teams channel documented.",
+      "noCodeTests": "UNCERTAIN: learn page says tests are 'scriptless' (model-based); product page says 'Low-code test authoring' without deep coding expertise."
+    },
+    "bigeval": {
+      "alerts": "Docs: BiG EVAL 'can send you eMail alerts'; Slack/Teams via Power Automate, webhooks or scripts.",
+      "flatFiles": "Docs: 'Textfile' datasource type connects directly to CSV files (Excel also). Parquet/JSON not documented.",
+      "cloudWarehouses": "Only Snowflake is named (gallery tag); Databricks and BigQuery are not documented.",
+      "noCodeTests": "First-testcase tutorial requires entering a SQL query into the probe; no no-code builder documented."
+    },
+    "datafold": {
+      "ruleBasedChecks": "Data Test monitors: standard tests for non-null, unique, numeric ranges, accepted values, referential integrity, plus custom SQL.",
+      "flatFiles": "Data diff API file sources support csv, excel and parquet (s3://, gs://, abfss://, https://).",
+      "alerts": "Monitor notifications: email, Slack, Microsoft Teams, PagerDuty, webhooks."
+    },
+    "informatica-cloud-data-validation": {
+      "ruleBasedChecks": "Docs describe only comparing two data sets (source vs target, full or aggregate); no single-table rule checks documented.",
+      "cicdIntegration": "A REST API can run test cases and suites and return results, but no CI/CD pipeline integration is described.",
+      "flatFiles": "Supported connections include 'Flat file'; Amazon S3 v2 supports flat files and Parquet; ADLS Gen2 lists 'CSV flat file'."
+    },
+    "dbt": {
+      "ruleBasedChecks": "Generic tests unique, not_null, accepted_values, relationships plus singular SQL tests.",
+      "flatFiles": "Tests run as SQL in the data platform; CSVs only via seeds, which dbt loads into the warehouse first.",
+      "alerts": "Job notifications by email, Slack and Microsoft Teams, including on failure.",
+      "sourceTargetCompare": "INTERPRETATION: Advanced CI 'compare changes' (Enterprise, Enterprise+) shows row/column differences between the CI build and production models; both must be on the same connection. No cross-system source-to-target comparison.",
+      "noCodeTests": "Tests are defined in .yml/.sql files; Canvas (visual editor) is no longer sold to new accounts from 2026-11-12 and its docs do not mention tests."
+    }
+  },
+  "gapSources": {
+    "querysurge": [
+      {
+        "label": "QuerySurge FAQ",
+        "url": "https://www.querysurge.com/product-tour/faq",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "QuerySurge features",
+        "url": "https://www.querysurge.com/product-tour/features",
+        "date": "2026-11-23"
+      }
+    ],
+    "datagaps-etl-validator": [
+      {
+        "label": "Datagaps: ETL testing complete guide",
+        "url": "https://www.datagaps.com/etl-testing-complete-guide/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Datagaps ETL Validator",
+        "url": "https://www.datagaps.com/etl-testing-tools/etl-validator/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Datagaps DataOps Suite",
+        "url": "https://www.datagaps.com/dataops-suite/",
+        "date": "2026-11-23"
+      }
+    ],
+    "rightdata-datatrust": [
+      {
+        "label": "RightData DataTrust",
+        "url": "https://www.getrightdata.com/products/datatrust",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "RightData llms-full.txt",
+        "url": "https://www.getrightdata.com/llms-full.txt",
+        "date": "2026-11-23"
+      }
+    ],
+    "tricentis-data-integrity": [
+      {
+        "label": "Tricentis Data Integrity product page",
+        "url": "https://www.tricentis.com/products/data-integrity",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Tricentis: Automate Snowflake testing",
+        "url": "https://www.tricentis.com/enterprise-applications/snowflake-testing/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Tricentis: Data warehouse testing guide",
+        "url": "https://www.tricentis.com/learn/data-warehouse-testing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Tricentis Data Testing Rules cheat sheet (PDF)",
+        "url": "https://be.tricentis.com/media-assets/pdf/Tricentis-data-sheet_Data-testing-rules-cheat-sheet.pdf",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Tricentis Data Integrity data sheet (PDF)",
+        "url": "https://be.tricentis.com/media-assets/pdf/Tricentis-data-sheet_Tricentis-Data-Integrity-drive-better-business-outcomes.pdf",
+        "date": "2026-11-23"
+      }
+    ],
+    "bigeval": [
+      {
+        "label": "BiG EVAL docs: Alerts overview",
+        "url": "https://bigeval.com/docs/user/alerts/alerts-overview/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "BiG EVAL docs: Connecting to textfile (CSV)",
+        "url": "https://bigeval.com/docs/user/datasources/flatfiles/connecting-to-textfile-csv/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "BiG EVAL gallery: Snowflake",
+        "url": "https://bigeval.com/gallery/tags/snowflake/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "BiG EVAL docs: First testcase tutorial",
+        "url": "https://bigeval.com/docs/user/first-steps/tutorial/tutorial-create-and-execute-your-first-testcase/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "BiG EVAL features",
+        "url": "https://bigeval.com/platform/features/",
+        "date": "2026-11-23"
+      }
+    ],
+    "datafold": [
+      {
+        "label": "Datafold docs: Data Test monitors",
+        "url": "https://docs.datafold.com/data-monitoring/monitors/data-test-monitors",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Datafold API: Get a data diff",
+        "url": "https://docs.datafold.com/api-reference/data-diffs/get-a-data-diff",
+        "date": "2026-11-23"
+      }
+    ],
+    "informatica-cloud-data-validation": [
+      {
+        "label": "Informatica Data Validation: Test case connections",
+        "url": "https://onlinehelp.informatica.com/IICS/prod/datavalidation/en/aa-introducing-data-validation/Test_case_connections.html",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Informatica Data Validation: Test cases",
+        "url": "https://onlinehelp.informatica.com/IICS/prod/datavalidation/en/ca-test-cases/Test_cases.html",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Informatica Data Validation: Introducing Data Validation",
+        "url": "https://onlinehelp.informatica.com/IICS/prod/datavalidation/en/aa-introducing-data-validation/Introducing_Data_Validation.html",
+        "date": "2026-11-23"
+      }
+    ],
+    "dbt": [
+      {
+        "label": "dbt docs: Data tests",
+        "url": "https://docs.getdbt.com/docs/build/data-tests",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "dbt docs: Job notifications",
+        "url": "https://docs.getdbt.com/docs/deploy/job-notifications",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "dbt docs: Advanced CI (compare changes)",
+        "url": "https://docs.getdbt.com/docs/deploy/advanced-ci",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "dbt docs: Canvas",
+        "url": "https://docs.getdbt.com/docs/cloud/canvas",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "slug": "datakitchen-dataops-testgen",
+      "name": "DataKitchen DataOps TestGen",
+      "category": "data-testing-tools",
+      "website": "https://datakitchen.io/products/dataops-testgen/",
+      "logo": "https://datakitchen.io/favicon-192.png",
+      "pricingUrl": "https://datakitchen.io/pricing/",
+      "tagline": "Open-source data quality testing that profiles your tables and generates tests for you.",
+      "bestFor": "Teams that want auto-generated data quality tests on warehouse tables and files without writing YAML",
+      "description": "TestGen profiles tables and generates data quality tests from the profile, with 34 auto-generated test types and 19 business-rule and custom SQL test types. It runs tests on a schedule as SQL inside the database, works with 14 databases including Snowflake, Databricks SQL and BigQuery, and also reads CSV, Parquet and JSON files. The open-source edition is Apache 2.0 and free for 1 user, 1 connection and 1 project; Enterprise costs $100 per month per user and per database connection.",
+      "pros": [
+        "Free Apache 2.0 edition with unlimited tables and data volume",
+        "Generates tests from profiling: 34 auto-generated test types plus 19 business-rule and custom SQL types",
+        "Reads CSV, Parquet and JSON files from a local path, Amazon S3 or Azure Blob Storage",
+        "Alerts by email, Slack or Microsoft Teams, plus scheduled runs",
+        "REST API and MCP server for automation from pipelines and AI assistants"
+      ],
+      "cons": [
+        "Open-source edition is limited to 1 user, 1 connection and 1 project",
+        "Enterprise is priced per user and per connection: 10 users and 3 connections cost $1,300 per month",
+        "Self-hosted only; the docs say TestGen runs inside your network and mention no hosted SaaS",
+        "The testgen CLI is deprecated; CI/CD use goes through the REST API",
+        "No self-serve Enterprise trial; evaluations are arranged through sales"
+      ],
+      "freePlan": true,
+      "freePlanDetails": "Open Source edition, $0 'free forever': 1 user, 1 connection, 1 project, core test types and profiling, unlimited tables and data volume, community support.",
+      "trial": null,
+      "minSeats": 1,
+      "priceUnit": {
+        "short": "user or connection/mo",
+        "long": "per user and per database connection, per month"
+      },
+      "plans": [
+        {
+          "name": "Open Source",
+          "monthly": 0,
+          "annual": 0,
+          "custom": false,
+          "notes": "Apache 2.0. 1 user, 1 connection, 1 project; unlimited tables and data volume; community support."
+        },
+        {
+          "name": "Enterprise",
+          "monthly": 100,
+          "annual": null,
+          "custom": false,
+          "notes": "$100/month per user and per database connection. Unlimited users, connections and projects; SSO and access controls, 12 Commercial Pharma test types, DataKitchen support. Pricing page example: 10 users + 3 connections = $1,300/month or $15,600/year; no separate annual discount is stated. Prices as of October 20, 2026."
+        }
+      ],
+      "features": {
+        "noCodeTests": true,
+        "sourceTargetCompare": true,
+        "cicdIntegration": true,
+        "scheduling": true,
+        "cloudWarehouses": true,
+        "ruleBasedChecks": true,
+        "flatFiles": true,
+        "alerts": true
+      },
+      "platforms": [
+        "Self-hosted (Docker or pip)",
+        "Kubernetes and Amazon ECS (Enterprise install guides)"
+      ],
+      "founded": 2013,
+      "hq": "Lexington, MA",
+      "integrations": "Snowflake, Databricks SQL, Google BigQuery, Amazon Redshift, PostgreSQL, SQL Server, Azure SQL Database, Azure Synapse, Microsoft OneLake, Aurora PostgreSQL, Oracle 12c+, SAP HANA, DuckDB, Salesforce Data 360; CSV/Parquet/JSON files on local paths, S3 or Azure Blob; REST API; MCP server; DataKitchen Observability",
+      "compliance": [
+        "SSO (Enterprise)"
+      ],
+      "support": [
+        "Community (open source)",
+        "DataKitchen support (Enterprise)",
+        "Docs"
+      ],
+      "checked": "2026-11-23",
+      "verification": "verified",
+      "sources": [
+        {
+          "label": "DataKitchen pricing",
+          "url": "https://datakitchen.io/pricing/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "DataKitchen: DataOps TestGen product page",
+          "url": "https://datakitchen.io/products/dataops-testgen/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "GitHub: DataKitchen/dataops-testgen",
+          "url": "https://github.com/DataKitchen/dataops-testgen",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "TestGen docs overview",
+          "url": "https://docs.datakitchen.io/testgen/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "TestGen docs: Configure email server",
+          "url": "https://docs.datakitchen.io/testgen/administer/configure-email-server/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "TestGen release notes, 27 August 2026",
+          "url": "https://docs.datakitchen.io/testgen/release-notes/enterprise/2026/27-august/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "TestGen docs: Consistency tests (Aggregate Balance)",
+          "url": "https://docs.datakitchen.io/testgen/generate-tests/test-types/consistency-tests/",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "slug": "recce",
+      "name": "Recce",
+      "category": "data-testing-tools",
+      "website": "https://reccehq.com",
+      "logo": "https://reccehq.com/assets/favicon.ico",
+      "pricingUrl": "https://reccehq.com/pricing",
+      "tagline": "Data review agent that diffs dbt changes against production in every pull request.",
+      "bestFor": "dbt teams that want data diffs and review checklists on every pull request",
+      "description": "Recce compares a pull request's dbt environment with production and reports row count, profile, value, Top-K, histogram and custom query diffs, plus lineage impact. Recce Cloud runs this automatically from GitHub Actions or GitLab CI on Snowflake, Databricks, BigQuery and Redshift, and the open-source toolkit is Apache 2.0. The Free cloud plan is $0 and the Team plan is $300 per month, or $250 per month billed annually, with unlimited seats.",
+      "pros": [
+        "Row-level value diffs keyed on primary keys, plus profile, Top-K, histogram and query diffs",
+        "CI setup for GitHub Actions and GitLab CI; the Free plan includes automated CI validation, PR comments and PR blocking",
+        "Team plan is a flat price with unlimited seats",
+        "Preset checks can be added from the Recce Cloud UI instead of editing recce.yml",
+        "Open-source toolkit under Apache 2.0"
+      ],
+      "cons": [
+        "Built around dbt; Recce Cloud supports only Snowflake, Databricks, BigQuery and Redshift",
+        "Compares base and PR environments in one warehouse, not a source system against a target system",
+        "No scheduled runs or failure alerts documented; validation is triggered by pull requests",
+        "Free plan caps preset checks at 10 and agent reviews at 100 per month; Team allows 1,000 agent reviews",
+        "No assertion tests of its own; not-null and unique appear only as profile statistics"
+      ],
+      "freePlan": true,
+      "freePlanDetails": "Free cloud plan, $0: 10 customized preset checks, 100 agent reviews per month, automated CI validation and PR comments, PR blocking, community support. The open-source toolkit is also free (Apache 2.0).",
+      "trial": "Free trial (Team; length not stated)",
+      "minSeats": 1,
+      "priceUnit": {
+        "short": "mo",
+        "long": "month (flat, unlimited seats)"
+      },
+      "plans": [
+        {
+          "name": "Open Source",
+          "monthly": 0,
+          "annual": 0,
+          "custom": false,
+          "notes": "Apache 2.0 toolkit (pip install recce); runs locally; checks run manually or with recce run."
+        },
+        {
+          "name": "Free",
+          "monthly": 0,
+          "annual": null,
+          "custom": false,
+          "notes": "Recce Cloud. 10 customized preset checks, 100 agent reviews/month, CI validation, PR comments, PR blocking."
+        },
+        {
+          "name": "Team",
+          "monthly": 300,
+          "annual": 250,
+          "custom": false,
+          "notes": "$300/month on monthly billing; $250/month when paid annually. Unlimited preset checks, 1,000 agent reviews/month, shared team checklists, unlimited seats, 48-hour email support SLA."
+        },
+        {
+          "name": "Enterprise",
+          "monthly": null,
+          "annual": null,
+          "custom": true,
+          "notes": "Custom limits and volume pricing, SSO, BYOC, RBAC, dedicated support with custom SLAs, analytics dashboard, semantic layer support."
+        }
+      ],
+      "features": {
+        "noCodeTests": true,
+        "sourceTargetCompare": true,
+        "cicdIntegration": true,
+        "scheduling": null,
+        "cloudWarehouses": true,
+        "ruleBasedChecks": null,
+        "flatFiles": null,
+        "alerts": null
+      },
+      "platforms": [
+        "Cloud (SaaS)",
+        "Self-hosted (open source, Python)",
+        "BYOC (Enterprise)"
+      ],
+      "founded": null,
+      "hq": null,
+      "integrations": "dbt; Snowflake, Databricks, BigQuery, Redshift (Recce Cloud); GitHub Actions; GitLab CI/CD",
+      "compliance": [
+        "SOC 2",
+        "SSO (Enterprise)",
+        "RBAC (Enterprise)"
+      ],
+      "support": [
+        "Community (Free)",
+        "Email with 48-hour SLA (Team)",
+        "Dedicated support with custom SLAs (Enterprise)",
+        "Docs"
+      ],
+      "checked": "2026-11-23",
+      "verification": "verified",
+      "sources": [
+        {
+          "label": "Recce pricing",
+          "url": "https://reccehq.com/pricing",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Recce docs",
+          "url": "https://docs.reccehq.com/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Recce docs: Connect to warehouse",
+          "url": "https://docs.reccehq.com/setup-guides/connect-to-warehouse/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Recce docs: Set up CI",
+          "url": "https://docs.reccehq.com/setup-guides/setup-ci/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Recce docs: Preset checks",
+          "url": "https://docs.reccehq.com/collaboration/preset-checks/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Recce docs: Data diffing",
+          "url": "https://docs.reccehq.com/what-you-can-explore/data-diffing/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "GitHub: DataRecce/recce",
+          "url": "https://github.com/DataRecce/recce",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Recce security",
+          "url": "https://reccehq.com/security",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "slug": "sqlmesh",
+      "name": "SQLMesh",
+      "category": "data-testing-tools",
+      "website": "https://sqlmesh.readthedocs.io/en/stable/",
+      "logo": "https://github.com/SQLMesh.png",
+      "pricingUrl": "https://www.tobikodata.com/",
+      "tagline": "Open-source SQL transformation framework with built-in audits, unit tests and table diffs.",
+      "bestFor": "Data teams building SQL pipelines who want tests, audits and diffs inside the transformation framework",
+      "description": "SQLMesh is an Apache 2.0 data transformation framework with 29 built-in audits such as not_null, unique_values and accepted_range, custom SQL audits, unit tests and a table_diff command for row-level comparisons. It was built by Tobiko Data, which Fivetran acquired in 2025, and Fivetran contributed the project to the Linux Foundation on March 25, 2026. Tobiko Cloud, the commercial edition, is sold on quote with a platform fee plus a pay-as-you-go consumption fee.",
+      "pros": [
+        "29 built-in audits plus custom SQL audits; blocking audits halt a plan or run",
+        "Unit tests (sqlmesh test) and row-level table diffs between environments or two tables",
+        "GitHub Actions CI/CD bot runs unit tests and the linter on pull requests and updates check runs",
+        "Notifications to Slack (webhook or API) and email (SMTP) on audit failures and run failures",
+        "Free under Apache 2.0, governed by the Linux Foundation, with 16 execution engines"
+      ],
+      "cons": [
+        "Tests are tied to SQLMesh models; it is not a standalone tester for pipelines built with other tools",
+        "Cross-database table diffing is a Tobiko Cloud feature",
+        "Tobiko Cloud prices are not published",
+        "GitHub Actions is the only CI bot documented",
+        "Audits and tests are written as SQL and YAML; the open-source tool has no visual test builder"
+      ],
+      "freePlan": true,
+      "freePlanDetails": "SQLMesh is free and open source (Apache 2.0) under the Linux Foundation.",
+      "trial": null,
+      "minSeats": 1,
+      "plans": [
+        {
+          "name": "SQLMesh (open source)",
+          "monthly": 0,
+          "annual": 0,
+          "custom": false,
+          "notes": "Apache 2.0; latest PyPI release 0.236.4 (2026-10-22)."
+        },
+        {
+          "name": "Tobiko Cloud",
+          "monthly": null,
+          "annual": null,
+          "custom": true,
+          "notes": "Platform fee plus pay-as-you-go consumption fee; no seat or project limits; contact sales. Cloud-only, hybrid (self-hosted runners) or fully on-premise. Adds observability, built-in scheduling and cross-database table diff."
+        }
+      ],
+      "features": {
+        "noCodeTests": false,
+        "sourceTargetCompare": true,
+        "cicdIntegration": true,
+        "scheduling": true,
+        "cloudWarehouses": true,
+        "ruleBasedChecks": true,
+        "flatFiles": null,
+        "alerts": true
+      },
+      "platforms": [
+        "Self-hosted (open source, Python)",
+        "Tobiko Cloud (SaaS, hybrid or on-premise)"
+      ],
+      "founded": 2022,
+      "hq": null,
+      "integrations": "Engines: Athena, Azure SQL, BigQuery, ClickHouse, Databricks, DuckDB, Fabric, MotherDuck, MSSQL, MySQL, Postgres, GCP Postgres, Redshift, Snowflake, Spark, Trino. Tools: dbt, dlt, GitHub Actions, Kestra. Notifications: Slack, SMTP email",
+      "compliance": [
+        "SOC 2 (Tobiko Cloud)"
+      ],
+      "support": [
+        "Slack community",
+        "Contact form (Tobiko)",
+        "Docs"
+      ],
+      "checked": "2026-11-23",
+      "verification": "verified",
+      "sources": [
+        {
+          "label": "GitHub: SQLMesh/sqlmesh",
+          "url": "https://github.com/SQLMesh/sqlmesh",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "SQLMesh docs: Audits",
+          "url": "https://sqlmesh.readthedocs.io/en/stable/concepts/audits/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "SQLMesh docs: Notifications",
+          "url": "https://sqlmesh.readthedocs.io/en/stable/guides/notifications/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "SQLMesh docs: GitHub Actions CI/CD bot",
+          "url": "https://sqlmesh.readthedocs.io/en/stable/integrations/github/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "SQLMesh docs: Table diff",
+          "url": "https://sqlmesh.readthedocs.io/en/stable/guides/tablediff/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "SQLMesh docs: Integrations overview",
+          "url": "https://sqlmesh.readthedocs.io/en/stable/integrations/overview/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Tobiko Data home (Tobiko Cloud)",
+          "url": "https://www.tobikodata.com/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Fivetran press release: SQLMesh contributed to the Linux Foundation",
+          "url": "https://www.fivetran.com/press/fivetran-contributes-sqlmesh-to-the-linux-foundation-to-advance-open-data-infrastructure",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Linux Foundation: Welcomes SQLMesh project",
+          "url": "https://www.linuxfoundation.org/press/linux-foundation-welcomes-sqlmesh-project",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "slug": "pandera",
+      "name": "Pandera",
+      "category": "data-testing-tools",
+      "website": "https://pandera.readthedocs.io/en/stable/",
+      "logo": "https://pandera.readthedocs.io/en/stable/_static/pandera-favicon.png",
+      "pricingUrl": "https://github.com/unionai-oss/pandera",
+      "tagline": "Open-source Python library for validating dataframes against schemas and checks.",
+      "bestFor": "Python data and ML engineers who want schema and value checks inside their code and tests",
+      "description": "Pandera is an MIT-licensed Union.ai open-source project for validating dataframe-like objects with schemas and checks such as nullable, unique, ranges, isin and custom functions. It supports pandas, polars, PySpark, Ibis, PyArrow and DataFusion backends, and the Ibis backend can reach BigQuery, Snowflake and Databricks. It is free; Union.ai sells its own platform but lists no paid Pandera edition.",
+      "pros": [
+        "Free under the MIT license",
+        "Field-level checks: nullable, unique, gt/ge/le, in_range, isin, plus custom checks",
+        "Works with pandas, polars, PySpark, Ibis, PyArrow and DataFusion; Dask and Modin via the pandas backend",
+        "Ibis backend reaches BigQuery, Snowflake and Databricks",
+        "Schema inference and synthetic test data generation with Hypothesis"
+      ],
+      "cons": [
+        "Python code only; no UI for building tests",
+        "No built-in scheduler, alerting or source-to-target comparison",
+        "Ibis support is described as less mature than pandas support",
+        "Statistical hypothesis checks work only with the pandas backend"
+      ],
+      "freePlan": true,
+      "freePlanDetails": "Open source under the MIT license; install with pip.",
+      "trial": null,
+      "minSeats": 1,
+      "plans": [
+        {
+          "name": "Open Source",
+          "monthly": 0,
+          "annual": 0,
+          "custom": false,
+          "notes": "MIT license; latest PyPI release 0.36.0 (2026-11-10). No paid Pandera edition is listed."
+        }
+      ],
+      "features": {
+        "noCodeTests": false,
+        "sourceTargetCompare": null,
+        "cicdIntegration": null,
+        "scheduling": null,
+        "cloudWarehouses": true,
+        "ruleBasedChecks": true,
+        "flatFiles": null,
+        "alerts": null
+      },
+      "platforms": [
+        "Python library (pip)"
+      ],
+      "founded": 2018,
+      "hq": null,
+      "integrations": "pandas, polars, PySpark, pyspark.pandas, Ibis, PyArrow, DataFusion, Dask, Modin, GeoPandas, Hypothesis, pydantic, FastAPI, mypy, frictionless",
+      "compliance": [],
+      "support": [
+        "GitHub issues",
+        "Docs"
+      ],
+      "checked": "2026-11-23",
+      "verification": "verified",
+      "sources": [
+        {
+          "label": "Pandera docs",
+          "url": "https://pandera.readthedocs.io/en/stable/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Pandera docs: DataFrame models",
+          "url": "https://pandera.readthedocs.io/en/stable/dataframe_models.html",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Pandera docs: Ibis",
+          "url": "https://pandera.readthedocs.io/en/stable/ibis.html",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "GitHub: unionai-oss/pandera",
+          "url": "https://github.com/unionai-oss/pandera",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Union.ai: Pandera",
+          "url": "https://www.union.ai/pandera",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "PyPI: pandera",
+          "url": "https://pypi.org/project/pandera/",
+          "date": "2026-11-23"
+        }
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "name": "Bitwise QualiDI",
+      "reason": "Unverifiable / apparently discontinued: the vendor product page https://www.bitwiseglobal.com/en-us/data-tools/qualidi/ returns 404, and QualiDI is absent from Bitwise's current sitemap (296 URLs), which now promotes FulkrumAI. qualidi.com is an unrelated grantmaking consultancy. Only third-party listings and an old PDF user guide remain.",
+      "checked": "2026-11-23"
+    }
+  ]
+}

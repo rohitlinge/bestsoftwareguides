@@ -1,0 +1,745 @@
+{
+  "gapFill": {
+    "great-expectations": {
+      "noCodeTests": false,
+      "sourceTargetCompare": true,
+      "cicdIntegration": null,
+      "scheduling": false,
+      "cloudWarehouses": true,
+      "alerts": true
+    },
+    "soda": {
+      "noCodeTests": true,
+      "sourceTargetCompare": true,
+      "cicdIntegration": true,
+      "scheduling": true,
+      "cloudWarehouses": true
+    },
+    "deequ": {
+      "noCodeTests": false,
+      "sourceTargetCompare": true,
+      "cicdIntegration": null,
+      "scheduling": null,
+      "cloudWarehouses": null,
+      "flatFiles": true,
+      "alerts": null
+    },
+    "elementary": {
+      "noCodeTests": true,
+      "sourceTargetCompare": null,
+      "cicdIntegration": null,
+      "scheduling": true,
+      "cloudWarehouses": true,
+      "flatFiles": false
+    }
+  },
+  "gapSources": {
+    "great-expectations": [
+      {
+        "label": "GX Core docs: Connect to SQL data (supported dialects)",
+        "url": "https://docs.greatexpectations.io/docs/core/connect_to_data/sql_data/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "GX Core docs: Define a multi-source Expectation",
+        "url": "https://docs.greatexpectations.io/docs/core/customize_expectations/define_a_multi_source_expectation",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "GX Core docs: Create a Checkpoint with Actions",
+        "url": "https://docs.greatexpectations.io/docs/core/trigger_actions_based_on_results/create_a_checkpoint_with_actions/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Great Expectations GitHub Action repository",
+        "url": "https://github.com/great-expectations/great_expectations_action",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "GX blog: GX Core, GX Cloud and the data pipeline",
+        "url": "https://greatexpectations.io/blog/gx-core-gx-cloud-and-the-data-pipeline/",
+        "date": "2026-11-23"
+      }
+    ],
+    "soda": [
+      {
+        "label": "Soda docs: Author a contract in Soda Cloud (no-code editor)",
+        "url": "https://docs.soda.io/soda-documentation/find/data-testing/cloud-managed-data-contracts/author-a-contract-in-soda-cloud.md",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Soda docs: Data reconciliation",
+        "url": "https://docs.soda.io/soda-documentation/find/data-testing/data-reconciliation.md",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Soda docs: Test data during development (GitHub Actions)",
+        "url": "https://docs.soda.io/guides-and-tutorials/data-owner-producer/test-data-during-development.md",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Soda docs: Verify a contract (schedule)",
+        "url": "https://docs.soda.io/data-testing/cloud-managed-data-contracts/verify-a-contract",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Soda docs index (Snowflake, Databricks, BigQuery data sources)",
+        "url": "https://docs.soda.io/llms.txt",
+        "date": "2026-11-23"
+      }
+    ],
+    "deequ": [
+      {
+        "label": "Deequ GitHub repository README",
+        "url": "https://github.com/awslabs/deequ",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Deequ source: DataSynchronization.scala",
+        "url": "https://github.com/awslabs/deequ/blob/master/src/main/scala/com/amazon/deequ/comparison/DataSynchronization.scala",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Deequ GitHub releases (2.1.0, 2026-09-16)",
+        "url": "https://github.com/awslabs/deequ/releases",
+        "date": "2026-11-23"
+      }
+    ],
+    "elementary": [
+      {
+        "label": "Elementary docs: Automated monitors (cloud tests from the UI)",
+        "url": "https://docs.elementary-data.com/features/automated-monitors",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Elementary docs: OSS introduction (supported adapters)",
+        "url": "https://docs.elementary-data.com/oss/oss-introduction",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Elementary docs: Data lakes",
+        "url": "https://docs.elementary-data.com/data-tests/ai-data-tests/supported-platforms/data-lakes",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Elementary docs: CI",
+        "url": "https://docs.elementary-data.com/cloud/features/ci",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "slug": "qualytics",
+      "name": "Qualytics",
+      "category": "data-testing-tools",
+      "website": "https://qualytics.ai",
+      "logo": "https://cdn.prod.website-files.com/691b5456c587724c58ce0bc3/691b549acf106faaa554bf13_favicon.png",
+      "pricingUrl": null,
+      "tagline": "Data quality platform that infers checks automatically and lets teams author more checks in a low-code UI.",
+      "bestFor": "Enterprises that want AI-generated rule coverage plus cross-system data diffs and reconciliation",
+      "description": "Qualytics profiles tables and files, generates quality checks automatically (AI Managed checks) and lets users add Authored checks from a library of rule types in a form-based UI. Its rule types include Data Diff, which compares a target container with a reference container row by row, including across datastores, plus Is Replica Of and Aggregation Comparison. It runs as a single-tenant managed deployment or self-hosted on Kubernetes, and pricing is not published.",
+      "pros": [
+        "Data Diff check compares two containers row by row and the reference can live in a different datastore",
+        "Tests files directly in S3, Azure Data Lake Storage and Google Cloud Storage (CSV, JSON, Parquet, Avro, ORC, Delta, Iceberg, XLSX and more)",
+        "Scan schedules: hourly, daily, weekly or a five-field cron expression",
+        "Flows send notifications to email, Slack, Microsoft Teams and PagerDuty",
+        "30-day free trial set up by the Qualytics team on a portion of your own data"
+      ],
+      "cons": [
+        "No public pricing; quote only",
+        "The CLI runs scans from GitHub Actions, but the docs do not say a failed check fails the build",
+        "Managed deployment is single-tenant, and Qualytics provisions it rather than offering self-serve sign-up",
+        "Founding year and headquarters are not stated on the website"
+      ],
+      "freePlan": false,
+      "freePlanDetails": null,
+      "trial": "30-day free trial: the Qualytics team sets up an environment on a representative portion of your warehouse, lakehouse or pipeline",
+      "minSeats": 1,
+      "plans": [
+        {
+          "name": "Custom",
+          "monthly": null,
+          "annual": null,
+          "custom": true,
+          "notes": "No plans or prices on the website; free trial or demo request only."
+        }
+      ],
+      "features": {
+        "noCodeTests": true,
+        "sourceTargetCompare": true,
+        "cicdIntegration": null,
+        "scheduling": true,
+        "cloudWarehouses": true,
+        "ruleBasedChecks": true,
+        "flatFiles": true,
+        "alerts": true
+      },
+      "platforms": [
+        "Cloud (managed single-tenant VPC on EKS, AKS, GKE or OKE)",
+        "Self-hosted (Kubernetes, including on-premises)",
+        "Databricks on AWS (processing in your Databricks)"
+      ],
+      "founded": null,
+      "hq": null,
+      "integrations": "JDBC warehouses and databases including Snowflake, Databricks, BigQuery, Redshift, SQL Server, Oracle, PostgreSQL, MySQL, Hive and MongoDB; object storage (Amazon S3, Azure, Google Cloud Storage, Oracle Cloud); Kinesis and Pub/Sub streams; Slack, Microsoft Teams, PagerDuty, email; Jira, ServiceNow; Airflow, dbt; Alation, Atlan, Collibra, DataHub, Microsoft Purview; Power BI, Sigma, Tableau; MCP and API",
+      "compliance": [
+        "SOC 2 Type 2",
+        "SSO (managed deployment)"
+      ],
+      "support": [
+        "Docs (user guide)",
+        "Support portal",
+        "Dedicated Slack channel with a forward-deployed engineer (trial)"
+      ],
+      "checked": "2026-11-23",
+      "verification": "verified",
+      "sources": [
+        {
+          "label": "Qualytics home page",
+          "url": "https://qualytics.ai/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Qualytics free trial page",
+          "url": "https://qualytics.ai/free-trial",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Qualytics integrations page",
+          "url": "https://qualytics.ai/integrations",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Qualytics Trust Center",
+          "url": "https://trust.qualytics.ai/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Qualytics user guide: Data Diff check",
+          "url": "https://userguide.qualytics.io/data-quality-checks/data-diff/introduction/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Qualytics user guide: Create a Data Diff check",
+          "url": "https://userguide.qualytics.io/data-quality-checks/data-diff/how-tos/create-a-check/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Qualytics user guide: DFS supported file formats",
+          "url": "https://userguide.qualytics.io/source-datastore/datastore/dfs/deep-dive/dfs-supported-file-formats/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Qualytics user guide: Scan schedule options",
+          "url": "https://userguide.qualytics.io/operations/scan/how-tos/schedule-options/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Qualytics user guide: Deployments overview",
+          "url": "https://userguide.qualytics.io/deployments/overview/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Qualytics CLI: GitHub Actions pipelines",
+          "url": "https://userguide.qualytics.io/cli/examples/github-actions-pipelines/",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "slug": "validio",
+      "name": "Validio",
+      "category": "data-testing-tools",
+      "website": "https://validio.io",
+      "logo": "https://validio.io/favicon.ico",
+      "pricingUrl": "https://validio.io/pricing",
+      "tagline": "Agentic data management platform that combines validators, ML anomaly detection, lineage and a catalog.",
+      "bestFor": "Enterprises, including regulated ones, that want warehouse and stream validation with a managed or in-VPC deployment",
+      "description": "Validio runs validators on warehouse tables, streams and custom SQL sources on a polling schedule and raises incidents when metrics cross fixed or dynamic thresholds. Validator types include null, enum, distinct and duplicate values, freshness, custom SQL, referential integrity against a reference source, and a Reconciliation validator that compares metric results across two sources. Pricing is custom and depends on the number of data assets, segments and the deployment model, with a 14-day trial.",
+      "pros": [
+        "Validators are set up in a UI wizard, with AI validator recommendations and text-to-SQL for custom SQL",
+        "Reconciliation, Relative Volume and Referential Integrity validators compare data across two sources",
+        "Notification channels for Slack, Microsoft Teams, email, webhooks, Jira and ServiceNow",
+        "Managed deployment on GCP, AWS or Azure, or self-hosted in your VPC with a Helm chart",
+        "Lists ISO 27001 and SOC 2 certification, plus GDPR and HIPAA compliance"
+      ],
+      "cons": [
+        "No public prices; quote based on data assets, segments and deployment model",
+        "Reconciliation compares computed metrics, not individual rows",
+        "Object-storage data is reached through Amazon Athena; direct CSV or Parquet file testing is not documented",
+        "CI/CD use (GitHub Actions, GitLab, Jenkins, Azure DevOps) goes through the API or SDK rather than a packaged action"
+      ],
+      "freePlan": false,
+      "freePlanDetails": null,
+      "trial": "14-day trial of the full platform, up to 10 users, with your own data or demo datasets",
+      "minSeats": 1,
+      "plans": [
+        {
+          "name": "Custom",
+          "monthly": null,
+          "annual": null,
+          "custom": true,
+          "notes": "Priced by number of data assets, segments and deployment model (Managed or Secure VPC); the pricing page says there is no feature gating."
+        }
+      ],
+      "features": {
+        "noCodeTests": true,
+        "sourceTargetCompare": true,
+        "cicdIntegration": true,
+        "scheduling": true,
+        "cloudWarehouses": true,
+        "ruleBasedChecks": true,
+        "flatFiles": null,
+        "alerts": true
+      },
+      "platforms": [
+        "Cloud (managed, on GCP, AWS or Azure)",
+        "Self-hosted (customer VPC, Helm on Kubernetes)"
+      ],
+      "founded": 2019,
+      "hq": "Stockholm, Sweden",
+      "integrations": "Snowflake, Databricks, BigQuery, Redshift, Azure Synapse, ClickHouse, Teradata; Kafka, Kinesis, Pub/Sub; dbt Cloud and dbt Core; Amazon Athena; PostgreSQL, SQL Server, Oracle, IBM Db2, SAP IQ; Slack, Microsoft Teams, email, webhooks, Jira, ServiceNow; Airflow (operators and sensors); GraphQL API, Python SDK, CLI and MCP server",
+      "compliance": [
+        "ISO 27001",
+        "SOC 2 Type II",
+        "GDPR",
+        "HIPAA"
+      ],
+      "support": [
+        "Customer success and implementation support",
+        "Docs"
+      ],
+      "checked": "2026-11-23",
+      "verification": "verified",
+      "sources": [
+        {
+          "label": "Validio pricing page",
+          "url": "https://validio.io/pricing",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio home page",
+          "url": "https://validio.io/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio about page",
+          "url": "https://validio.io/about",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio security page",
+          "url": "https://validio.io/security",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio docs: Reconciliation validator",
+          "url": "https://docs.validio.io/docs/validators/validator-types/reconciliation.md",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio docs: Validator configuration wizard",
+          "url": "https://docs.validio.io/docs/validators/validators-configuration/index.md",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio docs: Sources (polling schedule, supported sources)",
+          "url": "https://docs.validio.io/docs/sources/index.md",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio docs: Circuit breakers",
+          "url": "https://docs.validio.io/docs/integrations/orchestration/circuit-breakers.md",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio docs: API integration patterns (CI/CD)",
+          "url": "https://docs.validio.io/v11.2/developer/validio-api/graphql-api/api-integration-patterns.md",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio docs: Query engine sources",
+          "url": "https://docs.validio.io/docs/integrations/query-engine-sources/index.md",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Validio docs index (validator types, notification channels)",
+          "url": "https://docs.validio.io/_llms/v11-3/guides.txt",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "slug": "telmai",
+      "name": "Telmai",
+      "category": "data-testing-tools",
+      "website": "https://www.telm.ai",
+      "logo": "https://www.telm.ai/wp-content/uploads/2023/11/favicon.png",
+      "pricingUrl": null,
+      "tagline": "AI-based data observability and validation for data lakes, lakehouses and warehouses.",
+      "bestFor": "Teams validating data in open lakehouse formats and object storage as well as warehouses",
+      "description": "Telmai profiles assets from warehouses and cloud storage, runs out-of-the-box and user-defined monitors (built-in metrics, record validation rules and SQL rules), and alerts on incidents. Its Data comparison feature compares an asset with another asset by ID, counts new, missing and changed records, and writes the changed records to a bucket as JSON or Parquet. It runs as SaaS, hybrid (scans on your own Spark) or fully in your VPC, and pricing is by demo request.",
+      "pros": [
+        "Reads CSV, JSON, Parquet, Avro, Delta Lake and XML files directly from S3, Azure Blob and Google Cloud Storage",
+        "Data comparison finds new, missing and changed records between two assets",
+        "Four-step monitor builder in the UI, plus AI monitor recommendations",
+        "Scheduled scans per asset or in bulk, and alerts to Slack, Microsoft Teams, email or webhooks",
+        "Hybrid and VPC deployments keep row-level data in your environment"
+      ],
+      "cons": [
+        "No public pricing, trial or free plan; demo request only",
+        "Circuit breakers need API calls from an orchestrator such as Airflow; no CI/CD integration is documented",
+        "Data comparison is not available for assets in a group",
+        "Founding year is not stated on the website"
+      ],
+      "freePlan": false,
+      "freePlanDetails": null,
+      "trial": null,
+      "minSeats": 1,
+      "plans": [
+        {
+          "name": "Custom",
+          "monthly": null,
+          "annual": null,
+          "custom": true,
+          "notes": "No pricing page; the website offers a demo request only."
+        }
+      ],
+      "features": {
+        "noCodeTests": true,
+        "sourceTargetCompare": true,
+        "cicdIntegration": null,
+        "scheduling": true,
+        "cloudWarehouses": true,
+        "ruleBasedChecks": true,
+        "flatFiles": true,
+        "alerts": true
+      },
+      "platforms": [
+        "Cloud (SaaS)",
+        "Hybrid (control plane in Telmai cloud, data plane on your Spark)",
+        "VPC (full stack in your cloud, Helm and Terraform)"
+      ],
+      "founded": null,
+      "hq": "San Francisco, CA",
+      "integrations": "Snowflake, Databricks, BigQuery, Redshift, Athena, Microsoft Fabric SQL, OneLake, SQL Server, Oracle, MySQL, SAP HANA, Teradata, Trino, Salesforce, Hive Metastore, Iceberg REST; Amazon S3, Azure Blob, Google Cloud Storage; Slack, Microsoft Teams, email, webhooks; Jira, ServiceNow; Atlan, Alation, Databricks Unity Catalog, Actian catalog; Airflow via API; MCP server",
+      "compliance": [
+        "SOC 2",
+        "GDPR",
+        "CCPA",
+        "SSO (OIDC: Okta, Microsoft Entra ID, Auth0)"
+      ],
+      "support": [
+        "Docs",
+        "Email (info@telm.ai)"
+      ],
+      "checked": "2026-11-23",
+      "verification": "verified",
+      "sources": [
+        {
+          "label": "Telmai home page",
+          "url": "https://www.telm.ai/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai about page",
+          "url": "https://www.telm.ai/about-us/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai security and compliance page",
+          "url": "https://www.telm.ai/product/security-and-compliance/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai get started page",
+          "url": "https://www.telm.ai/get-started/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai docs: Data comparison",
+          "url": "https://docs.telm.ai/telmai/profiling-data/data-diff",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai docs: Supported file types",
+          "url": "https://docs.telm.ai/telmai/connect-to-data/supported-file-types",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai docs: Triggering scans (schedule)",
+          "url": "https://docs.telm.ai/telmai/connect-to-data/triggering-scans",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai docs: Creating a monitor",
+          "url": "https://docs.telm.ai/telmai/monitoring-data/monitors-management/creating-a-monitor",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai docs: Configuring notifications",
+          "url": "https://docs.telm.ai/telmai/monitoring-data/monitors-management/configuring-notifications",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai docs: Circuit breaker",
+          "url": "https://docs.telm.ai/telmai/remediation/circuit-breaker",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai docs: Deployment models",
+          "url": "https://docs.telm.ai/telmai/deployment-models/deployment-models",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai docs: Security and compliance overview",
+          "url": "https://docs.telm.ai/telmai/security-and-compliance/overview",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Telmai docs index (data connections)",
+          "url": "https://docs.telm.ai/telmai/llms.txt",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "slug": "synq",
+      "name": "SYNQ (Coalesce Quality)",
+      "category": "data-testing-tools",
+      "website": "https://www.synq.io",
+      "logo": "https://cdn.prod.website-files.com/697d432e8062bc722f9d2050/697d521e8a64f266ecfe48ae_favico.png",
+      "pricingUrl": "https://coalesce.io/product/transform/pricing/",
+      "tagline": "Data observability and testing built around data products, now sold as Coalesce Quality.",
+      "bestFor": "dbt, SQLMesh and Coalesce teams that want tests, anomaly monitors and cross-database reconciliation in one place",
+      "description": "SYNQ was acquired by Coalesce, announced on March 10, 2026, and is now Coalesce Quality; synq.io/pricing redirects to Coalesce's pricing, where Quality is included in every plan. It combines SQL tests (not_null, unique, accepted values, relationships, business rules and custom queries) that you can create in the app or in YAML, self-learning anomaly monitors, and a reconciliation CLI (synq-recon) that compares datasets across databases by row counts and checksums. The free Developer plan covers 1 user, and Starter costs $150 per user per month, billed annually.",
+      "pros": [
+        "Reconciliation compares source and target across databases and clouds, and drills down to differing key ranges",
+        "synq-recon can act as a CI/CD release gate with --fail-on and documented exit codes",
+        "SQL test types (not_null, unique, accepted_values, min_max, relationships and more) work the same in the app, API and YAML",
+        "Alerts to Slack, Microsoft Teams, email, PagerDuty and Opsgenie",
+        "Free Developer plan (1 user) includes Quality"
+      ],
+      "cons": [
+        "No longer a standalone vendor: pricing and plans are Coalesce's, and Coalesce describes Quality as built into its platform",
+        "Starter is $150 per user per month on annual billing only, with no monthly price shown",
+        "SaaS only, hosted on Google Cloud in the EU, US and AU regions; an on-premise agent covers database access only",
+        "Direct file testing (CSV, Parquet) is not documented"
+      ],
+      "freePlan": true,
+      "freePlanDetails": "Coalesce Developer plan: free, 1 user, Transform and Quality included, 2,000 capped monthly actions, 1 project, 1 environment",
+      "trial": "Free trial offered ('Start Free Trial'); length not stated",
+      "minSeats": 1,
+      "priceUnit": {
+        "short": "user/mo",
+        "long": "user/month"
+      },
+      "plans": [
+        {
+          "name": "Developer",
+          "monthly": 0,
+          "annual": 0,
+          "custom": false,
+          "notes": "1 user, Transform and Quality included, 2,000 capped monthly actions, 1 project, 1 environment."
+        },
+        {
+          "name": "Starter",
+          "monthly": null,
+          "annual": 150,
+          "custom": false,
+          "notes": "$150 per user per month, billed annually. Up to 4 Transform users, 15,000 actions/month, full access to Transform, Catalog and Quality, 24x5 support."
+        },
+        {
+          "name": "Enterprise",
+          "monthly": null,
+          "annual": null,
+          "custom": true,
+          "notes": "Custom pricing. 5+ users, 100,000 actions/month, unlimited projects and environments, SSO, priority support."
+        },
+        {
+          "name": "Business Critical",
+          "monthly": null,
+          "annual": null,
+          "custom": true,
+          "notes": "Custom pricing. Adds private networks, BAA (HIPAA-ready) and custom deployment requirements."
+        }
+      ],
+      "features": {
+        "noCodeTests": true,
+        "sourceTargetCompare": true,
+        "cicdIntegration": true,
+        "scheduling": true,
+        "cloudWarehouses": true,
+        "ruleBasedChecks": true,
+        "flatFiles": null,
+        "alerts": true
+      },
+      "platforms": [
+        "Cloud (SaaS on Google Cloud; EU, US and AU regions)",
+        "On-premise DWH agent for database access"
+      ],
+      "founded": null,
+      "hq": null,
+      "integrations": "Snowflake, Databricks, BigQuery, Redshift, ClickHouse, Microsoft Fabric, Trino/Starburst, MotherDuck, PostgreSQL, MySQL, SQL Server, Oracle, IBM Db2; dbt Core, dbt Cloud, SQLMesh, Coalesce Transform and Catalog; Airflow; GitHub, GitLab, Bitbucket, Azure DevOps; Looker, Tableau, Omni; Atlan; Slack, Microsoft Teams, email, PagerDuty, Opsgenie; Google Cloud Storage and Pub/Sub discovery; MCP server",
+      "compliance": [
+        "SOC 2",
+        "GDPR",
+        "SSO (Enterprise plan)",
+        "BAA / HIPAA-ready (Business Critical plan)",
+        "AWS PrivateLink / Azure Private Link"
+      ],
+      "support": [
+        "24x5 support (Starter)",
+        "Priority support with enhanced SLAs (Enterprise)",
+        "Email (support@coalesce.io)",
+        "Docs"
+      ],
+      "checked": "2026-11-23",
+      "verification": "verified",
+      "sources": [
+        {
+          "label": "SYNQ home page (now Coalesce Quality)",
+          "url": "https://www.synq.io/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Coalesce pricing page (synq.io/pricing redirects here)",
+          "url": "https://coalesce.io/product/transform/pricing/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Coalesce: Coalesce announces acquisition of SYNQ and launch of Coalesce Quality",
+          "url": "https://coalesce.io/company-news/coalesce-announces-acquisition-of-synq-and-launch-of-coalesce-quality/",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Coalesce Quality docs: Reconciliation overview",
+          "url": "https://docs.synq.io/reconciliation/overview",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Coalesce Quality docs: Reconciliation CI/CD and automation",
+          "url": "https://docs.synq.io/reconciliation/cicd-and-automation",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Coalesce Quality docs: Workspace suites (scheduled deployments)",
+          "url": "https://docs.synq.io/reconciliation/workspace-suites",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Coalesce Quality docs: SQL tests",
+          "url": "https://docs.synq.io/monitors/sql-tests",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Coalesce Quality docs: Setting up monitors",
+          "url": "https://docs.synq.io/monitors/setting-up-monitors",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Coalesce Quality docs: Security policy",
+          "url": "https://docs.synq.io/security/security",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Coalesce Quality docs index (integrations, alert channels)",
+          "url": "https://docs.synq.io/llms.txt",
+          "date": "2026-11-23"
+        }
+      ],
+      "launch": {
+        "date": "2026-03-10",
+        "what": "Coalesce announced it had acquired SYNQ and launched the product as Coalesce Quality, built into the Coalesce platform.",
+        "source": {
+          "label": "Coalesce: Coalesce announces acquisition of SYNQ and launch of Coalesce Quality",
+          "url": "https://coalesce.io/company-news/coalesce-announces-acquisition-of-synq-and-launch-of-coalesce-quality/",
+          "date": "2026-11-23"
+        }
+      }
+    },
+    {
+      "slug": "reladiff",
+      "name": "Reladiff",
+      "category": "data-testing-tools",
+      "website": "https://github.com/erezsh/reladiff",
+      "logo": "https://raw.githubusercontent.com/erezsh/reladiff/master/reladiff_logo.svg",
+      "pricingUrl": null,
+      "tagline": "Open-source CLI and Python library for diffing large tables within or across databases.",
+      "bestFor": "Engineers checking that a migrated or replicated table matches its source, from the command line or Python",
+      "description": "Reladiff is an MIT-licensed fork of Datafold's archived data-diff project. It diffs tables across databases (for example PostgreSQL to Snowflake) with a hash-based divide-and-conquer algorithm, or within one database with a join, and outputs git-style or JSON diffs. Version 0.6.0 was released on PyPI on 2025-03-04.",
+      "pros": [
+        "Free and open source (MIT)",
+        "Cross-database diffs with only the changed segments downloaded; the README cites over 1B rows in about 5 minutes when there are no differences",
+        "Supports more than a dozen databases, including Snowflake, BigQuery, Databricks, Redshift, DuckDB and Trino",
+        "JSON output and a Python API for automation"
+      ],
+      "cons": [
+        "Diffing only: no rule checks, scheduling, alerts or UI are documented",
+        "BigQuery and Databricks support is marked 'implemented, with limited testing'",
+        "Small project: last release v0.6.0 in March 2025 and last commit in August 2025",
+        "The docs do not describe an exit code that fails a CI build when differences are found"
+      ],
+      "freePlan": true,
+      "freePlanDetails": "Open-source CLI and Python library (MIT), installed with pip",
+      "trial": null,
+      "minSeats": 1,
+      "plans": [
+        {
+          "name": "Open source",
+          "monthly": 0,
+          "annual": 0,
+          "custom": false,
+          "notes": "MIT license; pip install reladiff; Python 3.8+"
+        }
+      ],
+      "features": {
+        "noCodeTests": false,
+        "sourceTargetCompare": true,
+        "cicdIntegration": null,
+        "scheduling": null,
+        "cloudWarehouses": true,
+        "ruleBasedChecks": null,
+        "flatFiles": null,
+        "alerts": null
+      },
+      "platforms": [
+        "Self-hosted (Python CLI and library)"
+      ],
+      "founded": 2024,
+      "hq": null,
+      "integrations": "PostgreSQL, MySQL, Snowflake, Redshift, DuckDB, Trino (well tested); BigQuery, Oracle, Presto, Vertica, ClickHouse, Databricks (limited testing)",
+      "compliance": [],
+      "support": [
+        "GitHub issues",
+        "GitHub Discussions",
+        "Docs (Read the Docs)"
+      ],
+      "checked": "2026-11-23",
+      "verification": "verified",
+      "sources": [
+        {
+          "label": "Reladiff GitHub repository",
+          "url": "https://github.com/erezsh/reladiff",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Reladiff docs: Supported databases",
+          "url": "https://reladiff.readthedocs.io/en/latest/supported-databases.html",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "Reladiff docs: How to use",
+          "url": "https://reladiff.readthedocs.io/en/latest/how-to-use.html",
+          "date": "2026-11-23"
+        },
+        {
+          "label": "PyPI: reladiff",
+          "url": "https://pypi.org/project/reladiff/",
+          "date": "2026-11-23"
+        }
+      ]
+    }
+  ]
+}

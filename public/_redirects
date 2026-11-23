@@ -23,3 +23,13 @@
 /compare/testrigor-vs-autify-aximo/ /compare/autify-aximo-vs-testrigor/ 301
 /compare/testrigor-vs-momentic/ /compare/momentic-vs-testrigor/ 301
 /compare/zapier-mcp-vs-arcade/ /compare/arcade-vs-zapier-mcp/ 301
+/compare/datafold-vs-datagaps-etl-validator/ /compare/datagaps-etl-validator-vs-datafold/ 301
+/compare/datafold-vs-tricentis-data-integrity/ /compare/tricentis-data-integrity-vs-datafold/ 301
+/compare/fab-inspector-vs-tricentis-data-integrity/ /compare/tricentis-data-integrity-vs-fab-inspector/ 301
+/compare/icedq-vs-datagaps-etl-validator/ /compare/datagaps-etl-validator-vs-icedq/ 301
+/compare/informatica-cloud-data-validation-vs-datafold/ /compare/datafold-vs-informatica-cloud-data-validation/ 301
+/compare/informatica-cloud-data-validation-vs-datagaps-etl-validator/ /compare/datagaps-etl-validator-vs-informatica-cloud-data-validation/ 301
+/compare/querysurge-vs-datagaps-etl-validator/ /compare/datagaps-etl-validator-vs-querysurge/ 301
+/compare/querysurge-vs-tricentis-data-integrity/ /compare/tricentis-data-integrity-vs-querysurge/ 301
+/compare/spectacles-vs-tricentis-data-integrity/ /compare/tricentis-data-integrity-vs-spectacles/ 301
+/compare/informatica-cloud-data-validation-vs-tricentis-data-integrity/ /compare/tricentis-data-integrity-vs-informatica-cloud-data-validation/ 301

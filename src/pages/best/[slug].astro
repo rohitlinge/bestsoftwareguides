@@ -73,7 +73,7 @@ const jsonld = [
       <p><strong>{list.map((t) => t.name).join(', ')}</strong> have free plans. The highest-ranked is <strong>{top.name}</strong> ({top.score}/10): {top.freePlanDetails}</p>
     ) : (
       <>
-        {feat && <p><span class="badge featured">{featuredLabel}</span> <strong>{feat.name}</strong> is {listedAt(feat.pos ?? feat.rank)}: {lc1(feat.tagline)} Score {feat.score}/10. <a href="/disclosure/">What featured means</a>.</p>}
+        {feat && <p><span class="badge featured">{featuredLabel}</span> <strong>{feat.name}</strong> is {listedAt(feat.pos ?? feat.rank)}: {lc1(feat.tagline)} Score {feat.score}/10.{feat.ownProduct && ' It is built by the team behind this site.'} <a href="/disclosure/">What featured means</a>.</p>}
         <p><strong>{top.name} is the {feat && feat !== top ? 'highest-scoring' : 'top-ranked'} {singular}</strong> of the {list.length} we ranked ({top.score}/10{top.freePlan ? ', free plan' : ''}), best for {lc1(top.bestFor)}. {second && <><strong>{second.name}</strong> is the runner-up ({second.score}/10).</>} {topFree && <>The highest-ranked option with a free plan is <strong>{topFree.name}</strong> ({topFree.score}/10).</>}</p>
         {cheapest && <p>Cheapest paid entry: <strong>{cheapest.name}</strong> at {money(cheapest.entryPrice)}{per(cheapest)}nth billed annually.</p>}
       </>

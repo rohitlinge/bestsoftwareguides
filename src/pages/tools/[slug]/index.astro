@@ -53,7 +53,8 @@ const rankText = (x: Tool) => (x.featured ? `${featuredLabel}, ${listedAt(x.rank
     <p><strong>Price:</strong> {priceLine(t)}.</p>
   </div>
 
-  {featuredIn.length > 0 && <p class="small muted">Disclosure: {t.name} is a featured partner of {site.name} and is placed above its score position in {featuredIn.map((x) => `${x.c.name} (${listedAt(x.t.rank)})`).join(', ')}. That does not change its score, pros, cons or prices on this page. <a href="/disclosure/">Read our disclosure</a>.</p>}
+  {t.ownProduct && <p class="small muted">Disclosure: {t.name} is built by the team behind {site.name}. Its score, pros, cons and prices come from the same data and formula as every other tool. <a href="/disclosure/">Read our disclosure</a>.</p>}
+  {featuredIn.length > 0 && !t.ownProduct && <p class="small muted">Disclosure: {t.name} is a featured partner of {site.name} and is placed above its score position in {featuredIn.map((x) => `${x.c.name} (${listedAt(x.t.rank)})`).join(', ')}. That does not change its score, pros, cons or prices on this page. <a href="/disclosure/">Read our disclosure</a>.</p>}
   <div class="btn-row">
     <a class="btn" href={t.website} rel="nofollow noopener" target="_blank">Visit {t.name}</a>
     <a class="btn ghost" href={`/tools/${t.slug}/pricing/`}>Full pricing</a>

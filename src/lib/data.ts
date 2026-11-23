@@ -8,6 +8,7 @@ export type Source = { label: string; url: string; date?: string };
 export type Tool = {
   slug: string; name: string; category: string; alsoIn?: string[]; website: string; pricingUrl: string;
   logo?: string; // official icon URL on the vendor's site (scripts/find-logos.mjs)
+  ownProduct?: boolean; // built by the team behind this site; always disclosed, and listed on /disclosure/
   tagline: string; bestFor: string; description: string; pros: string[]; cons: string[];
   freePlan: boolean; freePlanDetails: string | null; trial: string | null; minSeats: number;
   plans: Plan[]; features: Record<string, boolean | null>; platforms: string[];

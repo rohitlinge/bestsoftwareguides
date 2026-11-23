@@ -1,11 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
-import { site, categories } from '../lib/data';
+import { site, categories, tools } from '../lib/data';
+const own = tools.filter((t) => t.ownProduct);
 // Every live ranking with a featured partner, grouped by partner, so readers can see exactly where each one is pinned.
 const partners = new Map<string, { name: string; slug: string; cats: { name: string; slug: string; rank: number }[] }>();
 for (const c of categories) {
   const t = c.tools.find((x) => x.featured);
-  if (!t) continue;
+  if (!t || t.ownProduct) continue;
   if (!partners.has(t.slug)) partners.set(t.slug, { name: t.name, slug: t.slug, cats: [] });
   partners.get(t.slug)!.cats.push({ name: c.name, slug: c.slug, rank: t.rank });
 }
@@ -25,6 +26,13 @@ for (const c of categories) {
         <ul>
           {[...partners.values()].map((p) => <li><a href={`/tools/${p.slug}/`}>{p.name}</a>: {p.cats.map((c, i) => <>{i > 0 && ', '}<a href={`/best/${c.slug}/`}>{c.name}</a> (#{c.rank})</>)}</li>)}
         </ul>
+      </>
+    )}
+    {own.length > 0 && (
+      <>
+        <h2>Our own products</h2>
+        <p>The team behind {site.name} also builds the products below. Each is disclosed on its ranking and product pages, and its score comes from the same data and formula as every other tool.</p>
+        <ul>{own.map((t) => <li><a href={`/tools/${t.slug}/`}>{t.name}</a> (<a href={t.website} rel="nofollow">{new URL(t.website).host}</a>)</li>)}</ul>
       </>
     )}
     <p>Questions: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a></p>

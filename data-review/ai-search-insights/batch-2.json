@@ -1,0 +1,891 @@
+[
+  {
+    "slug": "semrush-ai-visibility-toolkit",
+    "name": "Semrush AI Visibility Toolkit",
+    "category": "ai-search-insights-tools",
+    "website": "https://www.semrush.com/kb/1493-ai-visibility-toolkit",
+    "logo": "https://www.semrush.com/__static__/favicon.d8fbaa3a030a.ico",
+    "pricingUrl": "https://www.semrush.com/pricing/ai/",
+    "tagline": "Semrush toolkit that tracks brand mentions, share of voice and sentiment in ChatGPT, Google AI Mode, AI Overviews, Gemini and Perplexity.",
+    "bestFor": "Teams already using Semrush for SEO who want AI visibility in the same account",
+    "description": "The AI Visibility Toolkit is a $99-per-month Semrush toolkit with Visibility Overview, Competitor Research, Prompt Research, Brand Performance, Prompt Tracking and an AI Search site audit. It includes 25 tracked prompts and one Brand Performance domain; the Semrush One SEO + AI Search bundles raise prompt limits. Semrush has been owned by Adobe since April 28, 2026.",
+    "pros": [
+      "Brand Performance reports share of voice, sentiment, key narratives and AI-generated strategic recommendations",
+      "Prompt Research database with topic-level volume, difficulty and intent (1,000 queries per day)",
+      "Competitor Research compares AI visibility against up to four competitors at once",
+      "Prompt Tracking runs daily on Google AI Mode, AI Overviews, Gemini and ChatGPT Search",
+      "Site Audit checks access for eight AI crawlers"
+    ],
+    "cons": [
+      "Only 25 tracked prompts and 1 Brand Performance domain at $99/mo; 50 more prompts cost $60/mo and each extra domain $99/mo",
+      "Claude and Copilot are not tracked, and Perplexity is only covered in Brand Performance",
+      "Each teammate in a corporate account needs their own $99 license",
+      "No API for AI visibility data is documented for the toolkit; CSV exports are capped at 10 per day (1,000 rows each)",
+      "Semrush pages disagree on details: the KB says no free trial for the toolkit while the pricing page offers 7 days free, and Advanced is listed as 200 prompts in the KB but unlimited on the pricing page"
+    ],
+    "freePlan": true,
+    "freePlanDetails": "Semrush Free: $0, no credit card, 1 demo project and 10 reports per day; the pricing page lists 'AI Visibility features' with no prompt count.",
+    "trial": "Semrush advertises 'Try Semrush free for seven days'; the toolkit KB article says the AI Visibility Toolkit itself has no free trial.",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Free",
+        "monthly": 0,
+        "annual": null,
+        "custom": false,
+        "notes": "1 demo project, 10 reports per day across tools; 'AI Visibility features' listed without limits."
+      },
+      {
+        "name": "AI Visibility Toolkit",
+        "monthly": 99,
+        "annual": 99,
+        "custom": false,
+        "notes": "Per domain. 25 tracked prompts (daily), 1 domain for Brand Performance, 300 AI Analysis reports and 1,000 Prompt Research queries per day, Site Audit AI checks for up to 100 pages. Add-ons: +50 prompts $60/mo, extra Brand Performance domain $99/mo. KB lists $99 per month; the pricing page shows $99/mo billed annually."
+      },
+      {
+        "name": "Semrush One Starter (SEO + AI Search)",
+        "monthly": 199,
+        "annual": 165.17,
+        "custom": false,
+        "notes": "Bundles the SEO Toolkit: 5 websites, 500 keywords tracked daily, 50 prompts tracked daily, 1 domain for AI brand performance, 300 AI visibility reports per day."
+      },
+      {
+        "name": "Semrush One Pro+ (SEO + AI Search)",
+        "monthly": 299,
+        "annual": 248.17,
+        "custom": false,
+        "notes": "15 websites, 1,500 keywords tracked daily, 100 prompts tracked daily."
+      },
+      {
+        "name": "Semrush One Advanced / Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Advanced is 'Talk to sales' with 40+ websites and 'Unlimited prompts to track daily' (the KB says 200 prompts). Enterprise adds custom large-scale prompt tracking, multi-brand AI visibility and 'Custom integrations & API'."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": false,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": null
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Part of the Semrush platform (SEO, Content and other toolkits); CSV export (10 per day, up to 1,000 rows)",
+    "compliance": [],
+    "support": [],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Semrush AI Visibility pricing",
+        "url": "https://www.semrush.com/pricing/ai/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Semrush prices (SEO + AI Search plans)",
+        "url": "https://www.semrush.com/prices/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Semrush KB: AI Visibility Toolkit",
+        "url": "https://www.semrush.com/kb/1493-ai-visibility-toolkit",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Semrush KB: AI Visibility data sources",
+        "url": "https://www.semrush.com/kb/1607-semrush-ai-visibility-data",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Semrush KB: Features for AI visibility",
+        "url": "https://www.semrush.com/kb/1626-ai-visibility-features",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Semrush news: Adobe completes Semrush acquisition",
+        "url": "https://www.semrush.com/news/455953-adobe-completes-semrush-acquisition-strengthening-cx-enterprise-with-enhanced-brand-visibility-capabilities/",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "ahrefs-brand-radar",
+    "name": "Ahrefs Brand Radar",
+    "category": "ai-search-insights-tools",
+    "website": "https://ahrefs.com/brand-radar",
+    "logo": "https://static.ahrefs.com/apple-touch-icon.png?v=2",
+    "pricingUrl": "https://ahrefs.com/pricing",
+    "tagline": "Ahrefs add-on that tracks brand mentions, citations, share of voice and sentiment across eight AI platforms, using custom prompts or a 585M-prompt database.",
+    "bestFor": "Ahrefs subscribers who want AI visibility data next to their SEO data",
+    "description": "Brand Radar has two parts: Prompt Tracking for your own prompts and the AI Visibility Index, a database of 585 million+ organic prompts. It covers Google AI Overviews, AI Mode, ChatGPT, Copilot, Gemini, Perplexity and Claude (custom prompts only), and the API also lists Grok. Paid Ahrefs plans from Lite ($129/mo) include a few tracked prompts; the AI Visibility Index starts at $199/mo and custom prompt packages at $50/mo on top of an Ahrefs plan.",
+    "pros": [
+      "Research any brand in a database of 585 million+ prompts without setting up tracking first",
+      "Tracked prompts are included free on Lite (5 prompts, 150 checks/mo), Standard (10) and Advanced (20)",
+      "Citations, cited domains, cited pages, share of voice and sentiment are reported",
+      "Brand Radar data is in the Ahrefs API v3 and MCP; custom-prompt-only API requests cost no API units",
+      "Shows the fan-out queries AI generates behind a prompt"
+    ],
+    "cons": [
+      "Requires a paid Ahrefs subscription; Lite is $129/mo before any Brand Radar add-on",
+      "Usage is metered in checks (one prompt on one platform in one location); overage is $0.010-$0.020 per check",
+      "Claude consumes 8 checks per update and is available for custom prompts only",
+      "The pricing page says annual billing saves up to 17% but does not show annual prices",
+      "The Brand Radar page does not describe a recommendations feature beyond gap and fan-out analysis"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free Brand Radar plan. Ahrefs has an 'Ahrefs Free' plan, but prompt tracking is listed as included from Lite ($129/mo) upward.",
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Included with Ahrefs Lite / Standard / Advanced",
+        "monthly": 129,
+        "annual": null,
+        "custom": false,
+        "notes": "Price is the Ahrefs Lite base plan. Included prompt tracking: Lite 5 prompts / 150 checks per month; Standard ($249/mo) 10 / 300; Advanced ($449/mo) 20 / 600. Daily updates."
+      },
+      {
+        "name": "Custom prompts Basic (add-on)",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$50/mo on top of an Ahrefs plan (Lite from $129/mo). +2,500 checks/mo, overage $0.020/check. Requires an Ahrefs plan."
+      },
+      {
+        "name": "Custom prompts Growth (add-on)",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$100/mo on top of an Ahrefs plan (Lite from $129/mo). +7,000 checks/mo, overage $0.015/check. Requires an Ahrefs plan."
+      },
+      {
+        "name": "Custom prompts Scale (add-on)",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$250/mo on top of an Ahrefs plan (Lite from $129/mo). +25,000 checks/mo, overage $0.010/check. Requires an Ahrefs plan."
+      },
+      {
+        "name": "AI Visibility Index (add-on)",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "$199/mo on top of an Ahrefs plan (Lite from $129/mo). 'Starts at $199/mo': access to the 585M+ prompt database, 83 prompts/day, +2,500 checks/month, all platforms (Claude available), overage $0.020/check. Prices exclude tax. Requires an Ahrefs plan."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "From 2,500 checks and from 83 prompts; uncapped API access."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": null,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": null,
+    "hq": "Singapore",
+    "integrations": "Ahrefs API v3 Brand Radar endpoints (AI responses, citations, cited domains and pages, mentions, share of voice) and Ahrefs MCP; API and MCP access on Lite and above",
+    "compliance": [],
+    "support": [],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Ahrefs Brand Radar",
+        "url": "https://ahrefs.com/brand-radar",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Ahrefs pricing",
+        "url": "https://ahrefs.com/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Ahrefs API docs: Brand Radar cited domains",
+        "url": "https://docs.ahrefs.com/en/api/reference/brand-radar/post-cited-domains",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Ahrefs about",
+        "url": "https://ahrefs.com/about",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "se-visible",
+    "name": "SE Visible",
+    "category": "ai-search-insights-tools",
+    "website": "https://visible.seranking.com/",
+    "logo": "https://visible.seranking.com/wp-content/themes/se_visible/images/favicon.svg",
+    "pricingUrl": "https://visible.seranking.com/pricing/",
+    "tagline": "SE Ranking's standalone AI visibility tracker for ChatGPT, AI Overviews, AI Mode, Gemini, Copilot and (on Agency) Claude.",
+    "bestFor": "Agencies and marketers who want prompt tracking with unlimited seats and competitors",
+    "description": "SE Visible is a standalone AI visibility product from SE Ranking, also included in a limited form in SE Ranking's SEO plans. It reports visibility score, share of voice, average position and net sentiment, plus cited domains and pages, for prompts run on ChatGPT, Google AI Overviews, AI Mode, Gemini and Copilot. Plans run from $89/mo (75 prompts) to $399/mo (1,000 prompts) on monthly billing.",
+    "pros": [
+      "Unlimited user seats and unlimited competitors on every plan",
+      "API, MCP and Data Studio connector included from the $89 Basic plan",
+      "Citation analytics show cited domains and pages, citation share and gaps",
+      "Annual billing saves 20% (Basic $71/mo)",
+      "14-day free trial"
+    ],
+    "cons": [
+      "Perplexity is not listed among tracked engines",
+      "Claude is only on the Agency plan ($399/mo) and is queried through the API without web search",
+      "Basic allows 1 location per project; each location counts as a separate tracked prompt",
+      "Agents (recommendations) are in beta, and 'AI Brand Sentiment Tracking' is marked coming soon"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. Every SE Ranking SEO subscription (Core from $129/mo) includes a 25-prompt Start package of SE Visible.",
+    "trial": "14-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Basic",
+        "monthly": 89,
+        "annual": 71,
+        "custom": false,
+        "notes": "75 tracked prompts (about 11,250 AI answers/mo), 5 projects, 1 location per project, daily tracking, unlimited seats. ChatGPT, AI Overviews, AI Mode, Gemini, Copilot."
+      },
+      {
+        "name": "Core",
+        "monthly": 189,
+        "annual": 151,
+        "custom": false,
+        "notes": "200 tracked prompts (about 30,000 AI answers/mo), 10 projects, unlimited locations."
+      },
+      {
+        "name": "Agency",
+        "monthly": 399,
+        "annual": 319,
+        "custom": false,
+        "notes": "1,000 tracked prompts (about 180,000 AI answers/mo), 30 projects, daily or weekly tracking, adds Claude tracking and a customer success manager."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "From 2,000 prompts, unlimited projects."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": false,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2013,
+    "hq": "London, UK (SE Ranking legal address; also Wilmington, DE)",
+    "integrations": "API, MCP, Looker Studio (Data Studio) connector, CSV export, weekly email report; included in SE Ranking SEO plans",
+    "compliance": [],
+    "support": [],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "SE Visible pricing",
+        "url": "https://visible.seranking.com/pricing/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "SE Ranking AI visibility tracker",
+        "url": "https://seranking.com/ai-visibility-tracker.html",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "SE Ranking pricing",
+        "url": "https://seranking.com/pricing.html",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "SE Ranking about",
+        "url": "https://seranking.com/about.html",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "writesonic-geo",
+    "name": "Writesonic GEO",
+    "category": "ai-search-insights-tools",
+    "website": "https://writesonic.com/ai-visibility",
+    "logo": "https://writesonic.com/apple-icon.png",
+    "pricingUrl": "https://writesonic.com/pricing",
+    "tagline": "AI visibility platform that tracks prompts in ChatGPT, Gemini and Google AI Overviews and adds content and fix recommendations.",
+    "bestFor": "Content teams that want tracking plus AI-written articles and site fixes in one tool",
+    "description": "Writesonic's GEO product tracks how often a brand appears in AI answers, which pages and domains are cited, competitor share of voice and sentiment. Self-serve plans (from $79/mo billed annually) track ChatGPT, Gemini and Google AI Overviews; Perplexity, Claude, Grok, Google AI Mode and Muse Spark are Enterprise-only. Plans also include site audits and AI-written articles.",
+    "pros": [
+      "Collects answers from the AI web interfaces rather than the APIs",
+      "Citation analysis by page, domain and source type (media, blogs, forums, UGC)",
+      "Includes 15 to 50 AI articles per month and 10 to 50 site audits per month",
+      "Documented Geo Presence API exports daily KPIs, prompt-level results, raw answers and citations",
+      "7-day free trial on all self-serve plans"
+    ],
+    "cons": [
+      "Self-serve plans track only 3 platforms; Perplexity and Claude require Enterprise",
+      "Sentiment starts at Growth ($399/mo annual), and Action Center is only a trial (5 on-page and 5 off-page actions/mo) below Enterprise",
+      "Monthly prices are not shown directly; $99, $249 and $499 are derived from the stated yearly savings",
+      "Trial requires a card; no free plan",
+      "SSO, SOC 2 Type II, HIPAA, GA4 and Looker Studio integrations are Enterprise-only"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan.",
+    "trial": "7-day free trial on Starter, Basic and Growth; card required",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 99,
+        "annual": 79,
+        "custom": false,
+        "notes": "50 prompts (150 daily answers), 1 user, 1 project, 1 market; ChatGPT, Gemini, Google AI Overviews; 15 AI articles/mo. Monthly price derived from 'Save $240/year'."
+      },
+      {
+        "name": "Basic",
+        "monthly": 249,
+        "annual": 199,
+        "custom": false,
+        "notes": "100 prompts (300 daily answers), 2 users (up to 3 more at $50/user/mo), 1 project; 25 AI articles/mo. Monthly price derived from 'Save $600/year'."
+      },
+      {
+        "name": "Growth",
+        "monthly": 499,
+        "annual": 399,
+        "custom": false,
+        "notes": "200 prompts (600 daily answers), 3 users (up to 2 more), 2 projects; adds sentiment and an Action Center trial; 50 AI articles/mo. Monthly price derived from 'Save $1200/year'."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "All 8 platforms: ChatGPT, Perplexity, Claude, Gemini, Grok, Google AI Mode, Google AI Overviews, Muse Spark. Full Action Center, SSO/SAML, SOC 2 Type II, HIPAA, GDPR."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": null,
+    "hq": "Wilmington, DE (postal address on site; team is remote)",
+    "integrations": "Geo Presence API; Slack, Google Analytics, Search Console, Looker Studio, WordPress, MCP; PDF/CSV export",
+    "compliance": [
+      "SOC 2 Type II (Enterprise)",
+      "HIPAA (Enterprise)",
+      "GDPR"
+    ],
+    "support": [],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Writesonic pricing",
+        "url": "https://writesonic.com/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Writesonic AI visibility",
+        "url": "https://writesonic.com/ai-visibility",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Writesonic docs (Geo Presence API)",
+        "url": "https://docs.writesonic.com/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Writesonic about",
+        "url": "https://writesonic.com/about",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "similarweb-ai-brand-visibility",
+    "name": "Similarweb AI Brand Visibility",
+    "category": "ai-search-insights-tools",
+    "website": "https://aisearch.similarweb.com/ai-brand-visibility/",
+    "logo": "https://aisearch.similarweb.com/similarweb-76x76.png",
+    "pricingUrl": "https://www.similarweb.com/packages/ai-search/",
+    "tagline": "Prompt tracker in Similarweb's AI Search Intelligence that reports brand mentions, citations and sentiment in ChatGPT, AI Mode, Gemini and Perplexity.",
+    "bestFor": "Marketers who also want Similarweb's AI referral traffic and competitive data",
+    "description": "AI Brand Visibility is part of Similarweb's AI Search Intelligence plans and tracks 150 prompts on ChatGPT, Google AI Mode, Gemini and Perplexity, with citation analysis down to the exact link and positive/neutral/negative sentiment. The entry AEO Intelligence plan is $129/mo monthly or $99/mo billed annually and also includes AI Traffic data. Prompt-level responses, citations and sentiment are available through the Gen AI Intelligence API.",
+    "pros": [
+      "Shows the top 30 brands per topic and brand mention share against competitors",
+      "Citation Analysis shows the sources behind answers down to the exact URL",
+      "AI Traffic shows referral visits from ChatGPT, Copilot, Claude, DeepSeek and Grok",
+      "Gen AI Intelligence API returns daily responses, brands mentioned, citations and sentiment per prompt",
+      "Data available within an hour of campaign setup, updated daily"
+    ],
+    "cons": [
+      "150 tracked prompts and 1 user on every listed plan, including the $649/mo tier",
+      "Claude, Copilot and Grok are covered only for referral traffic, not prompt tracking",
+      "Only 3 months of history on the $99 plan (6 months on higher tiers)",
+      "API calls consume data credits (rows x metrics)",
+      "Free trial length is not stated, and an 'AI Optimization Recommendations' feature is linked but not described or tied to a plan"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan.",
+    "trial": "Free trial offered; length not stated",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "AEO Intelligence",
+        "monthly": 129,
+        "annual": 99,
+        "custom": false,
+        "notes": "1 user; AI Brand Visibility with 150 tracked prompts, Sentiment Analysis, Citation Analysis, AI Traffic; 3 months of history."
+      },
+      {
+        "name": "AEO & SEO & Competitive Intel",
+        "monthly": 399,
+        "annual": 333,
+        "custom": false,
+        "notes": "1 user, 150 prompts; adds SEO Intelligence (keyword research, rank tracker, site audit, backlinks) and Competitive Intelligence; 6 months of history."
+      },
+      {
+        "name": "AEO & SEO & Ads & Competitive Intel",
+        "monthly": 649,
+        "annual": 542,
+        "custom": false,
+        "notes": "1 user, 150 prompts; adds Ad Intelligence; 6 months of history."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": false,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": null,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": null,
+    "hq": "Givatayim, Israel",
+    "integrations": "Similarweb API v5 (Gen AI Intelligence endpoints), Similarweb MCP, data feeds",
+    "compliance": [],
+    "support": [],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Similarweb AI Brand Visibility",
+        "url": "https://aisearch.similarweb.com/ai-brand-visibility/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Similarweb AI Search Intelligence (plans)",
+        "url": "https://aisearch.similarweb.com/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Similarweb GEO tools",
+        "url": "https://aisearch.similarweb.com/geo/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Similarweb API docs: Gen AI prompt tracking",
+        "url": "https://docs.similarweb.com/api-v5/api-reference/gen-ai-intelligence-api/gen-ai-prompt-tracking",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Similarweb investor relations",
+        "url": "https://ir.similarweb.com/",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "gauge",
+    "name": "Gauge",
+    "category": "ai-search-insights-tools",
+    "website": "https://www.withgauge.com/",
+    "logo": "https://www.withgauge.com/icon.png",
+    "pricingUrl": "https://www.withgauge.com/pricing",
+    "tagline": "AI visibility tracker with an Action Center and content engine, priced from $599/mo for 600 daily prompts.",
+    "bestFor": "Mid-size and larger brands tracking hundreds of prompts that want recommended actions and articles",
+    "description": "Gauge Chat runs prompts daily and checks each answer for whether a brand is mentioned and cited, showing which websites and pages AI models cite, including Reddit and YouTube. The self-serve Growth plan ($599/mo) covers 600 prompts on ChatGPT, Google AI Mode and Microsoft Copilot, with Claude and Grok optional using your own API keys; Gemini, Perplexity and AI Overviews are Enterprise-only. Gauge also sells a separate Gauge Agents product for coding-agent evaluations.",
+    "pros": [
+      "600 prompts run daily (54,000 answers per month) on the Growth plan",
+      "Unlimited domains and competitors",
+      "Action Center plus 18 AI-written articles per month on Growth",
+      "Documented Chat API (OpenAPI spec), MCP server and CLI",
+      "Slack integration and Ask Gauge chat included"
+    ],
+    "cons": [
+      "Entry price is $599/mo with no annual price or free trial listed",
+      "Growth covers only ChatGPT, Google AI Mode and Copilot; Gemini, Perplexity and AI Overviews need Enterprise",
+      "Claude and Grok tracking require your own API keys",
+      "Sentiment analysis and exports are Enterprise-only",
+      "Growth includes 3 seats"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan for AI visibility (Gauge Chat). The free hosted plan on the pricing page belongs to the separate Gauge Agents product.",
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Growth",
+        "monthly": 599,
+        "annual": null,
+        "custom": false,
+        "notes": "600 prompts run daily (54,000 answers/mo), 3 seats, unlimited domains and competitors; ChatGPT, Google AI Mode, Microsoft Copilot; Claude and Grok optional with your own API keys; Action Center, 18 articles/mo, MCP, Slack."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom prompts and seats; 6 core platforms (ChatGPT, Google AI Mode, Copilot, Google AI Overviews, Gemini, Perplexity) plus optional Claude and Grok; adds sentiment analysis and exports."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": null,
+    "hq": "San Francisco, CA",
+    "integrations": "Gauge Chat API, MCP, CLI, Slack, GA4, Search Console, DataForSEO",
+    "compliance": [],
+    "support": [
+      "Email",
+      "Slack"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Gauge pricing",
+        "url": "https://www.withgauge.com/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Gauge homepage",
+        "url": "https://www.withgauge.com/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Gauge docs",
+        "url": "https://docs.withgauge.com/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Gauge Chat API reference",
+        "url": "https://docs.withgauge.com/chat/api-reference/overview",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Gauge llms.txt",
+        "url": "https://www.withgauge.com/llms.txt",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "trakkr",
+    "name": "Trakkr",
+    "category": "ai-search-insights-tools",
+    "website": "https://trakkr.ai/",
+    "logo": "https://trakkr.ai/favicon-96x96.png",
+    "pricingUrl": "https://trakkr.ai/pricing",
+    "tagline": "London-based AI visibility tracker that checks 8 AI models daily and drafts fixes for your site.",
+    "bestFor": "Small teams and agencies that want all major engines on the entry plan",
+    "description": "Trakkr checks prompts daily on ChatGPT, Claude, Gemini, Perplexity, Grok, Meta AI, DeepSeek and Google AI Overviews and reports citations, competitor share of voice and how AI describes a brand on 20 traits. Its Fixes feature drafts specific changes and ships them to the site. Growth costs $100/mo ($1,000/yr) for 1 brand with 50 prompts; Trakkr was founded in London in 2025.",
+    "pros": [
+      "All 8 AI models checked daily on the $100/mo Growth plan",
+      "Citations and competitor share of voice on every self-serve plan",
+      "Drafted fixes plus 25 to 100 articles per month",
+      "CSV and Google Sheets export on all plans; REST API and Looker Studio on Scale",
+      "14-day free trial; no charge if cancelled before it ends"
+    ],
+    "cons": [
+      "50 prompts per brand on Growth; extra prompt packs are $39/brand/mo for 50 more",
+      "REST API and white-label client portals require Scale ($500/mo)",
+      "Google AI Mode and Copilot are not listed among tracked models",
+      "No explicit sentiment score; 'Perception' rates how AI describes the brand on 20 traits",
+      "ChatGPT shopping tracking is a $49/mo per brand add-on"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. The Managed plan includes a free 90-day plan period, which Trakkr says is not a trial.",
+    "trial": "14-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Growth",
+        "monthly": 100,
+        "annual": 83.33,
+        "custom": false,
+        "notes": "$1,000/yr. 1 brand (extra $50/mo each), 50 prompts per brand, all 8 models daily, 12,000 AI answers/mo, 3 seats (extra $20/mo), 25 articles/mo, MCP."
+      },
+      {
+        "name": "Scale",
+        "monthly": 500,
+        "annual": 416.67,
+        "custom": false,
+        "notes": "$5,000/yr. 10 brands, 50 prompts per brand, 120,000 AI answers/mo, unlimited seats, 100 articles/mo, REST API, Looker Studio, white-label client portals."
+      },
+      {
+        "name": "Managed",
+        "monthly": 2500,
+        "annual": 2000,
+        "custom": false,
+        "notes": "Scale plus a team that ships fixes, pages, pitches and listings. Larger brands start at $6,000/mo."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Annual contract, invoiced; SSO and security review support."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": null,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2025,
+    "hq": "London, UK",
+    "integrations": "REST API and Looker Studio (Scale), MCP for ChatGPT and Claude, CSV and Google Sheets export",
+    "compliance": [
+      "GDPR (vendor statement)",
+      "Encryption in transit and at rest",
+      "SSO (Enterprise)"
+    ],
+    "support": [],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Trakkr pricing",
+        "url": "https://trakkr.ai/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Trakkr homepage",
+        "url": "https://trakkr.ai/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Trakkr about",
+        "url": "https://trakkr.ai/about",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "promptmonitor",
+    "name": "Promptmonitor",
+    "category": "ai-search-insights-tools",
+    "website": "https://promptmonitor.io/",
+    "logo": "https://promptmonitor.io/assets/favicon.png",
+    "pricingUrl": "https://promptmonitor.io/pricing",
+    "tagline": "Low-cost AI visibility tracker with citation and competitor tracking, sentiment and a weekly Actions list, from $39/mo.",
+    "bestFor": "Small businesses and solo marketers on a tight budget",
+    "description": "Promptmonitor tracks prompts on ChatGPT, Gemini and Perplexity (Starter), adds Claude and DeepSeek on Growth and covers 8 models on Pro, logging mentions, sentiment, competitors and cited sources for each answer. Its Actions page suggests content to create, publishers to pitch and page fixes, and it extracts publisher contacts from cited sources. Plans cost $39, $79 and $149 per month.",
+    "pros": [
+      "Starter is $39/mo (from $33/mo billed yearly) with sentiment, competitor and citation tracking",
+      "Actions page recommends content creation, source outreach, prompt-gap pages, sentiment fixes and page optimizations",
+      "Unlimited seats from the Growth plan",
+      "Geographic targeting in 200+ cities",
+      "7-day free trial; the FAQ says no card is needed to explore the dashboard"
+    ],
+    "cons": [
+      "Starter tracks only 25 prompts, twice a week, on 3 models",
+      "API access is Enterprise-only and no public API docs were found",
+      "CSV exports, web/bot analytics and Search Console need Growth or Pro",
+      "Google AI Overviews / AI Mode coverage is unclear: the homepage FAQ omits them and the pricing page does not name the 8th model",
+      "Credits (one per prompt x location x model) reset each cycle and do not roll over"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan.",
+    "trial": "7-day free trial on any paid plan",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 39,
+        "annual": 33,
+        "custom": false,
+        "notes": "2,250 AI answers/mo, 1 website, 25 prompts tracked twice a week, 1 seat; ChatGPT, Gemini, Perplexity. Annual figure is the page's 'Starting at $33/mo' (yearly billing saves about 15%)."
+      },
+      {
+        "name": "Growth",
+        "monthly": 79,
+        "annual": null,
+        "custom": false,
+        "notes": "4,500 AI answers/mo, 2 websites, 50 prompts tracked daily, unlimited seats; adds Claude and DeepSeek (5 models), CSV export, web/bot analytics, Search Console. Yearly price not shown."
+      },
+      {
+        "name": "Pro",
+        "monthly": 149,
+        "annual": null,
+        "custom": false,
+        "notes": "14,000 AI answers/mo, 5 websites, 150 prompts tracked daily, unlimited seats; all 8 models including Grok. Yearly price not shown."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "More than 20 websites, custom prompt volume, SSO, API access, dedicated manager."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": null,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "Google Search Console, CSV export (Growth and Pro), site snippet for AI bot analytics, API (Enterprise)",
+    "compliance": [],
+    "support": [
+      "Chat",
+      "Email"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Promptmonitor pricing",
+        "url": "https://promptmonitor.io/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Promptmonitor homepage",
+        "url": "https://promptmonitor.io/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Promptmonitor help: Credits, plans and usage",
+        "url": "https://help.promptmonitor.io/articles/4272837-credits-plans-and-usage",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Promptmonitor help: Actions",
+        "url": "https://help.promptmonitor.io/articles/4624631-actions-your-weekly-to-do-list-for-ai-visibility",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Promptmonitor changelog",
+        "url": "https://updates.promptmonitor.io/changelog",
+        "date": "2026-11-23"
+      }
+    ]
+  }
+]

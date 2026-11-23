@@ -66,7 +66,7 @@ export function rankingMd(c: Category, u?: UseCase) {
     '',
     u ? `${u.intro}\n\nRule: ${u.ruleText}` : c.intro,
     '',
-    `**Highest score:** ${lead.name} (${lead.score}/10).${feat ? ` **${featuredLabel}:** ${feat.name} is ${listedAt(feat.pos ?? feat.rank)} by arrangement; its own score is ${feat.score}/10 (#${feat.scoreRank} by score). Every other tool is in score order.` : ''}`,
+    `**Highest score:** ${lead.name} (${lead.score}/10).${feat ? ` **${featuredLabel}:** ${feat.name} is ${listedAt(feat.pos ?? feat.rank)} ${feat.ownProduct ? 'because it is built by the team behind this site' : 'by arrangement'}; its own score is ${feat.score}/10 (#${feat.scoreRank} by score). Every other tool is in score order.` : ''}`,
     '',
     '## Ranking',
     '',

@@ -105,6 +105,16 @@
       "slug": "ai-test-automation-tools",
       "day": 4,
       "comparesDay": 4
+    },
+    {
+      "slug": "ai-search-insights-tools",
+      "day": 9,
+      "comparesDay": 9
+    },
+    {
+      "slug": "data-testing-tools",
+      "day": 9,
+      "comparesDay": 9
     }
   ],
   "posts": [
@@ -211,6 +221,22 @@
     {
       "slug": "new-mcp-gateways-2026",
       "day": 8
+    },
+    {
+      "slug": "ai-visibility-tool-pricing-2026",
+      "day": 9
+    },
+    {
+      "slug": "what-is-geo-ai-search-visibility",
+      "day": 9
+    },
+    {
+      "slug": "free-open-source-data-testing-tools",
+      "day": 9
+    },
+    {
+      "slug": "data-testing-vs-data-observability",
+      "day": 9
     }
   ]
 }

@@ -323,7 +323,15 @@
         }
       }
     ],
-    "compareTop": 6
+    "compareTop": 6,
+    "comparePairs": [
+      ["datafold", "bigeval"],
+      ["datagaps-etl-validator", "bigeval"],
+      ["dbt", "bigeval"],
+      ["icedq", "bigeval"],
+      ["querysurge", "bigeval"],
+      ["informatica-cloud-data-validation", "tricentis-data-integrity"]
+    ]
   },
   {
     "slug": "data-reconciliation-tools",
@@ -1288,5 +1296,143 @@
       ["testrigor", "momentic"],
       ["testrigor", "reflect"]
     ]
+  },
+  {
+    "slug": "ai-search-insights-tools",
+    "name": "AI Search Insights Tools",
+    "singular": "AI search insights tool",
+    "plural": "AI search insights tools",
+    "topic": "Websites & Marketing",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "AI search insights tools (also called AI visibility, GEO or AEO trackers) run the questions your customers ask through ChatGPT, Perplexity, Gemini, Claude and Google AI Overviews, then report whether your brand is mentioned, where it appears in the answer, which competitors show up instead and which web pages the AI cited. The main differences are which AI engines each tool covers, how many prompts a plan includes, and whether it goes beyond tracking to tell you what to change. Disclosure: AI Search Inspector (aisearchinsights.online), listed first, is built by the team behind this site.",
+    "buyingTips": [
+      "Count your prompts first. Most plans are priced by the number of prompts tracked (often 25 to 500), and each prompt is usually run on every engine you pick.",
+      "Check which engines are on your plan. Google AI Overviews, AI Mode, Gemini and Claude are often only on higher tiers.",
+      "Citation tracking matters more than a visibility score: the cited pages are the ones you can improve or ask to mention you.",
+      "Answers vary from run to run, so prefer tools that repeat prompts and report averages over a single daily snapshot.",
+      "Tools that call an AI's API can get different answers from the consumer app a signed-in user sees, so ask how each tool collects answers."
+    ],
+    "featureLabels": {
+      "chatgpt": "Tracks ChatGPT",
+      "perplexity": "Tracks Perplexity",
+      "geminiTracking": "Tracks Gemini",
+      "aiOverviews": "Tracks Google AI Overviews / AI Mode",
+      "claudeTracking": "Tracks Claude",
+      "citationTracking": "Citation and source tracking",
+      "competitorBenchmark": "Competitor share of voice",
+      "sentiment": "Sentiment analysis",
+      "optimizationTips": "Optimization recommendations",
+      "apiAccess": "API access"
+    },
+    "faqs": [
+      {
+        "q": "What is an AI search insights tool?",
+        "a": "Software that repeatedly asks AI assistants such as ChatGPT, Perplexity and Gemini the questions your buyers ask, and records whether your brand is mentioned, how it is described, which competitors appear and which sources the AI cited."
+      },
+      {
+        "q": "What is the difference between SEO and GEO?",
+        "a": "SEO aims to rank pages in search results. GEO (generative engine optimization) aims to get a brand mentioned and cited inside AI-generated answers. AI search insights tools measure the second, usually alongside classic SEO data."
+      },
+      {
+        "q": "Can I track ChatGPT visibility for free?",
+        "a": "Yes. A few tools have free plans or are open source. Free plans usually limit prompts, and bring-your-own-key tools need your own AI provider API key, so you pay the provider per answer."
+      }
+    ],
+    "useCases": [
+      {
+        "slug": "ai-overviews-tracking-tools",
+        "name": "Google AI Overviews Tracking Tools",
+        "singular": "Google AI Overviews tracking tool",
+        "intro": "These tools track whether your brand appears in Google AI Overviews or AI Mode, not only in chat assistants. AI Overviews coverage is often limited to higher plans, so check each tool's plan notes.",
+        "ruleText": "Tracks Google AI Overviews or AI Mode (any plan).",
+        "rule": {
+          "feature": "aiOverviews"
+        }
+      },
+      {
+        "slug": "ai-brand-sentiment-tools",
+        "name": "AI Brand Sentiment Tools",
+        "singular": "AI brand sentiment tool",
+        "intro": "These AI visibility tools analyse the sentiment of how AI assistants describe your brand, so you can spot negative or outdated claims in AI answers.",
+        "ruleText": "Offers sentiment analysis of brand mentions in AI answers.",
+        "rule": {
+          "feature": "sentiment"
+        }
+      }
+    ],
+    "compareTop": 6,
+    "featured": "ai-search-inspector",
+    "featuredRank": 1
+  },
+  {
+    "slug": "data-testing-tools",
+    "name": "Data Testing Tools",
+    "singular": "data testing tool",
+    "plural": "data testing tools",
+    "topic": "Data Testing & Quality",
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "intro": "Data testing tools check that data in pipelines, warehouses and files is correct before people rely on it: rule checks (not null, unique, in range), source-to-target comparisons after ETL or a migration, and regression diffs that show what a code change does to the data. Options run from free open-source libraries that engineers call from code to enterprise platforms with no-code test builders, schedulers and CI/CD hooks. This hub ranks tools whose main job is testing data; the ETL testing, data reconciliation and data quality rankings cover narrower needs.",
+    "buyingTips": [
+      "Decide who writes the tests. Open-source libraries (Great Expectations, Soda Core, Pandera, Deequ) suit engineers; QA teams usually need a no-code builder.",
+      "For migrations and ETL you need source-to-target comparison across two different systems, which many rule-only tools do not do.",
+      "If your team uses dbt, check whether the tool reads dbt tests and runs in pull requests; diffing a change before merge catches the most bugs.",
+      "Confirm connectors for both your sources and targets, and whether file formats (CSV, Parquet, JSON) are tested directly.",
+      "Most enterprise tools are quote-only, so ask how pricing scales (users, servers, tables or rows)."
+    ],
+    "featureLabels": {
+      "noCodeTests": "No-code test creation",
+      "sourceTargetCompare": "Source-to-target comparison",
+      "cicdIntegration": "CI/CD integration",
+      "scheduling": "Scheduled test runs",
+      "cloudWarehouses": "Snowflake, Databricks and BigQuery support",
+      "ruleBasedChecks": "Rule-based checks",
+      "flatFiles": "File testing (CSV, JSON, Parquet)",
+      "alerts": "Failure alerts (email, Slack, Teams)"
+    },
+    "faqs": [
+      {
+        "q": "What is data testing?",
+        "a": "Data testing checks the data itself, not the code: that values meet rules (not null, unique, valid ranges), that a target matches its source after ETL or a migration, and that a pipeline change did not alter results unexpectedly."
+      },
+      {
+        "q": "What is the difference between data testing and data observability?",
+        "a": "Data testing runs checks you define, usually before or right after a load, and fails loudly when a rule breaks. Data observability watches production tables continuously and uses anomaly detection to catch problems nobody wrote a test for. Many teams use both."
+      },
+      {
+        "q": "Are there free data testing tools?",
+        "a": "Yes. Several tools in this ranking are free and open source, including Great Expectations (GX Core), Soda Core, Deequ and dbt's built-in tests; paid editions add hosted dashboards, scheduling and alerts."
+      }
+    ],
+    "useCases": [
+      {
+        "slug": "no-code-data-testing-tools",
+        "name": "No-Code Data Testing Tools",
+        "singular": "no-code data testing tool",
+        "intro": "No-code data testing tools let QA analysts and business users create data checks in a visual or form-based builder instead of writing SQL or Python for every test.",
+        "ruleText": "Tests can be created without writing code.",
+        "rule": {
+          "feature": "noCodeTests"
+        }
+      },
+      {
+        "slug": "data-testing-tools-for-ci-cd",
+        "name": "Data Testing Tools for CI/CD",
+        "singular": "data testing tool for CI/CD",
+        "intro": "These tools run data tests from a CI/CD pipeline (GitHub Actions, Jenkins, Azure DevOps and similar) and can fail a build or block a pull request when data checks fail.",
+        "ruleText": "Runs tests from a CI/CD pipeline and can fail the build.",
+        "rule": {
+          "feature": "cicdIntegration"
+        }
+      }
+    ],
+    "compareTop": 6,
+    "featured": "icedq",
+    "featuredRank": 2
   }
 ]

@@ -1,0 +1,923 @@
+[
+  {
+    "slug": "profound",
+    "name": "Profound",
+    "category": "ai-search-insights-tools",
+    "website": "https://www.tryprofound.com",
+    "logo": "https://static.tryprofound.com/favicons/v1/production/favicon.ico",
+    "pricingUrl": "https://www.tryprofound.com/pricing",
+    "tagline": "Enterprise AI visibility platform that tracks brand mentions, citations and sentiment across up to 10 answer engines and adds AI marketing agents.",
+    "bestFor": "Large brands that want AI visibility tracking, crawler analytics and marketing agents under one enterprise contract",
+    "description": "Profound runs structured prompts across answer engines such as ChatGPT, Perplexity, Gemini, Claude and Google AI Overviews and reports where a brand appears, which sources are cited, sentiment, ranking and competitive presence. Since September 2026 it sells only a custom-priced Enterprise plan for brands; the $399 Starter and $499 Growth plans are no longer available to new subscribers. The plan also includes AI Marketer agents, Agent Analytics for AI crawler traffic, Prompt Volumes data, CSV/JSON exports and an API.",
+    "pros": [
+      "Tracks up to 10 answer engines: ChatGPT, Perplexity, Google AI Mode, Gemini, DeepSeek, Claude, Google AI Overviews, Exa Search, Muse Spark and Qwen",
+      "Daily prompt tracking with all-time history, CSV and JSON exports, and an API",
+      "Unlimited seats and unlimited domains in Agent Analytics",
+      "SSO/SAML and SOC 2 Type II compliance",
+      "Dedicated Slack channel and a dedicated specialist with a 24-hour SLA"
+    ],
+    "cons": [
+      "No published price: the only plan for brands is a custom Enterprise package that starts with a demo",
+      "Starter ($399) and Growth ($499) were retired in September 2026, so there is no self-serve entry tier",
+      "No free plan or free trial is listed on the pricing page",
+      "Prompt volume, languages, regions and AI Marketer credits are all set per contract, so limits are not public",
+      "Agents run on credits; going past the allotment means overage billing or paused usage"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan or trial is listed. Pricing is available only after requesting a demo.",
+    "trial": null,
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Tailored package: custom prompt tracking plan with daily frequency, up to 10 answer engines, custom languages and regions, custom AI Marketer credits, unlimited seats, API, SSO. The former Starter ($399) and Growth ($499) plans were retired in September 2026 for new subscriptions."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2024,
+    "hq": "New York, NY",
+    "integrations": "Agent Analytics data sources: Akamai, AWS, Cloudflare, Fastly, Google Analytics, Google Cloud Platform, Netlify, Vercel and WordPress; MCP; API; CSV and JSON exports",
+    "compliance": [
+      "SOC 2 Type II",
+      "SSO/SAML"
+    ],
+    "support": [
+      "Email",
+      "Dedicated Slack",
+      "Dedicated specialist (24-hour SLA)"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Profound pricing",
+        "url": "https://www.tryprofound.com/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Profound AI instructions and company information",
+        "url": "https://www.tryprofound.com/ai-instructions",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "peec-ai",
+    "name": "Peec AI",
+    "category": "ai-search-insights-tools",
+    "website": "https://peec.ai",
+    "logo": "https://peec.ai/media/PIKLIeC0t7S3kIO1ubB33bcu10.png",
+    "pricingUrl": "https://peec.ai/pricing",
+    "tagline": "AI search analytics that tracks prompts daily across three chosen AI models and shows visibility, sentiment, sources and recommended actions.",
+    "bestFor": "SEO and content teams that want daily AI visibility data with unlimited users at a mid-range price",
+    "description": "Peec AI tracks a set of prompts daily in AI models such as ChatGPT, Perplexity, Gemini, Google AI Overviews and AI Mode and reports visibility, position, sentiment and share of voice against competitors. Source analytics show the domains and URLs AI answers cite, and a gap analysis and recommended actions point to sources where competitors appear but the brand does not. Paid plans run $95 to $495 per month with 3 models each; Enterprise unlocks up to 26 models, including Claude.",
+    "pros": [
+      "Unlimited users, competitors and languages on every plan",
+      "Starter at $95/month already includes source analytics, citation share, sentiment and recommended actions",
+      "API from Pro ($245/month) and MCP on every plan",
+      "Holds a SOC 2 Type II report",
+      "Enterprise tracks up to 26 LLM models, including Claude, DeepSeek, Grok and Mistral"
+    ],
+    "cons": [
+      "Starter, Pro and Advanced track only 3 models; each extra model costs $30, $70 or $140 per month",
+      "Claude, DeepSeek, Grok and Mistral are only available on Enterprise",
+      "No API on Starter, and the Looker Studio connector starts at Advanced ($495/month)",
+      "Starter is limited to 50 prompts, 1 project and 1 country",
+      "Annual prices are not shown; the FAQ only says annual billing is 15% off"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. A 7-day free trial with no credit card is offered, and a free one-off GEO Report brand audit is available.",
+    "trial": "7-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 95,
+        "annual": null,
+        "custom": false,
+        "notes": "50 prompts, choose 3 models (ChatGPT, Perplexity, AI Overview, AI Mode, Gemini, Naver AI Briefing, ERNIE, Bing AI Mode), daily tracking, 4,500 AI answers/mo, 1 project, 1 country, 500 agent credits, chat support. No API. Extra model $30/mo. Annual billing is 15% off; annual price not shown."
+      },
+      {
+        "name": "Pro",
+        "monthly": 245,
+        "annual": null,
+        "custom": false,
+        "notes": "150 prompts, 3 models, daily tracking, 13,500 AI answers/mo, 2 projects, 3 countries, 750 agent credits, API, chat and email support. Extra model $70/mo."
+      },
+      {
+        "name": "Advanced",
+        "monthly": 495,
+        "annual": null,
+        "custom": false,
+        "notes": "350 prompts, 3 models, daily tracking, 31,500 AI answers/mo, 5 projects, 3 countries, 1,000 agent credits, Looker Studio connector, custom attributes. Extra model $140/mo."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Billed annually. Unlimited prompts, models (up to 26, including Claude, DeepSeek, Grok, Mistral via API), projects and countries; daily or weekly tracking; SSO; dedicated support; SOC 2 report on request."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2025,
+    "hq": "Berlin, Germany",
+    "integrations": "Google Analytics, Looker Studio connector (Advanced and up), MCP, API (Pro and up), CSV export, Shopify or CSV product catalogs, AI-crawler log sources: AWS CloudFront, Google Cloud CDN, WordPress, Cloudflare, Vercel, Akamai DataStream, Fastly, Netlify, webhook, file upload",
+    "compliance": [
+      "SOC 2 Type II",
+      "SSO (Enterprise)"
+    ],
+    "support": [
+      "Chat",
+      "Email (Pro and up)",
+      "Dedicated support (Enterprise)"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Peec AI pricing for brands",
+        "url": "https://peec.ai/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Peec AI entity map (founding, HQ)",
+        "url": "https://peec.ai/entity-map",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Peec AI vs Ahrefs Brand Radar (trial terms)",
+        "url": "https://peec.ai/comparison/peec-ai-vs-ahrefs-brand-radar",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "otterly-ai",
+    "name": "Otterly.AI",
+    "category": "ai-search-insights-tools",
+    "website": "https://otterly.ai",
+    "logo": "https://cdn.prod.website-files.com/67178910ae3c40dcf103666a/67388a302aa3b51fcb092cb7_favicon.png",
+    "pricingUrl": "https://otterly.ai/pricing",
+    "tagline": "Credit-based AI search monitoring that tracks brand mentions and cited sources across seven AI engines, from €29 a month.",
+    "bestFor": "Small teams and agencies that want low-cost AI visibility tracking with sentiment and citations",
+    "description": "OtterlyAI runs a prompt library across ChatGPT, Google AI Overviews, Google AI Mode, Perplexity, Gemini, Microsoft Copilot and Claude and reports brand visibility, share of voice, sentiment and the domains AI cites. Plans are priced in credits: one credit is one prompt checked once on one engine, and Claude answers cost 3 credits. It also includes a GEO audit, weekly or unlimited recommendations, and a public API and MCP server from the Standard plan.",
+    "pros": [
+      "Entry plan costs €29/month",
+      "Unlimited brands, competitors, countries, languages and team members on every plan",
+      "Sentiment analysis, citation source tracking and a GEO audit are included on every plan",
+      "Covers 7 engines, including Gemini, Claude and Microsoft Copilot",
+      "Public API and MCP from Standard, with 2,000 requests/month (5,000 on Premium)"
+    ],
+    "cons": [
+      "Lite covers only 16 prompts (2,000 credits) and 3 recommendations per week",
+      "Plan cards are sized for 4 of 7 engines; adding engines spends more credits, and Claude costs 3 credits per answer",
+      "No API, MCP, agent analytics or Data Studio connector on Lite",
+      "No free plan, and Lite cannot buy extra credit packs",
+      "Prices are shown in EUR excluding tax, and annual prices are not listed"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. The homepage offers a 7-day free trial with no credit card.",
+    "trial": "7-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Lite",
+        "monthly": 29,
+        "annual": null,
+        "custom": false,
+        "notes": "EUR (€29; the FAQ says prices are in USD or EUR, excluding tax). 16 prompts = 2,000 credits/mo, 4 of 7 engines, daily tracking, 1 workspace, 3 recommendations/week, no API or MCP. Annual billing is 15% off (saves €52/yr); annual price not listed."
+      },
+      {
+        "name": "Standard",
+        "monthly": 189,
+        "annual": null,
+        "custom": false,
+        "notes": "EUR. 120 prompts = 15,000 credits/mo, 4 of 7 engines, unlimited workspaces and recommendations, 2,000 API and 2,000 MCP requests/mo, 200k agent analytics events/mo, Data Studio connector. Extra 5,000 credits for €65/mo. Annual saves €340/yr."
+      },
+      {
+        "name": "Premium",
+        "monthly": 489,
+        "annual": null,
+        "custom": false,
+        "notes": "EUR. 403 prompts = 50,000 credits/mo, 4 of 7 engines, daily and weekly tracking, 5,000 API and 5,000 MCP requests/mo, 1,000,000 agent analytics events/mo, personal onboarding. Extra 10,000 credits for €99/mo. Annual saves €880/yr."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Starts at 1,000 prompts; unlimited credits and engines, SSO, custom payment terms, dedicated customer success manager, monthly GEO expert sessions."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2024,
+    "hq": "Persenbeug, Austria",
+    "integrations": "Looker Studio (Data Studio) connector, MCP server and public API (Standard and up), report exports",
+    "compliance": [
+      "GDPR",
+      "SSO via SAML (Enterprise)"
+    ],
+    "support": [
+      "Group onboarding",
+      "Personal onboarding (Premium and up)",
+      "Dedicated customer success manager (Enterprise)"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "OtterlyAI pricing",
+        "url": "https://otterly.ai/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "OtterlyAI homepage (trial, API, company data)",
+        "url": "https://otterly.ai/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "OtterlyAI security",
+        "url": "https://otterly.ai/security",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "OtterlyAI about",
+        "url": "https://otterly.ai/about",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "scrunch-ai",
+    "name": "Scrunch AI",
+    "category": "ai-search-insights-tools",
+    "website": "https://scrunch.com",
+    "logo": "https://scrunch.com/favicon.png",
+    "pricingUrl": "https://scrunch.com/pricing",
+    "tagline": "AI visibility platform that monitors brand presence and citations across 8 AI platforms and adds page optimization and Agent Pages for AI bots.",
+    "bestFor": "Brands that want AI visibility monitoring plus tools to optimize and serve pages to AI agents",
+    "description": "Scrunch monitors how a brand appears in ChatGPT, Perplexity, Gemini, Google AI Overviews, Google AI Mode, Microsoft Copilot, Grok and Meta AI, including competitive position, sentiment and the citations behind answers. Its Agent Experience Platform adds page optimization, generated pages and Agent Pages that serve optimized content to AI agents. The Core plan costs $250 per month; Scrunch announced on June 3, 2026 that it is now a Sitecore company and continues to run as a standalone platform.",
+    "pros": [
+      "Core plan at $250/month includes 15,000 AI responses on 8 platforms, including Copilot, Grok and Meta AI",
+      "Citation targets (10/mo on Core), 100 fact-checked pages/mo and 10 optimized pages are built in",
+      "Tracks AI agent traffic and AI referrals alongside answer visibility",
+      "SOC 2 Type II, with Google SSO on Core and SAML/OIDC SSO on Enterprise",
+      "Data exports and MCP on both plans"
+    ],
+    "cons": [
+      "Core is limited to 1 brand, 5 seats and 5 competitors",
+      "Claude is only available as an Enterprise add-on",
+      "API keys and the Data Studio connector are Enterprise-only",
+      "No free plan, and annual pricing is not published",
+      "Now owned by Sitecore (announced June 3, 2026)"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. Core has a 7-day free trial; a free AI audit of a site is also offered.",
+    "trial": "7-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Core",
+        "monthly": 250,
+        "annual": null,
+        "custom": false,
+        "notes": "15,000 AI responses/mo, 8 platforms (ChatGPT, Perplexity, Gemini, Google AIO, Google AI Mode, Microsoft Copilot, Grok, Meta AI), daily collection, 1 brand, 5 seats, 5 competitors, 10 citation targets/mo, 10 pages optimized, 10 pages generated/mo, 100 fact-checked pages/mo, data exports, MCP. No API keys. Annual price not listed."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Monthly or yearly billing. Custom responses, unlimited brands, seats and competitors, Agent Pages, API keys, Data Studio, SAML/OIDC SSO, Claude as an add-on, collection daily or every 3 days, dedicated CSM."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2023,
+    "hq": "Salt Lake City, UT",
+    "integrations": "MCP and data exports on all plans; API keys and Data Studio on Enterprise; Zapier",
+    "compliance": [
+      "SOC 2 Type II",
+      "SAML/OIDC SSO (Enterprise)",
+      "Google SSO"
+    ],
+    "support": [
+      "Email",
+      "Chat (Enterprise)",
+      "Shared Slack channel (Enterprise)",
+      "Dedicated customer success manager (Enterprise)"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Scrunch pricing",
+        "url": "https://scrunch.com/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Scrunch homepage (features, security)",
+        "url": "https://scrunch.com/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Scrunch llms.txt (monitoring includes sentiment)",
+        "url": "https://scrunch.com/llms.txt",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Scrunch about",
+        "url": "https://scrunch.com/about",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Scrunch is now a Sitecore company",
+        "url": "https://scrunch.com/blog/scrunch-is-now-a-sitecore-company/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Scrunch contact",
+        "url": "https://scrunch.com/contact/",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "athenahq",
+    "name": "AthenaHQ",
+    "category": "ai-search-insights-tools",
+    "website": "https://athenahq.ai",
+    "logo": "https://athenahq.ai/icons/apple-touch-icon.png",
+    "pricingUrl": "https://athenahq.ai/plans",
+    "tagline": "Credit-based GEO platform that tracks brand visibility, citations and sentiment across up to 11 AI models and suggests content actions.",
+    "bestFor": "Self-guided SMB teams that want a free start and a single paid tier covering 11 AI models",
+    "description": "AthenaHQ tracks how AI models mention and cite a brand across ChatGPT, Perplexity, Google AI Overviews, AI Mode, Gemini, Claude, Copilot and others, using credits where 1 credit equals 1 AI response. It adds citation intelligence, sentiment, competitor tracking and a content optimization agent with on-page and off-page actions. A free Essential plan includes 300 credits; Starter costs $295 per month for 3,600 credits.",
+    "pros": [
+      "Free Essential tier with 300 credits ($25 of credit) covering ChatGPT, Perplexity, AI Overviews, Gemini and Copilot",
+      "Starter covers 11 models, including Claude, AI Mode, Grok, DeepSeek, Meta AI and Mistral",
+      "Starter has unlimited topics, prompts, competitors and seats, plus a 1-month credit rollover",
+      "Content optimization agent with on-page and off-page actions",
+      "SOC 2 and GDPR, with SAML SSO and audit logs on Enterprise"
+    ],
+    "cons": [
+      "Starter's 3,600 credits mean 3,600 AI responses per month, which limits prompt-by-engine volume",
+      "API access is a paid add-on on Starter with unpublished pricing",
+      "Claude and AI Mode are not on the free Essential tier, and sentiment is listed from Starter",
+      "No mid tier between the free tier and $295/month",
+      "Annual billing is advertised as 17% off, but annual prices are not shown",
+      "The free tier’s 300 credits are not described as monthly, unlike paid plans, so it works more like a trial"
+    ],
+    "freePlan": false,
+    "freePlanDetails": null,
+    "trial": "Free Essential tier with 300 credits ($25 of credit); the plans page lists monthly credits only for paid plans, so we treat it as a trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Essential",
+        "monthly": null,
+        "annual": null,
+        "custom": false,
+        "notes": "Free tier with 300 credits ($25 of credit), not stated as monthly. 5 engines: ChatGPT, Perplexity, AI Overviews, Gemini, Copilot. Unlimited users."
+      },
+      {
+        "name": "Starter",
+        "monthly": 295,
+        "annual": null,
+        "custom": false,
+        "notes": "3,600 credits/mo (1 credit = 1 AI response), 11 models, unlimited topics, prompts and competitors, CSV export, 1-month credit rollover. API access and extra credits are paid add-ons. The card also shows \"$300/month free credit\" without explanation. Annual toggle says 17% off; annual price not shown."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Custom credits, API included, multi-region and multi-language, Athena Recommendation Engine, BI dashboards (Tableau, Power BI, Looker), SAML SSO, audit logs, 2-hour SLA."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": null,
+    "hq": "San Francisco, CA",
+    "integrations": "Google Analytics (GA4), Google Search Console, Shopify, Webflow; CSV export; BI tools Tableau, Power BI and Looker (Enterprise)",
+    "compliance": [
+      "SOC 2",
+      "GDPR",
+      "SAML SSO (Enterprise)",
+      "Audit logs (Enterprise)"
+    ],
+    "support": [
+      "Dedicated Slack channel (Enterprise)",
+      "2-hour SLA (Enterprise)",
+      "Certified GEO/SEO specialist (Enterprise)"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "AthenaHQ plans and pricing",
+        "url": "https://athenahq.ai/plans",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "AthenaHQ about",
+        "url": "https://athenahq.ai/about/",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "goodie-ai",
+    "name": "Goodie AI",
+    "category": "ai-search-insights-tools",
+    "website": "https://higoodie.com",
+    "logo": "https://higoodie.com/wp-content/uploads/2026/04/cropped-Goodie_GoogleLogo_48x48-192x192.jpg",
+    "pricingUrl": "https://higoodie.com/pricing",
+    "tagline": "AEO platform that tracks brand visibility, citations and sentiment in AI answers and runs content and optimization agents on top.",
+    "bestFor": "Brands with budget for a full AEO program that links AI visibility to content work and revenue",
+    "description": "Goodie tracks prompts daily across AI engines such as ChatGPT, Google AI Overviews, Perplexity, AI Mode and Copilot and reports visibility, citation analysis, competitor benchmarking and sentiment. It adds agents for content writing, content optimization, outreach and technical fixes, plus agent analytics and revenue attribution. Core costs $354 per month on monthly billing or $295 per month billed annually.",
+    "pros": [
+      "Unlimited seats on every plan",
+      "Core includes 110 prompts, 50 optimizations and 50 action credits per month, plus MCP access",
+      "Deep citation analysis, competitor benchmarking and sentiment tracking listed in all plans",
+      "Built-in agents: AEO content writer, content optimization, outreach, technical and social agents",
+      "7-day free trial of the full Core plan"
+    ],
+    "cons": [
+      "Core costs $354/month on monthly billing ($295/month only when billed annually)",
+      "Gemini starts on Pro ($1,198.80/month, or $999/month billed annually); Claude is Enterprise-only",
+      "API access is listed only on Enterprise",
+      "Core and Pro track 1 brand and get email-only support",
+      "The trial requires a card and converts to paid Core on day 7"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. Core has a 7-day free trial; a card is required at sign-up but not charged during the trial.",
+    "trial": "7-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Core",
+        "monthly": 354,
+        "annual": 295,
+        "custom": false,
+        "notes": "$3,540/yr billed annually (2 months free). 110 prompts, 5 models (ChatGPT, AI Overview, Perplexity, AI Mode, Copilot), 1 brand, 2 countries, 2 languages, 10 pages tracked, 50 optimizations and 50 action credits/mo, 40M agent tokens, 30 prompt research/mo, MCP, unlimited seats."
+      },
+      {
+        "name": "Pro",
+        "monthly": 1198.8,
+        "annual": 999,
+        "custom": false,
+        "notes": "$11,988/yr billed annually. 250 prompts, 8 models (adds Gemini, Alexa, Sparky), 1 brand, 5 countries, 5 languages, 30 pages, 100 optimizations and 100 action credits/mo, 100M agent tokens, SKU-level agentic commerce visibility. Demo required."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Up to 14 models (adds Claude, Meta AI, DeepSeek, Grok, Muse), 500+ prompts, 1+ brands, 8+ countries, MCP and API, SOC 2, email and Slack support, dedicated AEO strategist."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2024,
+    "hq": "New York, NY",
+    "integrations": "Google Analytics, Google Search Console and Bing Webmaster Tools on all plans; the comparison table also lists Vercel, WordPress, Cloudflare, CloudFront, Adobe Analytics, Shopify, HubSpot, Salesforce, Akamai, Google Cloud, Slack and Microsoft Teams; MCP server",
+    "compliance": [
+      "SOC 2 (Enterprise)"
+    ],
+    "support": [
+      "Email",
+      "Slack (Enterprise)",
+      "AEO strategist support",
+      "Dedicated AEO strategist (Enterprise)"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Goodie pricing for brands",
+        "url": "https://higoodie.com/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Goodie about",
+        "url": "https://higoodie.com/about",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "rankscale",
+    "name": "Rankscale",
+    "category": "ai-search-insights-tools",
+    "website": "https://rankscale.ai",
+    "logo": "https://rankscale.ai/favicon/favicon-96x96.png",
+    "pricingUrl": "https://rankscale.ai/pricing",
+    "tagline": "Credit-based AI visibility tracker that includes 17+ AI engines, unlimited prompts and all countries on every plan, from $99 a month.",
+    "bestFor": "Teams and agencies that want many engines and brands per plan at a low entry price",
+    "description": "Rankscale measures whether AI engines mention, cite and describe a brand, reporting visibility score, share of voice, citations, sentiment and position per prompt, engine and country. Every plan includes 17+ engines, from ChatGPT, Google AI Overviews, AI Mode and Gemini apps to API models from OpenAI, Anthropic, Google, Perplexity, DeepSeek and Mistral, with credits spent per answer. Plans run from $99 to $780 per month, and Rankscale Scout recommendations plus page audits show what to change.",
+    "pros": [
+      "17+ engines, all countries and all languages on every plan, with unlimited prompts and seats",
+      "Entry Pro plan costs $99/month, or $84.15/month billed yearly",
+      "Citations, competitor benchmarking, sentiment, Scout recommendations and page audits on all plans",
+      "Pro tracks up to 10 brands, each with its own dashboard",
+      "Unused credits roll over up to 2x (Pro, Pro+) or 3x (Growth and up)"
+    ],
+    "cons": [
+      "Answer volume depends on engine mix: app answers cost 0.25 credits, API models 1 to 4 credits",
+      "REST API is not included on Pro; it starts at Pro+ ($229/month)",
+      "Perplexity and Claude are tracked through their APIs, not the consumer apps",
+      "No free plan; the 7-day trial applies to Pro only",
+      "No compliance certifications are listed on the pricing or facts pages"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. Pro has a 7-day trial; trials of other plans are on request.",
+    "trial": "7-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Pro",
+        "monthly": 99,
+        "annual": 84.15,
+        "custom": false,
+        "notes": "$1,009.80/yr billed yearly. 1,200 credits/mo (up to 4,800 AI answers), 10 brand dashboards (+$9/mo each), 50 page audits/mo, prompt research pay-per-use, MCP, no REST API. Same figures shown in EUR and USD."
+      },
+      {
+        "name": "Pro+",
+        "monthly": 229,
+        "annual": 194.65,
+        "custom": false,
+        "notes": "$2,335.80/yr billed yearly. 3,000 credits/mo (up to 12,000 AI answers), 25 brand dashboards, 100 page audits/mo, 5 prompt researches/mo, REST API."
+      },
+      {
+        "name": "Growth",
+        "monthly": 385,
+        "annual": 327.25,
+        "custom": false,
+        "notes": "$3,927/yr billed yearly. 5,500 credits/mo (up to 22,000 AI answers), 50 brand dashboards, 200 page audits/mo, 10 prompt researches/mo, white-label, priority support."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": 780,
+        "annual": 663,
+        "custom": false,
+        "notes": "$7,956/yr billed yearly. 12,000 credits/mo (up to 48,000 AI answers), 100 brand dashboards, 200 page audits/mo, 20 prompt researches/mo, white-label, priority support."
+      },
+      {
+        "name": "Custom",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "Individual credits, SSO, custom API, dedicated success manager, custom integrations, SLA guarantees."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": 2024,
+    "hq": "Vienna, Austria",
+    "integrations": "MCP, REST API (Pro+ and up), CSV and Google Sheets exports, Data Studio, shareable dashboard links",
+    "compliance": [],
+    "support": [
+      "Email",
+      "In-app",
+      "Slack",
+      "Weekly 30-minute group video call (paid plans)",
+      "Priority support (Growth and up)"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Rankscale pricing",
+        "url": "https://rankscale.ai/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Rankscale facts and entity definition",
+        "url": "https://rankscale.ai/facts",
+        "date": "2026-11-23"
+      }
+    ],
+    "launch": {
+      "date": "2025-07-22",
+      "what": "Rankscale GmbH was registered in Vienna and the product officially launched in July 2025, after a project start in October 2024.",
+      "source": {
+        "label": "Rankscale facts and entity definition",
+        "url": "https://rankscale.ai/facts"
+      }
+    }
+  },
+  {
+    "slug": "llmrefs",
+    "name": "LLMrefs",
+    "category": "ai-search-insights-tools",
+    "website": "https://llmrefs.com",
+    "logo": "https://llmrefs.com/icon.png",
+    "pricingUrl": "https://llmrefs.com/pricing",
+    "tagline": "Keyword-based AI search tracker that turns SEO keywords into fan-out prompts and reports share of voice and citations across 11 AI engines.",
+    "bestFor": "SEOs and agencies that want low-cost, keyword-based AI visibility tracking across many projects",
+    "description": "LLMrefs tracks keywords rather than individual prompts: it generates fan-out prompts for each keyword and aggregates brand share of voice, position and cited source URLs across engines such as ChatGPT, Google AI Overviews, AI Mode, Gemini, Perplexity, Claude, Grok, Copilot and Meta AI. Its single All in One plan costs $79 per month, marked limited time, and includes 500 prompts, unlimited projects and team members, CSV export and API access. Dashboard data is updated at least once per week.",
+    "pros": [
+      "Lowest paid price in this group: $79/month for the All in One plan",
+      "All engines included at no extra fee: ChatGPT, AI Overview, AI Mode, Gemini, Perplexity, Claude, Grok, Copilot and Meta AI",
+      "Unlimited projects and team members under one subscription",
+      "Geo-targeting in 50+ countries and 20+ languages",
+      "CSV export and API access included"
+    ],
+    "cons": [
+      "Data is refreshed weekly in the dashboard, not daily",
+      "The $79 price is labelled \"Limited time only\"",
+      "Sentiment analysis is not mentioned on the site",
+      "Keyword allowance is unclear: the plan lists 500 prompts while the FAQ refers to a 50-keyword baseline",
+      "No security or compliance certifications are published"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free tier is defined on the pricing page. The site says you can sign up for a free account with no credit card, but gives no free-account limits; the paid plan has a 7-day free trial.",
+    "trial": "7-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "All in One",
+        "monthly": 79,
+        "annual": null,
+        "custom": false,
+        "notes": "Marked \"Limited time only\". 500 prompts for brand mentions, sources and fan-out queries, all AI engines, weekly reports, citation tracking, 50+ countries and 20+ languages, unlimited team members and projects, monthly prompt volume estimates, CSV export and API, priority support. No annual price listed."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": null,
+      "optimizationTips": null,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": null,
+    "hq": "London, UK",
+    "integrations": "CSV export and API",
+    "compliance": [],
+    "support": [
+      "Live chat",
+      "Email",
+      "Priority support"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "LLMrefs pricing",
+        "url": "https://llmrefs.com/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "LLMrefs homepage",
+        "url": "https://llmrefs.com/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "LLMrefs about",
+        "url": "https://llmrefs.com/about",
+        "date": "2026-11-23"
+      }
+    ]
+  },
+  {
+    "slug": "knowatoa",
+    "name": "Knowatoa",
+    "category": "ai-search-insights-tools",
+    "website": "https://knowatoa.com",
+    "logo": "https://knowatoa.com/apple-touch-icon.png",
+    "pricingUrl": "https://knowatoa.com/pricing",
+    "tagline": "AI search visibility monitor that tracks questions across up to 7 AI services and reports citations, competitor gaps and sentiment.",
+    "bestFor": "Small teams and agencies that want simple AI visibility tracking with a low entry price",
+    "description": "Knowatoa tracks questions in AI search services and reports which answers mention a brand, which sites AI cites, competitor visibility gaps and brand sentiment, with a weekly digest of changes. Starter at $59 per month covers ChatGPT, Google AI Overviews and AI Mode; Growth at $199 per month adds Claude, Gemini, Meta AI and Perplexity plus the API, MCP, Looker Studio and NinjaCat connectors. Feature pages also list recommendations and AI drafting of articles and LinkedIn and Bluesky posts.",
+    "pros": [
+      "Starter costs $59/month",
+      "Citations, competitor visibility gaps, sentiment alerts and a weekly digest on every plan",
+      "Unlimited sites per account, sharing one question limit",
+      "Every language and market you track is included",
+      "Growth adds the API, MCP, Looker Studio and NinjaCat connectors"
+    ],
+    "cons": [
+      "Starter tracks only 3 services: ChatGPT, AI Overviews and AI Mode",
+      "Perplexity, Gemini and Claude start on Growth ($199/month)",
+      "Question limits per plan are not published",
+      "Annual pricing is mentioned but no annual prices are listed",
+      "No free plan and no published compliance certifications"
+    ],
+    "freePlan": false,
+    "freePlanDetails": "No free plan. Starter and Growth offer a free trial, which Knowatoa's guides describe as seven days.",
+    "trial": "7-day free trial",
+    "minSeats": 1,
+    "priceUnit": {
+      "short": "mo",
+      "long": "month"
+    },
+    "plans": [
+      {
+        "name": "Starter",
+        "monthly": 59,
+        "annual": null,
+        "custom": false,
+        "notes": "ChatGPT, AI Overviews and AI Mode. No API, MCP, Looker Studio or NinjaCat. Question limit not published. Annual pricing available but not listed."
+      },
+      {
+        "name": "Growth",
+        "monthly": 199,
+        "annual": null,
+        "custom": false,
+        "notes": "All 7 services (ChatGPT, AI Overviews, AI Mode, Claude, Gemini, Meta AI, Perplexity), API, MCP, Looker Studio, NinjaCat, dedicated account rep. Question limit not published."
+      },
+      {
+        "name": "Enterprise",
+        "monthly": null,
+        "annual": null,
+        "custom": true,
+        "notes": "All 7 services, custom volume and scale, custom integrations, priority feature requests."
+      }
+    ],
+    "features": {
+      "chatgpt": true,
+      "perplexity": true,
+      "geminiTracking": true,
+      "aiOverviews": true,
+      "claudeTracking": true,
+      "citationTracking": true,
+      "competitorBenchmark": true,
+      "sentiment": true,
+      "optimizationTips": true,
+      "apiAccess": true
+    },
+    "platforms": [
+      "Cloud (SaaS)"
+    ],
+    "founded": null,
+    "hq": null,
+    "integrations": "REST API, MCP, Looker Studio and NinjaCat (Growth and up); Google Sheets; CSV export on all plans",
+    "compliance": [],
+    "support": [
+      "Email",
+      "Discord"
+    ],
+    "checked": "2026-11-23",
+    "verification": "verified",
+    "sources": [
+      {
+        "label": "Knowatoa pricing",
+        "url": "https://knowatoa.com/pricing",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Knowatoa features",
+        "url": "https://knowatoa.com/features",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Knowatoa homepage",
+        "url": "https://knowatoa.com/",
+        "date": "2026-11-23"
+      },
+      {
+        "label": "Knowatoa guide: Knowatoa for Paid Ads Research (trial length)",
+        "url": "https://knowatoa.com/guides/knowatoa_for_paid_ads_research",
+        "date": "2026-11-23"
+      }
+    ]
+  }
+]
