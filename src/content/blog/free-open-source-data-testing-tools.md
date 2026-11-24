@@ -13,10 +13,10 @@ updated: "2026-11-23"
 | Tool | Free option | License | Best at | Our rank (of 22) |
 |---|---|---|---|---|
 | [DataKitchen DataOps TestGen](/tools/datakitchen-dataops-testgen/) | Open-source edition: 1 user, 1 connection, 1 project | Apache 2.0 | Auto-generated tests from table profiles | #1 |
-| [SYNQ (Coalesce Quality)](/tools/synq/) | Developer plan: 1 user, 2,000 actions a month | Commercial | SQL tests, anomaly monitors, reconciliation CLI | #3 |
-| [dbt](/tools/dbt/) | Open-source runtime; Developer plan with 1 seat | Apache 2.0 | Tests on dbt models (unique, not_null, relationships) | #4 |
-| [Soda](/tools/soda/) | Free cloud plan; Soda Core library | Elastic License 2.0 (Core) | YAML data contracts and metric monitoring | #5 |
-| [SQLMesh](/tools/sqlmesh/) | Fully open source (Linux Foundation) | Apache 2.0 | 29 built-in audits, unit tests, table_diff | #7 |
+| [SYNQ (Coalesce Quality)](/tools/synq/) | Developer plan: 1 user, 2,000 actions a month | Commercial | SQL tests, anomaly monitors, reconciliation CLI | #2 |
+| [dbt](/tools/dbt/) | Open-source runtime; Developer plan with 1 seat | Apache 2.0 | Tests on dbt models (unique, not_null, relationships) | #3 |
+| [Soda](/tools/soda/) | Free cloud plan; Soda Core library | Elastic License 2.0 (Core) | YAML data contracts and metric monitoring | #4 |
+| [SQLMesh](/tools/sqlmesh/) | Fully open source (Linux Foundation) | Apache 2.0 | 29 built-in audits, unit tests, table_diff | #6 |
 | [Recce](/tools/recce/) | Open-source toolkit; Free cloud plan | Apache 2.0 | Diffing a dbt pull request against production | #9 |
 | [Elementary](/tools/elementary/) | Elementary OSS (dbt package and CLI) | Apache 2.0 | Anomaly tests and alerts for dbt projects | #10 |
 | [Great Expectations (GX Core)](/tools/great-expectations/) | Open-source library | Apache 2.0 | Expectations in Python with readable reports | #11 |

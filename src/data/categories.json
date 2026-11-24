@@ -1432,7 +1432,9 @@
       }
     ],
     "compareTop": 6,
-    "featured": "icedq",
-    "featuredRank": 2
+    "comparePairs": [
+      ["datakitchen-dataops-testgen", "icedq"],
+      ["synq", "icedq"]
+    ]
   }
 ]
